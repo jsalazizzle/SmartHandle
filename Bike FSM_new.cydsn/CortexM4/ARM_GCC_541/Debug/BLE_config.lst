@@ -1,0 +1,326 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccf9tI4M.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"BLE_config.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              	.Letext0:
+  21              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  22              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  23              		.file 3 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+  24              		.section	.debug_info,"",%progbits
+  25              	.Ldebug_info0:
+  26 0000 A3000000 		.4byte	0xa3
+  27 0004 0400     		.2byte	0x4
+  28 0006 00000000 		.4byte	.Ldebug_abbrev0
+  29 000a 04       		.byte	0x4
+  30 000b 01       		.uleb128 0x1
+  31 000c 0E000000 		.4byte	.LASF15
+  32 0010 0C       		.byte	0xc
+  33 0011 0A010000 		.4byte	.LASF16
+  34 0015 2E010000 		.4byte	.LASF17
+  35 0019 00000000 		.4byte	.Ldebug_line0
+  36 001d 02       		.uleb128 0x2
+  37 001e 02       		.byte	0x2
+  38 001f 05       		.byte	0x5
+  39 0020 AB010000 		.4byte	.LASF0
+  40 0024 02       		.uleb128 0x2
+  41 0025 01       		.byte	0x1
+  42 0026 06       		.byte	0x6
+  43 0027 82010000 		.4byte	.LASF1
+  44 002b 02       		.uleb128 0x2
+  45 002c 01       		.byte	0x1
+  46 002d 08       		.byte	0x8
+  47 002e EA000000 		.4byte	.LASF2
+  48 0032 02       		.uleb128 0x2
+  49 0033 02       		.byte	0x2
+  50 0034 07       		.byte	0x7
+  51 0035 6F010000 		.4byte	.LASF3
+  52 0039 03       		.uleb128 0x3
+  53 003a 9B010000 		.4byte	.LASF9
+  54 003e 01       		.byte	0x1
+  55 003f 3F       		.byte	0x3f
+  56 0040 44000000 		.4byte	0x44
+  57 0044 02       		.uleb128 0x2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccf9tI4M.s 			page 2
+
+
+  58 0045 04       		.byte	0x4
+  59 0046 05       		.byte	0x5
+  60 0047 66010000 		.4byte	.LASF4
+  61 004b 02       		.uleb128 0x2
+  62 004c 04       		.byte	0x4
+  63 004d 07       		.byte	0x7
+  64 004e C1000000 		.4byte	.LASF5
+  65 0052 02       		.uleb128 0x2
+  66 0053 08       		.byte	0x8
+  67 0054 05       		.byte	0x5
+  68 0055 00000000 		.4byte	.LASF6
+  69 0059 02       		.uleb128 0x2
+  70 005a 08       		.byte	0x8
+  71 005b 07       		.byte	0x7
+  72 005c D3000000 		.4byte	.LASF7
+  73 0060 04       		.uleb128 0x4
+  74 0061 04       		.byte	0x4
+  75 0062 05       		.byte	0x5
+  76 0063 696E7400 		.ascii	"int\000"
+  77 0067 02       		.uleb128 0x2
+  78 0068 04       		.byte	0x4
+  79 0069 07       		.byte	0x7
+  80 006a 8E010000 		.4byte	.LASF8
+  81 006e 03       		.uleb128 0x3
+  82 006f B5010000 		.4byte	.LASF10
+  83 0073 02       		.byte	0x2
+  84 0074 2C       		.byte	0x2c
+  85 0075 39000000 		.4byte	0x39
+  86 0079 02       		.uleb128 0x2
+  87 007a 04       		.byte	0x4
+  88 007b 07       		.byte	0x7
+  89 007c BD010000 		.4byte	.LASF11
+  90 0080 02       		.uleb128 0x2
+  91 0081 01       		.byte	0x1
+  92 0082 08       		.byte	0x8
+  93 0083 F8000000 		.4byte	.LASF12
+  94 0087 02       		.uleb128 0x2
+  95 0088 04       		.byte	0x4
+  96 0089 04       		.byte	0x4
+  97 008a A5010000 		.4byte	.LASF13
+  98 008e 02       		.uleb128 0x2
+  99 008f 08       		.byte	0x8
+ 100 0090 04       		.byte	0x4
+ 101 0091 5F010000 		.4byte	.LASF14
+ 102 0095 05       		.uleb128 0x5
+ 103 0096 FD000000 		.4byte	.LASF18
+ 104 009a 03       		.byte	0x3
+ 105 009b EA07     		.2byte	0x7ea
+ 106 009d A1000000 		.4byte	0xa1
+ 107 00a1 06       		.uleb128 0x6
+ 108 00a2 6E000000 		.4byte	0x6e
+ 109 00a6 00       		.byte	0
+ 110              		.section	.debug_abbrev,"",%progbits
+ 111              	.Ldebug_abbrev0:
+ 112 0000 01       		.uleb128 0x1
+ 113 0001 11       		.uleb128 0x11
+ 114 0002 01       		.byte	0x1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccf9tI4M.s 			page 3
+
+
+ 115 0003 25       		.uleb128 0x25
+ 116 0004 0E       		.uleb128 0xe
+ 117 0005 13       		.uleb128 0x13
+ 118 0006 0B       		.uleb128 0xb
+ 119 0007 03       		.uleb128 0x3
+ 120 0008 0E       		.uleb128 0xe
+ 121 0009 1B       		.uleb128 0x1b
+ 122 000a 0E       		.uleb128 0xe
+ 123 000b 10       		.uleb128 0x10
+ 124 000c 17       		.uleb128 0x17
+ 125 000d 00       		.byte	0
+ 126 000e 00       		.byte	0
+ 127 000f 02       		.uleb128 0x2
+ 128 0010 24       		.uleb128 0x24
+ 129 0011 00       		.byte	0
+ 130 0012 0B       		.uleb128 0xb
+ 131 0013 0B       		.uleb128 0xb
+ 132 0014 3E       		.uleb128 0x3e
+ 133 0015 0B       		.uleb128 0xb
+ 134 0016 03       		.uleb128 0x3
+ 135 0017 0E       		.uleb128 0xe
+ 136 0018 00       		.byte	0
+ 137 0019 00       		.byte	0
+ 138 001a 03       		.uleb128 0x3
+ 139 001b 16       		.uleb128 0x16
+ 140 001c 00       		.byte	0
+ 141 001d 03       		.uleb128 0x3
+ 142 001e 0E       		.uleb128 0xe
+ 143 001f 3A       		.uleb128 0x3a
+ 144 0020 0B       		.uleb128 0xb
+ 145 0021 3B       		.uleb128 0x3b
+ 146 0022 0B       		.uleb128 0xb
+ 147 0023 49       		.uleb128 0x49
+ 148 0024 13       		.uleb128 0x13
+ 149 0025 00       		.byte	0
+ 150 0026 00       		.byte	0
+ 151 0027 04       		.uleb128 0x4
+ 152 0028 24       		.uleb128 0x24
+ 153 0029 00       		.byte	0
+ 154 002a 0B       		.uleb128 0xb
+ 155 002b 0B       		.uleb128 0xb
+ 156 002c 3E       		.uleb128 0x3e
+ 157 002d 0B       		.uleb128 0xb
+ 158 002e 03       		.uleb128 0x3
+ 159 002f 08       		.uleb128 0x8
+ 160 0030 00       		.byte	0
+ 161 0031 00       		.byte	0
+ 162 0032 05       		.uleb128 0x5
+ 163 0033 34       		.uleb128 0x34
+ 164 0034 00       		.byte	0
+ 165 0035 03       		.uleb128 0x3
+ 166 0036 0E       		.uleb128 0xe
+ 167 0037 3A       		.uleb128 0x3a
+ 168 0038 0B       		.uleb128 0xb
+ 169 0039 3B       		.uleb128 0x3b
+ 170 003a 05       		.uleb128 0x5
+ 171 003b 49       		.uleb128 0x49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccf9tI4M.s 			page 4
+
+
+ 172 003c 13       		.uleb128 0x13
+ 173 003d 3F       		.uleb128 0x3f
+ 174 003e 19       		.uleb128 0x19
+ 175 003f 3C       		.uleb128 0x3c
+ 176 0040 19       		.uleb128 0x19
+ 177 0041 00       		.byte	0
+ 178 0042 00       		.byte	0
+ 179 0043 06       		.uleb128 0x6
+ 180 0044 35       		.uleb128 0x35
+ 181 0045 00       		.byte	0
+ 182 0046 49       		.uleb128 0x49
+ 183 0047 13       		.uleb128 0x13
+ 184 0048 00       		.byte	0
+ 185 0049 00       		.byte	0
+ 186 004a 00       		.byte	0
+ 187              		.section	.debug_aranges,"",%progbits
+ 188 0000 14000000 		.4byte	0x14
+ 189 0004 0200     		.2byte	0x2
+ 190 0006 00000000 		.4byte	.Ldebug_info0
+ 191 000a 04       		.byte	0x4
+ 192 000b 00       		.byte	0
+ 193 000c 0000     		.2byte	0
+ 194 000e 0000     		.2byte	0
+ 195 0010 00000000 		.4byte	0
+ 196 0014 00000000 		.4byte	0
+ 197              		.section	.debug_line,"",%progbits
+ 198              	.Ldebug_line0:
+ 199 0000 4D010000 		.section	.debug_str,"MS",%progbits,1
+ 199      02004701 
+ 199      00000201 
+ 199      FB0E0D00 
+ 199      01010101 
+ 200              	.LASF6:
+ 201 0000 6C6F6E67 		.ascii	"long long int\000"
+ 201      206C6F6E 
+ 201      6720696E 
+ 201      7400
+ 202              	.LASF15:
+ 203 000e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 203      43313120 
+ 203      352E342E 
+ 203      31203230 
+ 203      31363036 
+ 204 0041 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 204      20726576 
+ 204      6973696F 
+ 204      6E203233 
+ 204      37373135 
+ 205 0074 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 205      70202D6D 
+ 205      6670753D 
+ 205      66707634 
+ 205      2D73702D 
+ 206 00a7 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 206      6F6E7320 
+ 206      2D666661 
+ 206      742D6C74 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccf9tI4M.s 			page 5
+
+
+ 206      6F2D6F62 
+ 207              	.LASF5:
+ 208 00c1 6C6F6E67 		.ascii	"long unsigned int\000"
+ 208      20756E73 
+ 208      69676E65 
+ 208      6420696E 
+ 208      7400
+ 209              	.LASF7:
+ 210 00d3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 210      206C6F6E 
+ 210      6720756E 
+ 210      7369676E 
+ 210      65642069 
+ 211              	.LASF2:
+ 212 00ea 756E7369 		.ascii	"unsigned char\000"
+ 212      676E6564 
+ 212      20636861 
+ 212      7200
+ 213              	.LASF12:
+ 214 00f8 63686172 		.ascii	"char\000"
+ 214      00
+ 215              	.LASF18:
+ 216 00fd 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 216      52784275 
+ 216      66666572 
+ 216      00
+ 217              	.LASF16:
+ 218 010a 47656E65 		.ascii	"Generated_Source\\PSoC6\\BLE_config.c\000"
+ 218      72617465 
+ 218      645F536F 
+ 218      75726365 
+ 218      5C50536F 
+ 219              	.LASF17:
+ 220 012e 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\Handle\\Bike FSM_new.cyd"
+ 220      73657273 
+ 220      5C73616C 
+ 220      617A5C44 
+ 220      65736B74 
+ 221 015c 736E00   		.ascii	"sn\000"
+ 222              	.LASF14:
+ 223 015f 646F7562 		.ascii	"double\000"
+ 223      6C6500
+ 224              	.LASF4:
+ 225 0166 6C6F6E67 		.ascii	"long int\000"
+ 225      20696E74 
+ 225      00
+ 226              	.LASF3:
+ 227 016f 73686F72 		.ascii	"short unsigned int\000"
+ 227      7420756E 
+ 227      7369676E 
+ 227      65642069 
+ 227      6E7400
+ 228              	.LASF1:
+ 229 0182 7369676E 		.ascii	"signed char\000"
+ 229      65642063 
+ 229      68617200 
+ 230              	.LASF8:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccf9tI4M.s 			page 6
+
+
+ 231 018e 756E7369 		.ascii	"unsigned int\000"
+ 231      676E6564 
+ 231      20696E74 
+ 231      00
+ 232              	.LASF9:
+ 233 019b 5F5F696E 		.ascii	"__int32_t\000"
+ 233      7433325F 
+ 233      7400
+ 234              	.LASF13:
+ 235 01a5 666C6F61 		.ascii	"float\000"
+ 235      7400
+ 236              	.LASF0:
+ 237 01ab 73686F72 		.ascii	"short int\000"
+ 237      7420696E 
+ 237      7400
+ 238              	.LASF10:
+ 239 01b5 696E7433 		.ascii	"int32_t\000"
+ 239      325F7400 
+ 240              	.LASF11:
+ 241 01bd 73697A65 		.ascii	"sizetype\000"
+ 241      74797065 
+ 241      00
+ 242              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
