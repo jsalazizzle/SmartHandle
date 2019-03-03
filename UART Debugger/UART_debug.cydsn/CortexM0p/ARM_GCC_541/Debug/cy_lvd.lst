@@ -1,0 +1,2387 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cy_lvd.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Cy_LVD_Enable,"ax",%progbits
+  20              		.align	2
+  21              		.code	16
+  22              		.thumb_func
+  23              		.type	Cy_LVD_Enable, %function
+  24              	Cy_LVD_Enable:
+  25              	.LFB69:
+  26              		.file 1 "Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\lvd\\cy_lvd.h"
+   1:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \file cy_lvd.h
+   3:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \version 1.0.1
+   4:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * 
+   5:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * The header file of the LVD driver.
+   6:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+   7:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** ********************************************************************************
+   8:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \copyright
+   9:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Copyright 2017-2018, Cypress Semiconductor Corporation. All rights reserved.
+  10:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *******************************************************************************/
+  14:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+  15:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /**
+  16:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \addtogroup group_lvd
+  17:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \{
+  18:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * The LVD driver provides an API to manage the Low Voltage Detection block. 
+  19:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * The LVD block provides a status of currently observed VDDD voltage 
+  20:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * and triggers an interrupt when the observed voltage crosses an adjusted
+  21:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * threshold.
+  22:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  23:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \section group_lvd_configuration_considerations Configuration Considerations
+  24:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * To set up an LVD, configure the voltage threshold by the 
+  25:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \ref Cy_LVD_SetThreshold function, ensure that the LVD block itself and LVD 
+  26:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * interrupt are disabled (by the \ref Cy_LVD_Disable and 
+  27:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \ref Cy_LVD_ClearInterruptMask functions correspondingly) before changing the
+  28:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * threshold to prevent propagating a false interrupt. 
+  29:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Then configure interrupts by the \ref Cy_LVD_SetInterruptConfig function, do
+  30:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * not forget to initialise an interrupt handler (the interrupt source number 
+  31:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * is srss_interrupt_IRQn).
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 2
+
+
+  32:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Then enable LVD by the \ref Cy_LVD_Enable function, then wait for at least 20us
+  33:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * to get the circuit stabilized and clear the possible false interrupts by the
+  34:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \ref Cy_LVD_ClearInterrupt, and finally the LVD interrupt can be enabled by
+  35:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * the \ref Cy_LVD_SetInterruptMask function.
+  36:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  37:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * For example:
+  38:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \snippet lvd_1_0_sut_00.cydsn/main_cm4.c Cy_LVD_Snippet
+  39:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  40:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Note that the LVD circuit is available only in Active, LPACTIVE, Sleep, and
+  41:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * LPSLEEP power modes. If an LVD is required in Deep-Sleep mode, then the device
+  42:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * should be configured to periodically wake up from deep sleep using a
+  43:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Deep-Sleep wakeup source. This makes sure a LVD check is performed during
+  44:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Active/LPACTIVE mode.
+  45:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  46:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \section group_lvd_more_information More Information
+  47:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * See the LVD chapter of the device technical reference manual (TRM).
+  48:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  49:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \section group_lvd_MISRA MISRA-C Compliance
+  50:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * The LVD driver has the following specific deviations:
+  51:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * <table class="doxtable">
+  52:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   <tr>
+  53:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <th>MISRA Rule</th>
+  54:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <th>Rule Class (Required/Advisory)</th>
+  55:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <th>Rule Description</th>
+  56:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <th>Description of Deviation(s)</th>
+  57:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   </tr>
+  58:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   <tr>
+  59:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>10.3</td>
+  60:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>R</td>
+  61:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>A composite expression of 'essentially unsigned' type (%1s) is being
+  62:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         cast to a different type category, '%2s'.</td>
+  63:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>The value got from the bitfield physically can't exceed the enumeration
+  64:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         that describes this bitfield. So the code is safety by design.</td>
+  65:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   </tr>
+  66:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   <tr>
+  67:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>16.7</td>
+  68:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>A</td>
+  69:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>The object addressed by the pointer parameter '%s' is not modified and
+  70:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         so the pointer could be of type 'pointer to const'.</td>
+  71:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>The pointer parameter is not used or modified, as there is no need 
+  72:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         to do any actions with it. However, such parameter is 
+  73:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         required to be presented in the function, because the 
+  74:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         \ref Cy_LVD_DeepSleepCallback is a callback 
+  75:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         of \ref cy_en_syspm_status_t type.
+  76:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         The SysPM driver callback function type requires implementing the 
+  77:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         function with the next parameters and return value: <br>
+  78:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         cy_en_syspm_status_t (*Cy_SysPmCallback) 
+  79:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *         (cy_stc_syspm_callback_params_t *callbackParams);</td>
+  80:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   </tr>
+  81:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * </table>
+  82:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  83:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \section group_lvd_changelog Changelog
+  84:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * <table class="doxtable">
+  85:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   <tr><th>Version</th><th>Changes</th><th>Reason of Change</th></tr>
+  86:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   <tr>
+  87:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>1.0.1</td>
+  88:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>Added Low Power Callback section</td>
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 3
+
+
+  89:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>Documentation update and clarification</td>
+  90:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   </tr>
+  91:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   <tr>
+  92:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>1.0</td>
+  93:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td>Initial Version</td>
+  94:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *     <td></td>
+  95:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   </tr>
+  96:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * </table>
+  97:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+  98:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \defgroup group_lvd_macros Macros
+  99:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \defgroup group_lvd_functions Functions
+ 100:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   \{
+ 101:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *       \defgroup group_lvd_functions_syspm_callback  Low Power Callback
+ 102:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *   \}
+ 103:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \defgroup group_lvd_enums Enumerated Types
+ 104:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** */
+ 105:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 106:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 107:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #if !defined CY_LVD_H
+ 108:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_H
+ 109:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     
+ 110:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #include "syspm/cy_syspm.h"
+ 111:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 112:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #ifdef __cplusplus
+ 113:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** extern "C" {
+ 114:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #endif
+ 115:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 116:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \addtogroup group_lvd_macros
+ 117:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \{
+ 118:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** */
+ 119:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 120:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** The driver major version */
+ 121:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_DRV_VERSION_MAJOR       1
+ 122:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 123:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** The driver minor version */
+ 124:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_DRV_VERSION_MINOR       0
+ 125:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 126:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** The LVD driver identifier */
+ 127:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_ID                      (CY_PDL_DRV_ID(0x39U))
+ 128:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 129:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** Interrupt mask for \ref Cy_LVD_GetInterruptStatus(),
+ 130:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                        \ref Cy_LVD_GetInterruptMask() and 
+ 131:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                        \ref Cy_LVD_GetInterruptStatusMasked() */
+ 132:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_INTR        (SRSS_SRSS_INTR_HVLVD1_Msk)
+ 133:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 134:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \} group_lvd_macros */
+ 135:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 136:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 137:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \addtogroup group_lvd_enums
+ 138:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \{
+ 139:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** */
+ 140:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 141:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 142:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /**
+ 143:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****  * LVD reference voltage select.
+ 144:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****  */
+ 145:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** typedef enum
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 4
+
+
+ 146:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** {
+ 147:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_1_2_V    = 0x0U, /**<Select LVD reference voltage: 1.2V */
+ 148:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_1_4_V    = 0x1U, /**<Select LVD reference voltage: 1.4V */
+ 149:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_1_6_V    = 0x2U, /**<Select LVD reference voltage: 1.6V */
+ 150:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_1_8_V    = 0x3U, /**<Select LVD reference voltage: 1.8V */
+ 151:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_0_V    = 0x4U, /**<Select LVD reference voltage: 2.0V */
+ 152:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_1_V    = 0x5U, /**<Select LVD reference voltage: 2.1V */
+ 153:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_2_V    = 0x6U, /**<Select LVD reference voltage: 2.2V */
+ 154:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_3_V    = 0x7U, /**<Select LVD reference voltage: 2.3V */
+ 155:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_4_V    = 0x8U, /**<Select LVD reference voltage: 2.4V */
+ 156:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_5_V    = 0x9U, /**<Select LVD reference voltage: 2.5V */
+ 157:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_6_V    = 0xAU, /**<Select LVD reference voltage: 2.6V */
+ 158:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_7_V    = 0xBU, /**<Select LVD reference voltage: 2.7V */
+ 159:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_8_V    = 0xCU, /**<Select LVD reference voltage: 2.8V */
+ 160:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_2_9_V    = 0xDU, /**<Select LVD reference voltage: 2.9V */
+ 161:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_3_0_V    = 0xEU, /**<Select LVD reference voltage: 3.0V */
+ 162:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_THRESHOLD_3_1_V    = 0xFU  /**<Select LVD reference voltage: 3.1V */
+ 163:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** } cy_en_lvd_tripsel_t;
+ 164:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 165:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /**
+ 166:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****  * LVD interrupt configuration select.
+ 167:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****  */
+ 168:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** typedef enum
+ 169:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** {
+ 170:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_INTR_DISABLE    = 0x0U,  /**<Select LVD interrupt: disabled */
+ 171:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_INTR_RISING     = 0x1U,  /**<Select LVD interrupt: rising edge */
+ 172:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_INTR_FALLING    = 0x2U,  /**<Select LVD interrupt: falling edge */
+ 173:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_INTR_BOTH       = 0x3U,  /**<Select LVD interrupt: both edges */
+ 174:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** } cy_en_lvd_intr_config_t;
+ 175:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 176:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /**
+ 177:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****  * LVD output status.
+ 178:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****  */
+ 179:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** typedef enum
+ 180:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** {
+ 181:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_STATUS_BELOW   = 0x0U,  /**<The voltage is below the threshold */
+ 182:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     CY_LVD_STATUS_ABOVE   = 0x1U,  /**<The voltage is above the threshold */
+ 183:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** } cy_en_lvd_status_t;
+ 184:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 185:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \} group_lvd_enums */
+ 186:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 187:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \cond internal */
+ 188:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /* Macros for conditions used by CY_ASSERT calls */
+ 189:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_CHECK_TRIPSEL(threshold)  (((threshold) == CY_LVD_THRESHOLD_1_2_V) || \
+ 190:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_1_4_V) || \
+ 191:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_1_6_V) || \
+ 192:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_1_8_V) || \
+ 193:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_0_V) || \
+ 194:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_1_V) || \
+ 195:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_2_V) || \
+ 196:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_3_V) || \
+ 197:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_4_V) || \
+ 198:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_5_V) || \
+ 199:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_6_V) || \
+ 200:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_7_V) || \
+ 201:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_8_V) || \
+ 202:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_2_9_V) || \
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 5
+
+
+ 203:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_3_0_V) || \
+ 204:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((threshold) == CY_LVD_THRESHOLD_3_1_V))
+ 205:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           
+ 206:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** #define CY_LVD_CHECK_INTR_CFG(intrCfg)   (((intrCfg) == CY_LVD_INTR_DISABLE) || \
+ 207:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((intrCfg) == CY_LVD_INTR_RISING) || \
+ 208:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((intrCfg) == CY_LVD_INTR_FALLING) || \
+ 209:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****                                           ((intrCfg) == CY_LVD_INTR_BOTH))                         
+ 210:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \endcond */
+ 211:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 212:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /**
+ 213:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \addtogroup group_lvd_functions
+ 214:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \{
+ 215:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** */
+ 216:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_Enable(void);
+ 217:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_Disable(void);
+ 218:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_SetThreshold(cy_en_lvd_tripsel_t threshold);
+ 219:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE cy_en_lvd_status_t Cy_LVD_GetStatus(void);
+ 220:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE uint32_t Cy_LVD_GetInterruptStatus(void);
+ 221:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_ClearInterrupt(void);
+ 222:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_SetInterrupt(void);
+ 223:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE uint32_t Cy_LVD_GetInterruptMask(void);
+ 224:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_SetInterruptMask(void);
+ 225:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_ClearInterruptMask(void);
+ 226:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE uint32_t Cy_LVD_GetInterruptStatusMasked(void);
+ 227:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_SetInterruptConfig(cy_en_lvd_intr_config_t lvdInterruptConfig);
+ 228:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \addtogroup group_lvd_functions_syspm_callback
+ 229:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * The driver supports SysPm callback for Deep Sleep transition.
+ 230:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * \{
+ 231:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** */
+ 232:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** cy_en_syspm_status_t Cy_LVD_DeepSleepCallback(cy_stc_syspm_callback_params_t * callbackParams);
+ 233:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /** \} */
+ 234:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** 
+ 235:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** /*******************************************************************************
+ 236:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** * Function Name: Cy_LVD_Enable
+ 237:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** ****************************************************************************//**
+ 238:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+ 239:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *  Enables the output of the LVD block when the VDDD voltage is   
+ 240:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *  at or below the threshold.
+ 241:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *  See the Configuration Considerations section for details.
+ 242:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *
+ 243:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** *******************************************************************************/
+ 244:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** __STATIC_INLINE void Cy_LVD_Enable(void)
+ 245:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** {
+  27              		.loc 1 245 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 80B5     		push	{r7, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 7, -8
+  34              		.cfi_offset 14, -4
+  35 0002 00AF     		add	r7, sp, #0
+  36              		.cfi_def_cfa_register 7
+ 246:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h ****     SRSS->PWR_LVD_CTL |= SRSS_PWR_LVD_CTL_HVLVD1_EN_Msk;
+  37              		.loc 1 246 0
+  38 0004 044B     		ldr	r3, .L2
+  39 0006 044A     		ldr	r2, .L2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 6
+
+
+  40 0008 9268     		ldr	r2, [r2, #8]
+  41 000a 8021     		movs	r1, #128
+  42 000c 0A43     		orrs	r2, r1
+  43 000e 9A60     		str	r2, [r3, #8]
+ 247:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.h **** }
+  44              		.loc 1 247 0
+  45 0010 C046     		nop
+  46 0012 BD46     		mov	sp, r7
+  47              		@ sp needed
+  48 0014 80BD     		pop	{r7, pc}
+  49              	.L3:
+  50 0016 C046     		.align	2
+  51              	.L2:
+  52 0018 00002640 		.word	1076232192
+  53              		.cfi_endproc
+  54              	.LFE69:
+  55              		.size	Cy_LVD_Enable, .-Cy_LVD_Enable
+  56              		.section	.text.Cy_LVD_DeepSleepCallback,"ax",%progbits
+  57              		.align	2
+  58              		.global	Cy_LVD_DeepSleepCallback
+  59              		.code	16
+  60              		.thumb_func
+  61              		.type	Cy_LVD_DeepSleepCallback, %function
+  62              	Cy_LVD_DeepSleepCallback:
+  63              	.LFB81:
+  64              		.file 2 "Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\lvd\\cy_lvd.c"
+   1:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * \file cy_lvd.c
+   3:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * \version 1.0.1
+   4:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *
+   5:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * The source code file for the LVD driver.
+   6:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *
+   7:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** ********************************************************************************
+   8:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * \copyright
+   9:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * Copyright 2017-2018, Cypress Semiconductor Corporation. All rights reserved.
+  10:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *******************************************************************************/
+  14:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** 
+  15:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** #include "cy_lvd.h"
+  16:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** 
+  17:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** #ifdef __cplusplus
+  18:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** extern "C" {
+  19:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** #endif
+  20:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** 
+  21:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** 
+  22:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** /*******************************************************************************
+  23:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * Function Name: Cy_LVD_DeepSleepCallback
+  24:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** ****************************************************************************//**
+  25:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *
+  26:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * When this function is registered by \ref Cy_SysPm_RegisterCallback - it
+  27:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * automatically enables the LVD after wake up from Deep-Sleep mode.
+  28:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *
+  29:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * \param callbackParams The pointer to the callback parameters structure, 
+  30:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * see \ref cy_stc_syspm_callback_params_t.
+  31:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 7
+
+
+  32:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** * \return the SysPm callback status \ref cy_en_syspm_status_t.
+  33:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *
+  34:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** *******************************************************************************/
+  35:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** cy_en_syspm_status_t Cy_LVD_DeepSleepCallback(cy_stc_syspm_callback_params_t * callbackParams)
+  36:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** {
+  65              		.loc 2 36 0
+  66              		.cfi_startproc
+  67              		@ args = 0, pretend = 0, frame = 16
+  68              		@ frame_needed = 1, uses_anonymous_args = 0
+  69 0000 80B5     		push	{r7, lr}
+  70              		.cfi_def_cfa_offset 8
+  71              		.cfi_offset 7, -8
+  72              		.cfi_offset 14, -4
+  73 0002 84B0     		sub	sp, sp, #16
+  74              		.cfi_def_cfa_offset 24
+  75 0004 00AF     		add	r7, sp, #0
+  76              		.cfi_def_cfa_register 7
+  77 0006 7860     		str	r0, [r7, #4]
+  37:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     cy_en_syspm_status_t ret = CY_SYSPM_SUCCESS;
+  78              		.loc 2 37 0
+  79 0008 0023     		movs	r3, #0
+  80 000a FB60     		str	r3, [r7, #12]
+  38:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     
+  39:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     switch(callbackParams->mode)
+  81              		.loc 2 39 0
+  82 000c 7B68     		ldr	r3, [r7, #4]
+  83 000e 1B78     		ldrb	r3, [r3]
+  84 0010 042B     		cmp	r3, #4
+  85 0012 0CD0     		beq	.L11
+  86 0014 03DC     		bgt	.L7
+  87 0016 013B     		subs	r3, r3, #1
+  88 0018 012B     		cmp	r3, #1
+  89 001a 05D8     		bhi	.L5
+  40:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     {
+  41:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         case CY_SYSPM_CHECK_READY:
+  42:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         case CY_SYSPM_CHECK_FAIL:
+  43:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         case CY_SYSPM_BEFORE_TRANSITION:
+  44:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             break;
+  90              		.loc 2 44 0
+  91 001c 07E0     		b	.L11
+  92              	.L7:
+  39:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     {
+  93              		.loc 2 39 0
+  94 001e 082B     		cmp	r3, #8
+  95 0020 02D1     		bne	.L5
+  45:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             
+  46:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         case CY_SYSPM_AFTER_TRANSITION:
+  47:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             Cy_LVD_Enable();
+  96              		.loc 2 47 0
+  97 0022 FFF7FEFF 		bl	Cy_LVD_Enable
+  48:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             break;
+  98              		.loc 2 48 0
+  99 0026 03E0     		b	.L9
+ 100              	.L5:
+  49:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         
+  50:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         default:
+  51:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             ret = CY_SYSPM_FAIL;
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 8
+
+
+ 101              		.loc 2 51 0
+ 102 0028 044B     		ldr	r3, .L12
+ 103 002a FB60     		str	r3, [r7, #12]
+  52:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             break;
+ 104              		.loc 2 52 0
+ 105 002c 00E0     		b	.L9
+ 106              	.L11:
+  44:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****             
+ 107              		.loc 2 44 0
+ 108 002e C046     		nop
+ 109              	.L9:
+  53:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     }
+  54:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****         
+  55:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c ****     return(ret);
+ 110              		.loc 2 55 0
+ 111 0030 FB68     		ldr	r3, [r7, #12]
+  56:Generated_Source\PSoC6\pdl\drivers\peripheral\lvd/cy_lvd.c **** }
+ 112              		.loc 2 56 0
+ 113 0032 1800     		movs	r0, r3
+ 114 0034 BD46     		mov	sp, r7
+ 115 0036 04B0     		add	sp, sp, #16
+ 116              		@ sp needed
+ 117 0038 80BD     		pop	{r7, pc}
+ 118              	.L13:
+ 119 003a C046     		.align	2
+ 120              	.L12:
+ 121 003c FF004200 		.word	4325631
+ 122              		.cfi_endproc
+ 123              	.LFE81:
+ 124              		.size	Cy_LVD_DeepSleepCallback, .-Cy_LVD_DeepSleepCallback
+ 125              		.text
+ 126              	.Letext0:
+ 127              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 128              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 129              		.file 5 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/ip/cyip_srss.h"
+ 130              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syspm/cy_syspm.h"
+ 131              		.section	.debug_info,"",%progbits
+ 132              	.Ldebug_info0:
+ 133 0000 8B070000 		.4byte	0x78b
+ 134 0004 0400     		.2byte	0x4
+ 135 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 136 000a 04       		.byte	0x4
+ 137 000b 01       		.uleb128 0x1
+ 138 000c F8050000 		.4byte	.LASF112
+ 139 0010 0C       		.byte	0xc
+ 140 0011 D8020000 		.4byte	.LASF113
+ 141 0015 2A010000 		.4byte	.LASF114
+ 142 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 143 001d 00000000 		.4byte	0
+ 144 0021 00000000 		.4byte	.Ldebug_line0
+ 145 0025 02       		.uleb128 0x2
+ 146 0026 04       		.byte	0x4
+ 147 0027 05       		.byte	0x5
+ 148 0028 696E7400 		.ascii	"int\000"
+ 149 002c 03       		.uleb128 0x3
+ 150 002d 04       		.byte	0x4
+ 151 002e 07       		.byte	0x7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 9
+
+
+ 152 002f 11040000 		.4byte	.LASF0
+ 153 0033 03       		.uleb128 0x3
+ 154 0034 08       		.byte	0x8
+ 155 0035 05       		.byte	0x5
+ 156 0036 28020000 		.4byte	.LASF1
+ 157 003a 03       		.uleb128 0x3
+ 158 003b 08       		.byte	0x8
+ 159 003c 04       		.byte	0x4
+ 160 003d 4B030000 		.4byte	.LASF2
+ 161 0041 03       		.uleb128 0x3
+ 162 0042 02       		.byte	0x2
+ 163 0043 05       		.byte	0x5
+ 164 0044 EF010000 		.4byte	.LASF3
+ 165 0048 03       		.uleb128 0x3
+ 166 0049 01       		.byte	0x1
+ 167 004a 08       		.byte	0x8
+ 168 004b 64030000 		.4byte	.LASF4
+ 169 004f 03       		.uleb128 0x3
+ 170 0050 01       		.byte	0x1
+ 171 0051 06       		.byte	0x6
+ 172 0052 59000000 		.4byte	.LASF5
+ 173 0056 03       		.uleb128 0x3
+ 174 0057 02       		.byte	0x2
+ 175 0058 07       		.byte	0x7
+ 176 0059 67040000 		.4byte	.LASF6
+ 177 005d 03       		.uleb128 0x3
+ 178 005e 04       		.byte	0x4
+ 179 005f 05       		.byte	0x5
+ 180 0060 6A020000 		.4byte	.LASF7
+ 181 0064 04       		.uleb128 0x4
+ 182 0065 CB000000 		.4byte	.LASF10
+ 183 0069 03       		.byte	0x3
+ 184 006a 41       		.byte	0x41
+ 185 006b 6F000000 		.4byte	0x6f
+ 186 006f 03       		.uleb128 0x3
+ 187 0070 04       		.byte	0x4
+ 188 0071 07       		.byte	0x7
+ 189 0072 76050000 		.4byte	.LASF8
+ 190 0076 03       		.uleb128 0x3
+ 191 0077 08       		.byte	0x8
+ 192 0078 07       		.byte	0x7
+ 193 0079 C7030000 		.4byte	.LASF9
+ 194 007d 04       		.uleb128 0x4
+ 195 007e DE030000 		.4byte	.LASF11
+ 196 0082 04       		.byte	0x4
+ 197 0083 30       		.byte	0x30
+ 198 0084 64000000 		.4byte	0x64
+ 199 0088 03       		.uleb128 0x3
+ 200 0089 04       		.byte	0x4
+ 201 008a 07       		.byte	0x7
+ 202 008b 86000000 		.4byte	.LASF12
+ 203 008f 05       		.uleb128 0x5
+ 204 0090 7D000000 		.4byte	0x7d
+ 205 0094 06       		.uleb128 0x6
+ 206 0095 8F000000 		.4byte	0x8f
+ 207 0099 07       		.uleb128 0x7
+ 208 009a 94000000 		.4byte	0x94
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 10
+
+
+ 209 009e A9000000 		.4byte	0xa9
+ 210 00a2 08       		.uleb128 0x8
+ 211 00a3 88000000 		.4byte	0x88
+ 212 00a7 01       		.byte	0x1
+ 213 00a8 00       		.byte	0
+ 214 00a9 07       		.uleb128 0x7
+ 215 00aa 94000000 		.4byte	0x94
+ 216 00ae B9000000 		.4byte	0xb9
+ 217 00b2 08       		.uleb128 0x8
+ 218 00b3 88000000 		.4byte	0x88
+ 219 00b7 07       		.byte	0x7
+ 220 00b8 00       		.byte	0
+ 221 00b9 07       		.uleb128 0x7
+ 222 00ba 8F000000 		.4byte	0x8f
+ 223 00be C9000000 		.4byte	0xc9
+ 224 00c2 08       		.uleb128 0x8
+ 225 00c3 88000000 		.4byte	0x88
+ 226 00c7 0F       		.byte	0xf
+ 227 00c8 00       		.byte	0
+ 228 00c9 07       		.uleb128 0x7
+ 229 00ca 94000000 		.4byte	0x94
+ 230 00ce D9000000 		.4byte	0xd9
+ 231 00d2 08       		.uleb128 0x8
+ 232 00d3 88000000 		.4byte	0x88
+ 233 00d7 2F       		.byte	0x2f
+ 234 00d8 00       		.byte	0
+ 235 00d9 07       		.uleb128 0x7
+ 236 00da 94000000 		.4byte	0x94
+ 237 00de E9000000 		.4byte	0xe9
+ 238 00e2 08       		.uleb128 0x8
+ 239 00e3 88000000 		.4byte	0x88
+ 240 00e7 0F       		.byte	0xf
+ 241 00e8 00       		.byte	0
+ 242 00e9 07       		.uleb128 0x7
+ 243 00ea 94000000 		.4byte	0x94
+ 244 00ee F9000000 		.4byte	0xf9
+ 245 00f2 08       		.uleb128 0x8
+ 246 00f3 88000000 		.4byte	0x88
+ 247 00f7 04       		.byte	0x4
+ 248 00f8 00       		.byte	0
+ 249 00f9 07       		.uleb128 0x7
+ 250 00fa 94000000 		.4byte	0x94
+ 251 00fe 09010000 		.4byte	0x109
+ 252 0102 08       		.uleb128 0x8
+ 253 0103 88000000 		.4byte	0x88
+ 254 0107 1A       		.byte	0x1a
+ 255 0108 00       		.byte	0
+ 256 0109 07       		.uleb128 0x7
+ 257 010a 94000000 		.4byte	0x94
+ 258 010e 19010000 		.4byte	0x119
+ 259 0112 08       		.uleb128 0x8
+ 260 0113 88000000 		.4byte	0x88
+ 261 0117 1C       		.byte	0x1c
+ 262 0118 00       		.byte	0
+ 263 0119 09       		.uleb128 0x9
+ 264 011a 40       		.byte	0x40
+ 265 011b 05       		.byte	0x5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 11
+
+
+ 266 011c 22       		.byte	0x22
+ 267 011d B2010000 		.4byte	0x1b2
+ 268 0121 0A       		.uleb128 0xa
+ 269 0122 D2060000 		.4byte	.LASF13
+ 270 0126 05       		.byte	0x5
+ 271 0127 23       		.byte	0x23
+ 272 0128 94000000 		.4byte	0x94
+ 273 012c 00       		.byte	0
+ 274 012d 0A       		.uleb128 0xa
+ 275 012e 7A040000 		.4byte	.LASF14
+ 276 0132 05       		.byte	0x5
+ 277 0133 24       		.byte	0x24
+ 278 0134 8F000000 		.4byte	0x8f
+ 279 0138 04       		.byte	0x4
+ 280 0139 0A       		.uleb128 0xa
+ 281 013a 04070000 		.4byte	.LASF15
+ 282 013e 05       		.byte	0x5
+ 283 013f 25       		.byte	0x25
+ 284 0140 8F000000 		.4byte	0x8f
+ 285 0144 08       		.byte	0x8
+ 286 0145 0A       		.uleb128 0xa
+ 287 0146 36020000 		.4byte	.LASF16
+ 288 014a 05       		.byte	0x5
+ 289 014b 26       		.byte	0x26
+ 290 014c 8F000000 		.4byte	0x8f
+ 291 0150 0C       		.byte	0xc
+ 292 0151 0A       		.uleb128 0xa
+ 293 0152 C5060000 		.4byte	.LASF17
+ 294 0156 05       		.byte	0x5
+ 295 0157 27       		.byte	0x27
+ 296 0158 8F000000 		.4byte	0x8f
+ 297 015c 10       		.byte	0x10
+ 298 015d 0A       		.uleb128 0xa
+ 299 015e 08010000 		.4byte	.LASF18
+ 300 0162 05       		.byte	0x5
+ 301 0163 28       		.byte	0x28
+ 302 0164 8F000000 		.4byte	0x8f
+ 303 0168 14       		.byte	0x14
+ 304 0169 0A       		.uleb128 0xa
+ 305 016a 4F070000 		.4byte	.LASF19
+ 306 016e 05       		.byte	0x5
+ 307 016f 29       		.byte	0x29
+ 308 0170 8F000000 		.4byte	0x8f
+ 309 0174 18       		.byte	0x18
+ 310 0175 0A       		.uleb128 0xa
+ 311 0176 EA000000 		.4byte	.LASF20
+ 312 017a 05       		.byte	0x5
+ 313 017b 2A       		.byte	0x2a
+ 314 017c 8F000000 		.4byte	0x8f
+ 315 0180 1C       		.byte	0x1c
+ 316 0181 0A       		.uleb128 0xa
+ 317 0182 A0020000 		.4byte	.LASF21
+ 318 0186 05       		.byte	0x5
+ 319 0187 2B       		.byte	0x2b
+ 320 0188 8F000000 		.4byte	0x8f
+ 321 018c 20       		.byte	0x20
+ 322 018d 0A       		.uleb128 0xa
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 12
+
+
+ 323 018e DD010000 		.4byte	.LASF22
+ 324 0192 05       		.byte	0x5
+ 325 0193 2C       		.byte	0x2c
+ 326 0194 94000000 		.4byte	0x94
+ 327 0198 24       		.byte	0x24
+ 328 0199 0A       		.uleb128 0xa
+ 329 019a ED050000 		.4byte	.LASF23
+ 330 019e 05       		.byte	0x5
+ 331 019f 2D       		.byte	0x2d
+ 332 01a0 8F000000 		.4byte	0x8f
+ 333 01a4 28       		.byte	0x28
+ 334 01a5 0A       		.uleb128 0xa
+ 335 01a6 32050000 		.4byte	.LASF24
+ 336 01aa 05       		.byte	0x5
+ 337 01ab 2E       		.byte	0x2e
+ 338 01ac B7010000 		.4byte	0x1b7
+ 339 01b0 2C       		.byte	0x2c
+ 340 01b1 00       		.byte	0
+ 341 01b2 05       		.uleb128 0x5
+ 342 01b3 E9000000 		.4byte	0xe9
+ 343 01b7 06       		.uleb128 0x6
+ 344 01b8 B2010000 		.4byte	0x1b2
+ 345 01bc 04       		.uleb128 0x4
+ 346 01bd B9000000 		.4byte	.LASF25
+ 347 01c1 05       		.byte	0x5
+ 348 01c2 2F       		.byte	0x2f
+ 349 01c3 19010000 		.4byte	0x119
+ 350 01c7 0B       		.uleb128 0xb
+ 351 01c8 30FF     		.2byte	0xff30
+ 352 01ca 05       		.byte	0x5
+ 353 01cb 34       		.byte	0x34
+ 354 01cc 3B050000 		.4byte	0x53b
+ 355 01d0 0A       		.uleb128 0xa
+ 356 01d1 BF030000 		.4byte	.LASF26
+ 357 01d5 05       		.byte	0x5
+ 358 01d6 35       		.byte	0x35
+ 359 01d7 8F000000 		.4byte	0x8f
+ 360 01db 00       		.byte	0
+ 361 01dc 0A       		.uleb128 0xa
+ 362 01dd 8A060000 		.4byte	.LASF27
+ 363 01e1 05       		.byte	0x5
+ 364 01e2 36       		.byte	0x36
+ 365 01e3 8F000000 		.4byte	0x8f
+ 366 01e7 04       		.byte	0x4
+ 367 01e8 0A       		.uleb128 0xa
+ 368 01e9 3F000000 		.4byte	.LASF28
+ 369 01ed 05       		.byte	0x5
+ 370 01ee 37       		.byte	0x37
+ 371 01ef 8F000000 		.4byte	0x8f
+ 372 01f3 08       		.byte	0x8
+ 373 01f4 0A       		.uleb128 0xa
+ 374 01f5 D2060000 		.4byte	.LASF13
+ 375 01f9 05       		.byte	0x5
+ 376 01fa 38       		.byte	0x38
+ 377 01fb 40050000 		.4byte	0x540
+ 378 01ff 0C       		.byte	0xc
+ 379 0200 0A       		.uleb128 0xa
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 13
+
+
+ 380 0201 1D010000 		.4byte	.LASF29
+ 381 0205 05       		.byte	0x5
+ 382 0206 39       		.byte	0x39
+ 383 0207 8F000000 		.4byte	0x8f
+ 384 020b 14       		.byte	0x14
+ 385 020c 0A       		.uleb128 0xa
+ 386 020d 3E040000 		.4byte	.LASF30
+ 387 0211 05       		.byte	0x5
+ 388 0212 3A       		.byte	0x3a
+ 389 0213 8F000000 		.4byte	0x8f
+ 390 0217 18       		.byte	0x18
+ 391 0218 0A       		.uleb128 0xa
+ 392 0219 5B020000 		.4byte	.LASF31
+ 393 021d 05       		.byte	0x5
+ 394 021e 3B       		.byte	0x3b
+ 395 021f 94000000 		.4byte	0x94
+ 396 0223 1C       		.byte	0x1c
+ 397 0224 0A       		.uleb128 0xa
+ 398 0225 32050000 		.4byte	.LASF24
+ 399 0229 05       		.byte	0x5
+ 400 022a 3C       		.byte	0x3c
+ 401 022b 5A050000 		.4byte	0x55a
+ 402 022f 20       		.byte	0x20
+ 403 0230 0A       		.uleb128 0xa
+ 404 0231 57030000 		.4byte	.LASF32
+ 405 0235 05       		.byte	0x5
+ 406 0236 3D       		.byte	0x3d
+ 407 0237 5F050000 		.4byte	0x55f
+ 408 023b 80       		.byte	0x80
+ 409 023c 0A       		.uleb128 0xa
+ 410 023d 3C050000 		.4byte	.LASF33
+ 411 0241 05       		.byte	0x5
+ 412 0242 3E       		.byte	0x3e
+ 413 0243 69050000 		.4byte	0x569
+ 414 0247 C0       		.byte	0xc0
+ 415 0248 0C       		.uleb128 0xc
+ 416 0249 F9010000 		.4byte	.LASF34
+ 417 024d 05       		.byte	0x5
+ 418 024e 3F       		.byte	0x3f
+ 419 024f 8F000000 		.4byte	0x8f
+ 420 0253 8001     		.2byte	0x180
+ 421 0255 0C       		.uleb128 0xc
+ 422 0256 2A050000 		.4byte	.LASF35
+ 423 025a 05       		.byte	0x5
+ 424 025b 40       		.byte	0x40
+ 425 025c 8F000000 		.4byte	0x8f
+ 426 0260 8401     		.2byte	0x184
+ 427 0262 0C       		.uleb128 0xc
+ 428 0263 42020000 		.4byte	.LASF36
+ 429 0267 05       		.byte	0x5
+ 430 0268 41       		.byte	0x41
+ 431 0269 8F000000 		.4byte	0x8f
+ 432 026d 8801     		.2byte	0x188
+ 433 026f 0C       		.uleb128 0xc
+ 434 0270 46050000 		.4byte	.LASF37
+ 435 0274 05       		.byte	0x5
+ 436 0275 42       		.byte	0x42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 14
+
+
+ 437 0276 73050000 		.4byte	0x573
+ 438 027a 8C01     		.2byte	0x18c
+ 439 027c 0C       		.uleb128 0xc
+ 440 027d AD050000 		.4byte	.LASF38
+ 441 0281 05       		.byte	0x5
+ 442 0282 43       		.byte	0x43
+ 443 0283 78050000 		.4byte	0x578
+ 444 0287 0002     		.2byte	0x200
+ 445 0289 0C       		.uleb128 0xc
+ 446 028a 91020000 		.4byte	.LASF39
+ 447 028e 05       		.byte	0x5
+ 448 028f 44       		.byte	0x44
+ 449 0290 88050000 		.4byte	0x588
+ 450 0294 0003     		.2byte	0x300
+ 451 0296 0C       		.uleb128 0xc
+ 452 0297 01020000 		.4byte	.LASF40
+ 453 029b 05       		.byte	0x5
+ 454 029c 45       		.byte	0x45
+ 455 029d 8D050000 		.4byte	0x58d
+ 456 02a1 4003     		.2byte	0x340
+ 457 02a3 0C       		.uleb128 0xc
+ 458 02a4 BF040000 		.4byte	.LASF41
+ 459 02a8 05       		.byte	0x5
+ 460 02a9 46       		.byte	0x46
+ 461 02aa 92050000 		.4byte	0x592
+ 462 02ae 8003     		.2byte	0x380
+ 463 02b0 0C       		.uleb128 0xc
+ 464 02b1 57010000 		.4byte	.LASF42
+ 465 02b5 05       		.byte	0x5
+ 466 02b6 47       		.byte	0x47
+ 467 02b7 AC050000 		.4byte	0x5ac
+ 468 02bb C003     		.2byte	0x3c0
+ 469 02bd 0C       		.uleb128 0xc
+ 470 02be 12010000 		.4byte	.LASF43
+ 471 02c2 05       		.byte	0x5
+ 472 02c3 48       		.byte	0x48
+ 473 02c4 8F000000 		.4byte	0x8f
+ 474 02c8 0005     		.2byte	0x500
+ 475 02ca 0C       		.uleb128 0xc
+ 476 02cb C5050000 		.4byte	.LASF44
+ 477 02cf 05       		.byte	0x5
+ 478 02d0 49       		.byte	0x49
+ 479 02d1 8F000000 		.4byte	0x8f
+ 480 02d5 0405     		.2byte	0x504
+ 481 02d7 0C       		.uleb128 0xc
+ 482 02d8 61010000 		.4byte	.LASF45
+ 483 02dc 05       		.byte	0x5
+ 484 02dd 4A       		.byte	0x4a
+ 485 02de 94000000 		.4byte	0x94
+ 486 02e2 0805     		.2byte	0x508
+ 487 02e4 0C       		.uleb128 0xc
+ 488 02e5 82020000 		.4byte	.LASF46
+ 489 02e9 05       		.byte	0x5
+ 490 02ea 4B       		.byte	0x4b
+ 491 02eb 8F000000 		.4byte	0x8f
+ 492 02ef 0C05     		.2byte	0x50c
+ 493 02f1 0C       		.uleb128 0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 15
+
+
+ 494 02f2 C9020000 		.4byte	.LASF47
+ 495 02f6 05       		.byte	0x5
+ 496 02f7 4C       		.byte	0x4c
+ 497 02f8 8F000000 		.4byte	0x8f
+ 498 02fc 1005     		.2byte	0x510
+ 499 02fe 0C       		.uleb128 0xc
+ 500 02ff E7030000 		.4byte	.LASF48
+ 501 0303 05       		.byte	0x5
+ 502 0304 4D       		.byte	0x4d
+ 503 0305 8F000000 		.4byte	0x8f
+ 504 0309 1405     		.2byte	0x514
+ 505 030b 0C       		.uleb128 0xc
+ 506 030c 26070000 		.4byte	.LASF49
+ 507 0310 05       		.byte	0x5
+ 508 0311 4E       		.byte	0x4e
+ 509 0312 8F000000 		.4byte	0x8f
+ 510 0316 1805     		.2byte	0x518
+ 511 0318 0C       		.uleb128 0xc
+ 512 0319 D3050000 		.4byte	.LASF50
+ 513 031d 05       		.byte	0x5
+ 514 031e 4F       		.byte	0x4f
+ 515 031f 8F000000 		.4byte	0x8f
+ 516 0323 1C05     		.2byte	0x51c
+ 517 0325 0C       		.uleb128 0xc
+ 518 0326 E0050000 		.4byte	.LASF51
+ 519 032a 05       		.byte	0x5
+ 520 032b 50       		.byte	0x50
+ 521 032c 94000000 		.4byte	0x94
+ 522 0330 2005     		.2byte	0x520
+ 523 0332 0C       		.uleb128 0xc
+ 524 0333 88050000 		.4byte	.LASF52
+ 525 0337 05       		.byte	0x5
+ 526 0338 51       		.byte	0x51
+ 527 0339 B6050000 		.4byte	0x5b6
+ 528 033d 2405     		.2byte	0x524
+ 529 033f 0C       		.uleb128 0xc
+ 530 0340 17070000 		.4byte	.LASF53
+ 531 0344 05       		.byte	0x5
+ 532 0345 52       		.byte	0x52
+ 533 0346 8F000000 		.4byte	0x8f
+ 534 034a 2C05     		.2byte	0x52c
+ 535 034c 0C       		.uleb128 0xc
+ 536 034d 73020000 		.4byte	.LASF54
+ 537 0351 05       		.byte	0x5
+ 538 0352 53       		.byte	0x53
+ 539 0353 94000000 		.4byte	0x94
+ 540 0357 3005     		.2byte	0x530
+ 541 0359 0C       		.uleb128 0xc
+ 542 035a A3050000 		.4byte	.LASF55
+ 543 035e 05       		.byte	0x5
+ 544 035f 54       		.byte	0x54
+ 545 0360 C0050000 		.4byte	0x5c0
+ 546 0364 3405     		.2byte	0x534
+ 547 0366 0C       		.uleb128 0xc
+ 548 0367 EA040000 		.4byte	.LASF56
+ 549 036b 05       		.byte	0x5
+ 550 036c 55       		.byte	0x55
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 16
+
+
+ 551 036d 8F000000 		.4byte	0x8f
+ 552 0371 3C05     		.2byte	0x53c
+ 553 0373 0C       		.uleb128 0xc
+ 554 0374 92050000 		.4byte	.LASF57
+ 555 0378 05       		.byte	0x5
+ 556 0379 56       		.byte	0x56
+ 557 037a CA050000 		.4byte	0x5ca
+ 558 037e 4005     		.2byte	0x540
+ 559 0380 0C       		.uleb128 0xc
+ 560 0381 AA000000 		.4byte	.LASF58
+ 561 0385 05       		.byte	0x5
+ 562 0386 57       		.byte	0x57
+ 563 0387 8F000000 		.4byte	0x8f
+ 564 038b 8005     		.2byte	0x580
+ 565 038d 0C       		.uleb128 0xc
+ 566 038e FA040000 		.4byte	.LASF59
+ 567 0392 05       		.byte	0x5
+ 568 0393 58       		.byte	0x58
+ 569 0394 8F000000 		.4byte	0x8f
+ 570 0398 8405     		.2byte	0x584
+ 571 039a 0C       		.uleb128 0xc
+ 572 039b 0A050000 		.4byte	.LASF60
+ 573 039f 05       		.byte	0x5
+ 574 03a0 59       		.byte	0x59
+ 575 03a1 8F000000 		.4byte	0x8f
+ 576 03a5 8805     		.2byte	0x588
+ 577 03a7 0C       		.uleb128 0xc
+ 578 03a8 1A050000 		.4byte	.LASF61
+ 579 03ac 05       		.byte	0x5
+ 580 03ad 5A       		.byte	0x5a
+ 581 03ae 8F000000 		.4byte	0x8f
+ 582 03b2 8C05     		.2byte	0x58c
+ 583 03b4 0C       		.uleb128 0xc
+ 584 03b5 1E040000 		.4byte	.LASF62
+ 585 03b9 05       		.byte	0x5
+ 586 03ba 5B       		.byte	0x5b
+ 587 03bb 8F000000 		.4byte	0x8f
+ 588 03bf 9005     		.2byte	0x590
+ 589 03c1 0C       		.uleb128 0xc
+ 590 03c2 D3010000 		.4byte	.LASF63
+ 591 03c6 05       		.byte	0x5
+ 592 03c7 5C       		.byte	0x5c
+ 593 03c8 D4050000 		.4byte	0x5d4
+ 594 03cc 9405     		.2byte	0x594
+ 595 03ce 0C       		.uleb128 0xc
+ 596 03cf DB000000 		.4byte	.LASF64
+ 597 03d3 05       		.byte	0x5
+ 598 03d4 5D       		.byte	0x5d
+ 599 03d5 E9050000 		.4byte	0x5e9
+ 600 03d9 0006     		.2byte	0x600
+ 601 03db 0C       		.uleb128 0xc
+ 602 03dc 72030000 		.4byte	.LASF65
+ 603 03e0 05       		.byte	0x5
+ 604 03e1 5E       		.byte	0x5e
+ 605 03e2 94000000 		.4byte	0x94
+ 606 03e6 3C06     		.2byte	0x63c
+ 607 03e8 0C       		.uleb128 0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 17
+
+
+ 608 03e9 4C020000 		.4byte	.LASF66
+ 609 03ed 05       		.byte	0x5
+ 610 03ee 5F       		.byte	0x5f
+ 611 03ef EE050000 		.4byte	0x5ee
+ 612 03f3 4006     		.2byte	0x640
+ 613 03f5 0C       		.uleb128 0xc
+ 614 03f6 7D030000 		.4byte	.LASF67
+ 615 03fa 05       		.byte	0x5
+ 616 03fb 60       		.byte	0x60
+ 617 03fc 08060000 		.4byte	0x608
+ 618 0400 7C06     		.2byte	0x67c
+ 619 0402 0C       		.uleb128 0xc
+ 620 0403 E0040000 		.4byte	.LASF68
+ 621 0407 05       		.byte	0x5
+ 622 0408 61       		.byte	0x61
+ 623 0409 8F000000 		.4byte	0x8f
+ 624 040d 0007     		.2byte	0x700
+ 625 040f 0C       		.uleb128 0xc
+ 626 0410 98060000 		.4byte	.LASF69
+ 627 0414 05       		.byte	0x5
+ 628 0415 62       		.byte	0x62
+ 629 0416 8F000000 		.4byte	0x8f
+ 630 041a 0407     		.2byte	0x704
+ 631 041c 0C       		.uleb128 0xc
+ 632 041d F9000000 		.4byte	.LASF70
+ 633 0421 05       		.byte	0x5
+ 634 0422 63       		.byte	0x63
+ 635 0423 8F000000 		.4byte	0x8f
+ 636 0427 0807     		.2byte	0x708
+ 637 0429 0C       		.uleb128 0xc
+ 638 042a 4C040000 		.4byte	.LASF71
+ 639 042e 05       		.byte	0x5
+ 640 042f 64       		.byte	0x64
+ 641 0430 94000000 		.4byte	0x94
+ 642 0434 0C07     		.2byte	0x70c
+ 643 0436 0C       		.uleb128 0xc
+ 644 0437 6B010000 		.4byte	.LASF72
+ 645 043b 05       		.byte	0x5
+ 646 043c 65       		.byte	0x65
+ 647 043d 8F000000 		.4byte	0x8f
+ 648 0441 1007     		.2byte	0x710
+ 649 0443 0C       		.uleb128 0xc
+ 650 0444 88030000 		.4byte	.LASF73
+ 651 0448 05       		.byte	0x5
+ 652 0449 66       		.byte	0x66
+ 653 044a 22060000 		.4byte	0x622
+ 654 044e 1407     		.2byte	0x714
+ 655 0450 0C       		.uleb128 0xc
+ 656 0451 5D040000 		.4byte	.LASF74
+ 657 0455 05       		.byte	0x5
+ 658 0456 67       		.byte	0x67
+ 659 0457 8F000000 		.4byte	0x8f
+ 660 045b 0008     		.2byte	0x800
+ 661 045d 0C       		.uleb128 0xc
+ 662 045e BA050000 		.4byte	.LASF75
+ 663 0462 05       		.byte	0x5
+ 664 0463 68       		.byte	0x68
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 18
+
+
+ 665 0464 8F000000 		.4byte	0x8f
+ 666 0468 0408     		.2byte	0x804
+ 667 046a 0C       		.uleb128 0xc
+ 668 046b 93030000 		.4byte	.LASF76
+ 669 046f 05       		.byte	0x5
+ 670 0470 69       		.byte	0x69
+ 671 0471 3D060000 		.4byte	0x63d
+ 672 0475 0808     		.2byte	0x808
+ 673 0477 0C       		.uleb128 0xc
+ 674 0478 2D040000 		.4byte	.LASF77
+ 675 047c 05       		.byte	0x5
+ 676 047d 6A       		.byte	0x6a
+ 677 047e 8F000000 		.4byte	0x8f
+ 678 0482 007F     		.2byte	0x7f00
+ 679 0484 0C       		.uleb128 0xc
+ 680 0485 9A040000 		.4byte	.LASF78
+ 681 0489 05       		.byte	0x5
+ 682 048a 6B       		.byte	0x6b
+ 683 048b 8F000000 		.4byte	0x8f
+ 684 048f 047F     		.2byte	0x7f04
+ 685 0491 0C       		.uleb128 0xc
+ 686 0492 17020000 		.4byte	.LASF79
+ 687 0496 05       		.byte	0x5
+ 688 0497 6C       		.byte	0x6c
+ 689 0498 8F000000 		.4byte	0x8f
+ 690 049c 087F     		.2byte	0x7f08
+ 691 049e 0C       		.uleb128 0xc
+ 692 049f 27030000 		.4byte	.LASF80
+ 693 04a3 05       		.byte	0x5
+ 694 04a4 6D       		.byte	0x6d
+ 695 04a5 8F000000 		.4byte	0x8f
+ 696 04a9 0C7F     		.2byte	0x7f0c
+ 697 04ab 0C       		.uleb128 0xc
+ 698 04ac 9E030000 		.4byte	.LASF81
+ 699 04b0 05       		.byte	0x5
+ 700 04b1 6E       		.byte	0x6e
+ 701 04b2 47060000 		.4byte	0x647
+ 702 04b6 107F     		.2byte	0x7f10
+ 703 04b8 0C       		.uleb128 0xc
+ 704 04b9 1C000000 		.4byte	.LASF82
+ 705 04bd 05       		.byte	0x5
+ 706 04be 6F       		.byte	0x6f
+ 707 04bf 8F000000 		.4byte	0x8f
+ 708 04c3 307F     		.2byte	0x7f30
+ 709 04c5 0C       		.uleb128 0xc
+ 710 04c6 A9030000 		.4byte	.LASF83
+ 711 04ca 05       		.byte	0x5
+ 712 04cb 70       		.byte	0x70
+ 713 04cc 62060000 		.4byte	0x662
+ 714 04d0 347F     		.2byte	0x7f34
+ 715 04d2 0C       		.uleb128 0xc
+ 716 04d3 AE040000 		.4byte	.LASF84
+ 717 04d7 05       		.byte	0x5
+ 718 04d8 71       		.byte	0x71
+ 719 04d9 8F000000 		.4byte	0x8f
+ 720 04dd 10FF     		.2byte	0xff10
+ 721 04df 0C       		.uleb128 0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 19
+
+
+ 722 04e0 B4030000 		.4byte	.LASF85
+ 723 04e4 05       		.byte	0x5
+ 724 04e5 72       		.byte	0x72
+ 725 04e6 94000000 		.4byte	0x94
+ 726 04ea 14FF     		.2byte	0xff14
+ 727 04ec 0C       		.uleb128 0xc
+ 728 04ed CF040000 		.4byte	.LASF86
+ 729 04f1 05       		.byte	0x5
+ 730 04f2 73       		.byte	0x73
+ 731 04f3 8F000000 		.4byte	0x8f
+ 732 04f7 18FF     		.2byte	0xff18
+ 733 04f9 0C       		.uleb128 0xc
+ 734 04fa 13030000 		.4byte	.LASF87
+ 735 04fe 05       		.byte	0x5
+ 736 04ff 74       		.byte	0x74
+ 737 0500 8F000000 		.4byte	0x8f
+ 738 0504 1CFF     		.2byte	0xff1c
+ 739 0506 0C       		.uleb128 0xc
+ 740 0507 B0020000 		.4byte	.LASF88
+ 741 050b 05       		.byte	0x5
+ 742 050c 75       		.byte	0x75
+ 743 050d 8F000000 		.4byte	0x8f
+ 744 0511 20FF     		.2byte	0xff20
+ 745 0513 0C       		.uleb128 0xc
+ 746 0514 74000000 		.4byte	.LASF89
+ 747 0518 05       		.byte	0x5
+ 748 0519 76       		.byte	0x76
+ 749 051a 8F000000 		.4byte	0x8f
+ 750 051e 24FF     		.2byte	0xff24
+ 751 0520 0C       		.uleb128 0xc
+ 752 0521 50050000 		.4byte	.LASF90
+ 753 0525 05       		.byte	0x5
+ 754 0526 77       		.byte	0x77
+ 755 0527 8F000000 		.4byte	0x8f
+ 756 052b 28FF     		.2byte	0xff28
+ 757 052d 0C       		.uleb128 0xc
+ 758 052e 63050000 		.4byte	.LASF91
+ 759 0532 05       		.byte	0x5
+ 760 0533 78       		.byte	0x78
+ 761 0534 8F000000 		.4byte	0x8f
+ 762 0538 2CFF     		.2byte	0xff2c
+ 763 053a 00       		.byte	0
+ 764 053b 05       		.uleb128 0x5
+ 765 053c 99000000 		.4byte	0x99
+ 766 0540 06       		.uleb128 0x6
+ 767 0541 3B050000 		.4byte	0x53b
+ 768 0545 07       		.uleb128 0x7
+ 769 0546 94000000 		.4byte	0x94
+ 770 054a 55050000 		.4byte	0x555
+ 771 054e 08       		.uleb128 0x8
+ 772 054f 88000000 		.4byte	0x88
+ 773 0553 17       		.byte	0x17
+ 774 0554 00       		.byte	0
+ 775 0555 05       		.uleb128 0x5
+ 776 0556 45050000 		.4byte	0x545
+ 777 055a 06       		.uleb128 0x6
+ 778 055b 55050000 		.4byte	0x555
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 20
+
+
+ 779 055f 05       		.uleb128 0x5
+ 780 0560 B9000000 		.4byte	0xb9
+ 781 0564 05       		.uleb128 0x5
+ 782 0565 C9000000 		.4byte	0xc9
+ 783 0569 06       		.uleb128 0x6
+ 784 056a 64050000 		.4byte	0x564
+ 785 056e 05       		.uleb128 0x5
+ 786 056f 09010000 		.4byte	0x109
+ 787 0573 06       		.uleb128 0x6
+ 788 0574 6E050000 		.4byte	0x56e
+ 789 0578 07       		.uleb128 0x7
+ 790 0579 BC010000 		.4byte	0x1bc
+ 791 057d 88050000 		.4byte	0x588
+ 792 0581 08       		.uleb128 0x8
+ 793 0582 88000000 		.4byte	0x88
+ 794 0586 03       		.byte	0x3
+ 795 0587 00       		.byte	0
+ 796 0588 05       		.uleb128 0x5
+ 797 0589 B9000000 		.4byte	0xb9
+ 798 058d 05       		.uleb128 0x5
+ 799 058e B9000000 		.4byte	0xb9
+ 800 0592 05       		.uleb128 0x5
+ 801 0593 B9000000 		.4byte	0xb9
+ 802 0597 07       		.uleb128 0x7
+ 803 0598 94000000 		.4byte	0x94
+ 804 059c A7050000 		.4byte	0x5a7
+ 805 05a0 08       		.uleb128 0x8
+ 806 05a1 88000000 		.4byte	0x88
+ 807 05a5 4F       		.byte	0x4f
+ 808 05a6 00       		.byte	0
+ 809 05a7 05       		.uleb128 0x5
+ 810 05a8 97050000 		.4byte	0x597
+ 811 05ac 06       		.uleb128 0x6
+ 812 05ad A7050000 		.4byte	0x5a7
+ 813 05b1 05       		.uleb128 0x5
+ 814 05b2 99000000 		.4byte	0x99
+ 815 05b6 06       		.uleb128 0x6
+ 816 05b7 B1050000 		.4byte	0x5b1
+ 817 05bb 05       		.uleb128 0x5
+ 818 05bc 99000000 		.4byte	0x99
+ 819 05c0 06       		.uleb128 0x6
+ 820 05c1 BB050000 		.4byte	0x5bb
+ 821 05c5 05       		.uleb128 0x5
+ 822 05c6 D9000000 		.4byte	0xd9
+ 823 05ca 06       		.uleb128 0x6
+ 824 05cb C5050000 		.4byte	0x5c5
+ 825 05cf 05       		.uleb128 0x5
+ 826 05d0 F9000000 		.4byte	0xf9
+ 827 05d4 06       		.uleb128 0x6
+ 828 05d5 CF050000 		.4byte	0x5cf
+ 829 05d9 07       		.uleb128 0x7
+ 830 05da 8F000000 		.4byte	0x8f
+ 831 05de E9050000 		.4byte	0x5e9
+ 832 05e2 08       		.uleb128 0x8
+ 833 05e3 88000000 		.4byte	0x88
+ 834 05e7 0E       		.byte	0xe
+ 835 05e8 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 21
+
+
+ 836 05e9 05       		.uleb128 0x5
+ 837 05ea D9050000 		.4byte	0x5d9
+ 838 05ee 05       		.uleb128 0x5
+ 839 05ef D9050000 		.4byte	0x5d9
+ 840 05f3 07       		.uleb128 0x7
+ 841 05f4 94000000 		.4byte	0x94
+ 842 05f8 03060000 		.4byte	0x603
+ 843 05fc 08       		.uleb128 0x8
+ 844 05fd 88000000 		.4byte	0x88
+ 845 0601 20       		.byte	0x20
+ 846 0602 00       		.byte	0
+ 847 0603 05       		.uleb128 0x5
+ 848 0604 F3050000 		.4byte	0x5f3
+ 849 0608 06       		.uleb128 0x6
+ 850 0609 03060000 		.4byte	0x603
+ 851 060d 07       		.uleb128 0x7
+ 852 060e 94000000 		.4byte	0x94
+ 853 0612 1D060000 		.4byte	0x61d
+ 854 0616 08       		.uleb128 0x8
+ 855 0617 88000000 		.4byte	0x88
+ 856 061b 3A       		.byte	0x3a
+ 857 061c 00       		.byte	0
+ 858 061d 05       		.uleb128 0x5
+ 859 061e 0D060000 		.4byte	0x60d
+ 860 0622 06       		.uleb128 0x6
+ 861 0623 1D060000 		.4byte	0x61d
+ 862 0627 07       		.uleb128 0x7
+ 863 0628 94000000 		.4byte	0x94
+ 864 062c 38060000 		.4byte	0x638
+ 865 0630 0D       		.uleb128 0xd
+ 866 0631 88000000 		.4byte	0x88
+ 867 0635 BD1D     		.2byte	0x1dbd
+ 868 0637 00       		.byte	0
+ 869 0638 05       		.uleb128 0x5
+ 870 0639 27060000 		.4byte	0x627
+ 871 063d 06       		.uleb128 0x6
+ 872 063e 38060000 		.4byte	0x638
+ 873 0642 05       		.uleb128 0x5
+ 874 0643 A9000000 		.4byte	0xa9
+ 875 0647 06       		.uleb128 0x6
+ 876 0648 42060000 		.4byte	0x642
+ 877 064c 07       		.uleb128 0x7
+ 878 064d 94000000 		.4byte	0x94
+ 879 0651 5D060000 		.4byte	0x65d
+ 880 0655 0D       		.uleb128 0xd
+ 881 0656 88000000 		.4byte	0x88
+ 882 065a F61F     		.2byte	0x1ff6
+ 883 065c 00       		.byte	0
+ 884 065d 05       		.uleb128 0x5
+ 885 065e 4C060000 		.4byte	0x64c
+ 886 0662 06       		.uleb128 0x6
+ 887 0663 5D060000 		.4byte	0x65d
+ 888 0667 04       		.uleb128 0x4
+ 889 0668 A0000000 		.4byte	.LASF92
+ 890 066c 05       		.byte	0x5
+ 891 066d 79       		.byte	0x79
+ 892 066e C7010000 		.4byte	0x1c7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 22
+
+
+ 893 0672 03       		.uleb128 0x3
+ 894 0673 01       		.byte	0x1
+ 895 0674 08       		.byte	0x8
+ 896 0675 87040000 		.4byte	.LASF93
+ 897 0679 03       		.uleb128 0x3
+ 898 067a 04       		.byte	0x4
+ 899 067b 04       		.byte	0x4
+ 900 067c 11020000 		.4byte	.LASF94
+ 901 0680 03       		.uleb128 0x3
+ 902 0681 08       		.byte	0x8
+ 903 0682 04       		.byte	0x4
+ 904 0683 9C050000 		.4byte	.LASF95
+ 905 0687 0E       		.uleb128 0xe
+ 906 0688 04       		.byte	0x4
+ 907 0689 2C000000 		.4byte	0x2c
+ 908 068d 06       		.byte	0x6
+ 909 068e BF03     		.2byte	0x3bf
+ 910 0690 C8060000 		.4byte	0x6c8
+ 911 0694 0F       		.uleb128 0xf
+ 912 0695 2E000000 		.4byte	.LASF96
+ 913 0699 00       		.byte	0
+ 914 069a 10       		.uleb128 0x10
+ 915 069b AB010000 		.4byte	.LASF97
+ 916 069f 01004200 		.4byte	0x420001
+ 917 06a3 10       		.uleb128 0x10
+ 918 06a4 8F000000 		.4byte	.LASF98
+ 919 06a8 02004200 		.4byte	0x420002
+ 920 06ac 10       		.uleb128 0x10
+ 921 06ad 79010000 		.4byte	.LASF99
+ 922 06b1 03004200 		.4byte	0x420003
+ 923 06b5 10       		.uleb128 0x10
+ 924 06b6 39030000 		.4byte	.LASF100
+ 925 06ba 04004200 		.4byte	0x420004
+ 926 06be 10       		.uleb128 0x10
+ 927 06bf 4B000000 		.4byte	.LASF101
+ 928 06c3 FF004200 		.4byte	0x4200ff
+ 929 06c7 00       		.byte	0
+ 930 06c8 11       		.uleb128 0x11
+ 931 06c9 DB060000 		.4byte	.LASF102
+ 932 06cd 06       		.byte	0x6
+ 933 06ce C703     		.2byte	0x3c7
+ 934 06d0 87060000 		.4byte	0x687
+ 935 06d4 0E       		.uleb128 0xe
+ 936 06d5 01       		.byte	0x1
+ 937 06d6 48000000 		.4byte	0x48
+ 938 06da 06       		.byte	0x6
+ 939 06db 6304     		.2byte	0x463
+ 940 06dd FA060000 		.4byte	0x6fa
+ 941 06e1 0F       		.uleb128 0xf
+ 942 06e2 BE010000 		.4byte	.LASF103
+ 943 06e6 01       		.byte	0x1
+ 944 06e7 0F       		.uleb128 0xf
+ 945 06e8 F0060000 		.4byte	.LASF104
+ 946 06ec 02       		.byte	0x2
+ 947 06ed 0F       		.uleb128 0xf
+ 948 06ee 90010000 		.4byte	.LASF105
+ 949 06f2 04       		.byte	0x4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 23
+
+
+ 950 06f3 0F       		.uleb128 0xf
+ 951 06f4 F7030000 		.4byte	.LASF106
+ 952 06f8 08       		.byte	0x8
+ 953 06f9 00       		.byte	0
+ 954 06fa 11       		.uleb128 0x11
+ 955 06fb 00000000 		.4byte	.LASF107
+ 956 06ff 06       		.byte	0x6
+ 957 0700 6D04     		.2byte	0x46d
+ 958 0702 D4060000 		.4byte	0x6d4
+ 959 0706 12       		.uleb128 0x12
+ 960 0707 0C       		.byte	0xc
+ 961 0708 06       		.byte	0x6
+ 962 0709 8904     		.2byte	0x489
+ 963 070b 37070000 		.4byte	0x737
+ 964 070f 13       		.uleb128 0x13
+ 965 0710 D6000000 		.4byte	.LASF108
+ 966 0714 06       		.byte	0x6
+ 967 0715 8B04     		.2byte	0x48b
+ 968 0717 FA060000 		.4byte	0x6fa
+ 969 071b 00       		.byte	0
+ 970 071c 13       		.uleb128 0x13
+ 971 071d 12070000 		.4byte	.LASF109
+ 972 0721 06       		.byte	0x6
+ 973 0722 8F04     		.2byte	0x48f
+ 974 0724 37070000 		.4byte	0x737
+ 975 0728 04       		.byte	0x4
+ 976 0729 13       		.uleb128 0x13
+ 977 072a C1020000 		.4byte	.LASF110
+ 978 072e 06       		.byte	0x6
+ 979 072f 9104     		.2byte	0x491
+ 980 0731 37070000 		.4byte	0x737
+ 981 0735 08       		.byte	0x8
+ 982 0736 00       		.byte	0
+ 983 0737 14       		.uleb128 0x14
+ 984 0738 04       		.byte	0x4
+ 985 0739 11       		.uleb128 0x11
+ 986 073a A6060000 		.4byte	.LASF111
+ 987 073e 06       		.byte	0x6
+ 988 073f 9404     		.2byte	0x494
+ 989 0741 06070000 		.4byte	0x706
+ 990 0745 15       		.uleb128 0x15
+ 991 0746 04       		.byte	0x4
+ 992 0747 39070000 		.4byte	0x739
+ 993 074b 16       		.uleb128 0x16
+ 994 074c 8C040000 		.4byte	.LASF115
+ 995 0750 01       		.byte	0x1
+ 996 0751 F4       		.byte	0xf4
+ 997 0752 00000000 		.4byte	.LFB69
+ 998 0756 1C000000 		.4byte	.LFE69-.LFB69
+ 999 075a 01       		.uleb128 0x1
+ 1000 075b 9C       		.byte	0x9c
+ 1001 075c 17       		.uleb128 0x17
+ 1002 075d 36070000 		.4byte	.LASF116
+ 1003 0761 02       		.byte	0x2
+ 1004 0762 23       		.byte	0x23
+ 1005 0763 C8060000 		.4byte	0x6c8
+ 1006 0767 00000000 		.4byte	.LFB81
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 24
+
+
+ 1007 076b 40000000 		.4byte	.LFE81-.LFB81
+ 1008 076f 01       		.uleb128 0x1
+ 1009 0770 9C       		.byte	0x9c
+ 1010 0771 18       		.uleb128 0x18
+ 1011 0772 65000000 		.4byte	.LASF117
+ 1012 0776 02       		.byte	0x2
+ 1013 0777 23       		.byte	0x23
+ 1014 0778 45070000 		.4byte	0x745
+ 1015 077c 02       		.uleb128 0x2
+ 1016 077d 91       		.byte	0x91
+ 1017 077e 6C       		.sleb128 -20
+ 1018 077f 19       		.uleb128 0x19
+ 1019 0780 72657400 		.ascii	"ret\000"
+ 1020 0784 02       		.byte	0x2
+ 1021 0785 25       		.byte	0x25
+ 1022 0786 C8060000 		.4byte	0x6c8
+ 1023 078a 02       		.uleb128 0x2
+ 1024 078b 91       		.byte	0x91
+ 1025 078c 74       		.sleb128 -12
+ 1026 078d 00       		.byte	0
+ 1027 078e 00       		.byte	0
+ 1028              		.section	.debug_abbrev,"",%progbits
+ 1029              	.Ldebug_abbrev0:
+ 1030 0000 01       		.uleb128 0x1
+ 1031 0001 11       		.uleb128 0x11
+ 1032 0002 01       		.byte	0x1
+ 1033 0003 25       		.uleb128 0x25
+ 1034 0004 0E       		.uleb128 0xe
+ 1035 0005 13       		.uleb128 0x13
+ 1036 0006 0B       		.uleb128 0xb
+ 1037 0007 03       		.uleb128 0x3
+ 1038 0008 0E       		.uleb128 0xe
+ 1039 0009 1B       		.uleb128 0x1b
+ 1040 000a 0E       		.uleb128 0xe
+ 1041 000b 55       		.uleb128 0x55
+ 1042 000c 17       		.uleb128 0x17
+ 1043 000d 11       		.uleb128 0x11
+ 1044 000e 01       		.uleb128 0x1
+ 1045 000f 10       		.uleb128 0x10
+ 1046 0010 17       		.uleb128 0x17
+ 1047 0011 00       		.byte	0
+ 1048 0012 00       		.byte	0
+ 1049 0013 02       		.uleb128 0x2
+ 1050 0014 24       		.uleb128 0x24
+ 1051 0015 00       		.byte	0
+ 1052 0016 0B       		.uleb128 0xb
+ 1053 0017 0B       		.uleb128 0xb
+ 1054 0018 3E       		.uleb128 0x3e
+ 1055 0019 0B       		.uleb128 0xb
+ 1056 001a 03       		.uleb128 0x3
+ 1057 001b 08       		.uleb128 0x8
+ 1058 001c 00       		.byte	0
+ 1059 001d 00       		.byte	0
+ 1060 001e 03       		.uleb128 0x3
+ 1061 001f 24       		.uleb128 0x24
+ 1062 0020 00       		.byte	0
+ 1063 0021 0B       		.uleb128 0xb
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 25
+
+
+ 1064 0022 0B       		.uleb128 0xb
+ 1065 0023 3E       		.uleb128 0x3e
+ 1066 0024 0B       		.uleb128 0xb
+ 1067 0025 03       		.uleb128 0x3
+ 1068 0026 0E       		.uleb128 0xe
+ 1069 0027 00       		.byte	0
+ 1070 0028 00       		.byte	0
+ 1071 0029 04       		.uleb128 0x4
+ 1072 002a 16       		.uleb128 0x16
+ 1073 002b 00       		.byte	0
+ 1074 002c 03       		.uleb128 0x3
+ 1075 002d 0E       		.uleb128 0xe
+ 1076 002e 3A       		.uleb128 0x3a
+ 1077 002f 0B       		.uleb128 0xb
+ 1078 0030 3B       		.uleb128 0x3b
+ 1079 0031 0B       		.uleb128 0xb
+ 1080 0032 49       		.uleb128 0x49
+ 1081 0033 13       		.uleb128 0x13
+ 1082 0034 00       		.byte	0
+ 1083 0035 00       		.byte	0
+ 1084 0036 05       		.uleb128 0x5
+ 1085 0037 35       		.uleb128 0x35
+ 1086 0038 00       		.byte	0
+ 1087 0039 49       		.uleb128 0x49
+ 1088 003a 13       		.uleb128 0x13
+ 1089 003b 00       		.byte	0
+ 1090 003c 00       		.byte	0
+ 1091 003d 06       		.uleb128 0x6
+ 1092 003e 26       		.uleb128 0x26
+ 1093 003f 00       		.byte	0
+ 1094 0040 49       		.uleb128 0x49
+ 1095 0041 13       		.uleb128 0x13
+ 1096 0042 00       		.byte	0
+ 1097 0043 00       		.byte	0
+ 1098 0044 07       		.uleb128 0x7
+ 1099 0045 01       		.uleb128 0x1
+ 1100 0046 01       		.byte	0x1
+ 1101 0047 49       		.uleb128 0x49
+ 1102 0048 13       		.uleb128 0x13
+ 1103 0049 01       		.uleb128 0x1
+ 1104 004a 13       		.uleb128 0x13
+ 1105 004b 00       		.byte	0
+ 1106 004c 00       		.byte	0
+ 1107 004d 08       		.uleb128 0x8
+ 1108 004e 21       		.uleb128 0x21
+ 1109 004f 00       		.byte	0
+ 1110 0050 49       		.uleb128 0x49
+ 1111 0051 13       		.uleb128 0x13
+ 1112 0052 2F       		.uleb128 0x2f
+ 1113 0053 0B       		.uleb128 0xb
+ 1114 0054 00       		.byte	0
+ 1115 0055 00       		.byte	0
+ 1116 0056 09       		.uleb128 0x9
+ 1117 0057 13       		.uleb128 0x13
+ 1118 0058 01       		.byte	0x1
+ 1119 0059 0B       		.uleb128 0xb
+ 1120 005a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 26
+
+
+ 1121 005b 3A       		.uleb128 0x3a
+ 1122 005c 0B       		.uleb128 0xb
+ 1123 005d 3B       		.uleb128 0x3b
+ 1124 005e 0B       		.uleb128 0xb
+ 1125 005f 01       		.uleb128 0x1
+ 1126 0060 13       		.uleb128 0x13
+ 1127 0061 00       		.byte	0
+ 1128 0062 00       		.byte	0
+ 1129 0063 0A       		.uleb128 0xa
+ 1130 0064 0D       		.uleb128 0xd
+ 1131 0065 00       		.byte	0
+ 1132 0066 03       		.uleb128 0x3
+ 1133 0067 0E       		.uleb128 0xe
+ 1134 0068 3A       		.uleb128 0x3a
+ 1135 0069 0B       		.uleb128 0xb
+ 1136 006a 3B       		.uleb128 0x3b
+ 1137 006b 0B       		.uleb128 0xb
+ 1138 006c 49       		.uleb128 0x49
+ 1139 006d 13       		.uleb128 0x13
+ 1140 006e 38       		.uleb128 0x38
+ 1141 006f 0B       		.uleb128 0xb
+ 1142 0070 00       		.byte	0
+ 1143 0071 00       		.byte	0
+ 1144 0072 0B       		.uleb128 0xb
+ 1145 0073 13       		.uleb128 0x13
+ 1146 0074 01       		.byte	0x1
+ 1147 0075 0B       		.uleb128 0xb
+ 1148 0076 05       		.uleb128 0x5
+ 1149 0077 3A       		.uleb128 0x3a
+ 1150 0078 0B       		.uleb128 0xb
+ 1151 0079 3B       		.uleb128 0x3b
+ 1152 007a 0B       		.uleb128 0xb
+ 1153 007b 01       		.uleb128 0x1
+ 1154 007c 13       		.uleb128 0x13
+ 1155 007d 00       		.byte	0
+ 1156 007e 00       		.byte	0
+ 1157 007f 0C       		.uleb128 0xc
+ 1158 0080 0D       		.uleb128 0xd
+ 1159 0081 00       		.byte	0
+ 1160 0082 03       		.uleb128 0x3
+ 1161 0083 0E       		.uleb128 0xe
+ 1162 0084 3A       		.uleb128 0x3a
+ 1163 0085 0B       		.uleb128 0xb
+ 1164 0086 3B       		.uleb128 0x3b
+ 1165 0087 0B       		.uleb128 0xb
+ 1166 0088 49       		.uleb128 0x49
+ 1167 0089 13       		.uleb128 0x13
+ 1168 008a 38       		.uleb128 0x38
+ 1169 008b 05       		.uleb128 0x5
+ 1170 008c 00       		.byte	0
+ 1171 008d 00       		.byte	0
+ 1172 008e 0D       		.uleb128 0xd
+ 1173 008f 21       		.uleb128 0x21
+ 1174 0090 00       		.byte	0
+ 1175 0091 49       		.uleb128 0x49
+ 1176 0092 13       		.uleb128 0x13
+ 1177 0093 2F       		.uleb128 0x2f
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 27
+
+
+ 1178 0094 05       		.uleb128 0x5
+ 1179 0095 00       		.byte	0
+ 1180 0096 00       		.byte	0
+ 1181 0097 0E       		.uleb128 0xe
+ 1182 0098 04       		.uleb128 0x4
+ 1183 0099 01       		.byte	0x1
+ 1184 009a 0B       		.uleb128 0xb
+ 1185 009b 0B       		.uleb128 0xb
+ 1186 009c 49       		.uleb128 0x49
+ 1187 009d 13       		.uleb128 0x13
+ 1188 009e 3A       		.uleb128 0x3a
+ 1189 009f 0B       		.uleb128 0xb
+ 1190 00a0 3B       		.uleb128 0x3b
+ 1191 00a1 05       		.uleb128 0x5
+ 1192 00a2 01       		.uleb128 0x1
+ 1193 00a3 13       		.uleb128 0x13
+ 1194 00a4 00       		.byte	0
+ 1195 00a5 00       		.byte	0
+ 1196 00a6 0F       		.uleb128 0xf
+ 1197 00a7 28       		.uleb128 0x28
+ 1198 00a8 00       		.byte	0
+ 1199 00a9 03       		.uleb128 0x3
+ 1200 00aa 0E       		.uleb128 0xe
+ 1201 00ab 1C       		.uleb128 0x1c
+ 1202 00ac 0B       		.uleb128 0xb
+ 1203 00ad 00       		.byte	0
+ 1204 00ae 00       		.byte	0
+ 1205 00af 10       		.uleb128 0x10
+ 1206 00b0 28       		.uleb128 0x28
+ 1207 00b1 00       		.byte	0
+ 1208 00b2 03       		.uleb128 0x3
+ 1209 00b3 0E       		.uleb128 0xe
+ 1210 00b4 1C       		.uleb128 0x1c
+ 1211 00b5 06       		.uleb128 0x6
+ 1212 00b6 00       		.byte	0
+ 1213 00b7 00       		.byte	0
+ 1214 00b8 11       		.uleb128 0x11
+ 1215 00b9 16       		.uleb128 0x16
+ 1216 00ba 00       		.byte	0
+ 1217 00bb 03       		.uleb128 0x3
+ 1218 00bc 0E       		.uleb128 0xe
+ 1219 00bd 3A       		.uleb128 0x3a
+ 1220 00be 0B       		.uleb128 0xb
+ 1221 00bf 3B       		.uleb128 0x3b
+ 1222 00c0 05       		.uleb128 0x5
+ 1223 00c1 49       		.uleb128 0x49
+ 1224 00c2 13       		.uleb128 0x13
+ 1225 00c3 00       		.byte	0
+ 1226 00c4 00       		.byte	0
+ 1227 00c5 12       		.uleb128 0x12
+ 1228 00c6 13       		.uleb128 0x13
+ 1229 00c7 01       		.byte	0x1
+ 1230 00c8 0B       		.uleb128 0xb
+ 1231 00c9 0B       		.uleb128 0xb
+ 1232 00ca 3A       		.uleb128 0x3a
+ 1233 00cb 0B       		.uleb128 0xb
+ 1234 00cc 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 28
+
+
+ 1235 00cd 05       		.uleb128 0x5
+ 1236 00ce 01       		.uleb128 0x1
+ 1237 00cf 13       		.uleb128 0x13
+ 1238 00d0 00       		.byte	0
+ 1239 00d1 00       		.byte	0
+ 1240 00d2 13       		.uleb128 0x13
+ 1241 00d3 0D       		.uleb128 0xd
+ 1242 00d4 00       		.byte	0
+ 1243 00d5 03       		.uleb128 0x3
+ 1244 00d6 0E       		.uleb128 0xe
+ 1245 00d7 3A       		.uleb128 0x3a
+ 1246 00d8 0B       		.uleb128 0xb
+ 1247 00d9 3B       		.uleb128 0x3b
+ 1248 00da 05       		.uleb128 0x5
+ 1249 00db 49       		.uleb128 0x49
+ 1250 00dc 13       		.uleb128 0x13
+ 1251 00dd 38       		.uleb128 0x38
+ 1252 00de 0B       		.uleb128 0xb
+ 1253 00df 00       		.byte	0
+ 1254 00e0 00       		.byte	0
+ 1255 00e1 14       		.uleb128 0x14
+ 1256 00e2 0F       		.uleb128 0xf
+ 1257 00e3 00       		.byte	0
+ 1258 00e4 0B       		.uleb128 0xb
+ 1259 00e5 0B       		.uleb128 0xb
+ 1260 00e6 00       		.byte	0
+ 1261 00e7 00       		.byte	0
+ 1262 00e8 15       		.uleb128 0x15
+ 1263 00e9 0F       		.uleb128 0xf
+ 1264 00ea 00       		.byte	0
+ 1265 00eb 0B       		.uleb128 0xb
+ 1266 00ec 0B       		.uleb128 0xb
+ 1267 00ed 49       		.uleb128 0x49
+ 1268 00ee 13       		.uleb128 0x13
+ 1269 00ef 00       		.byte	0
+ 1270 00f0 00       		.byte	0
+ 1271 00f1 16       		.uleb128 0x16
+ 1272 00f2 2E       		.uleb128 0x2e
+ 1273 00f3 00       		.byte	0
+ 1274 00f4 03       		.uleb128 0x3
+ 1275 00f5 0E       		.uleb128 0xe
+ 1276 00f6 3A       		.uleb128 0x3a
+ 1277 00f7 0B       		.uleb128 0xb
+ 1278 00f8 3B       		.uleb128 0x3b
+ 1279 00f9 0B       		.uleb128 0xb
+ 1280 00fa 27       		.uleb128 0x27
+ 1281 00fb 19       		.uleb128 0x19
+ 1282 00fc 11       		.uleb128 0x11
+ 1283 00fd 01       		.uleb128 0x1
+ 1284 00fe 12       		.uleb128 0x12
+ 1285 00ff 06       		.uleb128 0x6
+ 1286 0100 40       		.uleb128 0x40
+ 1287 0101 18       		.uleb128 0x18
+ 1288 0102 9742     		.uleb128 0x2117
+ 1289 0104 19       		.uleb128 0x19
+ 1290 0105 00       		.byte	0
+ 1291 0106 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 29
+
+
+ 1292 0107 17       		.uleb128 0x17
+ 1293 0108 2E       		.uleb128 0x2e
+ 1294 0109 01       		.byte	0x1
+ 1295 010a 3F       		.uleb128 0x3f
+ 1296 010b 19       		.uleb128 0x19
+ 1297 010c 03       		.uleb128 0x3
+ 1298 010d 0E       		.uleb128 0xe
+ 1299 010e 3A       		.uleb128 0x3a
+ 1300 010f 0B       		.uleb128 0xb
+ 1301 0110 3B       		.uleb128 0x3b
+ 1302 0111 0B       		.uleb128 0xb
+ 1303 0112 27       		.uleb128 0x27
+ 1304 0113 19       		.uleb128 0x19
+ 1305 0114 49       		.uleb128 0x49
+ 1306 0115 13       		.uleb128 0x13
+ 1307 0116 11       		.uleb128 0x11
+ 1308 0117 01       		.uleb128 0x1
+ 1309 0118 12       		.uleb128 0x12
+ 1310 0119 06       		.uleb128 0x6
+ 1311 011a 40       		.uleb128 0x40
+ 1312 011b 18       		.uleb128 0x18
+ 1313 011c 9642     		.uleb128 0x2116
+ 1314 011e 19       		.uleb128 0x19
+ 1315 011f 00       		.byte	0
+ 1316 0120 00       		.byte	0
+ 1317 0121 18       		.uleb128 0x18
+ 1318 0122 05       		.uleb128 0x5
+ 1319 0123 00       		.byte	0
+ 1320 0124 03       		.uleb128 0x3
+ 1321 0125 0E       		.uleb128 0xe
+ 1322 0126 3A       		.uleb128 0x3a
+ 1323 0127 0B       		.uleb128 0xb
+ 1324 0128 3B       		.uleb128 0x3b
+ 1325 0129 0B       		.uleb128 0xb
+ 1326 012a 49       		.uleb128 0x49
+ 1327 012b 13       		.uleb128 0x13
+ 1328 012c 02       		.uleb128 0x2
+ 1329 012d 18       		.uleb128 0x18
+ 1330 012e 00       		.byte	0
+ 1331 012f 00       		.byte	0
+ 1332 0130 19       		.uleb128 0x19
+ 1333 0131 34       		.uleb128 0x34
+ 1334 0132 00       		.byte	0
+ 1335 0133 03       		.uleb128 0x3
+ 1336 0134 08       		.uleb128 0x8
+ 1337 0135 3A       		.uleb128 0x3a
+ 1338 0136 0B       		.uleb128 0xb
+ 1339 0137 3B       		.uleb128 0x3b
+ 1340 0138 0B       		.uleb128 0xb
+ 1341 0139 49       		.uleb128 0x49
+ 1342 013a 13       		.uleb128 0x13
+ 1343 013b 02       		.uleb128 0x2
+ 1344 013c 18       		.uleb128 0x18
+ 1345 013d 00       		.byte	0
+ 1346 013e 00       		.byte	0
+ 1347 013f 00       		.byte	0
+ 1348              		.section	.debug_aranges,"",%progbits
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 30
+
+
+ 1349 0000 24000000 		.4byte	0x24
+ 1350 0004 0200     		.2byte	0x2
+ 1351 0006 00000000 		.4byte	.Ldebug_info0
+ 1352 000a 04       		.byte	0x4
+ 1353 000b 00       		.byte	0
+ 1354 000c 0000     		.2byte	0
+ 1355 000e 0000     		.2byte	0
+ 1356 0010 00000000 		.4byte	.LFB69
+ 1357 0014 1C000000 		.4byte	.LFE69-.LFB69
+ 1358 0018 00000000 		.4byte	.LFB81
+ 1359 001c 40000000 		.4byte	.LFE81-.LFB81
+ 1360 0020 00000000 		.4byte	0
+ 1361 0024 00000000 		.4byte	0
+ 1362              		.section	.debug_ranges,"",%progbits
+ 1363              	.Ldebug_ranges0:
+ 1364 0000 00000000 		.4byte	.LFB69
+ 1365 0004 1C000000 		.4byte	.LFE69
+ 1366 0008 00000000 		.4byte	.LFB81
+ 1367 000c 40000000 		.4byte	.LFE81
+ 1368 0010 00000000 		.4byte	0
+ 1369 0014 00000000 		.4byte	0
+ 1370              		.section	.debug_line,"",%progbits
+ 1371              	.Ldebug_line0:
+ 1372 0000 0F020000 		.section	.debug_str,"MS",%progbits,1
+ 1372      0200D701 
+ 1372      00000201 
+ 1372      FB0E0D00 
+ 1372      01010101 
+ 1373              	.LASF107:
+ 1374 0000 63795F65 		.ascii	"cy_en_syspm_callback_mode_t\000"
+ 1374      6E5F7379 
+ 1374      73706D5F 
+ 1374      63616C6C 
+ 1374      6261636B 
+ 1375              	.LASF82:
+ 1376 001c 5057525F 		.ascii	"PWR_TRIM_WAKE_CTL\000"
+ 1376      5452494D 
+ 1376      5F57414B 
+ 1376      455F4354 
+ 1376      4C00
+ 1377              	.LASF96:
+ 1378 002e 43595F53 		.ascii	"CY_SYSPM_SUCCESS\000"
+ 1378      5953504D 
+ 1378      5F535543 
+ 1378      43455353 
+ 1378      00
+ 1379              	.LASF28:
+ 1380 003f 5057525F 		.ascii	"PWR_LVD_CTL\000"
+ 1380      4C56445F 
+ 1380      43544C00 
+ 1381              	.LASF101:
+ 1382 004b 43595F53 		.ascii	"CY_SYSPM_FAIL\000"
+ 1382      5953504D 
+ 1382      5F464149 
+ 1382      4C00
+ 1383              	.LASF5:
+ 1384 0059 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 31
+
+
+ 1384      65642063 
+ 1384      68617200 
+ 1385              	.LASF117:
+ 1386 0065 63616C6C 		.ascii	"callbackParams\000"
+ 1386      6261636B 
+ 1386      50617261 
+ 1386      6D7300
+ 1387              	.LASF89:
+ 1388 0074 434C4B5F 		.ascii	"CLK_TRIM_PILO_CTL\000"
+ 1388      5452494D 
+ 1388      5F50494C 
+ 1388      4F5F4354 
+ 1388      4C00
+ 1389              	.LASF12:
+ 1390 0086 73697A65 		.ascii	"sizetype\000"
+ 1390      74797065 
+ 1390      00
+ 1391              	.LASF98:
+ 1392 008f 43595F53 		.ascii	"CY_SYSPM_TIMEOUT\000"
+ 1392      5953504D 
+ 1392      5F54494D 
+ 1392      454F5554 
+ 1392      00
+ 1393              	.LASF92:
+ 1394 00a0 53525353 		.ascii	"SRSS_Type\000"
+ 1394      5F547970 
+ 1394      6500
+ 1395              	.LASF58:
+ 1396 00aa 434C4B5F 		.ascii	"CLK_FLL_CONFIG\000"
+ 1396      464C4C5F 
+ 1396      434F4E46 
+ 1396      494700
+ 1397              	.LASF25:
+ 1398 00b9 4D435744 		.ascii	"MCWDT_STRUCT_Type\000"
+ 1398      545F5354 
+ 1398      52554354 
+ 1398      5F547970 
+ 1398      6500
+ 1399              	.LASF10:
+ 1400 00cb 5F5F7569 		.ascii	"__uint32_t\000"
+ 1400      6E743332 
+ 1400      5F7400
+ 1401              	.LASF108:
+ 1402 00d6 6D6F6465 		.ascii	"mode\000"
+ 1402      00
+ 1403              	.LASF64:
+ 1404 00db 434C4B5F 		.ascii	"CLK_PLL_CONFIG\000"
+ 1404      504C4C5F 
+ 1404      434F4E46 
+ 1404      494700
+ 1405              	.LASF20:
+ 1406 00ea 4D435744 		.ascii	"MCWDT_INTR_SET\000"
+ 1406      545F494E 
+ 1406      54525F53 
+ 1406      455400
+ 1407              	.LASF70:
+ 1408 00f9 53525353 		.ascii	"SRSS_INTR_MASK\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 32
+
+
+ 1408      5F494E54 
+ 1408      525F4D41 
+ 1408      534B00
+ 1409              	.LASF18:
+ 1410 0108 4D435744 		.ascii	"MCWDT_CTL\000"
+ 1410      545F4354 
+ 1410      4C00
+ 1411              	.LASF43:
+ 1412 0112 434C4B5F 		.ascii	"CLK_SELECT\000"
+ 1412      53454C45 
+ 1412      435400
+ 1413              	.LASF29:
+ 1414 011d 5057525F 		.ascii	"PWR_BUCK_CTL\000"
+ 1414      4255434B 
+ 1414      5F43544C 
+ 1414      00
+ 1415              	.LASF114:
+ 1416 012a 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\UART\\UART_debug.cydsn\000"
+ 1416      73657273 
+ 1416      5C73616C 
+ 1416      617A5C44 
+ 1416      65736B74 
+ 1417              	.LASF42:
+ 1418 0157 52455345 		.ascii	"RESERVED4\000"
+ 1418      52564544 
+ 1418      3400
+ 1419              	.LASF45:
+ 1420 0161 52455345 		.ascii	"RESERVED5\000"
+ 1420      52564544 
+ 1420      3500
+ 1421              	.LASF72:
+ 1422 016b 53525353 		.ascii	"SRSS_INTR_CFG\000"
+ 1422      5F494E54 
+ 1422      525F4346 
+ 1422      4700
+ 1423              	.LASF99:
+ 1424 0179 43595F53 		.ascii	"CY_SYSPM_INVALID_STATE\000"
+ 1424      5953504D 
+ 1424      5F494E56 
+ 1424      414C4944 
+ 1424      5F535441 
+ 1425              	.LASF105:
+ 1426 0190 43595F53 		.ascii	"CY_SYSPM_BEFORE_TRANSITION\000"
+ 1426      5953504D 
+ 1426      5F424546 
+ 1426      4F52455F 
+ 1426      5452414E 
+ 1427              	.LASF97:
+ 1428 01ab 43595F53 		.ascii	"CY_SYSPM_BAD_PARAM\000"
+ 1428      5953504D 
+ 1428      5F424144 
+ 1428      5F504152 
+ 1428      414D00
+ 1429              	.LASF103:
+ 1430 01be 43595F53 		.ascii	"CY_SYSPM_CHECK_READY\000"
+ 1430      5953504D 
+ 1430      5F434845 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 33
+
+
+ 1430      434B5F52 
+ 1430      45414459 
+ 1431              	.LASF63:
+ 1432 01d3 52455345 		.ascii	"RESERVED9\000"
+ 1432      52564544 
+ 1432      3900
+ 1433              	.LASF22:
+ 1434 01dd 4D435744 		.ascii	"MCWDT_INTR_MASKED\000"
+ 1434      545F494E 
+ 1434      54525F4D 
+ 1434      41534B45 
+ 1434      4400
+ 1435              	.LASF3:
+ 1436 01ef 73686F72 		.ascii	"short int\000"
+ 1436      7420696E 
+ 1436      7400
+ 1437              	.LASF34:
+ 1438 01f9 5744545F 		.ascii	"WDT_CTL\000"
+ 1438      43544C00 
+ 1439              	.LASF40:
+ 1440 0201 434C4B5F 		.ascii	"CLK_PATH_SELECT\000"
+ 1440      50415448 
+ 1440      5F53454C 
+ 1440      45435400 
+ 1441              	.LASF94:
+ 1442 0211 666C6F61 		.ascii	"float\000"
+ 1442      7400
+ 1443              	.LASF79:
+ 1444 0217 434C4B5F 		.ascii	"CLK_TRIM_CCO_CTL\000"
+ 1444      5452494D 
+ 1444      5F43434F 
+ 1444      5F43544C 
+ 1444      00
+ 1445              	.LASF1:
+ 1446 0228 6C6F6E67 		.ascii	"long long int\000"
+ 1446      206C6F6E 
+ 1446      6720696E 
+ 1446      7400
+ 1447              	.LASF16:
+ 1448 0236 4D435744 		.ascii	"MCWDT_MATCH\000"
+ 1448      545F4D41 
+ 1448      54434800 
+ 1449              	.LASF36:
+ 1450 0242 5744545F 		.ascii	"WDT_MATCH\000"
+ 1450      4D415443 
+ 1450      4800
+ 1451              	.LASF66:
+ 1452 024c 434C4B5F 		.ascii	"CLK_PLL_STATUS\000"
+ 1452      504C4C5F 
+ 1452      53544154 
+ 1452      555300
+ 1453              	.LASF31:
+ 1454 025b 5057525F 		.ascii	"PWR_LVD_STATUS\000"
+ 1454      4C56445F 
+ 1454      53544154 
+ 1454      555300
+ 1455              	.LASF7:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 34
+
+
+ 1456 026a 6C6F6E67 		.ascii	"long int\000"
+ 1456      20696E74 
+ 1456      00
+ 1457              	.LASF54:
+ 1458 0273 434C4B5F 		.ascii	"CLK_ECO_STATUS\000"
+ 1458      45434F5F 
+ 1458      53544154 
+ 1458      555300
+ 1459              	.LASF46:
+ 1460 0282 434C4B5F 		.ascii	"CLK_ILO_CONFIG\000"
+ 1460      494C4F5F 
+ 1460      434F4E46 
+ 1460      494700
+ 1461              	.LASF39:
+ 1462 0291 434C4B5F 		.ascii	"CLK_DSI_SELECT\000"
+ 1462      4453495F 
+ 1462      53454C45 
+ 1462      435400
+ 1463              	.LASF21:
+ 1464 02a0 4D435744 		.ascii	"MCWDT_INTR_MASK\000"
+ 1464      545F494E 
+ 1464      54525F4D 
+ 1464      41534B00 
+ 1465              	.LASF88:
+ 1466 02b0 434C4B5F 		.ascii	"CLK_TRIM_ECO_CTL\000"
+ 1466      5452494D 
+ 1466      5F45434F 
+ 1466      5F43544C 
+ 1466      00
+ 1467              	.LASF110:
+ 1468 02c1 636F6E74 		.ascii	"context\000"
+ 1468      65787400 
+ 1469              	.LASF47:
+ 1470 02c9 434C4B5F 		.ascii	"CLK_IMO_CONFIG\000"
+ 1470      494D4F5F 
+ 1470      434F4E46 
+ 1470      494700
+ 1471              	.LASF113:
+ 1472 02d8 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\"
+ 1472      72617465 
+ 1472      645F536F 
+ 1472      75726365 
+ 1472      5C50536F 
+ 1473 0306 6C76645C 		.ascii	"lvd\\cy_lvd.c\000"
+ 1473      63795F6C 
+ 1473      76642E63 
+ 1473      00
+ 1474              	.LASF87:
+ 1475 0313 5057525F 		.ascii	"PWR_TRIM_PWRSYS_CTL\000"
+ 1475      5452494D 
+ 1475      5F505752 
+ 1475      5359535F 
+ 1475      43544C00 
+ 1476              	.LASF80:
+ 1477 0327 434C4B5F 		.ascii	"CLK_TRIM_CCO_CTL2\000"
+ 1477      5452494D 
+ 1477      5F43434F 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 35
+
+
+ 1477      5F43544C 
+ 1477      3200
+ 1478              	.LASF100:
+ 1479 0339 43595F53 		.ascii	"CY_SYSPM_CANCELED\000"
+ 1479      5953504D 
+ 1479      5F43414E 
+ 1479      43454C45 
+ 1479      4400
+ 1480              	.LASF2:
+ 1481 034b 6C6F6E67 		.ascii	"long double\000"
+ 1481      20646F75 
+ 1481      626C6500 
+ 1482              	.LASF32:
+ 1483 0357 5057525F 		.ascii	"PWR_HIB_DATA\000"
+ 1483      4849425F 
+ 1483      44415441 
+ 1483      00
+ 1484              	.LASF4:
+ 1485 0364 756E7369 		.ascii	"unsigned char\000"
+ 1485      676E6564 
+ 1485      20636861 
+ 1485      7200
+ 1486              	.LASF65:
+ 1487 0372 52455345 		.ascii	"RESERVED10\000"
+ 1487      52564544 
+ 1487      313000
+ 1488              	.LASF67:
+ 1489 037d 52455345 		.ascii	"RESERVED11\000"
+ 1489      52564544 
+ 1489      313100
+ 1490              	.LASF73:
+ 1491 0388 52455345 		.ascii	"RESERVED12\000"
+ 1491      52564544 
+ 1491      313200
+ 1492              	.LASF76:
+ 1493 0393 52455345 		.ascii	"RESERVED13\000"
+ 1493      52564544 
+ 1493      313300
+ 1494              	.LASF81:
+ 1495 039e 52455345 		.ascii	"RESERVED14\000"
+ 1495      52564544 
+ 1495      313400
+ 1496              	.LASF83:
+ 1497 03a9 52455345 		.ascii	"RESERVED15\000"
+ 1497      52564544 
+ 1497      313500
+ 1498              	.LASF85:
+ 1499 03b4 52455345 		.ascii	"RESERVED16\000"
+ 1499      52564544 
+ 1499      313600
+ 1500              	.LASF26:
+ 1501 03bf 5057525F 		.ascii	"PWR_CTL\000"
+ 1501      43544C00 
+ 1502              	.LASF9:
+ 1503 03c7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1503      206C6F6E 
+ 1503      6720756E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 36
+
+
+ 1503      7369676E 
+ 1503      65642069 
+ 1504              	.LASF11:
+ 1505 03de 75696E74 		.ascii	"uint32_t\000"
+ 1505      33325F74 
+ 1505      00
+ 1506              	.LASF48:
+ 1507 03e7 434C4B5F 		.ascii	"CLK_OUTPUT_FAST\000"
+ 1507      4F555450 
+ 1507      55545F46 
+ 1507      41535400 
+ 1508              	.LASF106:
+ 1509 03f7 43595F53 		.ascii	"CY_SYSPM_AFTER_TRANSITION\000"
+ 1509      5953504D 
+ 1509      5F414654 
+ 1509      45525F54 
+ 1509      52414E53 
+ 1510              	.LASF0:
+ 1511 0411 756E7369 		.ascii	"unsigned int\000"
+ 1511      676E6564 
+ 1511      20696E74 
+ 1511      00
+ 1512              	.LASF62:
+ 1513 041e 434C4B5F 		.ascii	"CLK_FLL_STATUS\000"
+ 1513      464C4C5F 
+ 1513      53544154 
+ 1513      555300
+ 1514              	.LASF77:
+ 1515 042d 5057525F 		.ascii	"PWR_TRIM_REF_CTL\000"
+ 1515      5452494D 
+ 1515      5F524546 
+ 1515      5F43544C 
+ 1515      00
+ 1516              	.LASF30:
+ 1517 043e 5057525F 		.ascii	"PWR_BUCK_CTL2\000"
+ 1517      4255434B 
+ 1517      5F43544C 
+ 1517      3200
+ 1518              	.LASF71:
+ 1519 044c 53525353 		.ascii	"SRSS_INTR_MASKED\000"
+ 1519      5F494E54 
+ 1519      525F4D41 
+ 1519      534B4544 
+ 1519      00
+ 1520              	.LASF74:
+ 1521 045d 5245535F 		.ascii	"RES_CAUSE\000"
+ 1521      43415553 
+ 1521      4500
+ 1522              	.LASF6:
+ 1523 0467 73686F72 		.ascii	"short unsigned int\000"
+ 1523      7420756E 
+ 1523      7369676E 
+ 1523      65642069 
+ 1523      6E7400
+ 1524              	.LASF14:
+ 1525 047a 4D435744 		.ascii	"MCWDT_CNTLOW\000"
+ 1525      545F434E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 37
+
+
+ 1525      544C4F57 
+ 1525      00
+ 1526              	.LASF93:
+ 1527 0487 63686172 		.ascii	"char\000"
+ 1527      00
+ 1528              	.LASF115:
+ 1529 048c 43795F4C 		.ascii	"Cy_LVD_Enable\000"
+ 1529      56445F45 
+ 1529      6E61626C 
+ 1529      6500
+ 1530              	.LASF78:
+ 1531 049a 5057525F 		.ascii	"PWR_TRIM_BODOVP_CTL\000"
+ 1531      5452494D 
+ 1531      5F424F44 
+ 1531      4F56505F 
+ 1531      43544C00 
+ 1532              	.LASF84:
+ 1533 04ae 5057525F 		.ascii	"PWR_TRIM_LVD_CTL\000"
+ 1533      5452494D 
+ 1533      5F4C5644 
+ 1533      5F43544C 
+ 1533      00
+ 1534              	.LASF41:
+ 1535 04bf 434C4B5F 		.ascii	"CLK_ROOT_SELECT\000"
+ 1535      524F4F54 
+ 1535      5F53454C 
+ 1535      45435400 
+ 1536              	.LASF86:
+ 1537 04cf 434C4B5F 		.ascii	"CLK_TRIM_ILO_CTL\000"
+ 1537      5452494D 
+ 1537      5F494C4F 
+ 1537      5F43544C 
+ 1537      00
+ 1538              	.LASF68:
+ 1539 04e0 53525353 		.ascii	"SRSS_INTR\000"
+ 1539      5F494E54 
+ 1539      5200
+ 1540              	.LASF56:
+ 1541 04ea 434C4B5F 		.ascii	"CLK_PILO_CONFIG\000"
+ 1541      50494C4F 
+ 1541      5F434F4E 
+ 1541      46494700 
+ 1542              	.LASF59:
+ 1543 04fa 434C4B5F 		.ascii	"CLK_FLL_CONFIG2\000"
+ 1543      464C4C5F 
+ 1543      434F4E46 
+ 1543      49473200 
+ 1544              	.LASF60:
+ 1545 050a 434C4B5F 		.ascii	"CLK_FLL_CONFIG3\000"
+ 1545      464C4C5F 
+ 1545      434F4E46 
+ 1545      49473300 
+ 1546              	.LASF61:
+ 1547 051a 434C4B5F 		.ascii	"CLK_FLL_CONFIG4\000"
+ 1547      464C4C5F 
+ 1547      434F4E46 
+ 1547      49473400 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 38
+
+
+ 1548              	.LASF35:
+ 1549 052a 5744545F 		.ascii	"WDT_CNT\000"
+ 1549      434E5400 
+ 1550              	.LASF24:
+ 1551 0532 52455345 		.ascii	"RESERVED1\000"
+ 1551      52564544 
+ 1551      3100
+ 1552              	.LASF33:
+ 1553 053c 52455345 		.ascii	"RESERVED2\000"
+ 1553      52564544 
+ 1553      3200
+ 1554              	.LASF37:
+ 1555 0546 52455345 		.ascii	"RESERVED3\000"
+ 1555      52564544 
+ 1555      3300
+ 1556              	.LASF90:
+ 1557 0550 434C4B5F 		.ascii	"CLK_TRIM_PILO_CTL2\000"
+ 1557      5452494D 
+ 1557      5F50494C 
+ 1557      4F5F4354 
+ 1557      4C3200
+ 1558              	.LASF91:
+ 1559 0563 434C4B5F 		.ascii	"CLK_TRIM_PILO_CTL3\000"
+ 1559      5452494D 
+ 1559      5F50494C 
+ 1559      4F5F4354 
+ 1559      4C3300
+ 1560              	.LASF8:
+ 1561 0576 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1561      20756E73 
+ 1561      69676E65 
+ 1561      6420696E 
+ 1561      7400
+ 1562              	.LASF52:
+ 1563 0588 52455345 		.ascii	"RESERVED6\000"
+ 1563      52564544 
+ 1563      3600
+ 1564              	.LASF57:
+ 1565 0592 52455345 		.ascii	"RESERVED8\000"
+ 1565      52564544 
+ 1565      3800
+ 1566              	.LASF95:
+ 1567 059c 646F7562 		.ascii	"double\000"
+ 1567      6C6500
+ 1568              	.LASF55:
+ 1569 05a3 52455345 		.ascii	"RESERVED7\000"
+ 1569      52564544 
+ 1569      3700
+ 1570              	.LASF38:
+ 1571 05ad 4D435744 		.ascii	"MCWDT_STRUCT\000"
+ 1571      545F5354 
+ 1571      52554354 
+ 1571      00
+ 1572              	.LASF75:
+ 1573 05ba 5245535F 		.ascii	"RES_CAUSE2\000"
+ 1573      43415553 
+ 1573      453200
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 39
+
+
+ 1574              	.LASF44:
+ 1575 05c5 434C4B5F 		.ascii	"CLK_TIMER_CTL\000"
+ 1575      54494D45 
+ 1575      525F4354 
+ 1575      4C00
+ 1576              	.LASF50:
+ 1577 05d3 434C4B5F 		.ascii	"CLK_CAL_CNT1\000"
+ 1577      43414C5F 
+ 1577      434E5431 
+ 1577      00
+ 1578              	.LASF51:
+ 1579 05e0 434C4B5F 		.ascii	"CLK_CAL_CNT2\000"
+ 1579      43414C5F 
+ 1579      434E5432 
+ 1579      00
+ 1580              	.LASF23:
+ 1581 05ed 4D435744 		.ascii	"MCWDT_LOCK\000"
+ 1581      545F4C4F 
+ 1581      434B00
+ 1582              	.LASF112:
+ 1583 05f8 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1583      43313120 
+ 1583      352E342E 
+ 1583      31203230 
+ 1583      31363036 
+ 1584 062b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 1584      20726576 
+ 1584      6973696F 
+ 1584      6E203233 
+ 1584      37373135 
+ 1585 065e 67202D4F 		.ascii	"g -O0 -ffunction-sections -ffat-lto-objects\000"
+ 1585      30202D66 
+ 1585      66756E63 
+ 1585      74696F6E 
+ 1585      2D736563 
+ 1586              	.LASF27:
+ 1587 068a 5057525F 		.ascii	"PWR_HIBERNATE\000"
+ 1587      48494245 
+ 1587      524E4154 
+ 1587      4500
+ 1588              	.LASF69:
+ 1589 0698 53525353 		.ascii	"SRSS_INTR_SET\000"
+ 1589      5F494E54 
+ 1589      525F5345 
+ 1589      5400
+ 1590              	.LASF111:
+ 1591 06a6 63795F73 		.ascii	"cy_stc_syspm_callback_params_t\000"
+ 1591      74635F73 
+ 1591      7973706D 
+ 1591      5F63616C 
+ 1591      6C626163 
+ 1592              	.LASF17:
+ 1593 06c5 4D435744 		.ascii	"MCWDT_CONFIG\000"
+ 1593      545F434F 
+ 1593      4E464947 
+ 1593      00
+ 1594              	.LASF13:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc2HCa0f.s 			page 40
+
+
+ 1595 06d2 52455345 		.ascii	"RESERVED\000"
+ 1595      52564544 
+ 1595      00
+ 1596              	.LASF102:
+ 1597 06db 63795F65 		.ascii	"cy_en_syspm_status_t\000"
+ 1597      6E5F7379 
+ 1597      73706D5F 
+ 1597      73746174 
+ 1597      75735F74 
+ 1598              	.LASF104:
+ 1599 06f0 43595F53 		.ascii	"CY_SYSPM_CHECK_FAIL\000"
+ 1599      5953504D 
+ 1599      5F434845 
+ 1599      434B5F46 
+ 1599      41494C00 
+ 1600              	.LASF15:
+ 1601 0704 4D435744 		.ascii	"MCWDT_CNTHIGH\000"
+ 1601      545F434E 
+ 1601      54484947 
+ 1601      4800
+ 1602              	.LASF109:
+ 1603 0712 62617365 		.ascii	"base\000"
+ 1603      00
+ 1604              	.LASF53:
+ 1605 0717 434C4B5F 		.ascii	"CLK_ECO_CONFIG\000"
+ 1605      45434F5F 
+ 1605      434F4E46 
+ 1605      494700
+ 1606              	.LASF49:
+ 1607 0726 434C4B5F 		.ascii	"CLK_OUTPUT_SLOW\000"
+ 1607      4F555450 
+ 1607      55545F53 
+ 1607      4C4F5700 
+ 1608              	.LASF116:
+ 1609 0736 43795F4C 		.ascii	"Cy_LVD_DeepSleepCallback\000"
+ 1609      56445F44 
+ 1609      65657053 
+ 1609      6C656570 
+ 1609      43616C6C 
+ 1610              	.LASF19:
+ 1611 074f 4D435744 		.ascii	"MCWDT_INTR\000"
+ 1611      545F494E 
+ 1611      545200
+ 1612              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
