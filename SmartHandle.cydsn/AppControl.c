@@ -43,6 +43,7 @@ void AppControlHandler()
             {
                 DEBUG_PRINTF("FSM_INITIALIZE\r\n"); 
                 DEBUG_WAIT_UART_TX_COMPLETE();
+                KinOS_Advertise(30,50);
                 next_state = FSM_IDLE;
                 break;
             }

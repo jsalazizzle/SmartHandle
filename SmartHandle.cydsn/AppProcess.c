@@ -59,35 +59,35 @@ void AppProcess_Start()
             switch(msg)
             {
                 case BT_CONFIG_LIGHT:
-                    DEBUG_PRINTF("0x01 Recieved \r\n");
+                    DEBUG_PRINTF("0x01 Received \r\n");
                     KinOS_ConfigureLight(dt_buffer[0], dt_buffer[1], dt_buffer[2], dt_buffer[3]);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
                 case BT_CONFIG_ALARM:
-                    DEBUG_PRINTF("0x02 Recieved \r\n");
+                    DEBUG_PRINTF("0x02 Received \r\n");
                     KinOS_ConfigureChime(dt_buffer[0], dt_buffer[1]);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
                 case BT_REGISTER_DEV:
-                    DEBUG_PRINTF("0x03 Recieved \r\n");
+                    DEBUG_PRINTF("0x03 Received \r\n");
                     uint8 token = 0xFF;
                     KinOS_SendResult(1,&token);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
                 case BT_SET_LIGHT_COLOR: //unnecessary
-                    DEBUG_PRINTF("0x04 Recieved \r\n");
+                    DEBUG_PRINTF("0x04 Received \r\n");
                     KinOS_ConfigureLight(dt_buffer[0], dt_buffer[1], dt_buffer[2], dt_buffer[3]);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
                 case BT_TIME_SYNC:
-                    DEBUG_PRINTF("0x05 Recieved \r\n");
+                    DEBUG_PRINTF("0x05 Received \r\n");
                     KinOS_SetDateAndTime(dt_buffer[0],dt_buffer[1],dt_buffer[2],
                                          dt_buffer[3],dt_buffer[4],dt_buffer[5]);
-                    DEBUG_PRINTF("epoch recieved:   ");
+                    DEBUG_PRINTF("epoch received:   ");
                     DEBUG_PRINTF("year:     %d\r\n",dt_buffer[0]);
                     DEBUG_PRINTF("                  month:    %d\r\n",dt_buffer[1]);
                     DEBUG_PRINTF("                  day:      %d\r\n",dt_buffer[2]);

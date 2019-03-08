@@ -1,5 +1,5 @@
 -- Project:   SmartHandle
--- Generated: 03/02/2019 22:26:31
+-- Generated: 03/08/2019 10:59:21
 -- PSoC Creator  4.2
 
 ENTITY SmartHandle IS
@@ -42,8 +42,6 @@ ARCHITECTURE __DEFAULT__ OF SmartHandle IS
     SIGNAL CPUSS_swj_swdio_tms : bit;
     SIGNAL CY_CPUSS_SWJ_SWCLK_TCLK(0)__PA : bit;
     SIGNAL CY_CPUSS_SWJ_SWDIO_TMS(0)__PA : bit;
-    SIGNAL CY_SRSS_WCO_IN(0)__PA : bit;
-    SIGNAL CY_SRSS_WCO_OUT(0)__PA : bit;
     SIGNAL Chime(0)__PA : bit;
     SIGNAL ClockBlock_AltHF : bit;
     SIGNAL ClockBlock_ECO : bit;
@@ -195,50 +193,45 @@ ARCHITECTURE __DEFAULT__ OF SmartHandle IS
     ATTRIBUTE Location OF CY_CPUSS_SWJ_SWCLK_TCLK(0) : LABEL IS "P6[7]";
     ATTRIBUTE lib_model OF CY_CPUSS_SWJ_SWDIO_TMS(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF CY_CPUSS_SWJ_SWDIO_TMS(0) : LABEL IS "P6[6]";
-    ATTRIBUTE Location OF SRSS : LABEL IS "F(SRSS,0)";
-    ATTRIBUTE lib_model OF CY_SRSS_WCO_IN(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF CY_SRSS_WCO_IN(0) : LABEL IS "P0[0]";
-    ATTRIBUTE lib_model OF CY_SRSS_WCO_OUT(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF CY_SRSS_WCO_OUT(0) : LABEL IS "P0[1]";
-    ATTRIBUTE lib_model OF \UART_DEBUG:tx(0)\ : LABEL IS "iocell5";
+    ATTRIBUTE lib_model OF \UART_DEBUG:tx(0)\ : LABEL IS "iocell3";
     ATTRIBUTE Location OF \UART_DEBUG:tx(0)\ : LABEL IS "P5[1]";
-    ATTRIBUTE lib_model OF \UART_DEBUG:rx(0)\ : LABEL IS "iocell6";
+    ATTRIBUTE lib_model OF \UART_DEBUG:rx(0)\ : LABEL IS "iocell4";
     ATTRIBUTE Location OF \UART_DEBUG:rx(0)\ : LABEL IS "P5[0]";
-    ATTRIBUTE lib_model OF Pin_Orange(0) : LABEL IS "iocell7";
-    ATTRIBUTE Location OF Pin_Orange(0) : LABEL IS "P0[5]";
-    ATTRIBUTE lib_model OF Pin_Red(0) : LABEL IS "iocell8";
-    ATTRIBUTE Location OF Pin_Red(0) : LABEL IS "P5[2]";
-    ATTRIBUTE lib_model OF \SensorBus:scl(0)\ : LABEL IS "iocell9";
+    ATTRIBUTE lib_model OF Pin_Orange(0) : LABEL IS "iocell5";
+    ATTRIBUTE Location OF Pin_Orange(0) : LABEL IS "P0[0]";
+    ATTRIBUTE lib_model OF Pin_Red(0) : LABEL IS "iocell6";
+    ATTRIBUTE Location OF Pin_Red(0) : LABEL IS "P0[1]";
+    ATTRIBUTE lib_model OF \SensorBus:scl(0)\ : LABEL IS "iocell7";
     ATTRIBUTE Location OF \SensorBus:scl(0)\ : LABEL IS "P6[4]";
-    ATTRIBUTE lib_model OF \SensorBus:sda(0)\ : LABEL IS "iocell10";
+    ATTRIBUTE lib_model OF \SensorBus:sda(0)\ : LABEL IS "iocell8";
     ATTRIBUTE Location OF \SensorBus:sda(0)\ : LABEL IS "P6[5]";
-    ATTRIBUTE lib_model OF Press1(0) : LABEL IS "iocell11";
+    ATTRIBUTE lib_model OF Press1(0) : LABEL IS "iocell9";
     ATTRIBUTE Location OF Press1(0) : LABEL IS "P7[2]";
-    ATTRIBUTE lib_model OF tmp(0) : LABEL IS "iocell12";
+    ATTRIBUTE lib_model OF tmp(0) : LABEL IS "iocell10";
     ATTRIBUTE Location OF tmp(0) : LABEL IS "P10[0]";
-    ATTRIBUTE lib_model OF DB_3(0) : LABEL IS "iocell13";
-    ATTRIBUTE Location OF DB_3(0) : LABEL IS "P6[3]";
-    ATTRIBUTE lib_model OF DB_2(0) : LABEL IS "iocell14";
-    ATTRIBUTE Location OF DB_2(0) : LABEL IS "P5[6]";
-    ATTRIBUTE lib_model OF DB_1(0) : LABEL IS "iocell15";
-    ATTRIBUTE Location OF DB_1(0) : LABEL IS "P5[4]";
-    ATTRIBUTE lib_model OF DB_0(0) : LABEL IS "iocell16";
-    ATTRIBUTE Location OF DB_0(0) : LABEL IS "P7[7]";
-    ATTRIBUTE lib_model OF Green(0) : LABEL IS "iocell17";
+    ATTRIBUTE lib_model OF DB_3(0) : LABEL IS "iocell11";
+    ATTRIBUTE Location OF DB_3(0) : LABEL IS "P5[4]";
+    ATTRIBUTE lib_model OF DB_2(0) : LABEL IS "iocell12";
+    ATTRIBUTE Location OF DB_2(0) : LABEL IS "P5[2]";
+    ATTRIBUTE lib_model OF DB_1(0) : LABEL IS "iocell13";
+    ATTRIBUTE Location OF DB_1(0) : LABEL IS "P0[5]";
+    ATTRIBUTE lib_model OF DB_0(0) : LABEL IS "iocell14";
+    ATTRIBUTE Location OF DB_0(0) : LABEL IS "P5[6]";
+    ATTRIBUTE lib_model OF Green(0) : LABEL IS "iocell15";
     ATTRIBUTE Location OF Green(0) : LABEL IS "P5[5]";
-    ATTRIBUTE lib_model OF Red(0) : LABEL IS "iocell18";
+    ATTRIBUTE lib_model OF Red(0) : LABEL IS "iocell16";
     ATTRIBUTE Location OF Red(0) : LABEL IS "P5[3]";
-    ATTRIBUTE lib_model OF Blue(0) : LABEL IS "iocell19";
+    ATTRIBUTE lib_model OF Blue(0) : LABEL IS "iocell17";
     ATTRIBUTE Location OF Blue(0) : LABEL IS "P12[6]";
-    ATTRIBUTE lib_model OF Motor(0) : LABEL IS "iocell20";
+    ATTRIBUTE lib_model OF Motor(0) : LABEL IS "iocell18";
     ATTRIBUTE Location OF Motor(0) : LABEL IS "P9[0]";
-    ATTRIBUTE lib_model OF Chime(0) : LABEL IS "iocell21";
+    ATTRIBUTE lib_model OF Chime(0) : LABEL IS "iocell19";
     ATTRIBUTE Location OF Chime(0) : LABEL IS "P10[6]";
-    ATTRIBUTE lib_model OF ShakePin(0) : LABEL IS "iocell22";
+    ATTRIBUTE lib_model OF ShakePin(0) : LABEL IS "iocell20";
     ATTRIBUTE Location OF ShakePin(0) : LABEL IS "P6[2]";
-    ATTRIBUTE lib_model OF Press3(0) : LABEL IS "iocell23";
+    ATTRIBUTE lib_model OF Press3(0) : LABEL IS "iocell21";
     ATTRIBUTE Location OF Press3(0) : LABEL IS "P0[4]";
-    ATTRIBUTE lib_model OF Press2(0) : LABEL IS "iocell24";
+    ATTRIBUTE lib_model OF Press2(0) : LABEL IS "iocell22";
     ATTRIBUTE Location OF Press2(0) : LABEL IS "P7[1]";
     ATTRIBUTE lib_model OF Net_20 : LABEL IS "macrocell1";
     ATTRIBUTE Location OF Net_20 : LABEL IS "U(1,2)";
@@ -702,22 +695,6 @@ ARCHITECTURE __DEFAULT__ OF SmartHandle IS
             tr_rx_req : OUT std_ulogic;
             tr_i2c_scl_filtered : OUT std_ulogic);
     END COMPONENT;
-    COMPONENT SRSS
-        PORT (
-            clock_timer : IN std_ulogic;
-            interrupt_mcwdt_0 : OUT std_ulogic;
-            interrupt_mcwdt_1 : OUT std_ulogic;
-            interrupt_backup : OUT std_ulogic;
-            interrupt : OUT std_ulogic;
-            ext_clk : IN std_ulogic;
-            clk_ext : OUT std_ulogic;
-            swd_data : IN std_ulogic;
-            swd_clk : IN std_ulogic;
-            xres_n : IN std_ulogic;
-            pmic_wakeup_in : IN std_ulogic;
-            pmic_wakeup_out : OUT std_ulogic;
-            hibernate_wakeup : IN std_ulogic);
-    END COMPONENT;
     COMPONENT TCPWM
         PORT (
             clock : IN std_ulogic;
@@ -875,112 +852,6 @@ BEGIN
         PORT MAP(
             pa_out => CY_CPUSS_SWJ_SWDIO_TMS(0)__PA,
             fb => CPUSS_swj_swdio_tms,
-            in_clock => open,
-            in_clock_en => open,
-            in_reset => open,
-            out_clock => open,
-            out_clock_en => open,
-            out_reset => open);
-
-    SRSS:SRSS;
-
-    CY_SRSS_WCO_IN:logicalport
-        GENERIC MAP(
-            cy_registers => "",
-            drive_mode => "000",
-            drive_strength => "0",
-            hotswap_needed => "0",
-            i2c_mode => "0",
-            ibuf_enabled => "0",
-            id => "5262da02-7cc5-5860-85a9-3b13ac7954ca",
-            init_dr_st => "0",
-            input_sync => "0",
-            intr_mode => "00",
-            io_voltage => "",
-            max_frequency => "100",
-            oe_conn => "0",
-            oe_sync => "0",
-            output_conn => "0",
-            output_current_cap => "8",
-            output_sync => "0",
-            pin_aliases => "",
-            pin_mode => "B",
-            sio_grp_cnt => 0,
-            slew_rate => "0",
-            use_annotation => "0",
-            vtrip => "00",
-            width => 1,
-            in_clk_inv => 0,
-            in_clken_inv => 0,
-            in_clken_mode => 1,
-            in_rst_inv => 0,
-            out_clk_inv => 0,
-            out_clken_inv => 0,
-            out_clken_mode => 1,
-            out_rst_inv => 0);
-
-    CY_SRSS_WCO_IN(0):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "CY_SRSS_WCO_IN",
-            logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000000")
-        PORT MAP(
-            pa_out => CY_SRSS_WCO_IN(0)__PA,
-            in_clock => open,
-            in_clock_en => open,
-            in_reset => open,
-            out_clock => open,
-            out_clock_en => open,
-            out_reset => open);
-
-    CY_SRSS_WCO_OUT:logicalport
-        GENERIC MAP(
-            cy_registers => "",
-            drive_mode => "000",
-            drive_strength => "0",
-            hotswap_needed => "0",
-            i2c_mode => "0",
-            ibuf_enabled => "0",
-            id => "3efa897a-9b08-528e-9239-32fdb7df48cc",
-            init_dr_st => "0",
-            input_sync => "0",
-            intr_mode => "00",
-            io_voltage => "",
-            max_frequency => "100",
-            oe_conn => "0",
-            oe_sync => "0",
-            output_conn => "0",
-            output_current_cap => "8",
-            output_sync => "0",
-            pin_aliases => "",
-            pin_mode => "B",
-            sio_grp_cnt => 0,
-            slew_rate => "0",
-            use_annotation => "0",
-            vtrip => "00",
-            width => 1,
-            in_clk_inv => 0,
-            in_clken_inv => 0,
-            in_clken_mode => 1,
-            in_rst_inv => 0,
-            out_clk_inv => 0,
-            out_clken_inv => 0,
-            out_clken_mode => 1,
-            out_rst_inv => 0);
-
-    CY_SRSS_WCO_OUT(0):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "CY_SRSS_WCO_OUT",
-            logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000000")
-        PORT MAP(
-            pa_out => CY_SRSS_WCO_OUT(0)__PA,
             in_clock => open,
             in_clock_en => open,
             in_reset => open,

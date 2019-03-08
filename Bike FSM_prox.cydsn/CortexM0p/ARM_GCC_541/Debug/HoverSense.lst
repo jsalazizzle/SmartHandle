@@ -1,0 +1,2914 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"HoverSense.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.HoverSense_Init,"ax",%progbits
+  20              		.align	2
+  21              		.global	HoverSense_Init
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	HoverSense_Init, %function
+  25              	HoverSense_Init:
+  26              	.LFB798:
+  27              		.file 1 "HoverSense.c"
+   1:HoverSense.c  **** 
+   2:HoverSense.c  **** #include <HoverSense.h>
+   3:HoverSense.c  **** #include "debug.h"
+   4:HoverSense.c  **** 
+   5:HoverSense.c  **** extern uint8 hover_detected;
+   6:HoverSense.c  **** //static uint8 initializeCapSenseBaseline = 1;
+   7:HoverSense.c  **** 
+   8:HoverSense.c  **** void HoverSense_Init()
+   9:HoverSense.c  **** {
+  28              		.loc 1 9 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  10:HoverSense.c  ****     DEBUG_PRINTF("HoverSense_Init\r\n");
+  36              		.loc 1 10 0
+  37 0002 0848     		ldr	r0, .L4
+  38 0004 FFF7FEFF 		bl	puts
+  39              	.LVL0:
+  11:HoverSense.c  ****     cy_status capSenseApiResult = CapSense_Start();
+  40              		.loc 1 11 0
+  41 0008 FFF7FEFF 		bl	CapSense_Start
+  42              	.LVL1:
+  12:HoverSense.c  ****     
+  13:HoverSense.c  ****     /* Check if the operation has been successful */
+  14:HoverSense.c  ****     if (capSenseApiResult== CY_RET_SUCCESS) {
+  43              		.loc 1 14 0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 2
+
+
+  44 000c 0028     		cmp	r0, #0
+  45 000e 03D1     		bne	.L2
+  15:HoverSense.c  ****         DEBUG_PRINTF("Success  : Proximity - CapSense initialization\r\n");
+  46              		.loc 1 15 0
+  47 0010 0548     		ldr	r0, .L4+4
+  48              	.LVL2:
+  49 0012 FFF7FEFF 		bl	puts
+  50              	.LVL3:
+  51 0016 02E0     		b	.L3
+  52              	.LVL4:
+  53              	.L2:
+  16:HoverSense.c  ****     } else {
+  17:HoverSense.c  ****         DEBUG_PRINTF("Failure! : Proximity - CapSense initialization error\r\n");
+  54              		.loc 1 17 0
+  55 0018 0448     		ldr	r0, .L4+8
+  56              	.LVL5:
+  57 001a FFF7FEFF 		bl	puts
+  58              	.LVL6:
+  59              	.L3:
+  18:HoverSense.c  ****     }
+  19:HoverSense.c  ****      CapSense_ScanAllWidgets(); 
+  60              		.loc 1 19 0
+  61 001e FFF7FEFF 		bl	CapSense_ScanAllWidgets
+  62              	.LVL7:
+  20:HoverSense.c  **** }
+  63              		.loc 1 20 0
+  64              		@ sp needed
+  65 0022 10BD     		pop	{r4, pc}
+  66              	.L5:
+  67              		.align	2
+  68              	.L4:
+  69 0024 00000000 		.word	.LC0
+  70 0028 14000000 		.word	.LC2
+  71 002c 44000000 		.word	.LC4
+  72              		.cfi_endproc
+  73              	.LFE798:
+  74              		.size	HoverSense_Init, .-HoverSense_Init
+  75              		.section	.rodata.str1.4,"aMS",%progbits,1
+  76              		.align	2
+  77              	.LC0:
+  78 0000 486F7665 		.ascii	"HoverSense_Init\015\000"
+  78      7253656E 
+  78      73655F49 
+  78      6E69740D 
+  78      00
+  79 0011 000000   		.space	3
+  80              	.LC2:
+  81 0014 53756363 		.ascii	"Success  : Proximity - CapSense initialization\015\000"
+  81      65737320 
+  81      203A2050 
+  81      726F7869 
+  81      6D697479 
+  82              	.LC4:
+  83 0044 4661696C 		.ascii	"Failure! : Proximity - CapSense initialization erro"
+  83      75726521 
+  83      203A2050 
+  83      726F7869 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 3
+
+
+  83      6D697479 
+  84 0077 720D00   		.ascii	"r\015\000"
+  85              		.text
+  86              	.Letext0:
+  87              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  88              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  89              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+  90              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_counter.h"
+  91              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
+  92              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_i2c.h"
+  93              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
+  94              		.file 9 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_host_main.h"
+  95              		.file 10 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_gap.h"
+  96              		.file 11 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/rtc/cy_rtc.h"
+  97              		.file 12 "Generated_Source\\PSoC6/UART_DEBUG.h"
+  98              		.file 13 "Generated_Source\\PSoC6/SensorBus.h"
+  99              		.file 14 "Generated_Source\\PSoC6/LightOutputC.h"
+ 100              		.file 15 "Generated_Source\\PSoC6/LightOutputA.h"
+ 101              		.file 16 "Generated_Source\\PSoC6/LightTimer.h"
+ 102              		.file 17 "Generated_Source\\PSoC6/LightOutputB.h"
+ 103              		.file 18 "Generated_Source\\PSoC6/MotorOutput.h"
+ 104              		.file 19 "Generated_Source\\PSoC6/MotorTimer.h"
+ 105              		.file 20 "Generated_Source\\PSoC6/ChimeOutput.h"
+ 106              		.file 21 "Generated_Source\\PSoC6/ChimeTimer.h"
+ 107              		.file 22 "Generated_Source\\PSoC6/CapSense_Control.h"
+ 108              		.file 23 "Generated_Source\\PSoC6/CapSense_Sensing.h"
+ 109              		.file 24 "<built-in>"
+ 110              		.section	.debug_info,"",%progbits
+ 111              	.Ldebug_info0:
+ 112 0000 060A0000 		.4byte	0xa06
+ 113 0004 0400     		.2byte	0x4
+ 114 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 115 000a 04       		.byte	0x4
+ 116 000b 01       		.uleb128 0x1
+ 117 000c 94090000 		.4byte	.LASF183
+ 118 0010 0C       		.byte	0xc
+ 119 0011 20080000 		.4byte	.LASF184
+ 120 0015 30050000 		.4byte	.LASF185
+ 121 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 122 001d 00000000 		.4byte	0
+ 123 0021 00000000 		.4byte	.Ldebug_line0
+ 124 0025 02       		.uleb128 0x2
+ 125 0026 02       		.byte	0x2
+ 126 0027 05       		.byte	0x5
+ 127 0028 A6050000 		.4byte	.LASF0
+ 128 002c 02       		.uleb128 0x2
+ 129 002d 01       		.byte	0x1
+ 130 002e 08       		.byte	0x8
+ 131 002f CB070000 		.4byte	.LASF1
+ 132 0033 02       		.uleb128 0x2
+ 133 0034 01       		.byte	0x1
+ 134 0035 06       		.byte	0x6
+ 135 0036 7D000000 		.4byte	.LASF2
+ 136 003a 03       		.uleb128 0x3
+ 137 003b 89000000 		.4byte	.LASF5
+ 138 003f 02       		.byte	0x2
+ 139 0040 1D       		.byte	0x1d
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 4
+
+
+ 140 0041 2C000000 		.4byte	0x2c
+ 141 0045 02       		.uleb128 0x2
+ 142 0046 02       		.byte	0x2
+ 143 0047 07       		.byte	0x7
+ 144 0048 F1040000 		.4byte	.LASF3
+ 145 004c 02       		.uleb128 0x2
+ 146 004d 04       		.byte	0x4
+ 147 004e 05       		.byte	0x5
+ 148 004f F5020000 		.4byte	.LASF4
+ 149 0053 03       		.uleb128 0x3
+ 150 0054 990A0000 		.4byte	.LASF6
+ 151 0058 02       		.byte	0x2
+ 152 0059 41       		.byte	0x41
+ 153 005a 5E000000 		.4byte	0x5e
+ 154 005e 02       		.uleb128 0x2
+ 155 005f 04       		.byte	0x4
+ 156 0060 07       		.byte	0x7
+ 157 0061 B4040000 		.4byte	.LASF7
+ 158 0065 02       		.uleb128 0x2
+ 159 0066 08       		.byte	0x8
+ 160 0067 05       		.byte	0x5
+ 161 0068 38020000 		.4byte	.LASF8
+ 162 006c 02       		.uleb128 0x2
+ 163 006d 08       		.byte	0x8
+ 164 006e 07       		.byte	0x7
+ 165 006f 4A010000 		.4byte	.LASF9
+ 166 0073 04       		.uleb128 0x4
+ 167 0074 04       		.byte	0x4
+ 168 0075 05       		.byte	0x5
+ 169 0076 696E7400 		.ascii	"int\000"
+ 170 007a 02       		.uleb128 0x2
+ 171 007b 04       		.byte	0x4
+ 172 007c 07       		.byte	0x7
+ 173 007d 5C040000 		.4byte	.LASF10
+ 174 0081 03       		.uleb128 0x3
+ 175 0082 5E0C0000 		.4byte	.LASF11
+ 176 0086 03       		.byte	0x3
+ 177 0087 18       		.byte	0x18
+ 178 0088 3A000000 		.4byte	0x3a
+ 179 008c 03       		.uleb128 0x3
+ 180 008d 66090000 		.4byte	.LASF12
+ 181 0091 03       		.byte	0x3
+ 182 0092 30       		.byte	0x30
+ 183 0093 53000000 		.4byte	0x53
+ 184 0097 02       		.uleb128 0x2
+ 185 0098 04       		.byte	0x4
+ 186 0099 07       		.byte	0x7
+ 187 009a 3A060000 		.4byte	.LASF13
+ 188 009e 05       		.uleb128 0x5
+ 189 009f 8C000000 		.4byte	0x8c
+ 190 00a3 02       		.uleb128 0x2
+ 191 00a4 08       		.byte	0x8
+ 192 00a5 04       		.byte	0x4
+ 193 00a6 43060000 		.4byte	.LASF14
+ 194 00aa 02       		.uleb128 0x2
+ 195 00ab 01       		.byte	0x1
+ 196 00ac 08       		.byte	0x8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 5
+
+
+ 197 00ad 430A0000 		.4byte	.LASF15
+ 198 00b1 02       		.uleb128 0x2
+ 199 00b2 04       		.byte	0x4
+ 200 00b3 04       		.byte	0x4
+ 201 00b4 F2060000 		.4byte	.LASF16
+ 202 00b8 02       		.uleb128 0x2
+ 203 00b9 08       		.byte	0x8
+ 204 00ba 04       		.byte	0x4
+ 205 00bb 44030000 		.4byte	.LASF17
+ 206 00bf 06       		.uleb128 0x6
+ 207 00c0 9E010000 		.4byte	.LASF18
+ 208 00c4 04       		.byte	0x4
+ 209 00c5 8203     		.2byte	0x382
+ 210 00c7 8C000000 		.4byte	0x8c
+ 211 00cb 06       		.uleb128 0x6
+ 212 00cc 3E030000 		.4byte	.LASF19
+ 213 00d0 04       		.byte	0x4
+ 214 00d1 8503     		.2byte	0x385
+ 215 00d3 81000000 		.4byte	0x81
+ 216 00d7 07       		.uleb128 0x7
+ 217 00d8 04       		.byte	0x4
+ 218 00d9 02       		.uleb128 0x2
+ 219 00da 01       		.byte	0x1
+ 220 00db 02       		.byte	0x2
+ 221 00dc BF0B0000 		.4byte	.LASF20
+ 222 00e0 08       		.uleb128 0x8
+ 223 00e1 1E060000 		.4byte	.LASF41
+ 224 00e5 4C       		.byte	0x4c
+ 225 00e6 05       		.byte	0x5
+ 226 00e7 2B       		.byte	0x2b
+ 227 00e8 D1010000 		.4byte	0x1d1
+ 228 00ec 09       		.uleb128 0x9
+ 229 00ed 0C010000 		.4byte	.LASF21
+ 230 00f1 05       		.byte	0x5
+ 231 00f2 2D       		.byte	0x2d
+ 232 00f3 8C000000 		.4byte	0x8c
+ 233 00f7 00       		.byte	0
+ 234 00f8 09       		.uleb128 0x9
+ 235 00f9 7C010000 		.4byte	.LASF22
+ 236 00fd 05       		.byte	0x5
+ 237 00fe 2F       		.byte	0x2f
+ 238 00ff 8C000000 		.4byte	0x8c
+ 239 0103 04       		.byte	0x4
+ 240 0104 09       		.uleb128 0x9
+ 241 0105 350D0000 		.4byte	.LASF23
+ 242 0109 05       		.byte	0x5
+ 243 010a 30       		.byte	0x30
+ 244 010b 8C000000 		.4byte	0x8c
+ 245 010f 08       		.byte	0x8
+ 246 0110 09       		.uleb128 0x9
+ 247 0111 BF000000 		.4byte	.LASF24
+ 248 0115 05       		.byte	0x5
+ 249 0116 31       		.byte	0x31
+ 250 0117 8C000000 		.4byte	0x8c
+ 251 011b 0C       		.byte	0xc
+ 252 011c 09       		.uleb128 0x9
+ 253 011d 0A090000 		.4byte	.LASF25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 6
+
+
+ 254 0121 05       		.byte	0x5
+ 255 0122 33       		.byte	0x33
+ 256 0123 8C000000 		.4byte	0x8c
+ 257 0127 10       		.byte	0x10
+ 258 0128 09       		.uleb128 0x9
+ 259 0129 260A0000 		.4byte	.LASF26
+ 260 012d 05       		.byte	0x5
+ 261 012e 34       		.byte	0x34
+ 262 012f 8C000000 		.4byte	0x8c
+ 263 0133 14       		.byte	0x14
+ 264 0134 09       		.uleb128 0x9
+ 265 0135 2F0A0000 		.4byte	.LASF27
+ 266 0139 05       		.byte	0x5
+ 267 013a 35       		.byte	0x35
+ 268 013b 8C000000 		.4byte	0x8c
+ 269 013f 18       		.byte	0x18
+ 270 0140 09       		.uleb128 0x9
+ 271 0141 3D080000 		.4byte	.LASF28
+ 272 0145 05       		.byte	0x5
+ 273 0146 36       		.byte	0x36
+ 274 0147 D9000000 		.4byte	0xd9
+ 275 014b 1C       		.byte	0x1c
+ 276 014c 09       		.uleb128 0x9
+ 277 014d EC0A0000 		.4byte	.LASF29
+ 278 0151 05       		.byte	0x5
+ 279 0152 38       		.byte	0x38
+ 280 0153 8C000000 		.4byte	0x8c
+ 281 0157 20       		.byte	0x20
+ 282 0158 09       		.uleb128 0x9
+ 283 0159 5F030000 		.4byte	.LASF30
+ 284 015d 05       		.byte	0x5
+ 285 015e 39       		.byte	0x39
+ 286 015f 8C000000 		.4byte	0x8c
+ 287 0163 24       		.byte	0x24
+ 288 0164 09       		.uleb128 0x9
+ 289 0165 13010000 		.4byte	.LASF31
+ 290 0169 05       		.byte	0x5
+ 291 016a 3B       		.byte	0x3b
+ 292 016b 8C000000 		.4byte	0x8c
+ 293 016f 28       		.byte	0x28
+ 294 0170 09       		.uleb128 0x9
+ 295 0171 A20C0000 		.4byte	.LASF32
+ 296 0175 05       		.byte	0x5
+ 297 0176 3C       		.byte	0x3c
+ 298 0177 8C000000 		.4byte	0x8c
+ 299 017b 2C       		.byte	0x2c
+ 300 017c 09       		.uleb128 0x9
+ 301 017d 0E0C0000 		.4byte	.LASF33
+ 302 0181 05       		.byte	0x5
+ 303 0182 3E       		.byte	0x3e
+ 304 0183 8C000000 		.4byte	0x8c
+ 305 0187 30       		.byte	0x30
+ 306 0188 09       		.uleb128 0x9
+ 307 0189 BC070000 		.4byte	.LASF34
+ 308 018d 05       		.byte	0x5
+ 309 018e 3F       		.byte	0x3f
+ 310 018f 8C000000 		.4byte	0x8c
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 7
+
+
+ 311 0193 34       		.byte	0x34
+ 312 0194 09       		.uleb128 0x9
+ 313 0195 08060000 		.4byte	.LASF35
+ 314 0199 05       		.byte	0x5
+ 315 019a 41       		.byte	0x41
+ 316 019b 8C000000 		.4byte	0x8c
+ 317 019f 38       		.byte	0x38
+ 318 01a0 09       		.uleb128 0x9
+ 319 01a1 CE000000 		.4byte	.LASF36
+ 320 01a5 05       		.byte	0x5
+ 321 01a6 42       		.byte	0x42
+ 322 01a7 8C000000 		.4byte	0x8c
+ 323 01ab 3C       		.byte	0x3c
+ 324 01ac 09       		.uleb128 0x9
+ 325 01ad 580B0000 		.4byte	.LASF37
+ 326 01b1 05       		.byte	0x5
+ 327 01b2 44       		.byte	0x44
+ 328 01b3 8C000000 		.4byte	0x8c
+ 329 01b7 40       		.byte	0x40
+ 330 01b8 09       		.uleb128 0x9
+ 331 01b9 EB050000 		.4byte	.LASF38
+ 332 01bd 05       		.byte	0x5
+ 333 01be 45       		.byte	0x45
+ 334 01bf 8C000000 		.4byte	0x8c
+ 335 01c3 44       		.byte	0x44
+ 336 01c4 09       		.uleb128 0x9
+ 337 01c5 380A0000 		.4byte	.LASF39
+ 338 01c9 05       		.byte	0x5
+ 339 01ca 47       		.byte	0x47
+ 340 01cb 8C000000 		.4byte	0x8c
+ 341 01cf 48       		.byte	0x48
+ 342 01d0 00       		.byte	0
+ 343 01d1 03       		.uleb128 0x3
+ 344 01d2 46020000 		.4byte	.LASF40
+ 345 01d6 05       		.byte	0x5
+ 346 01d7 48       		.byte	0x48
+ 347 01d8 E0000000 		.4byte	0xe0
+ 348 01dc 08       		.uleb128 0x8
+ 349 01dd AA020000 		.4byte	.LASF42
+ 350 01e1 64       		.byte	0x64
+ 351 01e2 06       		.byte	0x6
+ 352 01e3 2B       		.byte	0x2b
+ 353 01e4 15030000 		.4byte	0x315
+ 354 01e8 09       		.uleb128 0x9
+ 355 01e9 60080000 		.4byte	.LASF43
+ 356 01ed 06       		.byte	0x6
+ 357 01ee 2D       		.byte	0x2d
+ 358 01ef 8C000000 		.4byte	0x8c
+ 359 01f3 00       		.byte	0
+ 360 01f4 09       		.uleb128 0x9
+ 361 01f5 7C010000 		.4byte	.LASF22
+ 362 01f9 06       		.byte	0x6
+ 363 01fa 2F       		.byte	0x2f
+ 364 01fb 8C000000 		.4byte	0x8c
+ 365 01ff 04       		.byte	0x4
+ 366 0200 09       		.uleb128 0x9
+ 367 0201 70000000 		.4byte	.LASF44
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 8
+
+
+ 368 0205 06       		.byte	0x6
+ 369 0206 30       		.byte	0x30
+ 370 0207 8C000000 		.4byte	0x8c
+ 371 020b 08       		.byte	0x8
+ 372 020c 09       		.uleb128 0x9
+ 373 020d CE050000 		.4byte	.LASF45
+ 374 0211 06       		.byte	0x6
+ 375 0212 31       		.byte	0x31
+ 376 0213 8C000000 		.4byte	0x8c
+ 377 0217 0C       		.byte	0xc
+ 378 0218 09       		.uleb128 0x9
+ 379 0219 350D0000 		.4byte	.LASF23
+ 380 021d 06       		.byte	0x6
+ 381 021e 32       		.byte	0x32
+ 382 021f 8C000000 		.4byte	0x8c
+ 383 0223 10       		.byte	0x10
+ 384 0224 09       		.uleb128 0x9
+ 385 0225 800B0000 		.4byte	.LASF46
+ 386 0229 06       		.byte	0x6
+ 387 022a 33       		.byte	0x33
+ 388 022b 8C000000 		.4byte	0x8c
+ 389 022f 14       		.byte	0x14
+ 390 0230 09       		.uleb128 0x9
+ 391 0231 8A050000 		.4byte	.LASF47
+ 392 0235 06       		.byte	0x6
+ 393 0236 34       		.byte	0x34
+ 394 0237 8C000000 		.4byte	0x8c
+ 395 023b 18       		.byte	0x18
+ 396 023c 09       		.uleb128 0x9
+ 397 023d DD080000 		.4byte	.LASF48
+ 398 0241 06       		.byte	0x6
+ 399 0242 35       		.byte	0x35
+ 400 0243 D9000000 		.4byte	0xd9
+ 401 0247 1C       		.byte	0x1c
+ 402 0248 09       		.uleb128 0x9
+ 403 0249 260A0000 		.4byte	.LASF26
+ 404 024d 06       		.byte	0x6
+ 405 024e 36       		.byte	0x36
+ 406 024f 8C000000 		.4byte	0x8c
+ 407 0253 20       		.byte	0x20
+ 408 0254 09       		.uleb128 0x9
+ 409 0255 2F0A0000 		.4byte	.LASF27
+ 410 0259 06       		.byte	0x6
+ 411 025a 37       		.byte	0x37
+ 412 025b 8C000000 		.4byte	0x8c
+ 413 025f 24       		.byte	0x24
+ 414 0260 09       		.uleb128 0x9
+ 415 0261 3D080000 		.4byte	.LASF28
+ 416 0265 06       		.byte	0x6
+ 417 0266 38       		.byte	0x38
+ 418 0267 D9000000 		.4byte	0xd9
+ 419 026b 28       		.byte	0x28
+ 420 026c 09       		.uleb128 0x9
+ 421 026d EC0A0000 		.4byte	.LASF29
+ 422 0271 06       		.byte	0x6
+ 423 0272 3A       		.byte	0x3a
+ 424 0273 8C000000 		.4byte	0x8c
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 9
+
+
+ 425 0277 2C       		.byte	0x2c
+ 426 0278 09       		.uleb128 0x9
+ 427 0279 B0050000 		.4byte	.LASF49
+ 428 027d 06       		.byte	0x6
+ 429 027e 3B       		.byte	0x3b
+ 430 027f 8C000000 		.4byte	0x8c
+ 431 0283 30       		.byte	0x30
+ 432 0284 09       		.uleb128 0x9
+ 433 0285 1A0C0000 		.4byte	.LASF50
+ 434 0289 06       		.byte	0x6
+ 435 028a 3C       		.byte	0x3c
+ 436 028b 8C000000 		.4byte	0x8c
+ 437 028f 34       		.byte	0x34
+ 438 0290 09       		.uleb128 0x9
+ 439 0291 660C0000 		.4byte	.LASF51
+ 440 0295 06       		.byte	0x6
+ 441 0296 3D       		.byte	0x3d
+ 442 0297 8C000000 		.4byte	0x8c
+ 443 029b 38       		.byte	0x38
+ 444 029c 09       		.uleb128 0x9
+ 445 029d E3040000 		.4byte	.LASF52
+ 446 02a1 06       		.byte	0x6
+ 447 02a2 3E       		.byte	0x3e
+ 448 02a3 8C000000 		.4byte	0x8c
+ 449 02a7 3C       		.byte	0x3c
+ 450 02a8 09       		.uleb128 0x9
+ 451 02a9 6F0C0000 		.4byte	.LASF53
+ 452 02ad 06       		.byte	0x6
+ 453 02ae 40       		.byte	0x40
+ 454 02af 8C000000 		.4byte	0x8c
+ 455 02b3 40       		.byte	0x40
+ 456 02b4 09       		.uleb128 0x9
+ 457 02b5 A20C0000 		.4byte	.LASF32
+ 458 02b9 06       		.byte	0x6
+ 459 02ba 41       		.byte	0x41
+ 460 02bb 8C000000 		.4byte	0x8c
+ 461 02bf 44       		.byte	0x44
+ 462 02c0 09       		.uleb128 0x9
+ 463 02c1 0E0C0000 		.4byte	.LASF33
+ 464 02c5 06       		.byte	0x6
+ 465 02c6 43       		.byte	0x43
+ 466 02c7 8C000000 		.4byte	0x8c
+ 467 02cb 48       		.byte	0x48
+ 468 02cc 09       		.uleb128 0x9
+ 469 02cd BC070000 		.4byte	.LASF34
+ 470 02d1 06       		.byte	0x6
+ 471 02d2 44       		.byte	0x44
+ 472 02d3 8C000000 		.4byte	0x8c
+ 473 02d7 4C       		.byte	0x4c
+ 474 02d8 09       		.uleb128 0x9
+ 475 02d9 08060000 		.4byte	.LASF35
+ 476 02dd 06       		.byte	0x6
+ 477 02de 46       		.byte	0x46
+ 478 02df 8C000000 		.4byte	0x8c
+ 479 02e3 50       		.byte	0x50
+ 480 02e4 09       		.uleb128 0x9
+ 481 02e5 73050000 		.4byte	.LASF54
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 10
+
+
+ 482 02e9 06       		.byte	0x6
+ 483 02ea 47       		.byte	0x47
+ 484 02eb 8C000000 		.4byte	0x8c
+ 485 02ef 54       		.byte	0x54
+ 486 02f0 09       		.uleb128 0x9
+ 487 02f1 B20C0000 		.4byte	.LASF55
+ 488 02f5 06       		.byte	0x6
+ 489 02f6 49       		.byte	0x49
+ 490 02f7 8C000000 		.4byte	0x8c
+ 491 02fb 58       		.byte	0x58
+ 492 02fc 09       		.uleb128 0x9
+ 493 02fd EB050000 		.4byte	.LASF38
+ 494 0301 06       		.byte	0x6
+ 495 0302 4A       		.byte	0x4a
+ 496 0303 8C000000 		.4byte	0x8c
+ 497 0307 5C       		.byte	0x5c
+ 498 0308 09       		.uleb128 0x9
+ 499 0309 380A0000 		.4byte	.LASF39
+ 500 030d 06       		.byte	0x6
+ 501 030e 4C       		.byte	0x4c
+ 502 030f 8C000000 		.4byte	0x8c
+ 503 0313 60       		.byte	0x60
+ 504 0314 00       		.byte	0
+ 505 0315 03       		.uleb128 0x3
+ 506 0316 790C0000 		.4byte	.LASF56
+ 507 031a 06       		.byte	0x6
+ 508 031b 4D       		.byte	0x4d
+ 509 031c DC010000 		.4byte	0x1dc
+ 510 0320 0A       		.uleb128 0xa
+ 511 0321 01       		.byte	0x1
+ 512 0322 2C000000 		.4byte	0x2c
+ 513 0326 07       		.byte	0x7
+ 514 0327 DE01     		.2byte	0x1de
+ 515 0329 3A030000 		.4byte	0x33a
+ 516 032d 0B       		.uleb128 0xb
+ 517 032e DD0A0000 		.4byte	.LASF57
+ 518 0332 00       		.byte	0
+ 519 0333 0B       		.uleb128 0xb
+ 520 0334 D30C0000 		.4byte	.LASF58
+ 521 0338 01       		.byte	0x1
+ 522 0339 00       		.byte	0
+ 523 033a 06       		.uleb128 0x6
+ 524 033b F60B0000 		.4byte	.LASF59
+ 525 033f 07       		.byte	0x7
+ 526 0340 E101     		.2byte	0x1e1
+ 527 0342 20030000 		.4byte	0x320
+ 528 0346 06       		.uleb128 0x6
+ 529 0347 D7020000 		.4byte	.LASF60
+ 530 034b 07       		.byte	0x7
+ 531 034c F301     		.2byte	0x1f3
+ 532 034e 52030000 		.4byte	0x352
+ 533 0352 0C       		.uleb128 0xc
+ 534 0353 04       		.byte	0x4
+ 535 0354 58030000 		.4byte	0x358
+ 536 0358 0D       		.uleb128 0xd
+ 537 0359 63030000 		.4byte	0x363
+ 538 035d 0E       		.uleb128 0xe
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 11
+
+
+ 539 035e 8C000000 		.4byte	0x8c
+ 540 0362 00       		.byte	0
+ 541 0363 06       		.uleb128 0x6
+ 542 0364 EE080000 		.4byte	.LASF61
+ 543 0368 07       		.byte	0x7
+ 544 0369 FE01     		.2byte	0x1fe
+ 545 036b 6F030000 		.4byte	0x36f
+ 546 036f 0C       		.uleb128 0xc
+ 547 0370 04       		.byte	0x4
+ 548 0371 75030000 		.4byte	0x375
+ 549 0375 0F       		.uleb128 0xf
+ 550 0376 3A030000 		.4byte	0x33a
+ 551 037a 84030000 		.4byte	0x384
+ 552 037e 0E       		.uleb128 0xe
+ 553 037f 8C000000 		.4byte	0x8c
+ 554 0383 00       		.byte	0
+ 555 0384 10       		.uleb128 0x10
+ 556 0385 E9010000 		.4byte	.LASF62
+ 557 0389 4C       		.byte	0x4c
+ 558 038a 07       		.byte	0x7
+ 559 038b 6502     		.2byte	0x265
+ 560 038d A3040000 		.4byte	0x4a3
+ 561 0391 11       		.uleb128 0x11
+ 562 0392 760B0000 		.4byte	.LASF63
+ 563 0396 07       		.byte	0x7
+ 564 0397 6802     		.2byte	0x268
+ 565 0399 D9000000 		.4byte	0xd9
+ 566 039d 00       		.byte	0
+ 567 039e 11       		.uleb128 0x11
+ 568 039f D9040000 		.4byte	.LASF64
+ 569 03a3 07       		.byte	0x7
+ 570 03a4 6902     		.2byte	0x269
+ 571 03a6 D9000000 		.4byte	0xd9
+ 572 03aa 01       		.byte	0x1
+ 573 03ab 11       		.uleb128 0x11
+ 574 03ac D1020000 		.4byte	.LASF65
+ 575 03b0 07       		.byte	0x7
+ 576 03b1 6B02     		.2byte	0x26b
+ 577 03b3 9E000000 		.4byte	0x9e
+ 578 03b7 04       		.byte	0x4
+ 579 03b8 11       		.uleb128 0x11
+ 580 03b9 B2010000 		.4byte	.LASF66
+ 581 03bd 07       		.byte	0x7
+ 582 03be 6D02     		.2byte	0x26d
+ 583 03c0 9E000000 		.4byte	0x9e
+ 584 03c4 08       		.byte	0x8
+ 585 03c5 11       		.uleb128 0x11
+ 586 03c6 D1080000 		.4byte	.LASF67
+ 587 03ca 07       		.byte	0x7
+ 588 03cb 6E02     		.2byte	0x26e
+ 589 03cd D9000000 		.4byte	0xd9
+ 590 03d1 0C       		.byte	0xc
+ 591 03d2 11       		.uleb128 0x11
+ 592 03d3 64070000 		.4byte	.LASF68
+ 593 03d7 07       		.byte	0x7
+ 594 03d8 6F02     		.2byte	0x26f
+ 595 03da D9000000 		.4byte	0xd9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 12
+
+
+ 596 03de 0D       		.byte	0xd
+ 597 03df 11       		.uleb128 0x11
+ 598 03e0 63000000 		.4byte	.LASF69
+ 599 03e4 07       		.byte	0x7
+ 600 03e5 7102     		.2byte	0x271
+ 601 03e7 A3040000 		.4byte	0x4a3
+ 602 03eb 10       		.byte	0x10
+ 603 03ec 11       		.uleb128 0x11
+ 604 03ed A1080000 		.4byte	.LASF70
+ 605 03f1 07       		.byte	0x7
+ 606 03f2 7202     		.2byte	0x272
+ 607 03f4 8C000000 		.4byte	0x8c
+ 608 03f8 14       		.byte	0x14
+ 609 03f9 11       		.uleb128 0x11
+ 610 03fa 4F060000 		.4byte	.LASF71
+ 611 03fe 07       		.byte	0x7
+ 612 03ff 7302     		.2byte	0x273
+ 613 0401 9E000000 		.4byte	0x9e
+ 614 0405 18       		.byte	0x18
+ 615 0406 11       		.uleb128 0x11
+ 616 0407 1B090000 		.4byte	.LASF72
+ 617 040b 07       		.byte	0x7
+ 618 040c 7402     		.2byte	0x274
+ 619 040e 9E000000 		.4byte	0x9e
+ 620 0412 1C       		.byte	0x1c
+ 621 0413 11       		.uleb128 0x11
+ 622 0414 7E020000 		.4byte	.LASF73
+ 623 0418 07       		.byte	0x7
+ 624 0419 7602     		.2byte	0x276
+ 625 041b 9E000000 		.4byte	0x9e
+ 626 041f 20       		.byte	0x20
+ 627 0420 11       		.uleb128 0x11
+ 628 0421 96040000 		.4byte	.LASF74
+ 629 0425 07       		.byte	0x7
+ 630 0426 7702     		.2byte	0x277
+ 631 0428 A9040000 		.4byte	0x4a9
+ 632 042c 24       		.byte	0x24
+ 633 042d 11       		.uleb128 0x11
+ 634 042e 9F0B0000 		.4byte	.LASF75
+ 635 0432 07       		.byte	0x7
+ 636 0433 7902     		.2byte	0x279
+ 637 0435 A3040000 		.4byte	0x4a3
+ 638 0439 28       		.byte	0x28
+ 639 043a 11       		.uleb128 0x11
+ 640 043b AD0B0000 		.4byte	.LASF76
+ 641 043f 07       		.byte	0x7
+ 642 0440 7A02     		.2byte	0x27a
+ 643 0442 8C000000 		.4byte	0x8c
+ 644 0446 2C       		.byte	0x2c
+ 645 0447 11       		.uleb128 0x11
+ 646 0448 85040000 		.4byte	.LASF77
+ 647 044c 07       		.byte	0x7
+ 648 044d 7B02     		.2byte	0x27b
+ 649 044f 9E000000 		.4byte	0x9e
+ 650 0453 30       		.byte	0x30
+ 651 0454 11       		.uleb128 0x11
+ 652 0455 2A090000 		.4byte	.LASF78
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 13
+
+
+ 653 0459 07       		.byte	0x7
+ 654 045a 7C02     		.2byte	0x27c
+ 655 045c 9E000000 		.4byte	0x9e
+ 656 0460 34       		.byte	0x34
+ 657 0461 11       		.uleb128 0x11
+ 658 0462 FA050000 		.4byte	.LASF79
+ 659 0466 07       		.byte	0x7
+ 660 0467 7E02     		.2byte	0x27e
+ 661 0469 A3040000 		.4byte	0x4a3
+ 662 046d 38       		.byte	0x38
+ 663 046e 11       		.uleb128 0x11
+ 664 046f D7010000 		.4byte	.LASF80
+ 665 0473 07       		.byte	0x7
+ 666 0474 7F02     		.2byte	0x27f
+ 667 0476 8C000000 		.4byte	0x8c
+ 668 047a 3C       		.byte	0x3c
+ 669 047b 11       		.uleb128 0x11
+ 670 047c 52000000 		.4byte	.LASF81
+ 671 0480 07       		.byte	0x7
+ 672 0481 8002     		.2byte	0x280
+ 673 0483 9E000000 		.4byte	0x9e
+ 674 0487 40       		.byte	0x40
+ 675 0488 11       		.uleb128 0x11
+ 676 0489 81050000 		.4byte	.LASF82
+ 677 048d 07       		.byte	0x7
+ 678 048e 8602     		.2byte	0x286
+ 679 0490 46030000 		.4byte	0x346
+ 680 0494 44       		.byte	0x44
+ 681 0495 11       		.uleb128 0x11
+ 682 0496 A1030000 		.4byte	.LASF83
+ 683 049a 07       		.byte	0x7
+ 684 049b 8D02     		.2byte	0x28d
+ 685 049d 63030000 		.4byte	0x363
+ 686 04a1 48       		.byte	0x48
+ 687 04a2 00       		.byte	0
+ 688 04a3 0C       		.uleb128 0xc
+ 689 04a4 04       		.byte	0x4
+ 690 04a5 81000000 		.4byte	0x81
+ 691 04a9 05       		.uleb128 0x5
+ 692 04aa D9000000 		.4byte	0xd9
+ 693 04ae 06       		.uleb128 0x6
+ 694 04af 6F090000 		.4byte	.LASF84
+ 695 04b3 07       		.byte	0x7
+ 696 04b4 9002     		.2byte	0x290
+ 697 04b6 84030000 		.4byte	0x384
+ 698 04ba 0A       		.uleb128 0xa
+ 699 04bb 01       		.byte	0x1
+ 700 04bc 2C000000 		.4byte	0x2c
+ 701 04c0 08       		.byte	0x8
+ 702 04c1 7A01     		.2byte	0x17a
+ 703 04c3 DA040000 		.4byte	0x4da
+ 704 04c7 0B       		.uleb128 0xb
+ 705 04c8 480A0000 		.4byte	.LASF85
+ 706 04cc 00       		.byte	0
+ 707 04cd 0B       		.uleb128 0xb
+ 708 04ce B8060000 		.4byte	.LASF86
+ 709 04d2 01       		.byte	0x1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 14
+
+
+ 710 04d3 0B       		.uleb128 0xb
+ 711 04d4 BD050000 		.4byte	.LASF87
+ 712 04d8 02       		.byte	0x2
+ 713 04d9 00       		.byte	0
+ 714 04da 06       		.uleb128 0x6
+ 715 04db D9070000 		.4byte	.LASF88
+ 716 04df 08       		.byte	0x8
+ 717 04e0 7E01     		.2byte	0x17e
+ 718 04e2 BA040000 		.4byte	0x4ba
+ 719 04e6 0A       		.uleb128 0xa
+ 720 04e7 01       		.byte	0x1
+ 721 04e8 2C000000 		.4byte	0x2c
+ 722 04ec 08       		.byte	0x8
+ 723 04ed 8201     		.2byte	0x182
+ 724 04ef 1E050000 		.4byte	0x51e
+ 725 04f3 0B       		.uleb128 0xb
+ 726 04f4 A8030000 		.4byte	.LASF89
+ 727 04f8 02       		.byte	0x2
+ 728 04f9 0B       		.uleb128 0xb
+ 729 04fa E20C0000 		.4byte	.LASF90
+ 730 04fe 03       		.byte	0x3
+ 731 04ff 0B       		.uleb128 0xb
+ 732 0500 C0030000 		.4byte	.LASF91
+ 733 0504 04       		.byte	0x4
+ 734 0505 0B       		.uleb128 0xb
+ 735 0506 5D0A0000 		.4byte	.LASF92
+ 736 050a 05       		.byte	0x5
+ 737 050b 0B       		.uleb128 0xb
+ 738 050c D8030000 		.4byte	.LASF93
+ 739 0510 06       		.byte	0x6
+ 740 0511 0B       		.uleb128 0xb
+ 741 0512 0A070000 		.4byte	.LASF94
+ 742 0516 07       		.byte	0x7
+ 743 0517 0B       		.uleb128 0xb
+ 744 0518 F0030000 		.4byte	.LASF95
+ 745 051c 08       		.byte	0x8
+ 746 051d 00       		.byte	0
+ 747 051e 06       		.uleb128 0x6
+ 748 051f 25040000 		.4byte	.LASF96
+ 749 0523 08       		.byte	0x8
+ 750 0524 8A01     		.2byte	0x18a
+ 751 0526 E6040000 		.4byte	0x4e6
+ 752 052a 0A       		.uleb128 0xa
+ 753 052b 01       		.byte	0x1
+ 754 052c 2C000000 		.4byte	0x2c
+ 755 0530 08       		.byte	0x8
+ 756 0531 8E01     		.2byte	0x18e
+ 757 0533 4A050000 		.4byte	0x54a
+ 758 0537 0B       		.uleb128 0xb
+ 759 0538 18050000 		.4byte	.LASF97
+ 760 053c 00       		.byte	0
+ 761 053d 0B       		.uleb128 0xb
+ 762 053e DC000000 		.4byte	.LASF98
+ 763 0542 02       		.byte	0x2
+ 764 0543 0B       		.uleb128 0xb
+ 765 0544 11030000 		.4byte	.LASF99
+ 766 0548 03       		.byte	0x3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 15
+
+
+ 767 0549 00       		.byte	0
+ 768 054a 06       		.uleb128 0x6
+ 769 054b 70070000 		.4byte	.LASF100
+ 770 054f 08       		.byte	0x8
+ 771 0550 9201     		.2byte	0x192
+ 772 0552 2A050000 		.4byte	0x52a
+ 773 0556 0A       		.uleb128 0xa
+ 774 0557 01       		.byte	0x1
+ 775 0558 2C000000 		.4byte	0x2c
+ 776 055c 08       		.byte	0x8
+ 777 055d 9601     		.2byte	0x196
+ 778 055f 70050000 		.4byte	0x570
+ 779 0563 0B       		.uleb128 0xb
+ 780 0564 21020000 		.4byte	.LASF101
+ 781 0568 00       		.byte	0
+ 782 0569 0B       		.uleb128 0xb
+ 783 056a F4000000 		.4byte	.LASF102
+ 784 056e 01       		.byte	0x1
+ 785 056f 00       		.byte	0
+ 786 0570 06       		.uleb128 0x6
+ 787 0571 9E060000 		.4byte	.LASF103
+ 788 0575 08       		.byte	0x8
+ 789 0576 9901     		.2byte	0x199
+ 790 0578 56050000 		.4byte	0x556
+ 791 057c 06       		.uleb128 0x6
+ 792 057d 390B0000 		.4byte	.LASF104
+ 793 0581 08       		.byte	0x8
+ 794 0582 AB01     		.2byte	0x1ab
+ 795 0584 52030000 		.4byte	0x352
+ 796 0588 10       		.uleb128 0x10
+ 797 0589 620B0000 		.4byte	.LASF105
+ 798 058d 40       		.byte	0x40
+ 799 058e 08       		.byte	0x8
+ 800 058f AE01     		.2byte	0x1ae
+ 801 0591 DB060000 		.4byte	0x6db
+ 802 0595 11       		.uleb128 0x11
+ 803 0596 880B0000 		.4byte	.LASF106
+ 804 059a 08       		.byte	0x8
+ 805 059b B101     		.2byte	0x1b1
+ 806 059d DA040000 		.4byte	0x4da
+ 807 05a1 00       		.byte	0
+ 808 05a2 11       		.uleb128 0x11
+ 809 05a3 C6080000 		.4byte	.LASF107
+ 810 05a7 08       		.byte	0x8
+ 811 05a8 BB01     		.2byte	0x1bb
+ 812 05aa 8C000000 		.4byte	0x8c
+ 813 05ae 04       		.byte	0x4
+ 814 05af 11       		.uleb128 0x11
+ 815 05b0 B2070000 		.4byte	.LASF108
+ 816 05b4 08       		.byte	0x8
+ 817 05b5 BE01     		.2byte	0x1be
+ 818 05b7 8C000000 		.4byte	0x8c
+ 819 05bb 08       		.byte	0x8
+ 820 05bc 11       		.uleb128 0x11
+ 821 05bd 43000000 		.4byte	.LASF109
+ 822 05c1 08       		.byte	0x8
+ 823 05c2 C401     		.2byte	0x1c4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 16
+
+
+ 824 05c4 D9000000 		.4byte	0xd9
+ 825 05c8 0C       		.byte	0xc
+ 826 05c9 11       		.uleb128 0x11
+ 827 05ca 770A0000 		.4byte	.LASF110
+ 828 05ce 08       		.byte	0x8
+ 829 05cf CA01     		.2byte	0x1ca
+ 830 05d1 1E050000 		.4byte	0x51e
+ 831 05d5 0D       		.byte	0xd
+ 832 05d6 11       		.uleb128 0x11
+ 833 05d7 9A030000 		.4byte	.LASF111
+ 834 05db 08       		.byte	0x8
+ 835 05dc CD01     		.2byte	0x1cd
+ 836 05de 4A050000 		.4byte	0x54a
+ 837 05e2 0E       		.byte	0xe
+ 838 05e3 11       		.uleb128 0x11
+ 839 05e4 3D0D0000 		.4byte	.LASF112
+ 840 05e8 08       		.byte	0x8
+ 841 05e9 D501     		.2byte	0x1d5
+ 842 05eb D9000000 		.4byte	0xd9
+ 843 05ef 0F       		.byte	0xf
+ 844 05f0 11       		.uleb128 0x11
+ 845 05f1 4F0D0000 		.4byte	.LASF113
+ 846 05f5 08       		.byte	0x8
+ 847 05f6 DB01     		.2byte	0x1db
+ 848 05f8 D9000000 		.4byte	0xd9
+ 849 05fc 10       		.byte	0x10
+ 850 05fd 11       		.uleb128 0x11
+ 851 05fe 10020000 		.4byte	.LASF114
+ 852 0602 08       		.byte	0x8
+ 853 0603 E101     		.2byte	0x1e1
+ 854 0605 D9000000 		.4byte	0xd9
+ 855 0609 11       		.byte	0x11
+ 856 060a 11       		.uleb128 0x11
+ 857 060b 68080000 		.4byte	.LASF115
+ 858 060f 08       		.byte	0x8
+ 859 0610 E701     		.2byte	0x1e7
+ 860 0612 D9000000 		.4byte	0xd9
+ 861 0616 12       		.byte	0x12
+ 862 0617 11       		.uleb128 0x11
+ 863 0618 2D080000 		.4byte	.LASF116
+ 864 061c 08       		.byte	0x8
+ 865 061d EE01     		.2byte	0x1ee
+ 866 061f 8C000000 		.4byte	0x8c
+ 867 0623 14       		.byte	0x14
+ 868 0624 11       		.uleb128 0x11
+ 869 0625 11040000 		.4byte	.LASF117
+ 870 0629 08       		.byte	0x8
+ 871 062a F601     		.2byte	0x1f6
+ 872 062c 8C000000 		.4byte	0x8c
+ 873 0630 18       		.byte	0x18
+ 874 0631 11       		.uleb128 0x11
+ 875 0632 4F080000 		.4byte	.LASF118
+ 876 0636 08       		.byte	0x8
+ 877 0637 FC01     		.2byte	0x1fc
+ 878 0639 D9000000 		.4byte	0xd9
+ 879 063d 1C       		.byte	0x1c
+ 880 063e 11       		.uleb128 0x11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 17
+
+
+ 881 063f 81080000 		.4byte	.LASF119
+ 882 0643 08       		.byte	0x8
+ 883 0644 FF01     		.2byte	0x1ff
+ 884 0646 D9000000 		.4byte	0xd9
+ 885 064a 1D       		.byte	0x1d
+ 886 064b 11       		.uleb128 0x11
+ 887 064c 61010000 		.4byte	.LASF120
+ 888 0650 08       		.byte	0x8
+ 889 0651 0502     		.2byte	0x205
+ 890 0653 D9000000 		.4byte	0xd9
+ 891 0657 1E       		.byte	0x1e
+ 892 0658 11       		.uleb128 0x11
+ 893 0659 200D0000 		.4byte	.LASF121
+ 894 065d 08       		.byte	0x8
+ 895 065e 0C02     		.2byte	0x20c
+ 896 0660 D9000000 		.4byte	0xd9
+ 897 0664 1F       		.byte	0x1f
+ 898 0665 11       		.uleb128 0x11
+ 899 0666 C6040000 		.4byte	.LASF122
+ 900 066a 08       		.byte	0x8
+ 901 066b 1202     		.2byte	0x212
+ 902 066d D9000000 		.4byte	0xd9
+ 903 0671 20       		.byte	0x20
+ 904 0672 11       		.uleb128 0x11
+ 905 0673 88090000 		.4byte	.LASF123
+ 906 0677 08       		.byte	0x8
+ 907 0678 1502     		.2byte	0x215
+ 908 067a 70050000 		.4byte	0x570
+ 909 067e 21       		.byte	0x21
+ 910 067f 11       		.uleb128 0x11
+ 911 0680 C2020000 		.4byte	.LASF124
+ 912 0684 08       		.byte	0x8
+ 913 0685 1B02     		.2byte	0x21b
+ 914 0687 8C000000 		.4byte	0x8c
+ 915 068b 24       		.byte	0x24
+ 916 068c 11       		.uleb128 0x11
+ 917 068d 140D0000 		.4byte	.LASF125
+ 918 0691 08       		.byte	0x8
+ 919 0692 1E02     		.2byte	0x21e
+ 920 0694 70050000 		.4byte	0x570
+ 921 0698 28       		.byte	0x28
+ 922 0699 11       		.uleb128 0x11
+ 923 069a B40A0000 		.4byte	.LASF126
+ 924 069e 08       		.byte	0x8
+ 925 069f 2102     		.2byte	0x221
+ 926 06a1 8C000000 		.4byte	0x8c
+ 927 06a5 2C       		.byte	0x2c
+ 928 06a6 11       		.uleb128 0x11
+ 929 06a7 14000000 		.4byte	.LASF127
+ 930 06ab 08       		.byte	0x8
+ 931 06ac 2902     		.2byte	0x229
+ 932 06ae 8C000000 		.4byte	0x8c
+ 933 06b2 30       		.byte	0x30
+ 934 06b3 11       		.uleb128 0x11
+ 935 06b4 4B030000 		.4byte	.LASF128
+ 936 06b8 08       		.byte	0x8
+ 937 06b9 2F02     		.2byte	0x22f
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 18
+
+
+ 938 06bb 8C000000 		.4byte	0x8c
+ 939 06bf 34       		.byte	0x34
+ 940 06c0 11       		.uleb128 0x11
+ 941 06c1 8E080000 		.4byte	.LASF129
+ 942 06c5 08       		.byte	0x8
+ 943 06c6 3702     		.2byte	0x237
+ 944 06c8 8C000000 		.4byte	0x8c
+ 945 06cc 38       		.byte	0x38
+ 946 06cd 11       		.uleb128 0x11
+ 947 06ce 04050000 		.4byte	.LASF130
+ 948 06d2 08       		.byte	0x8
+ 949 06d3 3D02     		.2byte	0x23d
+ 950 06d5 8C000000 		.4byte	0x8c
+ 951 06d9 3C       		.byte	0x3c
+ 952 06da 00       		.byte	0
+ 953 06db 06       		.uleb128 0x6
+ 954 06dc 3A070000 		.4byte	.LASF131
+ 955 06e0 08       		.byte	0x8
+ 956 06e1 3E02     		.2byte	0x23e
+ 957 06e3 88050000 		.4byte	0x588
+ 958 06e7 10       		.uleb128 0x10
+ 959 06e8 FC0C0000 		.4byte	.LASF132
+ 960 06ec 38       		.byte	0x38
+ 961 06ed 08       		.byte	0x8
+ 962 06ee 4702     		.2byte	0x247
+ 963 06f0 AB070000 		.4byte	0x7ab
+ 964 06f4 11       		.uleb128 0x11
+ 965 06f5 D0040000 		.4byte	.LASF133
+ 966 06f9 08       		.byte	0x8
+ 967 06fa 4A02     		.2byte	0x24a
+ 968 06fc 9E000000 		.4byte	0x9e
+ 969 0700 00       		.byte	0
+ 970 0701 11       		.uleb128 0x11
+ 971 0702 95060000 		.4byte	.LASF134
+ 972 0706 08       		.byte	0x8
+ 973 0707 4B02     		.2byte	0x24b
+ 974 0709 9E000000 		.4byte	0x9e
+ 975 070d 04       		.byte	0x4
+ 976 070e 11       		.uleb128 0x11
+ 977 070f A8010000 		.4byte	.LASF135
+ 978 0713 08       		.byte	0x8
+ 979 0714 4D02     		.2byte	0x24d
+ 980 0716 D7000000 		.4byte	0xd7
+ 981 071a 08       		.byte	0x8
+ 982 071b 11       		.uleb128 0x11
+ 983 071c A6040000 		.4byte	.LASF136
+ 984 0720 08       		.byte	0x8
+ 985 0721 4E02     		.2byte	0x24e
+ 986 0723 8C000000 		.4byte	0x8c
+ 987 0727 0C       		.byte	0xc
+ 988 0728 11       		.uleb128 0x11
+ 989 0729 DD050000 		.4byte	.LASF137
+ 990 072d 08       		.byte	0x8
+ 991 072e 4F02     		.2byte	0x24f
+ 992 0730 9E000000 		.4byte	0x9e
+ 993 0734 10       		.byte	0x10
+ 994 0735 11       		.uleb128 0x11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 19
+
+
+ 995 0736 BC0C0000 		.4byte	.LASF138
+ 996 073a 08       		.byte	0x8
+ 997 073b 5002     		.2byte	0x250
+ 998 073d 9E000000 		.4byte	0x9e
+ 999 0741 14       		.byte	0x14
+ 1000 0742 11       		.uleb128 0x11
+ 1001 0743 990B0000 		.4byte	.LASF139
+ 1002 0747 08       		.byte	0x8
+ 1003 0748 5202     		.2byte	0x252
+ 1004 074a D7000000 		.4byte	0xd7
+ 1005 074e 18       		.byte	0x18
+ 1006 074f 11       		.uleb128 0x11
+ 1007 0750 27000000 		.4byte	.LASF140
+ 1008 0754 08       		.byte	0x8
+ 1009 0755 5302     		.2byte	0x253
+ 1010 0757 8C000000 		.4byte	0x8c
+ 1011 075b 1C       		.byte	0x1c
+ 1012 075c 11       		.uleb128 0x11
+ 1013 075d 08040000 		.4byte	.LASF141
+ 1014 0761 08       		.byte	0x8
+ 1015 0762 5402     		.2byte	0x254
+ 1016 0764 9E000000 		.4byte	0x9e
+ 1017 0768 20       		.byte	0x20
+ 1018 0769 11       		.uleb128 0x11
+ 1019 076a BF010000 		.4byte	.LASF142
+ 1020 076e 08       		.byte	0x8
+ 1021 076f 5602     		.2byte	0x256
+ 1022 0771 D7000000 		.4byte	0xd7
+ 1023 0775 24       		.byte	0x24
+ 1024 0776 11       		.uleb128 0x11
+ 1025 0777 52040000 		.4byte	.LASF143
+ 1026 077b 08       		.byte	0x8
+ 1027 077c 5702     		.2byte	0x257
+ 1028 077e 8C000000 		.4byte	0x8c
+ 1029 0782 28       		.byte	0x28
+ 1030 0783 11       		.uleb128 0x11
+ 1031 0784 53070000 		.4byte	.LASF144
+ 1032 0788 08       		.byte	0x8
+ 1033 0789 5802     		.2byte	0x258
+ 1034 078b 9E000000 		.4byte	0x9e
+ 1035 078f 2C       		.byte	0x2c
+ 1036 0790 11       		.uleb128 0x11
+ 1037 0791 81050000 		.4byte	.LASF82
+ 1038 0795 08       		.byte	0x8
+ 1039 0796 5D02     		.2byte	0x25d
+ 1040 0798 7C050000 		.4byte	0x57c
+ 1041 079c 30       		.byte	0x30
+ 1042 079d 11       		.uleb128 0x11
+ 1043 079e 910B0000 		.4byte	.LASF145
+ 1044 07a2 08       		.byte	0x8
+ 1045 07a3 6002     		.2byte	0x260
+ 1046 07a5 8C000000 		.4byte	0x8c
+ 1047 07a9 34       		.byte	0x34
+ 1048 07aa 00       		.byte	0
+ 1049 07ab 06       		.uleb128 0x6
+ 1050 07ac 64020000 		.4byte	.LASF146
+ 1051 07b0 08       		.byte	0x8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 20
+
+
+ 1052 07b1 6302     		.2byte	0x263
+ 1053 07b3 E7060000 		.4byte	0x6e7
+ 1054 07b7 12       		.uleb128 0x12
+ 1055 07b8 81000000 		.4byte	0x81
+ 1056 07bc 13       		.uleb128 0x13
+ 1057 07bd 02       		.byte	0x2
+ 1058 07be 09       		.byte	0x9
+ 1059 07bf 5B01     		.2byte	0x15b
+ 1060 07c1 E0070000 		.4byte	0x7e0
+ 1061 07c5 11       		.uleb128 0x11
+ 1062 07c6 CA0C0000 		.4byte	.LASF147
+ 1063 07ca 09       		.byte	0x9
+ 1064 07cb 6501     		.2byte	0x165
+ 1065 07cd 81000000 		.4byte	0x81
+ 1066 07d1 00       		.byte	0
+ 1067 07d2 11       		.uleb128 0x11
+ 1068 07d3 13060000 		.4byte	.LASF148
+ 1069 07d7 09       		.byte	0x9
+ 1070 07d8 6901     		.2byte	0x169
+ 1071 07da 81000000 		.4byte	0x81
+ 1072 07de 01       		.byte	0x1
+ 1073 07df 00       		.byte	0
+ 1074 07e0 06       		.uleb128 0x6
+ 1075 07e1 A6000000 		.4byte	.LASF149
+ 1076 07e5 09       		.byte	0x9
+ 1077 07e6 6B01     		.2byte	0x16b
+ 1078 07e8 BC070000 		.4byte	0x7bc
+ 1079 07ec 14       		.uleb128 0x14
+ 1080 07ed 01       		.byte	0x1
+ 1081 07ee 2C000000 		.4byte	0x2c
+ 1082 07f2 0A       		.byte	0xa
+ 1083 07f3 7E       		.byte	0x7e
+ 1084 07f4 11080000 		.4byte	0x811
+ 1085 07f8 0B       		.uleb128 0xb
+ 1086 07f9 450C0000 		.4byte	.LASF150
+ 1087 07fd 00       		.byte	0
+ 1088 07fe 0B       		.uleb128 0xb
+ 1089 07ff 76060000 		.4byte	.LASF151
+ 1090 0803 01       		.byte	0x1
+ 1091 0804 0B       		.uleb128 0xb
+ 1092 0805 280C0000 		.4byte	.LASF152
+ 1093 0809 02       		.byte	0x2
+ 1094 080a 0B       		.uleb128 0xb
+ 1095 080b 8A020000 		.4byte	.LASF153
+ 1096 080f 03       		.byte	0x3
+ 1097 0810 00       		.byte	0
+ 1098 0811 03       		.uleb128 0x3
+ 1099 0812 28030000 		.4byte	.LASF154
+ 1100 0816 0A       		.byte	0xa
+ 1101 0817 83       		.byte	0x83
+ 1102 0818 EC070000 		.4byte	0x7ec
+ 1103 081c 14       		.uleb128 0x14
+ 1104 081d 01       		.byte	0x1
+ 1105 081e 2C000000 		.4byte	0x2c
+ 1106 0822 0A       		.byte	0xa
+ 1107 0823 87       		.byte	0x87
+ 1108 0824 59080000 		.4byte	0x859
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 21
+
+
+ 1109 0828 0B       		.uleb128 0xb
+ 1110 0829 C50B0000 		.4byte	.LASF155
+ 1111 082d 00       		.byte	0
+ 1112 082e 0B       		.uleb128 0xb
+ 1113 082f EF070000 		.4byte	.LASF156
+ 1114 0833 01       		.byte	0x1
+ 1115 0834 0B       		.uleb128 0xb
+ 1116 0835 69040000 		.4byte	.LASF157
+ 1117 0839 02       		.byte	0x2
+ 1118 083a 0B       		.uleb128 0xb
+ 1119 083b 0F0B0000 		.4byte	.LASF158
+ 1120 083f 03       		.byte	0x3
+ 1121 0840 0B       		.uleb128 0xb
+ 1122 0841 70030000 		.4byte	.LASF159
+ 1123 0845 04       		.byte	0x4
+ 1124 0846 0B       		.uleb128 0xb
+ 1125 0847 88070000 		.4byte	.LASF160
+ 1126 084b 05       		.byte	0x5
+ 1127 084c 0B       		.uleb128 0xb
+ 1128 084d 3B090000 		.4byte	.LASF161
+ 1129 0851 06       		.byte	0x6
+ 1130 0852 0B       		.uleb128 0xb
+ 1131 0853 CE060000 		.4byte	.LASF162
+ 1132 0857 07       		.byte	0x7
+ 1133 0858 00       		.byte	0
+ 1134 0859 03       		.uleb128 0x3
+ 1135 085a 5F060000 		.4byte	.LASF163
+ 1136 085e 0A       		.byte	0xa
+ 1137 085f 90       		.byte	0x90
+ 1138 0860 1C080000 		.4byte	0x81c
+ 1139 0864 15       		.uleb128 0x15
+ 1140 0865 00020000 		.4byte	.LASF186
+ 1141 0869 01       		.byte	0x1
+ 1142 086a 08       		.byte	0x8
+ 1143 086b 00000000 		.4byte	.LFB798
+ 1144 086f 30000000 		.4byte	.LFE798-.LFB798
+ 1145 0873 01       		.uleb128 0x1
+ 1146 0874 9C       		.byte	0x9c
+ 1147 0875 E0080000 		.4byte	0x8e0
+ 1148 0879 16       		.uleb128 0x16
+ 1149 087a C5010000 		.4byte	.LASF187
+ 1150 087e 01       		.byte	0x1
+ 1151 087f 0B       		.byte	0xb
+ 1152 0880 BF000000 		.4byte	0xbf
+ 1153 0884 00000000 		.4byte	.LLST0
+ 1154 0888 17       		.uleb128 0x17
+ 1155 0889 08000000 		.4byte	.LVL0
+ 1156 088d E4090000 		.4byte	0x9e4
+ 1157 0891 9F080000 		.4byte	0x89f
+ 1158 0895 18       		.uleb128 0x18
+ 1159 0896 01       		.uleb128 0x1
+ 1160 0897 50       		.byte	0x50
+ 1161 0898 05       		.uleb128 0x5
+ 1162 0899 03       		.byte	0x3
+ 1163 089a 00000000 		.4byte	.LC0
+ 1164 089e 00       		.byte	0
+ 1165 089f 19       		.uleb128 0x19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 22
+
+
+ 1166 08a0 0C000000 		.4byte	.LVL1
+ 1167 08a4 F3090000 		.4byte	0x9f3
+ 1168 08a8 17       		.uleb128 0x17
+ 1169 08a9 16000000 		.4byte	.LVL3
+ 1170 08ad E4090000 		.4byte	0x9e4
+ 1171 08b1 BF080000 		.4byte	0x8bf
+ 1172 08b5 18       		.uleb128 0x18
+ 1173 08b6 01       		.uleb128 0x1
+ 1174 08b7 50       		.byte	0x50
+ 1175 08b8 05       		.uleb128 0x5
+ 1176 08b9 03       		.byte	0x3
+ 1177 08ba 14000000 		.4byte	.LC2
+ 1178 08be 00       		.byte	0
+ 1179 08bf 17       		.uleb128 0x17
+ 1180 08c0 1E000000 		.4byte	.LVL6
+ 1181 08c4 E4090000 		.4byte	0x9e4
+ 1182 08c8 D6080000 		.4byte	0x8d6
+ 1183 08cc 18       		.uleb128 0x18
+ 1184 08cd 01       		.uleb128 0x1
+ 1185 08ce 50       		.byte	0x50
+ 1186 08cf 05       		.uleb128 0x5
+ 1187 08d0 03       		.byte	0x3
+ 1188 08d1 44000000 		.4byte	.LC4
+ 1189 08d5 00       		.byte	0
+ 1190 08d6 19       		.uleb128 0x19
+ 1191 08d7 22000000 		.4byte	.LVL7
+ 1192 08db FE090000 		.4byte	0x9fe
+ 1193 08df 00       		.byte	0
+ 1194 08e0 1A       		.uleb128 0x1a
+ 1195 08e1 B7070000 		.4byte	0x7b7
+ 1196 08e5 F0080000 		.4byte	0x8f0
+ 1197 08e9 1B       		.uleb128 0x1b
+ 1198 08ea 97000000 		.4byte	0x97
+ 1199 08ee 0B       		.byte	0xb
+ 1200 08ef 00       		.byte	0
+ 1201 08f0 1C       		.uleb128 0x1c
+ 1202 08f1 24070000 		.4byte	.LASF164
+ 1203 08f5 0B       		.byte	0xb
+ 1204 08f6 FC02     		.2byte	0x2fc
+ 1205 08f8 FC080000 		.4byte	0x8fc
+ 1206 08fc 12       		.uleb128 0x12
+ 1207 08fd E0080000 		.4byte	0x8e0
+ 1208 0901 1C       		.uleb128 0x1c
+ 1209 0902 A40A0000 		.4byte	.LASF165
+ 1210 0906 0A       		.byte	0xa
+ 1211 0907 2202     		.2byte	0x222
+ 1212 0909 11080000 		.4byte	0x811
+ 1213 090d 1A       		.uleb128 0x1a
+ 1214 090e E0070000 		.4byte	0x7e0
+ 1215 0912 1D090000 		.4byte	0x91d
+ 1216 0916 1B       		.uleb128 0x1b
+ 1217 0917 97000000 		.4byte	0x97
+ 1218 091b 00       		.byte	0
+ 1219 091c 00       		.byte	0
+ 1220 091d 1C       		.uleb128 0x1c
+ 1221 091e E40B0000 		.4byte	.LASF166
+ 1222 0922 0A       		.byte	0xa
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 23
+
+
+ 1223 0923 2C02     		.2byte	0x22c
+ 1224 0925 0D090000 		.4byte	0x90d
+ 1225 0929 1A       		.uleb128 0x1a
+ 1226 092a 59080000 		.4byte	0x859
+ 1227 092e 39090000 		.4byte	0x939
+ 1228 0932 1B       		.uleb128 0x1b
+ 1229 0933 97000000 		.4byte	0x97
+ 1230 0937 00       		.byte	0
+ 1231 0938 00       		.byte	0
+ 1232 0939 1C       		.uleb128 0x1c
+ 1233 093a 62050000 		.4byte	.LASF167
+ 1234 093e 0A       		.byte	0xa
+ 1235 093f 2D02     		.2byte	0x22d
+ 1236 0941 29090000 		.4byte	0x929
+ 1237 0945 1C       		.uleb128 0x1c
+ 1238 0946 800A0000 		.4byte	.LASF168
+ 1239 094a 0A       		.byte	0xa
+ 1240 094b 5202     		.2byte	0x252
+ 1241 094d 81000000 		.4byte	0x81
+ 1242 0951 1D       		.uleb128 0x1d
+ 1243 0952 20010000 		.4byte	.LASF169
+ 1244 0956 0C       		.byte	0xc
+ 1245 0957 86       		.byte	0x86
+ 1246 0958 5C090000 		.4byte	0x95c
+ 1247 095c 12       		.uleb128 0x12
+ 1248 095d DB060000 		.4byte	0x6db
+ 1249 0961 1D       		.uleb128 0x1d
+ 1250 0962 FE020000 		.4byte	.LASF170
+ 1251 0966 0C       		.byte	0xc
+ 1252 0967 87       		.byte	0x87
+ 1253 0968 AB070000 		.4byte	0x7ab
+ 1254 096c 1D       		.uleb128 0x1d
+ 1255 096d F8060000 		.4byte	.LASF171
+ 1256 0971 0D       		.byte	0xd
+ 1257 0972 7F       		.byte	0x7f
+ 1258 0973 AE040000 		.4byte	0x4ae
+ 1259 0977 1D       		.uleb128 0x1d
+ 1260 0978 B2080000 		.4byte	.LASF172
+ 1261 097c 0E       		.byte	0xe
+ 1262 097d 1F       		.byte	0x1f
+ 1263 097e 82090000 		.4byte	0x982
+ 1264 0982 12       		.uleb128 0x12
+ 1265 0983 15030000 		.4byte	0x315
+ 1266 0987 1D       		.uleb128 0x1d
+ 1267 0988 92050000 		.4byte	.LASF173
+ 1268 098c 0F       		.byte	0xf
+ 1269 098d 1F       		.byte	0x1f
+ 1270 098e 82090000 		.4byte	0x982
+ 1271 0992 1D       		.uleb128 0x1d
+ 1272 0993 40040000 		.4byte	.LASF174
+ 1273 0997 10       		.byte	0x10
+ 1274 0998 1F       		.byte	0x1f
+ 1275 0999 9D090000 		.4byte	0x99d
+ 1276 099d 12       		.uleb128 0x12
+ 1277 099e D1010000 		.4byte	0x1d1
+ 1278 09a2 1D       		.uleb128 0x1d
+ 1279 09a3 00000000 		.4byte	.LASF175
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 24
+
+
+ 1280 09a7 11       		.byte	0x11
+ 1281 09a8 1F       		.byte	0x1f
+ 1282 09a9 82090000 		.4byte	0x982
+ 1283 09ad 1D       		.uleb128 0x1d
+ 1284 09ae 8B010000 		.4byte	.LASF176
+ 1285 09b2 12       		.byte	0x12
+ 1286 09b3 1F       		.byte	0x1f
+ 1287 09b4 82090000 		.4byte	0x982
+ 1288 09b8 1D       		.uleb128 0x1d
+ 1289 09b9 FD0A0000 		.4byte	.LASF177
+ 1290 09bd 13       		.byte	0x13
+ 1291 09be 1F       		.byte	0x1f
+ 1292 09bf 9D090000 		.4byte	0x99d
+ 1293 09c3 1D       		.uleb128 0x1d
+ 1294 09c4 93000000 		.4byte	.LASF178
+ 1295 09c8 14       		.byte	0x14
+ 1296 09c9 1F       		.byte	0x1f
+ 1297 09ca 82090000 		.4byte	0x982
+ 1298 09ce 1D       		.uleb128 0x1d
+ 1299 09cf 31000000 		.4byte	.LASF179
+ 1300 09d3 15       		.byte	0x15
+ 1301 09d4 1F       		.byte	0x1f
+ 1302 09d5 9D090000 		.4byte	0x99d
+ 1303 09d9 1D       		.uleb128 0x1d
+ 1304 09da BF0A0000 		.4byte	.LASF180
+ 1305 09de 01       		.byte	0x1
+ 1306 09df 05       		.byte	0x5
+ 1307 09e0 CB000000 		.4byte	0xcb
+ 1308 09e4 1E       		.uleb128 0x1e
+ 1309 09e5 19060000 		.4byte	.LASF188
+ 1310 09e9 930C0000 		.4byte	.LASF189
+ 1311 09ed 18       		.byte	0x18
+ 1312 09ee 00       		.byte	0
+ 1313 09ef 19060000 		.4byte	.LASF188
+ 1314 09f3 1F       		.uleb128 0x1f
+ 1315 09f4 CE0A0000 		.4byte	.LASF181
+ 1316 09f8 CE0A0000 		.4byte	.LASF181
+ 1317 09fc 16       		.byte	0x16
+ 1318 09fd 3A       		.byte	0x3a
+ 1319 09fe 1F       		.uleb128 0x1f
+ 1320 09ff 32010000 		.4byte	.LASF182
+ 1321 0a03 32010000 		.4byte	.LASF182
+ 1322 0a07 17       		.byte	0x17
+ 1323 0a08 55       		.byte	0x55
+ 1324 0a09 00       		.byte	0
+ 1325              		.section	.debug_abbrev,"",%progbits
+ 1326              	.Ldebug_abbrev0:
+ 1327 0000 01       		.uleb128 0x1
+ 1328 0001 11       		.uleb128 0x11
+ 1329 0002 01       		.byte	0x1
+ 1330 0003 25       		.uleb128 0x25
+ 1331 0004 0E       		.uleb128 0xe
+ 1332 0005 13       		.uleb128 0x13
+ 1333 0006 0B       		.uleb128 0xb
+ 1334 0007 03       		.uleb128 0x3
+ 1335 0008 0E       		.uleb128 0xe
+ 1336 0009 1B       		.uleb128 0x1b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 25
+
+
+ 1337 000a 0E       		.uleb128 0xe
+ 1338 000b 55       		.uleb128 0x55
+ 1339 000c 17       		.uleb128 0x17
+ 1340 000d 11       		.uleb128 0x11
+ 1341 000e 01       		.uleb128 0x1
+ 1342 000f 10       		.uleb128 0x10
+ 1343 0010 17       		.uleb128 0x17
+ 1344 0011 00       		.byte	0
+ 1345 0012 00       		.byte	0
+ 1346 0013 02       		.uleb128 0x2
+ 1347 0014 24       		.uleb128 0x24
+ 1348 0015 00       		.byte	0
+ 1349 0016 0B       		.uleb128 0xb
+ 1350 0017 0B       		.uleb128 0xb
+ 1351 0018 3E       		.uleb128 0x3e
+ 1352 0019 0B       		.uleb128 0xb
+ 1353 001a 03       		.uleb128 0x3
+ 1354 001b 0E       		.uleb128 0xe
+ 1355 001c 00       		.byte	0
+ 1356 001d 00       		.byte	0
+ 1357 001e 03       		.uleb128 0x3
+ 1358 001f 16       		.uleb128 0x16
+ 1359 0020 00       		.byte	0
+ 1360 0021 03       		.uleb128 0x3
+ 1361 0022 0E       		.uleb128 0xe
+ 1362 0023 3A       		.uleb128 0x3a
+ 1363 0024 0B       		.uleb128 0xb
+ 1364 0025 3B       		.uleb128 0x3b
+ 1365 0026 0B       		.uleb128 0xb
+ 1366 0027 49       		.uleb128 0x49
+ 1367 0028 13       		.uleb128 0x13
+ 1368 0029 00       		.byte	0
+ 1369 002a 00       		.byte	0
+ 1370 002b 04       		.uleb128 0x4
+ 1371 002c 24       		.uleb128 0x24
+ 1372 002d 00       		.byte	0
+ 1373 002e 0B       		.uleb128 0xb
+ 1374 002f 0B       		.uleb128 0xb
+ 1375 0030 3E       		.uleb128 0x3e
+ 1376 0031 0B       		.uleb128 0xb
+ 1377 0032 03       		.uleb128 0x3
+ 1378 0033 08       		.uleb128 0x8
+ 1379 0034 00       		.byte	0
+ 1380 0035 00       		.byte	0
+ 1381 0036 05       		.uleb128 0x5
+ 1382 0037 35       		.uleb128 0x35
+ 1383 0038 00       		.byte	0
+ 1384 0039 49       		.uleb128 0x49
+ 1385 003a 13       		.uleb128 0x13
+ 1386 003b 00       		.byte	0
+ 1387 003c 00       		.byte	0
+ 1388 003d 06       		.uleb128 0x6
+ 1389 003e 16       		.uleb128 0x16
+ 1390 003f 00       		.byte	0
+ 1391 0040 03       		.uleb128 0x3
+ 1392 0041 0E       		.uleb128 0xe
+ 1393 0042 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 26
+
+
+ 1394 0043 0B       		.uleb128 0xb
+ 1395 0044 3B       		.uleb128 0x3b
+ 1396 0045 05       		.uleb128 0x5
+ 1397 0046 49       		.uleb128 0x49
+ 1398 0047 13       		.uleb128 0x13
+ 1399 0048 00       		.byte	0
+ 1400 0049 00       		.byte	0
+ 1401 004a 07       		.uleb128 0x7
+ 1402 004b 0F       		.uleb128 0xf
+ 1403 004c 00       		.byte	0
+ 1404 004d 0B       		.uleb128 0xb
+ 1405 004e 0B       		.uleb128 0xb
+ 1406 004f 00       		.byte	0
+ 1407 0050 00       		.byte	0
+ 1408 0051 08       		.uleb128 0x8
+ 1409 0052 13       		.uleb128 0x13
+ 1410 0053 01       		.byte	0x1
+ 1411 0054 03       		.uleb128 0x3
+ 1412 0055 0E       		.uleb128 0xe
+ 1413 0056 0B       		.uleb128 0xb
+ 1414 0057 0B       		.uleb128 0xb
+ 1415 0058 3A       		.uleb128 0x3a
+ 1416 0059 0B       		.uleb128 0xb
+ 1417 005a 3B       		.uleb128 0x3b
+ 1418 005b 0B       		.uleb128 0xb
+ 1419 005c 01       		.uleb128 0x1
+ 1420 005d 13       		.uleb128 0x13
+ 1421 005e 00       		.byte	0
+ 1422 005f 00       		.byte	0
+ 1423 0060 09       		.uleb128 0x9
+ 1424 0061 0D       		.uleb128 0xd
+ 1425 0062 00       		.byte	0
+ 1426 0063 03       		.uleb128 0x3
+ 1427 0064 0E       		.uleb128 0xe
+ 1428 0065 3A       		.uleb128 0x3a
+ 1429 0066 0B       		.uleb128 0xb
+ 1430 0067 3B       		.uleb128 0x3b
+ 1431 0068 0B       		.uleb128 0xb
+ 1432 0069 49       		.uleb128 0x49
+ 1433 006a 13       		.uleb128 0x13
+ 1434 006b 38       		.uleb128 0x38
+ 1435 006c 0B       		.uleb128 0xb
+ 1436 006d 00       		.byte	0
+ 1437 006e 00       		.byte	0
+ 1438 006f 0A       		.uleb128 0xa
+ 1439 0070 04       		.uleb128 0x4
+ 1440 0071 01       		.byte	0x1
+ 1441 0072 0B       		.uleb128 0xb
+ 1442 0073 0B       		.uleb128 0xb
+ 1443 0074 49       		.uleb128 0x49
+ 1444 0075 13       		.uleb128 0x13
+ 1445 0076 3A       		.uleb128 0x3a
+ 1446 0077 0B       		.uleb128 0xb
+ 1447 0078 3B       		.uleb128 0x3b
+ 1448 0079 05       		.uleb128 0x5
+ 1449 007a 01       		.uleb128 0x1
+ 1450 007b 13       		.uleb128 0x13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 27
+
+
+ 1451 007c 00       		.byte	0
+ 1452 007d 00       		.byte	0
+ 1453 007e 0B       		.uleb128 0xb
+ 1454 007f 28       		.uleb128 0x28
+ 1455 0080 00       		.byte	0
+ 1456 0081 03       		.uleb128 0x3
+ 1457 0082 0E       		.uleb128 0xe
+ 1458 0083 1C       		.uleb128 0x1c
+ 1459 0084 0B       		.uleb128 0xb
+ 1460 0085 00       		.byte	0
+ 1461 0086 00       		.byte	0
+ 1462 0087 0C       		.uleb128 0xc
+ 1463 0088 0F       		.uleb128 0xf
+ 1464 0089 00       		.byte	0
+ 1465 008a 0B       		.uleb128 0xb
+ 1466 008b 0B       		.uleb128 0xb
+ 1467 008c 49       		.uleb128 0x49
+ 1468 008d 13       		.uleb128 0x13
+ 1469 008e 00       		.byte	0
+ 1470 008f 00       		.byte	0
+ 1471 0090 0D       		.uleb128 0xd
+ 1472 0091 15       		.uleb128 0x15
+ 1473 0092 01       		.byte	0x1
+ 1474 0093 27       		.uleb128 0x27
+ 1475 0094 19       		.uleb128 0x19
+ 1476 0095 01       		.uleb128 0x1
+ 1477 0096 13       		.uleb128 0x13
+ 1478 0097 00       		.byte	0
+ 1479 0098 00       		.byte	0
+ 1480 0099 0E       		.uleb128 0xe
+ 1481 009a 05       		.uleb128 0x5
+ 1482 009b 00       		.byte	0
+ 1483 009c 49       		.uleb128 0x49
+ 1484 009d 13       		.uleb128 0x13
+ 1485 009e 00       		.byte	0
+ 1486 009f 00       		.byte	0
+ 1487 00a0 0F       		.uleb128 0xf
+ 1488 00a1 15       		.uleb128 0x15
+ 1489 00a2 01       		.byte	0x1
+ 1490 00a3 27       		.uleb128 0x27
+ 1491 00a4 19       		.uleb128 0x19
+ 1492 00a5 49       		.uleb128 0x49
+ 1493 00a6 13       		.uleb128 0x13
+ 1494 00a7 01       		.uleb128 0x1
+ 1495 00a8 13       		.uleb128 0x13
+ 1496 00a9 00       		.byte	0
+ 1497 00aa 00       		.byte	0
+ 1498 00ab 10       		.uleb128 0x10
+ 1499 00ac 13       		.uleb128 0x13
+ 1500 00ad 01       		.byte	0x1
+ 1501 00ae 03       		.uleb128 0x3
+ 1502 00af 0E       		.uleb128 0xe
+ 1503 00b0 0B       		.uleb128 0xb
+ 1504 00b1 0B       		.uleb128 0xb
+ 1505 00b2 3A       		.uleb128 0x3a
+ 1506 00b3 0B       		.uleb128 0xb
+ 1507 00b4 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 28
+
+
+ 1508 00b5 05       		.uleb128 0x5
+ 1509 00b6 01       		.uleb128 0x1
+ 1510 00b7 13       		.uleb128 0x13
+ 1511 00b8 00       		.byte	0
+ 1512 00b9 00       		.byte	0
+ 1513 00ba 11       		.uleb128 0x11
+ 1514 00bb 0D       		.uleb128 0xd
+ 1515 00bc 00       		.byte	0
+ 1516 00bd 03       		.uleb128 0x3
+ 1517 00be 0E       		.uleb128 0xe
+ 1518 00bf 3A       		.uleb128 0x3a
+ 1519 00c0 0B       		.uleb128 0xb
+ 1520 00c1 3B       		.uleb128 0x3b
+ 1521 00c2 05       		.uleb128 0x5
+ 1522 00c3 49       		.uleb128 0x49
+ 1523 00c4 13       		.uleb128 0x13
+ 1524 00c5 38       		.uleb128 0x38
+ 1525 00c6 0B       		.uleb128 0xb
+ 1526 00c7 00       		.byte	0
+ 1527 00c8 00       		.byte	0
+ 1528 00c9 12       		.uleb128 0x12
+ 1529 00ca 26       		.uleb128 0x26
+ 1530 00cb 00       		.byte	0
+ 1531 00cc 49       		.uleb128 0x49
+ 1532 00cd 13       		.uleb128 0x13
+ 1533 00ce 00       		.byte	0
+ 1534 00cf 00       		.byte	0
+ 1535 00d0 13       		.uleb128 0x13
+ 1536 00d1 13       		.uleb128 0x13
+ 1537 00d2 01       		.byte	0x1
+ 1538 00d3 0B       		.uleb128 0xb
+ 1539 00d4 0B       		.uleb128 0xb
+ 1540 00d5 3A       		.uleb128 0x3a
+ 1541 00d6 0B       		.uleb128 0xb
+ 1542 00d7 3B       		.uleb128 0x3b
+ 1543 00d8 05       		.uleb128 0x5
+ 1544 00d9 01       		.uleb128 0x1
+ 1545 00da 13       		.uleb128 0x13
+ 1546 00db 00       		.byte	0
+ 1547 00dc 00       		.byte	0
+ 1548 00dd 14       		.uleb128 0x14
+ 1549 00de 04       		.uleb128 0x4
+ 1550 00df 01       		.byte	0x1
+ 1551 00e0 0B       		.uleb128 0xb
+ 1552 00e1 0B       		.uleb128 0xb
+ 1553 00e2 49       		.uleb128 0x49
+ 1554 00e3 13       		.uleb128 0x13
+ 1555 00e4 3A       		.uleb128 0x3a
+ 1556 00e5 0B       		.uleb128 0xb
+ 1557 00e6 3B       		.uleb128 0x3b
+ 1558 00e7 0B       		.uleb128 0xb
+ 1559 00e8 01       		.uleb128 0x1
+ 1560 00e9 13       		.uleb128 0x13
+ 1561 00ea 00       		.byte	0
+ 1562 00eb 00       		.byte	0
+ 1563 00ec 15       		.uleb128 0x15
+ 1564 00ed 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 29
+
+
+ 1565 00ee 01       		.byte	0x1
+ 1566 00ef 3F       		.uleb128 0x3f
+ 1567 00f0 19       		.uleb128 0x19
+ 1568 00f1 03       		.uleb128 0x3
+ 1569 00f2 0E       		.uleb128 0xe
+ 1570 00f3 3A       		.uleb128 0x3a
+ 1571 00f4 0B       		.uleb128 0xb
+ 1572 00f5 3B       		.uleb128 0x3b
+ 1573 00f6 0B       		.uleb128 0xb
+ 1574 00f7 11       		.uleb128 0x11
+ 1575 00f8 01       		.uleb128 0x1
+ 1576 00f9 12       		.uleb128 0x12
+ 1577 00fa 06       		.uleb128 0x6
+ 1578 00fb 40       		.uleb128 0x40
+ 1579 00fc 18       		.uleb128 0x18
+ 1580 00fd 9742     		.uleb128 0x2117
+ 1581 00ff 19       		.uleb128 0x19
+ 1582 0100 01       		.uleb128 0x1
+ 1583 0101 13       		.uleb128 0x13
+ 1584 0102 00       		.byte	0
+ 1585 0103 00       		.byte	0
+ 1586 0104 16       		.uleb128 0x16
+ 1587 0105 34       		.uleb128 0x34
+ 1588 0106 00       		.byte	0
+ 1589 0107 03       		.uleb128 0x3
+ 1590 0108 0E       		.uleb128 0xe
+ 1591 0109 3A       		.uleb128 0x3a
+ 1592 010a 0B       		.uleb128 0xb
+ 1593 010b 3B       		.uleb128 0x3b
+ 1594 010c 0B       		.uleb128 0xb
+ 1595 010d 49       		.uleb128 0x49
+ 1596 010e 13       		.uleb128 0x13
+ 1597 010f 02       		.uleb128 0x2
+ 1598 0110 17       		.uleb128 0x17
+ 1599 0111 00       		.byte	0
+ 1600 0112 00       		.byte	0
+ 1601 0113 17       		.uleb128 0x17
+ 1602 0114 898201   		.uleb128 0x4109
+ 1603 0117 01       		.byte	0x1
+ 1604 0118 11       		.uleb128 0x11
+ 1605 0119 01       		.uleb128 0x1
+ 1606 011a 31       		.uleb128 0x31
+ 1607 011b 13       		.uleb128 0x13
+ 1608 011c 01       		.uleb128 0x1
+ 1609 011d 13       		.uleb128 0x13
+ 1610 011e 00       		.byte	0
+ 1611 011f 00       		.byte	0
+ 1612 0120 18       		.uleb128 0x18
+ 1613 0121 8A8201   		.uleb128 0x410a
+ 1614 0124 00       		.byte	0
+ 1615 0125 02       		.uleb128 0x2
+ 1616 0126 18       		.uleb128 0x18
+ 1617 0127 9142     		.uleb128 0x2111
+ 1618 0129 18       		.uleb128 0x18
+ 1619 012a 00       		.byte	0
+ 1620 012b 00       		.byte	0
+ 1621 012c 19       		.uleb128 0x19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 30
+
+
+ 1622 012d 898201   		.uleb128 0x4109
+ 1623 0130 00       		.byte	0
+ 1624 0131 11       		.uleb128 0x11
+ 1625 0132 01       		.uleb128 0x1
+ 1626 0133 31       		.uleb128 0x31
+ 1627 0134 13       		.uleb128 0x13
+ 1628 0135 00       		.byte	0
+ 1629 0136 00       		.byte	0
+ 1630 0137 1A       		.uleb128 0x1a
+ 1631 0138 01       		.uleb128 0x1
+ 1632 0139 01       		.byte	0x1
+ 1633 013a 49       		.uleb128 0x49
+ 1634 013b 13       		.uleb128 0x13
+ 1635 013c 01       		.uleb128 0x1
+ 1636 013d 13       		.uleb128 0x13
+ 1637 013e 00       		.byte	0
+ 1638 013f 00       		.byte	0
+ 1639 0140 1B       		.uleb128 0x1b
+ 1640 0141 21       		.uleb128 0x21
+ 1641 0142 00       		.byte	0
+ 1642 0143 49       		.uleb128 0x49
+ 1643 0144 13       		.uleb128 0x13
+ 1644 0145 2F       		.uleb128 0x2f
+ 1645 0146 0B       		.uleb128 0xb
+ 1646 0147 00       		.byte	0
+ 1647 0148 00       		.byte	0
+ 1648 0149 1C       		.uleb128 0x1c
+ 1649 014a 34       		.uleb128 0x34
+ 1650 014b 00       		.byte	0
+ 1651 014c 03       		.uleb128 0x3
+ 1652 014d 0E       		.uleb128 0xe
+ 1653 014e 3A       		.uleb128 0x3a
+ 1654 014f 0B       		.uleb128 0xb
+ 1655 0150 3B       		.uleb128 0x3b
+ 1656 0151 05       		.uleb128 0x5
+ 1657 0152 49       		.uleb128 0x49
+ 1658 0153 13       		.uleb128 0x13
+ 1659 0154 3F       		.uleb128 0x3f
+ 1660 0155 19       		.uleb128 0x19
+ 1661 0156 3C       		.uleb128 0x3c
+ 1662 0157 19       		.uleb128 0x19
+ 1663 0158 00       		.byte	0
+ 1664 0159 00       		.byte	0
+ 1665 015a 1D       		.uleb128 0x1d
+ 1666 015b 34       		.uleb128 0x34
+ 1667 015c 00       		.byte	0
+ 1668 015d 03       		.uleb128 0x3
+ 1669 015e 0E       		.uleb128 0xe
+ 1670 015f 3A       		.uleb128 0x3a
+ 1671 0160 0B       		.uleb128 0xb
+ 1672 0161 3B       		.uleb128 0x3b
+ 1673 0162 0B       		.uleb128 0xb
+ 1674 0163 49       		.uleb128 0x49
+ 1675 0164 13       		.uleb128 0x13
+ 1676 0165 3F       		.uleb128 0x3f
+ 1677 0166 19       		.uleb128 0x19
+ 1678 0167 3C       		.uleb128 0x3c
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 31
+
+
+ 1679 0168 19       		.uleb128 0x19
+ 1680 0169 00       		.byte	0
+ 1681 016a 00       		.byte	0
+ 1682 016b 1E       		.uleb128 0x1e
+ 1683 016c 2E       		.uleb128 0x2e
+ 1684 016d 00       		.byte	0
+ 1685 016e 3F       		.uleb128 0x3f
+ 1686 016f 19       		.uleb128 0x19
+ 1687 0170 3C       		.uleb128 0x3c
+ 1688 0171 19       		.uleb128 0x19
+ 1689 0172 6E       		.uleb128 0x6e
+ 1690 0173 0E       		.uleb128 0xe
+ 1691 0174 03       		.uleb128 0x3
+ 1692 0175 0E       		.uleb128 0xe
+ 1693 0176 3A       		.uleb128 0x3a
+ 1694 0177 0B       		.uleb128 0xb
+ 1695 0178 3B       		.uleb128 0x3b
+ 1696 0179 0B       		.uleb128 0xb
+ 1697 017a 6E       		.uleb128 0x6e
+ 1698 017b 0E       		.uleb128 0xe
+ 1699 017c 00       		.byte	0
+ 1700 017d 00       		.byte	0
+ 1701 017e 1F       		.uleb128 0x1f
+ 1702 017f 2E       		.uleb128 0x2e
+ 1703 0180 00       		.byte	0
+ 1704 0181 3F       		.uleb128 0x3f
+ 1705 0182 19       		.uleb128 0x19
+ 1706 0183 3C       		.uleb128 0x3c
+ 1707 0184 19       		.uleb128 0x19
+ 1708 0185 6E       		.uleb128 0x6e
+ 1709 0186 0E       		.uleb128 0xe
+ 1710 0187 03       		.uleb128 0x3
+ 1711 0188 0E       		.uleb128 0xe
+ 1712 0189 3A       		.uleb128 0x3a
+ 1713 018a 0B       		.uleb128 0xb
+ 1714 018b 3B       		.uleb128 0x3b
+ 1715 018c 0B       		.uleb128 0xb
+ 1716 018d 00       		.byte	0
+ 1717 018e 00       		.byte	0
+ 1718 018f 00       		.byte	0
+ 1719              		.section	.debug_loc,"",%progbits
+ 1720              	.Ldebug_loc0:
+ 1721              	.LLST0:
+ 1722 0000 0C000000 		.4byte	.LVL1
+ 1723 0004 12000000 		.4byte	.LVL2
+ 1724 0008 0100     		.2byte	0x1
+ 1725 000a 50       		.byte	0x50
+ 1726 000b 18000000 		.4byte	.LVL4
+ 1727 000f 1A000000 		.4byte	.LVL5
+ 1728 0013 0100     		.2byte	0x1
+ 1729 0015 50       		.byte	0x50
+ 1730 0016 00000000 		.4byte	0
+ 1731 001a 00000000 		.4byte	0
+ 1732              		.section	.debug_aranges,"",%progbits
+ 1733 0000 1C000000 		.4byte	0x1c
+ 1734 0004 0200     		.2byte	0x2
+ 1735 0006 00000000 		.4byte	.Ldebug_info0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 32
+
+
+ 1736 000a 04       		.byte	0x4
+ 1737 000b 00       		.byte	0
+ 1738 000c 0000     		.2byte	0
+ 1739 000e 0000     		.2byte	0
+ 1740 0010 00000000 		.4byte	.LFB798
+ 1741 0014 30000000 		.4byte	.LFE798-.LFB798
+ 1742 0018 00000000 		.4byte	0
+ 1743 001c 00000000 		.4byte	0
+ 1744              		.section	.debug_ranges,"",%progbits
+ 1745              	.Ldebug_ranges0:
+ 1746 0000 00000000 		.4byte	.LFB798
+ 1747 0004 30000000 		.4byte	.LFE798
+ 1748 0008 00000000 		.4byte	0
+ 1749 000c 00000000 		.4byte	0
+ 1750              		.section	.debug_line,"",%progbits
+ 1751              	.Ldebug_line0:
+ 1752 0000 B9030000 		.section	.debug_str,"MS",%progbits,1
+ 1752      02009F03 
+ 1752      00000201 
+ 1752      FB0E0D00 
+ 1752      01010101 
+ 1753              	.LASF175:
+ 1754 0000 4C696768 		.ascii	"LightOutputB_config\000"
+ 1754      744F7574 
+ 1754      70757442 
+ 1754      5F636F6E 
+ 1754      66696700 
+ 1755              	.LASF127:
+ 1756 0014 72784669 		.ascii	"rxFifoTriggerLevel\000"
+ 1756      666F5472 
+ 1756      69676765 
+ 1756      724C6576 
+ 1756      656C00
+ 1757              	.LASF140:
+ 1758 0027 72784275 		.ascii	"rxBufSize\000"
+ 1758      6653697A 
+ 1758      6500
+ 1759              	.LASF179:
+ 1760 0031 4368696D 		.ascii	"ChimeTimer_config\000"
+ 1760      6554696D 
+ 1760      65725F63 
+ 1760      6F6E6669 
+ 1760      6700
+ 1761              	.LASF109:
+ 1762 0043 656E6162 		.ascii	"enableMsbFirst\000"
+ 1762      6C654D73 
+ 1762      62466972 
+ 1762      737400
+ 1763              	.LASF81:
+ 1764 0052 736C6176 		.ascii	"slaveRxBufferIdx\000"
+ 1764      65527842 
+ 1764      75666665 
+ 1764      72496478 
+ 1764      00
+ 1765              	.LASF69:
+ 1766 0063 6D617374 		.ascii	"masterBuffer\000"
+ 1766      65724275 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 33
+
+
+ 1766      66666572 
+ 1766      00
+ 1767              	.LASF44:
+ 1768 0070 70776D41 		.ascii	"pwmAlignment\000"
+ 1768      6C69676E 
+ 1768      6D656E74 
+ 1768      00
+ 1769              	.LASF2:
+ 1770 007d 7369676E 		.ascii	"signed char\000"
+ 1770      65642063 
+ 1770      68617200 
+ 1771              	.LASF5:
+ 1772 0089 5F5F7569 		.ascii	"__uint8_t\000"
+ 1772      6E74385F 
+ 1772      7400
+ 1773              	.LASF178:
+ 1774 0093 4368696D 		.ascii	"ChimeOutput_config\000"
+ 1774      654F7574 
+ 1774      7075745F 
+ 1774      636F6E66 
+ 1774      696700
+ 1775              	.LASF149:
+ 1776 00a6 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 1776      74635F62 
+ 1776      6C655F63 
+ 1776      6F6E6E5F 
+ 1776      68616E64 
+ 1777              	.LASF24:
+ 1778 00bf 636F756E 		.ascii	"countDirection\000"
+ 1778      74446972 
+ 1778      65637469 
+ 1778      6F6E00
+ 1779              	.LASF36:
+ 1780 00ce 73746F70 		.ascii	"stopInputMode\000"
+ 1780      496E7075 
+ 1780      744D6F64 
+ 1780      6500
+ 1781              	.LASF98:
+ 1782 00dc 43595F53 		.ascii	"CY_SCB_UART_PARITY_EVEN\000"
+ 1782      43425F55 
+ 1782      4152545F 
+ 1782      50415249 
+ 1782      54595F45 
+ 1783              	.LASF102:
+ 1784 00f4 43595F53 		.ascii	"CY_SCB_UART_ACTIVE_HIGH\000"
+ 1784      43425F55 
+ 1784      4152545F 
+ 1784      41435449 
+ 1784      56455F48 
+ 1785              	.LASF21:
+ 1786 010c 70657269 		.ascii	"period\000"
+ 1786      6F6400
+ 1787              	.LASF31:
+ 1788 0113 63617074 		.ascii	"captureInput\000"
+ 1788      75726549 
+ 1788      6E707574 
+ 1788      00
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 34
+
+
+ 1789              	.LASF169:
+ 1790 0120 55415254 		.ascii	"UART_DEBUG_config\000"
+ 1790      5F444542 
+ 1790      55475F63 
+ 1790      6F6E6669 
+ 1790      6700
+ 1791              	.LASF182:
+ 1792 0132 43617053 		.ascii	"CapSense_ScanAllWidgets\000"
+ 1792      656E7365 
+ 1792      5F536361 
+ 1792      6E416C6C 
+ 1792      57696467 
+ 1793              	.LASF9:
+ 1794 014a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1794      206C6F6E 
+ 1794      6720756E 
+ 1794      7369676E 
+ 1794      65642069 
+ 1795              	.LASF120:
+ 1796 0161 69726461 		.ascii	"irdaEnableLowPowerReceiver\000"
+ 1796      456E6162 
+ 1796      6C654C6F 
+ 1796      77506F77 
+ 1796      65725265 
+ 1797              	.LASF22:
+ 1798 017c 636C6F63 		.ascii	"clockPrescaler\000"
+ 1798      6B507265 
+ 1798      7363616C 
+ 1798      657200
+ 1799              	.LASF176:
+ 1800 018b 4D6F746F 		.ascii	"MotorOutput_config\000"
+ 1800      724F7574 
+ 1800      7075745F 
+ 1800      636F6E66 
+ 1800      696700
+ 1801              	.LASF18:
+ 1802 019e 63795F73 		.ascii	"cy_status\000"
+ 1802      74617475 
+ 1802      7300
+ 1803              	.LASF135:
+ 1804 01a8 72785269 		.ascii	"rxRingBuf\000"
+ 1804      6E674275 
+ 1804      6600
+ 1805              	.LASF66:
+ 1806 01b2 6D617374 		.ascii	"masterStatus\000"
+ 1806      65725374 
+ 1806      61747573 
+ 1806      00
+ 1807              	.LASF142:
+ 1808 01bf 74784275 		.ascii	"txBuf\000"
+ 1808      6600
+ 1809              	.LASF187:
+ 1810 01c5 63617053 		.ascii	"capSenseApiResult\000"
+ 1810      656E7365 
+ 1810      41706952 
+ 1810      6573756C 
+ 1810      7400
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 35
+
+
+ 1811              	.LASF80:
+ 1812 01d7 736C6176 		.ascii	"slaveRxBufferSize\000"
+ 1812      65527842 
+ 1812      75666665 
+ 1812      7253697A 
+ 1812      6500
+ 1813              	.LASF62:
+ 1814 01e9 63795F73 		.ascii	"cy_stc_scb_i2c_context\000"
+ 1814      74635F73 
+ 1814      63625F69 
+ 1814      32635F63 
+ 1814      6F6E7465 
+ 1815              	.LASF186:
+ 1816 0200 486F7665 		.ascii	"HoverSense_Init\000"
+ 1816      7253656E 
+ 1816      73655F49 
+ 1816      6E697400 
+ 1817              	.LASF114:
+ 1818 0210 64726F70 		.ascii	"dropOnFrameError\000"
+ 1818      4F6E4672 
+ 1818      616D6545 
+ 1818      72726F72 
+ 1818      00
+ 1819              	.LASF101:
+ 1820 0221 43595F53 		.ascii	"CY_SCB_UART_ACTIVE_LOW\000"
+ 1820      43425F55 
+ 1820      4152545F 
+ 1820      41435449 
+ 1820      56455F4C 
+ 1821              	.LASF8:
+ 1822 0238 6C6F6E67 		.ascii	"long long int\000"
+ 1822      206C6F6E 
+ 1822      6720696E 
+ 1822      7400
+ 1823              	.LASF40:
+ 1824 0246 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
+ 1824      74635F74 
+ 1824      6370776D 
+ 1824      5F636F75 
+ 1824      6E746572 
+ 1825              	.LASF146:
+ 1826 0264 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ 1826      74635F73 
+ 1826      63625F75 
+ 1826      6172745F 
+ 1826      636F6E74 
+ 1827              	.LASF73:
+ 1828 027e 736C6176 		.ascii	"slaveStatus\000"
+ 1828      65537461 
+ 1828      74757300 
+ 1829              	.LASF153:
+ 1830 028a 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 1830      4C455F41 
+ 1830      44565F53 
+ 1830      54415445 
+ 1830      5F53544F 
+ 1831              	.LASF42:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 36
+
+
+ 1832 02aa 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config\000"
+ 1832      74635F74 
+ 1832      6370776D 
+ 1832      5F70776D 
+ 1832      5F636F6E 
+ 1833              	.LASF124:
+ 1834 02c2 72747352 		.ascii	"rtsRxFifoLevel\000"
+ 1834      78466966 
+ 1834      6F4C6576 
+ 1834      656C00
+ 1835              	.LASF65:
+ 1836 02d1 73746174 		.ascii	"state\000"
+ 1836      6500
+ 1837              	.LASF60:
+ 1838 02d7 63795F63 		.ascii	"cy_cb_scb_i2c_handle_events_t\000"
+ 1838      625F7363 
+ 1838      625F6932 
+ 1838      635F6861 
+ 1838      6E646C65 
+ 1839              	.LASF4:
+ 1840 02f5 6C6F6E67 		.ascii	"long int\000"
+ 1840      20696E74 
+ 1840      00
+ 1841              	.LASF170:
+ 1842 02fe 55415254 		.ascii	"UART_DEBUG_context\000"
+ 1842      5F444542 
+ 1842      55475F63 
+ 1842      6F6E7465 
+ 1842      787400
+ 1843              	.LASF99:
+ 1844 0311 43595F53 		.ascii	"CY_SCB_UART_PARITY_ODD\000"
+ 1844      43425F55 
+ 1844      4152545F 
+ 1844      50415249 
+ 1844      54595F4F 
+ 1845              	.LASF154:
+ 1846 0328 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 1846      6E5F626C 
+ 1846      655F6164 
+ 1846      765F7374 
+ 1846      6174655F 
+ 1847              	.LASF19:
+ 1848 033e 75696E74 		.ascii	"uint8\000"
+ 1848      3800
+ 1849              	.LASF17:
+ 1850 0344 646F7562 		.ascii	"double\000"
+ 1850      6C6500
+ 1851              	.LASF128:
+ 1852 034b 72784669 		.ascii	"rxFifoIntEnableMask\000"
+ 1852      666F496E 
+ 1852      74456E61 
+ 1852      626C654D 
+ 1852      61736B00 
+ 1853              	.LASF30:
+ 1854 035f 63617074 		.ascii	"captureInputMode\000"
+ 1854      75726549 
+ 1854      6E707574 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 37
+
+
+ 1854      4D6F6465 
+ 1854      00
+ 1855              	.LASF159:
+ 1856 0370 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 1856      4C455F43 
+ 1856      4F4E4E5F 
+ 1856      53544154 
+ 1856      455F434C 
+ 1857              	.LASF111:
+ 1858 039a 70617269 		.ascii	"parity\000"
+ 1858      747900
+ 1859              	.LASF83:
+ 1860 03a1 63624164 		.ascii	"cbAddr\000"
+ 1860      647200
+ 1861              	.LASF89:
+ 1862 03a8 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_1\000"
+ 1862      43425F55 
+ 1862      4152545F 
+ 1862      53544F50 
+ 1862      5F424954 
+ 1863              	.LASF91:
+ 1864 03c0 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_2\000"
+ 1864      43425F55 
+ 1864      4152545F 
+ 1864      53544F50 
+ 1864      5F424954 
+ 1865              	.LASF93:
+ 1866 03d8 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_3\000"
+ 1866      43425F55 
+ 1866      4152545F 
+ 1866      53544F50 
+ 1866      5F424954 
+ 1867              	.LASF95:
+ 1868 03f0 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_4\000"
+ 1868      43425F55 
+ 1868      4152545F 
+ 1868      53544F50 
+ 1868      5F424954 
+ 1869              	.LASF141:
+ 1870 0408 72784275 		.ascii	"rxBufIdx\000"
+ 1870      66496478 
+ 1870      00
+ 1871              	.LASF117:
+ 1872 0411 72656365 		.ascii	"receiverAddressMask\000"
+ 1872      69766572 
+ 1872      41646472 
+ 1872      6573734D 
+ 1872      61736B00 
+ 1873              	.LASF96:
+ 1874 0425 63795F65 		.ascii	"cy_en_scb_uart_stop_bits_t\000"
+ 1874      6E5F7363 
+ 1874      625F7561 
+ 1874      72745F73 
+ 1874      746F705F 
+ 1875              	.LASF174:
+ 1876 0440 4C696768 		.ascii	"LightTimer_config\000"
+ 1876      7454696D 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 38
+
+
+ 1876      65725F63 
+ 1876      6F6E6669 
+ 1876      6700
+ 1877              	.LASF143:
+ 1878 0452 74784275 		.ascii	"txBufSize\000"
+ 1878      6653697A 
+ 1878      6500
+ 1879              	.LASF10:
+ 1880 045c 756E7369 		.ascii	"unsigned int\000"
+ 1880      676E6564 
+ 1880      20696E74 
+ 1880      00
+ 1881              	.LASF157:
+ 1882 0469 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 1882      4C455F43 
+ 1882      4F4E4E5F 
+ 1882      53544154 
+ 1882      455F434F 
+ 1883              	.LASF77:
+ 1884 0485 736C6176 		.ascii	"slaveTxBufferIdx\000"
+ 1884      65547842 
+ 1884      75666665 
+ 1884      72496478 
+ 1884      00
+ 1885              	.LASF74:
+ 1886 0496 736C6176 		.ascii	"slaveRdBufEmpty\000"
+ 1886      65526442 
+ 1886      7566456D 
+ 1886      70747900 
+ 1887              	.LASF136:
+ 1888 04a6 72785269 		.ascii	"rxRingBufSize\000"
+ 1888      6E674275 
+ 1888      6653697A 
+ 1888      6500
+ 1889              	.LASF7:
+ 1890 04b4 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1890      20756E73 
+ 1890      69676E65 
+ 1890      6420696E 
+ 1890      7400
+ 1891              	.LASF122:
+ 1892 04c6 656E6162 		.ascii	"enableCts\000"
+ 1892      6C654374 
+ 1892      7300
+ 1893              	.LASF133:
+ 1894 04d0 74785374 		.ascii	"txStatus\000"
+ 1894      61747573 
+ 1894      00
+ 1895              	.LASF64:
+ 1896 04d9 75736554 		.ascii	"useTxFifo\000"
+ 1896      78466966 
+ 1896      6F00
+ 1897              	.LASF52:
+ 1898 04e3 73776170 		.ascii	"swapInputMode\000"
+ 1898      496E7075 
+ 1898      744D6F64 
+ 1898      6500
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 39
+
+
+ 1899              	.LASF3:
+ 1900 04f1 73686F72 		.ascii	"short unsigned int\000"
+ 1900      7420756E 
+ 1900      7369676E 
+ 1900      65642069 
+ 1900      6E7400
+ 1901              	.LASF130:
+ 1902 0504 74784669 		.ascii	"txFifoIntEnableMask\000"
+ 1902      666F496E 
+ 1902      74456E61 
+ 1902      626C654D 
+ 1902      61736B00 
+ 1903              	.LASF97:
+ 1904 0518 43595F53 		.ascii	"CY_SCB_UART_PARITY_NONE\000"
+ 1904      43425F55 
+ 1904      4152545F 
+ 1904      50415249 
+ 1904      54595F4E 
+ 1905              	.LASF185:
+ 1906 0530 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\Handle\\Bike FSM_prox.cy"
+ 1906      73657273 
+ 1906      5C73616C 
+ 1906      617A5C44 
+ 1906      65736B74 
+ 1907 055e 64736E00 		.ascii	"dsn\000"
+ 1908              	.LASF167:
+ 1909 0562 63795F62 		.ascii	"cy_ble_connState\000"
+ 1909      6C655F63 
+ 1909      6F6E6E53 
+ 1909      74617465 
+ 1909      00
+ 1910              	.LASF54:
+ 1911 0573 6B696C6C 		.ascii	"killInputMode\000"
+ 1911      496E7075 
+ 1911      744D6F64 
+ 1911      6500
+ 1912              	.LASF82:
+ 1913 0581 63624576 		.ascii	"cbEvents\000"
+ 1913      656E7473 
+ 1913      00
+ 1914              	.LASF47:
+ 1915 058a 70657269 		.ascii	"period1\000"
+ 1915      6F643100 
+ 1916              	.LASF173:
+ 1917 0592 4C696768 		.ascii	"LightOutputA_config\000"
+ 1917      744F7574 
+ 1917      70757441 
+ 1917      5F636F6E 
+ 1917      66696700 
+ 1918              	.LASF0:
+ 1919 05a6 73686F72 		.ascii	"short int\000"
+ 1919      7420696E 
+ 1919      7400
+ 1920              	.LASF49:
+ 1921 05b0 696E7665 		.ascii	"invertPWMOut\000"
+ 1921      72745057 
+ 1921      4D4F7574 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 40
+
+
+ 1921      00
+ 1922              	.LASF87:
+ 1923 05bd 43595F53 		.ascii	"CY_SCB_UART_IRDA\000"
+ 1923      43425F55 
+ 1923      4152545F 
+ 1923      49524441 
+ 1923      00
+ 1924              	.LASF45:
+ 1925 05ce 64656164 		.ascii	"deadTimeClocks\000"
+ 1925      54696D65 
+ 1925      436C6F63 
+ 1925      6B7300
+ 1926              	.LASF137:
+ 1927 05dd 72785269 		.ascii	"rxRingBufHead\000"
+ 1927      6E674275 
+ 1927      66486561 
+ 1927      6400
+ 1928              	.LASF38:
+ 1929 05eb 636F756E 		.ascii	"countInputMode\000"
+ 1929      74496E70 
+ 1929      75744D6F 
+ 1929      646500
+ 1930              	.LASF79:
+ 1931 05fa 736C6176 		.ascii	"slaveRxBuffer\000"
+ 1931      65527842 
+ 1931      75666665 
+ 1931      7200
+ 1932              	.LASF35:
+ 1933 0608 73746172 		.ascii	"startInput\000"
+ 1933      74496E70 
+ 1933      757400
+ 1934              	.LASF148:
+ 1935 0613 61747449 		.ascii	"attId\000"
+ 1935      6400
+ 1936              	.LASF188:
+ 1937 0619 70757473 		.ascii	"puts\000"
+ 1937      00
+ 1938              	.LASF41:
+ 1939 061e 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
+ 1939      74635F74 
+ 1939      6370776D 
+ 1939      5F636F75 
+ 1939      6E746572 
+ 1940              	.LASF13:
+ 1941 063a 73697A65 		.ascii	"sizetype\000"
+ 1941      74797065 
+ 1941      00
+ 1942              	.LASF14:
+ 1943 0643 6C6F6E67 		.ascii	"long double\000"
+ 1943      20646F75 
+ 1943      626C6500 
+ 1944              	.LASF71:
+ 1945 064f 6D617374 		.ascii	"masterBufferIdx\000"
+ 1945      65724275 
+ 1945      66666572 
+ 1945      49647800 
+ 1946              	.LASF163:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 41
+
+
+ 1947 065f 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 1947      6E5F626C 
+ 1947      655F636F 
+ 1947      6E6E5F73 
+ 1947      74617465 
+ 1948              	.LASF151:
+ 1949 0676 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 1949      4C455F41 
+ 1949      44565F53 
+ 1949      54415445 
+ 1949      5F414456 
+ 1950              	.LASF134:
+ 1951 0695 72785374 		.ascii	"rxStatus\000"
+ 1951      61747573 
+ 1951      00
+ 1952              	.LASF103:
+ 1953 069e 63795F65 		.ascii	"cy_en_scb_uart_polarity_t\000"
+ 1953      6E5F7363 
+ 1953      625F7561 
+ 1953      72745F70 
+ 1953      6F6C6172 
+ 1954              	.LASF86:
+ 1955 06b8 43595F53 		.ascii	"CY_SCB_UART_SMARTCARD\000"
+ 1955      43425F55 
+ 1955      4152545F 
+ 1955      534D4152 
+ 1955      54434152 
+ 1956              	.LASF162:
+ 1957 06ce 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
+ 1957      4C455F43 
+ 1957      4F4E4E5F 
+ 1957      53544154 
+ 1957      455F434C 
+ 1958              	.LASF16:
+ 1959 06f2 666C6F61 		.ascii	"float\000"
+ 1959      7400
+ 1960              	.LASF171:
+ 1961 06f8 53656E73 		.ascii	"SensorBus_context\000"
+ 1961      6F724275 
+ 1961      735F636F 
+ 1961      6E746578 
+ 1961      7400
+ 1962              	.LASF94:
+ 1963 070a 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_3_5\000"
+ 1963      43425F55 
+ 1963      4152545F 
+ 1963      53544F50 
+ 1963      5F424954 
+ 1964              	.LASF164:
+ 1965 0724 63795F52 		.ascii	"cy_RTC_daysInMonthTbl\000"
+ 1965      54435F64 
+ 1965      61797349 
+ 1965      6E4D6F6E 
+ 1965      74685462 
+ 1966              	.LASF131:
+ 1967 073a 63795F73 		.ascii	"cy_stc_scb_uart_config_t\000"
+ 1967      74635F73 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 42
+
+
+ 1967      63625F75 
+ 1967      6172745F 
+ 1967      636F6E66 
+ 1968              	.LASF144:
+ 1969 0753 74784C65 		.ascii	"txLeftToTransmit\000"
+ 1969      6674546F 
+ 1969      5472616E 
+ 1969      736D6974 
+ 1969      00
+ 1970              	.LASF68:
+ 1971 0764 6D617374 		.ascii	"masterRdDir\000"
+ 1971      65725264 
+ 1971      44697200 
+ 1972              	.LASF100:
+ 1973 0770 63795F65 		.ascii	"cy_en_scb_uart_parity_t\000"
+ 1973      6E5F7363 
+ 1973      625F7561 
+ 1973      72745F70 
+ 1973      61726974 
+ 1974              	.LASF160:
+ 1975 0788 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 1975      4C455F43 
+ 1975      4F4E4E5F 
+ 1975      53544154 
+ 1975      455F434C 
+ 1976              	.LASF108:
+ 1977 07b2 64617461 		.ascii	"dataWidth\000"
+ 1977      57696474 
+ 1977      6800
+ 1978              	.LASF34:
+ 1979 07bc 73746172 		.ascii	"startInputMode\000"
+ 1979      74496E70 
+ 1979      75744D6F 
+ 1979      646500
+ 1980              	.LASF1:
+ 1981 07cb 756E7369 		.ascii	"unsigned char\000"
+ 1981      676E6564 
+ 1981      20636861 
+ 1981      7200
+ 1982              	.LASF88:
+ 1983 07d9 63795F65 		.ascii	"cy_en_scb_uart_mode_t\000"
+ 1983      6E5F7363 
+ 1983      625F7561 
+ 1983      72745F6D 
+ 1983      6F64655F 
+ 1984              	.LASF156:
+ 1985 07ef 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
+ 1985      4C455F43 
+ 1985      4F4E4E5F 
+ 1985      53544154 
+ 1985      455F434C 
+ 1986              	.LASF184:
+ 1987 0820 486F7665 		.ascii	"HoverSense.c\000"
+ 1987      7253656E 
+ 1987      73652E63 
+ 1987      00
+ 1988              	.LASF116:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 43
+
+
+ 1989 082d 72656365 		.ascii	"receiverAddress\000"
+ 1989      69766572 
+ 1989      41646472 
+ 1989      65737300 
+ 1990              	.LASF28:
+ 1991 083d 656E6162 		.ascii	"enableCompareSwap\000"
+ 1991      6C65436F 
+ 1991      6D706172 
+ 1991      65537761 
+ 1991      7000
+ 1992              	.LASF118:
+ 1993 084f 61636365 		.ascii	"acceptAddrInFifo\000"
+ 1993      70744164 
+ 1993      6472496E 
+ 1993      4669666F 
+ 1993      00
+ 1994              	.LASF43:
+ 1995 0860 70776D4D 		.ascii	"pwmMode\000"
+ 1995      6F646500 
+ 1996              	.LASF115:
+ 1997 0868 656E6162 		.ascii	"enableMutliProcessorMode\000"
+ 1997      6C654D75 
+ 1997      746C6950 
+ 1997      726F6365 
+ 1997      73736F72 
+ 1998              	.LASF119:
+ 1999 0881 69726461 		.ascii	"irdaInvertRx\000"
+ 1999      496E7665 
+ 1999      72745278 
+ 1999      00
+ 2000              	.LASF129:
+ 2001 088e 74784669 		.ascii	"txFifoTriggerLevel\000"
+ 2001      666F5472 
+ 2001      69676765 
+ 2001      724C6576 
+ 2001      656C00
+ 2002              	.LASF70:
+ 2003 08a1 6D617374 		.ascii	"masterBufferSize\000"
+ 2003      65724275 
+ 2003      66666572 
+ 2003      53697A65 
+ 2003      00
+ 2004              	.LASF172:
+ 2005 08b2 4C696768 		.ascii	"LightOutputC_config\000"
+ 2005      744F7574 
+ 2005      70757443 
+ 2005      5F636F6E 
+ 2005      66696700 
+ 2006              	.LASF107:
+ 2007 08c6 6F766572 		.ascii	"oversample\000"
+ 2007      73616D70 
+ 2007      6C6500
+ 2008              	.LASF67:
+ 2009 08d1 6D617374 		.ascii	"masterPause\000"
+ 2009      65725061 
+ 2009      75736500 
+ 2010              	.LASF48:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 44
+
+
+ 2011 08dd 656E6162 		.ascii	"enablePeriodSwap\000"
+ 2011      6C655065 
+ 2011      72696F64 
+ 2011      53776170 
+ 2011      00
+ 2012              	.LASF61:
+ 2013 08ee 63795F63 		.ascii	"cy_cb_scb_i2c_handle_addr_t\000"
+ 2013      625F7363 
+ 2013      625F6932 
+ 2013      635F6861 
+ 2013      6E646C65 
+ 2014              	.LASF25:
+ 2015 090a 636F6D70 		.ascii	"compareOrCapture\000"
+ 2015      6172654F 
+ 2015      72436170 
+ 2015      74757265 
+ 2015      00
+ 2016              	.LASF72:
+ 2017 091b 6D617374 		.ascii	"masterNumBytes\000"
+ 2017      65724E75 
+ 2017      6D427974 
+ 2017      657300
+ 2018              	.LASF78:
+ 2019 092a 736C6176 		.ascii	"slaveTxBufferCnt\000"
+ 2019      65547842 
+ 2019      75666665 
+ 2019      72436E74 
+ 2019      00
+ 2020              	.LASF161:
+ 2021 093b 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 2021      4C455F43 
+ 2021      4F4E4E5F 
+ 2021      53544154 
+ 2021      455F434C 
+ 2022              	.LASF12:
+ 2023 0966 75696E74 		.ascii	"uint32_t\000"
+ 2023      33325F74 
+ 2023      00
+ 2024              	.LASF84:
+ 2025 096f 63795F73 		.ascii	"cy_stc_scb_i2c_context_t\000"
+ 2025      74635F73 
+ 2025      63625F69 
+ 2025      32635F63 
+ 2025      6F6E7465 
+ 2026              	.LASF123:
+ 2027 0988 63747350 		.ascii	"ctsPolarity\000"
+ 2027      6F6C6172 
+ 2027      69747900 
+ 2028              	.LASF183:
+ 2029 0994 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2029      43313120 
+ 2029      352E342E 
+ 2029      31203230 
+ 2029      31363036 
+ 2030 09c7 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 2030      20726576 
+ 2030      6973696F 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 45
+
+
+ 2030      6E203233 
+ 2030      37373135 
+ 2031 09fa 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 2031      67202D66 
+ 2031      66756E63 
+ 2031      74696F6E 
+ 2031      2D736563 
+ 2032              	.LASF26:
+ 2033 0a26 636F6D70 		.ascii	"compare0\000"
+ 2033      61726530 
+ 2033      00
+ 2034              	.LASF27:
+ 2035 0a2f 636F6D70 		.ascii	"compare1\000"
+ 2035      61726531 
+ 2035      00
+ 2036              	.LASF39:
+ 2037 0a38 636F756E 		.ascii	"countInput\000"
+ 2037      74496E70 
+ 2037      757400
+ 2038              	.LASF15:
+ 2039 0a43 63686172 		.ascii	"char\000"
+ 2039      00
+ 2040              	.LASF85:
+ 2041 0a48 43595F53 		.ascii	"CY_SCB_UART_STANDARD\000"
+ 2041      43425F55 
+ 2041      4152545F 
+ 2041      5354414E 
+ 2041      44415244 
+ 2042              	.LASF92:
+ 2043 0a5d 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_2_5\000"
+ 2043      43425F55 
+ 2043      4152545F 
+ 2043      53544F50 
+ 2043      5F424954 
+ 2044              	.LASF110:
+ 2045 0a77 73746F70 		.ascii	"stopBits\000"
+ 2045      42697473 
+ 2045      00
+ 2046              	.LASF168:
+ 2047 0a80 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
+ 2047      6C655F70 
+ 2047      656E6469 
+ 2047      6E67466C 
+ 2047      61736857 
+ 2048              	.LASF6:
+ 2049 0a99 5F5F7569 		.ascii	"__uint32_t\000"
+ 2049      6E743332 
+ 2049      5F7400
+ 2050              	.LASF165:
+ 2051 0aa4 63795F62 		.ascii	"cy_ble_advState\000"
+ 2051      6C655F61 
+ 2051      64765374 
+ 2051      61746500 
+ 2052              	.LASF126:
+ 2053 0ab4 62726561 		.ascii	"breakWidth\000"
+ 2053      6B576964 
+ 2053      746800
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 46
+
+
+ 2054              	.LASF180:
+ 2055 0abf 686F7665 		.ascii	"hover_detected\000"
+ 2055      725F6465 
+ 2055      74656374 
+ 2055      656400
+ 2056              	.LASF181:
+ 2057 0ace 43617053 		.ascii	"CapSense_Start\000"
+ 2057      656E7365 
+ 2057      5F537461 
+ 2057      727400
+ 2058              	.LASF57:
+ 2059 0add 43595F53 		.ascii	"CY_SCB_I2C_ACK\000"
+ 2059      43425F49 
+ 2059      32435F41 
+ 2059      434B00
+ 2060              	.LASF29:
+ 2061 0aec 696E7465 		.ascii	"interruptSources\000"
+ 2061      72727570 
+ 2061      74536F75 
+ 2061      72636573 
+ 2061      00
+ 2062              	.LASF177:
+ 2063 0afd 4D6F746F 		.ascii	"MotorTimer_config\000"
+ 2063      7254696D 
+ 2063      65725F63 
+ 2063      6F6E6669 
+ 2063      6700
+ 2064              	.LASF158:
+ 2065 0b0f 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
+ 2065      4C455F43 
+ 2065      4F4E4E5F 
+ 2065      53544154 
+ 2065      455F434C 
+ 2066              	.LASF104:
+ 2067 0b39 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 2067      625F7363 
+ 2067      625F7561 
+ 2067      72745F68 
+ 2067      616E646C 
+ 2068              	.LASF37:
+ 2069 0b58 73746F70 		.ascii	"stopInput\000"
+ 2069      496E7075 
+ 2069      7400
+ 2070              	.LASF105:
+ 2071 0b62 7374635F 		.ascii	"stc_scb_uart_config\000"
+ 2071      7363625F 
+ 2071      75617274 
+ 2071      5F636F6E 
+ 2071      66696700 
+ 2072              	.LASF63:
+ 2073 0b76 75736552 		.ascii	"useRxFifo\000"
+ 2073      78466966 
+ 2073      6F00
+ 2074              	.LASF46:
+ 2075 0b80 70657269 		.ascii	"period0\000"
+ 2075      6F643000 
+ 2076              	.LASF106:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 47
+
+
+ 2077 0b88 75617274 		.ascii	"uartMode\000"
+ 2077      4D6F6465 
+ 2077      00
+ 2078              	.LASF145:
+ 2079 0b91 696E6974 		.ascii	"initKey\000"
+ 2079      4B657900 
+ 2080              	.LASF139:
+ 2081 0b99 72784275 		.ascii	"rxBuf\000"
+ 2081      6600
+ 2082              	.LASF75:
+ 2083 0b9f 736C6176 		.ascii	"slaveTxBuffer\000"
+ 2083      65547842 
+ 2083      75666665 
+ 2083      7200
+ 2084              	.LASF76:
+ 2085 0bad 736C6176 		.ascii	"slaveTxBufferSize\000"
+ 2085      65547842 
+ 2085      75666665 
+ 2085      7253697A 
+ 2085      6500
+ 2086              	.LASF20:
+ 2087 0bbf 5F426F6F 		.ascii	"_Bool\000"
+ 2087      6C00
+ 2088              	.LASF155:
+ 2089 0bc5 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 2089      4C455F43 
+ 2089      4F4E4E5F 
+ 2089      53544154 
+ 2089      455F4449 
+ 2090              	.LASF166:
+ 2091 0be4 63795F62 		.ascii	"cy_ble_connHandle\000"
+ 2091      6C655F63 
+ 2091      6F6E6E48 
+ 2091      616E646C 
+ 2091      6500
+ 2092              	.LASF59:
+ 2093 0bf6 63795F65 		.ascii	"cy_en_scb_i2c_command_t\000"
+ 2093      6E5F7363 
+ 2093      625F6932 
+ 2093      635F636F 
+ 2093      6D6D616E 
+ 2094              	.LASF33:
+ 2095 0c0e 72656C6F 		.ascii	"reloadInput\000"
+ 2095      6164496E 
+ 2095      70757400 
+ 2096              	.LASF50:
+ 2097 0c1a 696E7665 		.ascii	"invertPWMOutN\000"
+ 2097      72745057 
+ 2097      4D4F7574 
+ 2097      4E00
+ 2098              	.LASF152:
+ 2099 0c28 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 2099      4C455F41 
+ 2099      44565F53 
+ 2099      54415445 
+ 2099      5F414456 
+ 2100              	.LASF150:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 48
+
+
+ 2101 0c45 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
+ 2101      4C455F41 
+ 2101      44565F53 
+ 2101      54415445 
+ 2101      5F53544F 
+ 2102              	.LASF11:
+ 2103 0c5e 75696E74 		.ascii	"uint8_t\000"
+ 2103      385F7400 
+ 2104              	.LASF51:
+ 2105 0c66 6B696C6C 		.ascii	"killMode\000"
+ 2105      4D6F6465 
+ 2105      00
+ 2106              	.LASF53:
+ 2107 0c6f 73776170 		.ascii	"swapInput\000"
+ 2107      496E7075 
+ 2107      7400
+ 2108              	.LASF56:
+ 2109 0c79 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
+ 2109      74635F74 
+ 2109      6370776D 
+ 2109      5F70776D 
+ 2109      5F636F6E 
+ 2110              	.LASF189:
+ 2111 0c93 5F5F6275 		.ascii	"__builtin_puts\000"
+ 2111      696C7469 
+ 2111      6E5F7075 
+ 2111      747300
+ 2112              	.LASF32:
+ 2113 0ca2 72656C6F 		.ascii	"reloadInputMode\000"
+ 2113      6164496E 
+ 2113      7075744D 
+ 2113      6F646500 
+ 2114              	.LASF55:
+ 2115 0cb2 6B696C6C 		.ascii	"killInput\000"
+ 2115      496E7075 
+ 2115      7400
+ 2116              	.LASF138:
+ 2117 0cbc 72785269 		.ascii	"rxRingBufTail\000"
+ 2117      6E674275 
+ 2117      66546169 
+ 2117      6C00
+ 2118              	.LASF147:
+ 2119 0cca 62644861 		.ascii	"bdHandle\000"
+ 2119      6E646C65 
+ 2119      00
+ 2120              	.LASF58:
+ 2121 0cd3 43595F53 		.ascii	"CY_SCB_I2C_NAK\000"
+ 2121      43425F49 
+ 2121      32435F4E 
+ 2121      414B00
+ 2122              	.LASF90:
+ 2123 0ce2 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_1_5\000"
+ 2123      43425F55 
+ 2123      4152545F 
+ 2123      53544F50 
+ 2123      5F424954 
+ 2124              	.LASF132:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsikMKe.s 			page 49
+
+
+ 2125 0cfc 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 2125      74635F73 
+ 2125      63625F75 
+ 2125      6172745F 
+ 2125      636F6E74 
+ 2126              	.LASF125:
+ 2127 0d14 72747350 		.ascii	"rtsPolarity\000"
+ 2127      6F6C6172 
+ 2127      69747900 
+ 2128              	.LASF121:
+ 2129 0d20 736D6172 		.ascii	"smartCardRetryOnNack\000"
+ 2129      74436172 
+ 2129      64526574 
+ 2129      72794F6E 
+ 2129      4E61636B 
+ 2130              	.LASF23:
+ 2131 0d35 72756E4D 		.ascii	"runMode\000"
+ 2131      6F646500 
+ 2132              	.LASF112:
+ 2133 0d3d 656E6162 		.ascii	"enableInputFilter\000"
+ 2133      6C65496E 
+ 2133      70757446 
+ 2133      696C7465 
+ 2133      7200
+ 2134              	.LASF113:
+ 2135 0d4f 64726F70 		.ascii	"dropOnParityError\000"
+ 2135      4F6E5061 
+ 2135      72697479 
+ 2135      4572726F 
+ 2135      7200
+ 2136              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

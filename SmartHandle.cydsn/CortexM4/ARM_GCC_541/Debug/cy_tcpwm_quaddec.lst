@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
   27:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c **** * Initializes the counter in the TCPWM block for the QuadDec operation.
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c **** *
   29:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c **** * \param base
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 2
 
 
   30:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c **** * The pointer to a TCPWM instance.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
   56              		.loc 1 55 0
   57 001e 9369     		ldr	r3, [r2, #24]
   58 0020 B3F1FF3F 		cmp	r3, #-1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 3
 
 
   59 0024 13D0     		beq	.L3
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
   96 0062 43F00303 		orr	r3, r3, #3
   63:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c ****                                       _VAL2FLD(TCPWM_CNT_TR_CTRL1_COUNT_EDGE, CY_TCPWM_INPUT_LEVEL)
   97              		.loc 1 63 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 4
 
 
   98 0066 04EB8114 		add	r4, r4, r1, lsl #6
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  142              		.global	Cy_TCPWM_QuadDec_DeInit
  143              		.thumb
  144              		.thumb_func
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 5
 
 
  145              		.type	Cy_TCPWM_QuadDec_DeInit, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  104:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c ****     base->CNT[cntNum].PERIOD = CY_TCPWM_CNT_PERIOD_DEFAULT;
  171              		.loc 1 104 0
  172 001e C3F81451 		str	r5, [r3, #276]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 6
 
 
  105:Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm/cy_tcpwm_quaddec.c ****     base->CNT[cntNum].PERIOD_BUFF = CY_TCPWM_CNT_PERIOD_BUFF_DEFAULT;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  215              		.section	.debug_info,"",%progbits
  216              	.Ldebug_info0:
  217 0000 A0030000 		.4byte	0x3a0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 7
 
 
  218 0004 0400     		.2byte	0x4
@@ -368,18 +368,18 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  222 000c C0000000 		.4byte	.LASF57
  223 0010 0C       		.byte	0xc
  224 0011 1E000000 		.4byte	.LASF58
- 225 0015 8F010000 		.4byte	.LASF59
+ 225 0015 84010000 		.4byte	.LASF59
  226 0019 00000000 		.4byte	.Ldebug_ranges0+0
  227 001d 00000000 		.4byte	0
  228 0021 00000000 		.4byte	.Ldebug_line0
  229 0025 02       		.uleb128 0x2
  230 0026 01       		.byte	0x1
  231 0027 06       		.byte	0x6
- 232 0028 88020000 		.4byte	.LASF0
+ 232 0028 8E020000 		.4byte	.LASF0
  233 002c 02       		.uleb128 0x2
  234 002d 01       		.byte	0x1
  235 002e 08       		.byte	0x8
- 236 002f 6A020000 		.4byte	.LASF1
+ 236 002f 70020000 		.4byte	.LASF1
  237 0033 02       		.uleb128 0x2
  238 0034 02       		.byte	0x2
  239 0035 05       		.byte	0x5
@@ -387,58 +387,58 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  241 003a 02       		.uleb128 0x2
  242 003b 02       		.byte	0x2
  243 003c 07       		.byte	0x7
- 244 003d F3020000 		.4byte	.LASF3
+ 244 003d F9020000 		.4byte	.LASF3
  245 0041 03       		.uleb128 0x3
- 246 0042 A2030000 		.4byte	.LASF5
+ 246 0042 A8030000 		.4byte	.LASF5
  247 0046 02       		.byte	0x2
  248 0047 3F       		.byte	0x3f
  249 0048 4C000000 		.4byte	0x4c
  250 004c 02       		.uleb128 0x2
  251 004d 04       		.byte	0x4
  252 004e 05       		.byte	0x5
- 253 004f 24020000 		.4byte	.LASF4
+ 253 004f 2A020000 		.4byte	.LASF4
  254 0053 03       		.uleb128 0x3
- 255 0054 84010000 		.4byte	.LASF6
+ 255 0054 B9010000 		.4byte	.LASF6
  256 0058 02       		.byte	0x2
  257 0059 41       		.byte	0x41
  258 005a 5E000000 		.4byte	0x5e
  259 005e 02       		.uleb128 0x2
  260 005f 04       		.byte	0x4
  261 0060 07       		.byte	0x7
- 262 0061 62030000 		.4byte	.LASF7
+ 262 0061 68030000 		.4byte	.LASF7
  263 0065 02       		.uleb128 0x2
  264 0066 08       		.byte	0x8
  265 0067 05       		.byte	0x5
- 266 0068 0F020000 		.4byte	.LASF8
+ 266 0068 15020000 		.4byte	.LASF8
  267 006c 02       		.uleb128 0x2
  268 006d 08       		.byte	0x8
  269 006e 07       		.byte	0x7
- 270 006f 9D020000 		.4byte	.LASF9
+ 270 006f A3020000 		.4byte	.LASF9
  271 0073 04       		.uleb128 0x4
  272 0074 04       		.byte	0x4
  273 0075 05       		.byte	0x5
  274 0076 696E7400 		.ascii	"int\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 8
 
 
  275 007a 02       		.uleb128 0x2
  276 007b 04       		.byte	0x4
  277 007c 07       		.byte	0x7
- 278 007d C8020000 		.4byte	.LASF10
+ 278 007d CE020000 		.4byte	.LASF10
  279 0081 03       		.uleb128 0x3
- 280 0082 12030000 		.4byte	.LASF11
+ 280 0082 18030000 		.4byte	.LASF11
  281 0086 03       		.byte	0x3
  282 0087 2C       		.byte	0x2c
  283 0088 41000000 		.4byte	0x41
  284 008c 03       		.uleb128 0x3
- 285 008d B4020000 		.4byte	.LASF12
+ 285 008d BA020000 		.4byte	.LASF12
  286 0091 03       		.byte	0x3
  287 0092 30       		.byte	0x30
  288 0093 53000000 		.4byte	0x53
  289 0097 02       		.uleb128 0x2
  290 0098 08       		.byte	0x8
  291 0099 04       		.byte	0x4
- 292 009a 48020000 		.4byte	.LASF13
+ 292 009a 4E020000 		.4byte	.LASF13
  293 009e 02       		.uleb128 0x2
  294 009f 04       		.byte	0x4
  295 00a0 07       		.byte	0x7
@@ -453,19 +453,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  304 00b2 22       		.byte	0x22
  305 00b3 77010000 		.4byte	0x177
  306 00b7 08       		.uleb128 0x8
- 307 00b8 78020000 		.4byte	.LASF15
+ 307 00b8 7E020000 		.4byte	.LASF15
  308 00bc 04       		.byte	0x4
  309 00bd 23       		.byte	0x23
  310 00be A5000000 		.4byte	0xa5
  311 00c2 00       		.byte	0
  312 00c3 08       		.uleb128 0x8
- 313 00c4 1D020000 		.4byte	.LASF16
+ 313 00c4 23020000 		.4byte	.LASF16
  314 00c8 04       		.byte	0x4
  315 00c9 24       		.byte	0x24
  316 00ca AA000000 		.4byte	0xaa
  317 00ce 04       		.byte	0x4
  318 00cf 08       		.uleb128 0x8
- 319 00d0 C3030000 		.4byte	.LASF17
+ 319 00d0 C9030000 		.4byte	.LASF17
  320 00d4 04       		.byte	0x4
  321 00d5 25       		.byte	0x25
  322 00d6 A5000000 		.4byte	0xa5
@@ -477,8 +477,8 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  328 00e1 A5000000 		.4byte	0xa5
  329 00e5 0C       		.byte	0xc
  330 00e6 08       		.uleb128 0x8
- 331 00e7 40020000 		.4byte	.LASF18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 9
+ 331 00e7 46020000 		.4byte	.LASF18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 9
 
 
  332 00eb 04       		.byte	0x4
@@ -498,13 +498,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  346 0105 A5000000 		.4byte	0xa5
  347 0109 18       		.byte	0x18
  348 010a 08       		.uleb128 0x8
- 349 010b CB030000 		.4byte	.LASF21
+ 349 010b D1030000 		.4byte	.LASF21
  350 010f 04       		.byte	0x4
  351 0110 2A       		.byte	0x2a
  352 0111 AA000000 		.4byte	0xaa
  353 0115 1C       		.byte	0x1c
  354 0116 08       		.uleb128 0x8
- 355 0117 C8010000 		.4byte	.LASF22
+ 355 0117 CE010000 		.4byte	.LASF22
  356 011b 04       		.byte	0x4
  357 011c 2B       		.byte	0x2b
  358 011d A5000000 		.4byte	0xa5
@@ -522,34 +522,34 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  370 0135 A5000000 		.4byte	0xa5
  371 0139 28       		.byte	0x28
  372 013a 08       		.uleb128 0x8
- 373 013b 4E030000 		.4byte	.LASF25
+ 373 013b 54030000 		.4byte	.LASF25
  374 013f 04       		.byte	0x4
  375 0140 2E       		.byte	0x2e
  376 0141 AA000000 		.4byte	0xaa
  377 0145 2C       		.byte	0x2c
  378 0146 08       		.uleb128 0x8
- 379 0147 49030000 		.4byte	.LASF26
+ 379 0147 4F030000 		.4byte	.LASF26
  380 014b 04       		.byte	0x4
  381 014c 2F       		.byte	0x2f
  382 014d A5000000 		.4byte	0xa5
  383 0151 30       		.byte	0x30
  384 0152 08       		.uleb128 0x8
- 385 0153 94020000 		.4byte	.LASF27
+ 385 0153 9A020000 		.4byte	.LASF27
  386 0157 04       		.byte	0x4
  387 0158 30       		.byte	0x30
  388 0159 A5000000 		.4byte	0xa5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 10
 
 
  389 015d 34       		.byte	0x34
  390 015e 08       		.uleb128 0x8
- 391 015f E9020000 		.4byte	.LASF28
+ 391 015f EF020000 		.4byte	.LASF28
  392 0163 04       		.byte	0x4
  393 0164 31       		.byte	0x31
  394 0165 A5000000 		.4byte	0xa5
  395 0169 38       		.byte	0x38
  396 016a 08       		.uleb128 0x8
- 397 016b 34020000 		.4byte	.LASF29
+ 397 016b 3A020000 		.4byte	.LASF29
  398 016f 04       		.byte	0x4
  399 0170 32       		.byte	0x32
  400 0171 AA000000 		.4byte	0xaa
@@ -566,13 +566,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  411 0186 38       		.byte	0x38
  412 0187 05020000 		.4byte	0x205
  413 018b 08       		.uleb128 0x8
- 414 018c 78020000 		.4byte	.LASF15
+ 414 018c 7E020000 		.4byte	.LASF15
  415 0190 04       		.byte	0x4
  416 0191 39       		.byte	0x39
  417 0192 A5000000 		.4byte	0xa5
  418 0196 00       		.byte	0
  419 0197 08       		.uleb128 0x8
- 420 0198 BA030000 		.4byte	.LASF31
+ 420 0198 C0030000 		.4byte	.LASF31
  421 019c 04       		.byte	0x4
  422 019d 3A       		.byte	0x3a
  423 019e A5000000 		.4byte	0xa5
@@ -584,7 +584,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  429 01aa A5000000 		.4byte	0xa5
  430 01ae 08       		.byte	0x8
  431 01af 08       		.uleb128 0x8
- 432 01b0 E2010000 		.4byte	.LASF33
+ 432 01b0 E8010000 		.4byte	.LASF33
  433 01b4 04       		.byte	0x4
  434 01b5 3C       		.byte	0x3c
  435 01b6 A5000000 		.4byte	0xa5
@@ -596,28 +596,28 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  441 01c2 A5000000 		.4byte	0xa5
  442 01c6 10       		.byte	0x10
  443 01c7 08       		.uleb128 0x8
- 444 01c8 E0020000 		.4byte	.LASF35
+ 444 01c8 E6020000 		.4byte	.LASF35
  445 01cc 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 11
 
 
  446 01cd 3E       		.byte	0x3e
  447 01ce A5000000 		.4byte	0xa5
  448 01d2 14       		.byte	0x14
  449 01d3 08       		.uleb128 0x8
- 450 01d4 FF010000 		.4byte	.LASF36
+ 450 01d4 05020000 		.4byte	.LASF36
  451 01d8 04       		.byte	0x4
  452 01d9 3F       		.byte	0x3f
  453 01da A5000000 		.4byte	0xa5
  454 01de 18       		.byte	0x18
  455 01df 08       		.uleb128 0x8
- 456 01e0 7D020000 		.4byte	.LASF37
+ 456 01e0 83020000 		.4byte	.LASF37
  457 01e4 04       		.byte	0x4
  458 01e5 40       		.byte	0x40
  459 01e6 AA000000 		.4byte	0xaa
  460 01ea 1C       		.byte	0x1c
  461 01eb 08       		.uleb128 0x8
- 462 01ec CB030000 		.4byte	.LASF21
+ 462 01ec D1030000 		.4byte	.LASF21
  463 01f0 04       		.byte	0x4
  464 01f1 41       		.byte	0x41
  465 01f2 1A020000 		.4byte	0x21a
@@ -648,25 +648,25 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  490 022d 1F       		.byte	0x1f
  491 022e 00       		.byte	0
  492 022f 03       		.uleb128 0x3
- 493 0230 F6030000 		.4byte	.LASF38
+ 493 0230 FC030000 		.4byte	.LASF38
  494 0234 04       		.byte	0x4
  495 0235 43       		.byte	0x43
  496 0236 82010000 		.4byte	0x182
  497 023a 02       		.uleb128 0x2
  498 023b 01       		.byte	0x1
  499 023c 08       		.byte	0x8
- 500 023d 0D030000 		.4byte	.LASF39
+ 500 023d 13030000 		.4byte	.LASF39
  501 0241 02       		.uleb128 0x2
  502 0242 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 12
 
 
  503 0243 04       		.byte	0x4
- 504 0244 09020000 		.4byte	.LASF40
+ 504 0244 0F020000 		.4byte	.LASF40
  505 0248 02       		.uleb128 0x2
  506 0249 08       		.byte	0x8
  507 024a 04       		.byte	0x4
- 508 024b 74030000 		.4byte	.LASF41
+ 508 024b 7A030000 		.4byte	.LASF41
  509 024f 0E       		.uleb128 0xe
  510 0250 04       		.byte	0x4
  511 0251 7A000000 		.4byte	0x7a
@@ -677,67 +677,67 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  516 025d 73010000 		.4byte	.LASF42
  517 0261 00       		.byte	0
  518 0262 10       		.uleb128 0x10
- 519 0263 1A030000 		.4byte	.LASF43
+ 519 0263 20030000 		.4byte	.LASF43
  520 0267 0100B600 		.4byte	0xb60001
  521 026b 00       		.byte	0
  522 026c 11       		.uleb128 0x11
- 523 026d D4030000 		.4byte	.LASF44
+ 523 026d DA030000 		.4byte	.LASF44
  524 0271 05       		.byte	0x5
  525 0272 4E01     		.2byte	0x14e
  526 0274 4F020000 		.4byte	0x24f
  527 0278 12       		.uleb128 0x12
- 528 0279 2D030000 		.4byte	.LASF60
+ 528 0279 33030000 		.4byte	.LASF60
  529 027d 20       		.byte	0x20
  530 027e 06       		.byte	0x6
  531 027f 2B       		.byte	0x2b
  532 0280 E5020000 		.4byte	0x2e5
  533 0284 08       		.uleb128 0x8
- 534 0285 D5020000 		.4byte	.LASF45
+ 534 0285 DB020000 		.4byte	.LASF45
  535 0289 06       		.byte	0x6
  536 028a 2E       		.byte	0x2e
  537 028b 8C000000 		.4byte	0x8c
  538 028f 00       		.byte	0
  539 0290 08       		.uleb128 0x8
- 540 0291 EE010000 		.4byte	.LASF46
+ 540 0291 F4010000 		.4byte	.LASF46
  541 0295 06       		.byte	0x6
  542 0296 30       		.byte	0x30
  543 0297 8C000000 		.4byte	0x8c
  544 029b 04       		.byte	0x4
  545 029c 08       		.uleb128 0x8
- 546 029d 93030000 		.4byte	.LASF47
+ 546 029d 99030000 		.4byte	.LASF47
  547 02a1 06       		.byte	0x6
  548 02a2 32       		.byte	0x32
  549 02a3 8C000000 		.4byte	0x8c
  550 02a7 08       		.byte	0x8
  551 02a8 08       		.uleb128 0x8
- 552 02a9 BD020000 		.4byte	.LASF48
+ 552 02a9 C3020000 		.4byte	.LASF48
  553 02ad 06       		.byte	0x6
  554 02ae 34       		.byte	0x34
  555 02af 8C000000 		.4byte	0x8c
  556 02b3 0C       		.byte	0xc
  557 02b4 08       		.uleb128 0x8
- 558 02b5 AC030000 		.4byte	.LASF49
+ 558 02b5 B2030000 		.4byte	.LASF49
  559 02b9 06       		.byte	0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 13
 
 
  560 02ba 36       		.byte	0x36
  561 02bb 8C000000 		.4byte	0x8c
  562 02bf 10       		.byte	0x10
  563 02c0 08       		.uleb128 0x8
- 564 02c1 BE010000 		.4byte	.LASF50
+ 564 02c1 C4010000 		.4byte	.LASF50
  565 02c5 06       		.byte	0x6
  566 02c6 38       		.byte	0x38
  567 02c7 8C000000 		.4byte	0x8c
  568 02cb 14       		.byte	0x14
  569 02cc 08       		.uleb128 0x8
- 570 02cd 58030000 		.4byte	.LASF51
+ 570 02cd 5E030000 		.4byte	.LASF51
  571 02d1 06       		.byte	0x6
  572 02d2 3A       		.byte	0x3a
  573 02d3 8C000000 		.4byte	0x8c
  574 02d7 18       		.byte	0x18
  575 02d8 08       		.uleb128 0x8
- 576 02d9 D8010000 		.4byte	.LASF52
+ 576 02d9 DE010000 		.4byte	.LASF52
  577 02dd 06       		.byte	0x6
  578 02de 3C       		.byte	0x3c
  579 02df 8C000000 		.4byte	0x8c
@@ -749,7 +749,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  585 02eb 3E       		.byte	0x3e
  586 02ec 78020000 		.4byte	0x278
  587 02f0 13       		.uleb128 0x13
- 588 02f1 54020000 		.4byte	.LASF61
+ 588 02f1 5A020000 		.4byte	.LASF61
  589 02f5 01       		.byte	0x1
  590 02f6 2D       		.byte	0x2d
  591 02f7 6C020000 		.4byte	0x26c
@@ -759,30 +759,30 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  595 0304 9C       		.byte	0x9c
  596 0305 42030000 		.4byte	0x342
  597 0309 14       		.uleb128 0x14
- 598 030a 01040000 		.4byte	.LASF54
+ 598 030a 07040000 		.4byte	.LASF54
  599 030e 01       		.byte	0x1
  600 030f 2D       		.byte	0x2d
  601 0310 42030000 		.4byte	0x342
  602 0314 00000000 		.4byte	.LLST0
  603 0318 15       		.uleb128 0x15
- 604 0319 2D020000 		.4byte	.LASF55
+ 604 0319 33020000 		.4byte	.LASF55
  605 031d 01       		.byte	0x1
  606 031e 2D       		.byte	0x2d
  607 031f 8C000000 		.4byte	0x8c
  608 0323 01       		.uleb128 0x1
  609 0324 51       		.byte	0x51
  610 0325 15       		.uleb128 0x15
- 611 0326 D1010000 		.4byte	.LASF56
+ 611 0326 D7010000 		.4byte	.LASF56
  612 032a 01       		.byte	0x1
  613 032b 2E       		.byte	0x2e
  614 032c 48030000 		.4byte	0x348
  615 0330 01       		.uleb128 0x1
  616 0331 52       		.byte	0x52
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 14
 
 
  617 0332 16       		.uleb128 0x16
- 618 0333 06030000 		.4byte	.LASF62
+ 618 0333 0C030000 		.4byte	.LASF62
  619 0337 01       		.byte	0x1
  620 0338 30       		.byte	0x30
  621 0339 6C020000 		.4byte	0x26c
@@ -797,7 +797,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  630 034e 06       		.uleb128 0x6
  631 034f E5020000 		.4byte	0x2e5
  632 0353 18       		.uleb128 0x18
- 633 0354 7B030000 		.4byte	.LASF63
+ 633 0354 81030000 		.4byte	.LASF63
  634 0358 01       		.byte	0x1
  635 0359 62       		.byte	0x62
  636 035a 00000000 		.4byte	.LFB145
@@ -806,20 +806,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  639 0363 9C       		.byte	0x9c
  640 0364 92030000 		.4byte	0x392
  641 0368 14       		.uleb128 0x14
- 642 0369 01040000 		.4byte	.LASF54
+ 642 0369 07040000 		.4byte	.LASF54
  643 036d 01       		.byte	0x1
  644 036e 62       		.byte	0x62
  645 036f 42030000 		.4byte	0x342
  646 0373 B8000000 		.4byte	.LLST2
  647 0377 15       		.uleb128 0x15
- 648 0378 2D020000 		.4byte	.LASF55
+ 648 0378 33020000 		.4byte	.LASF55
  649 037c 01       		.byte	0x1
  650 037d 62       		.byte	0x62
  651 037e 8C000000 		.4byte	0x8c
  652 0382 01       		.uleb128 0x1
  653 0383 51       		.byte	0x51
  654 0384 15       		.uleb128 0x15
- 655 0385 D1010000 		.4byte	.LASF56
+ 655 0385 D7010000 		.4byte	.LASF56
  656 0389 01       		.byte	0x1
  657 038a 62       		.byte	0x62
  658 038b 48030000 		.4byte	0x348
@@ -827,7 +827,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  660 0390 52       		.byte	0x52
  661 0391 00       		.byte	0
  662 0392 19       		.uleb128 0x19
- 663 0393 E9030000 		.4byte	.LASF64
+ 663 0393 EF030000 		.4byte	.LASF64
  664 0397 07       		.byte	0x7
  665 0398 EA07     		.2byte	0x7ea
  666 039a 9E030000 		.4byte	0x39e
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  671              	.Ldebug_abbrev0:
  672 0000 01       		.uleb128 0x1
  673 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 15
 
 
  674 0002 01       		.byte	0x1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  728 0038 00       		.byte	0
  729 0039 49       		.uleb128 0x49
  730 003a 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 16
 
 
  731 003b 00       		.byte	0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  785 0071 01       		.byte	0x1
  786 0072 0B       		.uleb128 0xb
  787 0073 05       		.uleb128 0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 17
 
 
  788 0074 3A       		.uleb128 0x3a
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  842 00aa 00       		.byte	0
  843 00ab 00       		.byte	0
  844 00ac 0F       		.uleb128 0xf
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 18
 
 
  845 00ad 28       		.uleb128 0x28
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  899 00e3 3B       		.uleb128 0x3b
  900 00e4 0B       		.uleb128 0xb
  901 00e5 27       		.uleb128 0x27
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 19
 
 
  902 00e6 19       		.uleb128 0x19
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  956 011d 49       		.uleb128 0x49
  957 011e 13       		.uleb128 0x13
  958 011f 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 20
 
 
  959 0120 17       		.uleb128 0x17
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  1013 0157 00       		.byte	0
  1014              		.section	.debug_loc,"",%progbits
  1015              	.Ldebug_loc0:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 21
 
 
  1016              	.LLST0:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  1070 0082 0600     		.2byte	0x6
  1071 0084 0C       		.byte	0xc
  1072 0085 0100B600 		.4byte	0xb60001
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 22
 
 
  1073 0089 9F       		.byte	0x9f
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  1127              	.Ldebug_line0:
  1128 0000 4D020000 		.section	.debug_str,"MS",%progbits,1
  1128      0200F101 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 23
 
 
  1128      00000201 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  1151      54524C32 
  1151      00
  1152              	.LASF57:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 24
 
 
  1153 00c0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
@@ -1407,238 +1407,239 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 1
  1158      5F535543 
  1158      43455353 
  1158      00
- 1159              	.LASF6:
- 1160 0184 5F5F7569 		.ascii	"__uint32_t\000"
- 1160      6E743332 
- 1160      5F7400
- 1161              	.LASF59:
- 1162 018f 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\clone\\SmartHandle.cydsn"
- 1162      73657273 
- 1162      5C73616C 
- 1162      617A5C44 
- 1162      65736B74 
- 1163 01bd 00       		.ascii	"\000"
+ 1159              	.LASF59:
+ 1160 0184 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\SmartHandle"
+ 1160      73657273 
+ 1160      5C73616C 
+ 1160      617A5C44 
+ 1160      65736B74 
+ 1161 01b2 2E637964 		.ascii	".cydsn\000"
+ 1161      736E00
+ 1162              	.LASF6:
+ 1163 01b9 5F5F7569 		.ascii	"__uint32_t\000"
+ 1163      6E743332 
+ 1163      5F7400
  1164              	.LASF50:
- 1165 01be 73746F70 		.ascii	"stopInput\000"
+ 1165 01c4 73746F70 		.ascii	"stopInput\000"
  1165      496E7075 
  1165      7400
  1166              	.LASF22:
- 1167 01c8 54525F43 		.ascii	"TR_CTRL0\000"
+ 1167 01ce 54525F43 		.ascii	"TR_CTRL0\000"
  1167      54524C30 
  1167      00
  1168              	.LASF56:
- 1169 01d1 636F6E66 		.ascii	"config\000"
+ 1169 01d7 636F6E66 		.ascii	"config\000"
  1169      696700
  1170              	.LASF52:
- 1171 01d8 70686942 		.ascii	"phiBInput\000"
+ 1171 01de 70686942 		.ascii	"phiBInput\000"
  1171      496E7075 
  1171      7400
  1172              	.LASF33:
- 1173 01e2 434D445F 		.ascii	"CMD_CAPTURE\000"
+ 1173 01e8 434D445F 		.ascii	"CMD_CAPTURE\000"
  1173      43415054 
  1173      55524500 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 25
+
+
  1174              	.LASF46:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 25
-
-
- 1175 01ee 696E7465 		.ascii	"interruptSources\000"
+ 1175 01f4 696E7465 		.ascii	"interruptSources\000"
  1175      72727570 
  1175      74536F75 
  1175      72636573 
  1175      00
  1176              	.LASF36:
- 1177 01ff 434D445F 		.ascii	"CMD_START\000"
+ 1177 0205 434D445F 		.ascii	"CMD_START\000"
  1177      53544152 
  1177      5400
  1178              	.LASF40:
- 1179 0209 666C6F61 		.ascii	"float\000"
+ 1179 020f 666C6F61 		.ascii	"float\000"
  1179      7400
  1180              	.LASF8:
- 1181 020f 6C6F6E67 		.ascii	"long long int\000"
+ 1181 0215 6C6F6E67 		.ascii	"long long int\000"
  1181      206C6F6E 
  1181      6720696E 
  1181      7400
  1182              	.LASF16:
- 1183 021d 53544154 		.ascii	"STATUS\000"
+ 1183 0223 53544154 		.ascii	"STATUS\000"
  1183      555300
  1184              	.LASF4:
- 1185 0224 6C6F6E67 		.ascii	"long int\000"
+ 1185 022a 6C6F6E67 		.ascii	"long int\000"
  1185      20696E74 
  1185      00
  1186              	.LASF55:
- 1187 022d 636E744E 		.ascii	"cntNum\000"
+ 1187 0233 636E744E 		.ascii	"cntNum\000"
  1187      756D00
  1188              	.LASF29:
- 1189 0234 494E5452 		.ascii	"INTR_MASKED\000"
+ 1189 023a 494E5452 		.ascii	"INTR_MASKED\000"
  1189      5F4D4153 
  1189      4B454400 
  1190              	.LASF18:
- 1191 0240 43435F42 		.ascii	"CC_BUFF\000"
+ 1191 0246 43435F42 		.ascii	"CC_BUFF\000"
  1191      55464600 
  1192              	.LASF13:
- 1193 0248 6C6F6E67 		.ascii	"long double\000"
+ 1193 024e 6C6F6E67 		.ascii	"long double\000"
  1193      20646F75 
  1193      626C6500 
  1194              	.LASF61:
- 1195 0254 43795F54 		.ascii	"Cy_TCPWM_QuadDec_Init\000"
+ 1195 025a 43795F54 		.ascii	"Cy_TCPWM_QuadDec_Init\000"
  1195      4350574D 
  1195      5F517561 
  1195      64446563 
  1195      5F496E69 
  1196              	.LASF1:
- 1197 026a 756E7369 		.ascii	"unsigned char\000"
+ 1197 0270 756E7369 		.ascii	"unsigned char\000"
  1197      676E6564 
  1197      20636861 
  1197      7200
  1198              	.LASF15:
- 1199 0278 4354524C 		.ascii	"CTRL\000"
+ 1199 027e 4354524C 		.ascii	"CTRL\000"
  1199      00
  1200              	.LASF37:
- 1201 027d 494E5452 		.ascii	"INTR_CAUSE\000"
+ 1201 0283 494E5452 		.ascii	"INTR_CAUSE\000"
  1201      5F434155 
  1201      534500
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 26
+
+
  1202              	.LASF0:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 26
-
-
- 1203 0288 7369676E 		.ascii	"signed char\000"
+ 1203 028e 7369676E 		.ascii	"signed char\000"
  1203      65642063 
  1203      68617200 
  1204              	.LASF27:
- 1205 0294 494E5452 		.ascii	"INTR_SET\000"
+ 1205 029a 494E5452 		.ascii	"INTR_SET\000"
  1205      5F534554 
  1205      00
  1206              	.LASF9:
- 1207 029d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1207 02a3 6C6F6E67 		.ascii	"long long unsigned int\000"
  1207      206C6F6E 
  1207      6720756E 
  1207      7369676E 
  1207      65642069 
  1208              	.LASF12:
- 1209 02b4 75696E74 		.ascii	"uint32_t\000"
+ 1209 02ba 75696E74 		.ascii	"uint32_t\000"
  1209      33325F74 
  1209      00
  1210              	.LASF48:
- 1211 02bd 696E6465 		.ascii	"indexInput\000"
+ 1211 02c3 696E6465 		.ascii	"indexInput\000"
  1211      78496E70 
  1211      757400
  1212              	.LASF10:
- 1213 02c8 756E7369 		.ascii	"unsigned int\000"
+ 1213 02ce 756E7369 		.ascii	"unsigned int\000"
  1213      676E6564 
  1213      20696E74 
  1213      00
  1214              	.LASF45:
- 1215 02d5 7265736F 		.ascii	"resolution\000"
+ 1215 02db 7265736F 		.ascii	"resolution\000"
  1215      6C757469 
  1215      6F6E00
  1216              	.LASF35:
- 1217 02e0 434D445F 		.ascii	"CMD_STOP\000"
+ 1217 02e6 434D445F 		.ascii	"CMD_STOP\000"
  1217      53544F50 
  1217      00
  1218              	.LASF28:
- 1219 02e9 494E5452 		.ascii	"INTR_MASK\000"
+ 1219 02ef 494E5452 		.ascii	"INTR_MASK\000"
  1219      5F4D4153 
  1219      4B00
  1220              	.LASF3:
- 1221 02f3 73686F72 		.ascii	"short unsigned int\000"
+ 1221 02f9 73686F72 		.ascii	"short unsigned int\000"
  1221      7420756E 
  1221      7369676E 
  1221      65642069 
  1221      6E7400
  1222              	.LASF62:
- 1223 0306 73746174 		.ascii	"status\000"
+ 1223 030c 73746174 		.ascii	"status\000"
  1223      757300
  1224              	.LASF39:
- 1225 030d 63686172 		.ascii	"char\000"
+ 1225 0313 63686172 		.ascii	"char\000"
  1225      00
  1226              	.LASF11:
- 1227 0312 696E7433 		.ascii	"int32_t\000"
+ 1227 0318 696E7433 		.ascii	"int32_t\000"
  1227      325F7400 
  1228              	.LASF43:
- 1229 031a 43595F54 		.ascii	"CY_TCPWM_BAD_PARAM\000"
+ 1229 0320 43595F54 		.ascii	"CY_TCPWM_BAD_PARAM\000"
  1229      4350574D 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 27
+
+
  1229      5F424144 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 27
-
-
  1229      5F504152 
  1229      414D00
  1230              	.LASF60:
- 1231 032d 63795F73 		.ascii	"cy_stc_tcpwm_quaddec_config\000"
+ 1231 0333 63795F73 		.ascii	"cy_stc_tcpwm_quaddec_config\000"
  1231      74635F74 
  1231      6370776D 
  1231      5F717561 
  1231      64646563 
  1232              	.LASF26:
- 1233 0349 494E5452 		.ascii	"INTR\000"
+ 1233 034f 494E5452 		.ascii	"INTR\000"
  1233      00
  1234              	.LASF25:
- 1235 034e 52455345 		.ascii	"RESERVED1\000"
+ 1235 0354 52455345 		.ascii	"RESERVED1\000"
  1235      52564544 
  1235      3100
  1236              	.LASF51:
- 1237 0358 70686941 		.ascii	"phiAInput\000"
+ 1237 035e 70686941 		.ascii	"phiAInput\000"
  1237      496E7075 
  1237      7400
  1238              	.LASF7:
- 1239 0362 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1239 0368 6C6F6E67 		.ascii	"long unsigned int\000"
  1239      20756E73 
  1239      69676E65 
  1239      6420696E 
  1239      7400
  1240              	.LASF41:
- 1241 0374 646F7562 		.ascii	"double\000"
+ 1241 037a 646F7562 		.ascii	"double\000"
  1241      6C6500
  1242              	.LASF63:
- 1243 037b 43795F54 		.ascii	"Cy_TCPWM_QuadDec_DeInit\000"
+ 1243 0381 43795F54 		.ascii	"Cy_TCPWM_QuadDec_DeInit\000"
  1243      4350574D 
  1243      5F517561 
  1243      64446563 
  1243      5F446549 
  1244              	.LASF47:
- 1245 0393 696E6465 		.ascii	"indexInputMode\000"
+ 1245 0399 696E6465 		.ascii	"indexInputMode\000"
  1245      78496E70 
  1245      75744D6F 
  1245      646500
  1246              	.LASF5:
- 1247 03a2 5F5F696E 		.ascii	"__int32_t\000"
+ 1247 03a8 5F5F696E 		.ascii	"__int32_t\000"
  1247      7433325F 
  1247      7400
  1248              	.LASF49:
- 1249 03ac 73746F70 		.ascii	"stopInputMode\000"
+ 1249 03b2 73746F70 		.ascii	"stopInputMode\000"
  1249      496E7075 
  1249      744D6F64 
  1249      6500
  1250              	.LASF31:
- 1251 03ba 4354524C 		.ascii	"CTRL_CLR\000"
+ 1251 03c0 4354524C 		.ascii	"CTRL_CLR\000"
  1251      5F434C52 
  1251      00
  1252              	.LASF17:
- 1253 03c3 434F554E 		.ascii	"COUNTER\000"
+ 1253 03c9 434F554E 		.ascii	"COUNTER\000"
  1253      54455200 
  1254              	.LASF21:
- 1255 03cb 52455345 		.ascii	"RESERVED\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccF09pi6.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc8PWuha.s 			page 28
 
 
+ 1255 03d1 52455345 		.ascii	"RESERVED\000"
  1255      52564544 
  1255      00
  1256              	.LASF44:
- 1257 03d4 63795F65 		.ascii	"cy_en_tcpwm_status_t\000"
+ 1257 03da 63795F65 		.ascii	"cy_en_tcpwm_status_t\000"
  1257      6E5F7463 
  1257      70776D5F 
  1257      73746174 
  1257      75735F74 
  1258              	.LASF64:
- 1259 03e9 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1259 03ef 49544D5F 		.ascii	"ITM_RxBuffer\000"
  1259      52784275 
  1259      66666572 
  1259      00
  1260              	.LASF38:
- 1261 03f6 54435057 		.ascii	"TCPWM_Type\000"
+ 1261 03fc 54435057 		.ascii	"TCPWM_Type\000"
  1261      4D5F5479 
  1261      706500
  1262              	.LASF54:
- 1263 0401 62617365 		.ascii	"base\000"
+ 1263 0407 62617365 		.ascii	"base\000"
  1263      00
  1264              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

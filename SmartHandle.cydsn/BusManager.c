@@ -120,9 +120,9 @@ void BusManager_Init()
     
     SensorBus_RegisterEventCallback((cy_cb_scb_i2c_handle_events_t) SensorBus_ExitCallback);
     
-    AccDriver_Init();
+    //AccDriver_Init();
     
-    GyrDriver_Init();
+    //GyrDriver_Init();
     
     SensorBus_Disable(); local_bus_busy = false;
     

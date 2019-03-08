@@ -48,10 +48,10 @@
 /* Initial Time and Date definitions */
 #define RealTimeClock_INITIAL_DATE_SEC          (0u)
 #define RealTimeClock_INITIAL_DATE_MIN          (0u)
-#define RealTimeClock_INITIAL_DATE_HOUR         (22u)
+#define RealTimeClock_INITIAL_DATE_HOUR         (10u)
 #define RealTimeClock_INITIAL_DATE_HOUR_FORMAT  (CY_RTC_24_HOURS)
-#define RealTimeClock_INITIAL_DATE_DOW          (7u)
-#define RealTimeClock_INITIAL_DATE_DOM          (2u)
+#define RealTimeClock_INITIAL_DATE_DOW          (6u)
+#define RealTimeClock_INITIAL_DATE_DOM          (8u)
 #define RealTimeClock_INITIAL_DATE_MONTH        (3u)
 #define RealTimeClock_INITIAL_DATE_YEAR         (19u)
 

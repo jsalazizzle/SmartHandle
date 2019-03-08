@@ -191,12 +191,8 @@ static void ClockInit(void)
 	uint32_t status;
 
 	/* Enable all source clocks */
-	status = Cy_SysClk_WcoEnable(500000u);
-	if (CY_RET_SUCCESS != status)
-	{
-		CyClockStartupError(CYCLOCKSTART_WCO_ERROR);
-	}
-	Cy_SysClk_ClkLfSetSource(CY_SYSCLK_CLKLF_IN_WCO);
+	Cy_SysClk_PiloEnable();
+	Cy_SysClk_ClkLfSetSource(CY_SYSCLK_CLKLF_IN_PILO);
 
 	/* Configure CPU clock dividers */
 	Cy_SysClk_ClkFastSetDivider(0u);
@@ -242,13 +238,13 @@ static void ClockInit(void)
 	}
 
 	/* Configure miscellaneous clocks */
-	Cy_SysClk_ClkTimerSetSource(CY_SYSCLK_CLKTIMER_IN_IMO);
+	Cy_SysClk_ClkTimerSetSource(CY_SYSCLK_CLKTIMER_IN_HF0_NODIV);
 	Cy_SysClk_ClkTimerSetDivider(0);
 	Cy_SysClk_ClkTimerEnable();
 	Cy_SysClk_ClkPumpSetSource(CY_SYSCLK_PUMP_IN_CLKPATH0);
 	Cy_SysClk_ClkPumpSetDivider(CY_SYSCLK_PUMP_DIV_2);
 	Cy_SysClk_ClkPumpEnable();
-	Cy_SysClk_ClkBakSetSource(CY_SYSCLK_BAK_IN_WCO);
+	Cy_SysClk_ClkBakSetSource(CY_SYSCLK_BAK_IN_CLKLF);
 	Cy_SysTick_SetClockSource(CY_SYSTICK_CLOCK_SOURCE_CLK_LF);
 	Cy_SysClk_IloEnable();
 	Cy_SysClk_IloHibernateOn(1u);
@@ -311,7 +307,6 @@ static void ClockInit(void)
 static void AnalogSetDefault(void);
 static void AnalogSetDefault(void)
 {
-	CY_SET_REG32(CYREG_PASS_AREF_AREF_CTRL, 0x80110001u);
 }
 
 
@@ -350,28 +345,6 @@ void Cy_SystemInit(void)
 	/* PMIC Control */
 	Cy_SysPm_UnlockPmic();
 	Cy_SysPm_DisablePmicOutput();
-
-	/* Pin0_0 configuration */
-	{
-	    const cy_stc_gpio_pin_config_t pin0_0_cfg =
-	    {
-	        .outVal    = 0x00u,
-	        .driveMode = 0x00u,
-	        .hsiom     = P0_0_GPIO,
-	    };
-	    (void)Cy_GPIO_Pin_Init(GPIO_PRT0, 0, &pin0_0_cfg);
-	}
-
-	/* Pin0_1 configuration */
-	{
-	    const cy_stc_gpio_pin_config_t pin0_1_cfg =
-	    {
-	        .outVal    = 0x00u,
-	        .driveMode = 0x00u,
-	        .hsiom     = P0_1_GPIO,
-	    };
-	    (void)Cy_GPIO_Pin_Init(GPIO_PRT0, 1, &pin0_1_cfg);
-	}
 
 	/* Clock */
 	ClockInit();
@@ -692,10 +665,10 @@ void Cy_SystemInit(void)
 	{
 	    const cy_stc_gpio_prt_config_t port0_cfg =
 	    {
-	        .out        = 0x00000030u,
+	        .out        = 0x00000013u,
 	        .intrMask   = 0x00000010u,
 	        .intrCfg    = 0x00000200u,
-	        .cfg        = 0x002A0000u,
+	        .cfg        = 0x006A0062u,
 	        .cfgIn      = 0x00000000u,
 	        .cfgOut     = 0x00000000u,
 	        .cfgSIO     = 0x00000000u,
@@ -709,7 +682,7 @@ void Cy_SystemInit(void)
 	{
 	    const cy_stc_gpio_prt_config_t port5_cfg =
 	    {
-	        .out        = 0x0000002Fu,
+	        .out        = 0x0000002Bu,
 	        .intrMask   = 0x00000000u,
 	        .intrCfg    = 0x00000000u,
 	        .cfg        = 0x06464668u,
@@ -729,7 +702,7 @@ void Cy_SystemInit(void)
 	        .out        = 0x00000030u,
 	        .intrMask   = 0x00000000u,
 	        .intrCfg    = 0x00000000u,
-	        .cfg        = 0xBACC6B00u,
+	        .cfg        = 0xBACC0B00u,
 	        .cfgIn      = 0x00000000u,
 	        .cfgOut     = 0x00000000u,
 	        .cfgSIO     = 0x00000000u,
@@ -746,7 +719,7 @@ void Cy_SystemInit(void)
 	        .out        = 0x00000006u,
 	        .intrMask   = 0x00000006u,
 	        .intrCfg    = 0x00000028u,
-	        .cfg        = 0x60000AA0u,
+	        .cfg        = 0x00000AA0u,
 	        .cfgIn      = 0x00000000u,
 	        .cfgOut     = 0x00000000u,
 	        .cfgSIO     = 0x00000000u,

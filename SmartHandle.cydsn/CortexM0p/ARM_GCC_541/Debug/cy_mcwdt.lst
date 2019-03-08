@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The base pointer to a structure that describes the registers.
   29:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
   30:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \param config
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 2
 
 
   31:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The pointer to a structure that contains component configuration data.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   65              	.LVL3:
   66 0024 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
   67              	.LVL4:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 3
 
 
   68              	.L4:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   52:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L3(CY_MCWDT_IS_MODE_VALID((cy_en_mcwdtmode_t)config->c2Mode));
  118              		.loc 1 52 0 is_stmt 1
  119 006c E379     		ldrb	r3, [r4, #7]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 4
 
 
  120 006e 032B     		cmp	r3, #3
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  163 00ae 0B40     		ands	r3, r1
  164 00b0 1A00     		movs	r2, r3
   59:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR0, config->c0ClearOnMatc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 5
 
 
  165              		.loc 1 59 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   65:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                            
   66:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         ret = CY_MCWDT_SUCCESS;
  210              		.loc 1 66 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 6
 
 
  211 00ee 0020     		movs	r0, #0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   86:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *******************************************************************************/
   87:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** void Cy_MCWDT_DeInit(MCWDT_STRUCT_Type *base)
   88:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 7
 
 
  245              		.loc 1 88 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   41:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Each block contains three sub-counters, each of which can be configured for 
   42:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * various system utility functions - free running counter, periodic interrupts, 
   43:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * watchdog reset, or three interrupts followed by a watchdog reset.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 8
 
 
   44:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * All counters are clocked by either LFCLK (nominal 32 kHz) or by a cascaded 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
   98:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>1.10</td>
   99:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>Added input parameter validation to the API functions.<br>
  100:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     Added API function GetCountCascaded()</td>
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 9
 
 
  101:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td></td>
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  155:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c1ClearOnMatch; /**< The sub-counter#1 Clear On Match parameter enabled/disabled. */
  156:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c0c1Cascade;    /**< The sub-counter#1 is clocked by LFCLK or from sub-counter#0 casca
  157:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c1c2Cascade;    /**< The sub-counter#2 is clocked by LFCLK or from sub-counter#1 casca
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 10
 
 
  158:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** } cy_stc_mcwdt_config_t;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  212:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR2     (1UL << CY_MCWDT_CTR2_Pos)                /**< The sub-counter#2 mask. Th
  213:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    that handle multiple counters, i
  214:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    Cy_MCWDT_Disable(), Cy_MCWDT_Cle
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 11
 
 
  215:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR_Msk  (CY_MCWDT_CTR0 | CY_MCWDT_CTR1 | CY_MCWDT_CTR2) /**< The mask for all sub
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  269:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
  270:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** Parameter check macros */ 
  271:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_CNTS_MASK_VALID(counters)  (0U == ((counters) & (uint32_t)~CY_MCWDT_CTR_Msk)) 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 12
 
 
  272:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  326:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetInterruptStatus(MCWDT_STRUCT_Type const *base);
  327:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_ClearInterrupt(MCWDT_STRUCT_Type *base, uint32_t counters);
  328:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetInterrupt(MCWDT_STRUCT_Type *base, uint32_t counters);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 13
 
 
  329:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetInterruptMask(MCWDT_STRUCT_Type const *base);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  383:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The base pointer to a structure describing registers.
  384:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
  385:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param counters
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 14
 
 
  386:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  OR of all counters to disable. See the \ref CY_MCWDT_CTR0, CY_MCWDT_CTR1, and
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  440:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     {
  441:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****         case CY_MCWDT_COUNTER0:
  442:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             status = _FLD2VAL(MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLED0, base->MCWDT_CTL);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 15
 
 
  443:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             break;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  259              		.loc 2 496 0
  260 0004 FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
  261              	.LVL19:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 16
 
 
  497:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  300              		.loc 1 99 0
  301              		@ sp needed
  302              	.LVL21:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 17
 
 
  303 003a 10BD     		pop	{r4, pc}
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  330              	.LVL24:
  127:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     uint32_t counter0 = countVal & MCWDT_STRUCT_MCWDT_CNTLOW_WDT_CTR0_Msk;
  331              		.loc 1 127 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 18
 
 
  332 0006 0904     		lsls	r1, r1, #16
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  360 0022 002C     		cmp	r4, #0
  361 0024 00D0     		beq	.L23
  154:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 19
 
 
  155:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****             /* Set match to the maximum value */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  179:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     }
  180:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
  181:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* Calculate the combined value for C1-C0 cascaded counters */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 20
 
 
  182:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     countVal = counter0 + (counter1 * match0);
@@ -1189,8 +1189,8 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  425 000b 01       		.uleb128 0x1
  426 000c 4D000000 		.4byte	.LASF66
  427 0010 0C       		.byte	0xc
- 428 0011 7D020000 		.4byte	.LASF67
- 429 0015 14010000 		.4byte	.LASF68
+ 428 0011 4E020000 		.4byte	.LASF67
+ 429 0015 37040000 		.4byte	.LASF68
  430 0019 00000000 		.4byte	.Ldebug_ranges0+0
  431 001d 00000000 		.4byte	0
  432 0021 00000000 		.4byte	.Ldebug_line0
@@ -1198,21 +1198,21 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  434 0026 04       		.byte	0x4
  435 0027 05       		.byte	0x5
  436 0028 696E7400 		.ascii	"int\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 21
 
 
  437 002c 03       		.uleb128 0x3
  438 002d 04       		.byte	0x4
  439 002e 07       		.byte	0x7
- 440 002f 02030000 		.4byte	.LASF0
+ 440 002f D3020000 		.4byte	.LASF0
  441 0033 03       		.uleb128 0x3
  442 0034 08       		.byte	0x8
  443 0035 05       		.byte	0x5
- 444 0036 DC010000 		.4byte	.LASF1
+ 444 0036 AD010000 		.4byte	.LASF1
  445 003a 03       		.uleb128 0x3
  446 003b 08       		.byte	0x8
  447 003c 04       		.byte	0x4
- 448 003d 63020000 		.4byte	.LASF2
+ 448 003d 34020000 		.4byte	.LASF2
  449 0041 03       		.uleb128 0x3
  450 0042 02       		.byte	0x2
  451 0043 05       		.byte	0x5
@@ -1220,29 +1220,29 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  453 0048 03       		.uleb128 0x3
  454 0049 01       		.byte	0x1
  455 004a 08       		.byte	0x8
- 456 004b 6F020000 		.4byte	.LASF4
+ 456 004b 40020000 		.4byte	.LASF4
  457 004f 03       		.uleb128 0x3
  458 0050 01       		.byte	0x1
  459 0051 06       		.byte	0x6
- 460 0052 BC020000 		.4byte	.LASF5
+ 460 0052 8D020000 		.4byte	.LASF5
  461 0056 04       		.uleb128 0x4
- 462 0057 28020000 		.4byte	.LASF6
+ 462 0057 F9010000 		.4byte	.LASF6
  463 005b 03       		.byte	0x3
  464 005c 1D       		.byte	0x1d
  465 005d 48000000 		.4byte	0x48
  466 0061 04       		.uleb128 0x4
- 467 0062 43010000 		.4byte	.LASF7
+ 467 0062 14010000 		.4byte	.LASF7
  468 0066 03       		.byte	0x3
  469 0067 2B       		.byte	0x2b
  470 0068 6C000000 		.4byte	0x6c
  471 006c 03       		.uleb128 0x3
  472 006d 02       		.byte	0x2
  473 006e 07       		.byte	0x7
- 474 006f 56030000 		.4byte	.LASF8
+ 474 006f 27030000 		.4byte	.LASF8
  475 0073 03       		.uleb128 0x3
  476 0074 04       		.byte	0x4
  477 0075 05       		.byte	0x5
- 478 0076 08020000 		.4byte	.LASF9
+ 478 0076 D9010000 		.4byte	.LASF9
  479 007a 04       		.uleb128 0x4
  480 007b 02010000 		.4byte	.LASF10
  481 007f 03       		.byte	0x3
@@ -1251,26 +1251,26 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  484 0085 03       		.uleb128 0x3
  485 0086 04       		.byte	0x4
  486 0087 07       		.byte	0x7
- 487 0088 B9030000 		.4byte	.LASF11
+ 487 0088 8A030000 		.4byte	.LASF11
  488 008c 03       		.uleb128 0x3
  489 008d 08       		.byte	0x8
  490 008e 07       		.byte	0x7
- 491 008f C8020000 		.4byte	.LASF12
+ 491 008f 99020000 		.4byte	.LASF12
  492 0093 04       		.uleb128 0x4
- 493 0094 66010000 		.4byte	.LASF13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 22
+ 493 0094 37010000 		.4byte	.LASF13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 22
 
 
  494 0098 04       		.byte	0x4
  495 0099 18       		.byte	0x18
  496 009a 56000000 		.4byte	0x56
  497 009e 04       		.uleb128 0x4
- 498 009f 1F030000 		.4byte	.LASF14
+ 498 009f F0020000 		.4byte	.LASF14
  499 00a3 04       		.byte	0x4
  500 00a4 24       		.byte	0x24
  501 00a5 61000000 		.4byte	0x61
  502 00a9 04       		.uleb128 0x4
- 503 00aa DF020000 		.4byte	.LASF15
+ 503 00aa B0020000 		.4byte	.LASF15
  504 00ae 04       		.byte	0x4
  505 00af 30       		.byte	0x30
  506 00b0 7A000000 		.4byte	0x7a
@@ -1295,7 +1295,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  525 00d8 22       		.byte	0x22
  526 00d9 6E010000 		.4byte	0x16e
  527 00dd 0A       		.uleb128 0xa
- 528 00de 2C040000 		.4byte	.LASF17
+ 528 00de FD030000 		.4byte	.LASF17
  529 00e2 05       		.byte	0x5
  530 00e3 23       		.byte	0x23
  531 00e4 C0000000 		.4byte	0xc0
@@ -1307,64 +1307,64 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  537 00f0 BB000000 		.4byte	0xbb
  538 00f4 04       		.byte	0x4
  539 00f5 0A       		.uleb128 0xa
- 540 00f6 C8010000 		.4byte	.LASF19
+ 540 00f6 99010000 		.4byte	.LASF19
  541 00fa 05       		.byte	0x5
  542 00fb 25       		.byte	0x25
  543 00fc BB000000 		.4byte	0xbb
  544 0100 08       		.byte	0x8
  545 0101 0A       		.uleb128 0xa
- 546 0102 EA010000 		.4byte	.LASF20
+ 546 0102 BB010000 		.4byte	.LASF20
  547 0106 05       		.byte	0x5
  548 0107 26       		.byte	0x26
  549 0108 BB000000 		.4byte	0xbb
  550 010c 0C       		.byte	0xc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 23
 
 
  551 010d 0A       		.uleb128 0xa
- 552 010e 18040000 		.4byte	.LASF21
+ 552 010e E9030000 		.4byte	.LASF21
  553 0112 05       		.byte	0x5
  554 0113 27       		.byte	0x27
  555 0114 BB000000 		.4byte	0xbb
  556 0118 10       		.byte	0x10
  557 0119 0A       		.uleb128 0xa
- 558 011a 4E010000 		.4byte	.LASF22
+ 558 011a 1F010000 		.4byte	.LASF22
  559 011e 05       		.byte	0x5
  560 011f 28       		.byte	0x28
  561 0120 BB000000 		.4byte	0xbb
  562 0124 14       		.byte	0x14
  563 0125 0A       		.uleb128 0xa
- 564 0126 8A040000 		.4byte	.LASF23
+ 564 0126 90040000 		.4byte	.LASF23
  565 012a 05       		.byte	0x5
  566 012b 29       		.byte	0x29
  567 012c BB000000 		.4byte	0xbb
  568 0130 18       		.byte	0x18
  569 0131 0A       		.uleb128 0xa
- 570 0132 DE030000 		.4byte	.LASF24
+ 570 0132 AF030000 		.4byte	.LASF24
  571 0136 05       		.byte	0x5
  572 0137 2A       		.byte	0x2a
  573 0138 BB000000 		.4byte	0xbb
  574 013c 1C       		.byte	0x1c
  575 013d 0A       		.uleb128 0xa
- 576 013e 18020000 		.4byte	.LASF25
+ 576 013e E9010000 		.4byte	.LASF25
  577 0142 05       		.byte	0x5
  578 0143 2B       		.byte	0x2b
  579 0144 BB000000 		.4byte	0xbb
  580 0148 20       		.byte	0x20
  581 0149 0A       		.uleb128 0xa
- 582 014a B6010000 		.4byte	.LASF26
+ 582 014a 87010000 		.4byte	.LASF26
  583 014e 05       		.byte	0x5
  584 014f 2C       		.byte	0x2c
  585 0150 C0000000 		.4byte	0xc0
  586 0154 24       		.byte	0x24
  587 0155 0A       		.uleb128 0xa
- 588 0156 0D040000 		.4byte	.LASF27
+ 588 0156 DE030000 		.4byte	.LASF27
  589 015a 05       		.byte	0x5
  590 015b 2D       		.byte	0x2d
  591 015c BB000000 		.4byte	0xbb
  592 0160 28       		.byte	0x28
  593 0161 0A       		.uleb128 0xa
- 594 0162 AF030000 		.4byte	.LASF28
+ 594 0162 80030000 		.4byte	.LASF28
  595 0166 05       		.byte	0x5
  596 0167 2E       		.byte	0x2e
  597 0168 73010000 		.4byte	0x173
@@ -1378,46 +1378,46 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  605 0179 12000000 		.4byte	.LASF29
  606 017d 05       		.byte	0x5
  607 017e 2F       		.byte	0x2f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 24
 
 
  608 017f D5000000 		.4byte	0xd5
  609 0183 0B       		.uleb128 0xb
- 610 0184 11020000 		.4byte	.LASF30
+ 610 0184 E2010000 		.4byte	.LASF30
  611 0188 06       		.byte	0x6
  612 0189 C401     		.2byte	0x1c4
  613 018b 8F010000 		.4byte	0x18f
  614 018f 03       		.uleb128 0x3
  615 0190 01       		.byte	0x1
  616 0191 08       		.byte	0x8
- 617 0192 69030000 		.4byte	.LASF31
+ 617 0192 3A030000 		.4byte	.LASF31
  618 0196 03       		.uleb128 0x3
  619 0197 04       		.byte	0x4
  620 0198 04       		.byte	0x4
- 621 0199 D6010000 		.4byte	.LASF32
+ 621 0199 A7010000 		.4byte	.LASF32
  622 019d 03       		.uleb128 0x3
  623 019e 08       		.byte	0x8
  624 019f 04       		.byte	0x4
- 625 01a0 CB030000 		.4byte	.LASF33
+ 625 01a0 9C030000 		.4byte	.LASF33
  626 01a4 09       		.uleb128 0x9
  627 01a5 0C       		.byte	0xc
  628 01a6 02       		.byte	0x2
  629 01a7 8A       		.byte	0x8a
  630 01a8 25020000 		.4byte	0x225
  631 01ac 0A       		.uleb128 0xa
- 632 01ad 5B020000 		.4byte	.LASF34
+ 632 01ad 2C020000 		.4byte	.LASF34
  633 01b1 02       		.byte	0x2
  634 01b2 8C       		.byte	0x8c
  635 01b3 9E000000 		.4byte	0x9e
  636 01b7 00       		.byte	0
  637 01b8 0A       		.uleb128 0xa
- 638 01b9 6B040000 		.4byte	.LASF35
+ 638 01b9 71040000 		.4byte	.LASF35
  639 01bd 02       		.byte	0x2
  640 01be 8F       		.byte	0x8f
  641 01bf 9E000000 		.4byte	0x9e
  642 01c3 02       		.byte	0x2
  643 01c4 0A       		.uleb128 0xa
- 644 01c5 58010000 		.4byte	.LASF36
+ 644 01c5 29010000 		.4byte	.LASF36
  645 01c9 02       		.byte	0x2
  646 01ca 92       		.byte	0x92
  647 01cb 93000000 		.4byte	0x93
@@ -1429,40 +1429,40 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  653 01d7 93000000 		.4byte	0x93
  654 01db 05       		.byte	0x5
  655 01dc 0A       		.uleb128 0xa
- 656 01dd ED030000 		.4byte	.LASF38
+ 656 01dd BE030000 		.4byte	.LASF38
  657 01e1 02       		.byte	0x2
  658 01e2 96       		.byte	0x96
  659 01e3 93000000 		.4byte	0x93
  660 01e7 06       		.byte	0x6
  661 01e8 0A       		.uleb128 0xa
- 662 01e9 25040000 		.4byte	.LASF39
+ 662 01e9 F6030000 		.4byte	.LASF39
  663 01ed 02       		.byte	0x2
  664 01ee 98       		.byte	0x98
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 25
 
 
  665 01ef 93000000 		.4byte	0x93
  666 01f3 07       		.byte	0x7
  667 01f4 0A       		.uleb128 0xa
- 668 01f5 A7010000 		.4byte	.LASF40
+ 668 01f5 78010000 		.4byte	.LASF40
  669 01f9 02       		.byte	0x2
  670 01fa 9A       		.byte	0x9a
  671 01fb 25020000 		.4byte	0x225
  672 01ff 08       		.byte	0x8
  673 0200 0A       		.uleb128 0xa
- 674 0201 32020000 		.4byte	.LASF41
+ 674 0201 03020000 		.4byte	.LASF41
  675 0205 02       		.byte	0x2
  676 0206 9B       		.byte	0x9b
  677 0207 25020000 		.4byte	0x225
  678 020b 09       		.byte	0x9
  679 020c 0A       		.uleb128 0xa
- 680 020d D2030000 		.4byte	.LASF42
+ 680 020d A3030000 		.4byte	.LASF42
  681 0211 02       		.byte	0x2
  682 0212 9C       		.byte	0x9c
  683 0213 25020000 		.4byte	0x225
  684 0217 0A       		.byte	0xa
  685 0218 0A       		.uleb128 0xa
- 686 0219 F6020000 		.4byte	.LASF43
+ 686 0219 C7020000 		.4byte	.LASF43
  687 021d 02       		.byte	0x2
  688 021e 9D       		.byte	0x9d
  689 021f 25020000 		.4byte	0x225
@@ -1471,9 +1471,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  692 0225 03       		.uleb128 0x3
  693 0226 01       		.byte	0x1
  694 0227 02       		.byte	0x2
- 695 0228 6E030000 		.4byte	.LASF44
+ 695 0228 3F030000 		.4byte	.LASF44
  696 022c 04       		.uleb128 0x4
- 697 022d 40030000 		.4byte	.LASF45
+ 697 022d 11030000 		.4byte	.LASF45
  698 0231 02       		.byte	0x2
  699 0232 9E       		.byte	0x9e
  700 0233 A4010000 		.4byte	0x1a4
@@ -1484,21 +1484,21 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  705 023e ED       		.byte	0xed
  706 023f 5C020000 		.4byte	0x25c
  707 0243 0D       		.uleb128 0xd
- 708 0244 8D030000 		.4byte	.LASF46
+ 708 0244 5E030000 		.4byte	.LASF46
  709 0248 00       		.byte	0
  710 0249 0D       		.uleb128 0xd
- 711 024a F6010000 		.4byte	.LASF47
+ 711 024a C7010000 		.4byte	.LASF47
  712 024e 01       		.byte	0x1
  713 024f 0D       		.uleb128 0xd
- 714 0250 F9030000 		.4byte	.LASF48
+ 714 0250 CA030000 		.4byte	.LASF48
  715 0254 02       		.byte	0x2
  716 0255 0D       		.uleb128 0xd
- 717 0256 28030000 		.4byte	.LASF49
+ 717 0256 F9020000 		.4byte	.LASF49
  718 025a 03       		.byte	0x3
  719 025b 00       		.byte	0
  720 025c 04       		.uleb128 0x4
  721 025d 00000000 		.4byte	.LASF50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 26
 
 
  722 0261 02       		.byte	0x2
@@ -1511,10 +1511,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  729 026e 0401     		.2byte	0x104
  730 0270 84020000 		.4byte	0x284
  731 0274 0D       		.uleb128 0xd
- 732 0275 6E010000 		.4byte	.LASF51
+ 732 0275 3F010000 		.4byte	.LASF51
  733 0279 00       		.byte	0
  734 027a 0F       		.uleb128 0xf
- 735 027b 35040000 		.4byte	.LASF52
+ 735 027b 06040000 		.4byte	.LASF52
  736 027f 0100D600 		.4byte	0xd60001
  737 0283 00       		.byte	0
  738 0284 0B       		.uleb128 0xb
@@ -1523,7 +1523,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  741 028a 0701     		.2byte	0x107
  742 028c 67020000 		.4byte	0x267
  743 0290 10       		.uleb128 0x10
- 744 0291 E8020000 		.4byte	.LASF56
+ 744 0291 B9020000 		.4byte	.LASF56
  745 0295 01       		.byte	0x1
  746 0296 29       		.byte	0x29
  747 0297 84020000 		.4byte	0x284
@@ -1533,13 +1533,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  751 02a4 9C       		.byte	0x9c
  752 02a5 81030000 		.4byte	0x381
  753 02a9 11       		.uleb128 0x11
- 754 02aa 66040000 		.4byte	.LASF54
+ 754 02aa 6C040000 		.4byte	.LASF54
  755 02ae 01       		.byte	0x1
  756 02af 29       		.byte	0x29
  757 02b0 81030000 		.4byte	0x381
  758 02b4 00000000 		.4byte	.LLST0
  759 02b8 11       		.uleb128 0x11
- 760 02b9 5F010000 		.4byte	.LASF55
+ 760 02b9 30010000 		.4byte	.LASF55
  761 02bd 01       		.byte	0x1
  762 02be 29       		.byte	0x29
  763 02bf 87030000 		.4byte	0x387
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  776 02e4 01       		.uleb128 0x1
  777 02e5 50       		.byte	0x50
  778 02e6 05       		.uleb128 0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 27
 
 
  779 02e7 03       		.byte	0x3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  833 0344 01       		.uleb128 0x1
  834 0345 51       		.byte	0x51
  835 0346 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 28
 
 
  836 0347 08       		.byte	0x8
@@ -1667,27 +1667,27 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  879 038d 06       		.uleb128 0x6
  880 038e 2C020000 		.4byte	0x22c
  881 0392 17       		.uleb128 0x17
- 882 0393 0F030000 		.4byte	.LASF69
+ 882 0393 E0020000 		.4byte	.LASF69
  883 0397 02       		.byte	0x2
  884 0398 EC01     		.2byte	0x1ec
  885 039a 03       		.byte	0x3
  886 039b B8030000 		.4byte	0x3b8
  887 039f 18       		.uleb128 0x18
- 888 03a0 66040000 		.4byte	.LASF54
+ 888 03a0 6C040000 		.4byte	.LASF54
  889 03a4 02       		.byte	0x2
  890 03a5 EC01     		.2byte	0x1ec
  891 03a7 81030000 		.4byte	0x381
  892 03ab 19       		.uleb128 0x19
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 29
 
 
- 893 03ac A0030000 		.4byte	.LASF70
+ 893 03ac 71030000 		.4byte	.LASF70
  894 03b0 02       		.byte	0x2
  895 03b1 EE01     		.2byte	0x1ee
  896 03b3 A9000000 		.4byte	0xa9
  897 03b7 00       		.byte	0
  898 03b8 1A       		.uleb128 0x1a
- 899 03b9 7D030000 		.4byte	.LASF71
+ 899 03b9 4E030000 		.4byte	.LASF71
  900 03bd 01       		.byte	0x1
  901 03be 57       		.byte	0x57
  902 03bf 00000000 		.4byte	.LFB61
@@ -1696,7 +1696,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  905 03c8 9C       		.byte	0x9c
  906 03c9 1B040000 		.4byte	0x41b
  907 03cd 11       		.uleb128 0x11
- 908 03ce 66040000 		.4byte	.LASF54
+ 908 03ce 6C040000 		.4byte	.LASF54
  909 03d2 01       		.byte	0x1
  910 03d3 57       		.byte	0x57
  911 03d4 81030000 		.4byte	0x381
@@ -1726,7 +1726,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  935 0419 00       		.byte	0
  936 041a 00       		.byte	0
  937 041b 10       		.uleb128 0x10
- 938 041c 41020000 		.4byte	.LASF57
+ 938 041c 12020000 		.4byte	.LASF57
  939 0420 01       		.byte	0x1
  940 0421 7B       		.byte	0x7b
  941 0422 A9000000 		.4byte	0xa9
@@ -1736,9 +1736,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  945 042f 9C       		.byte	0x9c
  946 0430 8B040000 		.4byte	0x48b
  947 0434 11       		.uleb128 0x11
- 948 0435 66040000 		.4byte	.LASF54
+ 948 0435 6C040000 		.4byte	.LASF54
  949 0439 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 30
 
 
  950 043a 7B       		.byte	0x7b
@@ -1751,13 +1751,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  957 044a A9000000 		.4byte	0xa9
  958 044e 57010000 		.4byte	.LLST7
  959 0452 20       		.uleb128 0x20
- 960 0453 9E010000 		.4byte	.LASF59
+ 960 0453 6F010000 		.4byte	.LASF59
  961 0457 01       		.byte	0x1
  962 0458 7E       		.byte	0x7e
  963 0459 A9000000 		.4byte	0xa9
  964 045d 80010000 		.4byte	.LLST8
  965 0461 21       		.uleb128 0x21
- 966 0462 74030000 		.4byte	.LASF60
+ 966 0462 45030000 		.4byte	.LASF60
  967 0466 01       		.byte	0x1
  968 0467 7F       		.byte	0x7f
  969 0468 A9000000 		.4byte	0xa9
@@ -1783,22 +1783,22 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  989 0491 06       		.uleb128 0x6
  990 0492 78010000 		.4byte	0x178
  991 0496 22       		.uleb128 0x22
- 992 0497 73040000 		.4byte	.LASF63
- 993 049b 73040000 		.4byte	.LASF63
+ 992 0497 79040000 		.4byte	.LASF63
+ 993 049b 79040000 		.4byte	.LASF63
  994 049f 06       		.byte	0x6
  995 04a0 2A03     		.2byte	0x32a
  996 04a2 22       		.uleb128 0x22
- 997 04a3 7F010000 		.4byte	.LASF64
- 998 04a7 7F010000 		.4byte	.LASF64
+ 997 04a3 50010000 		.4byte	.LASF64
+ 998 04a7 50010000 		.4byte	.LASF64
  999 04ab 06       		.byte	0x6
  1000 04ac 4D03     		.2byte	0x34d
  1001 04ae 22       		.uleb128 0x22
- 1002 04af 48040000 		.4byte	.LASF65
- 1003 04b3 48040000 		.4byte	.LASF65
+ 1002 04af 19040000 		.4byte	.LASF65
+ 1003 04b3 19040000 		.4byte	.LASF65
  1004 04b7 06       		.byte	0x6
  1005 04b8 5C03     		.2byte	0x35c
  1006 04ba 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 31
 
 
  1007              		.section	.debug_abbrev,"",%progbits
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1061 0034 00       		.byte	0
  1062 0035 00       		.byte	0
  1063 0036 05       		.uleb128 0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 32
 
 
  1064 0037 35       		.uleb128 0x35
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1118 006d 13       		.uleb128 0x13
  1119 006e 38       		.uleb128 0x38
  1120 006f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 33
 
 
  1121 0070 00       		.byte	0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1175 00a6 0F       		.uleb128 0xf
  1176 00a7 28       		.uleb128 0x28
  1177 00a8 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 34
 
 
  1178 00a9 03       		.uleb128 0x3
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1232 00e0 0B       		.uleb128 0xb
  1233 00e1 3B       		.uleb128 0x3b
  1234 00e2 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 35
 
 
  1235 00e3 49       		.uleb128 0x49
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1289 0120 19       		.uleb128 0x19
  1290 0121 20       		.uleb128 0x20
  1291 0122 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 36
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 36
 
 
  1292 0123 01       		.uleb128 0x1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1346 015a 00       		.byte	0
  1347 015b 1B       		.uleb128 0x1b
  1348 015c 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 37
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 37
 
 
  1349 015d 01       		.byte	0x1
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1403 0195 3A       		.uleb128 0x3a
  1404 0196 0B       		.uleb128 0xb
  1405 0197 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 38
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 38
 
 
  1406 0198 0B       		.uleb128 0xb
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1460 0020 50       		.byte	0x50
  1461 0021 F4000000 		.4byte	.LVL12
  1462 0025 F6000000 		.4byte	.LVL13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 39
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 39
 
 
  1463 0029 0100     		.2byte	0x1
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1517 00b2 0200     		.2byte	0x2
  1518 00b4 30       		.byte	0x30
  1519 00b5 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 40
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 40
 
 
  1520 00b6 F2000000 		.4byte	.LVL11
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1574 0145 48000000 		.4byte	.LFE62
  1575 0149 0400     		.2byte	0x4
  1576 014b F3       		.byte	0xf3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 41
 
 
  1577 014c 01       		.uleb128 0x1
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1631 0008 00000000 		.4byte	.LFB61
  1632 000c 3C000000 		.4byte	.LFE61
  1633 0010 00000000 		.4byte	.LFB62
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 42
 
 
  1634 0014 48000000 		.4byte	.LFE62
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1655      2D736563 
  1656              	.LASF61:
  1657 00df 6D617463 		.ascii	"match0\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 43
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 43
 
 
  1657      683000
@@ -2538,300 +2538,301 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 1
  1664              	.LASF37:
  1665 010d 63314D6F 		.ascii	"c1Mode\000"
  1665      646500
- 1666              	.LASF68:
- 1667 0114 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\clone\\SmartHandle.cydsn"
- 1667      73657273 
- 1667      5C73616C 
- 1667      617A5C44 
- 1667      65736B74 
- 1668 0142 00       		.ascii	"\000"
- 1669              	.LASF7:
- 1670 0143 5F5F7569 		.ascii	"__uint16_t\000"
- 1670      6E743136 
- 1670      5F7400
- 1671              	.LASF22:
- 1672 014e 4D435744 		.ascii	"MCWDT_CTL\000"
- 1672      545F4354 
- 1672      4C00
- 1673              	.LASF36:
- 1674 0158 63304D6F 		.ascii	"c0Mode\000"
- 1674      646500
- 1675              	.LASF55:
- 1676 015f 636F6E66 		.ascii	"config\000"
- 1676      696700
- 1677              	.LASF13:
- 1678 0166 75696E74 		.ascii	"uint8_t\000"
- 1678      385F7400 
- 1679              	.LASF51:
- 1680 016e 43595F4D 		.ascii	"CY_MCWDT_SUCCESS\000"
- 1680      43574454 
- 1680      5F535543 
- 1680      43455353 
- 1680      00
- 1681              	.LASF64:
- 1682 017f 43795F53 		.ascii	"Cy_SysLib_EnterCriticalSection\000"
- 1682      79734C69 
- 1682      625F456E 
- 1682      74657243 
- 1682      72697469 
- 1683              	.LASF59:
- 1684 019e 636F756E 		.ascii	"counter1\000"
- 1684      74657231 
- 1684      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 44
+ 1666              	.LASF7:
+ 1667 0114 5F5F7569 		.ascii	"__uint16_t\000"
+ 1667      6E743136 
+ 1667      5F7400
+ 1668              	.LASF22:
+ 1669 011f 4D435744 		.ascii	"MCWDT_CTL\000"
+ 1669      545F4354 
+ 1669      4C00
+ 1670              	.LASF36:
+ 1671 0129 63304D6F 		.ascii	"c0Mode\000"
+ 1671      646500
+ 1672              	.LASF55:
+ 1673 0130 636F6E66 		.ascii	"config\000"
+ 1673      696700
+ 1674              	.LASF13:
+ 1675 0137 75696E74 		.ascii	"uint8_t\000"
+ 1675      385F7400 
+ 1676              	.LASF51:
+ 1677 013f 43595F4D 		.ascii	"CY_MCWDT_SUCCESS\000"
+ 1677      43574454 
+ 1677      5F535543 
+ 1677      43455353 
+ 1677      00
+ 1678              	.LASF64:
+ 1679 0150 43795F53 		.ascii	"Cy_SysLib_EnterCriticalSection\000"
+ 1679      79734C69 
+ 1679      625F456E 
+ 1679      74657243 
+ 1679      72697469 
+ 1680              	.LASF59:
+ 1681 016f 636F756E 		.ascii	"counter1\000"
+ 1681      74657231 
+ 1681      00
+ 1682              	.LASF40:
+ 1683 0178 6330436C 		.ascii	"c0ClearOnMatch\000"
+ 1683      6561724F 
+ 1683      6E4D6174 
+ 1683      636800
+ 1684              	.LASF26:
+ 1685 0187 4D435744 		.ascii	"MCWDT_INTR_MASKED\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 44
 
 
- 1685              	.LASF40:
- 1686 01a7 6330436C 		.ascii	"c0ClearOnMatch\000"
- 1686      6561724F 
- 1686      6E4D6174 
- 1686      636800
- 1687              	.LASF26:
- 1688 01b6 4D435744 		.ascii	"MCWDT_INTR_MASKED\000"
- 1688      545F494E 
- 1688      54525F4D 
- 1688      41534B45 
- 1688      4400
- 1689              	.LASF19:
- 1690 01c8 4D435744 		.ascii	"MCWDT_CNTHIGH\000"
- 1690      545F434E 
- 1690      54484947 
- 1690      4800
- 1691              	.LASF32:
- 1692 01d6 666C6F61 		.ascii	"float\000"
- 1692      7400
- 1693              	.LASF1:
- 1694 01dc 6C6F6E67 		.ascii	"long long int\000"
- 1694      206C6F6E 
- 1694      6720696E 
- 1694      7400
- 1695              	.LASF20:
- 1696 01ea 4D435744 		.ascii	"MCWDT_MATCH\000"
- 1696      545F4D41 
- 1696      54434800 
- 1697              	.LASF47:
- 1698 01f6 43595F4D 		.ascii	"CY_MCWDT_MODE_INT\000"
- 1698      43574454 
- 1698      5F4D4F44 
- 1698      455F494E 
- 1698      5400
- 1699              	.LASF9:
- 1700 0208 6C6F6E67 		.ascii	"long int\000"
- 1700      20696E74 
- 1700      00
- 1701              	.LASF30:
- 1702 0211 63686172 		.ascii	"char_t\000"
- 1702      5F7400
- 1703              	.LASF25:
- 1704 0218 4D435744 		.ascii	"MCWDT_INTR_MASK\000"
- 1704      545F494E 
- 1704      54525F4D 
- 1704      41534B00 
- 1705              	.LASF6:
- 1706 0228 5F5F7569 		.ascii	"__uint8_t\000"
- 1706      6E74385F 
- 1706      7400
- 1707              	.LASF41:
- 1708 0232 6331436C 		.ascii	"c1ClearOnMatch\000"
- 1708      6561724F 
- 1708      6E4D6174 
- 1708      636800
- 1709              	.LASF57:
- 1710 0241 43795F4D 		.ascii	"Cy_MCWDT_GetCountCascaded\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 45
+ 1685      545F494E 
+ 1685      54525F4D 
+ 1685      41534B45 
+ 1685      4400
+ 1686              	.LASF19:
+ 1687 0199 4D435744 		.ascii	"MCWDT_CNTHIGH\000"
+ 1687      545F434E 
+ 1687      54484947 
+ 1687      4800
+ 1688              	.LASF32:
+ 1689 01a7 666C6F61 		.ascii	"float\000"
+ 1689      7400
+ 1690              	.LASF1:
+ 1691 01ad 6C6F6E67 		.ascii	"long long int\000"
+ 1691      206C6F6E 
+ 1691      6720696E 
+ 1691      7400
+ 1692              	.LASF20:
+ 1693 01bb 4D435744 		.ascii	"MCWDT_MATCH\000"
+ 1693      545F4D41 
+ 1693      54434800 
+ 1694              	.LASF47:
+ 1695 01c7 43595F4D 		.ascii	"CY_MCWDT_MODE_INT\000"
+ 1695      43574454 
+ 1695      5F4D4F44 
+ 1695      455F494E 
+ 1695      5400
+ 1696              	.LASF9:
+ 1697 01d9 6C6F6E67 		.ascii	"long int\000"
+ 1697      20696E74 
+ 1697      00
+ 1698              	.LASF30:
+ 1699 01e2 63686172 		.ascii	"char_t\000"
+ 1699      5F7400
+ 1700              	.LASF25:
+ 1701 01e9 4D435744 		.ascii	"MCWDT_INTR_MASK\000"
+ 1701      545F494E 
+ 1701      54525F4D 
+ 1701      41534B00 
+ 1702              	.LASF6:
+ 1703 01f9 5F5F7569 		.ascii	"__uint8_t\000"
+ 1703      6E74385F 
+ 1703      7400
+ 1704              	.LASF41:
+ 1705 0203 6331436C 		.ascii	"c1ClearOnMatch\000"
+ 1705      6561724F 
+ 1705      6E4D6174 
+ 1705      636800
+ 1706              	.LASF57:
+ 1707 0212 43795F4D 		.ascii	"Cy_MCWDT_GetCountCascaded\000"
+ 1707      43574454 
+ 1707      5F476574 
+ 1707      436F756E 
+ 1707      74436173 
+ 1708              	.LASF34:
+ 1709 022c 63304D61 		.ascii	"c0Match\000"
+ 1709      74636800 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 45
 
 
- 1710      43574454 
- 1710      5F476574 
- 1710      436F756E 
- 1710      74436173 
- 1711              	.LASF34:
- 1712 025b 63304D61 		.ascii	"c0Match\000"
- 1712      74636800 
- 1713              	.LASF2:
- 1714 0263 6C6F6E67 		.ascii	"long double\000"
- 1714      20646F75 
- 1714      626C6500 
- 1715              	.LASF4:
- 1716 026f 756E7369 		.ascii	"unsigned char\000"
- 1716      676E6564 
- 1716      20636861 
- 1716      7200
- 1717              	.LASF67:
- 1718 027d 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\"
- 1718      72617465 
- 1718      645F536F 
- 1718      75726365 
- 1718      5C50536F 
- 1719 02ab 6D637764 		.ascii	"mcwdt\\cy_mcwdt.c\000"
- 1719      745C6379 
- 1719      5F6D6377 
- 1719      64742E63 
- 1719      00
- 1720              	.LASF5:
- 1721 02bc 7369676E 		.ascii	"signed char\000"
- 1721      65642063 
- 1721      68617200 
- 1722              	.LASF12:
- 1723 02c8 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1723      206C6F6E 
- 1723      6720756E 
- 1723      7369676E 
- 1723      65642069 
- 1724              	.LASF15:
- 1725 02df 75696E74 		.ascii	"uint32_t\000"
- 1725      33325F74 
- 1725      00
- 1726              	.LASF56:
- 1727 02e8 43795F4D 		.ascii	"Cy_MCWDT_Init\000"
- 1727      43574454 
- 1727      5F496E69 
- 1727      7400
- 1728              	.LASF43:
- 1729 02f6 63316332 		.ascii	"c1c2Cascade\000"
- 1729      43617363 
- 1729      61646500 
- 1730              	.LASF0:
- 1731 0302 756E7369 		.ascii	"unsigned int\000"
- 1731      676E6564 
- 1731      20696E74 
- 1731      00
- 1732              	.LASF69:
- 1733 030f 43795F4D 		.ascii	"Cy_MCWDT_Unlock\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 46
+ 1710              	.LASF2:
+ 1711 0234 6C6F6E67 		.ascii	"long double\000"
+ 1711      20646F75 
+ 1711      626C6500 
+ 1712              	.LASF4:
+ 1713 0240 756E7369 		.ascii	"unsigned char\000"
+ 1713      676E6564 
+ 1713      20636861 
+ 1713      7200
+ 1714              	.LASF67:
+ 1715 024e 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\"
+ 1715      72617465 
+ 1715      645F536F 
+ 1715      75726365 
+ 1715      5C50536F 
+ 1716 027c 6D637764 		.ascii	"mcwdt\\cy_mcwdt.c\000"
+ 1716      745C6379 
+ 1716      5F6D6377 
+ 1716      64742E63 
+ 1716      00
+ 1717              	.LASF5:
+ 1718 028d 7369676E 		.ascii	"signed char\000"
+ 1718      65642063 
+ 1718      68617200 
+ 1719              	.LASF12:
+ 1720 0299 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1720      206C6F6E 
+ 1720      6720756E 
+ 1720      7369676E 
+ 1720      65642069 
+ 1721              	.LASF15:
+ 1722 02b0 75696E74 		.ascii	"uint32_t\000"
+ 1722      33325F74 
+ 1722      00
+ 1723              	.LASF56:
+ 1724 02b9 43795F4D 		.ascii	"Cy_MCWDT_Init\000"
+ 1724      43574454 
+ 1724      5F496E69 
+ 1724      7400
+ 1725              	.LASF43:
+ 1726 02c7 63316332 		.ascii	"c1c2Cascade\000"
+ 1726      43617363 
+ 1726      61646500 
+ 1727              	.LASF0:
+ 1728 02d3 756E7369 		.ascii	"unsigned int\000"
+ 1728      676E6564 
+ 1728      20696E74 
+ 1728      00
+ 1729              	.LASF69:
+ 1730 02e0 43795F4D 		.ascii	"Cy_MCWDT_Unlock\000"
+ 1730      43574454 
+ 1730      5F556E6C 
+ 1730      6F636B00 
+ 1731              	.LASF14:
+ 1732 02f0 75696E74 		.ascii	"uint16_t\000"
+ 1732      31365F74 
+ 1732      00
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 46
 
 
- 1733      43574454 
- 1733      5F556E6C 
- 1733      6F636B00 
- 1734              	.LASF14:
- 1735 031f 75696E74 		.ascii	"uint16_t\000"
- 1735      31365F74 
- 1735      00
- 1736              	.LASF49:
- 1737 0328 43595F4D 		.ascii	"CY_MCWDT_MODE_INT_RESET\000"
- 1737      43574454 
- 1737      5F4D4F44 
- 1737      455F494E 
- 1737      545F5245 
- 1738              	.LASF45:
- 1739 0340 63795F73 		.ascii	"cy_stc_mcwdt_config_t\000"
- 1739      74635F6D 
- 1739      63776474 
- 1739      5F636F6E 
- 1739      6669675F 
- 1740              	.LASF8:
- 1741 0356 73686F72 		.ascii	"short unsigned int\000"
- 1741      7420756E 
- 1741      7369676E 
- 1741      65642069 
- 1741      6E7400
- 1742              	.LASF31:
- 1743 0369 63686172 		.ascii	"char\000"
- 1743      00
- 1744              	.LASF44:
- 1745 036e 5F426F6F 		.ascii	"_Bool\000"
- 1745      6C00
- 1746              	.LASF60:
- 1747 0374 636F756E 		.ascii	"counter0\000"
- 1747      74657230 
- 1747      00
- 1748              	.LASF71:
- 1749 037d 43795F4D 		.ascii	"Cy_MCWDT_DeInit\000"
- 1749      43574454 
- 1749      5F446549 
- 1749      6E697400 
- 1750              	.LASF46:
- 1751 038d 43595F4D 		.ascii	"CY_MCWDT_MODE_NONE\000"
- 1751      43574454 
- 1751      5F4D4F44 
- 1751      455F4E4F 
- 1751      4E4500
- 1752              	.LASF70:
- 1753 03a0 696E7465 		.ascii	"interruptState\000"
- 1753      72727570 
- 1753      74537461 
- 1753      746500
- 1754              	.LASF28:
- 1755 03af 52455345 		.ascii	"RESERVED1\000"
- 1755      52564544 
- 1755      3100
- 1756              	.LASF11:
- 1757 03b9 6C6F6E67 		.ascii	"long unsigned int\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 47
+ 1733              	.LASF49:
+ 1734 02f9 43595F4D 		.ascii	"CY_MCWDT_MODE_INT_RESET\000"
+ 1734      43574454 
+ 1734      5F4D4F44 
+ 1734      455F494E 
+ 1734      545F5245 
+ 1735              	.LASF45:
+ 1736 0311 63795F73 		.ascii	"cy_stc_mcwdt_config_t\000"
+ 1736      74635F6D 
+ 1736      63776474 
+ 1736      5F636F6E 
+ 1736      6669675F 
+ 1737              	.LASF8:
+ 1738 0327 73686F72 		.ascii	"short unsigned int\000"
+ 1738      7420756E 
+ 1738      7369676E 
+ 1738      65642069 
+ 1738      6E7400
+ 1739              	.LASF31:
+ 1740 033a 63686172 		.ascii	"char\000"
+ 1740      00
+ 1741              	.LASF44:
+ 1742 033f 5F426F6F 		.ascii	"_Bool\000"
+ 1742      6C00
+ 1743              	.LASF60:
+ 1744 0345 636F756E 		.ascii	"counter0\000"
+ 1744      74657230 
+ 1744      00
+ 1745              	.LASF71:
+ 1746 034e 43795F4D 		.ascii	"Cy_MCWDT_DeInit\000"
+ 1746      43574454 
+ 1746      5F446549 
+ 1746      6E697400 
+ 1747              	.LASF46:
+ 1748 035e 43595F4D 		.ascii	"CY_MCWDT_MODE_NONE\000"
+ 1748      43574454 
+ 1748      5F4D4F44 
+ 1748      455F4E4F 
+ 1748      4E4500
+ 1749              	.LASF70:
+ 1750 0371 696E7465 		.ascii	"interruptState\000"
+ 1750      72727570 
+ 1750      74537461 
+ 1750      746500
+ 1751              	.LASF28:
+ 1752 0380 52455345 		.ascii	"RESERVED1\000"
+ 1752      52564544 
+ 1752      3100
+ 1753              	.LASF11:
+ 1754 038a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1754      20756E73 
+ 1754      69676E65 
+ 1754      6420696E 
+ 1754      7400
+ 1755              	.LASF33:
+ 1756 039c 646F7562 		.ascii	"double\000"
+ 1756      6C6500
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 47
 
 
- 1757      20756E73 
- 1757      69676E65 
- 1757      6420696E 
- 1757      7400
- 1758              	.LASF33:
- 1759 03cb 646F7562 		.ascii	"double\000"
- 1759      6C6500
- 1760              	.LASF42:
- 1761 03d2 63306331 		.ascii	"c0c1Cascade\000"
- 1761      43617363 
- 1761      61646500 
- 1762              	.LASF24:
- 1763 03de 4D435744 		.ascii	"MCWDT_INTR_SET\000"
- 1763      545F494E 
- 1763      54525F53 
- 1763      455400
- 1764              	.LASF38:
- 1765 03ed 6332546F 		.ascii	"c2ToggleBit\000"
- 1765      67676C65 
- 1765      42697400 
- 1766              	.LASF48:
- 1767 03f9 43595F4D 		.ascii	"CY_MCWDT_MODE_RESET\000"
- 1767      43574454 
- 1767      5F4D4F44 
- 1767      455F5245 
- 1767      53455400 
- 1768              	.LASF27:
- 1769 040d 4D435744 		.ascii	"MCWDT_LOCK\000"
- 1769      545F4C4F 
- 1769      434B00
- 1770              	.LASF21:
- 1771 0418 4D435744 		.ascii	"MCWDT_CONFIG\000"
- 1771      545F434F 
- 1771      4E464947 
- 1771      00
- 1772              	.LASF39:
- 1773 0425 63324D6F 		.ascii	"c2Mode\000"
- 1773      646500
- 1774              	.LASF17:
- 1775 042c 52455345 		.ascii	"RESERVED\000"
- 1775      52564544 
- 1775      00
- 1776              	.LASF52:
- 1777 0435 43595F4D 		.ascii	"CY_MCWDT_BAD_PARAM\000"
- 1777      43574454 
- 1777      5F424144 
- 1777      5F504152 
- 1777      414D00
- 1778              	.LASF65:
- 1779 0448 43795F53 		.ascii	"Cy_SysLib_ExitCriticalSection\000"
- 1779      79734C69 
- 1779      625F4578 
- 1779      69744372 
- 1779      69746963 
+ 1757              	.LASF42:
+ 1758 03a3 63306331 		.ascii	"c0c1Cascade\000"
+ 1758      43617363 
+ 1758      61646500 
+ 1759              	.LASF24:
+ 1760 03af 4D435744 		.ascii	"MCWDT_INTR_SET\000"
+ 1760      545F494E 
+ 1760      54525F53 
+ 1760      455400
+ 1761              	.LASF38:
+ 1762 03be 6332546F 		.ascii	"c2ToggleBit\000"
+ 1762      67676C65 
+ 1762      42697400 
+ 1763              	.LASF48:
+ 1764 03ca 43595F4D 		.ascii	"CY_MCWDT_MODE_RESET\000"
+ 1764      43574454 
+ 1764      5F4D4F44 
+ 1764      455F5245 
+ 1764      53455400 
+ 1765              	.LASF27:
+ 1766 03de 4D435744 		.ascii	"MCWDT_LOCK\000"
+ 1766      545F4C4F 
+ 1766      434B00
+ 1767              	.LASF21:
+ 1768 03e9 4D435744 		.ascii	"MCWDT_CONFIG\000"
+ 1768      545F434F 
+ 1768      4E464947 
+ 1768      00
+ 1769              	.LASF39:
+ 1770 03f6 63324D6F 		.ascii	"c2Mode\000"
+ 1770      646500
+ 1771              	.LASF17:
+ 1772 03fd 52455345 		.ascii	"RESERVED\000"
+ 1772      52564544 
+ 1772      00
+ 1773              	.LASF52:
+ 1774 0406 43595F4D 		.ascii	"CY_MCWDT_BAD_PARAM\000"
+ 1774      43574454 
+ 1774      5F424144 
+ 1774      5F504152 
+ 1774      414D00
+ 1775              	.LASF65:
+ 1776 0419 43795F53 		.ascii	"Cy_SysLib_ExitCriticalSection\000"
+ 1776      79734C69 
+ 1776      625F4578 
+ 1776      69744372 
+ 1776      69746963 
+ 1777              	.LASF68:
+ 1778 0437 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\SmartHandle"
+ 1778      73657273 
+ 1778      5C73616C 
+ 1778      617A5C44 
+ 1778      65736B74 
+ 1779 0465 2E637964 		.ascii	".cydsn\000"
+ 1779      736E00
  1780              	.LASF54:
- 1781 0466 62617365 		.ascii	"base\000"
+ 1781 046c 62617365 		.ascii	"base\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgDBFwZ.s 			page 48
+
+
  1781      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc6zo4GI.s 			page 48
-
-
  1782              	.LASF35:
- 1783 046b 63314D61 		.ascii	"c1Match\000"
+ 1783 0471 63314D61 		.ascii	"c1Match\000"
  1783      74636800 
  1784              	.LASF63:
- 1785 0473 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
+ 1785 0479 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
  1785      79734C69 
  1785      625F4173 
  1785      73657274 
  1785      4661696C 
  1786              	.LASF23:
- 1787 048a 4D435744 		.ascii	"MCWDT_INTR\000"
+ 1787 0490 4D435744 		.ascii	"MCWDT_INTR\000"
  1787      545F494E 
  1787      545200
  1788              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
