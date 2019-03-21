@@ -121,8 +121,8 @@
 #define MotorOutput_TCPWM__IDX 0u
 
 /* LightOutputA */
-#define LightOutputA_TCPWM__CNT_HW TCPWM0_CNT0
-#define LightOutputA_TCPWM__CNT_IDX 0u
+#define LightOutputA_TCPWM__CNT_HW TCPWM0_CNT1
+#define LightOutputA_TCPWM__CNT_IDX 1u
 #define LightOutputA_TCPWM__HW TCPWM0
 #define LightOutputA_TCPWM__IDX 0u
 
@@ -133,8 +133,8 @@
 #define LightOutputB_TCPWM__IDX 0u
 
 /* LightOutputC */
-#define LightOutputC_TCPWM__CNT_HW TCPWM0_CNT1
-#define LightOutputC_TCPWM__CNT_IDX 1u
+#define LightOutputC_TCPWM__CNT_HW TCPWM0_CNT0
+#define LightOutputC_TCPWM__CNT_IDX 0u
 #define LightOutputC_TCPWM__HW TCPWM0
 #define LightOutputC_TCPWM__IDX 0u
 

@@ -43,7 +43,7 @@ void AppControlHandler()
             {
                 DEBUG_PRINTF("FSM_INITIALIZE\r\n"); 
                 DEBUG_WAIT_UART_TX_COMPLETE();
-                KinOS_Advertise(30,50);
+                //KinOS_Advertise(30,50);
                 next_state = FSM_IDLE;
                 break;
             }
@@ -55,7 +55,7 @@ void AppControlHandler()
                 {
                     next_state = FSM_CHECK_MOTION;
                 }
-                KinOS_Advertise(verifyAdvertise_s,50);
+                //KinOS_Advertise(verifyAdvertise_s,50);
                 break;
             }
             case FSM_CHECK_MOTION:
@@ -168,6 +168,18 @@ void AppControlHandler()
         {
             case FSM_INITIALIZE: 
             {
+                switch(next_state)
+                {
+                    case FSM_IDLE:
+                    {
+                        //turn off leds
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
+                        break;
+                    }
+                }
+                    
                 break;
             }
             case FSM_IDLE:
@@ -176,6 +188,10 @@ void AppControlHandler()
                 {
                     case FSM_CHECK_MOTION:
                     {
+                        //turn on yellow led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,1);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,1);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,0);
                         KinOS_SetupTimerA(10000);
                         KinOS_SetupTimerB(4000);
                         motion_latch = true;
@@ -190,6 +206,10 @@ void AppControlHandler()
                 {
                     case FSM_VERIFY_USER:
                     {
+                        //turn on white led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,1);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,1);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
                         KinOS_ConfigureLight(BLUE,BOUNCE,verifyLightCycles,255);
                         KinOS_Advertise(verifyAdvertise_s,50);
                         break;
@@ -203,6 +223,10 @@ void AppControlHandler()
                 {
                     case FSM_STOLEN:
                     {
+                        //turn on red led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,1);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,0);
                         KinOS_ConfigureChime(BOOBOO,stolenLightCycles);
                         KinOS_ConfigureLight(RED,SMOOTH,stolenLightCycles,255);
                         KinOS_Advertise(stolenAdvertise_s,50);
@@ -210,6 +234,10 @@ void AppControlHandler()
                     }
                     case FSM_RIDE:
                     {
+                        //turn on green
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,1);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,0);
                         KinOS_SetupTimerA(5);
                         break;
                     }
@@ -222,6 +250,10 @@ void AppControlHandler()
                 {
                     case FSM_IDLE:
                     {
+                        //turn on blue led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
                         KinOS_ConfigureChime(BOOBOO,0);
                         KinOS_ConfigureLight(WHITE,SMOOTH,0,0);
                         break;
@@ -258,6 +290,10 @@ void AppControlHandler()
                     }
                     case FSM_IDLE:
                     {
+                        //turn on blue led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
                         KinOS_ConfigureLight(WHITE,BYPASS,0,0);
                         KinOS_Disconnect();
                         break;

@@ -153,6 +153,7 @@ void AccDriver_Init()
     WriteRegister(0x21,0b01000000); CyDelay(10);  // Reset          W[0x3C 0x21 0x40]
     if(ReadRegister(0x0F) != 0b01000011) // Verify Chip ID          W[0x3C 0x0F] R[0x3D 0x43]
     {
+        CyDelay(10);
         // ** Throw error
     }
     wsample = (struct dAcc1ESlot*) malloc(sizeof(struct dAcc1ESlot));

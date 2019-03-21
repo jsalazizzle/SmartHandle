@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SmartHandle-000\SmartHandle\SmartHandle.cydwr\Clocks">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>SmartHandle-000</v>
 <v>SmartHandle-000\SmartHandle</v>
@@ -497,7 +497,6 @@
 <v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lns.lst</v>
 <v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ndcs.lst</v>
 <v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_pass.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_plxs.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -525,8 +524,6 @@
 <v>SmartHandle-000\SmartHandle\Motor_v1_0.pdf</v>
 <v>SmartHandle-000\SmartHandle\NFET_En_v1_0</v>
 <v>SmartHandle-000\SmartHandle\NFET_En_v1_0\NFET_En_v1_0.pdf</v>
-<v>SmartHandle-000\SmartHandle\not_v1_0</v>
-<v>SmartHandle-000\SmartHandle\not_v1_0\not_v1_0.pdf</v>
 <v>SmartHandle-000\SmartHandle\Power_v1_0</v>
 <v>SmartHandle-000\SmartHandle\Power_v1_0\Power_v1_0.pdf</v>
 <v>SmartHandle-000\SmartHandle\Resistor_v1_0</v>
@@ -563,8 +560,6 @@
 <v>SmartHandle-000\SmartHandle\Motor_v1_0.pdf</v>
 <v>SmartHandle-000\SmartHandle\NFET_En_v1_0</v>
 <v>SmartHandle-000\SmartHandle\NFET_En_v1_0\NFET_En_v1_0.pdf</v>
-<v>SmartHandle-000\SmartHandle\not_v1_0</v>
-<v>SmartHandle-000\SmartHandle\not_v1_0\not_v1_0.pdf</v>
 <v>SmartHandle-000\SmartHandle\Power_v1_0</v>
 <v>SmartHandle-000\SmartHandle\Power_v1_0\Power_v1_0.pdf</v>
 <v>SmartHandle-000\SmartHandle\Resistor_v1_0</v>
@@ -591,14 +586,14 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\KinOS.c" />
-<name v=".\KinOS.h" />
 <name v=".\SmartHandle.cydwr" />
+<name v=".\Generated_Source\PSoC6\SensorBus.c" />
 <name v=".\main_cm0p.c" />
-<name v=".\AppControl.c" />
-<name v=".\Generated_Source\PSoC6\cyfitter_cfg.c" />
-<name v=".\Generated_Source\PSoC6\pdl\drivers\peripheral\syslib\cy_syslib.c" />
 <name v=".\TopDesign\TopDesign.cysch" />
 <name v=".\AppProcess.c" />
+<name v=".\AccDriver.c" />
+<name v=".\AppControl.c" />
+<name v=".\KinOS.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -606,7 +601,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1575, 744" SelectedTabbedMdiWindow="af698d9e-dfd2-4f00-bbb0-cd6e57ce548a"><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.c" Guid="c1074981-d5f8-49f3-a1eb-fbd78802ff6f" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.h" Guid="581db24f-524e-4d73-8706-4306f3865c3d" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cydwr" Guid="a77e0d33-7ece-4cc3-b8c0-50d2ba06a00d" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\main_cm0p.c" Guid="e2d66ae4-f56b-421c-987b-b9bd7934783c" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AppControl.c" Guid="579e7a2c-48ee-44bd-b793-edff0b4db1fc" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Generated_Source\PSoC6\cyfitter_cfg.c" Guid="5d789838-0870-472a-bee9-543d57b244a6" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\syslib\cy_syslib.c" Guid="c365596f-2295-4b9a-9e07-7650e7fb7ae0" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\TopDesign\TopDesign.cysch" Guid="23a114c1-fdb9-4432-afc8-04e6266aa9b8" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AppProcess.c" Guid="af698d9e-dfd2-4f00-bbb0-cd6e57ce548a" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a6ceda8d-b727-44ce-8319-807daefcda24" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1360, 744" SelectedTabbedMdiWindow="23a114c1-fdb9-4432-afc8-04e6266aa9b8"><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.c" Guid="c1074981-d5f8-49f3-a1eb-fbd78802ff6f" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cydwr" Guid="a77e0d33-7ece-4cc3-b8c0-50d2ba06a00d" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Generated_Source\PSoC6\SensorBus.c" Guid="18766c77-85ff-40d8-80e6-cc55c2a04dbe" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\main_cm0p.c" Guid="e2d66ae4-f56b-421c-987b-b9bd7934783c" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\TopDesign\TopDesign.cysch" Guid="23a114c1-fdb9-4432-afc8-04e6266aa9b8" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AppProcess.c" Guid="af698d9e-dfd2-4f00-bbb0-cd6e57ce548a" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AccDriver.c" Guid="8041d54d-ec1c-4dcf-8bbc-663af6da6221" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AppControl.c" Guid="517c2d26-edb6-4f6e-9a5a-697c27b0b90d" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.h" Guid="e545b510-fa97-4d62-b15a-927b3f40d236" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a6ceda8d-b727-44ce-8319-807daefcda24" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,6 +1,6 @@
 // ======================================================================
 // SmartHandle.v generated from TopDesign.cysch
-// 03/08/2019 at 10:59
+// 03/20/2019 at 17:28
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -341,7 +341,7 @@ module MCWDT_PDL_v1_10_1 (
 
 endmodule
 
-// SCB_I2C_PDL_v2_0(AcceptAddress=false, AcceptGeneralCall=false, ClkDesFrequency=1550, ClkMinusTolerance=5, ClkPlusTolerance=206.451612903226, ClockFromTerm=false, DataRate=100, DeepSleepCapable=false, EnableManualSclControl=false, EnableRxFifo=false, EnableSclAccess=false, EnableTxFifo=false, EnableWakeup=false, HighPhaseDutyCycle=10, I2cMode=0, IsEnableRxFifoVisible=true, IsMasterEnabled=true, IsSlaveVisible=false, LowPhaseDutyCycle=10, Mode=2, ShowTerminals=false, SlaveAddress=8, SlaveAddressMask=254, SymbolShape=0, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=SCB_I2C_PDL_v2_0, CY_CONFIG_TITLE=SensorBus, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=SensorBus, CY_INSTANCE_SHORT_NAME=SensorBus, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=scb, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=SensorBus, )
+// SCB_I2C_PDL_v2_0(AcceptAddress=false, AcceptGeneralCall=false, ClkDesFrequency=1550, ClkMinusTolerance=5, ClkPlusTolerance=206.451612903226, ClockFromTerm=false, DataRate=100, DeepSleepCapable=false, EnableManualSclControl=false, EnableRxFifo=false, EnableSclAccess=false, EnableTxFifo=false, EnableWakeup=false, HighPhaseDutyCycle=10, I2cMode=0, IsEnableRxFifoVisible=true, IsMasterEnabled=true, IsSlaveVisible=false, LowPhaseDutyCycle=10, Mode=2, ShowTerminals=true, SlaveAddress=8, SlaveAddressMask=254, SymbolShape=0, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=SCB_I2C_PDL_v2_0, CY_CONFIG_TITLE=SensorBus, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=SensorBus, CY_INSTANCE_SHORT_NAME=SensorBus, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=scb, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=SensorBus, )
 module SCB_I2C_PDL_v2_0_2 (
     clock,
     scl_b,
@@ -447,76 +447,6 @@ module SCB_I2C_PDL_v2_0_2 (
 		 (.clock_out(Net_847));
 
 
-	wire [0:0] tmpFB_0__scl_net;
-	electrical [0:0] tmpSIOVREF__scl_net;
-
-	cy_mxs40_gpio_v1_0
-		#(.id("efb6f5cf-5cc6-44f7-afe3-f502cc057108/69c3b5e8-b094-4d65-b96b-9f4f3a9a8641"),
-		  .width(1),
-		  .sio_grp_cnt(0),
-		  .drive_mode("4"),
-		  .ibuf_enabled("1"),
-		  .init_dr_st("1"),
-		  .input_sync("0"),
-		  .intr_mode("0"),
-		  .io_voltage(""),
-		  .output_conn("0"),
-		  .oe_conn("0"),
-		  .output_sync("0"),
-		  .oe_sync("0"),
-		  .drive_strength("0"),
-		  .max_frequency("100"),
-		  .i2c_mode("0"),
-		  .output_current_cap("8"),
-		  .pin_aliases(""),
-		  .pin_mode("B"),
-		  .slew_rate("0"),
-		  .vtrip("0"),
-		  .use_annotation("0"),
-		  .hotswap_needed("0"))
-		scl
-		 (.oe({1'b1}),
-		  .y({1'b0}),
-		  .fb({tmpFB_0__scl_net[0:0]}),
-		  .io({scl_b}),
-		  .siovref(tmpSIOVREF__scl_net));
-
-
-	wire [0:0] tmpFB_0__sda_net;
-	electrical [0:0] tmpSIOVREF__sda_net;
-
-	cy_mxs40_gpio_v1_0
-		#(.id("efb6f5cf-5cc6-44f7-afe3-f502cc057108/2aab8a93-e7dd-4bd4-8210-42652cd079c5"),
-		  .width(1),
-		  .sio_grp_cnt(0),
-		  .drive_mode("4"),
-		  .ibuf_enabled("1"),
-		  .init_dr_st("1"),
-		  .input_sync("0"),
-		  .intr_mode("0"),
-		  .io_voltage(""),
-		  .output_conn("0"),
-		  .oe_conn("0"),
-		  .output_sync("0"),
-		  .oe_sync("0"),
-		  .drive_strength("0"),
-		  .max_frequency("100"),
-		  .i2c_mode("0"),
-		  .output_current_cap("8"),
-		  .pin_aliases(""),
-		  .pin_mode("B"),
-		  .slew_rate("0"),
-		  .vtrip("0"),
-		  .use_annotation("0"),
-		  .hotswap_needed("0"))
-		sda
-		 (.oe({1'b1}),
-		  .y({1'b0}),
-		  .fb({tmpFB_0__sda_net[0:0]}),
-		  .io({sda_b}),
-		  .siovref(tmpSIOVREF__sda_net));
-
-
 
 
 endmodule
@@ -582,19 +512,6 @@ module BLE_PDL_v2_0_4 (
 
 
 endmodule
-
-// Component: not_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
-`endif
 
 // TCPWM_PWM_PDL_v1_0(ClockPrescaler=0, Compare0=50, Compare1=16384, CountInput=7, CountInputMasked=3, DeadClocks=0, EnableCompareSwap=false, EnablePeriodSwap=false, InterruptSource=0, InvertPwm=false, InvertPwm_n=false, KillInput=7, KillInputMasked=3, KillMode=2, Period0=255, Period1=32768, PwmAlignment=0, PwmMode=4, ReloadInput=7, ReloadInputMasked=3, Resolution=32, RunMode=0, StartInput=7, StartInputMasked=3, SwapInput=7, SwapInputMasked=3, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=TCPWM_PWM_PDL_v1_0, CY_CONFIG_TITLE=LightOutputC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=LightOutputC, CY_INSTANCE_SHORT_NAME=LightOutputC, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=tcpwm, CY_PDL_DRIVER_REQ_VERSION=1.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=LightOutputC, )
 module TCPWM_PWM_PDL_v1_0_5 (
@@ -982,7 +899,7 @@ module TCPWM_Counter_PDL_v1_0_12 (
 
 endmodule
 
-// RTC_PDL_v2_0(DateFormat=0, DaylightSavingsTimeEn=false, DayOfMonth=8, DayOfMonthDstStart=22, DayOfMonthDstStop=22, DayOfWeek=6, DayOfWeekDstStart=1, DayOfWeekDstStop=1, DstDateType=0, EnableRtcInterrupt=false, Hour=10, HoursDstStart=0, HoursDstStop=0, Month=3, MonthDstStart=3, MonthDstStop=10, RemoveIntr=true, TimeFormat=0, TimeResetOnStart=false, WeekOfMonthDstStart=6, WeekOfMonthDstStop=6, Year=19, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=RTC_PDL_v2_0, CY_CONFIG_TITLE=RealTimeClock, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=RealTimeClock, CY_INSTANCE_SHORT_NAME=RealTimeClock, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=rtc, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=RealTimeClock, )
+// RTC_PDL_v2_0(DateFormat=0, DaylightSavingsTimeEn=false, DayOfMonth=20, DayOfMonthDstStart=22, DayOfMonthDstStop=22, DayOfWeek=4, DayOfWeekDstStart=1, DayOfWeekDstStop=1, DstDateType=0, EnableRtcInterrupt=false, Hour=17, HoursDstStart=0, HoursDstStop=0, Month=3, MonthDstStart=3, MonthDstStop=10, RemoveIntr=true, TimeFormat=0, TimeResetOnStart=false, WeekOfMonthDstStart=6, WeekOfMonthDstStop=6, Year=19, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=RTC_PDL_v2_0, CY_CONFIG_TITLE=RealTimeClock, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=RealTimeClock, CY_INSTANCE_SHORT_NAME=RealTimeClock, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=rtc, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=RealTimeClock, )
 module RTC_PDL_v2_0_13 ;
 
 
@@ -1047,6 +964,7 @@ module top ;
           wire  Net_1570;
           wire  Net_1569;
           wire  Net_562;
+          wire  Net_1227;
           wire  Net_561;
           wire  Net_560;
           wire  Net_559;
@@ -1056,7 +974,6 @@ module top ;
           wire  Net_555;
           wire  Net_554;
           wire  Net_553;
-          wire  Net_563;
           wire  Net_1568;
           wire  Net_51;
           wire  Net_50;
@@ -1069,6 +986,7 @@ module top ;
           wire  Net_44;
           wire  Net_43;
           wire  Net_439;
+          wire  Net_33679;
           wire  Net_438;
           wire  Net_437;
           wire  Net_436;
@@ -1078,9 +996,9 @@ module top ;
           wire  Net_432;
           wire  Net_431;
           wire  Net_430;
-          wire  Net_32;
           wire  Net_1567;
           wire  Net_462;
+          wire  Net_192;
           wire  Net_461;
           wire  Net_460;
           wire  Net_459;
@@ -1090,7 +1008,6 @@ module top ;
           wire  Net_455;
           wire  Net_454;
           wire  Net_453;
-          wire  Net_20;
           wire  Net_19;
           wire  Net_18;
           wire  Net_17;
@@ -1112,12 +1029,9 @@ module top ;
           wire  Net_2;
           wire  Net_1;
           wire  Net_1494;
-          wire  Net_1227;
           wire  Net_1238;
           wire  Net_116;
-          wire  Net_192;
           wire  Net_1225;
-          wire  Net_33679;
           wire  Net_820;
     electrical  Net_35683;
     electrical  Net_35207;
@@ -1483,13 +1397,13 @@ module top ;
 		#(.id("7a4de49e-b2b5-48e6-aa9b-9c023b3f7859"),
 		  .width(1),
 		  .sio_grp_cnt(0),
-		  .drive_mode("4"),
+		  .drive_mode("6"),
 		  .ibuf_enabled("0"),
-		  .init_dr_st("1"),
+		  .init_dr_st("0"),
 		  .input_sync("0"),
 		  .intr_mode("0"),
 		  .io_voltage(""),
-		  .output_conn("1"),
+		  .output_conn("0"),
 		  .oe_conn("0"),
 		  .output_sync("0"),
 		  .oe_sync("0"),
@@ -1505,14 +1419,46 @@ module top ;
 		  .hotswap_needed("0"))
 		Green
 		 (.oe({1'b1}),
-		  .y({Net_20}),
+		  .y({1'b0}),
 		  .fb({tmpFB_0__Green_net[0:0]}),
 		  .io({tmpIO_0__Green_net[0:0]}),
 		  .siovref(tmpSIOVREF__Green_net));
 
 
+	wire [0:0] tmpFB_0__SCL_net;
+	electrical [0:0] tmpSIOVREF__SCL_net;
 
-    assign Net_20 = ~Net_192;
+	cy_mxs40_gpio_v1_0
+		#(.id("3bebfee8-790b-4297-b73a-27818bdce71c"),
+		  .width(1),
+		  .sio_grp_cnt(0),
+		  .drive_mode("2"),
+		  .ibuf_enabled("1"),
+		  .init_dr_st("1"),
+		  .input_sync("0"),
+		  .intr_mode("0"),
+		  .io_voltage(""),
+		  .output_conn("0"),
+		  .oe_conn("0"),
+		  .output_sync("0"),
+		  .oe_sync("0"),
+		  .drive_strength("0"),
+		  .max_frequency("100"),
+		  .i2c_mode("0"),
+		  .output_current_cap("8"),
+		  .pin_aliases(""),
+		  .pin_mode("B"),
+		  .slew_rate("0"),
+		  .vtrip("0"),
+		  .use_annotation("0"),
+		  .hotswap_needed("0"))
+		SCL
+		 (.oe({1'b1}),
+		  .y({1'b0}),
+		  .fb({tmpFB_0__SCL_net[0:0]}),
+		  .io({Net_677}),
+		  .siovref(tmpSIOVREF__SCL_net));
+
 
     TCPWM_PWM_PDL_v1_0_5 LightOutputC (
         .kill(1'b0),
@@ -1539,9 +1485,6 @@ module top ;
 		Clock_G
 		 (.clock_out(Net_116));
 
-
-
-    assign Net_32 = ~Net_33679;
 
     TCPWM_PWM_PDL_v1_0_6 LightOutputA (
         .kill(1'b0),
@@ -1597,13 +1540,13 @@ module top ;
 		#(.id("a6daf096-2dc7-4f03-9401-ec13522e9369"),
 		  .width(1),
 		  .sio_grp_cnt(0),
-		  .drive_mode("4"),
+		  .drive_mode("6"),
 		  .ibuf_enabled("0"),
-		  .init_dr_st("1"),
+		  .init_dr_st("0"),
 		  .input_sync("0"),
 		  .intr_mode("0"),
 		  .io_voltage(""),
-		  .output_conn("1"),
+		  .output_conn("0"),
 		  .oe_conn("0"),
 		  .output_sync("0"),
 		  .oe_sync("0"),
@@ -1619,14 +1562,46 @@ module top ;
 		  .hotswap_needed("0"))
 		Red
 		 (.oe({1'b1}),
-		  .y({Net_32}),
+		  .y({1'b0}),
 		  .fb({tmpFB_0__Red_net[0:0]}),
 		  .io({tmpIO_0__Red_net[0:0]}),
 		  .siovref(tmpSIOVREF__Red_net));
 
 
+	wire [0:0] tmpFB_0__SDA_net;
+	electrical [0:0] tmpSIOVREF__SDA_net;
 
-    assign Net_563 = ~Net_1227;
+	cy_mxs40_gpio_v1_0
+		#(.id("e9f4cd1b-6143-4d30-993c-20ffc73f0592"),
+		  .width(1),
+		  .sio_grp_cnt(0),
+		  .drive_mode("2"),
+		  .ibuf_enabled("1"),
+		  .init_dr_st("1"),
+		  .input_sync("0"),
+		  .intr_mode("0"),
+		  .io_voltage(""),
+		  .output_conn("0"),
+		  .oe_conn("0"),
+		  .output_sync("0"),
+		  .oe_sync("0"),
+		  .drive_strength("0"),
+		  .max_frequency("100"),
+		  .i2c_mode("0"),
+		  .output_current_cap("8"),
+		  .pin_aliases(""),
+		  .pin_mode("B"),
+		  .slew_rate("0"),
+		  .vtrip("0"),
+		  .use_annotation("0"),
+		  .hotswap_needed("0"))
+		SDA
+		 (.oe({1'b1}),
+		  .y({1'b0}),
+		  .fb({tmpFB_0__SDA_net[0:0]}),
+		  .io({Net_678}),
+		  .siovref(tmpSIOVREF__SDA_net));
+
 
     TCPWM_PWM_PDL_v1_0_8 LightOutputB (
         .kill(1'b0),
@@ -1650,13 +1625,13 @@ module top ;
 		#(.id("4a8c5acb-8775-4f5c-a5f1-62612792c127"),
 		  .width(1),
 		  .sio_grp_cnt(0),
-		  .drive_mode("4"),
+		  .drive_mode("6"),
 		  .ibuf_enabled("0"),
-		  .init_dr_st("1"),
+		  .init_dr_st("0"),
 		  .input_sync("0"),
 		  .intr_mode("0"),
 		  .io_voltage(""),
-		  .output_conn("1"),
+		  .output_conn("0"),
 		  .oe_conn("0"),
 		  .output_sync("0"),
 		  .oe_sync("0"),
@@ -1672,7 +1647,7 @@ module top ;
 		  .hotswap_needed("0"))
 		Blue
 		 (.oe({1'b1}),
-		  .y({Net_563}),
+		  .y({1'b0}),
 		  .fb({tmpFB_0__Blue_net[0:0]}),
 		  .io({tmpIO_0__Blue_net[0:0]}),
 		  .siovref(tmpSIOVREF__Blue_net));

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
   28:Generated_Source\PSoC6/LightOutputA.c **** */ 
   29:Generated_Source\PSoC6/LightOutputA.c **** cy_stc_tcpwm_pwm_config_t const LightOutputA_config =
   30:Generated_Source\PSoC6/LightOutputA.c **** {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 2
 
 
   31:Generated_Source\PSoC6/LightOutputA.c ****     .pwmMode = 4UL,
@@ -118,13 +118,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
   39 0006 002B     		cmp	r3, #0
   40 0008 07D1     		bne	.L2
   74:Generated_Source\PSoC6/LightOutputA.c ****     {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 3
 
 
   75:Generated_Source\PSoC6/LightOutputA.c ****         (void) Cy_TCPWM_PWM_Init(LightOutputA_HW, LightOutputA_CNT_NUM, &LightOutputA_config);
   41              		.loc 1 75 0
   42 000a 074A     		ldr	r2, .L3+4
-  43 000c 0021     		movs	r1, #0
+  43 000c 0121     		movs	r1, #1
   44 000e 0748     		ldr	r0, .L3+8
   45 0010 FFF7FEFF 		bl	Cy_TCPWM_PWM_Init
   46              	.LVL0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
   37:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * index). 
   38:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   39:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The TCPWM supports three operating modes:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 4
 
 
   40:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Timer/Counter
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
   94:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature decoder is used to decode the output of a quadrature encoder. 
   95:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature encoder senses the position, velocity, and direction of 
   96:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * an object (for example a rotating axle, or a spinning mouse ball). 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 5
 
 
   97:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature decoder can also be used for precision measurement of speed, 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  151:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  152:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \section group_tcpwm_MISRA MISRA-C Compliance 
  153:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * <table class="doxtable">
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 6
 
 
  154:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   <tr>
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  208:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  209:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #ifndef CY_IP_MXTCPWM
  210:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     #error "The TCPWM driver is not supported on this device"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 7
 
 
  211:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #endif
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  265:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** */
  266:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** A rising edge triggers the event (Capture, Start, Reload, etc..) */
  267:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INPUT_RISINGEDGE       (0U)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 8
 
 
  268:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** A falling edge triggers the event (Capture, Start, Reload, etc..) */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  322:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****  ******************************************************************************/
  323:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  324:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****  /**
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 9
 
 
  325:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \addtogroup group_tcpwm_enums
@@ -538,10 +538,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  379:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     base->CTRL_SET = counters;
   56              		.loc 2 379 0
   57 001a 044B     		ldr	r3, .L3+8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 10
 
 
-  58 001c 0122     		movs	r2, #1
+  58 001c 0222     		movs	r2, #2
   59 001e 9A60     		str	r2, [r3, #8]
   60              	.LVL2:
   61              	.LBE7:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
   67              	.LVL3:
   68              	.LBE9:
   69              	.LBE8:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 11
 
 
   78:Generated_Source\PSoC6/LightOutputA.c ****     }
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  116 0060 FFFFFFFF 		.word	-1
  117              		.bss
  118              		.set	.LANCHOR0,. + 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 12
 
 
  119              		.type	LightOutputA_initVar, %object
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  173 005e 02       		.uleb128 0x2
  174 005f 04       		.byte	0x4
  175 0060 07       		.byte	0x7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 13
 
 
  176 0061 51030000 		.4byte	.LASF7
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  230 00cd 05       		.byte	0x5
  231 00ce 25       		.byte	0x25
  232 00cf 9E000000 		.4byte	0x9e
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 14
 
 
  233 00d3 08       		.byte	0x8
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  287 013e 2C       		.byte	0x2c
  288 013f 08       		.uleb128 0x8
  289 0140 30030000 		.4byte	.LASF25
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 15
 
 
  290 0144 05       		.byte	0x5
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  344 01ae 3C       		.byte	0x3c
  345 01af 9E000000 		.4byte	0x9e
  346 01b3 0C       		.byte	0xc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 16
 
 
  347 01b4 08       		.uleb128 0x8
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  401 0227 00       		.byte	0
  402 0228 03       		.uleb128 0x3
  403 0229 7F040000 		.4byte	.LASF37
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 17
 
 
  404 022d 05       		.byte	0x5
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  458 0296 10       		.byte	0x10
  459 0297 08       		.uleb128 0x8
  460 0298 D9010000 		.4byte	.LASF47
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 18
 
 
  461 029c 06       		.byte	0x6
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  515 0308 06       		.byte	0x6
  516 0309 3D       		.byte	0x3d
  517 030a 8C000000 		.4byte	0x8c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 19
 
 
  518 030e 38       		.byte	0x38
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  572 037a 5C       		.byte	0x5c
  573 037b 08       		.uleb128 0x8
  574 037c 16020000 		.4byte	.LASF66
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 20
 
 
  575 0380 06       		.byte	0x6
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  629 03f2 47       		.byte	0x47
  630 03f3 00000000 		.4byte	.LFB90
  631 03f7 30000000 		.4byte	.LFE90-.LFB90
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 21
 
 
  632 03fb 01       		.uleb128 0x1
@@ -1245,7 +1245,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  673 0460 01       		.uleb128 0x1
  674 0461 51       		.byte	0x51
  675 0462 01       		.uleb128 0x1
- 676 0463 30       		.byte	0x30
+ 676 0463 31       		.byte	0x31
  677 0464 16       		.uleb128 0x16
  678 0465 01       		.uleb128 0x1
  679 0466 52       		.byte	0x52
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  686 0470 2E010000 		.4byte	.LASF73
  687 0474 01       		.byte	0x1
  688 0475 18       		.byte	0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 22
 
 
  689 0476 81000000 		.4byte	0x81
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  743 0020 00       		.byte	0
  744 0021 03       		.uleb128 0x3
  745 0022 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 23
 
 
  746 0023 3A       		.uleb128 0x3a
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  800 0059 0B       		.uleb128 0xb
  801 005a 49       		.uleb128 0x49
  802 005b 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 24
 
 
  803 005c 38       		.uleb128 0x38
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  857 0092 00       		.byte	0
  858 0093 00       		.byte	0
  859 0094 0D       		.uleb128 0xd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 25
 
 
  860 0095 21       		.uleb128 0x21
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  914 00cb 0F       		.uleb128 0xf
  915 00cc 00       		.byte	0
  916 00cd 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 26
 
 
  917 00ce 0B       		.uleb128 0xb
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  971 0105 00       		.byte	0
  972 0106 00       		.byte	0
  973 0107 15       		.uleb128 0x15
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 27
 
 
  974 0108 898201   		.uleb128 0x4109
@@ -1618,11 +1618,11 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1028              	.LLST0:
  1029 0000 1A000000 		.4byte	.LVL1
  1030 0004 20000000 		.4byte	.LVL2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 28
 
 
  1031 0008 0200     		.2byte	0x2
- 1032 000a 31       		.byte	0x31
+ 1032 000a 32       		.byte	0x32
  1033 000b 9F       		.byte	0x9f
  1034 000c 00000000 		.4byte	0
  1035 0010 00000000 		.4byte	0
@@ -1639,7 +1639,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1046 002c 20000000 		.4byte	.LVL2
  1047 0030 22000000 		.4byte	.LVL3
  1048 0034 0200     		.2byte	0x2
- 1049 0036 31       		.byte	0x31
+ 1049 0036 32       		.byte	0x32
  1050 0037 9F       		.byte	0x9f
  1051 0038 00000000 		.4byte	0
  1052 003c 00000000 		.4byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1082      FB0E0D00 
  1082      01010101 
  1083              	.LASF49:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 29
 
 
  1084 0000 656E6162 		.ascii	"enablePeriodSwap\000"
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1107              	.LASF18:
  1108 009e 50455249 		.ascii	"PERIOD\000"
  1108      4F4400
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 30
 
 
  1109              	.LASF33:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1131      6D706172 
  1131      65537761 
  1131      7000
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 31
 
 
  1132              	.LASF76:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1159 020f 53544154 		.ascii	"STATUS\000"
  1159      555300
  1160              	.LASF66:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 32
 
 
  1161 0216 636F756E 		.ascii	"countInput\000"
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1185      00
  1186              	.LASF9:
  1187 02b6 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 33
 
 
  1187      206C6F6E 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1211      52564544 
  1211      3100
  1212              	.LASF7:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 34
 
 
  1213 0351 6C6F6E67 		.ascii	"long unsigned int\000"
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 1
  1234              	.LASF42:
  1235 044b 70776D4D 		.ascii	"pwmMode\000"
  1235      6F646500 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUY3JH6.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccgPA4Yp.s 			page 35
 
 
  1236              	.LASF20:

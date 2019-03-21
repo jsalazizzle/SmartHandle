@@ -2,7 +2,7 @@
 --	Conversion of SmartHandle.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Mar 08 10:59:13 2019
+--	Wed Mar 20 17:28:13 2019
 --
 
 USE cypress.cypress.all;
@@ -80,10 +80,6 @@ SIGNAL Net_679 : bit;
 SIGNAL \SensorBus:Net_224\ : bit;
 SIGNAL \SensorBus:Net_223\ : bit;
 SIGNAL \SensorBus:Net_847\ : bit;
-SIGNAL \SensorBus:tmpFB_0__scl_net_0\ : bit;
-TERMINAL \SensorBus:tmpSIOVREF__scl_net_0\ : bit;
-SIGNAL \SensorBus:tmpFB_0__sda_net_0\ : bit;
-TERMINAL \SensorBus:tmpSIOVREF__sda_net_0\ : bit;
 SIGNAL tmpFB_0__Press1_net_0 : bit;
 SIGNAL tmpIO_0__Press1_net_0 : bit;
 TERMINAL tmpSIOVREF__Press1_net_0 : bit;
@@ -107,11 +103,11 @@ TERMINAL tmpSIOVREF__DB_1_net_0 : bit;
 SIGNAL tmpFB_0__DB_0_net_0 : bit;
 SIGNAL tmpIO_0__DB_0_net_0 : bit;
 TERMINAL tmpSIOVREF__DB_0_net_0 : bit;
-SIGNAL Net_20 : bit;
 SIGNAL tmpFB_0__Green_net_0 : bit;
 SIGNAL tmpIO_0__Green_net_0 : bit;
 TERMINAL tmpSIOVREF__Green_net_0 : bit;
-SIGNAL Net_192 : bit;
+SIGNAL tmpFB_0__SCL_net_0 : bit;
+TERMINAL tmpSIOVREF__SCL_net_0 : bit;
 SIGNAL Net_116 : bit;
 SIGNAL \LightOutputC:swap\ : bit;
 SIGNAL \LightOutputC:count\ : bit;
@@ -122,9 +118,8 @@ SIGNAL Net_460 : bit;
 SIGNAL Net_461 : bit;
 SIGNAL Net_459 : bit;
 SIGNAL Net_462 : bit;
+SIGNAL Net_192 : bit;
 SIGNAL Net_458 : bit;
-SIGNAL Net_32 : bit;
-SIGNAL Net_33679 : bit;
 SIGNAL Net_1225 : bit;
 SIGNAL \LightOutputA:swap\ : bit;
 SIGNAL \LightOutputA:count\ : bit;
@@ -135,6 +130,7 @@ SIGNAL Net_437 : bit;
 SIGNAL Net_438 : bit;
 SIGNAL Net_436 : bit;
 SIGNAL Net_439 : bit;
+SIGNAL Net_33679 : bit;
 SIGNAL Net_435 : bit;
 SIGNAL Net_51 : bit;
 SIGNAL \LightTimer:capture\ : bit;
@@ -151,8 +147,8 @@ SIGNAL Net_173 : bit;
 SIGNAL tmpFB_0__Red_net_0 : bit;
 SIGNAL tmpIO_0__Red_net_0 : bit;
 TERMINAL tmpSIOVREF__Red_net_0 : bit;
-SIGNAL Net_563 : bit;
-SIGNAL Net_1227 : bit;
+SIGNAL tmpFB_0__SDA_net_0 : bit;
+TERMINAL tmpSIOVREF__SDA_net_0 : bit;
 SIGNAL Net_1238 : bit;
 SIGNAL \LightOutputB:swap\ : bit;
 SIGNAL \LightOutputB:count\ : bit;
@@ -163,6 +159,7 @@ SIGNAL Net_560 : bit;
 SIGNAL Net_561 : bit;
 SIGNAL Net_559 : bit;
 SIGNAL Net_562 : bit;
+SIGNAL Net_1227 : bit;
 SIGNAL Net_558 : bit;
 SIGNAL tmpFB_0__Blue_net_0 : bit;
 SIGNAL tmpIO_0__Blue_net_0 : bit;
@@ -246,12 +243,6 @@ BEGIN
 one <=  ('1') ;
 
 zero <=  ('0') ;
-
-Net_20 <= (not Net_192);
-
-Net_32 <= (not Net_33679);
-
-Net_563 <= (not Net_1227);
 
 \UART_DEBUG:SCBCLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -469,70 +460,6 @@ WatchDog_IRQ:cy_mxs40_isr_v1_0
 		is_digital=>'0')
 	PORT MAP(clock_out=>\SensorBus:clock_wire\,
 		dig_domain_out=>open);
-\SensorBus:scl\:cy_mxs40_gpio_v1_0
-	GENERIC MAP(cy_registers=>"",
-		width=>1,
-		sio_grp_cnt=>0,
-		id=>"efb6f5cf-5cc6-44f7-afe3-f502cc057108/69c3b5e8-b094-4d65-b96b-9f4f3a9a8641",
-		drive_mode=>"4",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"0",
-		intr_mode=>"0",
-		io_voltage=>"",
-		output_conn=>"0",
-		oe_conn=>"0",
-		output_sync=>"0",
-		oe_sync=>"0",
-		drive_strength=>"0",
-		max_frequency=>"100",
-		output_current_cap=>"8",
-		i2c_mode=>"0",
-		pin_aliases=>"",
-		pin_mode=>"B",
-		slew_rate=>"0",
-		vtrip=>"0",
-		use_annotation=>"0",
-		hotswap_needed=>"0")
-	PORT MAP(oe=>(one),
-		y=>(zero),
-		fb=>(\SensorBus:tmpFB_0__scl_net_0\),
-		analog=>(open),
-		io=>Net_677,
-		annotation=>(open),
-		siovref=>(\SensorBus:tmpSIOVREF__scl_net_0\));
-\SensorBus:sda\:cy_mxs40_gpio_v1_0
-	GENERIC MAP(cy_registers=>"",
-		width=>1,
-		sio_grp_cnt=>0,
-		id=>"efb6f5cf-5cc6-44f7-afe3-f502cc057108/2aab8a93-e7dd-4bd4-8210-42652cd079c5",
-		drive_mode=>"4",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"0",
-		intr_mode=>"0",
-		io_voltage=>"",
-		output_conn=>"0",
-		oe_conn=>"0",
-		output_sync=>"0",
-		oe_sync=>"0",
-		drive_strength=>"0",
-		max_frequency=>"100",
-		output_current_cap=>"8",
-		i2c_mode=>"0",
-		pin_aliases=>"",
-		pin_mode=>"B",
-		slew_rate=>"0",
-		vtrip=>"0",
-		use_annotation=>"0",
-		hotswap_needed=>"0")
-	PORT MAP(oe=>(one),
-		y=>(zero),
-		fb=>(\SensorBus:tmpFB_0__sda_net_0\),
-		analog=>(open),
-		io=>Net_678,
-		annotation=>(open),
-		siovref=>(\SensorBus:tmpSIOVREF__sda_net_0\));
 Press1:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>1,
@@ -755,13 +682,13 @@ Green:cy_mxs40_gpio_v1_0
 		width=>1,
 		sio_grp_cnt=>0,
 		id=>"7a4de49e-b2b5-48e6-aa9b-9c023b3f7859",
-		drive_mode=>"4",
+		drive_mode=>"6",
 		ibuf_enabled=>"0",
-		init_dr_st=>"1",
+		init_dr_st=>"0",
 		input_sync=>"0",
 		intr_mode=>"0",
 		io_voltage=>"",
-		output_conn=>"1",
+		output_conn=>"0",
 		oe_conn=>"0",
 		output_sync=>"0",
 		oe_sync=>"0",
@@ -776,12 +703,44 @@ Green:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_20,
+		y=>(zero),
 		fb=>(tmpFB_0__Green_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Green_net_0),
 		annotation=>(open),
 		siovref=>(tmpSIOVREF__Green_net_0));
+SCL:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"3bebfee8-790b-4297-b73a-27818bdce71c",
+		drive_mode=>"2",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"B",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__SCL_net_0),
+		analog=>(open),
+		io=>Net_677,
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__SCL_net_0));
 \LightOutputC:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>32,
@@ -860,13 +819,13 @@ Red:cy_mxs40_gpio_v1_0
 		width=>1,
 		sio_grp_cnt=>0,
 		id=>"a6daf096-2dc7-4f03-9401-ec13522e9369",
-		drive_mode=>"4",
+		drive_mode=>"6",
 		ibuf_enabled=>"0",
-		init_dr_st=>"1",
+		init_dr_st=>"0",
 		input_sync=>"0",
 		intr_mode=>"0",
 		io_voltage=>"",
-		output_conn=>"1",
+		output_conn=>"0",
 		oe_conn=>"0",
 		output_sync=>"0",
 		oe_sync=>"0",
@@ -881,12 +840,44 @@ Red:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_32,
+		y=>(zero),
 		fb=>(tmpFB_0__Red_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Red_net_0),
 		annotation=>(open),
 		siovref=>(tmpSIOVREF__Red_net_0));
+SDA:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"e9f4cd1b-6143-4d30-993c-20ffc73f0592",
+		drive_mode=>"2",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"B",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__SDA_net_0),
+		analog=>(open),
+		io=>Net_678,
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__SDA_net_0));
 \LightOutputB:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>32,
@@ -908,13 +899,13 @@ Blue:cy_mxs40_gpio_v1_0
 		width=>1,
 		sio_grp_cnt=>0,
 		id=>"4a8c5acb-8775-4f5c-a5f1-62612792c127",
-		drive_mode=>"4",
+		drive_mode=>"6",
 		ibuf_enabled=>"0",
-		init_dr_st=>"1",
+		init_dr_st=>"0",
 		input_sync=>"0",
 		intr_mode=>"0",
 		io_voltage=>"",
-		output_conn=>"1",
+		output_conn=>"0",
 		oe_conn=>"0",
 		output_sync=>"0",
 		oe_sync=>"0",
@@ -929,7 +920,7 @@ Blue:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_563,
+		y=>(zero),
 		fb=>(tmpFB_0__Blue_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Blue_net_0),
