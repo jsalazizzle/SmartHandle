@@ -1,6 +1,6 @@
 // ======================================================================
 // SmartHandle.v generated from TopDesign.cysch
-// 03/20/2019 at 17:28
+// 04/03/2019 at 15:28
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -899,7 +899,7 @@ module TCPWM_Counter_PDL_v1_0_12 (
 
 endmodule
 
-// RTC_PDL_v2_0(DateFormat=0, DaylightSavingsTimeEn=false, DayOfMonth=20, DayOfMonthDstStart=22, DayOfMonthDstStop=22, DayOfWeek=4, DayOfWeekDstStart=1, DayOfWeekDstStop=1, DstDateType=0, EnableRtcInterrupt=false, Hour=17, HoursDstStart=0, HoursDstStop=0, Month=3, MonthDstStart=3, MonthDstStop=10, RemoveIntr=true, TimeFormat=0, TimeResetOnStart=false, WeekOfMonthDstStart=6, WeekOfMonthDstStop=6, Year=19, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=RTC_PDL_v2_0, CY_CONFIG_TITLE=RealTimeClock, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=RealTimeClock, CY_INSTANCE_SHORT_NAME=RealTimeClock, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=rtc, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=RealTimeClock, )
+// RTC_PDL_v2_0(DateFormat=0, DaylightSavingsTimeEn=false, DayOfMonth=3, DayOfMonthDstStart=22, DayOfMonthDstStop=22, DayOfWeek=4, DayOfWeekDstStart=1, DayOfWeekDstStop=1, DstDateType=0, EnableRtcInterrupt=false, Hour=15, HoursDstStart=0, HoursDstStop=0, Month=4, MonthDstStart=3, MonthDstStop=10, RemoveIntr=true, TimeFormat=0, TimeResetOnStart=false, WeekOfMonthDstStart=6, WeekOfMonthDstStop=6, Year=19, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=RTC_PDL_v2_0, CY_CONFIG_TITLE=RealTimeClock, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=RealTimeClock, CY_INSTANCE_SHORT_NAME=RealTimeClock, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=rtc, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=RealTimeClock, )
 module RTC_PDL_v2_0_13 ;
 
 
@@ -961,10 +961,9 @@ module top ;
           wire  Net_76;
           wire  Net_75;
     electrical  Net_74;
-          wire  Net_1570;
-          wire  Net_1569;
+          wire  Net_1710;
+          wire  Net_1709;
           wire  Net_562;
-          wire  Net_1227;
           wire  Net_561;
           wire  Net_560;
           wire  Net_559;
@@ -986,7 +985,6 @@ module top ;
           wire  Net_44;
           wire  Net_43;
           wire  Net_439;
-          wire  Net_33679;
           wire  Net_438;
           wire  Net_437;
           wire  Net_436;
@@ -996,9 +994,8 @@ module top ;
           wire  Net_432;
           wire  Net_431;
           wire  Net_430;
-          wire  Net_1567;
+          wire  Net_1708;
           wire  Net_462;
-          wire  Net_192;
           wire  Net_461;
           wire  Net_460;
           wire  Net_459;
@@ -1028,6 +1025,9 @@ module top ;
           wire  Net_3;
           wire  Net_2;
           wire  Net_1;
+          wire  Net_1586;
+          wire  Net_1598;
+          wire  Net_1599;
           wire  Net_1494;
           wire  Net_1238;
           wire  Net_116;
@@ -1399,11 +1399,11 @@ module top ;
 		  .sio_grp_cnt(0),
 		  .drive_mode("6"),
 		  .ibuf_enabled("0"),
-		  .init_dr_st("0"),
+		  .init_dr_st("1"),
 		  .input_sync("0"),
 		  .intr_mode("0"),
 		  .io_voltage(""),
-		  .output_conn("0"),
+		  .output_conn("1"),
 		  .oe_conn("0"),
 		  .output_sync("0"),
 		  .oe_sync("0"),
@@ -1419,7 +1419,7 @@ module top ;
 		  .hotswap_needed("0"))
 		Green
 		 (.oe({1'b1}),
-		  .y({1'b0}),
+		  .y({Net_1599}),
 		  .fb({tmpFB_0__Green_net[0:0]}),
 		  .io({tmpIO_0__Green_net[0:0]}),
 		  .siovref(tmpSIOVREF__Green_net));
@@ -1471,7 +1471,7 @@ module top ;
         .undrflw(Net_460),
         .compare(Net_461),
         .clock(Net_116),
-        .pwm(Net_192),
+        .pwm(Net_1599),
         .pwm_n(Net_462));
 
 
@@ -1497,7 +1497,7 @@ module top ;
         .undrflw(Net_437),
         .compare(Net_438),
         .clock(Net_1225),
-        .pwm(Net_33679),
+        .pwm(Net_1586),
         .pwm_n(Net_439));
 
     TCPWM_Counter_PDL_v1_0_7 LightTimer (
@@ -1542,11 +1542,11 @@ module top ;
 		  .sio_grp_cnt(0),
 		  .drive_mode("6"),
 		  .ibuf_enabled("0"),
-		  .init_dr_st("0"),
+		  .init_dr_st("1"),
 		  .input_sync("0"),
 		  .intr_mode("0"),
 		  .io_voltage(""),
-		  .output_conn("0"),
+		  .output_conn("1"),
 		  .oe_conn("0"),
 		  .output_sync("0"),
 		  .oe_sync("0"),
@@ -1562,7 +1562,7 @@ module top ;
 		  .hotswap_needed("0"))
 		Red
 		 (.oe({1'b1}),
-		  .y({1'b0}),
+		  .y({Net_1586}),
 		  .fb({tmpFB_0__Red_net[0:0]}),
 		  .io({tmpIO_0__Red_net[0:0]}),
 		  .siovref(tmpSIOVREF__Red_net));
@@ -1614,7 +1614,7 @@ module top ;
         .undrflw(Net_560),
         .compare(Net_561),
         .clock(Net_1238),
-        .pwm(Net_1227),
+        .pwm(Net_1598),
         .pwm_n(Net_562));
 
 	wire [0:0] tmpFB_0__Blue_net;
@@ -1627,11 +1627,11 @@ module top ;
 		  .sio_grp_cnt(0),
 		  .drive_mode("6"),
 		  .ibuf_enabled("0"),
-		  .init_dr_st("0"),
+		  .init_dr_st("1"),
 		  .input_sync("0"),
 		  .intr_mode("0"),
 		  .io_voltage(""),
-		  .output_conn("0"),
+		  .output_conn("1"),
 		  .oe_conn("0"),
 		  .output_sync("0"),
 		  .oe_sync("0"),
@@ -1647,7 +1647,7 @@ module top ;
 		  .hotswap_needed("0"))
 		Blue
 		 (.oe({1'b1}),
-		  .y({1'b0}),
+		  .y({Net_1598}),
 		  .fb({tmpFB_0__Blue_net[0:0]}),
 		  .io({tmpIO_0__Blue_net[0:0]}),
 		  .siovref(tmpSIOVREF__Blue_net));

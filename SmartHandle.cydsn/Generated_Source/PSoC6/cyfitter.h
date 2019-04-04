@@ -80,20 +80,20 @@
 #define SensorBus_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* ChimeTimer */
-#define ChimeTimer_TCPWM__CNT_HW TCPWM0_CNT5
-#define ChimeTimer_TCPWM__CNT_IDX 5u
+#define ChimeTimer_TCPWM__CNT_HW TCPWM0_CNT3
+#define ChimeTimer_TCPWM__CNT_IDX 3u
 #define ChimeTimer_TCPWM__HW TCPWM0
 #define ChimeTimer_TCPWM__IDX 0u
 
 /* LightTimer */
-#define LightTimer_TCPWM__CNT_HW TCPWM0_CNT3
-#define LightTimer_TCPWM__CNT_IDX 3u
+#define LightTimer_TCPWM__CNT_HW TCPWM0_CNT2
+#define LightTimer_TCPWM__CNT_IDX 2u
 #define LightTimer_TCPWM__HW TCPWM0
 #define LightTimer_TCPWM__IDX 0u
 
 /* MotorTimer */
-#define MotorTimer_TCPWM__CNT_HW TCPWM0_CNT6
-#define MotorTimer_TCPWM__CNT_IDX 6u
+#define MotorTimer_TCPWM__CNT_HW TCPWM0_CNT5
+#define MotorTimer_TCPWM__CNT_IDX 5u
 #define MotorTimer_TCPWM__HW TCPWM0
 #define MotorTimer_TCPWM__IDX 0u
 
@@ -127,8 +127,8 @@
 #define LightOutputA_TCPWM__IDX 0u
 
 /* LightOutputB */
-#define LightOutputB_TCPWM__CNT_HW TCPWM0_CNT2
-#define LightOutputB_TCPWM__CNT_IDX 2u
+#define LightOutputB_TCPWM__CNT_HW TCPWM0_CNT7
+#define LightOutputB_TCPWM__CNT_IDX 7u
 #define LightOutputB_TCPWM__HW TCPWM0
 #define LightOutputB_TCPWM__IDX 0u
 

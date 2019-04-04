@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
   28:DataBuffer.c  ****     {
   29:DataBuffer.c  ****         DataBuffer_SetNumerator(1,type); // Set numerator of all sensors to 1
   30:DataBuffer.c  ****         DataBuffer_SetDenominator(1,type); // Set denominator of all sensors to 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 2
 
 
   31:DataBuffer.c  ****     }
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
   43:DataBuffer.c  ****     }
   67              		.loc 1 43 0
   68 0022 1000     		movs	r0, r2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 3
 
 
   69              	.LVL8:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
   55:DataBuffer.c  ****     uint8* tmp  = (uint8*)(job_queue + head); // Points to reserved byte
  114              		.loc 1 55 0
  115 0016 1F68     		ldr	r7, [r3]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 4
 
 
  116 0018 DC68     		ldr	r4, [r3, #12]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
   65:DataBuffer.c  ****         uint8* sample_ptr = (uint8*) *sample; 
  161              		.loc 1 65 0
  162 004a 0668     		ldr	r6, [r0]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 5
 
 
  163              	.LVL18:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  207              	.LBE3:
   74:DataBuffer.c  **** 		}        
   75:DataBuffer.c  ****         *sample = tmp;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 6
 
 
  208              		.loc 1 75 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  251              	.LFB801:
   85:DataBuffer.c  **** bool DataBuffer_CloseWriteSlot(uint8** sample, uint8 type)
   86:DataBuffer.c  **** {    
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 7
 
 
  252              		.loc 1 86 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  294 0024 00000000 		.word	.LANCHOR0
  295              		.cfi_endproc
  296              	.LFE801:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 8
 
 
  297              		.size	DataBuffer_CloseWriteSlot, .-DataBuffer_CloseWriteSlot
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  109:DataBuffer.c  ****     {
  110:DataBuffer.c  ****         return false;
  111:DataBuffer.c  ****     }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 9
 
 
  112:DataBuffer.c  ****     size = size - num_bytes;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  123:DataBuffer.c  ****         uint8* sample_ptr;
  124:DataBuffer.c  ****         uint8* sample_init = (uint8*) *sample;
  383              		.loc 1 124 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 10
 
 
  384 0050 0768     		ldr	r7, [r0]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  127:DataBuffer.c  **** 		{
  428              		.loc 1 127 0 is_stmt 1 discriminator 1
  429 0084 531E     		subs	r3, r2, #1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 11
 
 
  430 0086 9942     		cmp	r1, r3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  472              		.cfi_endproc
  473              	.LFE802:
  474              		.size	DataBuffer_OpenReadSlot, .-DataBuffer_OpenReadSlot
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 12
 
 
  475              		.section	.text.DataBuffer_CloseReadSlot,"ax",%progbits
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  154:DataBuffer.c  **** }
  517              		.loc 1 154 0
  518              		@ sp needed
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 13
 
 
  519 001e 7047     		bx	lr
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  566              		.cfi_startproc
  567              		@ args = 0, pretend = 0, frame = 0
  568              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 14
 
 
  569              		@ link register save eliminated.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  616              		.size	DataBuffer_GetDenominator, .-DataBuffer_GetDenominator
  617              		.section	.text.DataBuffer_SetDenominator,"ax",%progbits
  618              		.align	2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 15
 
 
  619              		.global	DataBuffer_SetDenominator
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  667 0008 0F4B     		ldr	r3, .L61
  668 000a 1860     		str	r0, [r3]
  669              	.LVL76:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 16
 
 
  670              	.LBB8:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  713 0032 FFF7FEFF 		bl	DataBuffer_SetNumerator
  714              	.LVL84:
   30:DataBuffer.c  ****         DataBuffer_SetDenominator(1,type); // Set denominator of all sensors to 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 17
 
 
  715              		.loc 1 30 0 discriminator 3
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  766              		.text
  767              	.Letext0:
  768              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 18
 
 
  769              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
@@ -1050,58 +1050,58 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  795 0006 00000000 		.4byte	.Ldebug_abbrev0
  796 000a 04       		.byte	0x4
  797 000b 01       		.uleb128 0x1
- 798 000c DF060000 		.4byte	.LASF338
+ 798 000c 15070000 		.4byte	.LASF338
  799 0010 0C       		.byte	0xc
- 800 0011 06170000 		.4byte	.LASF339
- 801 0015 51130000 		.4byte	.LASF340
+ 800 0011 0B170000 		.4byte	.LASF339
+ 801 0015 D8050000 		.4byte	.LASF340
  802 0019 30000000 		.4byte	.Ldebug_ranges0+0x30
  803 001d 00000000 		.4byte	0
  804 0021 00000000 		.4byte	.Ldebug_line0
  805 0025 02       		.uleb128 0x2
  806 0026 02       		.byte	0x2
  807 0027 05       		.byte	0x5
- 808 0028 29160000 		.4byte	.LASF0
+ 808 0028 2E160000 		.4byte	.LASF0
  809 002c 02       		.uleb128 0x2
  810 002d 01       		.byte	0x1
  811 002e 08       		.byte	0x8
- 812 002f C0190000 		.4byte	.LASF1
+ 812 002f C5190000 		.4byte	.LASF1
  813 0033 02       		.uleb128 0x2
  814 0034 01       		.byte	0x1
  815 0035 06       		.byte	0x6
- 816 0036 101C0000 		.4byte	.LASF2
+ 816 0036 151C0000 		.4byte	.LASF2
  817 003a 03       		.uleb128 0x3
- 818 003b C2170000 		.4byte	.LASF5
+ 818 003b C7170000 		.4byte	.LASF5
  819 003f 02       		.byte	0x2
  820 0040 1D       		.byte	0x1d
  821 0041 2C000000 		.4byte	0x2c
  822 0045 02       		.uleb128 0x2
  823 0046 02       		.byte	0x2
  824 0047 07       		.byte	0x7
- 825 0048 231C0000 		.4byte	.LASF3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 19
+ 825 0048 281C0000 		.4byte	.LASF3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 19
 
 
  826 004c 02       		.uleb128 0x2
  827 004d 04       		.byte	0x4
  828 004e 05       		.byte	0x5
- 829 004f 7D160000 		.4byte	.LASF4
+ 829 004f 82160000 		.4byte	.LASF4
  830 0053 03       		.uleb128 0x3
- 831 0054 F3190000 		.4byte	.LASF6
+ 831 0054 F8190000 		.4byte	.LASF6
  832 0058 02       		.byte	0x2
  833 0059 41       		.byte	0x41
  834 005a 5E000000 		.4byte	0x5e
  835 005e 02       		.uleb128 0x2
  836 005f 04       		.byte	0x4
  837 0060 07       		.byte	0x7
- 838 0061 F3180000 		.4byte	.LASF7
+ 838 0061 F8180000 		.4byte	.LASF7
  839 0065 02       		.uleb128 0x2
  840 0066 08       		.byte	0x8
  841 0067 05       		.byte	0x5
- 842 0068 3F0F0000 		.4byte	.LASF8
+ 842 0068 750F0000 		.4byte	.LASF8
  843 006c 02       		.uleb128 0x2
  844 006d 08       		.byte	0x8
  845 006e 07       		.byte	0x7
- 846 006f 0F080000 		.4byte	.LASF9
+ 846 006f 45080000 		.4byte	.LASF9
  847 0073 04       		.uleb128 0x4
  848 0074 04       		.byte	0x4
  849 0075 05       		.byte	0x5
@@ -1111,47 +1111,47 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  853 007c 07       		.byte	0x7
  854 007d DC010000 		.4byte	.LASF10
  855 0081 03       		.uleb128 0x3
- 856 0082 E60D0000 		.4byte	.LASF11
+ 856 0082 1C0E0000 		.4byte	.LASF11
  857 0086 03       		.byte	0x3
  858 0087 18       		.byte	0x18
  859 0088 3A000000 		.4byte	0x3a
  860 008c 03       		.uleb128 0x3
- 861 008d 19060000 		.4byte	.LASF12
+ 861 008d 4F060000 		.4byte	.LASF12
  862 0091 03       		.byte	0x3
  863 0092 30       		.byte	0x30
  864 0093 53000000 		.4byte	0x53
  865 0097 02       		.uleb128 0x2
  866 0098 04       		.byte	0x4
  867 0099 07       		.byte	0x7
- 868 009a D8180000 		.4byte	.LASF13
+ 868 009a DD180000 		.4byte	.LASF13
  869 009e 05       		.uleb128 0x5
  870 009f 8C000000 		.4byte	0x8c
  871 00a3 02       		.uleb128 0x2
  872 00a4 08       		.byte	0x8
  873 00a5 04       		.byte	0x4
- 874 00a6 0B140000 		.4byte	.LASF14
+ 874 00a6 10140000 		.4byte	.LASF14
  875 00aa 02       		.uleb128 0x2
  876 00ab 01       		.byte	0x1
  877 00ac 08       		.byte	0x8
- 878 00ad 710C0000 		.4byte	.LASF15
+ 878 00ad A70C0000 		.4byte	.LASF15
  879 00b1 02       		.uleb128 0x2
  880 00b2 04       		.byte	0x4
  881 00b3 04       		.byte	0x4
- 882 00b4 11190000 		.4byte	.LASF16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 20
+ 882 00b4 16190000 		.4byte	.LASF16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 20
 
 
  883 00b8 02       		.uleb128 0x2
  884 00b9 08       		.byte	0x8
  885 00ba 04       		.byte	0x4
- 886 00bb FD1C0000 		.4byte	.LASF17
+ 886 00bb 021D0000 		.4byte	.LASF17
  887 00bf 06       		.uleb128 0x6
- 888 00c0 F71C0000 		.4byte	.LASF18
+ 888 00c0 FC1C0000 		.4byte	.LASF18
  889 00c4 04       		.byte	0x4
  890 00c5 8503     		.2byte	0x385
  891 00c7 81000000 		.4byte	0x81
  892 00cb 06       		.uleb128 0x6
- 893 00cc E2110000 		.4byte	.LASF19
+ 893 00cc 18120000 		.4byte	.LASF19
  894 00d0 04       		.byte	0x4
  895 00d1 8703     		.2byte	0x387
  896 00d3 8C000000 		.4byte	0x8c
@@ -1160,45 +1160,45 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  899 00d9 02       		.uleb128 0x2
  900 00da 01       		.byte	0x1
  901 00db 02       		.byte	0x2
- 902 00dc CA1A0000 		.4byte	.LASF20
+ 902 00dc CF1A0000 		.4byte	.LASF20
  903 00e0 08       		.uleb128 0x8
- 904 00e1 361C0000 		.4byte	.LASF41
+ 904 00e1 3B1C0000 		.4byte	.LASF41
  905 00e5 4C       		.byte	0x4c
  906 00e6 05       		.byte	0x5
  907 00e7 2B       		.byte	0x2b
  908 00e8 D1010000 		.4byte	0x1d1
  909 00ec 09       		.uleb128 0x9
- 910 00ed 1C1C0000 		.4byte	.LASF21
+ 910 00ed 211C0000 		.4byte	.LASF21
  911 00f1 05       		.byte	0x5
  912 00f2 2D       		.byte	0x2d
  913 00f3 8C000000 		.4byte	0x8c
  914 00f7 00       		.byte	0
  915 00f8 09       		.uleb128 0x9
- 916 00f9 400D0000 		.4byte	.LASF22
+ 916 00f9 760D0000 		.4byte	.LASF22
  917 00fd 05       		.byte	0x5
  918 00fe 2F       		.byte	0x2f
  919 00ff 8C000000 		.4byte	0x8c
  920 0103 04       		.byte	0x4
  921 0104 09       		.uleb128 0x9
- 922 0105 3B140000 		.4byte	.LASF23
+ 922 0105 40140000 		.4byte	.LASF23
  923 0109 05       		.byte	0x5
  924 010a 30       		.byte	0x30
  925 010b 8C000000 		.4byte	0x8c
  926 010f 08       		.byte	0x8
  927 0110 09       		.uleb128 0x9
- 928 0111 88130000 		.4byte	.LASF24
+ 928 0111 8D130000 		.4byte	.LASF24
  929 0115 05       		.byte	0x5
  930 0116 31       		.byte	0x31
  931 0117 8C000000 		.4byte	0x8c
  932 011b 0C       		.byte	0xc
  933 011c 09       		.uleb128 0x9
- 934 011d C3150000 		.4byte	.LASF25
+ 934 011d C8150000 		.4byte	.LASF25
  935 0121 05       		.byte	0x5
  936 0122 33       		.byte	0x33
  937 0123 8C000000 		.4byte	0x8c
  938 0127 10       		.byte	0x10
  939 0128 09       		.uleb128 0x9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 21
 
 
  940 0129 AA040000 		.4byte	.LASF26
@@ -1213,43 +1213,43 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  949 013b 8C000000 		.4byte	0x8c
  950 013f 18       		.byte	0x18
  951 0140 09       		.uleb128 0x9
- 952 0141 6B160000 		.4byte	.LASF28
+ 952 0141 70160000 		.4byte	.LASF28
  953 0145 05       		.byte	0x5
  954 0146 36       		.byte	0x36
  955 0147 D9000000 		.4byte	0xd9
  956 014b 1C       		.byte	0x1c
  957 014c 09       		.uleb128 0x9
- 958 014d 5A160000 		.4byte	.LASF29
+ 958 014d 5F160000 		.4byte	.LASF29
  959 0151 05       		.byte	0x5
  960 0152 38       		.byte	0x38
  961 0153 8C000000 		.4byte	0x8c
  962 0157 20       		.byte	0x20
  963 0158 09       		.uleb128 0x9
- 964 0159 33090000 		.4byte	.LASF30
+ 964 0159 69090000 		.4byte	.LASF30
  965 015d 05       		.byte	0x5
  966 015e 39       		.byte	0x39
  967 015f 8C000000 		.4byte	0x8c
  968 0163 24       		.byte	0x24
  969 0164 09       		.uleb128 0x9
- 970 0165 640C0000 		.4byte	.LASF31
+ 970 0165 9A0C0000 		.4byte	.LASF31
  971 0169 05       		.byte	0x5
  972 016a 3B       		.byte	0x3b
  973 016b 8C000000 		.4byte	0x8c
  974 016f 28       		.byte	0x28
  975 0170 09       		.uleb128 0x9
- 976 0171 10110000 		.4byte	.LASF32
+ 976 0171 46110000 		.4byte	.LASF32
  977 0175 05       		.byte	0x5
  978 0176 3C       		.byte	0x3c
  979 0177 8C000000 		.4byte	0x8c
  980 017b 2C       		.byte	0x2c
  981 017c 09       		.uleb128 0x9
- 982 017d CB070000 		.4byte	.LASF33
+ 982 017d 01080000 		.4byte	.LASF33
  983 0181 05       		.byte	0x5
  984 0182 3E       		.byte	0x3e
  985 0183 8C000000 		.4byte	0x8c
  986 0187 30       		.byte	0x30
  987 0188 09       		.uleb128 0x9
- 988 0189 24090000 		.4byte	.LASF34
+ 988 0189 5A090000 		.4byte	.LASF34
  989 018d 05       		.byte	0x5
  990 018e 3F       		.byte	0x3f
  991 018f 8C000000 		.4byte	0x8c
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  994 0195 B8020000 		.4byte	.LASF35
  995 0199 05       		.byte	0x5
  996 019a 41       		.byte	0x41
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 22
 
 
  997 019b 8C000000 		.4byte	0x8c
@@ -1276,20 +1276,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1009 01b3 8C000000 		.4byte	0x8c
  1010 01b7 40       		.byte	0x40
  1011 01b8 09       		.uleb128 0x9
- 1012 01b9 86160000 		.4byte	.LASF38
+ 1012 01b9 8B160000 		.4byte	.LASF38
  1013 01bd 05       		.byte	0x5
  1014 01be 45       		.byte	0x45
  1015 01bf 8C000000 		.4byte	0x8c
  1016 01c3 44       		.byte	0x44
  1017 01c4 09       		.uleb128 0x9
- 1018 01c5 1C1A0000 		.4byte	.LASF39
+ 1018 01c5 211A0000 		.4byte	.LASF39
  1019 01c9 05       		.byte	0x5
  1020 01ca 47       		.byte	0x47
  1021 01cb 8C000000 		.4byte	0x8c
  1022 01cf 48       		.byte	0x48
  1023 01d0 00       		.byte	0
  1024 01d1 03       		.uleb128 0x3
- 1025 01d2 9B140000 		.4byte	.LASF40
+ 1025 01d2 A0140000 		.4byte	.LASF40
  1026 01d6 05       		.byte	0x5
  1027 01d7 48       		.byte	0x48
  1028 01d8 E0000000 		.4byte	0xe0
@@ -1306,28 +1306,28 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1039 01ef 8C000000 		.4byte	0x8c
  1040 01f3 00       		.byte	0
  1041 01f4 09       		.uleb128 0x9
- 1042 01f5 400D0000 		.4byte	.LASF22
+ 1042 01f5 760D0000 		.4byte	.LASF22
  1043 01f9 06       		.byte	0x6
  1044 01fa 2F       		.byte	0x2f
  1045 01fb 8C000000 		.4byte	0x8c
  1046 01ff 04       		.byte	0x4
  1047 0200 09       		.uleb128 0x9
- 1048 0201 1B0B0000 		.4byte	.LASF44
+ 1048 0201 510B0000 		.4byte	.LASF44
  1049 0205 06       		.byte	0x6
  1050 0206 30       		.byte	0x30
  1051 0207 8C000000 		.4byte	0x8c
  1052 020b 08       		.byte	0x8
  1053 020c 09       		.uleb128 0x9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 23
 
 
- 1054 020d 780F0000 		.4byte	.LASF45
+ 1054 020d AE0F0000 		.4byte	.LASF45
  1055 0211 06       		.byte	0x6
  1056 0212 31       		.byte	0x31
  1057 0213 8C000000 		.4byte	0x8c
  1058 0217 0C       		.byte	0xc
  1059 0218 09       		.uleb128 0x9
- 1060 0219 3B140000 		.4byte	.LASF23
+ 1060 0219 40140000 		.4byte	.LASF23
  1061 021d 06       		.byte	0x6
  1062 021e 32       		.byte	0x32
  1063 021f 8C000000 		.4byte	0x8c
@@ -1339,13 +1339,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1069 022b 8C000000 		.4byte	0x8c
  1070 022f 14       		.byte	0x14
  1071 0230 09       		.uleb128 0x9
- 1072 0231 93080000 		.4byte	.LASF47
+ 1072 0231 C9080000 		.4byte	.LASF47
  1073 0235 06       		.byte	0x6
  1074 0236 34       		.byte	0x34
  1075 0237 8C000000 		.4byte	0x8c
  1076 023b 18       		.byte	0x18
  1077 023c 09       		.uleb128 0x9
- 1078 023d 670F0000 		.4byte	.LASF48
+ 1078 023d 9D0F0000 		.4byte	.LASF48
  1079 0241 06       		.byte	0x6
  1080 0242 35       		.byte	0x35
  1081 0243 D9000000 		.4byte	0xd9
@@ -1363,22 +1363,22 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1093 025b 8C000000 		.4byte	0x8c
  1094 025f 24       		.byte	0x24
  1095 0260 09       		.uleb128 0x9
- 1096 0261 6B160000 		.4byte	.LASF28
+ 1096 0261 70160000 		.4byte	.LASF28
  1097 0265 06       		.byte	0x6
  1098 0266 38       		.byte	0x38
  1099 0267 D9000000 		.4byte	0xd9
  1100 026b 28       		.byte	0x28
  1101 026c 09       		.uleb128 0x9
- 1102 026d 5A160000 		.4byte	.LASF29
+ 1102 026d 5F160000 		.4byte	.LASF29
  1103 0271 06       		.byte	0x6
  1104 0272 3A       		.byte	0x3a
  1105 0273 8C000000 		.4byte	0x8c
  1106 0277 2C       		.byte	0x2c
  1107 0278 09       		.uleb128 0x9
- 1108 0279 D3130000 		.4byte	.LASF49
+ 1108 0279 D8130000 		.4byte	.LASF49
  1109 027d 06       		.byte	0x6
  1110 027e 3B       		.byte	0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 24
 
 
  1111 027f 8C000000 		.4byte	0x8c
@@ -1396,31 +1396,31 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1123 0297 8C000000 		.4byte	0x8c
  1124 029b 38       		.byte	0x38
  1125 029c 09       		.uleb128 0x9
- 1126 029d 95160000 		.4byte	.LASF52
+ 1126 029d 9A160000 		.4byte	.LASF52
  1127 02a1 06       		.byte	0x6
  1128 02a2 3E       		.byte	0x3e
  1129 02a3 8C000000 		.4byte	0x8c
  1130 02a7 3C       		.byte	0x3c
  1131 02a8 09       		.uleb128 0x9
- 1132 02a9 73100000 		.4byte	.LASF53
+ 1132 02a9 A9100000 		.4byte	.LASF53
  1133 02ad 06       		.byte	0x6
  1134 02ae 40       		.byte	0x40
  1135 02af 8C000000 		.4byte	0x8c
  1136 02b3 40       		.byte	0x40
  1137 02b4 09       		.uleb128 0x9
- 1138 02b5 10110000 		.4byte	.LASF32
+ 1138 02b5 46110000 		.4byte	.LASF32
  1139 02b9 06       		.byte	0x6
  1140 02ba 41       		.byte	0x41
  1141 02bb 8C000000 		.4byte	0x8c
  1142 02bf 44       		.byte	0x44
  1143 02c0 09       		.uleb128 0x9
- 1144 02c1 CB070000 		.4byte	.LASF33
+ 1144 02c1 01080000 		.4byte	.LASF33
  1145 02c5 06       		.byte	0x6
  1146 02c6 43       		.byte	0x43
  1147 02c7 8C000000 		.4byte	0x8c
  1148 02cb 48       		.byte	0x48
  1149 02cc 09       		.uleb128 0x9
- 1150 02cd 24090000 		.4byte	.LASF34
+ 1150 02cd 5A090000 		.4byte	.LASF34
  1151 02d1 06       		.byte	0x6
  1152 02d2 44       		.byte	0x44
  1153 02d3 8C000000 		.4byte	0x8c
@@ -1432,35 +1432,35 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1159 02df 8C000000 		.4byte	0x8c
  1160 02e3 50       		.byte	0x50
  1161 02e4 09       		.uleb128 0x9
- 1162 02e5 A5180000 		.4byte	.LASF54
+ 1162 02e5 AA180000 		.4byte	.LASF54
  1163 02e9 06       		.byte	0x6
  1164 02ea 47       		.byte	0x47
  1165 02eb 8C000000 		.4byte	0x8c
  1166 02ef 54       		.byte	0x54
  1167 02f0 09       		.uleb128 0x9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 25
 
 
- 1168 02f1 84180000 		.4byte	.LASF55
+ 1168 02f1 89180000 		.4byte	.LASF55
  1169 02f5 06       		.byte	0x6
  1170 02f6 49       		.byte	0x49
  1171 02f7 8C000000 		.4byte	0x8c
  1172 02fb 58       		.byte	0x58
  1173 02fc 09       		.uleb128 0x9
- 1174 02fd 86160000 		.4byte	.LASF38
+ 1174 02fd 8B160000 		.4byte	.LASF38
  1175 0301 06       		.byte	0x6
  1176 0302 4A       		.byte	0x4a
  1177 0303 8C000000 		.4byte	0x8c
  1178 0307 5C       		.byte	0x5c
  1179 0308 09       		.uleb128 0x9
- 1180 0309 1C1A0000 		.4byte	.LASF39
+ 1180 0309 211A0000 		.4byte	.LASF39
  1181 030d 06       		.byte	0x6
  1182 030e 4C       		.byte	0x4c
  1183 030f 8C000000 		.4byte	0x8c
  1184 0313 60       		.byte	0x60
  1185 0314 00       		.byte	0
  1186 0315 03       		.uleb128 0x3
- 1187 0316 21140000 		.4byte	.LASF56
+ 1187 0316 26140000 		.4byte	.LASF56
  1188 031a 06       		.byte	0x6
  1189 031b 4D       		.byte	0x4d
  1190 031c DC010000 		.4byte	0x1dc
@@ -1478,7 +1478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1202 0338 01       		.byte	0x1
  1203 0339 00       		.byte	0
  1204 033a 06       		.uleb128 0x6
- 1205 033b A41A0000 		.4byte	.LASF59
+ 1205 033b A91A0000 		.4byte	.LASF59
  1206 033f 07       		.byte	0x7
  1207 0340 E101     		.2byte	0x1e1
  1208 0342 20030000 		.4byte	0x320
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1222 0363 06       		.uleb128 0x6
  1223 0364 8E040000 		.4byte	.LASF61
  1224 0368 07       		.byte	0x7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 26
 
 
  1225 0369 FE01     		.2byte	0x1fe
@@ -1519,19 +1519,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1240 038b 6502     		.2byte	0x265
  1241 038d A3040000 		.4byte	0x4a3
  1242 0391 11       		.uleb128 0x11
- 1243 0392 850A0000 		.4byte	.LASF63
+ 1243 0392 BB0A0000 		.4byte	.LASF63
  1244 0396 07       		.byte	0x7
  1245 0397 6802     		.2byte	0x268
  1246 0399 D9000000 		.4byte	0xd9
  1247 039d 00       		.byte	0
  1248 039e 11       		.uleb128 0x11
- 1249 039f 870F0000 		.4byte	.LASF64
+ 1249 039f BD0F0000 		.4byte	.LASF64
  1250 03a3 07       		.byte	0x7
  1251 03a4 6902     		.2byte	0x269
  1252 03a6 D9000000 		.4byte	0xd9
  1253 03aa 01       		.byte	0x1
  1254 03ab 11       		.uleb128 0x11
- 1255 03ac E61A0000 		.4byte	.LASF65
+ 1255 03ac EB1A0000 		.4byte	.LASF65
  1256 03b0 07       		.byte	0x7
  1257 03b1 6B02     		.2byte	0x26b
  1258 03b3 9E000000 		.4byte	0x9e
@@ -1543,40 +1543,40 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1264 03c0 9E000000 		.4byte	0x9e
  1265 03c4 08       		.byte	0x8
  1266 03c5 11       		.uleb128 0x11
- 1267 03c6 4E120000 		.4byte	.LASF67
+ 1267 03c6 84120000 		.4byte	.LASF67
  1268 03ca 07       		.byte	0x7
  1269 03cb 6E02     		.2byte	0x26e
  1270 03cd D9000000 		.4byte	0xd9
  1271 03d1 0C       		.byte	0xc
  1272 03d2 11       		.uleb128 0x11
- 1273 03d3 05190000 		.4byte	.LASF68
+ 1273 03d3 0A190000 		.4byte	.LASF68
  1274 03d7 07       		.byte	0x7
  1275 03d8 6F02     		.2byte	0x26f
  1276 03da D9000000 		.4byte	0xd9
  1277 03de 0D       		.byte	0xd
  1278 03df 11       		.uleb128 0x11
- 1279 03e0 43140000 		.4byte	.LASF69
+ 1279 03e0 48140000 		.4byte	.LASF69
  1280 03e4 07       		.byte	0x7
  1281 03e5 7102     		.2byte	0x271
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 27
 
 
  1282 03e7 A3040000 		.4byte	0x4a3
  1283 03eb 10       		.byte	0x10
  1284 03ec 11       		.uleb128 0x11
- 1285 03ed 0D0D0000 		.4byte	.LASF70
+ 1285 03ed 430D0000 		.4byte	.LASF70
  1286 03f1 07       		.byte	0x7
  1287 03f2 7202     		.2byte	0x272
  1288 03f4 8C000000 		.4byte	0x8c
  1289 03f8 14       		.byte	0x14
  1290 03f9 11       		.uleb128 0x11
- 1291 03fa D7100000 		.4byte	.LASF71
+ 1291 03fa 0D110000 		.4byte	.LASF71
  1292 03fe 07       		.byte	0x7
  1293 03ff 7302     		.2byte	0x273
  1294 0401 9E000000 		.4byte	0x9e
  1295 0405 18       		.byte	0x18
  1296 0406 11       		.uleb128 0x11
- 1297 0407 0B0C0000 		.4byte	.LASF72
+ 1297 0407 410C0000 		.4byte	.LASF72
  1298 040b 07       		.byte	0x7
  1299 040c 7402     		.2byte	0x274
  1300 040e 9E000000 		.4byte	0x9e
@@ -1588,37 +1588,37 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1306 041b 9E000000 		.4byte	0x9e
  1307 041f 20       		.byte	0x20
  1308 0420 11       		.uleb128 0x11
- 1309 0421 EA080000 		.4byte	.LASF74
+ 1309 0421 20090000 		.4byte	.LASF74
  1310 0425 07       		.byte	0x7
  1311 0426 7702     		.2byte	0x277
  1312 0428 A9040000 		.4byte	0x4a9
  1313 042c 24       		.byte	0x24
  1314 042d 11       		.uleb128 0x11
- 1315 042e BC1A0000 		.4byte	.LASF75
+ 1315 042e C11A0000 		.4byte	.LASF75
  1316 0432 07       		.byte	0x7
  1317 0433 7902     		.2byte	0x279
  1318 0435 A3040000 		.4byte	0x4a3
  1319 0439 28       		.byte	0x28
  1320 043a 11       		.uleb128 0x11
- 1321 043b BA080000 		.4byte	.LASF76
+ 1321 043b F0080000 		.4byte	.LASF76
  1322 043f 07       		.byte	0x7
  1323 0440 7A02     		.2byte	0x27a
  1324 0442 8C000000 		.4byte	0x8c
  1325 0446 2C       		.byte	0x2c
  1326 0447 11       		.uleb128 0x11
- 1327 0448 D8050000 		.4byte	.LASF77
+ 1327 0448 0E060000 		.4byte	.LASF77
  1328 044c 07       		.byte	0x7
  1329 044d 7B02     		.2byte	0x27b
  1330 044f 9E000000 		.4byte	0x9e
  1331 0453 30       		.byte	0x30
  1332 0454 11       		.uleb128 0x11
- 1333 0455 270E0000 		.4byte	.LASF78
+ 1333 0455 5D0E0000 		.4byte	.LASF78
  1334 0459 07       		.byte	0x7
  1335 045a 7C02     		.2byte	0x27c
  1336 045c 9E000000 		.4byte	0x9e
  1337 0460 34       		.byte	0x34
  1338 0461 11       		.uleb128 0x11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 28
 
 
  1339 0462 E1020000 		.4byte	.LASF79
@@ -1627,19 +1627,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1342 0469 A3040000 		.4byte	0x4a3
  1343 046d 38       		.byte	0x38
  1344 046e 11       		.uleb128 0x11
- 1345 046f E0130000 		.4byte	.LASF80
+ 1345 046f E5130000 		.4byte	.LASF80
  1346 0473 07       		.byte	0x7
  1347 0474 7F02     		.2byte	0x27f
  1348 0476 8C000000 		.4byte	0x8c
  1349 047a 3C       		.byte	0x3c
  1350 047b 11       		.uleb128 0x11
- 1351 047c 3D120000 		.4byte	.LASF81
+ 1351 047c 73120000 		.4byte	.LASF81
  1352 0480 07       		.byte	0x7
  1353 0481 8002     		.2byte	0x280
  1354 0483 9E000000 		.4byte	0x9e
  1355 0487 40       		.byte	0x40
  1356 0488 11       		.uleb128 0x11
- 1357 0489 360A0000 		.4byte	.LASF82
+ 1357 0489 6C0A0000 		.4byte	.LASF82
  1358 048d 07       		.byte	0x7
  1359 048e 8602     		.2byte	0x286
  1360 0490 46030000 		.4byte	0x346
@@ -1657,7 +1657,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1372 04a9 05       		.uleb128 0x5
  1373 04aa D9000000 		.4byte	0xd9
  1374 04ae 06       		.uleb128 0x6
- 1375 04af 041D0000 		.4byte	.LASF84
+ 1375 04af 091D0000 		.4byte	.LASF84
  1376 04b3 07       		.byte	0x7
  1377 04b4 9002     		.2byte	0x290
  1378 04b6 84030000 		.4byte	0x384
@@ -1668,20 +1668,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1383 04c1 7A01     		.2byte	0x17a
  1384 04c3 DA040000 		.4byte	0x4da
  1385 04c7 0B       		.uleb128 0xb
- 1386 04c8 84190000 		.4byte	.LASF85
+ 1386 04c8 89190000 		.4byte	.LASF85
  1387 04cc 00       		.byte	0
  1388 04cd 0B       		.uleb128 0xb
- 1389 04ce 200A0000 		.4byte	.LASF86
+ 1389 04ce 560A0000 		.4byte	.LASF86
  1390 04d2 01       		.byte	0x1
  1391 04d3 0B       		.uleb128 0xb
- 1392 04d4 08060000 		.4byte	.LASF87
+ 1392 04d4 3E060000 		.4byte	.LASF87
  1393 04d8 02       		.byte	0x2
  1394 04d9 00       		.byte	0
  1395 04da 06       		.uleb128 0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 29
 
 
- 1396 04db 24180000 		.4byte	.LASF88
+ 1396 04db 29180000 		.4byte	.LASF88
  1397 04df 08       		.byte	0x8
  1398 04e0 7E01     		.2byte	0x17e
  1399 04e2 BA040000 		.4byte	0x4ba
@@ -1692,29 +1692,29 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1404 04ed 8201     		.2byte	0x182
  1405 04ef 1E050000 		.4byte	0x51e
  1406 04f3 0B       		.uleb128 0xb
- 1407 04f4 20100000 		.4byte	.LASF89
+ 1407 04f4 56100000 		.4byte	.LASF89
  1408 04f8 02       		.byte	0x2
  1409 04f9 0B       		.uleb128 0xb
- 1410 04fa C4160000 		.4byte	.LASF90
+ 1410 04fa C9160000 		.4byte	.LASF90
  1411 04fe 03       		.byte	0x3
  1412 04ff 0B       		.uleb128 0xb
- 1413 0500 38100000 		.4byte	.LASF91
+ 1413 0500 6E100000 		.4byte	.LASF91
  1414 0504 04       		.byte	0x4
  1415 0505 0B       		.uleb128 0xb
- 1416 0506 060A0000 		.4byte	.LASF92
+ 1416 0506 3C0A0000 		.4byte	.LASF92
  1417 050a 05       		.byte	0x5
  1418 050b 0B       		.uleb128 0xb
- 1419 050c A8190000 		.4byte	.LASF93
+ 1419 050c AD190000 		.4byte	.LASF93
  1420 0510 06       		.byte	0x6
  1421 0511 0B       		.uleb128 0xb
  1422 0512 CA030000 		.4byte	.LASF94
  1423 0516 07       		.byte	0x7
  1424 0517 0B       		.uleb128 0xb
- 1425 0518 5B100000 		.4byte	.LASF95
+ 1425 0518 91100000 		.4byte	.LASF95
  1426 051c 08       		.byte	0x8
  1427 051d 00       		.byte	0
  1428 051e 06       		.uleb128 0x6
- 1429 051f D11D0000 		.4byte	.LASF96
+ 1429 051f D61D0000 		.4byte	.LASF96
  1430 0523 08       		.byte	0x8
  1431 0524 8A01     		.2byte	0x18a
  1432 0526 E6040000 		.4byte	0x4e6
@@ -1725,20 +1725,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1437 0531 8E01     		.2byte	0x18e
  1438 0533 4A050000 		.4byte	0x54a
  1439 0537 0B       		.uleb128 0xb
- 1440 0538 B21B0000 		.4byte	.LASF97
+ 1440 0538 B71B0000 		.4byte	.LASF97
  1441 053c 00       		.byte	0
  1442 053d 0B       		.uleb128 0xb
- 1443 053e EF1B0000 		.4byte	.LASF98
+ 1443 053e F41B0000 		.4byte	.LASF98
  1444 0542 02       		.byte	0x2
  1445 0543 0B       		.uleb128 0xb
- 1446 0544 26120000 		.4byte	.LASF99
+ 1446 0544 5C120000 		.4byte	.LASF99
  1447 0548 03       		.byte	0x3
  1448 0549 00       		.byte	0
  1449 054a 06       		.uleb128 0x6
- 1450 054b 430B0000 		.4byte	.LASF100
+ 1450 054b 790B0000 		.4byte	.LASF100
  1451 054f 08       		.byte	0x8
  1452 0550 9201     		.2byte	0x192
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 30
 
 
  1453 0552 2A050000 		.4byte	0x52a
@@ -1752,39 +1752,39 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1461 0564 44020000 		.4byte	.LASF101
  1462 0568 00       		.byte	0
  1463 0569 0B       		.uleb128 0xb
- 1464 056a 7B080000 		.4byte	.LASF102
+ 1464 056a B1080000 		.4byte	.LASF102
  1465 056e 01       		.byte	0x1
  1466 056f 00       		.byte	0
  1467 0570 06       		.uleb128 0x6
- 1468 0571 B1090000 		.4byte	.LASF103
+ 1468 0571 E7090000 		.4byte	.LASF103
  1469 0575 08       		.byte	0x8
  1470 0576 9901     		.2byte	0x199
  1471 0578 56050000 		.4byte	0x556
  1472 057c 06       		.uleb128 0x6
- 1473 057d 890E0000 		.4byte	.LASF104
+ 1473 057d BF0E0000 		.4byte	.LASF104
  1474 0581 08       		.byte	0x8
  1475 0582 AB01     		.2byte	0x1ab
  1476 0584 52030000 		.4byte	0x352
  1477 0588 10       		.uleb128 0x10
- 1478 0589 2B0F0000 		.4byte	.LASF105
+ 1478 0589 610F0000 		.4byte	.LASF105
  1479 058d 40       		.byte	0x40
  1480 058e 08       		.byte	0x8
  1481 058f AE01     		.2byte	0x1ae
  1482 0591 DB060000 		.4byte	0x6db
  1483 0595 11       		.uleb128 0x11
- 1484 0596 79090000 		.4byte	.LASF106
+ 1484 0596 AF090000 		.4byte	.LASF106
  1485 059a 08       		.byte	0x8
  1486 059b B101     		.2byte	0x1b1
  1487 059d DA040000 		.4byte	0x4da
  1488 05a1 00       		.byte	0
  1489 05a2 11       		.uleb128 0x11
- 1490 05a3 1D1D0000 		.4byte	.LASF107
+ 1490 05a3 221D0000 		.4byte	.LASF107
  1491 05a7 08       		.byte	0x8
  1492 05a8 BB01     		.2byte	0x1bb
  1493 05aa 8C000000 		.4byte	0x8c
  1494 05ae 04       		.byte	0x4
  1495 05af 11       		.uleb128 0x11
- 1496 05b0 281D0000 		.4byte	.LASF108
+ 1496 05b0 2D1D0000 		.4byte	.LASF108
  1497 05b4 08       		.byte	0x8
  1498 05b5 BE01     		.2byte	0x1be
  1499 05b7 8C000000 		.4byte	0x8c
@@ -1796,9 +1796,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1505 05c4 D9000000 		.4byte	0xd9
  1506 05c8 0C       		.byte	0xc
  1507 05c9 11       		.uleb128 0x11
- 1508 05ca 7D100000 		.4byte	.LASF110
+ 1508 05ca B3100000 		.4byte	.LASF110
  1509 05ce 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 31
 
 
  1510 05cf CA01     		.2byte	0x1ca
@@ -1817,13 +1817,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1523 05eb D9000000 		.4byte	0xd9
  1524 05ef 0F       		.byte	0xf
  1525 05f0 11       		.uleb128 0x11
- 1526 05f1 190F0000 		.4byte	.LASF113
+ 1526 05f1 4F0F0000 		.4byte	.LASF113
  1527 05f5 08       		.byte	0x8
  1528 05f6 DB01     		.2byte	0x1db
  1529 05f8 D9000000 		.4byte	0xd9
  1530 05fc 10       		.byte	0x10
  1531 05fd 11       		.uleb128 0x11
- 1532 05fe A21D0000 		.4byte	.LASF114
+ 1532 05fe A71D0000 		.4byte	.LASF114
  1533 0602 08       		.byte	0x8
  1534 0603 E101     		.2byte	0x1e1
  1535 0605 D9000000 		.4byte	0xd9
@@ -1835,109 +1835,109 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1541 0612 D9000000 		.4byte	0xd9
  1542 0616 12       		.byte	0x12
  1543 0617 11       		.uleb128 0x11
- 1544 0618 F20C0000 		.4byte	.LASF116
+ 1544 0618 280D0000 		.4byte	.LASF116
  1545 061c 08       		.byte	0x8
  1546 061d EE01     		.2byte	0x1ee
  1547 061f 8C000000 		.4byte	0x8c
  1548 0623 14       		.byte	0x14
  1549 0624 11       		.uleb128 0x11
- 1550 0625 8D0D0000 		.4byte	.LASF117
+ 1550 0625 C30D0000 		.4byte	.LASF117
  1551 0629 08       		.byte	0x8
  1552 062a F601     		.2byte	0x1f6
  1553 062c 8C000000 		.4byte	0x8c
  1554 0630 18       		.byte	0x18
  1555 0631 11       		.uleb128 0x11
- 1556 0632 F5090000 		.4byte	.LASF118
+ 1556 0632 2B0A0000 		.4byte	.LASF118
  1557 0636 08       		.byte	0x8
  1558 0637 FC01     		.2byte	0x1fc
  1559 0639 D9000000 		.4byte	0xd9
  1560 063d 1C       		.byte	0x1c
  1561 063e 11       		.uleb128 0x11
- 1562 063f 54060000 		.4byte	.LASF119
+ 1562 063f 8A060000 		.4byte	.LASF119
  1563 0643 08       		.byte	0x8
  1564 0644 FF01     		.2byte	0x1ff
  1565 0646 D9000000 		.4byte	0xd9
  1566 064a 1D       		.byte	0x1d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 32
 
 
  1567 064b 11       		.uleb128 0x11
- 1568 064c 871D0000 		.4byte	.LASF120
+ 1568 064c 8C1D0000 		.4byte	.LASF120
  1569 0650 08       		.byte	0x8
  1570 0651 0502     		.2byte	0x205
  1571 0653 D9000000 		.4byte	0xd9
  1572 0657 1E       		.byte	0x1e
  1573 0658 11       		.uleb128 0x11
- 1574 0659 BF0E0000 		.4byte	.LASF121
+ 1574 0659 F50E0000 		.4byte	.LASF121
  1575 065d 08       		.byte	0x8
  1576 065e 0C02     		.2byte	0x20c
  1577 0660 D9000000 		.4byte	0xd9
  1578 0664 1F       		.byte	0x1f
  1579 0665 11       		.uleb128 0x11
- 1580 0666 3F0A0000 		.4byte	.LASF122
+ 1580 0666 750A0000 		.4byte	.LASF122
  1581 066a 08       		.byte	0x8
  1582 066b 1202     		.2byte	0x212
  1583 066d D9000000 		.4byte	0xd9
  1584 0671 20       		.byte	0x20
  1585 0672 11       		.uleb128 0x11
- 1586 0673 0B1B0000 		.4byte	.LASF123
+ 1586 0673 101B0000 		.4byte	.LASF123
  1587 0677 08       		.byte	0x8
  1588 0678 1502     		.2byte	0x215
  1589 067a 70050000 		.4byte	0x570
  1590 067e 21       		.byte	0x21
  1591 067f 11       		.uleb128 0x11
- 1592 0680 A31B0000 		.4byte	.LASF124
+ 1592 0680 A81B0000 		.4byte	.LASF124
  1593 0684 08       		.byte	0x8
  1594 0685 1B02     		.2byte	0x21b
  1595 0687 8C000000 		.4byte	0x8c
  1596 068b 24       		.byte	0x24
  1597 068c 11       		.uleb128 0x11
- 1598 068d D7070000 		.4byte	.LASF125
+ 1598 068d 0D080000 		.4byte	.LASF125
  1599 0691 08       		.byte	0x8
  1600 0692 1E02     		.2byte	0x21e
  1601 0694 70050000 		.4byte	0x570
  1602 0698 28       		.byte	0x28
  1603 0699 11       		.uleb128 0x11
- 1604 069a 020D0000 		.4byte	.LASF126
+ 1604 069a 380D0000 		.4byte	.LASF126
  1605 069e 08       		.byte	0x8
  1606 069f 2102     		.2byte	0x221
  1607 06a1 8C000000 		.4byte	0x8c
  1608 06a5 2C       		.byte	0x2c
  1609 06a6 11       		.uleb128 0x11
- 1610 06a7 41060000 		.4byte	.LASF127
+ 1610 06a7 77060000 		.4byte	.LASF127
  1611 06ab 08       		.byte	0x8
  1612 06ac 2902     		.2byte	0x229
  1613 06ae 8C000000 		.4byte	0x8c
  1614 06b2 30       		.byte	0x30
  1615 06b3 11       		.uleb128 0x11
- 1616 06b4 B31D0000 		.4byte	.LASF128
+ 1616 06b4 B81D0000 		.4byte	.LASF128
  1617 06b8 08       		.byte	0x8
  1618 06b9 2F02     		.2byte	0x22f
  1619 06bb 8C000000 		.4byte	0x8c
  1620 06bf 34       		.byte	0x34
  1621 06c0 11       		.uleb128 0x11
- 1622 06c1 6C190000 		.4byte	.LASF129
+ 1622 06c1 71190000 		.4byte	.LASF129
  1623 06c5 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 33
 
 
  1624 06c6 3702     		.2byte	0x237
  1625 06c8 8C000000 		.4byte	0x8c
  1626 06cc 38       		.byte	0x38
  1627 06cd 11       		.uleb128 0x11
- 1628 06ce 33160000 		.4byte	.LASF130
+ 1628 06ce 38160000 		.4byte	.LASF130
  1629 06d2 08       		.byte	0x8
  1630 06d3 3D02     		.2byte	0x23d
  1631 06d5 8C000000 		.4byte	0x8c
  1632 06d9 3C       		.byte	0x3c
  1633 06da 00       		.byte	0
  1634 06db 06       		.uleb128 0x6
- 1635 06dc 411B0000 		.4byte	.LASF131
+ 1635 06dc 461B0000 		.4byte	.LASF131
  1636 06e0 08       		.byte	0x8
  1637 06e1 3E02     		.2byte	0x23e
  1638 06e3 88050000 		.4byte	0x588
  1639 06e7 10       		.uleb128 0x10
- 1640 06e8 91070000 		.4byte	.LASF132
+ 1640 06e8 C7070000 		.4byte	.LASF132
  1641 06ec 38       		.byte	0x38
  1642 06ed 08       		.byte	0x8
  1643 06ee 4702     		.2byte	0x247
@@ -1949,13 +1949,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1649 06fc 9E000000 		.4byte	0x9e
  1650 0700 00       		.byte	0
  1651 0701 11       		.uleb128 0x11
- 1652 0702 82090000 		.4byte	.LASF134
+ 1652 0702 B8090000 		.4byte	.LASF134
  1653 0706 08       		.byte	0x8
  1654 0707 4B02     		.2byte	0x24b
  1655 0709 9E000000 		.4byte	0x9e
  1656 070d 04       		.byte	0x4
  1657 070e 11       		.uleb128 0x11
- 1658 070f 321D0000 		.4byte	.LASF135
+ 1658 070f 371D0000 		.4byte	.LASF135
  1659 0713 08       		.byte	0x8
  1660 0714 4D02     		.2byte	0x24d
  1661 0716 D7000000 		.4byte	0xd7
@@ -1967,97 +1967,97 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1667 0723 8C000000 		.4byte	0x8c
  1668 0727 0C       		.byte	0xc
  1669 0728 11       		.uleb128 0x11
- 1670 0729 9C150000 		.4byte	.LASF137
+ 1670 0729 A1150000 		.4byte	.LASF137
  1671 072d 08       		.byte	0x8
  1672 072e 4F02     		.2byte	0x24f
  1673 0730 9E000000 		.4byte	0x9e
  1674 0734 10       		.byte	0x10
  1675 0735 11       		.uleb128 0x11
- 1676 0736 E40C0000 		.4byte	.LASF138
+ 1676 0736 1A0D0000 		.4byte	.LASF138
  1677 073a 08       		.byte	0x8
  1678 073b 5002     		.2byte	0x250
  1679 073d 9E000000 		.4byte	0x9e
  1680 0741 14       		.byte	0x14
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 34
 
 
  1681 0742 11       		.uleb128 0x11
- 1682 0743 8B090000 		.4byte	.LASF139
+ 1682 0743 C1090000 		.4byte	.LASF139
  1683 0747 08       		.byte	0x8
  1684 0748 5202     		.2byte	0x252
  1685 074a D7000000 		.4byte	0xd7
  1686 074e 18       		.byte	0x18
  1687 074f 11       		.uleb128 0x11
- 1688 0750 161E0000 		.4byte	.LASF140
+ 1688 0750 1B1E0000 		.4byte	.LASF140
  1689 0754 08       		.byte	0x8
  1690 0755 5302     		.2byte	0x253
  1691 0757 8C000000 		.4byte	0x8c
  1692 075b 1C       		.byte	0x1c
  1693 075c 11       		.uleb128 0x11
- 1694 075d A10D0000 		.4byte	.LASF141
+ 1694 075d D70D0000 		.4byte	.LASF141
  1695 0761 08       		.byte	0x8
  1696 0762 5402     		.2byte	0x254
  1697 0764 9E000000 		.4byte	0x9e
  1698 0768 20       		.byte	0x20
  1699 0769 11       		.uleb128 0x11
- 1700 076a 82130000 		.4byte	.LASF142
+ 1700 076a 87130000 		.4byte	.LASF142
  1701 076e 08       		.byte	0x8
  1702 076f 5602     		.2byte	0x256
  1703 0771 D7000000 		.4byte	0xd7
  1704 0775 24       		.byte	0x24
  1705 0776 11       		.uleb128 0x11
- 1706 0777 D8110000 		.4byte	.LASF143
+ 1706 0777 0E120000 		.4byte	.LASF143
  1707 077b 08       		.byte	0x8
  1708 077c 5702     		.2byte	0x257
  1709 077e 8C000000 		.4byte	0x8c
  1710 0782 28       		.byte	0x28
  1711 0783 11       		.uleb128 0x11
- 1712 0784 35170000 		.4byte	.LASF144
+ 1712 0784 3A170000 		.4byte	.LASF144
  1713 0788 08       		.byte	0x8
  1714 0789 5802     		.2byte	0x258
  1715 078b 9E000000 		.4byte	0x9e
  1716 078f 2C       		.byte	0x2c
  1717 0790 11       		.uleb128 0x11
- 1718 0791 360A0000 		.4byte	.LASF82
+ 1718 0791 6C0A0000 		.4byte	.LASF82
  1719 0795 08       		.byte	0x8
  1720 0796 5D02     		.2byte	0x25d
  1721 0798 7C050000 		.4byte	0x57c
  1722 079c 30       		.byte	0x30
  1723 079d 11       		.uleb128 0x11
- 1724 079e D40D0000 		.4byte	.LASF145
+ 1724 079e 0A0E0000 		.4byte	.LASF145
  1725 07a2 08       		.byte	0x8
  1726 07a3 6002     		.2byte	0x260
  1727 07a5 8C000000 		.4byte	0x8c
  1728 07a9 34       		.byte	0x34
  1729 07aa 00       		.byte	0
  1730 07ab 06       		.uleb128 0x6
- 1731 07ac 71070000 		.4byte	.LASF146
+ 1731 07ac A7070000 		.4byte	.LASF146
  1732 07b0 08       		.byte	0x8
  1733 07b1 6302     		.2byte	0x263
  1734 07b3 E7060000 		.4byte	0x6e7
  1735 07b7 0A       		.uleb128 0xa
  1736 07b8 02       		.byte	0x2
  1737 07b9 45000000 		.4byte	0x45
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 35
 
 
  1738 07bd 09       		.byte	0x9
  1739 07be 4201     		.2byte	0x142
  1740 07c0 F00A0000 		.4byte	0xaf0
  1741 07c4 0B       		.uleb128 0xb
- 1742 07c5 47160000 		.4byte	.LASF147
+ 1742 07c5 4C160000 		.4byte	.LASF147
  1743 07c9 00       		.byte	0
  1744 07ca 12       		.uleb128 0x12
- 1745 07cb 61060000 		.4byte	.LASF148
+ 1745 07cb 97060000 		.4byte	.LASF148
  1746 07cf 0010     		.2byte	0x1000
  1747 07d1 12       		.uleb128 0x12
- 1748 07d2 B3180000 		.4byte	.LASF149
+ 1748 07d2 B8180000 		.4byte	.LASF149
  1749 07d6 0110     		.2byte	0x1001
  1750 07d8 12       		.uleb128 0x12
- 1751 07d9 6D0B0000 		.4byte	.LASF150
+ 1751 07d9 A30B0000 		.4byte	.LASF150
  1752 07dd 0210     		.2byte	0x1002
  1753 07df 12       		.uleb128 0x12
- 1754 07e0 CB0B0000 		.4byte	.LASF151
+ 1754 07e0 010C0000 		.4byte	.LASF151
  1755 07e4 0310     		.2byte	0x1003
  1756 07e6 12       		.uleb128 0x12
  1757 07e7 FE000000 		.4byte	.LASF152
@@ -2066,70 +2066,70 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1760 07ee C8020000 		.4byte	.LASF153
  1761 07f2 0510     		.2byte	0x1005
  1762 07f4 12       		.uleb128 0x12
- 1763 07f5 81140000 		.4byte	.LASF154
+ 1763 07f5 86140000 		.4byte	.LASF154
  1764 07f9 0020     		.2byte	0x2000
  1765 07fb 12       		.uleb128 0x12
- 1766 07fc 66170000 		.4byte	.LASF155
+ 1766 07fc 6B170000 		.4byte	.LASF155
  1767 0800 0120     		.2byte	0x2001
  1768 0802 12       		.uleb128 0x12
  1769 0803 19000000 		.4byte	.LASF156
  1770 0807 0220     		.2byte	0x2002
  1771 0809 12       		.uleb128 0x12
- 1772 080a A70B0000 		.4byte	.LASF157
+ 1772 080a DD0B0000 		.4byte	.LASF157
  1773 080e 0320     		.2byte	0x2003
  1774 0810 12       		.uleb128 0x12
- 1775 0811 43110000 		.4byte	.LASF158
+ 1775 0811 79110000 		.4byte	.LASF158
  1776 0815 0420     		.2byte	0x2004
  1777 0817 12       		.uleb128 0x12
- 1778 0818 00100000 		.4byte	.LASF159
+ 1778 0818 36100000 		.4byte	.LASF159
  1779 081c 0520     		.2byte	0x2005
  1780 081e 12       		.uleb128 0x12
- 1781 081f F70A0000 		.4byte	.LASF160
+ 1781 081f 2D0B0000 		.4byte	.LASF160
  1782 0823 0620     		.2byte	0x2006
  1783 0825 12       		.uleb128 0x12
- 1784 0826 E2170000 		.4byte	.LASF161
+ 1784 0826 E7170000 		.4byte	.LASF161
  1785 082a 0720     		.2byte	0x2007
  1786 082c 12       		.uleb128 0x12
- 1787 082d 591A0000 		.4byte	.LASF162
+ 1787 082d 5E1A0000 		.4byte	.LASF162
  1788 0831 0820     		.2byte	0x2008
  1789 0833 12       		.uleb128 0x12
- 1790 0834 FE190000 		.4byte	.LASF163
+ 1790 0834 031A0000 		.4byte	.LASF163
  1791 0838 0920     		.2byte	0x2009
  1792 083a 12       		.uleb128 0x12
- 1793 083b BE060000 		.4byte	.LASF164
+ 1793 083b F4060000 		.4byte	.LASF164
  1794 083f 0A20     		.2byte	0x200a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 36
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 36
 
 
  1795 0841 12       		.uleb128 0x12
- 1796 0842 A9070000 		.4byte	.LASF165
+ 1796 0842 DF070000 		.4byte	.LASF165
  1797 0846 0B20     		.2byte	0x200b
  1798 0848 12       		.uleb128 0x12
- 1799 0849 50140000 		.4byte	.LASF166
+ 1799 0849 55140000 		.4byte	.LASF166
  1800 084d 0C20     		.2byte	0x200c
  1801 084f 12       		.uleb128 0x12
- 1802 0850 20110000 		.4byte	.LASF167
+ 1802 0850 56110000 		.4byte	.LASF167
  1803 0854 0D20     		.2byte	0x200d
  1804 0856 12       		.uleb128 0x12
- 1805 0857 680D0000 		.4byte	.LASF168
+ 1805 0857 9E0D0000 		.4byte	.LASF168
  1806 085b 0E20     		.2byte	0x200e
  1807 085d 12       		.uleb128 0x12
- 1808 085e 1E150000 		.4byte	.LASF169
+ 1808 085e 23150000 		.4byte	.LASF169
  1809 0862 0F20     		.2byte	0x200f
  1810 0864 12       		.uleb128 0x12
- 1811 0865 BC0F0000 		.4byte	.LASF170
+ 1811 0865 F20F0000 		.4byte	.LASF170
  1812 0869 1020     		.2byte	0x2010
  1813 086b 12       		.uleb128 0x12
- 1814 086c AB110000 		.4byte	.LASF171
+ 1814 086c E1110000 		.4byte	.LASF171
  1815 0870 1120     		.2byte	0x2011
  1816 0872 12       		.uleb128 0x12
- 1817 0873 271A0000 		.4byte	.LASF172
+ 1817 0873 2C1A0000 		.4byte	.LASF172
  1818 0877 1220     		.2byte	0x2012
  1819 0879 12       		.uleb128 0x12
- 1820 087a 5D090000 		.4byte	.LASF173
+ 1820 087a 93090000 		.4byte	.LASF173
  1821 087e 1320     		.2byte	0x2013
  1822 0880 12       		.uleb128 0x12
- 1823 0881 550E0000 		.4byte	.LASF174
+ 1823 0881 8B0E0000 		.4byte	.LASF174
  1824 0885 1420     		.2byte	0x2014
  1825 0887 12       		.uleb128 0x12
  1826 0888 48040000 		.4byte	.LASF175
@@ -2141,133 +2141,133 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1832 0896 0E030000 		.4byte	.LASF177
  1833 089a 1720     		.2byte	0x2017
  1834 089c 12       		.uleb128 0x12
- 1835 089d 75060000 		.4byte	.LASF178
+ 1835 089d AB060000 		.4byte	.LASF178
  1836 08a1 0030     		.2byte	0x3000
  1837 08a3 12       		.uleb128 0x12
- 1838 08a4 E7100000 		.4byte	.LASF179
+ 1838 08a4 1D110000 		.4byte	.LASF179
  1839 08a8 0130     		.2byte	0x3001
  1840 08aa 12       		.uleb128 0x12
- 1841 08ab FA080000 		.4byte	.LASF180
+ 1841 08ab 30090000 		.4byte	.LASF180
  1842 08af 0230     		.2byte	0x3002
  1843 08b1 12       		.uleb128 0x12
- 1844 08b2 5A120000 		.4byte	.LASF181
+ 1844 08b2 90120000 		.4byte	.LASF181
  1845 08b6 0330     		.2byte	0x3003
  1846 08b8 12       		.uleb128 0x12
- 1847 08b9 3C080000 		.4byte	.LASF182
+ 1847 08b9 72080000 		.4byte	.LASF182
  1848 08bd 0430     		.2byte	0x3004
  1849 08bf 12       		.uleb128 0x12
- 1850 08c0 5A180000 		.4byte	.LASF183
+ 1850 08c0 5F180000 		.4byte	.LASF183
  1851 08c4 0530     		.2byte	0x3005
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 37
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 37
 
 
  1852 08c6 12       		.uleb128 0x12
  1853 08c7 74010000 		.4byte	.LASF184
  1854 08cb 0630     		.2byte	0x3006
  1855 08cd 12       		.uleb128 0x12
- 1856 08ce 891C0000 		.4byte	.LASF185
+ 1856 08ce 8E1C0000 		.4byte	.LASF185
  1857 08d2 0730     		.2byte	0x3007
  1858 08d4 12       		.uleb128 0x12
- 1859 08d5 90100000 		.4byte	.LASF186
+ 1859 08d5 C6100000 		.4byte	.LASF186
  1860 08d9 0830     		.2byte	0x3008
  1861 08db 12       		.uleb128 0x12
- 1862 08dc 8F0A0000 		.4byte	.LASF187
+ 1862 08dc C50A0000 		.4byte	.LASF187
  1863 08e0 0930     		.2byte	0x3009
  1864 08e2 12       		.uleb128 0x12
- 1865 08e3 3A180000 		.4byte	.LASF188
+ 1865 08e3 3F180000 		.4byte	.LASF188
  1866 08e7 0A30     		.2byte	0x300a
  1867 08e9 12       		.uleb128 0x12
- 1868 08ea 760C0000 		.4byte	.LASF189
+ 1868 08ea AC0C0000 		.4byte	.LASF189
  1869 08ee 0B30     		.2byte	0x300b
  1870 08f0 12       		.uleb128 0x12
- 1871 08f1 55150000 		.4byte	.LASF190
+ 1871 08f1 5A150000 		.4byte	.LASF190
  1872 08f5 0C30     		.2byte	0x300c
  1873 08f7 12       		.uleb128 0x12
- 1874 08f8 FC0D0000 		.4byte	.LASF191
+ 1874 08f8 320E0000 		.4byte	.LASF191
  1875 08fc 1130     		.2byte	0x3011
  1876 08fe 12       		.uleb128 0x12
- 1877 08ff 79150000 		.4byte	.LASF192
+ 1877 08ff 7E150000 		.4byte	.LASF192
  1878 0903 1230     		.2byte	0x3012
  1879 0905 12       		.uleb128 0x12
- 1880 0906 17190000 		.4byte	.LASF193
+ 1880 0906 1C190000 		.4byte	.LASF193
  1881 090a 1330     		.2byte	0x3013
  1882 090c 12       		.uleb128 0x12
- 1883 090d 90170000 		.4byte	.LASF194
+ 1883 090d 95170000 		.4byte	.LASF194
  1884 0911 1430     		.2byte	0x3014
  1885 0913 12       		.uleb128 0x12
- 1886 0914 A3160000 		.4byte	.LASF195
+ 1886 0914 A8160000 		.4byte	.LASF195
  1887 0918 1530     		.2byte	0x3015
  1888 091a 12       		.uleb128 0x12
- 1889 091b F60E0000 		.4byte	.LASF196
+ 1889 091b 2C0F0000 		.4byte	.LASF196
  1890 091f 1630     		.2byte	0x3016
  1891 0921 12       		.uleb128 0x12
- 1892 0922 D40E0000 		.4byte	.LASF197
+ 1892 0922 0A0F0000 		.4byte	.LASF197
  1893 0926 1730     		.2byte	0x3017
  1894 0928 12       		.uleb128 0x12
- 1895 0929 E50B0000 		.4byte	.LASF198
+ 1895 0929 1B0C0000 		.4byte	.LASF198
  1896 092d 1830     		.2byte	0x3018
  1897 092f 12       		.uleb128 0x12
- 1898 0930 87120000 		.4byte	.LASF199
+ 1898 0930 BD120000 		.4byte	.LASF199
  1899 0934 0040     		.2byte	0x4000
  1900 0936 12       		.uleb128 0x12
- 1901 0937 521C0000 		.4byte	.LASF200
+ 1901 0937 571C0000 		.4byte	.LASF200
  1902 093b 0140     		.2byte	0x4001
  1903 093d 12       		.uleb128 0x12
- 1904 093e CA1B0000 		.4byte	.LASF201
+ 1904 093e CF1B0000 		.4byte	.LASF201
  1905 0942 0240     		.2byte	0x4002
  1906 0944 12       		.uleb128 0x12
- 1907 0945 34190000 		.4byte	.LASF202
+ 1907 0945 39190000 		.4byte	.LASF202
  1908 0949 0340     		.2byte	0x4003
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 38
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 38
 
 
  1909 094b 12       		.uleb128 0x12
- 1910 094c 380E0000 		.4byte	.LASF203
+ 1910 094c 6E0E0000 		.4byte	.LASF203
  1911 0950 0440     		.2byte	0x4004
  1912 0952 12       		.uleb128 0x12
- 1913 0953 6C1D0000 		.4byte	.LASF204
+ 1913 0953 711D0000 		.4byte	.LASF204
  1914 0957 0540     		.2byte	0x4005
  1915 0959 12       		.uleb128 0x12
  1916 095a 99000000 		.4byte	.LASF205
  1917 095e 0640     		.2byte	0x4006
  1918 0960 12       		.uleb128 0x12
- 1919 0961 91090000 		.4byte	.LASF206
+ 1919 0961 C7090000 		.4byte	.LASF206
  1920 0965 0740     		.2byte	0x4007
  1921 0967 12       		.uleb128 0x12
  1922 0968 74020000 		.4byte	.LASF207
  1923 096c 0840     		.2byte	0x4008
  1924 096e 12       		.uleb128 0x12
- 1925 096f CC080000 		.4byte	.LASF208
+ 1925 096f 02090000 		.4byte	.LASF208
  1926 0973 0940     		.2byte	0x4009
  1927 0975 12       		.uleb128 0x12
- 1928 0976 511E0000 		.4byte	.LASF209
+ 1928 0976 561E0000 		.4byte	.LASF209
  1929 097a 0A40     		.2byte	0x400a
  1930 097c 12       		.uleb128 0x12
- 1931 097d 9A0C0000 		.4byte	.LASF210
+ 1931 097d D00C0000 		.4byte	.LASF210
  1932 0981 0B40     		.2byte	0x400b
  1933 0983 12       		.uleb128 0x12
- 1934 0984 86110000 		.4byte	.LASF211
+ 1934 0984 BC110000 		.4byte	.LASF211
  1935 0988 0C40     		.2byte	0x400c
  1936 098a 12       		.uleb128 0x12
- 1937 098b AA0D0000 		.4byte	.LASF212
+ 1937 098b E00D0000 		.4byte	.LASF212
  1938 098f 0D40     		.2byte	0x400d
  1939 0991 12       		.uleb128 0x12
- 1940 0992 E5120000 		.4byte	.LASF213
+ 1940 0992 1B130000 		.4byte	.LASF213
  1941 0996 0E40     		.2byte	0x400e
  1942 0998 12       		.uleb128 0x12
- 1943 0999 BA0C0000 		.4byte	.LASF214
+ 1943 0999 F00C0000 		.4byte	.LASF214
  1944 099d 0F40     		.2byte	0x400f
  1945 099f 12       		.uleb128 0x12
- 1946 09a0 EA070000 		.4byte	.LASF215
+ 1946 09a0 20080000 		.4byte	.LASF215
  1947 09a4 1040     		.2byte	0x4010
  1948 09a6 12       		.uleb128 0x12
- 1949 09a7 7D1A0000 		.4byte	.LASF216
+ 1949 09a7 821A0000 		.4byte	.LASF216
  1950 09ab 1140     		.2byte	0x4011
  1951 09ad 12       		.uleb128 0x12
- 1952 09ae CF0A0000 		.4byte	.LASF217
+ 1952 09ae 050B0000 		.4byte	.LASF217
  1953 09b2 1240     		.2byte	0x4012
  1954 09b4 12       		.uleb128 0x12
- 1955 09b5 DE160000 		.4byte	.LASF218
+ 1955 09b5 E3160000 		.4byte	.LASF218
  1956 09b9 1340     		.2byte	0x4013
  1957 09bb 12       		.uleb128 0x12
  1958 09bc 97020000 		.4byte	.LASF219
@@ -2276,43 +2276,43 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  1961 09c3 BC040000 		.4byte	.LASF220
  1962 09c7 1540     		.2byte	0x4015
  1963 09c9 12       		.uleb128 0x12
- 1964 09ca 3C1D0000 		.4byte	.LASF221
+ 1964 09ca 411D0000 		.4byte	.LASF221
  1965 09ce 1640     		.2byte	0x4016
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 39
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 39
 
 
  1966 09d0 12       		.uleb128 0x12
  1967 09d1 19020000 		.4byte	.LASF222
  1968 09d5 1740     		.2byte	0x4017
  1969 09d7 12       		.uleb128 0x12
- 1970 09d8 970F0000 		.4byte	.LASF223
+ 1970 09d8 CD0F0000 		.4byte	.LASF223
  1971 09dc 1840     		.2byte	0x4018
  1972 09de 12       		.uleb128 0x12
- 1973 09df D4150000 		.4byte	.LASF224
+ 1973 09df D9150000 		.4byte	.LASF224
  1974 09e3 1940     		.2byte	0x4019
  1975 09e5 12       		.uleb128 0x12
- 1976 09e6 D01A0000 		.4byte	.LASF225
+ 1976 09e6 D51A0000 		.4byte	.LASF225
  1977 09ea 1A40     		.2byte	0x401a
  1978 09ec 12       		.uleb128 0x12
- 1979 09ed DB140000 		.4byte	.LASF226
+ 1979 09ed E0140000 		.4byte	.LASF226
  1980 09f1 0050     		.2byte	0x5000
  1981 09f3 12       		.uleb128 0x12
  1982 09f4 AE030000 		.4byte	.LASF227
  1983 09f8 0150     		.2byte	0x5001
  1984 09fa 12       		.uleb128 0x12
- 1985 09fb EC1A0000 		.4byte	.LASF228
+ 1985 09fb F11A0000 		.4byte	.LASF228
  1986 09ff 0250     		.2byte	0x5002
  1987 0a01 12       		.uleb128 0x12
- 1988 0a02 5A1B0000 		.4byte	.LASF229
+ 1988 0a02 5F1B0000 		.4byte	.LASF229
  1989 0a06 0350     		.2byte	0x5003
  1990 0a08 12       		.uleb128 0x12
  1991 0a09 5D050000 		.4byte	.LASF230
  1992 0a0d 0450     		.2byte	0x5004
  1993 0a0f 12       		.uleb128 0x12
- 1994 0a10 F6140000 		.4byte	.LASF231
+ 1994 0a10 FB140000 		.4byte	.LASF231
  1995 0a14 0550     		.2byte	0x5005
  1996 0a16 12       		.uleb128 0x12
- 1997 0a17 1E0D0000 		.4byte	.LASF232
+ 1997 0a17 540D0000 		.4byte	.LASF232
  1998 0a1b 0650     		.2byte	0x5006
  1999 0a1d 12       		.uleb128 0x12
  2000 0a1e EF020000 		.4byte	.LASF233
@@ -2321,10 +2321,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2003 0a25 11040000 		.4byte	.LASF234
  2004 0a29 0850     		.2byte	0x5008
  2005 0a2b 12       		.uleb128 0x12
- 2006 0a2c CB120000 		.4byte	.LASF235
+ 2006 0a2c 01130000 		.4byte	.LASF235
  2007 0a30 0950     		.2byte	0x5009
  2008 0a32 12       		.uleb128 0x12
- 2009 0a33 E9050000 		.4byte	.LASF236
+ 2009 0a33 1F060000 		.4byte	.LASF236
  2010 0a37 0A50     		.2byte	0x500a
  2011 0a39 12       		.uleb128 0x12
  2012 0a3a 8E030000 		.4byte	.LASF237
@@ -2333,64 +2333,64 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2015 0a41 BD050000 		.4byte	.LASF238
  2016 0a45 0C50     		.2byte	0x500c
  2017 0a47 12       		.uleb128 0x12
- 2018 0a48 280B0000 		.4byte	.LASF239
+ 2018 0a48 5E0B0000 		.4byte	.LASF239
  2019 0a4c 0D50     		.2byte	0x500d
  2020 0a4e 12       		.uleb128 0x12
- 2021 0a4f 6A1C0000 		.4byte	.LASF240
+ 2021 0a4f 6F1C0000 		.4byte	.LASF240
  2022 0a53 0E50     		.2byte	0x500e
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 40
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 40
 
 
  2023 0a55 12       		.uleb128 0x12
- 2024 0a56 CB090000 		.4byte	.LASF241
+ 2024 0a56 010A0000 		.4byte	.LASF241
  2025 0a5a 0F50     		.2byte	0x500f
  2026 0a5c 12       		.uleb128 0x12
- 2027 0a5d 46170000 		.4byte	.LASF242
+ 2027 0a5d 4B170000 		.4byte	.LASF242
  2028 0a61 1050     		.2byte	0x5010
  2029 0a63 12       		.uleb128 0x12
- 2030 0a64 171B0000 		.4byte	.LASF243
+ 2030 0a64 1C1B0000 		.4byte	.LASF243
  2031 0a68 1150     		.2byte	0x5011
  2032 0a6a 12       		.uleb128 0x12
  2033 0a6b 69000000 		.4byte	.LASF244
  2034 0a6f 1250     		.2byte	0x5012
  2035 0a71 12       		.uleb128 0x12
- 2036 0a72 B9140000 		.4byte	.LASF245
+ 2036 0a72 BE140000 		.4byte	.LASF245
  2037 0a76 1350     		.2byte	0x5013
  2038 0a78 12       		.uleb128 0x12
  2039 0a79 7C050000 		.4byte	.LASF246
  2040 0a7d 1450     		.2byte	0x5014
  2041 0a7f 12       		.uleb128 0x12
- 2042 0a80 CE190000 		.4byte	.LASF247
+ 2042 0a80 D3190000 		.4byte	.LASF247
  2043 0a84 1550     		.2byte	0x5015
  2044 0a86 12       		.uleb128 0x12
- 2045 0a87 801B0000 		.4byte	.LASF248
+ 2045 0a87 851B0000 		.4byte	.LASF248
  2046 0a8b 1650     		.2byte	0x5016
  2047 0a8d 12       		.uleb128 0x12
  2048 0a8e 64040000 		.4byte	.LASF249
  2049 0a92 1750     		.2byte	0x5017
  2050 0a94 12       		.uleb128 0x12
- 2051 0a95 B3100000 		.4byte	.LASF250
+ 2051 0a95 E9100000 		.4byte	.LASF250
  2052 0a99 1850     		.2byte	0x5018
  2053 0a9b 12       		.uleb128 0x12
- 2054 0a9c D01C0000 		.4byte	.LASF251
+ 2054 0a9c D51C0000 		.4byte	.LASF251
  2055 0aa0 0060     		.2byte	0x6000
  2056 0aa2 12       		.uleb128 0x12
- 2057 0aa3 02160000 		.4byte	.LASF252
+ 2057 0aa3 07160000 		.4byte	.LASF252
  2058 0aa7 0160     		.2byte	0x6001
  2059 0aa9 12       		.uleb128 0x12
- 2060 0aaa 8A0B0000 		.4byte	.LASF253
+ 2060 0aaa C00B0000 		.4byte	.LASF253
  2061 0aae 0260     		.2byte	0x6002
  2062 0ab0 12       		.uleb128 0x12
- 2063 0ab1 AC120000 		.4byte	.LASF254
+ 2063 0ab1 E2120000 		.4byte	.LASF254
  2064 0ab5 0360     		.2byte	0x6003
  2065 0ab7 12       		.uleb128 0x12
- 2066 0ab8 9F060000 		.4byte	.LASF255
+ 2066 0ab8 D5060000 		.4byte	.LASF255
  2067 0abc 0460     		.2byte	0x6004
  2068 0abe 12       		.uleb128 0x12
- 2069 0abf 13170000 		.4byte	.LASF256
+ 2069 0abf 18170000 		.4byte	.LASF256
  2070 0ac3 0560     		.2byte	0x6005
  2071 0ac5 12       		.uleb128 0x12
- 2072 0ac6 630A0000 		.4byte	.LASF257
+ 2072 0ac6 990A0000 		.4byte	.LASF257
  2073 0aca 0660     		.2byte	0x6006
  2074 0acc 12       		.uleb128 0x12
  2075 0acd 49000000 		.4byte	.LASF258
@@ -2398,17 +2398,17 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2077 0ad3 12       		.uleb128 0x12
  2078 0ad4 B8010000 		.4byte	.LASF259
  2079 0ad8 0860     		.2byte	0x6008
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 41
 
 
  2080 0ada 12       		.uleb128 0x12
  2081 0adb DA000000 		.4byte	.LASF260
  2082 0adf 0960     		.2byte	0x6009
  2083 0ae1 12       		.uleb128 0x12
- 2084 0ae2 01120000 		.4byte	.LASF261
+ 2084 0ae2 37120000 		.4byte	.LASF261
  2085 0ae6 0A60     		.2byte	0x600a
  2086 0ae8 12       		.uleb128 0x12
- 2087 0ae9 540A0000 		.4byte	.LASF262
+ 2087 0ae9 8A0A0000 		.4byte	.LASF262
  2088 0aed FFFF     		.2byte	0xffff
  2089 0aef 00       		.byte	0
  2090 0af0 13       		.uleb128 0x13
@@ -2419,20 +2419,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2095 0af8 5B01     		.2byte	0x15b
  2096 0afa 190B0000 		.4byte	0xb19
  2097 0afe 11       		.uleb128 0x11
- 2098 0aff 071C0000 		.4byte	.LASF263
+ 2098 0aff 0C1C0000 		.4byte	.LASF263
  2099 0b03 0A       		.byte	0xa
  2100 0b04 6501     		.2byte	0x165
  2101 0b06 81000000 		.4byte	0x81
  2102 0b0a 00       		.byte	0
  2103 0b0b 11       		.uleb128 0x11
- 2104 0b0c 1E090000 		.4byte	.LASF264
+ 2104 0b0c 54090000 		.4byte	.LASF264
  2105 0b10 0A       		.byte	0xa
  2106 0b11 6901     		.2byte	0x169
  2107 0b13 81000000 		.4byte	0x81
  2108 0b17 01       		.byte	0x1
  2109 0b18 00       		.byte	0
  2110 0b19 06       		.uleb128 0x6
- 2111 0b1a AA150000 		.4byte	.LASF265
+ 2111 0b1a AF150000 		.4byte	.LASF265
  2112 0b1e 0A       		.byte	0xa
  2113 0b1f 6B01     		.2byte	0x16b
  2114 0b21 F50A0000 		.4byte	0xaf5
@@ -2446,19 +2446,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2122 0b32 F8030000 		.4byte	.LASF266
  2123 0b36 00       		.byte	0
  2124 0b37 0B       		.uleb128 0xb
- 2125 0b38 9B080000 		.4byte	.LASF267
+ 2125 0b38 D1080000 		.4byte	.LASF267
  2126 0b3c 01       		.byte	0x1
  2127 0b3d 0B       		.uleb128 0xb
- 2128 0b3e B20A0000 		.4byte	.LASF268
+ 2128 0b3e E80A0000 		.4byte	.LASF268
  2129 0b42 02       		.byte	0x2
  2130 0b43 0B       		.uleb128 0xb
- 2131 0b44 1A0C0000 		.4byte	.LASF269
+ 2131 0b44 500C0000 		.4byte	.LASF269
  2132 0b48 03       		.byte	0x3
  2133 0b49 00       		.byte	0
  2134 0b4a 03       		.uleb128 0x3
- 2135 0b4b 26080000 		.4byte	.LASF270
+ 2135 0b4b 5C080000 		.4byte	.LASF270
  2136 0b4f 0B       		.byte	0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 42
 
 
  2137 0b50 83       		.byte	0x83
@@ -2470,32 +2470,32 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2143 0b5c 87       		.byte	0x87
  2144 0b5d 920B0000 		.4byte	0xb92
  2145 0b61 0B       		.uleb128 0xb
- 2146 0b62 22060000 		.4byte	.LASF271
+ 2146 0b62 58060000 		.4byte	.LASF271
  2147 0b66 00       		.byte	0
  2148 0b67 0B       		.uleb128 0xb
  2149 0b68 FA040000 		.4byte	.LASF272
  2150 0b6c 01       		.byte	0x1
  2151 0b6d 0B       		.uleb128 0xb
- 2152 0b6e 35130000 		.4byte	.LASF273
+ 2152 0b6e 6B130000 		.4byte	.LASF273
  2153 0b72 02       		.byte	0x2
  2154 0b73 0B       		.uleb128 0xb
- 2155 0b74 EC1D0000 		.4byte	.LASF274
+ 2155 0b74 F11D0000 		.4byte	.LASF274
  2156 0b78 03       		.byte	0x3
  2157 0b79 0B       		.uleb128 0xb
- 2158 0b7a 97130000 		.4byte	.LASF275
+ 2158 0b7a 9C130000 		.4byte	.LASF275
  2159 0b7e 04       		.byte	0x4
  2160 0b7f 0B       		.uleb128 0xb
- 2161 0b80 3A0C0000 		.4byte	.LASF276
+ 2161 0b80 700C0000 		.4byte	.LASF276
  2162 0b84 05       		.byte	0x5
  2163 0b85 0B       		.uleb128 0xb
- 2164 0b86 0A130000 		.4byte	.LASF277
+ 2164 0b86 40130000 		.4byte	.LASF277
  2165 0b8a 06       		.byte	0x6
  2166 0b8b 0B       		.uleb128 0xb
  2167 0b8c 47010000 		.4byte	.LASF278
  2168 0b90 07       		.byte	0x7
  2169 0b91 00       		.byte	0
  2170 0b92 03       		.uleb128 0x3
- 2171 0b93 A80E0000 		.4byte	.LASF279
+ 2171 0b93 DE0E0000 		.4byte	.LASF279
  2172 0b97 0B       		.byte	0xb
  2173 0b98 90       		.byte	0x90
  2174 0b99 550B0000 		.4byte	0xb55
@@ -2503,54 +2503,54 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2176 0b9e 04       		.byte	0x4
  2177 0b9f BF000000 		.4byte	0xbf
  2178 0ba3 16       		.uleb128 0x16
- 2179 0ba4 7E120000 		.4byte	.LASF341
+ 2179 0ba4 B4120000 		.4byte	.LASF341
  2180 0ba8 01       		.byte	0x1
  2181 0ba9 2C000000 		.4byte	0x2c
  2182 0bad 17       		.byte	0x17
  2183 0bae 11       		.byte	0x11
  2184 0baf FC0B0000 		.4byte	0xbfc
  2185 0bb3 0B       		.uleb128 0xb
- 2186 0bb4 06110000 		.4byte	.LASF280
+ 2186 0bb4 3C110000 		.4byte	.LASF280
  2187 0bb8 00       		.byte	0
  2188 0bb9 0B       		.uleb128 0xb
- 2189 0bba 44090000 		.4byte	.LASF281
+ 2189 0bba 7A090000 		.4byte	.LASF281
  2190 0bbe 01       		.byte	0x1
  2191 0bbf 0B       		.uleb128 0xb
- 2192 0bc0 EB090000 		.4byte	.LASF282
+ 2192 0bc0 210A0000 		.4byte	.LASF282
  2193 0bc4 02       		.byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 43
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 43
 
 
  2194 0bc5 0B       		.uleb128 0xb
- 2195 0bc6 17140000 		.4byte	.LASF283
+ 2195 0bc6 1C140000 		.4byte	.LASF283
  2196 0bca 03       		.byte	0x3
  2197 0bcb 0B       		.uleb128 0xb
- 2198 0bcc C71D0000 		.4byte	.LASF284
+ 2198 0bcc CC1D0000 		.4byte	.LASF284
  2199 0bd0 04       		.byte	0x4
  2200 0bd1 0B       		.uleb128 0xb
- 2201 0bd2 5B190000 		.4byte	.LASF285
+ 2201 0bd2 60190000 		.4byte	.LASF285
  2202 0bd6 05       		.byte	0x5
  2203 0bd7 0B       		.uleb128 0xb
- 2204 0bd8 C61C0000 		.4byte	.LASF286
+ 2204 0bd8 CB1C0000 		.4byte	.LASF286
  2205 0bdc 06       		.byte	0x6
  2206 0bdd 0B       		.uleb128 0xb
- 2207 0bde 71080000 		.4byte	.LASF287
+ 2207 0bde A7080000 		.4byte	.LASF287
  2208 0be2 07       		.byte	0x7
  2209 0be3 0B       		.uleb128 0xb
- 2210 0be4 DC0D0000 		.4byte	.LASF288
+ 2210 0be4 120E0000 		.4byte	.LASF288
  2211 0be8 08       		.byte	0x8
  2212 0be9 0B       		.uleb128 0xb
- 2213 0bea 371B0000 		.4byte	.LASF289
+ 2213 0bea 3C1B0000 		.4byte	.LASF289
  2214 0bee 09       		.byte	0x9
  2215 0bef 0B       		.uleb128 0xb
- 2216 0bf0 86100000 		.4byte	.LASF290
+ 2216 0bf0 BC100000 		.4byte	.LASF290
  2217 0bf4 0A       		.byte	0xa
  2218 0bf5 0B       		.uleb128 0xb
- 2219 0bf6 4E090000 		.4byte	.LASF291
+ 2219 0bf6 84090000 		.4byte	.LASF291
  2220 0bfa 0B       		.byte	0xb
  2221 0bfb 00       		.byte	0
  2222 0bfc 17       		.uleb128 0x17
- 2223 0bfd 59080000 		.4byte	.LASF309
+ 2223 0bfd 8F080000 		.4byte	.LASF309
  2224 0c01 01       		.byte	0x1
  2225 0c02 21       		.byte	0x21
  2226 0c03 BF000000 		.4byte	0xbf
@@ -2560,13 +2560,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2230 0c10 9C       		.byte	0x9c
  2231 0c11 540C0000 		.4byte	0xc54
  2232 0c15 18       		.uleb128 0x18
- 2233 0c16 EE0D0000 		.4byte	.LASF292
+ 2233 0c16 240E0000 		.4byte	.LASF292
  2234 0c1a 01       		.byte	0x1
  2235 0c1b 23       		.byte	0x23
  2236 0c1c 9D0B0000 		.4byte	0xb9d
  2237 0c20 00000000 		.4byte	.LLST0
  2238 0c24 19       		.uleb128 0x19
- 2239 0c25 F50D0000 		.4byte	.LASF293
+ 2239 0c25 2B0E0000 		.4byte	.LASF293
  2240 0c29 01       		.byte	0x1
  2241 0c2a 25       		.byte	0x25
  2242 0c2b D9000000 		.4byte	0xd9
@@ -2578,17 +2578,17 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2248 0c34 30       		.byte	0x30
  2249 0c35 2E       		.byte	0x2e
  2250 0c36 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 44
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 44
 
 
  2251 0c37 18       		.uleb128 0x18
- 2252 0c38 910F0000 		.4byte	.LASF294
+ 2252 0c38 C70F0000 		.4byte	.LASF294
  2253 0c3c 01       		.byte	0x1
  2254 0c3d 26       		.byte	0x26
  2255 0c3e D9000000 		.4byte	0xd9
  2256 0c42 44000000 		.4byte	.LLST1
  2257 0c46 19       		.uleb128 0x19
- 2258 0c47 A3190000 		.4byte	.LASF295
+ 2258 0c47 A8190000 		.4byte	.LASF295
  2259 0c4b 01       		.byte	0x1
  2260 0c4c 27       		.byte	0x27
  2261 0c4d BF000000 		.4byte	0xbf
@@ -2596,7 +2596,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2263 0c52 52       		.byte	0x52
  2264 0c53 00       		.byte	0
  2265 0c54 1A       		.uleb128 0x1a
- 2266 0c55 4F0D0000 		.4byte	.LASF302
+ 2266 0c55 850D0000 		.4byte	.LASF302
  2267 0c59 01       		.byte	0x1
  2268 0c5a 2F       		.byte	0x2f
  2269 0c5b D9000000 		.4byte	0xd9
@@ -2606,19 +2606,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2273 0c68 9C       		.byte	0x9c
  2274 0c69 120D0000 		.4byte	0xd12
  2275 0c6d 1B       		.uleb128 0x1b
- 2276 0c6e 65190000 		.4byte	.LASF296
+ 2276 0c6e 6A190000 		.4byte	.LASF296
  2277 0c72 01       		.byte	0x1
  2278 0c73 2F       		.byte	0x2f
  2279 0c74 120D0000 		.4byte	0xd12
  2280 0c78 B0000000 		.4byte	.LLST2
  2281 0c7c 1B       		.uleb128 0x1b
- 2282 0c7d A3190000 		.4byte	.LASF295
+ 2282 0c7d A8190000 		.4byte	.LASF295
  2283 0c81 01       		.byte	0x1
  2284 0c82 2F       		.byte	0x2f
  2285 0c83 BF000000 		.4byte	0xbf
  2286 0c87 03010000 		.4byte	.LLST3
  2287 0c8b 1C       		.uleb128 0x1c
- 2288 0c8c 8E180000 		.4byte	.LASF297
+ 2288 0c8c 93180000 		.4byte	.LASF297
  2289 0c90 01       		.byte	0x1
  2290 0c91 2F       		.byte	0x2f
  2291 0c92 CB000000 		.4byte	0xcb
@@ -2631,14 +2631,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2298 0c9f 9D0B0000 		.4byte	0xb9d
  2299 0ca3 3D010000 		.4byte	.LLST4
  2300 0ca7 18       		.uleb128 0x18
- 2301 0ca8 F50D0000 		.4byte	.LASF293
+ 2301 0ca8 2B0E0000 		.4byte	.LASF293
  2302 0cac 01       		.byte	0x1
  2303 0cad 38       		.byte	0x38
  2304 0cae D9000000 		.4byte	0xd9
  2305 0cb2 5B010000 		.4byte	.LLST5
  2306 0cb6 18       		.uleb128 0x18
- 2307 0cb7 910F0000 		.4byte	.LASF294
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 45
+ 2307 0cb7 C70F0000 		.4byte	.LASF294
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 45
 
 
  2308 0cbb 01       		.byte	0x1
@@ -2646,7 +2646,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2310 0cbd D9000000 		.4byte	0xd9
  2311 0cc1 85010000 		.4byte	.LLST6
  2312 0cc5 18       		.uleb128 0x18
- 2313 0cc6 E3070000 		.4byte	.LASF298
+ 2313 0cc6 19080000 		.4byte	.LASF298
  2314 0cca 01       		.byte	0x1
  2315 0ccb 3A       		.byte	0x3a
  2316 0ccc D9000000 		.4byte	0xd9
@@ -2654,13 +2654,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2318 0cd4 1E       		.uleb128 0x1e
  2319 0cd5 00000000 		.4byte	.Ldebug_ranges0+0
  2320 0cd9 18       		.uleb128 0x18
- 2321 0cda 490A0000 		.4byte	.LASF299
+ 2321 0cda 7F0A0000 		.4byte	.LASF299
  2322 0cde 01       		.byte	0x1
  2323 0cdf 40       		.byte	0x40
  2324 0ce0 9D0B0000 		.4byte	0xb9d
  2325 0ce4 05020000 		.4byte	.LLST8
  2326 0ce8 18       		.uleb128 0x18
- 2327 0ce9 79180000 		.4byte	.LASF300
+ 2327 0ce9 7E180000 		.4byte	.LASF300
  2328 0ced 01       		.byte	0x1
  2329 0cee 41       		.byte	0x41
  2330 0cef 9D0B0000 		.4byte	0xb9d
@@ -2669,7 +2669,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2333 0cf8 5E000000 		.4byte	.LBB3
  2334 0cfc 1E000000 		.4byte	.LBE3-.LBB3
  2335 0d00 18       		.uleb128 0x18
- 2336 0d01 8B070000 		.4byte	.LASF301
+ 2336 0d01 C1070000 		.4byte	.LASF301
  2337 0d05 01       		.byte	0x1
  2338 0d06 44       		.byte	0x44
  2339 0d07 CB000000 		.4byte	0xcb
@@ -2681,7 +2681,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2345 0d13 04       		.byte	0x4
  2346 0d14 9D0B0000 		.4byte	0xb9d
  2347 0d18 1A       		.uleb128 0x1a
- 2348 0d19 4D0F0000 		.4byte	.LASF303
+ 2348 0d19 830F0000 		.4byte	.LASF303
  2349 0d1d 01       		.byte	0x1
  2350 0d1e 55       		.byte	0x55
  2351 0d1f D9000000 		.4byte	0xd9
@@ -2691,14 +2691,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2355 0d2c 9C       		.byte	0x9c
  2356 0d2d 5F0D0000 		.4byte	0xd5f
  2357 0d31 1B       		.uleb128 0x1b
- 2358 0d32 65190000 		.4byte	.LASF296
+ 2358 0d32 6A190000 		.4byte	.LASF296
  2359 0d36 01       		.byte	0x1
  2360 0d37 55       		.byte	0x55
  2361 0d38 120D0000 		.4byte	0xd12
  2362 0d3c 6F020000 		.4byte	.LLST11
  2363 0d40 1B       		.uleb128 0x1b
- 2364 0d41 A3190000 		.4byte	.LASF295
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 46
+ 2364 0d41 A8190000 		.4byte	.LASF295
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 46
 
 
  2365 0d45 01       		.byte	0x1
@@ -2723,26 +2723,26 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2384 0d73 9C       		.byte	0x9c
  2385 0d74 3B0E0000 		.4byte	0xe3b
  2386 0d78 1B       		.uleb128 0x1b
- 2387 0d79 65190000 		.4byte	.LASF296
+ 2387 0d79 6A190000 		.4byte	.LASF296
  2388 0d7d 01       		.byte	0x1
  2389 0d7e 62       		.byte	0x62
  2390 0d7f 120D0000 		.4byte	0xd12
  2391 0d83 E8020000 		.4byte	.LLST14
  2392 0d87 1B       		.uleb128 0x1b
- 2393 0d88 A3190000 		.4byte	.LASF295
+ 2393 0d88 A8190000 		.4byte	.LASF295
  2394 0d8c 01       		.byte	0x1
  2395 0d8d 62       		.byte	0x62
  2396 0d8e BF000000 		.4byte	0xbf
  2397 0d92 54030000 		.4byte	.LLST15
  2398 0d96 1C       		.uleb128 0x1c
- 2399 0d97 8E180000 		.4byte	.LASF297
+ 2399 0d97 93180000 		.4byte	.LASF297
  2400 0d9b 01       		.byte	0x1
  2401 0d9c 62       		.byte	0x62
  2402 0d9d CB000000 		.4byte	0xcb
  2403 0da1 01       		.uleb128 0x1
  2404 0da2 52       		.byte	0x52
  2405 0da3 18       		.uleb128 0x18
- 2406 0da4 B00F0000 		.4byte	.LASF305
+ 2406 0da4 E60F0000 		.4byte	.LASF305
  2407 0da8 01       		.byte	0x1
  2408 0da9 64       		.byte	0x64
  2409 0daa 9D0B0000 		.4byte	0xb9d
@@ -2754,22 +2754,22 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2415 0db9 9D0B0000 		.4byte	0xb9d
  2416 0dbd D3030000 		.4byte	.LLST17
  2417 0dc1 18       		.uleb128 0x18
- 2418 0dc2 F50D0000 		.4byte	.LASF293
+ 2418 0dc2 2B0E0000 		.4byte	.LASF293
  2419 0dc6 01       		.byte	0x1
  2420 0dc7 72       		.byte	0x72
  2421 0dc8 D9000000 		.4byte	0xd9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 47
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 47
 
 
  2422 0dcc F1030000 		.4byte	.LLST18
  2423 0dd0 18       		.uleb128 0x18
- 2424 0dd1 910F0000 		.4byte	.LASF294
+ 2424 0dd1 C70F0000 		.4byte	.LASF294
  2425 0dd5 01       		.byte	0x1
  2426 0dd6 73       		.byte	0x73
  2427 0dd7 D9000000 		.4byte	0xd9
  2428 0ddb 3D040000 		.4byte	.LLST19
  2429 0ddf 18       		.uleb128 0x18
- 2430 0de0 E3070000 		.4byte	.LASF298
+ 2430 0de0 19080000 		.4byte	.LASF298
  2431 0de4 01       		.byte	0x1
  2432 0de5 74       		.byte	0x74
  2433 0de6 D9000000 		.4byte	0xd9
@@ -2777,19 +2777,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2435 0dee 1E       		.uleb128 0x1e
  2436 0def 18000000 		.4byte	.Ldebug_ranges0+0x18
  2437 0df3 18       		.uleb128 0x18
- 2438 0df4 490A0000 		.4byte	.LASF299
+ 2438 0df4 7F0A0000 		.4byte	.LASF299
  2439 0df8 01       		.byte	0x1
  2440 0df9 7A       		.byte	0x7a
  2441 0dfa 9D0B0000 		.4byte	0xb9d
  2442 0dfe 91040000 		.4byte	.LLST21
  2443 0e02 18       		.uleb128 0x18
- 2444 0e03 79180000 		.4byte	.LASF300
+ 2444 0e03 7E180000 		.4byte	.LASF300
  2445 0e07 01       		.byte	0x1
  2446 0e08 7B       		.byte	0x7b
  2447 0e09 9D0B0000 		.4byte	0xb9d
  2448 0e0d A4040000 		.4byte	.LLST22
  2449 0e11 18       		.uleb128 0x18
- 2450 0e12 49150000 		.4byte	.LASF306
+ 2450 0e12 4E150000 		.4byte	.LASF306
  2451 0e16 01       		.byte	0x1
  2452 0e17 7C       		.byte	0x7c
  2453 0e18 9D0B0000 		.4byte	0xb9d
@@ -2798,7 +2798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2456 0e21 64000000 		.4byte	.LBB6
  2457 0e25 26000000 		.4byte	.LBE6-.LBB6
  2458 0e29 18       		.uleb128 0x18
- 2459 0e2a 8B070000 		.4byte	.LASF301
+ 2459 0e2a C1070000 		.4byte	.LASF301
  2460 0e2e 01       		.byte	0x1
  2461 0e2f 7F       		.byte	0x7f
  2462 0e30 CB000000 		.4byte	0xcb
@@ -2807,7 +2807,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2465 0e39 00       		.byte	0
  2466 0e3a 00       		.byte	0
  2467 0e3b 1A       		.uleb128 0x1a
- 2468 0e3c F2130000 		.4byte	.LASF307
+ 2468 0e3c F7130000 		.4byte	.LASF307
  2469 0e40 01       		.byte	0x1
  2470 0e41 8F       		.byte	0x8f
  2471 0e42 D9000000 		.4byte	0xd9
@@ -2817,8 +2817,8 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2475 0e4f 9C       		.byte	0x9c
  2476 0e50 800E0000 		.4byte	0xe80
  2477 0e54 1B       		.uleb128 0x1b
- 2478 0e55 65190000 		.4byte	.LASF296
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 48
+ 2478 0e55 6A190000 		.4byte	.LASF296
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 48
 
 
  2479 0e59 01       		.byte	0x1
@@ -2826,7 +2826,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2481 0e5b 120D0000 		.4byte	0xd12
  2482 0e5f FA040000 		.4byte	.LLST25
  2483 0e63 1C       		.uleb128 0x1c
- 2484 0e64 A3190000 		.4byte	.LASF295
+ 2484 0e64 A8190000 		.4byte	.LASF295
  2485 0e68 01       		.byte	0x1
  2486 0e69 8F       		.byte	0x8f
  2487 0e6a BF000000 		.4byte	0xbf
@@ -2840,7 +2840,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2495 0e7b 1B050000 		.4byte	.LLST26
  2496 0e7f 00       		.byte	0
  2497 0e80 1A       		.uleb128 0x1a
- 2498 0e81 6E110000 		.4byte	.LASF308
+ 2498 0e81 A4110000 		.4byte	.LASF308
  2499 0e85 01       		.byte	0x1
  2500 0e86 9C       		.byte	0x9c
  2501 0e87 BF000000 		.4byte	0xbf
@@ -2850,14 +2850,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2505 0e94 9C       		.byte	0x9c
  2506 0e95 A90E0000 		.4byte	0xea9
  2507 0e99 1B       		.uleb128 0x1b
- 2508 0e9a A3190000 		.4byte	.LASF295
+ 2508 0e9a A8190000 		.4byte	.LASF295
  2509 0e9e 01       		.byte	0x1
  2510 0e9f 9C       		.byte	0x9c
  2511 0ea0 BF000000 		.4byte	0xbf
  2512 0ea4 39050000 		.4byte	.LLST27
  2513 0ea8 00       		.byte	0
  2514 0ea9 20       		.uleb128 0x20
- 2515 0eaa E9110000 		.4byte	.LASF310
+ 2515 0eaa 1F120000 		.4byte	.LASF310
  2516 0eae 01       		.byte	0x1
  2517 0eaf A0       		.byte	0xa0
  2518 0eb0 00000000 		.4byte	.LFB805
@@ -2873,12 +2873,12 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2528 0ec9 01       		.uleb128 0x1
  2529 0eca 50       		.byte	0x50
  2530 0ecb 1B       		.uleb128 0x1b
- 2531 0ecc A3190000 		.4byte	.LASF295
+ 2531 0ecc A8190000 		.4byte	.LASF295
  2532 0ed0 01       		.byte	0x1
  2533 0ed1 A0       		.byte	0xa0
  2534 0ed2 BF000000 		.4byte	0xbf
  2535 0ed6 5A050000 		.4byte	.LLST28
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 49
 
 
  2536 0eda 00       		.byte	0
@@ -2893,14 +2893,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2545 0eef 9C       		.byte	0x9c
  2546 0ef0 040F0000 		.4byte	0xf04
  2547 0ef4 1B       		.uleb128 0x1b
- 2548 0ef5 A3190000 		.4byte	.LASF295
+ 2548 0ef5 A8190000 		.4byte	.LASF295
  2549 0ef9 01       		.byte	0x1
  2550 0efa A5       		.byte	0xa5
  2551 0efb BF000000 		.4byte	0xbf
  2552 0eff 7B050000 		.4byte	.LLST29
  2553 0f03 00       		.byte	0
  2554 0f04 20       		.uleb128 0x20
- 2555 0f05 AC1C0000 		.4byte	.LASF312
+ 2555 0f05 B11C0000 		.4byte	.LASF312
  2556 0f09 01       		.byte	0x1
  2557 0f0a A9       		.byte	0xa9
  2558 0f0b 00000000 		.4byte	.LFB807
@@ -2916,7 +2916,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2568 0f24 01       		.uleb128 0x1
  2569 0f25 50       		.byte	0x50
  2570 0f26 1B       		.uleb128 0x1b
- 2571 0f27 A3190000 		.4byte	.LASF295
+ 2571 0f27 A8190000 		.4byte	.LASF295
  2572 0f2b 01       		.byte	0x1
  2573 0f2c A9       		.byte	0xa9
  2574 0f2d BF000000 		.4byte	0xbf
@@ -2932,20 +2932,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2584 0f46 9C       		.byte	0x9c
  2585 0f47 D30F0000 		.4byte	0xfd3
  2586 0f4b 18       		.uleb128 0x18
- 2587 0f4c 7F190000 		.4byte	.LASF313
+ 2587 0f4c 84190000 		.4byte	.LASF313
  2588 0f50 01       		.byte	0x1
  2589 0f51 0F       		.byte	0xf
  2590 0f52 9D0B0000 		.4byte	0xb9d
  2591 0f56 BD050000 		.4byte	.LLST31
  2592 0f5a 23       		.uleb128 0x23
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 50
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 50
 
 
  2593 0f5b 0C000000 		.4byte	.LBB8
  2594 0f5f 12000000 		.4byte	.LBE8-.LBB8
  2595 0f63 770F0000 		.4byte	0xf77
  2596 0f67 18       		.uleb128 0x18
- 2597 0f68 391E0000 		.4byte	.LASF314
+ 2597 0f68 3E1E0000 		.4byte	.LASF314
  2598 0f6c 01       		.byte	0x1
  2599 0f6d 11       		.byte	0x11
  2600 0f6e BF000000 		.4byte	0xbf
@@ -2956,7 +2956,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2605 0f7c 1C000000 		.4byte	.LBE9-.LBB9
  2606 0f80 C20F0000 		.4byte	0xfc2
  2607 0f84 18       		.uleb128 0x18
- 2608 0f85 A3190000 		.4byte	.LASF295
+ 2608 0f85 A8190000 		.4byte	.LASF295
  2609 0f89 01       		.byte	0x1
  2610 0f8a 1B       		.byte	0x1b
  2611 0f8b BF000000 		.4byte	0xbf
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2647 0fc7 53110000 		.4byte	0x1153
  2648 0fcb 25       		.uleb128 0x25
  2649 0fcc 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 51
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 51
 
 
  2650 0fcd 50       		.byte	0x50
@@ -3008,7 +3008,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2654 0fd1 00       		.byte	0
  2655 0fd2 00       		.byte	0
  2656 0fd3 19       		.uleb128 0x19
- 2657 0fd4 99190000 		.4byte	.LASF315
+ 2657 0fd4 9E190000 		.4byte	.LASF315
  2658 0fd8 01       		.byte	0x1
  2659 0fd9 05       		.byte	0x5
  2660 0fda 9D0B0000 		.4byte	0xb9d
@@ -3016,7 +3016,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2662 0fdf 03       		.byte	0x3
  2663 0fe0 00000000 		.4byte	job_queue
  2664 0fe4 19       		.uleb128 0x19
- 2665 0fe5 58090000 		.4byte	.LASF316
+ 2665 0fe5 8E090000 		.4byte	.LASF316
  2666 0fe9 01       		.byte	0x1
  2667 0fea 06       		.byte	0x6
  2668 0feb BF000000 		.4byte	0xbf
@@ -3032,7 +3032,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2678 1001 03       		.byte	0x3
  2679 1002 0C000000 		.4byte	head
  2680 1006 19       		.uleb128 0x19
- 2681 1007 9F1A0000 		.4byte	.LASF318
+ 2681 1007 A41A0000 		.4byte	.LASF318
  2682 100b 01       		.byte	0x1
  2683 100c 08       		.byte	0x8
  2684 100d CB000000 		.4byte	0xcb
@@ -3040,7 +3040,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2686 1012 03       		.byte	0x3
  2687 1013 04000000 		.4byte	tail
  2688 1017 19       		.uleb128 0x19
- 2689 1018 69110000 		.4byte	.LASF319
+ 2689 1018 9F110000 		.4byte	.LASF319
  2690 101c 01       		.byte	0x1
  2691 101d 09       		.byte	0x9
  2692 101e CB000000 		.4byte	0xcb
@@ -3055,17 +3055,17 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2701 1036 0B       		.byte	0xb
  2702 1037 00       		.byte	0
  2703 1038 29       		.uleb128 0x29
- 2704 1039 CC170000 		.4byte	.LASF320
+ 2704 1039 D1170000 		.4byte	.LASF320
  2705 103d 0C       		.byte	0xc
  2706 103e FC02     		.2byte	0x2fc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 52
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 52
 
 
  2707 1040 44100000 		.4byte	0x1044
  2708 1044 13       		.uleb128 0x13
  2709 1045 28100000 		.4byte	0x1028
  2710 1049 29       		.uleb128 0x29
- 2711 104a 790E0000 		.4byte	.LASF321
+ 2711 104a AF0E0000 		.4byte	.LASF321
  2712 104e 0B       		.byte	0xb
  2713 104f 2202     		.2byte	0x222
  2714 1051 4A0B0000 		.4byte	0xb4a
@@ -3094,31 +3094,31 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2737 1087 2D02     		.2byte	0x22d
  2738 1089 71100000 		.4byte	0x1071
  2739 108d 29       		.uleb128 0x29
- 2740 108e 201E0000 		.4byte	.LASF324
+ 2740 108e 251E0000 		.4byte	.LASF324
  2741 1092 0B       		.byte	0xb
  2742 1093 5202     		.2byte	0x252
  2743 1095 81000000 		.4byte	0x81
  2744 1099 2A       		.uleb128 0x2a
- 2745 109a E1180000 		.4byte	.LASF325
+ 2745 109a E6180000 		.4byte	.LASF325
  2746 109e 0D       		.byte	0xd
  2747 109f 86       		.byte	0x86
  2748 10a0 A4100000 		.4byte	0x10a4
  2749 10a4 13       		.uleb128 0x13
  2750 10a5 DB060000 		.4byte	0x6db
  2751 10a9 2A       		.uleb128 0x2a
- 2752 10aa AF170000 		.4byte	.LASF326
+ 2752 10aa B4170000 		.4byte	.LASF326
  2753 10ae 0D       		.byte	0xd
  2754 10af 87       		.byte	0x87
  2755 10b0 AB070000 		.4byte	0x7ab
  2756 10b4 2A       		.uleb128 0x2a
- 2757 10b5 C6180000 		.4byte	.LASF327
+ 2757 10b5 CB180000 		.4byte	.LASF327
  2758 10b9 0E       		.byte	0xe
  2759 10ba 7F       		.byte	0x7f
  2760 10bb AE040000 		.4byte	0x4ae
  2761 10bf 2A       		.uleb128 0x2a
- 2762 10c0 EC0F0000 		.4byte	.LASF328
+ 2762 10c0 22100000 		.4byte	.LASF328
  2763 10c4 0F       		.byte	0xf
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 53
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 53
 
 
  2764 10c5 1F       		.byte	0x1f
@@ -3126,12 +3126,12 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2766 10ca 13       		.uleb128 0x13
  2767 10cb 15030000 		.4byte	0x315
  2768 10cf 2A       		.uleb128 0x2a
- 2769 10d0 10180000 		.4byte	.LASF329
+ 2769 10d0 15180000 		.4byte	.LASF329
  2770 10d4 10       		.byte	0x10
  2771 10d5 1F       		.byte	0x1f
  2772 10d6 CA100000 		.4byte	0x10ca
  2773 10da 2A       		.uleb128 0x2a
- 2774 10db 5B0B0000 		.4byte	.LASF330
+ 2774 10db 910B0000 		.4byte	.LASF330
  2775 10df 11       		.byte	0x11
  2776 10e0 1F       		.byte	0x1f
  2777 10e1 E5100000 		.4byte	0x10e5
@@ -3148,17 +3148,17 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2788 10fb 1F       		.byte	0x1f
  2789 10fc CA100000 		.4byte	0x10ca
  2790 1100 2A       		.uleb128 0x2a
- 2791 1101 C1130000 		.4byte	.LASF333
+ 2791 1101 C6130000 		.4byte	.LASF333
  2792 1105 14       		.byte	0x14
  2793 1106 1F       		.byte	0x1f
  2794 1107 E5100000 		.4byte	0x10e5
  2795 110b 2A       		.uleb128 0x2a
- 2796 110c 3E1E0000 		.4byte	.LASF334
+ 2796 110c 431E0000 		.4byte	.LASF334
  2797 1110 15       		.byte	0x15
  2798 1111 1F       		.byte	0x1f
  2799 1112 CA100000 		.4byte	0x10ca
  2800 1116 2A       		.uleb128 0x2a
- 2801 1117 6F140000 		.4byte	.LASF335
+ 2801 1117 74140000 		.4byte	.LASF335
  2802 111b 16       		.byte	0x16
  2803 111c 1F       		.byte	0x1f
  2804 111d E5100000 		.4byte	0x10e5
@@ -3170,7 +3170,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2810 112f 09       		.byte	0x9
  2811 1130 00       		.byte	0
  2812 1131 2B       		.uleb128 0x2b
- 2813 1132 50100000 		.4byte	.LASF336
+ 2813 1132 86100000 		.4byte	.LASF336
  2814 1136 17       		.byte	0x17
  2815 1137 0D       		.byte	0xd
  2816 1138 21110000 		.4byte	0x1121
@@ -3178,10 +3178,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2818 113d 03       		.byte	0x3
  2819 113e 00000000 		.4byte	numerators
  2820 1142 2B       		.uleb128 0x2b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 54
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 54
 
 
- 2821 1143 98180000 		.4byte	.LASF337
+ 2821 1143 9D180000 		.4byte	.LASF337
  2822 1147 17       		.byte	0x17
  2823 1148 0E       		.byte	0xe
  2824 1149 21110000 		.4byte	0x1121
@@ -3189,8 +3189,8 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2826 114e 03       		.byte	0x3
  2827 114f 00000000 		.4byte	denominators
  2828 1153 2C       		.uleb128 0x2c
- 2829 1154 791B0000 		.4byte	.LASF343
- 2830 1158 791B0000 		.4byte	.LASF343
+ 2829 1154 7E1B0000 		.4byte	.LASF343
+ 2830 1158 7E1B0000 		.4byte	.LASF343
  2831 115c 18       		.byte	0x18
  2832 115d 64       		.byte	0x64
  2833 115e 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2875 0027 49       		.uleb128 0x49
  2876 0028 13       		.uleb128 0x13
  2877 0029 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 55
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 55
 
 
  2878 002a 00       		.byte	0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2932 0060 09       		.uleb128 0x9
  2933 0061 0D       		.uleb128 0xd
  2934 0062 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 56
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 56
 
 
  2935 0063 03       		.uleb128 0x3
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  2989 0099 0E       		.uleb128 0xe
  2990 009a 05       		.uleb128 0x5
  2991 009b 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 57
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 57
 
 
  2992 009c 49       		.uleb128 0x49
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3046 00d2 13       		.uleb128 0x13
  3047 00d3 26       		.uleb128 0x26
  3048 00d4 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 58
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 58
 
 
  3049 00d5 49       		.uleb128 0x49
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3103 010b 03       		.uleb128 0x3
  3104 010c 0E       		.uleb128 0xe
  3105 010d 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 59
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 59
 
 
  3106 010e 0B       		.uleb128 0xb
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3160 0145 3A       		.uleb128 0x3a
  3161 0146 0B       		.uleb128 0xb
  3162 0147 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 60
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 60
 
 
  3163 0148 0B       		.uleb128 0xb
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3217 017f 3B       		.uleb128 0x3b
  3218 0180 0B       		.uleb128 0xb
  3219 0181 49       		.uleb128 0x49
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 61
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 61
 
 
  3220 0182 13       		.uleb128 0x13
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3274 01b9 0B       		.uleb128 0xb
  3275 01ba 49       		.uleb128 0x49
  3276 01bb 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 62
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 62
 
 
  3277 01bc 02       		.uleb128 0x2
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3331 01f7 9142     		.uleb128 0x2111
  3332 01f9 18       		.uleb128 0x18
  3333 01fa 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 63
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 63
 
 
  3334 01fb 00       		.byte	0
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3388 0233 49       		.uleb128 0x49
  3389 0234 13       		.uleb128 0x13
  3390 0235 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 64
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 64
 
 
  3391 0236 19       		.uleb128 0x19
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3445 0018 0A00     		.2byte	0xa
  3446 001a 03       		.byte	0x3
  3447 001b 00000000 		.4byte	job_queue
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 65
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 65
 
 
  3448 001f 06       		.byte	0x6
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3502 0082 48       		.byte	0x48
  3503 0083 24       		.byte	0x24
  3504 0084 30       		.byte	0x30
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 66
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 66
 
 
  3505 0085 2E       		.byte	0x2e
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3559 00f7 F3       		.byte	0xf3
  3560 00f8 01       		.uleb128 0x1
  3561 00f9 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 67
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 67
 
 
  3562 00fa 9F       		.byte	0x9f
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3616 0177 00       		.sleb128 0
  3617 0178 48       		.byte	0x48
  3618 0179 24       		.byte	0x24
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 68
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 68
 
 
  3619 017a 30       		.byte	0x30
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3673 01d1 1A       		.byte	0x1a
  3674 01d2 9F       		.byte	0x9f
  3675 01d3 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 69
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 69
 
 
  3676 01d7 00000000 		.4byte	0
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3730 0259 71       		.byte	0x71
  3731 025a 7F       		.sleb128 -1
  3732 025b 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 70
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 70
 
 
  3733 025c 76000000 		.4byte	.LVL23
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3787 02e0 00000000 		.4byte	0
  3788 02e4 00000000 		.4byte	0
  3789              	.LLST14:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 71
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 71
 
 
  3790 02e8 00000000 		.4byte	.LVL38
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3844 0369 F3       		.byte	0xf3
  3845 036a 01       		.uleb128 0x1
  3846 036b 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 72
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 72
 
 
  3847 036c 9F       		.byte	0x9f
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3901              	.LLST18:
  3902 03f1 28000000 		.4byte	.LVL42
  3903 03f5 48000000 		.4byte	.LVL45
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 73
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 73
 
 
  3904 03f9 0700     		.2byte	0x7
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  3958 0458 74       		.byte	0x74
  3959 0459 00       		.sleb128 0
  3960 045a 48       		.byte	0x48
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 74
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 74
 
 
  3961 045b 24       		.byte	0x24
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4015 04de 84000000 		.4byte	.LVL51
  4016 04e2 0300     		.2byte	0x3
  4017 04e4 71       		.byte	0x71
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 75
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 75
 
 
  4018 04e5 7F       		.sleb128 -1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4072 056d 0400     		.2byte	0x4
  4073 056f F3       		.byte	0xf3
  4074 0570 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 76
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 76
 
 
  4075 0571 51       		.byte	0x51
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4129 05f6 00000000 		.4byte	0
  4130              	.LLST33:
  4131 05fa 2A000000 		.4byte	.LVL82
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 77
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 77
 
 
  4132 05fe 2E000000 		.4byte	.LVL83
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4186 0020 64000000 		.4byte	.LBB7
  4187 0024 8E000000 		.4byte	.LBE7
  4188 0028 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 78
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 78
 
 
  4189 002c 00000000 		.4byte	0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4225              	.LASF244:
  4226 0069 43595F42 		.ascii	"CY_BLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
  4226      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 79
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 79
 
 
  4226      56545F47 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4246 016b 74785374 		.ascii	"txStatus\000"
  4246      61747573 
  4246      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 80
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 80
 
 
  4247              	.LASF184:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4267              	.LASF115:
  4268 025b 656E6162 		.ascii	"enableMutliProcessorMode\000"
  4268      6C654D75 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 81
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 81
 
 
  4268      746C6950 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4289              	.LASF57:
  4290 034d 43595F53 		.ascii	"CY_SCB_I2C_ACK\000"
  4290      43425F49 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 82
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 82
 
 
  4290      32435F41 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4310      41545443 
  4310      5F46494E 
  4311              	.LASF58:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 83
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 83
 
 
  4312 0439 43595F53 		.ascii	"CY_SCB_I2C_NAK\000"
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4331              	.LASF42:
  4332 0545 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config\000"
  4332      74635F74 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 84
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 84
 
 
  4332      6370776D 
@@ -5008,1564 +5008,1565 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 1
  4340      56545F47 
  4340      41545453 
  4340      5F575249 
- 4341              	.LASF77:
- 4342 05d8 736C6176 		.ascii	"slaveTxBufferIdx\000"
- 4342      65547842 
- 4342      75666665 
- 4342      72496478 
- 4342      00
- 4343              	.LASF236:
- 4344 05e9 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_BLOB_RSP\000"
- 4344      4C455F45 
- 4344      56545F47 
- 4344      41545443 
- 4344      5F524541 
- 4345              	.LASF87:
- 4346 0608 43595F53 		.ascii	"CY_SCB_UART_IRDA\000"
- 4346      43425F55 
- 4346      4152545F 
- 4346      49524441 
- 4346      00
- 4347              	.LASF12:
- 4348 0619 75696E74 		.ascii	"uint32_t\000"
- 4348      33325F74 
- 4348      00
- 4349              	.LASF271:
- 4350 0622 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
- 4350      4C455F43 
- 4350      4F4E4E5F 
- 4350      53544154 
- 4350      455F4449 
- 4351              	.LASF127:
- 4352 0641 72784669 		.ascii	"rxFifoTriggerLevel\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 85
+ 4341              	.LASF340:
+ 4342 05d8 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\Bike FSM_ne"
+ 4342      73657273 
+ 4342      5C73616C 
+ 4342      617A5C44 
+ 4342      65736B74 
+ 4343 0606 772E6379 		.ascii	"w.cydsn\000"
+ 4343      64736E00 
+ 4344              	.LASF77:
+ 4345 060e 736C6176 		.ascii	"slaveTxBufferIdx\000"
+ 4345      65547842 
+ 4345      75666665 
+ 4345      72496478 
+ 4345      00
+ 4346              	.LASF236:
+ 4347 061f 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 4347      4C455F45 
+ 4347      56545F47 
+ 4347      41545443 
+ 4347      5F524541 
+ 4348              	.LASF87:
+ 4349 063e 43595F53 		.ascii	"CY_SCB_UART_IRDA\000"
+ 4349      43425F55 
+ 4349      4152545F 
+ 4349      49524441 
+ 4349      00
+ 4350              	.LASF12:
+ 4351 064f 75696E74 		.ascii	"uint32_t\000"
+ 4351      33325F74 
+ 4351      00
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 85
 
 
- 4352      666F5472 
- 4352      69676765 
- 4352      724C6576 
- 4352      656C00
- 4353              	.LASF119:
- 4354 0654 69726461 		.ascii	"irdaInvertRx\000"
- 4354      496E7665 
- 4354      72745278 
- 4354      00
- 4355              	.LASF148:
- 4356 0661 43595F42 		.ascii	"CY_BLE_EVT_STACK_ON\000"
- 4356      4C455F45 
- 4356      56545F53 
- 4356      5441434B 
- 4356      5F4F4E00 
- 4357              	.LASF178:
- 4358 0675 43595F42 		.ascii	"CY_BLE_EVT_LL_CNTRL_PROC_PENDING_COMPLETE\000"
- 4358      4C455F45 
- 4358      56545F4C 
- 4358      4C5F434E 
- 4358      54524C5F 
- 4359              	.LASF255:
- 4360 069f 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_CONN_CNF\000"
- 4360      4C455F45 
- 4360      56545F4C 
- 4360      32434150 
- 4360      5F434246 
- 4361              	.LASF164:
- 4362 06be 43595F42 		.ascii	"CY_BLE_EVT_GET_PEER_RPA_COMPLETE\000"
- 4362      4C455F45 
- 4362      56545F47 
- 4362      45545F50 
- 4362      4545525F 
- 4363              	.LASF338:
- 4364 06df 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 4364      43313120 
- 4364      352E342E 
- 4364      31203230 
- 4364      31363036 
- 4365 0712 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
- 4365      20726576 
- 4365      6973696F 
- 4365      6E203233 
- 4365      37373135 
- 4366 0745 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
- 4366      67202D66 
- 4366      66756E63 
- 4366      74696F6E 
- 4366      2D736563 
- 4367              	.LASF146:
- 4368 0771 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
- 4368      74635F73 
- 4368      63625F75 
- 4368      6172745F 
- 4368      636F6E74 
- 4369              	.LASF301:
- 4370 078b 696E6465 		.ascii	"index\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 86
+ 4352              	.LASF271:
+ 4353 0658 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 4353      4C455F43 
+ 4353      4F4E4E5F 
+ 4353      53544154 
+ 4353      455F4449 
+ 4354              	.LASF127:
+ 4355 0677 72784669 		.ascii	"rxFifoTriggerLevel\000"
+ 4355      666F5472 
+ 4355      69676765 
+ 4355      724C6576 
+ 4355      656C00
+ 4356              	.LASF119:
+ 4357 068a 69726461 		.ascii	"irdaInvertRx\000"
+ 4357      496E7665 
+ 4357      72745278 
+ 4357      00
+ 4358              	.LASF148:
+ 4359 0697 43595F42 		.ascii	"CY_BLE_EVT_STACK_ON\000"
+ 4359      4C455F45 
+ 4359      56545F53 
+ 4359      5441434B 
+ 4359      5F4F4E00 
+ 4360              	.LASF178:
+ 4361 06ab 43595F42 		.ascii	"CY_BLE_EVT_LL_CNTRL_PROC_PENDING_COMPLETE\000"
+ 4361      4C455F45 
+ 4361      56545F4C 
+ 4361      4C5F434E 
+ 4361      54524C5F 
+ 4362              	.LASF255:
+ 4363 06d5 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 4363      4C455F45 
+ 4363      56545F4C 
+ 4363      32434150 
+ 4363      5F434246 
+ 4364              	.LASF164:
+ 4365 06f4 43595F42 		.ascii	"CY_BLE_EVT_GET_PEER_RPA_COMPLETE\000"
+ 4365      4C455F45 
+ 4365      56545F47 
+ 4365      45545F50 
+ 4365      4545525F 
+ 4366              	.LASF338:
+ 4367 0715 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 4367      43313120 
+ 4367      352E342E 
+ 4367      31203230 
+ 4367      31363036 
+ 4368 0748 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 4368      20726576 
+ 4368      6973696F 
+ 4368      6E203233 
+ 4368      37373135 
+ 4369 077b 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 4369      67202D66 
+ 4369      66756E63 
+ 4369      74696F6E 
+ 4369      2D736563 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 86
 
 
- 4370      7800
- 4371              	.LASF132:
- 4372 0791 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
- 4372      74635F73 
- 4372      63625F75 
- 4372      6172745F 
- 4372      636F6E74 
- 4373              	.LASF165:
- 4374 07a9 43595F42 		.ascii	"CY_BLE_EVT_GET_LOCAL_RPA_COMPLETE\000"
- 4374      4C455F45 
- 4374      56545F47 
- 4374      45545F4C 
- 4374      4F43414C 
- 4375              	.LASF33:
- 4376 07cb 72656C6F 		.ascii	"reloadInput\000"
- 4376      6164496E 
- 4376      70757400 
- 4377              	.LASF125:
- 4378 07d7 72747350 		.ascii	"rtsPolarity\000"
- 4378      6F6C6172 
- 4378      69747900 
- 4379              	.LASF298:
- 4380 07e3 72657375 		.ascii	"result\000"
- 4380      6C7400
- 4381              	.LASF215:
- 4382 07ea 43595F42 		.ascii	"CY_BLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
- 4382      4C455F45 
- 4382      56545F47 
- 4382      41505F45 
- 4382      4E48414E 
- 4383              	.LASF9:
- 4384 080f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4384      206C6F6E 
- 4384      6720756E 
- 4384      7369676E 
- 4384      65642069 
- 4385              	.LASF270:
- 4386 0826 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
- 4386      6E5F626C 
- 4386      655F6164 
- 4386      765F7374 
- 4386      6174655F 
- 4387              	.LASF182:
- 4388 083c 43595F42 		.ascii	"CY_BLE_EVT_GET_RSSI_COMPLETE\000"
- 4388      4C455F45 
- 4388      56545F47 
- 4388      45545F52 
- 4388      5353495F 
- 4389              	.LASF309:
- 4390 0859 44617461 		.ascii	"DataBuffer_QueryNextJob\000"
- 4390      42756666 
- 4390      65725F51 
- 4390      75657279 
- 4390      4E657874 
- 4391              	.LASF287:
- 4392 0871 414C5439 		.ascii	"ALT9ASLOT\000"
- 4392      41534C4F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 87
+ 4370              	.LASF146:
+ 4371 07a7 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ 4371      74635F73 
+ 4371      63625F75 
+ 4371      6172745F 
+ 4371      636F6E74 
+ 4372              	.LASF301:
+ 4373 07c1 696E6465 		.ascii	"index\000"
+ 4373      7800
+ 4374              	.LASF132:
+ 4375 07c7 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 4375      74635F73 
+ 4375      63625F75 
+ 4375      6172745F 
+ 4375      636F6E74 
+ 4376              	.LASF165:
+ 4377 07df 43595F42 		.ascii	"CY_BLE_EVT_GET_LOCAL_RPA_COMPLETE\000"
+ 4377      4C455F45 
+ 4377      56545F47 
+ 4377      45545F4C 
+ 4377      4F43414C 
+ 4378              	.LASF33:
+ 4379 0801 72656C6F 		.ascii	"reloadInput\000"
+ 4379      6164496E 
+ 4379      70757400 
+ 4380              	.LASF125:
+ 4381 080d 72747350 		.ascii	"rtsPolarity\000"
+ 4381      6F6C6172 
+ 4381      69747900 
+ 4382              	.LASF298:
+ 4383 0819 72657375 		.ascii	"result\000"
+ 4383      6C7400
+ 4384              	.LASF215:
+ 4385 0820 43595F42 		.ascii	"CY_BLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 4385      4C455F45 
+ 4385      56545F47 
+ 4385      41505F45 
+ 4385      4E48414E 
+ 4386              	.LASF9:
+ 4387 0845 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4387      206C6F6E 
+ 4387      6720756E 
+ 4387      7369676E 
+ 4387      65642069 
+ 4388              	.LASF270:
+ 4389 085c 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 4389      6E5F626C 
+ 4389      655F6164 
+ 4389      765F7374 
+ 4389      6174655F 
+ 4390              	.LASF182:
+ 4391 0872 43595F42 		.ascii	"CY_BLE_EVT_GET_RSSI_COMPLETE\000"
+ 4391      4C455F45 
+ 4391      56545F47 
+ 4391      45545F52 
+ 4391      5353495F 
+ 4392              	.LASF309:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 87
 
 
- 4392      5400
- 4393              	.LASF102:
- 4394 087b 43595F53 		.ascii	"CY_SCB_UART_ACTIVE_HIGH\000"
- 4394      43425F55 
- 4394      4152545F 
- 4394      41435449 
- 4394      56455F48 
- 4395              	.LASF47:
- 4396 0893 70657269 		.ascii	"period1\000"
- 4396      6F643100 
- 4397              	.LASF267:
- 4398 089b 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
- 4398      4C455F41 
- 4398      44565F53 
- 4398      54415445 
- 4398      5F414456 
- 4399              	.LASF76:
- 4400 08ba 736C6176 		.ascii	"slaveTxBufferSize\000"
- 4400      65547842 
- 4400      75666665 
- 4400      7253697A 
- 4400      6500
- 4401              	.LASF208:
- 4402 08cc 43595F42 		.ascii	"CY_BLE_EVT_GAP_ENCRYPT_CHANGE\000"
- 4402      4C455F45 
- 4402      56545F47 
- 4402      41505F45 
- 4402      4E435259 
- 4403              	.LASF74:
- 4404 08ea 736C6176 		.ascii	"slaveRdBufEmpty\000"
- 4404      65526442 
- 4404      7566456D 
- 4404      70747900 
- 4405              	.LASF180:
- 4406 08fa 43595F42 		.ascii	"CY_BLE_EVT_SET_DEVICE_ADDR_COMPLETE\000"
- 4406      4C455F45 
- 4406      56545F53 
- 4406      45545F44 
- 4406      45564943 
- 4407              	.LASF264:
- 4408 091e 61747449 		.ascii	"attId\000"
- 4408      6400
- 4409              	.LASF34:
- 4410 0924 73746172 		.ascii	"startInputMode\000"
- 4410      74496E70 
- 4410      75744D6F 
- 4410      646500
- 4411              	.LASF30:
- 4412 0933 63617074 		.ascii	"captureInputMode\000"
- 4412      75726549 
- 4412      6E707574 
- 4412      4D6F6465 
- 4412      00
- 4413              	.LASF281:
- 4414 0944 47595232 		.ascii	"GYR20SLOT\000"
- 4414      30534C4F 
- 4414      5400
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 88
+ 4393 088f 44617461 		.ascii	"DataBuffer_QueryNextJob\000"
+ 4393      42756666 
+ 4393      65725F51 
+ 4393      75657279 
+ 4393      4E657874 
+ 4394              	.LASF287:
+ 4395 08a7 414C5439 		.ascii	"ALT9ASLOT\000"
+ 4395      41534C4F 
+ 4395      5400
+ 4396              	.LASF102:
+ 4397 08b1 43595F53 		.ascii	"CY_SCB_UART_ACTIVE_HIGH\000"
+ 4397      43425F55 
+ 4397      4152545F 
+ 4397      41435449 
+ 4397      56455F48 
+ 4398              	.LASF47:
+ 4399 08c9 70657269 		.ascii	"period1\000"
+ 4399      6F643100 
+ 4400              	.LASF267:
+ 4401 08d1 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 4401      4C455F41 
+ 4401      44565F53 
+ 4401      54415445 
+ 4401      5F414456 
+ 4402              	.LASF76:
+ 4403 08f0 736C6176 		.ascii	"slaveTxBufferSize\000"
+ 4403      65547842 
+ 4403      75666665 
+ 4403      7253697A 
+ 4403      6500
+ 4404              	.LASF208:
+ 4405 0902 43595F42 		.ascii	"CY_BLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 4405      4C455F45 
+ 4405      56545F47 
+ 4405      41505F45 
+ 4405      4E435259 
+ 4406              	.LASF74:
+ 4407 0920 736C6176 		.ascii	"slaveRdBufEmpty\000"
+ 4407      65526442 
+ 4407      7566456D 
+ 4407      70747900 
+ 4408              	.LASF180:
+ 4409 0930 43595F42 		.ascii	"CY_BLE_EVT_SET_DEVICE_ADDR_COMPLETE\000"
+ 4409      4C455F45 
+ 4409      56545F53 
+ 4409      45545F44 
+ 4409      45564943 
+ 4410              	.LASF264:
+ 4411 0954 61747449 		.ascii	"attId\000"
+ 4411      6400
+ 4412              	.LASF34:
+ 4413 095a 73746172 		.ascii	"startInputMode\000"
+ 4413      74496E70 
+ 4413      75744D6F 
+ 4413      646500
+ 4414              	.LASF30:
+ 4415 0969 63617074 		.ascii	"captureInputMode\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 88
 
 
- 4415              	.LASF291:
- 4416 094e 42544D31 		.ascii	"BTM17SLOT\000"
- 4416      37534C4F 
- 4416      5400
- 4417              	.LASF316:
- 4418 0958 6A6F6273 		.ascii	"jobs\000"
- 4418      00
- 4419              	.LASF173:
- 4420 095d 43595F42 		.ascii	"CY_BLE_EVT_GET_PHY_COMPLETE\000"
- 4420      4C455F45 
- 4420      56545F47 
- 4420      45545F50 
- 4420      48595F43 
- 4421              	.LASF106:
- 4422 0979 75617274 		.ascii	"uartMode\000"
- 4422      4D6F6465 
- 4422      00
- 4423              	.LASF134:
- 4424 0982 72785374 		.ascii	"rxStatus\000"
- 4424      61747573 
- 4424      00
- 4425              	.LASF139:
- 4426 098b 72784275 		.ascii	"rxBuf\000"
- 4426      6600
- 4427              	.LASF206:
- 4428 0991 43595F42 		.ascii	"CY_BLE_EVT_GAP_DEVICE_CONNECTED\000"
- 4428      4C455F45 
- 4428      56545F47 
- 4428      41505F44 
- 4428      45564943 
- 4429              	.LASF103:
- 4430 09b1 63795F65 		.ascii	"cy_en_scb_uart_polarity_t\000"
- 4430      6E5F7363 
- 4430      625F7561 
- 4430      72745F70 
- 4430      6F6C6172 
- 4431              	.LASF241:
- 4432 09cb 43595F42 		.ascii	"CY_BLE_EVT_GATTS_PREP_WRITE_REQ\000"
- 4432      4C455F45 
- 4432      56545F47 
- 4432      41545453 
- 4432      5F505245 
- 4433              	.LASF282:
- 4434 09eb 41434331 		.ascii	"ACC1ESLOT\000"
- 4434      45534C4F 
- 4434      5400
- 4435              	.LASF118:
- 4436 09f5 61636365 		.ascii	"acceptAddrInFifo\000"
- 4436      70744164 
- 4436      6472496E 
- 4436      4669666F 
- 4436      00
- 4437              	.LASF92:
- 4438 0a06 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_2_5\000"
- 4438      43425F55 
- 4438      4152545F 
- 4438      53544F50 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 89
+ 4415      75726549 
+ 4415      6E707574 
+ 4415      4D6F6465 
+ 4415      00
+ 4416              	.LASF281:
+ 4417 097a 47595232 		.ascii	"GYR20SLOT\000"
+ 4417      30534C4F 
+ 4417      5400
+ 4418              	.LASF291:
+ 4419 0984 42544D31 		.ascii	"BTM17SLOT\000"
+ 4419      37534C4F 
+ 4419      5400
+ 4420              	.LASF316:
+ 4421 098e 6A6F6273 		.ascii	"jobs\000"
+ 4421      00
+ 4422              	.LASF173:
+ 4423 0993 43595F42 		.ascii	"CY_BLE_EVT_GET_PHY_COMPLETE\000"
+ 4423      4C455F45 
+ 4423      56545F47 
+ 4423      45545F50 
+ 4423      48595F43 
+ 4424              	.LASF106:
+ 4425 09af 75617274 		.ascii	"uartMode\000"
+ 4425      4D6F6465 
+ 4425      00
+ 4426              	.LASF134:
+ 4427 09b8 72785374 		.ascii	"rxStatus\000"
+ 4427      61747573 
+ 4427      00
+ 4428              	.LASF139:
+ 4429 09c1 72784275 		.ascii	"rxBuf\000"
+ 4429      6600
+ 4430              	.LASF206:
+ 4431 09c7 43595F42 		.ascii	"CY_BLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 4431      4C455F45 
+ 4431      56545F47 
+ 4431      41505F44 
+ 4431      45564943 
+ 4432              	.LASF103:
+ 4433 09e7 63795F65 		.ascii	"cy_en_scb_uart_polarity_t\000"
+ 4433      6E5F7363 
+ 4433      625F7561 
+ 4433      72745F70 
+ 4433      6F6C6172 
+ 4434              	.LASF241:
+ 4435 0a01 43595F42 		.ascii	"CY_BLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 4435      4C455F45 
+ 4435      56545F47 
+ 4435      41545453 
+ 4435      5F505245 
+ 4436              	.LASF282:
+ 4437 0a21 41434331 		.ascii	"ACC1ESLOT\000"
+ 4437      45534C4F 
+ 4437      5400
+ 4438              	.LASF118:
+ 4439 0a2b 61636365 		.ascii	"acceptAddrInFifo\000"
+ 4439      70744164 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 89
 
 
- 4438      5F424954 
- 4439              	.LASF86:
- 4440 0a20 43595F53 		.ascii	"CY_SCB_UART_SMARTCARD\000"
- 4440      43425F55 
- 4440      4152545F 
- 4440      534D4152 
- 4440      54434152 
- 4441              	.LASF82:
- 4442 0a36 63624576 		.ascii	"cbEvents\000"
- 4442      656E7473 
- 4442      00
- 4443              	.LASF122:
- 4444 0a3f 656E6162 		.ascii	"enableCts\000"
- 4444      6C654374 
- 4444      7300
- 4445              	.LASF299:
- 4446 0a49 62756666 		.ascii	"buffer_ptr\000"
- 4446      65725F70 
- 4446      747200
- 4447              	.LASF262:
- 4448 0a54 43595F42 		.ascii	"CY_BLE_EVT_MAX\000"
- 4448      4C455F45 
- 4448      56545F4D 
- 4448      415800
- 4449              	.LASF257:
- 4450 0a63 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
- 4450      4C455F45 
- 4450      56545F4C 
- 4450      32434150 
- 4450      5F434246 
- 4451              	.LASF63:
- 4452 0a85 75736552 		.ascii	"useRxFifo\000"
- 4452      78466966 
- 4452      6F00
- 4453              	.LASF187:
- 4454 0a8f 43595F42 		.ascii	"CY_BLE_EVT_RANDOM_NUM_GEN_COMPLETE\000"
- 4454      4C455F45 
- 4454      56545F52 
- 4454      414E444F 
- 4454      4D5F4E55 
- 4455              	.LASF268:
- 4456 0ab2 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
- 4456      4C455F41 
- 4456      44565F53 
- 4456      54415445 
- 4456      5F414456 
- 4457              	.LASF217:
- 4458 0acf 43595F42 		.ascii	"CY_BLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
- 4458      4C455F45 
- 4458      56545F47 
- 4458      41505F53 
- 4458      4D505F4E 
- 4459              	.LASF160:
- 4460 0af7 43595F42 		.ascii	"CY_BLE_EVT_SET_DATA_LENGTH_COMPLETE\000"
- 4460      4C455F45 
- 4460      56545F53 
- 4460      45545F44 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 90
+ 4439      6472496E 
+ 4439      4669666F 
+ 4439      00
+ 4440              	.LASF92:
+ 4441 0a3c 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_2_5\000"
+ 4441      43425F55 
+ 4441      4152545F 
+ 4441      53544F50 
+ 4441      5F424954 
+ 4442              	.LASF86:
+ 4443 0a56 43595F53 		.ascii	"CY_SCB_UART_SMARTCARD\000"
+ 4443      43425F55 
+ 4443      4152545F 
+ 4443      534D4152 
+ 4443      54434152 
+ 4444              	.LASF82:
+ 4445 0a6c 63624576 		.ascii	"cbEvents\000"
+ 4445      656E7473 
+ 4445      00
+ 4446              	.LASF122:
+ 4447 0a75 656E6162 		.ascii	"enableCts\000"
+ 4447      6C654374 
+ 4447      7300
+ 4448              	.LASF299:
+ 4449 0a7f 62756666 		.ascii	"buffer_ptr\000"
+ 4449      65725F70 
+ 4449      747200
+ 4450              	.LASF262:
+ 4451 0a8a 43595F42 		.ascii	"CY_BLE_EVT_MAX\000"
+ 4451      4C455F45 
+ 4451      56545F4D 
+ 4451      415800
+ 4452              	.LASF257:
+ 4453 0a99 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 4453      4C455F45 
+ 4453      56545F4C 
+ 4453      32434150 
+ 4453      5F434246 
+ 4454              	.LASF63:
+ 4455 0abb 75736552 		.ascii	"useRxFifo\000"
+ 4455      78466966 
+ 4455      6F00
+ 4456              	.LASF187:
+ 4457 0ac5 43595F42 		.ascii	"CY_BLE_EVT_RANDOM_NUM_GEN_COMPLETE\000"
+ 4457      4C455F45 
+ 4457      56545F52 
+ 4457      414E444F 
+ 4457      4D5F4E55 
+ 4458              	.LASF268:
+ 4459 0ae8 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 4459      4C455F41 
+ 4459      44565F53 
+ 4459      54415445 
+ 4459      5F414456 
+ 4460              	.LASF217:
+ 4461 0b05 43595F42 		.ascii	"CY_BLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
+ 4461      4C455F45 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 90
 
 
- 4460      4154415F 
- 4461              	.LASF44:
- 4462 0b1b 70776D41 		.ascii	"pwmAlignment\000"
- 4462      6C69676E 
- 4462      6D656E74 
- 4462      00
- 4463              	.LASF239:
- 4464 0b28 43595F42 		.ascii	"CY_BLE_EVT_GATTC_WRITE_RSP\000"
- 4464      4C455F45 
- 4464      56545F47 
- 4464      41545443 
- 4464      5F575249 
- 4465              	.LASF100:
- 4466 0b43 63795F65 		.ascii	"cy_en_scb_uart_parity_t\000"
- 4466      6E5F7363 
- 4466      625F7561 
- 4466      72745F70 
- 4466      61726974 
- 4467              	.LASF330:
- 4468 0b5b 4C696768 		.ascii	"LightTimer_config\000"
- 4468      7454696D 
- 4468      65725F63 
- 4468      6F6E6669 
- 4468      6700
- 4469              	.LASF150:
- 4470 0b6d 43595F42 		.ascii	"CY_BLE_EVT_STACK_BUSY_STATUS\000"
- 4470      4C455F45 
- 4470      56545F53 
- 4470      5441434B 
- 4470      5F425553 
- 4471              	.LASF253:
- 4472 0b8a 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_COMMAND_REJ\000"
- 4472      4C455F45 
- 4472      56545F4C 
- 4472      32434150 
- 4472      5F434F4D 
- 4473              	.LASF157:
- 4474 0ba7 43595F42 		.ascii	"CY_BLE_EVT_GET_CHANNEL_MAP_COMPLETE\000"
- 4474      4C455F45 
- 4474      56545F47 
- 4474      45545F43 
- 4474      48414E4E 
- 4475              	.LASF151:
- 4476 0bcb 43595F42 		.ascii	"CY_BLE_EVT_MEMORY_REQUEST\000"
- 4476      4C455F45 
- 4476      56545F4D 
- 4476      454D4F52 
- 4476      595F5245 
- 4477              	.LASF198:
- 4478 0be5 43595F42 		.ascii	"CY_BLE_EVT_SET_CONN_PRIORITY_COMPLETE\000"
- 4478      4C455F45 
- 4478      56545F53 
- 4478      45545F43 
- 4478      4F4E4E5F 
- 4479              	.LASF72:
- 4480 0c0b 6D617374 		.ascii	"masterNumBytes\000"
- 4480      65724E75 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 91
+ 4461      56545F47 
+ 4461      41505F53 
+ 4461      4D505F4E 
+ 4462              	.LASF160:
+ 4463 0b2d 43595F42 		.ascii	"CY_BLE_EVT_SET_DATA_LENGTH_COMPLETE\000"
+ 4463      4C455F45 
+ 4463      56545F53 
+ 4463      45545F44 
+ 4463      4154415F 
+ 4464              	.LASF44:
+ 4465 0b51 70776D41 		.ascii	"pwmAlignment\000"
+ 4465      6C69676E 
+ 4465      6D656E74 
+ 4465      00
+ 4466              	.LASF239:
+ 4467 0b5e 43595F42 		.ascii	"CY_BLE_EVT_GATTC_WRITE_RSP\000"
+ 4467      4C455F45 
+ 4467      56545F47 
+ 4467      41545443 
+ 4467      5F575249 
+ 4468              	.LASF100:
+ 4469 0b79 63795F65 		.ascii	"cy_en_scb_uart_parity_t\000"
+ 4469      6E5F7363 
+ 4469      625F7561 
+ 4469      72745F70 
+ 4469      61726974 
+ 4470              	.LASF330:
+ 4471 0b91 4C696768 		.ascii	"LightTimer_config\000"
+ 4471      7454696D 
+ 4471      65725F63 
+ 4471      6F6E6669 
+ 4471      6700
+ 4472              	.LASF150:
+ 4473 0ba3 43595F42 		.ascii	"CY_BLE_EVT_STACK_BUSY_STATUS\000"
+ 4473      4C455F45 
+ 4473      56545F53 
+ 4473      5441434B 
+ 4473      5F425553 
+ 4474              	.LASF253:
+ 4475 0bc0 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_COMMAND_REJ\000"
+ 4475      4C455F45 
+ 4475      56545F4C 
+ 4475      32434150 
+ 4475      5F434F4D 
+ 4476              	.LASF157:
+ 4477 0bdd 43595F42 		.ascii	"CY_BLE_EVT_GET_CHANNEL_MAP_COMPLETE\000"
+ 4477      4C455F45 
+ 4477      56545F47 
+ 4477      45545F43 
+ 4477      48414E4E 
+ 4478              	.LASF151:
+ 4479 0c01 43595F42 		.ascii	"CY_BLE_EVT_MEMORY_REQUEST\000"
+ 4479      4C455F45 
+ 4479      56545F4D 
+ 4479      454D4F52 
+ 4479      595F5245 
+ 4480              	.LASF198:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 91
 
 
- 4480      6D427974 
- 4480      657300
- 4481              	.LASF269:
- 4482 0c1a 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
- 4482      4C455F41 
- 4482      44565F53 
- 4482      54415445 
- 4482      5F53544F 
- 4483              	.LASF276:
- 4484 0c3a 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
- 4484      4C455F43 
- 4484      4F4E4E5F 
- 4484      53544154 
- 4484      455F434C 
- 4485              	.LASF31:
- 4486 0c64 63617074 		.ascii	"captureInput\000"
- 4486      75726549 
- 4486      6E707574 
- 4486      00
- 4487              	.LASF15:
- 4488 0c71 63686172 		.ascii	"char\000"
- 4488      00
- 4489              	.LASF189:
- 4490 0c76 43595F42 		.ascii	"CY_BLE_EVT_AES_CCM_ENCRYPT_COMPLETE\000"
- 4490      4C455F45 
- 4490      56545F41 
- 4490      45535F43 
- 4490      434D5F45 
- 4491              	.LASF210:
- 4492 0c9a 43595F42 		.ascii	"CY_BLE_EVT_GAPC_SCAN_START_STOP\000"
- 4492      4C455F45 
- 4492      56545F47 
- 4492      4150435F 
- 4492      5343414E 
- 4493              	.LASF214:
- 4494 0cba 43595F42 		.ascii	"CY_BLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
- 4494      4C455F45 
- 4494      56545F47 
- 4494      41505F4F 
- 4494      4F425F47 
- 4495              	.LASF138:
- 4496 0ce4 72785269 		.ascii	"rxRingBufTail\000"
- 4496      6E674275 
- 4496      66546169 
- 4496      6C00
- 4497              	.LASF116:
- 4498 0cf2 72656365 		.ascii	"receiverAddress\000"
- 4498      69766572 
- 4498      41646472 
- 4498      65737300 
- 4499              	.LASF126:
- 4500 0d02 62726561 		.ascii	"breakWidth\000"
- 4500      6B576964 
- 4500      746800
- 4501              	.LASF70:
- 4502 0d0d 6D617374 		.ascii	"masterBufferSize\000"
- 4502      65724275 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 92
+ 4481 0c1b 43595F42 		.ascii	"CY_BLE_EVT_SET_CONN_PRIORITY_COMPLETE\000"
+ 4481      4C455F45 
+ 4481      56545F53 
+ 4481      45545F43 
+ 4481      4F4E4E5F 
+ 4482              	.LASF72:
+ 4483 0c41 6D617374 		.ascii	"masterNumBytes\000"
+ 4483      65724E75 
+ 4483      6D427974 
+ 4483      657300
+ 4484              	.LASF269:
+ 4485 0c50 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 4485      4C455F41 
+ 4485      44565F53 
+ 4485      54415445 
+ 4485      5F53544F 
+ 4486              	.LASF276:
+ 4487 0c70 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 4487      4C455F43 
+ 4487      4F4E4E5F 
+ 4487      53544154 
+ 4487      455F434C 
+ 4488              	.LASF31:
+ 4489 0c9a 63617074 		.ascii	"captureInput\000"
+ 4489      75726549 
+ 4489      6E707574 
+ 4489      00
+ 4490              	.LASF15:
+ 4491 0ca7 63686172 		.ascii	"char\000"
+ 4491      00
+ 4492              	.LASF189:
+ 4493 0cac 43595F42 		.ascii	"CY_BLE_EVT_AES_CCM_ENCRYPT_COMPLETE\000"
+ 4493      4C455F45 
+ 4493      56545F41 
+ 4493      45535F43 
+ 4493      434D5F45 
+ 4494              	.LASF210:
+ 4495 0cd0 43595F42 		.ascii	"CY_BLE_EVT_GAPC_SCAN_START_STOP\000"
+ 4495      4C455F45 
+ 4495      56545F47 
+ 4495      4150435F 
+ 4495      5343414E 
+ 4496              	.LASF214:
+ 4497 0cf0 43595F42 		.ascii	"CY_BLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
+ 4497      4C455F45 
+ 4497      56545F47 
+ 4497      41505F4F 
+ 4497      4F425F47 
+ 4498              	.LASF138:
+ 4499 0d1a 72785269 		.ascii	"rxRingBufTail\000"
+ 4499      6E674275 
+ 4499      66546169 
+ 4499      6C00
+ 4500              	.LASF116:
+ 4501 0d28 72656365 		.ascii	"receiverAddress\000"
+ 4501      69766572 
+ 4501      41646472 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 92
 
 
- 4502      66666572 
- 4502      53697A65 
- 4502      00
- 4503              	.LASF232:
- 4504 0d1e 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
- 4504      4C455F45 
- 4504      56545F47 
- 4504      41545443 
- 4504      5F524541 
- 4505              	.LASF22:
- 4506 0d40 636C6F63 		.ascii	"clockPrescaler\000"
- 4506      6B507265 
- 4506      7363616C 
- 4506      657200
- 4507              	.LASF302:
- 4508 0d4f 44617461 		.ascii	"DataBuffer_OpenWriteSlot\000"
- 4508      42756666 
- 4508      65725F4F 
- 4508      70656E57 
- 4508      72697465 
- 4509              	.LASF168:
- 4510 0d68 43595F42 		.ascii	"CY_BLE_EVT_SET_HOST_CHANNEL_COMPLETE\000"
- 4510      4C455F45 
- 4510      56545F53 
- 4510      45545F48 
- 4510      4F53545F 
- 4511              	.LASF117:
- 4512 0d8d 72656365 		.ascii	"receiverAddressMask\000"
- 4512      69766572 
- 4512      41646472 
- 4512      6573734D 
- 4512      61736B00 
- 4513              	.LASF141:
- 4514 0da1 72784275 		.ascii	"rxBufIdx\000"
- 4514      66496478 
- 4514      00
- 4515              	.LASF212:
- 4516 0daa 43595F42 		.ascii	"CY_BLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
- 4516      4C455F45 
- 4516      56545F47 
- 4516      41505F4E 
- 4516      554D4552 
- 4517              	.LASF145:
- 4518 0dd4 696E6974 		.ascii	"initKey\000"
- 4518      4B657900 
- 4519              	.LASF288:
- 4520 0ddc 434C5238 		.ascii	"CLR8ZSLOT\000"
- 4520      5A534C4F 
- 4520      5400
- 4521              	.LASF11:
- 4522 0de6 75696E74 		.ascii	"uint8_t\000"
- 4522      385F7400 
- 4523              	.LASF292:
- 4524 0dee 73746174 		.ascii	"status\000"
- 4524      757300
- 4525              	.LASF293:
- 4526 0df5 6C6F636B 		.ascii	"locked\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 93
+ 4501      65737300 
+ 4502              	.LASF126:
+ 4503 0d38 62726561 		.ascii	"breakWidth\000"
+ 4503      6B576964 
+ 4503      746800
+ 4504              	.LASF70:
+ 4505 0d43 6D617374 		.ascii	"masterBufferSize\000"
+ 4505      65724275 
+ 4505      66666572 
+ 4505      53697A65 
+ 4505      00
+ 4506              	.LASF232:
+ 4507 0d54 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 4507      4C455F45 
+ 4507      56545F47 
+ 4507      41545443 
+ 4507      5F524541 
+ 4508              	.LASF22:
+ 4509 0d76 636C6F63 		.ascii	"clockPrescaler\000"
+ 4509      6B507265 
+ 4509      7363616C 
+ 4509      657200
+ 4510              	.LASF302:
+ 4511 0d85 44617461 		.ascii	"DataBuffer_OpenWriteSlot\000"
+ 4511      42756666 
+ 4511      65725F4F 
+ 4511      70656E57 
+ 4511      72697465 
+ 4512              	.LASF168:
+ 4513 0d9e 43595F42 		.ascii	"CY_BLE_EVT_SET_HOST_CHANNEL_COMPLETE\000"
+ 4513      4C455F45 
+ 4513      56545F53 
+ 4513      45545F48 
+ 4513      4F53545F 
+ 4514              	.LASF117:
+ 4515 0dc3 72656365 		.ascii	"receiverAddressMask\000"
+ 4515      69766572 
+ 4515      41646472 
+ 4515      6573734D 
+ 4515      61736B00 
+ 4516              	.LASF141:
+ 4517 0dd7 72784275 		.ascii	"rxBufIdx\000"
+ 4517      66496478 
+ 4517      00
+ 4518              	.LASF212:
+ 4519 0de0 43595F42 		.ascii	"CY_BLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
+ 4519      4C455F45 
+ 4519      56545F47 
+ 4519      41505F4E 
+ 4519      554D4552 
+ 4520              	.LASF145:
+ 4521 0e0a 696E6974 		.ascii	"initKey\000"
+ 4521      4B657900 
+ 4522              	.LASF288:
+ 4523 0e12 434C5238 		.ascii	"CLR8ZSLOT\000"
+ 4523      5A534C4F 
+ 4523      5400
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 93
 
 
- 4526      656400
- 4527              	.LASF191:
- 4528 0dfc 43595F42 		.ascii	"CY_BLE_EVT_SET_SLAVE_LATENCY_MODE_COMPLETE\000"
- 4528      4C455F45 
- 4528      56545F53 
- 4528      45545F53 
- 4528      4C415645 
- 4529              	.LASF78:
- 4530 0e27 736C6176 		.ascii	"slaveTxBufferCnt\000"
- 4530      65547842 
- 4530      75666665 
- 4530      72436E74 
- 4530      00
- 4531              	.LASF203:
- 4532 0e38 43595F42 		.ascii	"CY_BLE_EVT_GAP_AUTH_COMPLETE\000"
- 4532      4C455F45 
- 4532      56545F47 
- 4532      41505F41 
- 4532      5554485F 
- 4533              	.LASF174:
- 4534 0e55 43595F42 		.ascii	"CY_BLE_EVT_SET_DEFAULT_PHY_COMPLETE\000"
- 4534      4C455F45 
- 4534      56545F53 
- 4534      45545F44 
- 4534      45464155 
- 4535              	.LASF321:
- 4536 0e79 63795F62 		.ascii	"cy_ble_advState\000"
- 4536      6C655F61 
- 4536      64765374 
- 4536      61746500 
- 4537              	.LASF104:
- 4538 0e89 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
- 4538      625F7363 
- 4538      625F7561 
- 4538      72745F68 
- 4538      616E646C 
- 4539              	.LASF279:
- 4540 0ea8 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
- 4540      6E5F626C 
- 4540      655F636F 
- 4540      6E6E5F73 
- 4540      74617465 
- 4541              	.LASF121:
- 4542 0ebf 736D6172 		.ascii	"smartCardRetryOnNack\000"
- 4542      74436172 
- 4542      64526574 
- 4542      72794F6E 
- 4542      4E61636B 
- 4543              	.LASF197:
- 4544 0ed4 43595F42 		.ascii	"CY_BLE_EVT_SET_CE_LENGTH_COMPLETE\000"
- 4544      4C455F45 
- 4544      56545F53 
- 4544      45545F43 
- 4544      455F4C45 
- 4545              	.LASF196:
- 4546 0ef6 43595F42 		.ascii	"CY_BLE_EVT_SET_EVENT_MASK_COMPLETE\000"
- 4546      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 94
+ 4524              	.LASF11:
+ 4525 0e1c 75696E74 		.ascii	"uint8_t\000"
+ 4525      385F7400 
+ 4526              	.LASF292:
+ 4527 0e24 73746174 		.ascii	"status\000"
+ 4527      757300
+ 4528              	.LASF293:
+ 4529 0e2b 6C6F636B 		.ascii	"locked\000"
+ 4529      656400
+ 4530              	.LASF191:
+ 4531 0e32 43595F42 		.ascii	"CY_BLE_EVT_SET_SLAVE_LATENCY_MODE_COMPLETE\000"
+ 4531      4C455F45 
+ 4531      56545F53 
+ 4531      45545F53 
+ 4531      4C415645 
+ 4532              	.LASF78:
+ 4533 0e5d 736C6176 		.ascii	"slaveTxBufferCnt\000"
+ 4533      65547842 
+ 4533      75666665 
+ 4533      72436E74 
+ 4533      00
+ 4534              	.LASF203:
+ 4535 0e6e 43595F42 		.ascii	"CY_BLE_EVT_GAP_AUTH_COMPLETE\000"
+ 4535      4C455F45 
+ 4535      56545F47 
+ 4535      41505F41 
+ 4535      5554485F 
+ 4536              	.LASF174:
+ 4537 0e8b 43595F42 		.ascii	"CY_BLE_EVT_SET_DEFAULT_PHY_COMPLETE\000"
+ 4537      4C455F45 
+ 4537      56545F53 
+ 4537      45545F44 
+ 4537      45464155 
+ 4538              	.LASF321:
+ 4539 0eaf 63795F62 		.ascii	"cy_ble_advState\000"
+ 4539      6C655F61 
+ 4539      64765374 
+ 4539      61746500 
+ 4540              	.LASF104:
+ 4541 0ebf 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 4541      625F7363 
+ 4541      625F7561 
+ 4541      72745F68 
+ 4541      616E646C 
+ 4542              	.LASF279:
+ 4543 0ede 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 4543      6E5F626C 
+ 4543      655F636F 
+ 4543      6E6E5F73 
+ 4543      74617465 
+ 4544              	.LASF121:
+ 4545 0ef5 736D6172 		.ascii	"smartCardRetryOnNack\000"
+ 4545      74436172 
+ 4545      64526574 
+ 4545      72794F6E 
+ 4545      4E61636B 
+ 4546              	.LASF197:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 94
 
 
- 4546      56545F53 
- 4546      45545F45 
- 4546      56454E54 
- 4547              	.LASF113:
- 4548 0f19 64726F70 		.ascii	"dropOnParityError\000"
- 4548      4F6E5061 
- 4548      72697479 
- 4548      4572726F 
- 4548      7200
- 4549              	.LASF105:
- 4550 0f2b 7374635F 		.ascii	"stc_scb_uart_config\000"
- 4550      7363625F 
- 4550      75617274 
- 4550      5F636F6E 
- 4550      66696700 
- 4551              	.LASF8:
- 4552 0f3f 6C6F6E67 		.ascii	"long long int\000"
- 4552      206C6F6E 
- 4552      6720696E 
- 4552      7400
- 4553              	.LASF303:
- 4554 0f4d 44617461 		.ascii	"DataBuffer_CloseWriteSlot\000"
- 4554      42756666 
- 4554      65725F43 
- 4554      6C6F7365 
- 4554      57726974 
- 4555              	.LASF48:
- 4556 0f67 656E6162 		.ascii	"enablePeriodSwap\000"
- 4556      6C655065 
- 4556      72696F64 
- 4556      53776170 
- 4556      00
- 4557              	.LASF45:
- 4558 0f78 64656164 		.ascii	"deadTimeClocks\000"
- 4558      54696D65 
- 4558      436C6F63 
- 4558      6B7300
- 4559              	.LASF64:
- 4560 0f87 75736554 		.ascii	"useTxFifo\000"
- 4560      78466966 
- 4560      6F00
- 4561              	.LASF294:
- 4562 0f91 76616C69 		.ascii	"valid\000"
- 4562      6400
- 4563              	.LASF223:
- 4564 0f97 43595F42 		.ascii	"CY_BLE_EVT_GAP_CONN_ESTB\000"
- 4564      4C455F45 
- 4564      56545F47 
- 4564      41505F43 
- 4564      4F4E4E5F 
- 4565              	.LASF305:
- 4566 0fb0 74726163 		.ascii	"tracker_ptr\000"
- 4566      6B65725F 
- 4566      70747200 
- 4567              	.LASF170:
- 4568 0fbc 43595F42 		.ascii	"CY_BLE_EVT_REMOVE_DEVICE_FROM_RPA_LIST_COMPLETE\000"
- 4568      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 95
+ 4547 0f0a 43595F42 		.ascii	"CY_BLE_EVT_SET_CE_LENGTH_COMPLETE\000"
+ 4547      4C455F45 
+ 4547      56545F53 
+ 4547      45545F43 
+ 4547      455F4C45 
+ 4548              	.LASF196:
+ 4549 0f2c 43595F42 		.ascii	"CY_BLE_EVT_SET_EVENT_MASK_COMPLETE\000"
+ 4549      4C455F45 
+ 4549      56545F53 
+ 4549      45545F45 
+ 4549      56454E54 
+ 4550              	.LASF113:
+ 4551 0f4f 64726F70 		.ascii	"dropOnParityError\000"
+ 4551      4F6E5061 
+ 4551      72697479 
+ 4551      4572726F 
+ 4551      7200
+ 4552              	.LASF105:
+ 4553 0f61 7374635F 		.ascii	"stc_scb_uart_config\000"
+ 4553      7363625F 
+ 4553      75617274 
+ 4553      5F636F6E 
+ 4553      66696700 
+ 4554              	.LASF8:
+ 4555 0f75 6C6F6E67 		.ascii	"long long int\000"
+ 4555      206C6F6E 
+ 4555      6720696E 
+ 4555      7400
+ 4556              	.LASF303:
+ 4557 0f83 44617461 		.ascii	"DataBuffer_CloseWriteSlot\000"
+ 4557      42756666 
+ 4557      65725F43 
+ 4557      6C6F7365 
+ 4557      57726974 
+ 4558              	.LASF48:
+ 4559 0f9d 656E6162 		.ascii	"enablePeriodSwap\000"
+ 4559      6C655065 
+ 4559      72696F64 
+ 4559      53776170 
+ 4559      00
+ 4560              	.LASF45:
+ 4561 0fae 64656164 		.ascii	"deadTimeClocks\000"
+ 4561      54696D65 
+ 4561      436C6F63 
+ 4561      6B7300
+ 4562              	.LASF64:
+ 4563 0fbd 75736554 		.ascii	"useTxFifo\000"
+ 4563      78466966 
+ 4563      6F00
+ 4564              	.LASF294:
+ 4565 0fc7 76616C69 		.ascii	"valid\000"
+ 4565      6400
+ 4566              	.LASF223:
+ 4567 0fcd 43595F42 		.ascii	"CY_BLE_EVT_GAP_CONN_ESTB\000"
+ 4567      4C455F45 
+ 4567      56545F47 
+ 4567      41505F43 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 95
 
 
- 4568      56545F52 
- 4568      454D4F56 
- 4568      455F4445 
- 4569              	.LASF328:
- 4570 0fec 4C696768 		.ascii	"LightOutputC_config\000"
- 4570      744F7574 
- 4570      70757443 
- 4570      5F636F6E 
- 4570      66696700 
- 4571              	.LASF159:
- 4572 1000 43595F42 		.ascii	"CY_BLE_EVT_LE_PING_AUTH_TIMEOUT\000"
- 4572      4C455F45 
- 4572      56545F4C 
- 4572      455F5049 
- 4572      4E475F41 
- 4573              	.LASF89:
- 4574 1020 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_1\000"
- 4574      43425F55 
- 4574      4152545F 
- 4574      53544F50 
- 4574      5F424954 
- 4575              	.LASF91:
- 4576 1038 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_2\000"
- 4576      43425F55 
- 4576      4152545F 
- 4576      53544F50 
- 4576      5F424954 
- 4577              	.LASF336:
- 4578 1050 6E756D65 		.ascii	"numerators\000"
- 4578      7261746F 
- 4578      727300
- 4579              	.LASF95:
- 4580 105b 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_4\000"
- 4580      43425F55 
- 4580      4152545F 
- 4580      53544F50 
- 4580      5F424954 
- 4581              	.LASF53:
- 4582 1073 73776170 		.ascii	"swapInput\000"
- 4582      496E7075 
- 4582      7400
- 4583              	.LASF110:
- 4584 107d 73746F70 		.ascii	"stopBits\000"
- 4584      42697473 
- 4584      00
- 4585              	.LASF290:
- 4586 1086 4D494334 		.ascii	"MIC4USLOT\000"
- 4586      55534C4F 
- 4586      5400
- 4587              	.LASF186:
- 4588 1090 43595F42 		.ascii	"CY_BLE_EVT_SET_CLK_CONFIG_COMPLETE\000"
- 4588      4C455F45 
- 4588      56545F53 
- 4588      45545F43 
- 4588      4C4B5F43 
- 4589              	.LASF250:
- 4590 10b3 43595F42 		.ascii	"CY_BLE_EVT_GATTC_LONG_PROCEDURE_END\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 96
+ 4567      4F4E4E5F 
+ 4568              	.LASF305:
+ 4569 0fe6 74726163 		.ascii	"tracker_ptr\000"
+ 4569      6B65725F 
+ 4569      70747200 
+ 4570              	.LASF170:
+ 4571 0ff2 43595F42 		.ascii	"CY_BLE_EVT_REMOVE_DEVICE_FROM_RPA_LIST_COMPLETE\000"
+ 4571      4C455F45 
+ 4571      56545F52 
+ 4571      454D4F56 
+ 4571      455F4445 
+ 4572              	.LASF328:
+ 4573 1022 4C696768 		.ascii	"LightOutputC_config\000"
+ 4573      744F7574 
+ 4573      70757443 
+ 4573      5F636F6E 
+ 4573      66696700 
+ 4574              	.LASF159:
+ 4575 1036 43595F42 		.ascii	"CY_BLE_EVT_LE_PING_AUTH_TIMEOUT\000"
+ 4575      4C455F45 
+ 4575      56545F4C 
+ 4575      455F5049 
+ 4575      4E475F41 
+ 4576              	.LASF89:
+ 4577 1056 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_1\000"
+ 4577      43425F55 
+ 4577      4152545F 
+ 4577      53544F50 
+ 4577      5F424954 
+ 4578              	.LASF91:
+ 4579 106e 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_2\000"
+ 4579      43425F55 
+ 4579      4152545F 
+ 4579      53544F50 
+ 4579      5F424954 
+ 4580              	.LASF336:
+ 4581 1086 6E756D65 		.ascii	"numerators\000"
+ 4581      7261746F 
+ 4581      727300
+ 4582              	.LASF95:
+ 4583 1091 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_4\000"
+ 4583      43425F55 
+ 4583      4152545F 
+ 4583      53544F50 
+ 4583      5F424954 
+ 4584              	.LASF53:
+ 4585 10a9 73776170 		.ascii	"swapInput\000"
+ 4585      496E7075 
+ 4585      7400
+ 4586              	.LASF110:
+ 4587 10b3 73746F70 		.ascii	"stopBits\000"
+ 4587      42697473 
+ 4587      00
+ 4588              	.LASF290:
+ 4589 10bc 4D494334 		.ascii	"MIC4USLOT\000"
+ 4589      55534C4F 
+ 4589      5400
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 96
 
 
- 4590      4C455F45 
- 4590      56545F47 
- 4590      41545443 
- 4590      5F4C4F4E 
- 4591              	.LASF71:
- 4592 10d7 6D617374 		.ascii	"masterBufferIdx\000"
- 4592      65724275 
- 4592      66666572 
- 4592      49647800 
- 4593              	.LASF179:
- 4594 10e7 43595F42 		.ascii	"CY_BLE_EVT_SOFT_RESET_COMPLETE\000"
- 4594      4C455F45 
- 4594      56545F53 
- 4594      4F46545F 
- 4594      52455345 
- 4595              	.LASF280:
- 4596 1106 454D5054 		.ascii	"EMPTYSLOT\000"
- 4596      59534C4F 
- 4596      5400
- 4597              	.LASF32:
- 4598 1110 72656C6F 		.ascii	"reloadInputMode\000"
- 4598      6164496E 
- 4598      7075744D 
- 4598      6F646500 
- 4599              	.LASF167:
- 4600 1120 43595F42 		.ascii	"CY_BLE_EVT_SET_RPA_ENABLE_COMPLETE\000"
- 4600      4C455F45 
- 4600      56545F53 
- 4600      45545F52 
- 4600      50415F45 
- 4601              	.LASF158:
- 4602 1143 43595F42 		.ascii	"CY_BLE_EVT_LE_SET_EVENT_MASK_COMPLETE\000"
- 4602      4C455F45 
- 4602      56545F4C 
- 4602      455F5345 
- 4602      545F4556 
- 4603              	.LASF319:
- 4604 1169 73697A65 		.ascii	"size\000"
- 4604      00
- 4605              	.LASF308:
- 4606 116e 44617461 		.ascii	"DataBuffer_GetNumerator\000"
- 4606      42756666 
- 4606      65725F47 
- 4606      65744E75 
- 4606      6D657261 
- 4607              	.LASF211:
- 4608 1186 43595F42 		.ascii	"CY_BLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
- 4608      4C455F45 
- 4608      56545F47 
- 4608      41505F4B 
- 4608      4559494E 
- 4609              	.LASF171:
- 4610 11ab 43595F42 		.ascii	"CY_BLE_EVT_ADD_DEVICE_TO_WHITE_LIST_COMPLETE\000"
- 4610      4C455F45 
- 4610      56545F41 
- 4610      44445F44 
- 4610      45564943 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 97
+ 4590              	.LASF186:
+ 4591 10c6 43595F42 		.ascii	"CY_BLE_EVT_SET_CLK_CONFIG_COMPLETE\000"
+ 4591      4C455F45 
+ 4591      56545F53 
+ 4591      45545F43 
+ 4591      4C4B5F43 
+ 4592              	.LASF250:
+ 4593 10e9 43595F42 		.ascii	"CY_BLE_EVT_GATTC_LONG_PROCEDURE_END\000"
+ 4593      4C455F45 
+ 4593      56545F47 
+ 4593      41545443 
+ 4593      5F4C4F4E 
+ 4594              	.LASF71:
+ 4595 110d 6D617374 		.ascii	"masterBufferIdx\000"
+ 4595      65724275 
+ 4595      66666572 
+ 4595      49647800 
+ 4596              	.LASF179:
+ 4597 111d 43595F42 		.ascii	"CY_BLE_EVT_SOFT_RESET_COMPLETE\000"
+ 4597      4C455F45 
+ 4597      56545F53 
+ 4597      4F46545F 
+ 4597      52455345 
+ 4598              	.LASF280:
+ 4599 113c 454D5054 		.ascii	"EMPTYSLOT\000"
+ 4599      59534C4F 
+ 4599      5400
+ 4600              	.LASF32:
+ 4601 1146 72656C6F 		.ascii	"reloadInputMode\000"
+ 4601      6164496E 
+ 4601      7075744D 
+ 4601      6F646500 
+ 4602              	.LASF167:
+ 4603 1156 43595F42 		.ascii	"CY_BLE_EVT_SET_RPA_ENABLE_COMPLETE\000"
+ 4603      4C455F45 
+ 4603      56545F53 
+ 4603      45545F52 
+ 4603      50415F45 
+ 4604              	.LASF158:
+ 4605 1179 43595F42 		.ascii	"CY_BLE_EVT_LE_SET_EVENT_MASK_COMPLETE\000"
+ 4605      4C455F45 
+ 4605      56545F4C 
+ 4605      455F5345 
+ 4605      545F4556 
+ 4606              	.LASF319:
+ 4607 119f 73697A65 		.ascii	"size\000"
+ 4607      00
+ 4608              	.LASF308:
+ 4609 11a4 44617461 		.ascii	"DataBuffer_GetNumerator\000"
+ 4609      42756666 
+ 4609      65725F47 
+ 4609      65744E75 
+ 4609      6D657261 
+ 4610              	.LASF211:
+ 4611 11bc 43595F42 		.ascii	"CY_BLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 4611      4C455F45 
+ 4611      56545F47 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 97
 
 
- 4611              	.LASF143:
- 4612 11d8 74784275 		.ascii	"txBufSize\000"
- 4612      6653697A 
- 4612      6500
- 4613              	.LASF19:
- 4614 11e2 75696E74 		.ascii	"uint32\000"
- 4614      333200
- 4615              	.LASF310:
- 4616 11e9 44617461 		.ascii	"DataBuffer_SetNumerator\000"
- 4616      42756666 
- 4616      65725F53 
- 4616      65744E75 
- 4616      6D657261 
- 4617              	.LASF261:
- 4618 1201 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
- 4618      4C455F45 
- 4618      56545F4C 
- 4618      32434150 
- 4618      5F434246 
- 4619              	.LASF99:
- 4620 1226 43595F53 		.ascii	"CY_SCB_UART_PARITY_ODD\000"
- 4620      43425F55 
- 4620      4152545F 
- 4620      50415249 
- 4620      54595F4F 
- 4621              	.LASF81:
- 4622 123d 736C6176 		.ascii	"slaveRxBufferIdx\000"
- 4622      65527842 
- 4622      75666665 
- 4622      72496478 
- 4622      00
- 4623              	.LASF67:
- 4624 124e 6D617374 		.ascii	"masterPause\000"
- 4624      65725061 
- 4624      75736500 
- 4625              	.LASF181:
- 4626 125a 43595F42 		.ascii	"CY_BLE_EVT_GET_DEVICE_ADDR_COMPLETE\000"
- 4626      4C455F45 
- 4626      56545F47 
- 4626      45545F44 
- 4626      45564943 
- 4627              	.LASF341:
- 4628 127e 44617461 		.ascii	"DataType\000"
- 4628      54797065 
- 4628      00
- 4629              	.LASF199:
- 4630 1287 43595F42 		.ascii	"CY_BLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
- 4630      4C455F45 
- 4630      56545F47 
- 4630      4150435F 
- 4630      5343414E 
- 4631              	.LASF254:
- 4632 12ac 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_CONN_IND\000"
- 4632      4C455F45 
- 4632      56545F4C 
- 4632      32434150 
- 4632      5F434246 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 98
+ 4611      41505F4B 
+ 4611      4559494E 
+ 4612              	.LASF171:
+ 4613 11e1 43595F42 		.ascii	"CY_BLE_EVT_ADD_DEVICE_TO_WHITE_LIST_COMPLETE\000"
+ 4613      4C455F45 
+ 4613      56545F41 
+ 4613      44445F44 
+ 4613      45564943 
+ 4614              	.LASF143:
+ 4615 120e 74784275 		.ascii	"txBufSize\000"
+ 4615      6653697A 
+ 4615      6500
+ 4616              	.LASF19:
+ 4617 1218 75696E74 		.ascii	"uint32\000"
+ 4617      333200
+ 4618              	.LASF310:
+ 4619 121f 44617461 		.ascii	"DataBuffer_SetNumerator\000"
+ 4619      42756666 
+ 4619      65725F53 
+ 4619      65744E75 
+ 4619      6D657261 
+ 4620              	.LASF261:
+ 4621 1237 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 4621      4C455F45 
+ 4621      56545F4C 
+ 4621      32434150 
+ 4621      5F434246 
+ 4622              	.LASF99:
+ 4623 125c 43595F53 		.ascii	"CY_SCB_UART_PARITY_ODD\000"
+ 4623      43425F55 
+ 4623      4152545F 
+ 4623      50415249 
+ 4623      54595F4F 
+ 4624              	.LASF81:
+ 4625 1273 736C6176 		.ascii	"slaveRxBufferIdx\000"
+ 4625      65527842 
+ 4625      75666665 
+ 4625      72496478 
+ 4625      00
+ 4626              	.LASF67:
+ 4627 1284 6D617374 		.ascii	"masterPause\000"
+ 4627      65725061 
+ 4627      75736500 
+ 4628              	.LASF181:
+ 4629 1290 43595F42 		.ascii	"CY_BLE_EVT_GET_DEVICE_ADDR_COMPLETE\000"
+ 4629      4C455F45 
+ 4629      56545F47 
+ 4629      45545F44 
+ 4629      45564943 
+ 4630              	.LASF341:
+ 4631 12b4 44617461 		.ascii	"DataType\000"
+ 4631      54797065 
+ 4631      00
+ 4632              	.LASF199:
+ 4633 12bd 43595F42 		.ascii	"CY_BLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 4633      4C455F45 
+ 4633      56545F47 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 98
 
 
- 4633              	.LASF235:
- 4634 12cb 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_RSP\000"
- 4634      4C455F45 
- 4634      56545F47 
- 4634      41545443 
- 4634      5F524541 
- 4635              	.LASF213:
- 4636 12e5 43595F42 		.ascii	"CY_BLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
- 4636      4C455F45 
- 4636      56545F47 
- 4636      41505F4B 
- 4636      45595052 
- 4637              	.LASF277:
- 4638 130a 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
- 4638      4C455F43 
- 4638      4F4E4E5F 
- 4638      53544154 
- 4638      455F434C 
- 4639              	.LASF273:
- 4640 1335 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
- 4640      4C455F43 
- 4640      4F4E4E5F 
- 4640      53544154 
- 4640      455F434F 
- 4641              	.LASF340:
- 4642 1351 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\Handle\\Bike FSM_new.cyd"
- 4642      73657273 
- 4642      5C73616C 
- 4642      617A5C44 
- 4642      65736B74 
- 4643 137f 736E00   		.ascii	"sn\000"
+ 4633      4150435F 
+ 4633      5343414E 
+ 4634              	.LASF254:
+ 4635 12e2 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 4635      4C455F45 
+ 4635      56545F4C 
+ 4635      32434150 
+ 4635      5F434246 
+ 4636              	.LASF235:
+ 4637 1301 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_RSP\000"
+ 4637      4C455F45 
+ 4637      56545F47 
+ 4637      41545443 
+ 4637      5F524541 
+ 4638              	.LASF213:
+ 4639 131b 43595F42 		.ascii	"CY_BLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ 4639      4C455F45 
+ 4639      56545F47 
+ 4639      41505F4B 
+ 4639      45595052 
+ 4640              	.LASF277:
+ 4641 1340 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 4641      4C455F43 
+ 4641      4F4E4E5F 
+ 4641      53544154 
+ 4641      455F434C 
+ 4642              	.LASF273:
+ 4643 136b 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 4643      4C455F43 
+ 4643      4F4E4E5F 
+ 4643      53544154 
+ 4643      455F434F 
  4644              	.LASF142:
- 4645 1382 74784275 		.ascii	"txBuf\000"
+ 4645 1387 74784275 		.ascii	"txBuf\000"
  4645      6600
  4646              	.LASF24:
- 4647 1388 636F756E 		.ascii	"countDirection\000"
+ 4647 138d 636F756E 		.ascii	"countDirection\000"
  4647      74446972 
  4647      65637469 
  4647      6F6E00
  4648              	.LASF275:
- 4649 1397 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 4649 139c 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
  4649      4C455F43 
  4649      4F4E4E5F 
  4649      53544154 
  4649      455F434C 
  4650              	.LASF333:
- 4651 13c1 4D6F746F 		.ascii	"MotorTimer_config\000"
+ 4651 13c6 4D6F746F 		.ascii	"MotorTimer_config\000"
  4651      7254696D 
  4651      65725F63 
  4651      6F6E6669 
  4651      6700
  4652              	.LASF49:
- 4653 13d3 696E7665 		.ascii	"invertPWMOut\000"
+ 4653 13d8 696E7665 		.ascii	"invertPWMOut\000"
  4653      72745057 
  4653      4D4F7574 
  4653      00
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 99
+
+
  4654              	.LASF80:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 99
-
-
- 4655 13e0 736C6176 		.ascii	"slaveRxBufferSize\000"
+ 4655 13e5 736C6176 		.ascii	"slaveRxBufferSize\000"
  4655      65527842 
  4655      75666665 
  4655      7253697A 
  4655      6500
  4656              	.LASF307:
- 4657 13f2 44617461 		.ascii	"DataBuffer_CloseReadSlot\000"
+ 4657 13f7 44617461 		.ascii	"DataBuffer_CloseReadSlot\000"
  4657      42756666 
  4657      65725F43 
  4657      6C6F7365 
  4657      52656164 
  4658              	.LASF14:
- 4659 140b 6C6F6E67 		.ascii	"long double\000"
+ 4659 1410 6C6F6E67 		.ascii	"long double\000"
  4659      20646F75 
  4659      626C6500 
  4660              	.LASF283:
- 4661 1417 4D414730 		.ascii	"MAG0ESLOT\000"
+ 4661 141c 4D414730 		.ascii	"MAG0ESLOT\000"
  4661      45534C4F 
  4661      5400
  4662              	.LASF56:
- 4663 1421 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
+ 4663 1426 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
  4663      74635F74 
  4663      6370776D 
  4663      5F70776D 
  4663      5F636F6E 
  4664              	.LASF23:
- 4665 143b 72756E4D 		.ascii	"runMode\000"
+ 4665 1440 72756E4D 		.ascii	"runMode\000"
  4665      6F646500 
  4666              	.LASF69:
- 4667 1443 6D617374 		.ascii	"masterBuffer\000"
+ 4667 1448 6D617374 		.ascii	"masterBuffer\000"
  4667      65724275 
  4667      66666572 
  4667      00
  4668              	.LASF166:
- 4669 1450 43595F42 		.ascii	"CY_BLE_EVT_SET_RPA_TO_COMPLETE\000"
+ 4669 1455 43595F42 		.ascii	"CY_BLE_EVT_SET_RPA_TO_COMPLETE\000"
  4669      4C455F45 
  4669      56545F53 
  4669      45545F52 
  4669      50415F54 
  4670              	.LASF335:
- 4671 146f 4368696D 		.ascii	"ChimeTimer_config\000"
+ 4671 1474 4368696D 		.ascii	"ChimeTimer_config\000"
  4671      6554696D 
  4671      65725F63 
  4671      6F6E6669 
  4671      6700
  4672              	.LASF154:
- 4673 1481 43595F42 		.ascii	"CY_BLE_EVT_HARDWARE_ERROR\000"
+ 4673 1486 43595F42 		.ascii	"CY_BLE_EVT_HARDWARE_ERROR\000"
  4673      4C455F45 
  4673      56545F48 
  4673      41524457 
  4673      4152455F 
  4674              	.LASF40:
- 4675 149b 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
+ 4675 14a0 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
  4675      74635F74 
  4675      6370776D 
  4675      5F636F75 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 100
+
+
  4675      6E746572 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 100
-
-
  4676              	.LASF245:
- 4677 14b9 43595F42 		.ascii	"CY_BLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 4677 14be 43595F42 		.ascii	"CY_BLE_EVT_GATTC_HANDLE_VALUE_IND\000"
  4677      4C455F45 
  4677      56545F47 
  4677      41545443 
  4677      5F48414E 
  4678              	.LASF226:
- 4679 14db 43595F42 		.ascii	"CY_BLE_EVT_GATTC_ERROR_RSP\000"
+ 4679 14e0 43595F42 		.ascii	"CY_BLE_EVT_GATTC_ERROR_RSP\000"
  4679      4C455F45 
  4679      56545F47 
  4679      41545443 
  4679      5F455252 
  4680              	.LASF231:
- 4681 14f6 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 4681 14fb 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
  4681      4C455F45 
  4681      56545F47 
  4681      41545443 
  4681      5F524541 
  4682              	.LASF169:
- 4683 151e 43595F42 		.ascii	"CY_BLE_EVT_ADD_DEVICE_TO_RPA_LIST_COMPLETE\000"
+ 4683 1523 43595F42 		.ascii	"CY_BLE_EVT_ADD_DEVICE_TO_RPA_LIST_COMPLETE\000"
  4683      4C455F45 
  4683      56545F41 
  4683      44445F44 
  4683      45564943 
  4684              	.LASF306:
- 4685 1549 73616D70 		.ascii	"sample_init\000"
+ 4685 154e 73616D70 		.ascii	"sample_init\000"
  4685      6C655F69 
  4685      6E697400 
  4686              	.LASF190:
- 4687 1555 43595F42 		.ascii	"CY_BLE_EVT_AES_CCM_DECRYPT_COMPLETE\000"
+ 4687 155a 43595F42 		.ascii	"CY_BLE_EVT_AES_CCM_DECRYPT_COMPLETE\000"
  4687      4C455F45 
  4687      56545F41 
  4687      45535F43 
  4687      434D5F44 
  4688              	.LASF192:
- 4689 1579 43595F42 		.ascii	"CY_BLE_EVT_STACK_SHUTDOWN_COMPLETE\000"
+ 4689 157e 43595F42 		.ascii	"CY_BLE_EVT_STACK_SHUTDOWN_COMPLETE\000"
  4689      4C455F45 
  4689      56545F53 
  4689      5441434B 
  4689      5F534855 
  4690              	.LASF137:
- 4691 159c 72785269 		.ascii	"rxRingBufHead\000"
+ 4691 15a1 72785269 		.ascii	"rxRingBufHead\000"
  4691      6E674275 
  4691      66486561 
  4691      6400
  4692              	.LASF265:
- 4693 15aa 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 4693 15af 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
  4693      74635F62 
  4693      6C655F63 
  4693      6F6E6E5F 
  4693      68616E64 
  4694              	.LASF25:
- 4695 15c3 636F6D70 		.ascii	"compareOrCapture\000"
+ 4695 15c8 636F6D70 		.ascii	"compareOrCapture\000"
  4695      6172654F 
  4695      72436170 
  4695      74757265 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 101
+
+
  4695      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 101
-
-
  4696              	.LASF224:
- 4697 15d4 43595F42 		.ascii	"CY_BLE_EVT_GAPP_UPDATE_ADV_SCAN_DATA_COMPLETE\000"
+ 4697 15d9 43595F42 		.ascii	"CY_BLE_EVT_GAPP_UPDATE_ADV_SCAN_DATA_COMPLETE\000"
  4697      4C455F45 
  4697      56545F47 
  4697      4150505F 
  4697      55504441 
  4698              	.LASF252:
- 4699 1602 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 4699 1607 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
  4699      4C455F45 
  4699      56545F4C 
  4699      32434150 
  4699      5F434F4E 
  4700              	.LASF0:
- 4701 1629 73686F72 		.ascii	"short int\000"
+ 4701 162e 73686F72 		.ascii	"short int\000"
  4701      7420696E 
  4701      7400
  4702              	.LASF130:
- 4703 1633 74784669 		.ascii	"txFifoIntEnableMask\000"
+ 4703 1638 74784669 		.ascii	"txFifoIntEnableMask\000"
  4703      666F496E 
  4703      74456E61 
  4703      626C654D 
  4703      61736B00 
  4704              	.LASF147:
- 4705 1647 43595F42 		.ascii	"CY_BLE_EVT_INVALID\000"
+ 4705 164c 43595F42 		.ascii	"CY_BLE_EVT_INVALID\000"
  4705      4C455F45 
  4705      56545F49 
  4705      4E56414C 
  4705      494400
  4706              	.LASF29:
- 4707 165a 696E7465 		.ascii	"interruptSources\000"
+ 4707 165f 696E7465 		.ascii	"interruptSources\000"
  4707      72727570 
  4707      74536F75 
  4707      72636573 
  4707      00
  4708              	.LASF28:
- 4709 166b 656E6162 		.ascii	"enableCompareSwap\000"
+ 4709 1670 656E6162 		.ascii	"enableCompareSwap\000"
  4709      6C65436F 
  4709      6D706172 
  4709      65537761 
  4709      7000
  4710              	.LASF4:
- 4711 167d 6C6F6E67 		.ascii	"long int\000"
+ 4711 1682 6C6F6E67 		.ascii	"long int\000"
  4711      20696E74 
  4711      00
  4712              	.LASF38:
- 4713 1686 636F756E 		.ascii	"countInputMode\000"
+ 4713 168b 636F756E 		.ascii	"countInputMode\000"
  4713      74496E70 
  4713      75744D6F 
  4713      646500
  4714              	.LASF52:
- 4715 1695 73776170 		.ascii	"swapInputMode\000"
+ 4715 169a 73776170 		.ascii	"swapInputMode\000"
  4715      496E7075 
  4715      744D6F64 
  4715      6500
  4716              	.LASF195:
- 4717 16a3 43595F42 		.ascii	"CY_BLE_EVT_AES_CMAC_GEN_COMPLETE\000"
+ 4717 16a8 43595F42 		.ascii	"CY_BLE_EVT_AES_CMAC_GEN_COMPLETE\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 102
+
+
  4717      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 102
-
-
  4717      56545F41 
  4717      45535F43 
  4717      4D41435F 
  4718              	.LASF90:
- 4719 16c4 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_1_5\000"
+ 4719 16c9 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_1_5\000"
  4719      43425F55 
  4719      4152545F 
  4719      53544F50 
  4719      5F424954 
  4720              	.LASF218:
- 4721 16de 43595F42 		.ascii	"CY_BLE_EVT_GAP_DEVICE_ADDR_GEN_COMPLETE\000"
+ 4721 16e3 43595F42 		.ascii	"CY_BLE_EVT_GAP_DEVICE_ADDR_GEN_COMPLETE\000"
  4721      4C455F45 
  4721      56545F47 
  4721      41505F44 
  4721      45564943 
  4722              	.LASF339:
- 4723 1706 44617461 		.ascii	"DataBuffer.c\000"
+ 4723 170b 44617461 		.ascii	"DataBuffer.c\000"
  4723      42756666 
  4723      65722E63 
  4723      00
  4724              	.LASF256:
- 4725 1713 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 4725 1718 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
  4725      4C455F45 
  4725      56545F4C 
  4725      32434150 
  4725      5F434246 
  4726              	.LASF144:
- 4727 1735 74784C65 		.ascii	"txLeftToTransmit\000"
+ 4727 173a 74784C65 		.ascii	"txLeftToTransmit\000"
  4727      6674546F 
  4727      5472616E 
  4727      736D6974 
  4727      00
  4728              	.LASF242:
- 4729 1746 43595F42 		.ascii	"CY_BLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 4729 174b 43595F42 		.ascii	"CY_BLE_EVT_GATTS_EXEC_WRITE_REQ\000"
  4729      4C455F45 
  4729      56545F47 
  4729      41545453 
  4729      5F455845 
  4730              	.LASF155:
- 4731 1766 43595F42 		.ascii	"CY_BLE_EVT_WRITE_AUTH_PAYLOAD_TO_COMPLETE\000"
+ 4731 176b 43595F42 		.ascii	"CY_BLE_EVT_WRITE_AUTH_PAYLOAD_TO_COMPLETE\000"
  4731      4C455F45 
  4731      56545F57 
  4731      52495445 
  4731      5F415554 
  4732              	.LASF194:
- 4733 1790 43595F42 		.ascii	"CY_BLE_EVT_RADIO_VOLTAGE_LEVEL\000"
+ 4733 1795 43595F42 		.ascii	"CY_BLE_EVT_RADIO_VOLTAGE_LEVEL\000"
  4733      4C455F45 
  4733      56545F52 
  4733      4144494F 
  4733      5F564F4C 
  4734              	.LASF326:
- 4735 17af 55415254 		.ascii	"UART_DEBUG_context\000"
+ 4735 17b4 55415254 		.ascii	"UART_DEBUG_context\000"
  4735      5F444542 
  4735      55475F63 
  4735      6F6E7465 
  4735      787400
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 103
+
+
  4736              	.LASF5:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 103
-
-
- 4737 17c2 5F5F7569 		.ascii	"__uint8_t\000"
+ 4737 17c7 5F5F7569 		.ascii	"__uint8_t\000"
  4737      6E74385F 
  4737      7400
  4738              	.LASF320:
- 4739 17cc 63795F52 		.ascii	"cy_RTC_daysInMonthTbl\000"
+ 4739 17d1 63795F52 		.ascii	"cy_RTC_daysInMonthTbl\000"
  4739      54435F64 
  4739      61797349 
  4739      6E4D6F6E 
  4739      74685462 
  4740              	.LASF161:
- 4741 17e2 43595F42 		.ascii	"CY_BLE_EVT_SET_SUGGESTED_DATA_LENGTH_COMPLETE\000"
+ 4741 17e7 43595F42 		.ascii	"CY_BLE_EVT_SET_SUGGESTED_DATA_LENGTH_COMPLETE\000"
  4741      4C455F45 
  4741      56545F53 
  4741      45545F53 
  4741      55474745 
  4742              	.LASF329:
- 4743 1810 4C696768 		.ascii	"LightOutputA_config\000"
+ 4743 1815 4C696768 		.ascii	"LightOutputA_config\000"
  4743      744F7574 
  4743      70757441 
  4743      5F636F6E 
  4743      66696700 
  4744              	.LASF88:
- 4745 1824 63795F65 		.ascii	"cy_en_scb_uart_mode_t\000"
+ 4745 1829 63795F65 		.ascii	"cy_en_scb_uart_mode_t\000"
  4745      6E5F7363 
  4745      625F7561 
  4745      72745F6D 
  4745      6F64655F 
  4746              	.LASF188:
- 4747 183a 43595F42 		.ascii	"CY_BLE_EVT_AES_ENCRYPT_COMPLETE\000"
+ 4747 183f 43595F42 		.ascii	"CY_BLE_EVT_AES_ENCRYPT_COMPLETE\000"
  4747      4C455F45 
  4747      56545F41 
  4747      45535F45 
  4747      4E435259 
  4748              	.LASF183:
- 4749 185a 43595F42 		.ascii	"CY_BLE_EVT_GET_TX_PWR_COMPLETE\000"
+ 4749 185f 43595F42 		.ascii	"CY_BLE_EVT_GET_TX_PWR_COMPLETE\000"
  4749      4C455F45 
  4749      56545F47 
  4749      45545F54 
  4749      585F5057 
  4750              	.LASF300:
- 4751 1879 73616D70 		.ascii	"sample_ptr\000"
+ 4751 187e 73616D70 		.ascii	"sample_ptr\000"
  4751      6C655F70 
  4751      747200
  4752              	.LASF55:
- 4753 1884 6B696C6C 		.ascii	"killInput\000"
+ 4753 1889 6B696C6C 		.ascii	"killInput\000"
  4753      496E7075 
  4753      7400
  4754              	.LASF297:
- 4755 188e 6E756D5F 		.ascii	"num_bytes\000"
+ 4755 1893 6E756D5F 		.ascii	"num_bytes\000"
  4755      62797465 
  4755      7300
  4756              	.LASF337:
- 4757 1898 64656E6F 		.ascii	"denominators\000"
+ 4757 189d 64656E6F 		.ascii	"denominators\000"
  4757      6D696E61 
  4757      746F7273 
  4757      00
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 104
+
+
  4758              	.LASF54:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 104
-
-
- 4759 18a5 6B696C6C 		.ascii	"killInputMode\000"
+ 4759 18aa 6B696C6C 		.ascii	"killInputMode\000"
  4759      496E7075 
  4759      744D6F64 
  4759      6500
  4760              	.LASF149:
- 4761 18b3 43595F42 		.ascii	"CY_BLE_EVT_TIMEOUT\000"
+ 4761 18b8 43595F42 		.ascii	"CY_BLE_EVT_TIMEOUT\000"
  4761      4C455F45 
  4761      56545F54 
  4761      494D454F 
  4761      555400
  4762              	.LASF327:
- 4763 18c6 53656E73 		.ascii	"SensorBus_context\000"
+ 4763 18cb 53656E73 		.ascii	"SensorBus_context\000"
  4763      6F724275 
  4763      735F636F 
  4763      6E746578 
  4763      7400
  4764              	.LASF13:
- 4765 18d8 73697A65 		.ascii	"sizetype\000"
+ 4765 18dd 73697A65 		.ascii	"sizetype\000"
  4765      74797065 
  4765      00
  4766              	.LASF325:
- 4767 18e1 55415254 		.ascii	"UART_DEBUG_config\000"
+ 4767 18e6 55415254 		.ascii	"UART_DEBUG_config\000"
  4767      5F444542 
  4767      55475F63 
  4767      6F6E6669 
  4767      6700
  4768              	.LASF7:
- 4769 18f3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4769 18f8 6C6F6E67 		.ascii	"long unsigned int\000"
  4769      20756E73 
  4769      69676E65 
  4769      6420696E 
  4769      7400
  4770              	.LASF68:
- 4771 1905 6D617374 		.ascii	"masterRdDir\000"
+ 4771 190a 6D617374 		.ascii	"masterRdDir\000"
  4771      65725264 
  4771      44697200 
  4772              	.LASF16:
- 4773 1911 666C6F61 		.ascii	"float\000"
+ 4773 1916 666C6F61 		.ascii	"float\000"
  4773      7400
  4774              	.LASF193:
- 4775 1917 43595F42 		.ascii	"CY_BLE_EVT_RADIO_TEMPERATURE\000"
+ 4775 191c 43595F42 		.ascii	"CY_BLE_EVT_RADIO_TEMPERATURE\000"
  4775      4C455F45 
  4775      56545F52 
  4775      4144494F 
  4775      5F54454D 
  4776              	.LASF202:
- 4777 1934 43595F42 		.ascii	"CY_BLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 4777 1939 43595F42 		.ascii	"CY_BLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
  4777      4C455F45 
  4777      56545F47 
  4777      41505F50 
  4777      4153534B 
  4778              	.LASF285:
- 4779 195b 544D5034 		.ascii	"TMP40SLOT\000"
+ 4779 1960 544D5034 		.ascii	"TMP40SLOT\000"
  4779      30534C4F 
  4779      5400
  4780              	.LASF296:
- 4781 1965 73616D70 		.ascii	"sample\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 105
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 105
 
 
+ 4781 196a 73616D70 		.ascii	"sample\000"
  4781      6C6500
  4782              	.LASF129:
- 4783 196c 74784669 		.ascii	"txFifoTriggerLevel\000"
+ 4783 1971 74784669 		.ascii	"txFifoTriggerLevel\000"
  4783      666F5472 
  4783      69676765 
  4783      724C6576 
  4783      656C00
  4784              	.LASF313:
- 4785 197f 626F6479 		.ascii	"body\000"
+ 4785 1984 626F6479 		.ascii	"body\000"
  4785      00
  4786              	.LASF85:
- 4787 1984 43595F53 		.ascii	"CY_SCB_UART_STANDARD\000"
+ 4787 1989 43595F53 		.ascii	"CY_SCB_UART_STANDARD\000"
  4787      43425F55 
  4787      4152545F 
  4787      5354414E 
  4787      44415244 
  4788              	.LASF315:
- 4789 1999 6A6F625F 		.ascii	"job_queue\000"
+ 4789 199e 6A6F625F 		.ascii	"job_queue\000"
  4789      71756575 
  4789      6500
  4790              	.LASF295:
- 4791 19a3 74797065 		.ascii	"type\000"
+ 4791 19a8 74797065 		.ascii	"type\000"
  4791      00
  4792              	.LASF93:
- 4793 19a8 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_3\000"
+ 4793 19ad 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_3\000"
  4793      43425F55 
  4793      4152545F 
  4793      53544F50 
  4793      5F424954 
  4794              	.LASF1:
- 4795 19c0 756E7369 		.ascii	"unsigned char\000"
+ 4795 19c5 756E7369 		.ascii	"unsigned char\000"
  4795      676E6564 
  4795      20636861 
  4795      7200
  4796              	.LASF247:
- 4797 19ce 43595F42 		.ascii	"CY_BLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 4797 19d3 43595F42 		.ascii	"CY_BLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
  4797      4C455F45 
  4797      56545F47 
  4797      41545453 
  4797      5F444154 
  4798              	.LASF6:
- 4799 19f3 5F5F7569 		.ascii	"__uint32_t\000"
+ 4799 19f8 5F5F7569 		.ascii	"__uint32_t\000"
  4799      6E743332 
  4799      5F7400
  4800              	.LASF163:
- 4801 19fe 43595F42 		.ascii	"CY_BLE_EVT_DATA_LENGTH_CHANGE\000"
+ 4801 1a03 43595F42 		.ascii	"CY_BLE_EVT_DATA_LENGTH_CHANGE\000"
  4801      4C455F45 
  4801      56545F44 
  4801      4154415F 
  4801      4C454E47 
  4802              	.LASF39:
- 4803 1a1c 636F756E 		.ascii	"countInput\000"
+ 4803 1a21 636F756E 		.ascii	"countInput\000"
  4803      74496E70 
  4803      757400
  4804              	.LASF172:
- 4805 1a27 43595F42 		.ascii	"CY_BLE_EVT_REMOVE_DEVICE_FROM_WHITE_LIST_COMPLETE\000"
+ 4805 1a2c 43595F42 		.ascii	"CY_BLE_EVT_REMOVE_DEVICE_FROM_WHITE_LIST_COMPLETE\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 106
+
+
  4805      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 106
-
-
  4805      56545F52 
  4805      454D4F56 
  4805      455F4445 
  4806              	.LASF162:
- 4807 1a59 43595F42 		.ascii	"CY_BLE_EVT_GET_DATA_LENGTH_COMPLETE\000"
+ 4807 1a5e 43595F42 		.ascii	"CY_BLE_EVT_GET_DATA_LENGTH_COMPLETE\000"
  4807      4C455F45 
  4807      56545F47 
  4807      45545F44 
  4807      4154415F 
  4808              	.LASF216:
- 4809 1a7d 43595F42 		.ascii	"CY_BLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
+ 4809 1a82 43595F42 		.ascii	"CY_BLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
  4809      4C455F45 
  4809      56545F47 
  4809      4150435F 
  4809      44495245 
  4810              	.LASF318:
- 4811 1a9f 7461696C 		.ascii	"tail\000"
+ 4811 1aa4 7461696C 		.ascii	"tail\000"
  4811      00
  4812              	.LASF59:
- 4813 1aa4 63795F65 		.ascii	"cy_en_scb_i2c_command_t\000"
+ 4813 1aa9 63795F65 		.ascii	"cy_en_scb_i2c_command_t\000"
  4813      6E5F7363 
  4813      625F6932 
  4813      635F636F 
  4813      6D6D616E 
  4814              	.LASF75:
- 4815 1abc 736C6176 		.ascii	"slaveTxBuffer\000"
+ 4815 1ac1 736C6176 		.ascii	"slaveTxBuffer\000"
  4815      65547842 
  4815      75666665 
  4815      7200
  4816              	.LASF20:
- 4817 1aca 5F426F6F 		.ascii	"_Bool\000"
+ 4817 1acf 5F426F6F 		.ascii	"_Bool\000"
  4817      6C00
  4818              	.LASF225:
- 4819 1ad0 43595F42 		.ascii	"CY_BLE_EVT_GAP_ADV_TX\000"
+ 4819 1ad5 43595F42 		.ascii	"CY_BLE_EVT_GAP_ADV_TX\000"
  4819      4C455F45 
  4819      56545F47 
  4819      41505F41 
  4819      44565F54 
  4820              	.LASF65:
- 4821 1ae6 73746174 		.ascii	"state\000"
+ 4821 1aeb 73746174 		.ascii	"state\000"
  4821      6500
  4822              	.LASF228:
- 4823 1aec 43595F42 		.ascii	"CY_BLE_EVT_GATT_DISCONNECT_IND\000"
+ 4823 1af1 43595F42 		.ascii	"CY_BLE_EVT_GATT_DISCONNECT_IND\000"
  4823      4C455F45 
  4823      56545F47 
  4823      4154545F 
  4823      44495343 
  4824              	.LASF123:
- 4825 1b0b 63747350 		.ascii	"ctsPolarity\000"
+ 4825 1b10 63747350 		.ascii	"ctsPolarity\000"
  4825      6F6C6172 
  4825      69747900 
  4826              	.LASF243:
- 4827 1b17 43595F42 		.ascii	"CY_BLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 4827 1b1c 43595F42 		.ascii	"CY_BLE_EVT_GATTC_EXEC_WRITE_RSP\000"
  4827      4C455F45 
  4827      56545F47 
  4827      41545443 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 107
+
+
  4827      5F455845 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 107
-
-
  4828              	.LASF289:
- 4829 1b37 42494D33 		.ascii	"BIM30SLOT\000"
+ 4829 1b3c 42494D33 		.ascii	"BIM30SLOT\000"
  4829      30534C4F 
  4829      5400
  4830              	.LASF131:
- 4831 1b41 63795F73 		.ascii	"cy_stc_scb_uart_config_t\000"
+ 4831 1b46 63795F73 		.ascii	"cy_stc_scb_uart_config_t\000"
  4831      74635F73 
  4831      63625F75 
  4831      6172745F 
  4831      636F6E66 
  4832              	.LASF229:
- 4833 1b5a 43595F42 		.ascii	"CY_BLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 4833 1b5f 43595F42 		.ascii	"CY_BLE_EVT_GATTS_XCNHG_MTU_REQ\000"
  4833      4C455F45 
  4833      56545F47 
  4833      41545453 
  4833      5F58434E 
  4834              	.LASF343:
- 4835 1b79 6D616C6C 		.ascii	"malloc\000"
+ 4835 1b7e 6D616C6C 		.ascii	"malloc\000"
  4835      6F6300
  4836              	.LASF248:
- 4837 1b80 43595F42 		.ascii	"CY_BLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 4837 1b85 43595F42 		.ascii	"CY_BLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
  4837      4C455F45 
  4837      56545F47 
  4837      41545443 
  4837      5F53544F 
  4838              	.LASF124:
- 4839 1ba3 72747352 		.ascii	"rtsRxFifoLevel\000"
+ 4839 1ba8 72747352 		.ascii	"rtsRxFifoLevel\000"
  4839      78466966 
  4839      6F4C6576 
  4839      656C00
  4840              	.LASF97:
- 4841 1bb2 43595F53 		.ascii	"CY_SCB_UART_PARITY_NONE\000"
+ 4841 1bb7 43595F53 		.ascii	"CY_SCB_UART_PARITY_NONE\000"
  4841      43425F55 
  4841      4152545F 
  4841      50415249 
  4841      54595F4E 
  4842              	.LASF201:
- 4843 1bca 43595F42 		.ascii	"CY_BLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 4843 1bcf 43595F42 		.ascii	"CY_BLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
  4843      4C455F45 
  4843      56545F47 
  4843      41505F50 
  4843      4153534B 
  4844              	.LASF98:
- 4845 1bef 43595F53 		.ascii	"CY_SCB_UART_PARITY_EVEN\000"
+ 4845 1bf4 43595F53 		.ascii	"CY_SCB_UART_PARITY_EVEN\000"
  4845      43425F55 
  4845      4152545F 
  4845      50415249 
  4845      54595F45 
  4846              	.LASF263:
- 4847 1c07 62644861 		.ascii	"bdHandle\000"
+ 4847 1c0c 62644861 		.ascii	"bdHandle\000"
  4847      6E646C65 
  4847      00
  4848              	.LASF2:
- 4849 1c10 7369676E 		.ascii	"signed char\000"
+ 4849 1c15 7369676E 		.ascii	"signed char\000"
  4849      65642063 
  4849      68617200 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 108
+
+
  4850              	.LASF21:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 108
-
-
- 4851 1c1c 70657269 		.ascii	"period\000"
+ 4851 1c21 70657269 		.ascii	"period\000"
  4851      6F6400
  4852              	.LASF3:
- 4853 1c23 73686F72 		.ascii	"short unsigned int\000"
+ 4853 1c28 73686F72 		.ascii	"short unsigned int\000"
  4853      7420756E 
  4853      7369676E 
  4853      65642069 
  4853      6E7400
  4854              	.LASF41:
- 4855 1c36 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
+ 4855 1c3b 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
  4855      74635F74 
  4855      6370776D 
  4855      5F636F75 
  4855      6E746572 
  4856              	.LASF200:
- 4857 1c52 43595F42 		.ascii	"CY_BLE_EVT_GAP_AUTH_REQ\000"
+ 4857 1c57 43595F42 		.ascii	"CY_BLE_EVT_GAP_AUTH_REQ\000"
  4857      4C455F45 
  4857      56545F47 
  4857      41505F41 
  4857      5554485F 
  4858              	.LASF240:
- 4859 1c6a 43595F42 		.ascii	"CY_BLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 4859 1c6f 43595F42 		.ascii	"CY_BLE_EVT_GATTS_WRITE_CMD_REQ\000"
  4859      4C455F45 
  4859      56545F47 
  4859      41545453 
  4859      5F575249 
  4860              	.LASF185:
- 4861 1c89 43595F42 		.ascii	"CY_BLE_EVT_GET_CLK_CONFIG_COMPLETE\000"
+ 4861 1c8e 43595F42 		.ascii	"CY_BLE_EVT_GET_CLK_CONFIG_COMPLETE\000"
  4861      4C455F45 
  4861      56545F47 
  4861      45545F43 
  4861      4C4B5F43 
  4862              	.LASF312:
- 4863 1cac 44617461 		.ascii	"DataBuffer_SetDenominator\000"
+ 4863 1cb1 44617461 		.ascii	"DataBuffer_SetDenominator\000"
  4863      42756666 
  4863      65725F53 
  4863      65744465 
  4863      6E6F6D69 
  4864              	.LASF286:
- 4865 1cc6 42464737 		.ascii	"BFG70SLOT\000"
+ 4865 1ccb 42464737 		.ascii	"BFG70SLOT\000"
  4865      30534C4F 
  4865      5400
  4866              	.LASF251:
- 4867 1cd0 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 4867 1cd5 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
  4867      4C455F45 
  4867      56545F4C 
  4867      32434150 
  4867      5F434F4E 
  4868              	.LASF18:
- 4869 1cf7 75696E74 		.ascii	"uint8\000"
+ 4869 1cfc 75696E74 		.ascii	"uint8\000"
  4869      3800
  4870              	.LASF17:
- 4871 1cfd 646F7562 		.ascii	"double\000"
+ 4871 1d02 646F7562 		.ascii	"double\000"
  4871      6C6500
  4872              	.LASF84:
- 4873 1d04 63795F73 		.ascii	"cy_stc_scb_i2c_context_t\000"
+ 4873 1d09 63795F73 		.ascii	"cy_stc_scb_i2c_context_t\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 109
+
+
  4873      74635F73 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 109
-
-
  4873      63625F69 
  4873      32635F63 
  4873      6F6E7465 
  4874              	.LASF107:
- 4875 1d1d 6F766572 		.ascii	"oversample\000"
+ 4875 1d22 6F766572 		.ascii	"oversample\000"
  4875      73616D70 
  4875      6C6500
  4876              	.LASF108:
- 4877 1d28 64617461 		.ascii	"dataWidth\000"
+ 4877 1d2d 64617461 		.ascii	"dataWidth\000"
  4877      57696474 
  4877      6800
  4878              	.LASF135:
- 4879 1d32 72785269 		.ascii	"rxRingBuf\000"
+ 4879 1d37 72785269 		.ascii	"rxRingBuf\000"
  4879      6E674275 
  4879      6600
  4880              	.LASF221:
- 4881 1d3c 43595F42 		.ascii	"CY_BLE_EVT_GAP_GEN_SET_LOCAL_P256_KEYS_COMPLETE\000"
+ 4881 1d41 43595F42 		.ascii	"CY_BLE_EVT_GAP_GEN_SET_LOCAL_P256_KEYS_COMPLETE\000"
  4881      4C455F45 
  4881      56545F47 
  4881      41505F47 
  4881      454E5F53 
  4882              	.LASF204:
- 4883 1d6c 43595F42 		.ascii	"CY_BLE_EVT_GAP_AUTH_FAILED\000"
+ 4883 1d71 43595F42 		.ascii	"CY_BLE_EVT_GAP_AUTH_FAILED\000"
  4883      4C455F45 
  4883      56545F47 
  4883      41505F41 
  4883      5554485F 
  4884              	.LASF120:
- 4885 1d87 69726461 		.ascii	"irdaEnableLowPowerReceiver\000"
+ 4885 1d8c 69726461 		.ascii	"irdaEnableLowPowerReceiver\000"
  4885      456E6162 
  4885      6C654C6F 
  4885      77506F77 
  4885      65725265 
  4886              	.LASF114:
- 4887 1da2 64726F70 		.ascii	"dropOnFrameError\000"
+ 4887 1da7 64726F70 		.ascii	"dropOnFrameError\000"
  4887      4F6E4672 
  4887      616D6545 
  4887      72726F72 
  4887      00
  4888              	.LASF128:
- 4889 1db3 72784669 		.ascii	"rxFifoIntEnableMask\000"
+ 4889 1db8 72784669 		.ascii	"rxFifoIntEnableMask\000"
  4889      666F496E 
  4889      74456E61 
  4889      626C654D 
  4889      61736B00 
  4890              	.LASF284:
- 4891 1dc7 504F5835 		.ascii	"POX57SLOT\000"
+ 4891 1dcc 504F5835 		.ascii	"POX57SLOT\000"
  4891      37534C4F 
  4891      5400
  4892              	.LASF96:
- 4893 1dd1 63795F65 		.ascii	"cy_en_scb_uart_stop_bits_t\000"
+ 4893 1dd6 63795F65 		.ascii	"cy_en_scb_uart_stop_bits_t\000"
  4893      6E5F7363 
  4893      625F7561 
  4893      72745F73 
  4893      746F705F 
  4894              	.LASF274:
- 4895 1dec 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRavOSX.s 			page 110
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKYLKVk.s 			page 110
 
 
+ 4895 1df1 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
  4895      4C455F43 
  4895      4F4E4E5F 
  4895      53544154 
  4895      455F434C 
  4896              	.LASF140:
- 4897 1e16 72784275 		.ascii	"rxBufSize\000"
+ 4897 1e1b 72784275 		.ascii	"rxBufSize\000"
  4897      6653697A 
  4897      6500
  4898              	.LASF324:
- 4899 1e20 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
+ 4899 1e25 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
  4899      6C655F70 
  4899      656E6469 
  4899      6E67466C 
  4899      61736857 
  4900              	.LASF314:
- 4901 1e39 62797465 		.ascii	"byte\000"
+ 4901 1e3e 62797465 		.ascii	"byte\000"
  4901      00
  4902              	.LASF334:
- 4903 1e3e 4368696D 		.ascii	"ChimeOutput_config\000"
+ 4903 1e43 4368696D 		.ascii	"ChimeOutput_config\000"
  4903      654F7574 
  4903      7075745F 
  4903      636F6E66 
  4903      696700
  4904              	.LASF209:
- 4905 1e51 43595F42 		.ascii	"CY_BLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 4905 1e56 43595F42 		.ascii	"CY_BLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
  4905      4C455F45 
  4905      56545F47 
  4905      41505F43 

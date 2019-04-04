@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.151ms
+Loading plugins phase: Elapsed time ==> 0s.345ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cyprj -d CYBLE-416045-02 -s C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.211ms
+Elaboration phase: Elapsed time ==> 3s.107ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.132ms
+HDL generation phase: Elapsed time ==> 0s.140ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\salaz
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed Mar 20 17:28:11 2019
+Wed Apr 03 15:28:22 2019
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 SmartHandle.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed Mar 20 17:28:11 2019
+Wed Apr 03 15:28:22 2019
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -83,7 +83,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\salaz
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed Mar 20 17:28:12 2019
+Wed Apr 03 15:28:23 2019
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -110,7 +110,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\salaz
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed Mar 20 17:28:13 2019
+Wed Apr 03 15:28:24 2019
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -206,11 +206,11 @@ Removing Lhs of wire \SensorBus:Net_281\[61] = zero[12]
 Removing Lhs of wire \SensorBus:Net_280\[66] = zero[12]
 Removing Lhs of wire \SensorBus:Net_279\[68] = zero[12]
 Removing Lhs of wire \SensorBus:Net_278\[69] = zero[12]
-Removing Lhs of wire \LightOutputC:swap\[123] = zero[12]
-Removing Lhs of wire \LightOutputC:count\[124] = one[6]
-Removing Lhs of wire \LightOutputC:reload\[125] = zero[12]
-Removing Lhs of wire \LightOutputC:kill\[126] = zero[12]
-Removing Lhs of wire \LightOutputC:start\[127] = zero[12]
+Removing Lhs of wire \LightOutputC:swap\[124] = zero[12]
+Removing Lhs of wire \LightOutputC:count\[125] = one[6]
+Removing Lhs of wire \LightOutputC:reload\[126] = zero[12]
+Removing Lhs of wire \LightOutputC:kill\[127] = zero[12]
+Removing Lhs of wire \LightOutputC:start\[128] = zero[12]
 Removing Lhs of wire \LightOutputA:swap\[137] = zero[12]
 Removing Lhs of wire \LightOutputA:count\[138] = one[6]
 Removing Lhs of wire \LightOutputA:reload\[139] = zero[12]
@@ -272,14 +272,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cyprj -dcpsoc3 SmartHandle.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 2s.519ms
+Warp synthesis phase: Elapsed time ==> 2s.315ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 20 March 2019 17:28:13
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 03 April 2019 15:28:24
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cyprj -d CYBLE-416045-02 SmartHandle.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.996ms
+Design parsing phase: Elapsed time ==> 0s.969ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -808,10 +808,11 @@ Design Equations
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
             Required Capabilities: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => Green(0)__PA ,
+            pin_input => Net_1599 ,
             pad => Green(0)_PAD );
         Properties:
         {
@@ -887,10 +888,11 @@ Design Equations
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
             Required Capabilities: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => Red(0)__PA ,
+            pin_input => Net_1586 ,
             pad => Red(0)_PAD );
         Properties:
         {
@@ -966,10 +968,11 @@ Design Equations
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
             Required Capabilities: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => Blue(0)__PA ,
+            pin_input => Net_1598 ,
             pad => Blue(0)_PAD );
         Properties:
         {
@@ -1340,8 +1343,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.082ms
-Tech Mapping phase: Elapsed time ==> 0s.157ms
+Technology Mapping: Elapsed time ==> 0s.436ms
+Tech Mapping phase: Elapsed time ==> 0s.580ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -1373,6 +1376,7 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 \RealTimeClock:RTC\                 : RTC_[FFB(RTC,0)]                   
 IOSS                                : IOSS_[FFB(IOSS,0)]                 
 \MCWDT:MCWDT\                       : MCWDT_[FFB(MCWDT,0)]               
+\LightOutputB:TCPWM\                : TCPWM_[FFB(TCPWM,7)]               
 \MotorOutput:TCPWM\                 : TCPWM_[FFB(TCPWM,4)]               
 \ChimeOutput:TCPWM\                 : TCPWM_[FFB(TCPWM,1)]               
 Pin_Orange(0)                       : [IOP=(0)][IoId=(0)]                
@@ -1384,22 +1388,21 @@ DB_0(0)                             : [IOP=(5)][IoId=(6)]
 \LightOutputC:TCPWM\                : TCPWM_[FFB(TCPWM,0)]               
 \LightOutputA:TCPWM\                : TCPWM_[FFB(TCPWM,2)]               
 \LightTimer:TCPWM\                  : TCPWM_[FFB(TCPWM,3)]               
-\LightOutputB:TCPWM\                : TCPWM_[FFB(TCPWM,5)]               
-\MotorTimer:TCPWM\                  : TCPWM_[FFB(TCPWM,6)]               
-\ChimeTimer:TCPWM\                  : TCPWM_[FFB(TCPWM,7)]               
+\MotorTimer:TCPWM\                  : TCPWM_[FFB(TCPWM,5)]               
+\ChimeTimer:TCPWM\                  : TCPWM_[FFB(TCPWM,6)]               
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.1216281s
+Elapsed time ==> 0.1569667s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.957ms
+Analog Placement phase: Elapsed time ==> 1s.010ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0021450 secs
+Route success=True, Iterations=1 Elapsed=0.0039381 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.001ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1410,26 +1413,26 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.019ms
+Analog Code Generation phase: Elapsed time ==> 0s.040ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.4 sec.
+I2076: Total run-time: 0.3 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.000ms
+PLD Packing: Elapsed time ==> 0s.011ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.112ms
+Partitioning: Elapsed time ==> 0s.094ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1509,7 +1512,7 @@ Intr container @ [IntrContainer=(0)]:
             deepsleep_required = 0
             int_type = "10"
         }
-  Intr@ [IntrContainer=(0)][IntrId=(93)] 
+  Intr@ [IntrContainer=(0)][IntrId=(92)] 
     interrupt: Name =LightTimer_IRQ
         PORT MAP (
             interrupt => Net_173 );
@@ -1519,7 +1522,7 @@ Intr container @ [IntrContainer=(0)]:
             deepsleep_required = 0
             int_type = "10"
         }
-  Intr@ [IntrContainer=(0)][IntrId=(95)] 
+  Intr@ [IntrContainer=(0)][IntrId=(93)] 
     interrupt: Name =ChimeTimer_IRQ
         PORT MAP (
             interrupt => Net_838 );
@@ -1529,7 +1532,7 @@ Intr container @ [IntrContainer=(0)]:
             deepsleep_required = 0
             int_type = "10"
         }
-  Intr@ [IntrContainer=(0)][IntrId=(96)] 
+  Intr@ [IntrContainer=(0)][IntrId=(95)] 
     interrupt: Name =MotorTimer_IRQ
         PORT MAP (
             interrupt => Net_228 );
@@ -1906,10 +1909,11 @@ Pin : Name = Red(0)
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
         Required Capabilities: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => Red(0)__PA ,
+        pin_input => Net_1586 ,
         pad => Red(0)_PAD );
     Properties:
     {
@@ -1986,10 +1990,11 @@ Pin : Name = Green(0)
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
         Required Capabilities: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => Green(0)__PA ,
+        pin_input => Net_1599 ,
         pad => Green(0)_PAD );
     Properties:
     {
@@ -2510,10 +2515,11 @@ Pin : Name = Blue(0)
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
         Required Capabilities: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => Blue(0)__PA ,
+        pin_input => Net_1598 ,
         pad => Blue(0)_PAD );
     Properties:
     {
@@ -2610,7 +2616,7 @@ TCPWM group 0:
             tr_compare_match => Net_461 ,
             tr_overflow => Net_459 ,
             line_compl => Net_462 ,
-            line => Net_192 ,
+            line => Net_1599 ,
             interrupt => Net_458 );
         Properties:
         {
@@ -2631,7 +2637,7 @@ TCPWM group 0:
             tr_compare_match => Net_438 ,
             tr_overflow => Net_436 ,
             line_compl => Net_439 ,
-            line => Net_33679 ,
+            line => Net_1586 ,
             interrupt => Net_435 );
         Properties:
         {
@@ -2640,27 +2646,6 @@ TCPWM group 0:
             width = 32
         }
     TCPWM @ F(TCPWM,2): 
-    TCPWM: Name =\LightOutputB:TCPWM\
-        PORT MAP (
-            clock => Net_1238_ff12 ,
-            capture => zero ,
-            count => one ,
-            reload => zero ,
-            stop => zero ,
-            start => zero ,
-            tr_underflow => Net_560 ,
-            tr_compare_match => Net_561 ,
-            tr_overflow => Net_559 ,
-            line_compl => Net_562 ,
-            line => Net_1227 ,
-            interrupt => Net_558 );
-        Properties:
-        {
-            cy_registers = ""
-            exact_width = 0
-            width = 32
-        }
-    TCPWM @ F(TCPWM,3): 
     TCPWM: Name =\LightTimer:TCPWM\
         PORT MAP (
             clock => Net_51_ff18 ,
@@ -2675,6 +2660,27 @@ TCPWM group 0:
             line_compl => \LightTimer:Net_1\ ,
             line => \LightTimer:Net_2\ ,
             interrupt => Net_173 );
+        Properties:
+        {
+            cy_registers = ""
+            exact_width = 0
+            width = 16
+        }
+    TCPWM @ F(TCPWM,3): 
+    TCPWM: Name =\ChimeTimer:TCPWM\
+        PORT MAP (
+            clock => Net_131_ff17 ,
+            capture => zero ,
+            count => one ,
+            reload => zero ,
+            stop => zero ,
+            start => zero ,
+            tr_underflow => Net_129 ,
+            tr_compare_match => Net_130 ,
+            tr_overflow => Net_128 ,
+            line_compl => \ChimeTimer:Net_1\ ,
+            line => \ChimeTimer:Net_2\ ,
+            interrupt => Net_838 );
         Properties:
         {
             cy_registers = ""
@@ -2703,27 +2709,6 @@ TCPWM group 0:
             width = 32
         }
     TCPWM @ F(TCPWM,5): 
-    TCPWM: Name =\ChimeTimer:TCPWM\
-        PORT MAP (
-            clock => Net_131_ff17 ,
-            capture => zero ,
-            count => one ,
-            reload => zero ,
-            stop => zero ,
-            start => zero ,
-            tr_underflow => Net_129 ,
-            tr_compare_match => Net_130 ,
-            tr_overflow => Net_128 ,
-            line_compl => \ChimeTimer:Net_1\ ,
-            line => \ChimeTimer:Net_2\ ,
-            interrupt => Net_838 );
-        Properties:
-        {
-            cy_registers = ""
-            exact_width = 0
-            width = 16
-        }
-    TCPWM @ F(TCPWM,6): 
     TCPWM: Name =\MotorTimer:TCPWM\
         PORT MAP (
             clock => Net_96_ff16 ,
@@ -2743,6 +2728,27 @@ TCPWM group 0:
             cy_registers = ""
             exact_width = 0
             width = 16
+        }
+    TCPWM @ F(TCPWM,7): 
+    TCPWM: Name =\LightOutputB:TCPWM\
+        PORT MAP (
+            clock => Net_1238_ff12 ,
+            capture => zero ,
+            count => one ,
+            reload => zero ,
+            stop => zero ,
+            start => zero ,
+            tr_underflow => Net_560 ,
+            tr_compare_match => Net_561 ,
+            tr_overflow => Net_559 ,
+            line_compl => Net_562 ,
+            line => Net_1598 ,
+            interrupt => Net_558 );
+        Properties:
+        {
+            cy_registers = ""
+            exact_width = 0
+            width = 32
         }
     TCPWM @ F(TCPWM,10): 
     TCPWM: Name =\ChimeOutput:TCPWM\
@@ -2854,9 +2860,9 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
    5 |   0 |     * |      NONE |      HI_Z_ANALOG |         \UART_DEBUG:rx(0)\ | FB(\UART_DEBUG:Net_1172\)
      |   1 |     * |      NONE |         CMOS_OUT |         \UART_DEBUG:tx(0)\ | In(\UART_DEBUG:tx_wire\)
      |   2 |       |      NONE |         CMOS_OUT |                    DB_2(0) | 
-     |   3 |     * |      NONE |         CMOS_OUT |                     Red(0) | 
+     |   3 |     * |      NONE |         CMOS_OUT |                     Red(0) | In(Net_1586)
      |   4 |       |      NONE |         CMOS_OUT |                    DB_3(0) | 
-     |   5 |     * |      NONE |         CMOS_OUT |                   Green(0) | 
+     |   5 |     * |      NONE |         CMOS_OUT |                   Green(0) | In(Net_1599)
      |   6 |       |      NONE |         CMOS_OUT |                    DB_0(0) | 
 -----+-----+-------+-----------+------------------+----------------------------+--------------------------
    6 |   2 |     * |      NONE |    RES_PULL_DOWN |                ShakePin(0) | FB(Net_1494)
@@ -2873,13 +2879,13 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
   10 |   0 |     * |      NONE |      HI_Z_ANALOG |                     tmp(0) | FB(Net_19)
      |   6 |     * |      NONE |         CMOS_OUT |                   Chime(0) | In(Net_820)
 -----+-----+-------+-----------+------------------+----------------------------+--------------------------
-  12 |   6 |     * |      NONE |         CMOS_OUT |                    Blue(0) | 
+  12 |   6 |     * |      NONE |         CMOS_OUT |                    Blue(0) | In(Net_1598)
 ----------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.065ms
-Digital Placement phase: Elapsed time ==> 6s.012ms
+Digital component placer commit/Report: Elapsed time ==> 0s.055ms
+Digital Placement phase: Elapsed time ==> 4s.843ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Users\salaz\Documents\PSoC Creator\4.2\Devices\psoc6/0/route_arch-rrg.cydata" --vh2-path "SmartHandle_r.vh2" --pcf-path "SmartHandle.pco" --des-name "SmartHandle" --dsf-path "SmartHandle.dsf" --sdc-path "SmartHandle.sdc" --lib-path "SmartHandle_r.lib"
@@ -2887,24 +2893,24 @@ Routing successful.
 Digital Routing phase: Elapsed time ==> 0s.932ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.536ms
+Bitstream Generation phase: Elapsed time ==> 0s.647ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.002ms
+Bitstream Verification phase: Elapsed time ==> 0s.004ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in SmartHandle_timing.html.
-Static timing analysis phase: Elapsed time ==> 7s.860ms
+Static timing analysis phase: Elapsed time ==> 11s.539ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.000ms
+Data reporting phase: Elapsed time ==> 0s.019ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.218ms
+Design database save phase: Elapsed time ==> 0s.338ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 17s.776ms
+cydsfit: Elapsed time ==> 21s.066ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 17s.777ms
-API generation phase: Elapsed time ==> 1s.776ms
-Dependency generation phase: Elapsed time ==> 0s.024ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 21s.081ms
+API generation phase: Elapsed time ==> 1s.724ms
+Dependency generation phase: Elapsed time ==> 0s.046ms
+Cleanup phase: Elapsed time ==> 0s.001ms

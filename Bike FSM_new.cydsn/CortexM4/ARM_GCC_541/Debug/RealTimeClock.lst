@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
   27:Generated_Source\PSoC6/RealTimeClock.c **** cy_stc_rtc_config_t const RealTimeClock_config =
   28:Generated_Source\PSoC6/RealTimeClock.c **** {
   29:Generated_Source\PSoC6/RealTimeClock.c ****     /* Initiate time and date */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 2
 
 
   30:Generated_Source\PSoC6/RealTimeClock.c ****     .sec       = RealTimeClock_INITIAL_DATE_SEC,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
   84:Generated_Source\PSoC6/RealTimeClock.c **** *
   85:Generated_Source\PSoC6/RealTimeClock.c **** * \globalvars
   86:Generated_Source\PSoC6/RealTimeClock.c **** * \ref RealTimeClock_initVar
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 3
 
 
   87:Generated_Source\PSoC6/RealTimeClock.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
   52              		.global	RealTimeClock_rtcDstStatus
   53              		.global	RealTimeClock_config
   54              		.global	RealTimeClock_initVar
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 4
 
 
   55              		.section	.rodata
@@ -188,13 +188,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
   59              	RealTimeClock_config:
   60 0000 00000000 		.word	0
   61 0004 00000000 		.word	0
-  62 0008 00000000 		.word	0
+  62 0008 16000000 		.word	22
   63 000c 00       		.space	1
   64 000d 00       		.byte	0
   65 000e 0000     		.space	2
-  66 0010 01000000 		.word	1
-  67 0014 14000000 		.word	20
-  68 0018 01000000 		.word	1
+  66 0010 04000000 		.word	4
+  67 0014 03000000 		.word	3
+  68 0018 04000000 		.word	4
   69 001c 13000000 		.word	19
   70              		.bss
   71              		.set	.LANCHOR0,. + 0
@@ -219,63 +219,63 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
   90 0006 00000000 		.4byte	.Ldebug_abbrev0
   91 000a 04       		.byte	0x4
   92 000b 01       		.uleb128 0x1
-  93 000c 29020000 		.4byte	.LASF51
+  93 000c 20020000 		.4byte	.LASF51
   94 0010 0C       		.byte	0xc
-  95 0011 64000000 		.4byte	.LASF52
-  96 0015 70030000 		.4byte	.LASF53
+  95 0011 65000000 		.4byte	.LASF52
+  96 0015 00030000 		.4byte	.LASF53
   97 0019 00000000 		.4byte	.Ldebug_ranges0+0
   98 001d 00000000 		.4byte	0
   99 0021 00000000 		.4byte	.Ldebug_line0
  100 0025 02       		.uleb128 0x2
  101 0026 02       		.byte	0x2
  102 0027 05       		.byte	0x5
- 103 0028 4D030000 		.4byte	.LASF0
+ 103 0028 7A030000 		.4byte	.LASF0
  104 002c 02       		.uleb128 0x2
  105 002d 01       		.byte	0x1
  106 002e 06       		.byte	0x6
- 107 002f 1D020000 		.4byte	.LASF1
+ 107 002f 14020000 		.4byte	.LASF1
  108 0033 03       		.uleb128 0x3
  109 0034 17000000 		.4byte	.LASF4
  110 0038 02       		.byte	0x2
  111 0039 1D       		.byte	0x1d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 5
 
 
  112 003a 3E000000 		.4byte	0x3e
  113 003e 02       		.uleb128 0x2
  114 003f 01       		.byte	0x1
  115 0040 08       		.byte	0x8
- 116 0041 19010000 		.4byte	.LASF2
+ 116 0041 10010000 		.4byte	.LASF2
  117 0045 02       		.uleb128 0x2
  118 0046 02       		.byte	0x2
  119 0047 07       		.byte	0x7
- 120 0048 57010000 		.4byte	.LASF3
+ 120 0048 4E010000 		.4byte	.LASF3
  121 004c 03       		.uleb128 0x3
- 122 004d 8B000000 		.4byte	.LASF5
+ 122 004d 5B000000 		.4byte	.LASF5
  123 0051 02       		.byte	0x2
  124 0052 3F       		.byte	0x3f
  125 0053 57000000 		.4byte	0x57
  126 0057 02       		.uleb128 0x2
  127 0058 04       		.byte	0x4
  128 0059 05       		.byte	0x5
- 129 005a 5B000000 		.4byte	.LASF6
+ 129 005a 9D030000 		.4byte	.LASF6
  130 005e 03       		.uleb128 0x3
- 131 005f B9010000 		.4byte	.LASF7
+ 131 005f B0010000 		.4byte	.LASF7
  132 0063 02       		.byte	0x2
  133 0064 41       		.byte	0x41
  134 0065 69000000 		.4byte	0x69
  135 0069 02       		.uleb128 0x2
  136 006a 04       		.byte	0x4
  137 006b 07       		.byte	0x7
- 138 006c 45010000 		.4byte	.LASF8
+ 138 006c 3C010000 		.4byte	.LASF8
  139 0070 02       		.uleb128 0x2
  140 0071 08       		.byte	0x8
  141 0072 05       		.byte	0x5
- 142 0073 FB020000 		.4byte	.LASF9
+ 142 0073 F2020000 		.4byte	.LASF9
  143 0077 02       		.uleb128 0x2
  144 0078 08       		.byte	0x8
  145 0079 07       		.byte	0x7
- 146 007a E5010000 		.4byte	.LASF10
+ 146 007a DC010000 		.4byte	.LASF10
  147 007e 04       		.uleb128 0x4
  148 007f 04       		.byte	0x4
  149 0080 05       		.byte	0x5
@@ -283,45 +283,45 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  151 0085 02       		.uleb128 0x2
  152 0086 04       		.byte	0x4
  153 0087 07       		.byte	0x7
- 154 0088 D8010000 		.4byte	.LASF11
+ 154 0088 CF010000 		.4byte	.LASF11
  155 008c 03       		.uleb128 0x3
- 156 008d FC010000 		.4byte	.LASF12
+ 156 008d F3010000 		.4byte	.LASF12
  157 0091 03       		.byte	0x3
  158 0092 18       		.byte	0x18
  159 0093 33000000 		.4byte	0x33
  160 0097 03       		.uleb128 0x3
- 161 0098 3D010000 		.4byte	.LASF13
+ 161 0098 34010000 		.4byte	.LASF13
  162 009c 03       		.byte	0x3
  163 009d 2C       		.byte	0x2c
  164 009e 4C000000 		.4byte	0x4c
  165 00a2 03       		.uleb128 0x3
- 166 00a3 67030000 		.4byte	.LASF14
+ 166 00a3 94030000 		.4byte	.LASF14
  167 00a7 03       		.byte	0x3
  168 00a8 30       		.byte	0x30
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 6
 
 
  169 00a9 5E000000 		.4byte	0x5e
  170 00ad 02       		.uleb128 0x2
  171 00ae 04       		.byte	0x4
  172 00af 07       		.byte	0x7
- 173 00b0 E8020000 		.4byte	.LASF15
+ 173 00b0 DF020000 		.4byte	.LASF15
  174 00b4 02       		.uleb128 0x2
  175 00b5 08       		.byte	0x8
  176 00b6 04       		.byte	0x4
- 177 00b7 DC020000 		.4byte	.LASF16
+ 177 00b7 D3020000 		.4byte	.LASF16
  178 00bb 02       		.uleb128 0x2
  179 00bc 01       		.byte	0x1
  180 00bd 08       		.byte	0x8
- 181 00be 09030000 		.4byte	.LASF17
+ 181 00be 36030000 		.4byte	.LASF17
  182 00c2 02       		.uleb128 0x2
  183 00c3 04       		.byte	0x4
  184 00c4 04       		.byte	0x4
- 185 00c5 A6030000 		.4byte	.LASF18
+ 185 00c5 AB030000 		.4byte	.LASF18
  186 00c9 02       		.uleb128 0x2
  187 00ca 08       		.byte	0x8
  188 00cb 04       		.byte	0x4
- 189 00cc A6000000 		.4byte	.LASF19
+ 189 00cc 9D000000 		.4byte	.LASF19
  190 00d0 05       		.uleb128 0x5
  191 00d1 01       		.byte	0x1
  192 00d2 3E000000 		.4byte	0x3e
@@ -329,14 +329,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  194 00d7 5C01     		.2byte	0x15c
  195 00d9 EA000000 		.4byte	0xea
  196 00dd 06       		.uleb128 0x6
- 197 00de 57030000 		.4byte	.LASF20
+ 197 00de 84030000 		.4byte	.LASF20
  198 00e2 00       		.byte	0
  199 00e3 06       		.uleb128 0x6
- 200 00e4 3D030000 		.4byte	.LASF21
+ 200 00e4 6A030000 		.4byte	.LASF21
  201 00e8 01       		.byte	0x1
  202 00e9 00       		.byte	0
  203 00ea 07       		.uleb128 0x7
- 204 00eb B3000000 		.4byte	.LASF22
+ 204 00eb AA000000 		.4byte	.LASF22
  205 00ef 04       		.byte	0x4
  206 00f0 5F01     		.2byte	0x15f
  207 00f2 D0000000 		.4byte	0xd0
@@ -347,10 +347,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  212 00fd 6A01     		.2byte	0x16a
  213 00ff 10010000 		.4byte	0x110
  214 0103 06       		.uleb128 0x6
- 215 0104 04020000 		.4byte	.LASF23
+ 215 0104 FB010000 		.4byte	.LASF23
  216 0108 00       		.byte	0
  217 0109 06       		.uleb128 0x6
- 218 010a 95000000 		.4byte	.LASF24
+ 218 010a 8C000000 		.4byte	.LASF24
  219 010e 01       		.byte	0x1
  220 010f 00       		.byte	0
  221 0110 07       		.uleb128 0x7
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  223 0115 04       		.byte	0x4
  224 0116 6D01     		.2byte	0x16d
  225 0118 F6000000 		.4byte	0xf6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 7
 
 
  226 011c 05       		.uleb128 0x5
@@ -368,19 +368,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  230 0123 7101     		.2byte	0x171
  231 0125 36010000 		.4byte	0x136
  232 0129 06       		.uleb128 0x6
- 233 012a 33030000 		.4byte	.LASF26
+ 233 012a 60030000 		.4byte	.LASF26
  234 012e 00       		.byte	0
  235 012f 06       		.uleb128 0x6
- 236 0130 F1020000 		.4byte	.LASF27
+ 236 0130 E8020000 		.4byte	.LASF27
  237 0134 01       		.byte	0x1
  238 0135 00       		.byte	0
  239 0136 07       		.uleb128 0x7
- 240 0137 E6000000 		.4byte	.LASF28
+ 240 0137 DD000000 		.4byte	.LASF28
  241 013b 04       		.byte	0x4
  242 013c 7401     		.2byte	0x174
  243 013e 1C010000 		.4byte	0x11c
  244 0142 08       		.uleb128 0x8
- 245 0143 A7010000 		.4byte	.LASF54
+ 245 0143 9E010000 		.4byte	.LASF54
  246 0147 20       		.byte	0x20
  247 0148 04       		.byte	0x4
  248 0149 8C01     		.2byte	0x18c
@@ -398,40 +398,40 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  260 0164 A2000000 		.4byte	0xa2
  261 0168 04       		.byte	0x4
  262 0169 0A       		.uleb128 0xa
- 263 016a 18020000 		.4byte	.LASF29
+ 263 016a 0F020000 		.4byte	.LASF29
  264 016e 04       		.byte	0x4
  265 016f 9101     		.2byte	0x191
  266 0171 A2000000 		.4byte	0xa2
  267 0175 08       		.byte	0x8
  268 0176 0A       		.uleb128 0xa
- 269 0177 A1030000 		.4byte	.LASF30
+ 269 0177 A6030000 		.4byte	.LASF30
  270 017b 04       		.byte	0x4
  271 017c 9401     		.2byte	0x194
  272 017e 36010000 		.4byte	0x136
  273 0182 0C       		.byte	0xc
  274 0183 0A       		.uleb128 0xa
- 275 0184 CC000000 		.4byte	.LASF31
+ 275 0184 C3000000 		.4byte	.LASF31
  276 0188 04       		.byte	0x4
  277 0189 9701     		.2byte	0x197
  278 018b EA000000 		.4byte	0xea
  279 018f 0D       		.byte	0xd
  280 0190 0A       		.uleb128 0xa
- 281 0191 29030000 		.4byte	.LASF32
+ 281 0191 56030000 		.4byte	.LASF32
  282 0195 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 8
 
 
  283 0196 9801     		.2byte	0x198
  284 0198 A2000000 		.4byte	0xa2
  285 019c 10       		.byte	0x10
  286 019d 0A       		.uleb128 0xa
- 287 019e D5000000 		.4byte	.LASF33
+ 287 019e CC000000 		.4byte	.LASF33
  288 01a2 04       		.byte	0x4
  289 01a3 9B01     		.2byte	0x19b
  290 01a5 A2000000 		.4byte	0xa2
  291 01a9 14       		.byte	0x14
  292 01aa 0A       		.uleb128 0xa
- 293 01ab AD000000 		.4byte	.LASF34
+ 293 01ab A4000000 		.4byte	.LASF34
  294 01af 04       		.byte	0x4
  295 01b0 9C01     		.2byte	0x19c
  296 01b2 A2000000 		.4byte	0xa2
@@ -444,7 +444,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  303 01c3 1C       		.byte	0x1c
  304 01c4 00       		.byte	0
  305 01c5 07       		.uleb128 0x7
- 306 01c6 6A010000 		.4byte	.LASF36
+ 306 01c6 61010000 		.4byte	.LASF36
  307 01ca 04       		.byte	0x4
  308 01cb 9E01     		.2byte	0x19e
  309 01cd 42010000 		.4byte	0x142
@@ -454,13 +454,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  313 01d4 CE01     		.2byte	0x1ce
  314 01d6 29020000 		.4byte	0x229
  315 01da 0A       		.uleb128 0xa
- 316 01db C4010000 		.4byte	.LASF37
+ 316 01db BB010000 		.4byte	.LASF37
  317 01df 04       		.byte	0x4
  318 01e0 D001     		.2byte	0x1d0
  319 01e2 10010000 		.4byte	0x110
  320 01e6 00       		.byte	0
  321 01e7 0A       		.uleb128 0xa
- 322 01e8 18020000 		.4byte	.LASF29
+ 322 01e8 0F020000 		.4byte	.LASF29
  323 01ec 04       		.byte	0x4
  324 01ed D301     		.2byte	0x1d3
  325 01ef A2000000 		.4byte	0xa2
@@ -472,29 +472,29 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  331 01fc A2000000 		.4byte	0xa2
  332 0200 08       		.byte	0x8
  333 0201 0A       		.uleb128 0xa
- 334 0202 DA000000 		.4byte	.LASF39
+ 334 0202 D1000000 		.4byte	.LASF39
  335 0206 04       		.byte	0x4
  336 0207 D801     		.2byte	0x1d8
  337 0209 A2000000 		.4byte	0xa2
  338 020d 0C       		.byte	0xc
  339 020e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 9
 
 
- 340 020f 29030000 		.4byte	.LASF32
+ 340 020f 56030000 		.4byte	.LASF32
  341 0213 04       		.byte	0x4
  342 0214 DC01     		.2byte	0x1dc
  343 0216 A2000000 		.4byte	0xa2
  344 021a 10       		.byte	0x10
  345 021b 0A       		.uleb128 0xa
- 346 021c AD000000 		.4byte	.LASF34
+ 346 021c A4000000 		.4byte	.LASF34
  347 0220 04       		.byte	0x4
  348 0221 E001     		.2byte	0x1e0
  349 0223 A2000000 		.4byte	0xa2
  350 0227 14       		.byte	0x14
  351 0228 00       		.byte	0
  352 0229 07       		.uleb128 0x7
- 353 022a 7E010000 		.4byte	.LASF40
+ 353 022a 75010000 		.4byte	.LASF40
  354 022e 04       		.byte	0x4
  355 022f E201     		.2byte	0x1e2
  356 0231 D1010000 		.4byte	0x1d1
@@ -504,20 +504,20 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  360 0238 E501     		.2byte	0x1e5
  361 023a 59020000 		.4byte	0x259
  362 023e 0A       		.uleb128 0xa
- 363 023f 10010000 		.4byte	.LASF41
+ 363 023f 07010000 		.4byte	.LASF41
  364 0243 04       		.byte	0x4
  365 0244 E701     		.2byte	0x1e7
  366 0246 29020000 		.4byte	0x229
  367 024a 00       		.byte	0
  368 024b 0A       		.uleb128 0xa
- 369 024c AC030000 		.4byte	.LASF42
+ 369 024c B1030000 		.4byte	.LASF42
  370 0250 04       		.byte	0x4
  371 0251 E801     		.2byte	0x1e8
  372 0253 29020000 		.4byte	0x229
  373 0257 18       		.byte	0x18
  374 0258 00       		.byte	0
  375 0259 07       		.uleb128 0x7
- 376 025a 96010000 		.4byte	.LASF43
+ 376 025a 8D010000 		.4byte	.LASF43
  377 025e 04       		.byte	0x4
  378 025f E901     		.2byte	0x1e9
  379 0261 35020000 		.4byte	0x235
@@ -530,7 +530,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  386 0274 01       		.uleb128 0x1
  387 0275 9C       		.byte	0x9c
  388 0276 0D       		.uleb128 0xd
- 389 0277 CB010000 		.4byte	.LASF44
+ 389 0277 C2010000 		.4byte	.LASF44
  390 027b 05       		.byte	0x5
  391 027c EA07     		.2byte	0x7ea
  392 027e 82020000 		.4byte	0x282
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  394 0283 97000000 		.4byte	0x97
  395 0287 0F       		.uleb128 0xf
  396 0288 97020000 		.4byte	0x297
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 10
 
 
  397 028c 97020000 		.4byte	0x297
@@ -556,7 +556,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  409 02a8 11       		.uleb128 0x11
  410 02a9 87020000 		.4byte	0x287
  411 02ad 12       		.uleb128 0x12
- 412 02ae 27010000 		.4byte	.LASF46
+ 412 02ae 1E010000 		.4byte	.LASF46
  413 02b2 01       		.byte	0x1
  414 02b3 16       		.byte	0x16
  415 02b4 8C000000 		.4byte	0x8c
@@ -564,7 +564,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  417 02b9 03       		.byte	0x3
  418 02ba 00000000 		.4byte	RealTimeClock_initVar
  419 02be 12       		.uleb128 0x12
- 420 02bf 0E030000 		.4byte	.LASF47
+ 420 02bf 3B030000 		.4byte	.LASF47
  421 02c3 01       		.byte	0x1
  422 02c4 2C       		.byte	0x2c
  423 02c5 CF020000 		.4byte	0x2cf
@@ -574,9 +574,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  427 02cf 02       		.uleb128 0x2
  428 02d0 01       		.byte	0x1
  429 02d1 02       		.byte	0x2
- 430 02d2 C9030000 		.4byte	.LASF48
+ 430 02d2 CE030000 		.4byte	.LASF48
  431 02d6 12       		.uleb128 0x12
- 432 02d7 F8000000 		.4byte	.LASF49
+ 432 02d7 EF000000 		.4byte	.LASF49
  433 02db 01       		.byte	0x1
  434 02dc 48       		.byte	0x48
  435 02dd E7020000 		.4byte	0x2e7
@@ -586,7 +586,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  439 02e7 11       		.uleb128 0x11
  440 02e8 59020000 		.4byte	0x259
  441 02ec 12       		.uleb128 0x12
- 442 02ed B4030000 		.4byte	.LASF50
+ 442 02ed B9030000 		.4byte	.LASF50
  443 02f1 01       		.byte	0x1
  444 02f2 1B       		.byte	0x1b
  445 02f3 FD020000 		.4byte	0x2fd
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  451 0302 00       		.byte	0
  452              		.section	.debug_abbrev,"",%progbits
  453              	.Ldebug_abbrev0:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 11
 
 
  454 0000 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  508 0036 05       		.uleb128 0x5
  509 0037 04       		.uleb128 0x4
  510 0038 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 12
 
 
  511 0039 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  565 006f 3A       		.uleb128 0x3a
  566 0070 0B       		.uleb128 0xb
  567 0071 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 13
 
 
  568 0072 05       		.uleb128 0x5
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  622 00a8 9742     		.uleb128 0x2117
  623 00aa 19       		.uleb128 0x19
  624 00ab 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 14
 
 
  625 00ac 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  679 00e2 0E       		.uleb128 0xe
  680 00e3 3A       		.uleb128 0x3a
  681 00e4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 15
 
 
  682 00e5 3B       		.uleb128 0x3b
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  721      6B5F5374 
  721      61727400 
  722              	.LASF45:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 16
 
 
  723 0040 63795F52 		.ascii	"cy_RTC_daysInMonthTbl\000"
@@ -909,262 +909,263 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 1
  724              	.LASF35:
  725 0056 79656172 		.ascii	"year\000"
  725      00
- 726              	.LASF6:
- 727 005b 6C6F6E67 		.ascii	"long int\000"
- 727      20696E74 
- 727      00
+ 726              	.LASF5:
+ 727 005b 5F5F696E 		.ascii	"__int32_t\000"
+ 727      7433325F 
+ 727      7400
  728              	.LASF52:
- 729 0064 47656E65 		.ascii	"Generated_Source\\PSoC6\\RealTimeClock.c\000"
+ 729 0065 47656E65 		.ascii	"Generated_Source\\PSoC6\\RealTimeClock.c\000"
  729      72617465 
  729      645F536F 
  729      75726365 
  729      5C50536F 
- 730              	.LASF5:
- 731 008b 5F5F696E 		.ascii	"__int32_t\000"
- 731      7433325F 
- 731      7400
- 732              	.LASF24:
- 733 0095 43595F52 		.ascii	"CY_RTC_DST_FIXED\000"
- 733      54435F44 
- 733      53545F46 
- 733      49584544 
- 733      00
- 734              	.LASF19:
- 735 00a6 646F7562 		.ascii	"double\000"
- 735      6C6500
- 736              	.LASF34:
- 737 00ad 6D6F6E74 		.ascii	"month\000"
- 737      6800
- 738              	.LASF22:
- 739 00b3 63795F65 		.ascii	"cy_en_rtc_hours_format_t\000"
- 739      6E5F7274 
- 739      635F686F 
- 739      7572735F 
- 739      666F726D 
- 740              	.LASF31:
- 741 00cc 6872466F 		.ascii	"hrFormat\000"
- 741      726D6174 
+ 730              	.LASF24:
+ 731 008c 43595F52 		.ascii	"CY_RTC_DST_FIXED\000"
+ 731      54435F44 
+ 731      53545F46 
+ 731      49584544 
+ 731      00
+ 732              	.LASF19:
+ 733 009d 646F7562 		.ascii	"double\000"
+ 733      6C6500
+ 734              	.LASF34:
+ 735 00a4 6D6F6E74 		.ascii	"month\000"
+ 735      6800
+ 736              	.LASF22:
+ 737 00aa 63795F65 		.ascii	"cy_en_rtc_hours_format_t\000"
+ 737      6E5F7274 
+ 737      635F686F 
+ 737      7572735F 
+ 737      666F726D 
+ 738              	.LASF31:
+ 739 00c3 6872466F 		.ascii	"hrFormat\000"
+ 739      726D6174 
+ 739      00
+ 740              	.LASF33:
+ 741 00cc 64617465 		.ascii	"date\000"
  741      00
- 742              	.LASF33:
- 743 00d5 64617465 		.ascii	"date\000"
- 743      00
- 744              	.LASF39:
- 745 00da 7765656B 		.ascii	"weekOfMonth\000"
- 745      4F664D6F 
- 745      6E746800 
- 746              	.LASF28:
- 747 00e6 63795F65 		.ascii	"cy_en_rtc_am_pm_t\000"
- 747      6E5F7274 
- 747      635F616D 
- 747      5F706D5F 
- 747      7400
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 17
+ 742              	.LASF39:
+ 743 00d1 7765656B 		.ascii	"weekOfMonth\000"
+ 743      4F664D6F 
+ 743      6E746800 
+ 744              	.LASF28:
+ 745 00dd 63795F65 		.ascii	"cy_en_rtc_am_pm_t\000"
+ 745      6E5F7274 
+ 745      635F616D 
+ 745      5F706D5F 
+ 745      7400
+ 746              	.LASF49:
+ 747 00ef 5265616C 		.ascii	"RealTimeClock_dstConfig\000"
+ 747      54696D65 
+ 747      436C6F63 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 17
 
 
- 748              	.LASF49:
- 749 00f8 5265616C 		.ascii	"RealTimeClock_dstConfig\000"
- 749      54696D65 
- 749      436C6F63 
- 749      6B5F6473 
- 749      74436F6E 
- 750              	.LASF41:
- 751 0110 73746172 		.ascii	"startDst\000"
- 751      74447374 
- 751      00
- 752              	.LASF2:
- 753 0119 756E7369 		.ascii	"unsigned char\000"
- 753      676E6564 
- 753      20636861 
- 753      7200
- 754              	.LASF46:
- 755 0127 5265616C 		.ascii	"RealTimeClock_initVar\000"
- 755      54696D65 
- 755      436C6F63 
- 755      6B5F696E 
- 755      69745661 
- 756              	.LASF13:
- 757 013d 696E7433 		.ascii	"int32_t\000"
- 757      325F7400 
- 758              	.LASF8:
- 759 0145 6C6F6E67 		.ascii	"long unsigned int\000"
- 759      20756E73 
- 759      69676E65 
- 759      6420696E 
- 759      7400
- 760              	.LASF3:
- 761 0157 73686F72 		.ascii	"short unsigned int\000"
- 761      7420756E 
- 761      7369676E 
- 761      65642069 
- 761      6E7400
- 762              	.LASF36:
- 763 016a 63795F73 		.ascii	"cy_stc_rtc_config_t\000"
+ 747      6B5F6473 
+ 747      74436F6E 
+ 748              	.LASF41:
+ 749 0107 73746172 		.ascii	"startDst\000"
+ 749      74447374 
+ 749      00
+ 750              	.LASF2:
+ 751 0110 756E7369 		.ascii	"unsigned char\000"
+ 751      676E6564 
+ 751      20636861 
+ 751      7200
+ 752              	.LASF46:
+ 753 011e 5265616C 		.ascii	"RealTimeClock_initVar\000"
+ 753      54696D65 
+ 753      436C6F63 
+ 753      6B5F696E 
+ 753      69745661 
+ 754              	.LASF13:
+ 755 0134 696E7433 		.ascii	"int32_t\000"
+ 755      325F7400 
+ 756              	.LASF8:
+ 757 013c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 757      20756E73 
+ 757      69676E65 
+ 757      6420696E 
+ 757      7400
+ 758              	.LASF3:
+ 759 014e 73686F72 		.ascii	"short unsigned int\000"
+ 759      7420756E 
+ 759      7369676E 
+ 759      65642069 
+ 759      6E7400
+ 760              	.LASF36:
+ 761 0161 63795F73 		.ascii	"cy_stc_rtc_config_t\000"
+ 761      74635F72 
+ 761      74635F63 
+ 761      6F6E6669 
+ 761      675F7400 
+ 762              	.LASF40:
+ 763 0175 63795F73 		.ascii	"cy_stc_rtc_dst_format_t\000"
  763      74635F72 
- 763      74635F63 
- 763      6F6E6669 
- 763      675F7400 
- 764              	.LASF40:
- 765 017e 63795F73 		.ascii	"cy_stc_rtc_dst_format_t\000"
+ 763      74635F64 
+ 763      73745F66 
+ 763      6F726D61 
+ 764              	.LASF43:
+ 765 018d 63795F73 		.ascii	"cy_stc_rtc_dst_t\000"
  765      74635F72 
  765      74635F64 
- 765      73745F66 
- 765      6F726D61 
- 766              	.LASF43:
- 767 0196 63795F73 		.ascii	"cy_stc_rtc_dst_t\000"
+ 765      73745F74 
+ 765      00
+ 766              	.LASF54:
+ 767 019e 63795F73 		.ascii	"cy_stc_rtc_config\000"
  767      74635F72 
- 767      74635F64 
- 767      73745F74 
- 767      00
- 768              	.LASF54:
- 769 01a7 63795F73 		.ascii	"cy_stc_rtc_config\000"
- 769      74635F72 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 18
+ 767      74635F63 
+ 767      6F6E6669 
+ 767      6700
+ 768              	.LASF7:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 18
 
 
- 769      74635F63 
- 769      6F6E6669 
- 769      6700
- 770              	.LASF7:
- 771 01b9 5F5F7569 		.ascii	"__uint32_t\000"
- 771      6E743332 
- 771      5F7400
- 772              	.LASF37:
- 773 01c4 666F726D 		.ascii	"format\000"
- 773      617400
- 774              	.LASF44:
- 775 01cb 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 775      52784275 
- 775      66666572 
+ 769 01b0 5F5F7569 		.ascii	"__uint32_t\000"
+ 769      6E743332 
+ 769      5F7400
+ 770              	.LASF37:
+ 771 01bb 666F726D 		.ascii	"format\000"
+ 771      617400
+ 772              	.LASF44:
+ 773 01c2 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 773      52784275 
+ 773      66666572 
+ 773      00
+ 774              	.LASF11:
+ 775 01cf 756E7369 		.ascii	"unsigned int\000"
+ 775      676E6564 
+ 775      20696E74 
  775      00
- 776              	.LASF11:
- 777 01d8 756E7369 		.ascii	"unsigned int\000"
- 777      676E6564 
- 777      20696E74 
- 777      00
- 778              	.LASF10:
- 779 01e5 6C6F6E67 		.ascii	"long long unsigned int\000"
- 779      206C6F6E 
- 779      6720756E 
- 779      7369676E 
- 779      65642069 
- 780              	.LASF12:
- 781 01fc 75696E74 		.ascii	"uint8_t\000"
- 781      385F7400 
- 782              	.LASF23:
- 783 0204 43595F52 		.ascii	"CY_RTC_DST_RELATIVE\000"
- 783      54435F44 
- 783      53545F52 
- 783      454C4154 
- 783      49564500 
- 784              	.LASF29:
- 785 0218 686F7572 		.ascii	"hour\000"
- 785      00
- 786              	.LASF1:
- 787 021d 7369676E 		.ascii	"signed char\000"
- 787      65642063 
- 787      68617200 
- 788              	.LASF51:
- 789 0229 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 789      43313120 
- 789      352E342E 
- 789      31203230 
- 789      31363036 
- 790 025c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
- 790      20726576 
- 790      6973696F 
- 790      6E203233 
- 790      37373135 
- 791 028f 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
- 791      70202D6D 
- 791      6670753D 
- 791      66707634 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 19
+ 776              	.LASF10:
+ 777 01dc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 777      206C6F6E 
+ 777      6720756E 
+ 777      7369676E 
+ 777      65642069 
+ 778              	.LASF12:
+ 779 01f3 75696E74 		.ascii	"uint8_t\000"
+ 779      385F7400 
+ 780              	.LASF23:
+ 781 01fb 43595F52 		.ascii	"CY_RTC_DST_RELATIVE\000"
+ 781      54435F44 
+ 781      53545F52 
+ 781      454C4154 
+ 781      49564500 
+ 782              	.LASF29:
+ 783 020f 686F7572 		.ascii	"hour\000"
+ 783      00
+ 784              	.LASF1:
+ 785 0214 7369676E 		.ascii	"signed char\000"
+ 785      65642063 
+ 785      68617200 
+ 786              	.LASF51:
+ 787 0220 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 787      43313120 
+ 787      352E342E 
+ 787      31203230 
+ 787      31363036 
+ 788 0253 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 788      20726576 
+ 788      6973696F 
+ 788      6E203233 
+ 788      37373135 
+ 789 0286 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 789      70202D6D 
+ 789      6670753D 
+ 789      66707634 
+ 789      2D73702D 
+ 790 02b9 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 790      6F6E7320 
+ 790      2D666661 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 19
 
 
- 791      2D73702D 
- 792 02c2 65637469 		.ascii	"ections -ffat-lto-objects\000"
- 792      6F6E7320 
- 792      2D666661 
- 792      742D6C74 
- 792      6F2D6F62 
- 793              	.LASF16:
- 794 02dc 6C6F6E67 		.ascii	"long double\000"
- 794      20646F75 
- 794      626C6500 
- 795              	.LASF15:
- 796 02e8 73697A65 		.ascii	"sizetype\000"
- 796      74797065 
- 796      00
- 797              	.LASF27:
- 798 02f1 43595F52 		.ascii	"CY_RTC_PM\000"
- 798      54435F50 
- 798      4D00
- 799              	.LASF9:
- 800 02fb 6C6F6E67 		.ascii	"long long int\000"
- 800      206C6F6E 
- 800      6720696E 
- 800      7400
- 801              	.LASF17:
- 802 0309 63686172 		.ascii	"char\000"
- 802      00
- 803              	.LASF47:
- 804 030e 5265616C 		.ascii	"RealTimeClock_rtcDstStatus\000"
- 804      54696D65 
- 804      436C6F63 
- 804      6B5F7274 
- 804      63447374 
- 805              	.LASF32:
- 806 0329 6461794F 		.ascii	"dayOfWeek\000"
- 806      66576565 
- 806      6B00
- 807              	.LASF26:
- 808 0333 43595F52 		.ascii	"CY_RTC_AM\000"
- 808      54435F41 
- 808      4D00
- 809              	.LASF21:
- 810 033d 43595F52 		.ascii	"CY_RTC_12_HOURS\000"
- 810      54435F31 
- 810      325F484F 
- 810      55525300 
- 811              	.LASF0:
- 812 034d 73686F72 		.ascii	"short int\000"
- 812      7420696E 
- 812      7400
- 813              	.LASF20:
- 814 0357 43595F52 		.ascii	"CY_RTC_24_HOURS\000"
- 814      54435F32 
- 814      345F484F 
- 814      55525300 
- 815              	.LASF14:
- 816 0367 75696E74 		.ascii	"uint32_t\000"
- 816      33325F74 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccA1Phgf.s 			page 20
+ 790      742D6C74 
+ 790      6F2D6F62 
+ 791              	.LASF16:
+ 792 02d3 6C6F6E67 		.ascii	"long double\000"
+ 792      20646F75 
+ 792      626C6500 
+ 793              	.LASF15:
+ 794 02df 73697A65 		.ascii	"sizetype\000"
+ 794      74797065 
+ 794      00
+ 795              	.LASF27:
+ 796 02e8 43595F52 		.ascii	"CY_RTC_PM\000"
+ 796      54435F50 
+ 796      4D00
+ 797              	.LASF9:
+ 798 02f2 6C6F6E67 		.ascii	"long long int\000"
+ 798      206C6F6E 
+ 798      6720696E 
+ 798      7400
+ 799              	.LASF53:
+ 800 0300 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\Bike FSM_ne"
+ 800      73657273 
+ 800      5C73616C 
+ 800      617A5C44 
+ 800      65736B74 
+ 801 032e 772E6379 		.ascii	"w.cydsn\000"
+ 801      64736E00 
+ 802              	.LASF17:
+ 803 0336 63686172 		.ascii	"char\000"
+ 803      00
+ 804              	.LASF47:
+ 805 033b 5265616C 		.ascii	"RealTimeClock_rtcDstStatus\000"
+ 805      54696D65 
+ 805      436C6F63 
+ 805      6B5F7274 
+ 805      63447374 
+ 806              	.LASF32:
+ 807 0356 6461794F 		.ascii	"dayOfWeek\000"
+ 807      66576565 
+ 807      6B00
+ 808              	.LASF26:
+ 809 0360 43595F52 		.ascii	"CY_RTC_AM\000"
+ 809      54435F41 
+ 809      4D00
+ 810              	.LASF21:
+ 811 036a 43595F52 		.ascii	"CY_RTC_12_HOURS\000"
+ 811      54435F31 
+ 811      325F484F 
+ 811      55525300 
+ 812              	.LASF0:
+ 813 037a 73686F72 		.ascii	"short int\000"
+ 813      7420696E 
+ 813      7400
+ 814              	.LASF20:
+ 815 0384 43595F52 		.ascii	"CY_RTC_24_HOURS\000"
+ 815      54435F32 
+ 815      345F484F 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYVFWuc.s 			page 20
 
 
- 816      00
- 817              	.LASF53:
- 818 0370 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\Handle\\Bike FSM_new.cyd"
- 818      73657273 
- 818      5C73616C 
- 818      617A5C44 
- 818      65736B74 
- 819 039e 736E00   		.ascii	"sn\000"
+ 815      55525300 
+ 816              	.LASF14:
+ 817 0394 75696E74 		.ascii	"uint32_t\000"
+ 817      33325F74 
+ 817      00
+ 818              	.LASF6:
+ 819 039d 6C6F6E67 		.ascii	"long int\000"
+ 819      20696E74 
+ 819      00
  820              	.LASF30:
- 821 03a1 616D506D 		.ascii	"amPm\000"
+ 821 03a6 616D506D 		.ascii	"amPm\000"
  821      00
  822              	.LASF18:
- 823 03a6 666C6F61 		.ascii	"float\000"
+ 823 03ab 666C6F61 		.ascii	"float\000"
  823      7400
  824              	.LASF42:
- 825 03ac 73746F70 		.ascii	"stopDst\000"
+ 825 03b1 73746F70 		.ascii	"stopDst\000"
  825      44737400 
  826              	.LASF50:
- 827 03b4 5265616C 		.ascii	"RealTimeClock_config\000"
+ 827 03b9 5265616C 		.ascii	"RealTimeClock_config\000"
  827      54696D65 
  827      436C6F63 
  827      6B5F636F 
  827      6E666967 
  828              	.LASF48:
- 829 03c9 5F426F6F 		.ascii	"_Bool\000"
+ 829 03ce 5F426F6F 		.ascii	"_Bool\000"
  829      6C00
  830              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

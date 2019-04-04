@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
   27:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c **** *
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c **** * \param outTrig
   29:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c **** * The output of the trigger mux. This refers to the consumer of the trigger mux. 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 2
 
 
   30:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c **** * - Bits 11:8 represent the trigger group selection.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
   55:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c ****     
   56:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c ****     /* inTrig and outTrig should be in the same group */
   57:Generated_Source\PSoC6\pdl\drivers\peripheral\trigmux/cy_trigmux.c ****     if ((inTrig & CY_TR_GROUP_MASK) == (outTrig & CY_TR_GROUP_MASK))
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 3
 
 
   58              		.loc 1 57 0 is_stmt 1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
   96              		.loc 1 69 0
   97 0050 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
   98              	.LVL11:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 4
 
 
   99              	.L8:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  117              		@ args = 0, pretend = 0, frame = 0
  118              		@ frame_needed = 0, uses_anonymous_args = 0
  119              	.LVL12:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 5
 
 
  120 0000 38B5     		push	{r3, r4, r5, lr}
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  160              		.loc 1 119 0
  161 0030 2404     		lsls	r4, r4, #16
  162              	.LVL18:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 6
 
 
  163 0032 04F47F04 		and	r4, r4, #16711680
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  197              		.loc 1 135 0
  198 0066 0020     		movs	r0, #0
  199 0068 38BD     		pop	{r3, r4, r5, pc}
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 7
 
 
  200              	.LVL24:
@@ -418,13 +418,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  240 0006 00000000 		.4byte	.Ldebug_abbrev0
  241 000a 04       		.byte	0x4
  242 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 8
 
 
- 243 000c 6E020000 		.4byte	.LASF63
+ 243 000c 73020000 		.4byte	.LASF63
  244 0010 0C       		.byte	0xc
  245 0011 44000000 		.4byte	.LASF64
- 246 0015 10020000 		.4byte	.LASF65
+ 246 0015 61010000 		.4byte	.LASF65
  247 0019 00000000 		.4byte	.Ldebug_ranges0+0
  248 001d 00000000 		.4byte	0
  249 0021 00000000 		.4byte	.Ldebug_line0
@@ -435,17 +435,17 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  254 002c 02       		.uleb128 0x2
  255 002d 01       		.byte	0x1
  256 002e 06       		.byte	0x6
- 257 002f A7010000 		.4byte	.LASF1
+ 257 002f DD010000 		.4byte	.LASF1
  258 0033 02       		.uleb128 0x2
  259 0034 01       		.byte	0x1
  260 0035 08       		.byte	0x8
- 261 0036 99010000 		.4byte	.LASF2
+ 261 0036 CF010000 		.4byte	.LASF2
  262 003a 02       		.uleb128 0x2
  263 003b 02       		.byte	0x2
  264 003c 07       		.byte	0x7
- 265 003d 41020000 		.4byte	.LASF3
+ 265 003d 46020000 		.4byte	.LASF3
  266 0041 03       		.uleb128 0x3
- 267 0042 BB030000 		.4byte	.LASF5
+ 267 0042 C0030000 		.4byte	.LASF5
  268 0046 02       		.byte	0x2
  269 0047 3F       		.byte	0x3f
  270 0048 4C000000 		.4byte	0x4c
@@ -461,7 +461,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  280 005e 02       		.uleb128 0x2
  281 005f 04       		.byte	0x4
  282 0060 07       		.byte	0x7
- 283 0061 8D030000 		.4byte	.LASF7
+ 283 0061 92030000 		.4byte	.LASF7
  284 0065 02       		.uleb128 0x2
  285 0066 08       		.byte	0x8
  286 0067 05       		.byte	0x5
@@ -469,7 +469,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  288 006c 02       		.uleb128 0x2
  289 006d 08       		.byte	0x8
  290 006e 07       		.byte	0x7
- 291 006f B3010000 		.4byte	.LASF9
+ 291 006f E9010000 		.4byte	.LASF9
  292 0073 04       		.uleb128 0x4
  293 0074 04       		.byte	0x4
  294 0075 05       		.byte	0x5
@@ -477,17 +477,17 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  296 007a 02       		.uleb128 0x2
  297 007b 04       		.byte	0x4
  298 007c 07       		.byte	0x7
- 299 007d E4010000 		.4byte	.LASF10
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 9
+ 299 007d 1A020000 		.4byte	.LASF10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 9
 
 
  300 0081 03       		.uleb128 0x3
- 301 0082 21030000 		.4byte	.LASF11
+ 301 0082 26030000 		.4byte	.LASF11
  302 0086 03       		.byte	0x3
  303 0087 2C       		.byte	0x2c
  304 0088 41000000 		.4byte	0x41
  305 008c 03       		.uleb128 0x3
- 306 008d CA010000 		.4byte	.LASF12
+ 306 008d 00020000 		.4byte	.LASF12
  307 0091 03       		.byte	0x3
  308 0092 30       		.byte	0x30
  309 0093 53000000 		.4byte	0x53
@@ -509,11 +509,11 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  325 00b6 91000000 		.4byte	.LASF14
  326 00ba 00       		.byte	0
  327 00bb 08       		.uleb128 0x8
- 328 00bc 54020000 		.4byte	.LASF15
+ 328 00bc 59020000 		.4byte	.LASF15
  329 00c0 01       		.byte	0x1
  330 00c1 00       		.byte	0
  331 00c2 09       		.uleb128 0x9
- 332 00c3 F1010000 		.4byte	.LASF16
+ 332 00c3 27020000 		.4byte	.LASF16
  333 00c7 04       		.byte	0x4
  334 00c8 A605     		.2byte	0x5a6
  335 00ca A8000000 		.4byte	0xa8
@@ -537,8 +537,8 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  353 00f1 27       		.byte	0x27
  354 00f2 33010000 		.4byte	0x133
  355 00f6 0D       		.uleb128 0xd
- 356 00f7 F6030000 		.4byte	.LASF17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 10
+ 356 00f7 FB030000 		.4byte	.LASF17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 10
 
 
  357 00fb 05       		.byte	0x5
@@ -546,25 +546,25 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  359 00fd 9E000000 		.4byte	0x9e
  360 0101 00       		.byte	0
  361 0102 0D       		.uleb128 0xd
- 362 0103 E0030000 		.4byte	.LASF18
+ 362 0103 E5030000 		.4byte	.LASF18
  363 0107 05       		.byte	0x5
  364 0108 29       		.byte	0x29
  365 0109 38010000 		.4byte	0x138
  366 010d 04       		.byte	0x4
  367 010e 0D       		.uleb128 0xd
- 368 010f 17040000 		.4byte	.LASF19
+ 368 010f 1C040000 		.4byte	.LASF19
  369 0113 05       		.byte	0x5
  370 0114 2A       		.byte	0x2a
  371 0115 9E000000 		.4byte	0x9e
  372 0119 20       		.byte	0x20
  373 011a 0D       		.uleb128 0xd
- 374 011b 29030000 		.4byte	.LASF20
+ 374 011b 2E030000 		.4byte	.LASF20
  375 011f 05       		.byte	0x5
  376 0120 2B       		.byte	0x2b
  377 0121 9E000000 		.4byte	0x9e
  378 0125 24       		.byte	0x24
  379 0126 0D       		.uleb128 0xd
- 380 0127 65030000 		.4byte	.LASF21
+ 380 0127 6A030000 		.4byte	.LASF21
  381 012b 05       		.byte	0x5
  382 012c 2C       		.byte	0x2c
  383 012d 52010000 		.4byte	0x152
@@ -596,9 +596,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  409 0166 32       		.byte	0x32
  410 0167 78010000 		.4byte	0x178
  411 016b 0D       		.uleb128 0xd
- 412 016c D5030000 		.4byte	.LASF23
+ 412 016c DA030000 		.4byte	.LASF23
  413 0170 05       		.byte	0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 11
 
 
  414 0171 33       		.byte	0x33
@@ -618,7 +618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  428 018b 39       		.byte	0x39
  429 018c D9010000 		.4byte	0x1d9
  430 0190 0D       		.uleb128 0xd
- 431 0191 35030000 		.4byte	.LASF25
+ 431 0191 3A030000 		.4byte	.LASF25
  432 0195 05       		.byte	0x5
  433 0196 3A       		.byte	0x3a
  434 0197 9E000000 		.4byte	0x9e
@@ -630,13 +630,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  440 01a3 9E000000 		.4byte	0x9e
  441 01a7 04       		.byte	0x4
  442 01a8 0D       		.uleb128 0xd
- 443 01a9 E0030000 		.4byte	.LASF18
+ 443 01a9 E5030000 		.4byte	.LASF18
  444 01ad 05       		.byte	0x5
  445 01ae 3C       		.byte	0x3c
  446 01af DE010000 		.4byte	0x1de
  447 01b3 08       		.byte	0x8
  448 01b4 0D       		.uleb128 0xd
- 449 01b5 3B030000 		.4byte	.LASF27
+ 449 01b5 40030000 		.4byte	.LASF27
  450 01b9 05       		.byte	0x5
  451 01ba 3D       		.byte	0x3d
  452 01bb A3000000 		.4byte	0xa3
@@ -648,7 +648,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  458 01c7 9E000000 		.4byte	0x9e
  459 01cb 24       		.byte	0x24
  460 01cc 0D       		.uleb128 0xd
- 461 01cd 65030000 		.4byte	.LASF21
+ 461 01cd 6A030000 		.4byte	.LASF21
  462 01d1 05       		.byte	0x5
  463 01d2 3F       		.byte	0x3f
  464 01d3 E8010000 		.4byte	0x1e8
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  468 01da 3D010000 		.4byte	0x13d
  469 01de 06       		.uleb128 0x6
  470 01df D9010000 		.4byte	0x1d9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 12
 
 
  471 01e3 05       		.uleb128 0x5
@@ -676,7 +676,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  483 01fb 45       		.byte	0x45
  484 01fc 49020000 		.4byte	0x249
  485 0200 0D       		.uleb128 0xd
- 486 0201 35030000 		.4byte	.LASF25
+ 486 0201 3A030000 		.4byte	.LASF25
  487 0205 05       		.byte	0x5
  488 0206 46       		.byte	0x46
  489 0207 A3000000 		.4byte	0xa3
@@ -688,13 +688,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  495 0213 9E000000 		.4byte	0x9e
  496 0217 04       		.byte	0x4
  497 0218 0D       		.uleb128 0xd
- 498 0219 E0030000 		.4byte	.LASF18
+ 498 0219 E5030000 		.4byte	.LASF18
  499 021d 05       		.byte	0x5
  500 021e 48       		.byte	0x48
  501 021f 4E020000 		.4byte	0x24e
  502 0223 08       		.byte	0x8
  503 0224 0D       		.uleb128 0xd
- 504 0225 3B030000 		.4byte	.LASF27
+ 504 0225 40030000 		.4byte	.LASF27
  505 0229 05       		.byte	0x5
  506 022a 49       		.byte	0x49
  507 022b A3000000 		.4byte	0xa3
@@ -706,7 +706,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  513 0237 9E000000 		.4byte	0x9e
  514 023b 24       		.byte	0x24
  515 023c 0D       		.uleb128 0xd
- 516 023d 65030000 		.4byte	.LASF21
+ 516 023d 6A030000 		.4byte	.LASF21
  517 0241 05       		.byte	0x5
  518 0242 4B       		.byte	0x4b
  519 0243 58020000 		.4byte	0x258
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  525 024f 49020000 		.4byte	0x249
  526 0253 05       		.uleb128 0x5
  527 0254 3D010000 		.4byte	0x13d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 13
 
 
  528 0258 06       		.uleb128 0x6
@@ -746,19 +746,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  550 0283 9E000000 		.4byte	0x9e
  551 0287 0004     		.2byte	0x400
  552 0289 10       		.uleb128 0x10
- 553 028a E0030000 		.4byte	.LASF18
+ 553 028a E5030000 		.4byte	.LASF18
  554 028e 05       		.byte	0x5
  555 028f 6C       		.byte	0x6c
  556 0290 65030000 		.4byte	0x365
  557 0294 0404     		.2byte	0x404
  558 0296 10       		.uleb128 0x10
- 559 0297 D3010000 		.4byte	.LASF32
+ 559 0297 09020000 		.4byte	.LASF32
  560 029b 05       		.byte	0x5
  561 029c 6D       		.byte	0x6d
  562 029d 7A030000 		.4byte	0x37a
  563 02a1 0008     		.2byte	0x800
  564 02a3 10       		.uleb128 0x10
- 565 02a4 75010000 		.4byte	.LASF33
+ 565 02a4 AB010000 		.4byte	.LASF33
  566 02a8 05       		.byte	0x5
  567 02a9 6E       		.byte	0x6e
  568 02aa 7F030000 		.4byte	0x37f
@@ -770,40 +770,40 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  574 02b7 84030000 		.4byte	0x384
  575 02bb 000A     		.2byte	0xa00
  576 02bd 10       		.uleb128 0x10
- 577 02be 61010000 		.4byte	.LASF35
+ 577 02be 97010000 		.4byte	.LASF35
  578 02c2 05       		.byte	0x5
  579 02c3 70       		.byte	0x70
  580 02c4 99030000 		.4byte	0x399
  581 02c8 000B     		.2byte	0xb00
  582 02ca 10       		.uleb128 0x10
- 583 02cb 65030000 		.4byte	.LASF21
+ 583 02cb 6A030000 		.4byte	.LASF21
  584 02cf 05       		.byte	0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 14
 
 
  585 02d0 71       		.byte	0x71
  586 02d1 A3000000 		.4byte	0xa3
  587 02d5 FC0B     		.2byte	0xbfc
  588 02d7 10       		.uleb128 0x10
- 589 02d8 F6030000 		.4byte	.LASF17
+ 589 02d8 FB030000 		.4byte	.LASF17
  590 02dc 05       		.byte	0x5
  591 02dd 72       		.byte	0x72
  592 02de 9E030000 		.4byte	0x39e
  593 02e2 000C     		.2byte	0xc00
  594 02e4 10       		.uleb128 0x10
- 595 02e5 6F030000 		.4byte	.LASF36
+ 595 02e5 74030000 		.4byte	.LASF36
  596 02e9 05       		.byte	0x5
  597 02ea 73       		.byte	0x73
  598 02eb B8030000 		.4byte	0x3b8
  599 02ef 000E     		.2byte	0xe00
  600 02f1 10       		.uleb128 0x10
- 601 02f2 09020000 		.4byte	.LASF37
+ 601 02f2 3F020000 		.4byte	.LASF37
  602 02f6 05       		.byte	0x5
  603 02f7 74       		.byte	0x74
  604 02f8 9E000000 		.4byte	0x9e
  605 02fc 0010     		.2byte	0x1000
  606 02fe 10       		.uleb128 0x10
- 607 02ff 79030000 		.4byte	.LASF38
+ 607 02ff 7E030000 		.4byte	.LASF38
  608 0303 05       		.byte	0x5
  609 0304 75       		.byte	0x75
  610 0305 D3030000 		.4byte	0x3d3
@@ -815,13 +815,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  616 0312 D8030000 		.4byte	0x3d8
  617 0316 0020     		.2byte	0x2000
  618 0318 10       		.uleb128 0x10
- 619 0319 DD010000 		.4byte	.LASF40
+ 619 0319 13020000 		.4byte	.LASF40
  620 031d 05       		.byte	0x5
  621 031e 77       		.byte	0x77
  622 031f E8030000 		.4byte	0x3e8
  623 0323 0040     		.2byte	0x4000
  624 0325 10       		.uleb128 0x10
- 625 0326 83030000 		.4byte	.LASF41
+ 625 0326 88030000 		.4byte	.LASF41
  626 032a 05       		.byte	0x5
  627 032b 78       		.byte	0x78
  628 032c 0E040000 		.4byte	0x40e
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  639 0345 50030000 		.4byte	0x350
  640 0349 0B       		.uleb128 0xb
  641 034a 97000000 		.4byte	0x97
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 15
 
 
  642 034e 0F       		.byte	0xf
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  696 03cd 00       		.byte	0
  697 03ce 05       		.uleb128 0x5
  698 03cf BD030000 		.4byte	0x3bd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 16
 
 
  699 03d3 06       		.uleb128 0x6
@@ -956,9 +956,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  751 0448 02       		.uleb128 0x2
  752 0449 08       		.byte	0x8
  753 044a 04       		.byte	0x4
- 754 044b 9F030000 		.4byte	.LASF47
+ 754 044b A4030000 		.4byte	.LASF47
  755 044f 12       		.uleb128 0x12
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 17
 
 
  756 0450 04       		.byte	0x4
@@ -970,14 +970,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  762 045c B4000000 		.4byte	.LASF48
  763 0460 00       		.byte	0
  764 0461 13       		.uleb128 0x13
- 765 0462 A6030000 		.4byte	.LASF49
+ 765 0462 AB030000 		.4byte	.LASF49
  766 0466 0100CE00 		.4byte	0xce0001
  767 046a 13       		.uleb128 0x13
- 768 046b 80010000 		.4byte	.LASF50
+ 768 046b B6010000 		.4byte	.LASF50
  769 046f 0200CE00 		.4byte	0xce0002
  770 0473 00       		.byte	0
  771 0474 03       		.uleb128 0x3
- 772 0475 4E030000 		.4byte	.LASF51
+ 772 0475 53030000 		.4byte	.LASF51
  773 0479 07       		.byte	0x7
  774 047a D5       		.byte	0xd5
  775 047b 4F040000 		.4byte	0x44f
@@ -992,25 +992,25 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  784 0493 9C       		.byte	0x9c
  785 0494 0C050000 		.4byte	0x50c
  786 0498 15       		.uleb128 0x15
- 787 0499 47030000 		.4byte	.LASF52
+ 787 0499 4C030000 		.4byte	.LASF52
  788 049d 01       		.byte	0x1
  789 049e 31       		.byte	0x31
  790 049f 8C000000 		.4byte	0x8c
  791 04a3 00000000 		.4byte	.LLST0
  792 04a7 15       		.uleb128 0x15
- 793 04a8 66020000 		.4byte	.LASF53
+ 793 04a8 6B020000 		.4byte	.LASF53
  794 04ac 01       		.byte	0x1
  795 04ad 31       		.byte	0x31
  796 04ae 8C000000 		.4byte	0x8c
  797 04b2 45000000 		.4byte	.LLST1
  798 04b6 15       		.uleb128 0x15
- 799 04b7 6E010000 		.4byte	.LASF54
+ 799 04b7 A4010000 		.4byte	.LASF54
  800 04bb 01       		.byte	0x1
  801 04bc 31       		.byte	0x31
  802 04bd 0C050000 		.4byte	0x50c
  803 04c1 8A000000 		.4byte	.LLST2
  804 04c5 15       		.uleb128 0x15
- 805 04c6 C5030000 		.4byte	.LASF55
+ 805 04c6 CA030000 		.4byte	.LASF55
  806 04ca 01       		.byte	0x1
  807 04cb 31       		.byte	0x31
  808 04cc C2000000 		.4byte	0xc2
@@ -1018,14 +1018,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  810 04d4 16       		.uleb128 0x16
  811 04d5 28010000 		.4byte	.LASF56
  812 04d9 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 18
 
 
  813 04da 33       		.byte	0x33
  814 04db 13050000 		.4byte	0x513
  815 04df CC000000 		.4byte	.LLST4
  816 04e3 16       		.uleb128 0x16
- 817 04e4 CE030000 		.4byte	.LASF57
+ 817 04e4 D3030000 		.4byte	.LASF57
  818 04e8 01       		.byte	0x1
  819 04e9 34       		.byte	0x34
  820 04ea 74040000 		.4byte	0x474
@@ -1050,7 +1050,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  839 050c 02       		.uleb128 0x2
  840 050d 01       		.byte	0x1
  841 050e 02       		.byte	0x2
- 842 050f 41030000 		.4byte	.LASF58
+ 842 050f 46030000 		.4byte	.LASF58
  843 0513 19       		.uleb128 0x19
  844 0514 04       		.byte	0x4
  845 0515 9E000000 		.4byte	0x9e
@@ -1065,7 +1065,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  854 052d 9C       		.byte	0x9c
  855 052e 96050000 		.4byte	0x596
  856 0532 15       		.uleb128 0x15
- 857 0533 00020000 		.4byte	.LASF61
+ 857 0533 36020000 		.4byte	.LASF61
  858 0537 01       		.byte	0x1
  859 0538 68       		.byte	0x68
  860 0539 8C000000 		.4byte	0x8c
@@ -1077,8 +1077,8 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  866 0548 8C000000 		.4byte	0x8c
  867 054c 7C010000 		.4byte	.LLST7
  868 0550 16       		.uleb128 0x16
- 869 0551 CE030000 		.4byte	.LASF57
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 19
+ 869 0551 D3030000 		.4byte	.LASF57
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 19
 
 
  870 0555 01       		.byte	0x1
@@ -1120,15 +1120,15 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  906 0594 00       		.byte	0
  907 0595 00       		.byte	0
  908 0596 1B       		.uleb128 0x1b
- 909 0597 E9030000 		.4byte	.LASF66
+ 909 0597 EE030000 		.4byte	.LASF66
  910 059b 08       		.byte	0x8
  911 059c EA07     		.2byte	0x7ea
  912 059e A2050000 		.4byte	0x5a2
  913 05a2 05       		.uleb128 0x5
  914 05a3 81000000 		.4byte	0x81
  915 05a7 1C       		.uleb128 0x1c
- 916 05a8 00040000 		.4byte	.LASF67
- 917 05ac 00040000 		.4byte	.LASF67
+ 916 05a8 05040000 		.4byte	.LASF67
+ 917 05ac 05040000 		.4byte	.LASF67
  918 05b0 06       		.byte	0x6
  919 05b1 2A03     		.2byte	0x32a
  920 05b3 00       		.byte	0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  924 0001 11       		.uleb128 0x11
  925 0002 01       		.byte	0x1
  926 0003 25       		.uleb128 0x25
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 20
 
 
  927 0004 0E       		.uleb128 0xe
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  981 003a 13       		.uleb128 0x13
  982 003b 00       		.byte	0
  983 003c 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 21
 
 
  984 003d 06       		.uleb128 0x6
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1038 0073 21       		.uleb128 0x21
  1039 0074 00       		.byte	0
  1040 0075 49       		.uleb128 0x49
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 22
 
 
  1041 0076 13       		.uleb128 0x13
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1095 00ac 0B       		.uleb128 0xb
  1096 00ad 49       		.uleb128 0x49
  1097 00ae 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 23
 
 
  1098 00af 38       		.uleb128 0x38
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1152 00e5 01       		.byte	0x1
  1153 00e6 3F       		.uleb128 0x3f
  1154 00e7 19       		.uleb128 0x19
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 24
 
 
  1155 00e8 03       		.uleb128 0x3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1209 0121 01       		.byte	0x1
  1210 0122 11       		.uleb128 0x11
  1211 0123 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 25
 
 
  1212 0124 31       		.uleb128 0x31
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1266 015f 19       		.uleb128 0x19
  1267 0160 3C       		.uleb128 0x3c
  1268 0161 19       		.uleb128 0x19
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 26
 
 
  1269 0162 6E       		.uleb128 0x6e
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1323 0065 F3       		.byte	0xf3
  1324 0066 01       		.uleb128 0x1
  1325 0067 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 27
 
 
  1326 0068 9F       		.byte	0x9f
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1380 00ea 0100CE00 		.4byte	0xce0001
  1381 00ee 9F       		.byte	0x9f
  1382 00ef 4A000000 		.4byte	.LVL8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 28
 
 
  1383 00f3 4E000000 		.4byte	.LVL9
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1437 0174 00000000 		.4byte	0
  1438 0178 00000000 		.4byte	0
  1439              	.LLST7:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 29
 
 
  1440 017c 00000000 		.4byte	.LVL12
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1494 0203 0C       		.byte	0xc
  1495 0204 0200CE00 		.4byte	0xce0002
  1496 0208 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 30
 
 
  1497 0209 70000000 		.4byte	.LVL26
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1535      00
  1536              	.LASF43:
  1537 003a 50455249 		.ascii	"PERI_Type\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 31
 
 
  1537      5F547970 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1560      5F50525F 
  1560      54797065 
  1560      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 32
 
 
  1561              	.LASF46:
@@ -1901,213 +1901,214 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 1
  1580      75785F53 
  1580      77547269 
  1580      67676572 
- 1581              	.LASF35:
- 1582 0161 4449565F 		.ascii	"DIV_24_5_CTL\000"
- 1582      32345F35 
- 1582      5F43544C 
- 1582      00
- 1583              	.LASF54:
- 1584 016e 696E7665 		.ascii	"invert\000"
- 1584      727400
- 1585              	.LASF33:
- 1586 0175 4449565F 		.ascii	"DIV_16_CTL\000"
- 1586      31365F43 
- 1586      544C00
- 1587              	.LASF50:
- 1588 0180 43595F54 		.ascii	"CY_TRIGMUX_INVALID_STATE\000"
- 1588      5249474D 
- 1588      55585F49 
- 1588      4E56414C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 33
+ 1581              	.LASF65:
+ 1582 0161 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\Bike FSM_ne"
+ 1582      73657273 
+ 1582      5C73616C 
+ 1582      617A5C44 
+ 1582      65736B74 
+ 1583 018f 772E6379 		.ascii	"w.cydsn\000"
+ 1583      64736E00 
+ 1584              	.LASF35:
+ 1585 0197 4449565F 		.ascii	"DIV_24_5_CTL\000"
+ 1585      32345F35 
+ 1585      5F43544C 
+ 1585      00
+ 1586              	.LASF54:
+ 1587 01a4 696E7665 		.ascii	"invert\000"
+ 1587      727400
+ 1588              	.LASF33:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 33
 
 
- 1588      49445F53 
- 1589              	.LASF2:
- 1590 0199 756E7369 		.ascii	"unsigned char\000"
- 1590      676E6564 
- 1590      20636861 
- 1590      7200
- 1591              	.LASF1:
- 1592 01a7 7369676E 		.ascii	"signed char\000"
- 1592      65642063 
- 1592      68617200 
- 1593              	.LASF9:
- 1594 01b3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1594      206C6F6E 
- 1594      6720756E 
- 1594      7369676E 
- 1594      65642069 
- 1595              	.LASF12:
- 1596 01ca 75696E74 		.ascii	"uint32_t\000"
- 1596      33325F74 
- 1596      00
- 1597              	.LASF32:
- 1598 01d3 4449565F 		.ascii	"DIV_8_CTL\000"
- 1598      385F4354 
- 1598      4C00
- 1599              	.LASF40:
- 1600 01dd 5050555F 		.ascii	"PPU_PR\000"
- 1600      505200
- 1601              	.LASF10:
- 1602 01e4 756E7369 		.ascii	"unsigned int\000"
- 1602      676E6564 
- 1602      20696E74 
- 1602      00
- 1603              	.LASF16:
- 1604 01f1 656E5F74 		.ascii	"en_trig_type_t\000"
- 1604      7269675F 
- 1604      74797065 
- 1604      5F7400
- 1605              	.LASF61:
- 1606 0200 74726967 		.ascii	"trigLine\000"
- 1606      4C696E65 
- 1606      00
- 1607              	.LASF37:
- 1608 0209 54525F43 		.ascii	"TR_CMD\000"
- 1608      4D4400
- 1609              	.LASF65:
- 1610 0210 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\Handle\\Bike FSM_new.cyd"
- 1610      73657273 
- 1610      5C73616C 
- 1610      617A5C44 
- 1610      65736B74 
- 1611 023e 736E00   		.ascii	"sn\000"
+ 1589 01ab 4449565F 		.ascii	"DIV_16_CTL\000"
+ 1589      31365F43 
+ 1589      544C00
+ 1590              	.LASF50:
+ 1591 01b6 43595F54 		.ascii	"CY_TRIGMUX_INVALID_STATE\000"
+ 1591      5249474D 
+ 1591      55585F49 
+ 1591      4E56414C 
+ 1591      49445F53 
+ 1592              	.LASF2:
+ 1593 01cf 756E7369 		.ascii	"unsigned char\000"
+ 1593      676E6564 
+ 1593      20636861 
+ 1593      7200
+ 1594              	.LASF1:
+ 1595 01dd 7369676E 		.ascii	"signed char\000"
+ 1595      65642063 
+ 1595      68617200 
+ 1596              	.LASF9:
+ 1597 01e9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1597      206C6F6E 
+ 1597      6720756E 
+ 1597      7369676E 
+ 1597      65642069 
+ 1598              	.LASF12:
+ 1599 0200 75696E74 		.ascii	"uint32_t\000"
+ 1599      33325F74 
+ 1599      00
+ 1600              	.LASF32:
+ 1601 0209 4449565F 		.ascii	"DIV_8_CTL\000"
+ 1601      385F4354 
+ 1601      4C00
+ 1602              	.LASF40:
+ 1603 0213 5050555F 		.ascii	"PPU_PR\000"
+ 1603      505200
+ 1604              	.LASF10:
+ 1605 021a 756E7369 		.ascii	"unsigned int\000"
+ 1605      676E6564 
+ 1605      20696E74 
+ 1605      00
+ 1606              	.LASF16:
+ 1607 0227 656E5F74 		.ascii	"en_trig_type_t\000"
+ 1607      7269675F 
+ 1607      74797065 
+ 1607      5F7400
+ 1608              	.LASF61:
+ 1609 0236 74726967 		.ascii	"trigLine\000"
+ 1609      4C696E65 
+ 1609      00
+ 1610              	.LASF37:
+ 1611 023f 54525F43 		.ascii	"TR_CMD\000"
+ 1611      4D4400
  1612              	.LASF3:
- 1613 0241 73686F72 		.ascii	"short unsigned int\000"
+ 1613 0246 73686F72 		.ascii	"short unsigned int\000"
  1613      7420756E 
  1613      7369676E 
  1613      65642069 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 34
+
+
  1613      6E7400
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 34
-
-
  1614              	.LASF15:
- 1615 0254 54524947 		.ascii	"TRIGGER_TYPE_EDGE\000"
+ 1615 0259 54524947 		.ascii	"TRIGGER_TYPE_EDGE\000"
  1615      4745525F 
  1615      54595045 
  1615      5F454447 
  1615      4500
  1616              	.LASF53:
- 1617 0266 6F757454 		.ascii	"outTrig\000"
+ 1617 026b 6F757454 		.ascii	"outTrig\000"
  1617      72696700 
  1618              	.LASF63:
- 1619 026e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1619 0273 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  1619      43313120 
  1619      352E342E 
  1619      31203230 
  1619      31363036 
- 1620 02a1 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1620 02a6 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
  1620      20726576 
  1620      6973696F 
  1620      6E203233 
  1620      37373135 
- 1621 02d4 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 1621 02d9 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
  1621      70202D6D 
  1621      6670753D 
  1621      66707634 
  1621      2D73702D 
- 1622 0307 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1622 030c 65637469 		.ascii	"ections -ffat-lto-objects\000"
  1622      6F6E7320 
  1622      2D666661 
  1622      742D6C74 
  1622      6F2D6F62 
  1623              	.LASF11:
- 1624 0321 696E7433 		.ascii	"int32_t\000"
+ 1624 0326 696E7433 		.ascii	"int32_t\000"
  1624      325F7400 
  1625              	.LASF20:
- 1626 0329 54494D45 		.ascii	"TIMEOUT_CTL\000"
+ 1626 032e 54494D45 		.ascii	"TIMEOUT_CTL\000"
  1626      4F55545F 
  1626      43544C00 
  1627              	.LASF25:
- 1628 0335 41444452 		.ascii	"ADDR0\000"
+ 1628 033a 41444452 		.ascii	"ADDR0\000"
  1628      3000
  1629              	.LASF27:
- 1630 033b 41444452 		.ascii	"ADDR1\000"
+ 1630 0340 41444452 		.ascii	"ADDR1\000"
  1630      3100
  1631              	.LASF58:
- 1632 0341 5F426F6F 		.ascii	"_Bool\000"
+ 1632 0346 5F426F6F 		.ascii	"_Bool\000"
  1632      6C00
  1633              	.LASF52:
- 1634 0347 696E5472 		.ascii	"inTrig\000"
+ 1634 034c 696E5472 		.ascii	"inTrig\000"
  1634      696700
  1635              	.LASF51:
- 1636 034e 63795F65 		.ascii	"cy_en_trigmux_status_t\000"
+ 1636 0353 63795F65 		.ascii	"cy_en_trigmux_status_t\000"
  1636      6E5F7472 
  1636      69676D75 
  1636      785F7374 
  1636      61747573 
  1637              	.LASF21:
- 1638 0365 52455345 		.ascii	"RESERVED1\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 35
 
 
+ 1638 036a 52455345 		.ascii	"RESERVED1\000"
  1638      52564544 
  1638      3100
  1639              	.LASF36:
- 1640 036f 52455345 		.ascii	"RESERVED2\000"
+ 1640 0374 52455345 		.ascii	"RESERVED2\000"
  1640      52564544 
  1640      3200
  1641              	.LASF38:
- 1642 0379 52455345 		.ascii	"RESERVED3\000"
+ 1642 037e 52455345 		.ascii	"RESERVED3\000"
  1642      52564544 
  1642      3300
  1643              	.LASF41:
- 1644 0383 52455345 		.ascii	"RESERVED4\000"
+ 1644 0388 52455345 		.ascii	"RESERVED4\000"
  1644      52564544 
  1644      3400
  1645              	.LASF7:
- 1646 038d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1646 0392 6C6F6E67 		.ascii	"long unsigned int\000"
  1646      20756E73 
  1646      69676E65 
  1646      6420696E 
  1646      7400
  1647              	.LASF47:
- 1648 039f 646F7562 		.ascii	"double\000"
+ 1648 03a4 646F7562 		.ascii	"double\000"
  1648      6C6500
  1649              	.LASF49:
- 1650 03a6 43595F54 		.ascii	"CY_TRIGMUX_BAD_PARAM\000"
+ 1650 03ab 43595F54 		.ascii	"CY_TRIGMUX_BAD_PARAM\000"
  1650      5249474D 
  1650      55585F42 
  1650      41445F50 
  1650      4152414D 
  1651              	.LASF5:
- 1652 03bb 5F5F696E 		.ascii	"__int32_t\000"
+ 1652 03c0 5F5F696E 		.ascii	"__int32_t\000"
  1652      7433325F 
  1652      7400
  1653              	.LASF55:
- 1654 03c5 74726967 		.ascii	"trigType\000"
+ 1654 03ca 74726967 		.ascii	"trigType\000"
  1654      54797065 
  1654      00
  1655              	.LASF57:
- 1656 03ce 72657456 		.ascii	"retVal\000"
+ 1656 03d3 72657456 		.ascii	"retVal\000"
  1656      616C00
  1657              	.LASF23:
- 1658 03d5 54525F4F 		.ascii	"TR_OUT_CTL\000"
+ 1658 03da 54525F4F 		.ascii	"TR_OUT_CTL\000"
  1658      55545F43 
  1658      544C00
  1659              	.LASF18:
- 1660 03e0 52455345 		.ascii	"RESERVED\000"
+ 1660 03e5 52455345 		.ascii	"RESERVED\000"
  1660      52564544 
  1660      00
  1661              	.LASF66:
- 1662 03e9 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1662 03ee 49544D5F 		.ascii	"ITM_RxBuffer\000"
  1662      52784275 
  1662      66666572 
  1662      00
  1663              	.LASF17:
- 1664 03f6 434C4F43 		.ascii	"CLOCK_CTL\000"
+ 1664 03fb 434C4F43 		.ascii	"CLOCK_CTL\000"
  1664      4B5F4354 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9nHUop.s 			page 36
+
+
  1664      4C00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccei72sb.s 			page 36
-
-
  1665              	.LASF67:
- 1666 0400 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
+ 1666 0405 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
  1666      79734C69 
  1666      625F4173 
  1666      73657274 
  1666      4661696C 
  1667              	.LASF19:
- 1668 0417 534C5F43 		.ascii	"SL_CTL\000"
+ 1668 041c 534C5F43 		.ascii	"SL_CTL\000"
  1668      544C00
  1669              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

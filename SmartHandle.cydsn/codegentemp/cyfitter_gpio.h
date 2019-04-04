@@ -21,8 +21,8 @@
 /* Red */
 #define Red_0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
 #define Red_0_INBUF_ENABLED 0u
-#define Red_0_INIT_DRIVESTATE 0u
-#define Red_0_INIT_MUXSEL 0u
+#define Red_0_INIT_DRIVESTATE 1u
+#define Red_0_INIT_MUXSEL 3u
 #define Red_0_INPUT_SYNC 2u
 #define Red_0_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
 #define Red_0_NUM 3u
@@ -31,8 +31,8 @@
 #define Red_0_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
 #define Red_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
 #define Red_INBUF_ENABLED 0u
-#define Red_INIT_DRIVESTATE 0u
-#define Red_INIT_MUXSEL 0u
+#define Red_INIT_DRIVESTATE 1u
+#define Red_INIT_MUXSEL 3u
 #define Red_INPUT_SYNC 2u
 #define Red_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
 #define Red_NUM 3u
@@ -109,8 +109,8 @@
 /* Blue */
 #define Blue_0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
 #define Blue_0_INBUF_ENABLED 0u
-#define Blue_0_INIT_DRIVESTATE 0u
-#define Blue_0_INIT_MUXSEL 0u
+#define Blue_0_INIT_DRIVESTATE 1u
+#define Blue_0_INIT_MUXSEL 8u
 #define Blue_0_INPUT_SYNC 2u
 #define Blue_0_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
 #define Blue_0_NUM 6u
@@ -119,8 +119,8 @@
 #define Blue_0_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
 #define Blue_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
 #define Blue_INBUF_ENABLED 0u
-#define Blue_INIT_DRIVESTATE 0u
-#define Blue_INIT_MUXSEL 0u
+#define Blue_INIT_DRIVESTATE 1u
+#define Blue_INIT_MUXSEL 8u
 #define Blue_INPUT_SYNC 2u
 #define Blue_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
 #define Blue_NUM 6u
@@ -241,8 +241,8 @@
 /* Green */
 #define Green_0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
 #define Green_0_INBUF_ENABLED 0u
-#define Green_0_INIT_DRIVESTATE 0u
-#define Green_0_INIT_MUXSEL 0u
+#define Green_0_INIT_DRIVESTATE 1u
+#define Green_0_INIT_MUXSEL 3u
 #define Green_0_INPUT_SYNC 2u
 #define Green_0_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
 #define Green_0_NUM 5u
@@ -251,8 +251,8 @@
 #define Green_0_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
 #define Green_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
 #define Green_INBUF_ENABLED 0u
-#define Green_INIT_DRIVESTATE 0u
-#define Green_INIT_MUXSEL 0u
+#define Green_INIT_DRIVESTATE 1u
+#define Green_INIT_MUXSEL 3u
 #define Green_INPUT_SYNC 2u
 #define Green_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
 #define Green_NUM 5u

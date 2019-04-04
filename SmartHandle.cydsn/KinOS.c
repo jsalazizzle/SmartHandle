@@ -41,9 +41,13 @@ void KinOS_Boot()
     __enable_irq(); // Start the event driven operating system and enable global interrupts
     
     SystemCore_Init(); // Setup watchdog, ADC, flash manager etc
-    BusManager_Init();  // Setup data buses and data buffer
+    BusManager_Init();  // Setup data buses, acc and data buffer
     Transmission_Init(); // Setup bluetooth and send buffer
     UserInterface_Init(); // Setup light, chime, motor feedback
+    
+    KinOS_Advertise(60,50);
+    
+    //KinOS_ConfigureLight(GREEN,ZIGZAG,25,100);
     
     CyDelay(1000); // Wait for subsystems to finish initialization
     

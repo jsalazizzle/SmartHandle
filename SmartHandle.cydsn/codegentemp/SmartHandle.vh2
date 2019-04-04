@@ -2,7 +2,7 @@
 --	Conversion of SmartHandle.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Mar 20 17:28:13 2019
+--	Wed Apr 03 15:28:24 2019
 --
 
 USE cypress.cypress.all;
@@ -103,6 +103,7 @@ TERMINAL tmpSIOVREF__DB_1_net_0 : bit;
 SIGNAL tmpFB_0__DB_0_net_0 : bit;
 SIGNAL tmpIO_0__DB_0_net_0 : bit;
 TERMINAL tmpSIOVREF__DB_0_net_0 : bit;
+SIGNAL Net_1599 : bit;
 SIGNAL tmpFB_0__Green_net_0 : bit;
 SIGNAL tmpIO_0__Green_net_0 : bit;
 TERMINAL tmpSIOVREF__Green_net_0 : bit;
@@ -118,7 +119,6 @@ SIGNAL Net_460 : bit;
 SIGNAL Net_461 : bit;
 SIGNAL Net_459 : bit;
 SIGNAL Net_462 : bit;
-SIGNAL Net_192 : bit;
 SIGNAL Net_458 : bit;
 SIGNAL Net_1225 : bit;
 SIGNAL \LightOutputA:swap\ : bit;
@@ -130,7 +130,7 @@ SIGNAL Net_437 : bit;
 SIGNAL Net_438 : bit;
 SIGNAL Net_436 : bit;
 SIGNAL Net_439 : bit;
-SIGNAL Net_33679 : bit;
+SIGNAL Net_1586 : bit;
 SIGNAL Net_435 : bit;
 SIGNAL Net_51 : bit;
 SIGNAL \LightTimer:capture\ : bit;
@@ -159,7 +159,7 @@ SIGNAL Net_560 : bit;
 SIGNAL Net_561 : bit;
 SIGNAL Net_559 : bit;
 SIGNAL Net_562 : bit;
-SIGNAL Net_1227 : bit;
+SIGNAL Net_1598 : bit;
 SIGNAL Net_558 : bit;
 SIGNAL tmpFB_0__Blue_net_0 : bit;
 SIGNAL tmpIO_0__Blue_net_0 : bit;
@@ -684,11 +684,11 @@ Green:cy_mxs40_gpio_v1_0
 		id=>"7a4de49e-b2b5-48e6-aa9b-9c023b3f7859",
 		drive_mode=>"6",
 		ibuf_enabled=>"0",
-		init_dr_st=>"0",
+		init_dr_st=>"1",
 		input_sync=>"0",
 		intr_mode=>"0",
 		io_voltage=>"",
-		output_conn=>"0",
+		output_conn=>"1",
 		oe_conn=>"0",
 		output_sync=>"0",
 		oe_sync=>"0",
@@ -703,7 +703,7 @@ Green:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>(zero),
+		y=>Net_1599,
 		fb=>(tmpFB_0__Green_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Green_net_0),
@@ -755,7 +755,7 @@ SCL:cy_mxs40_gpio_v1_0
 		tr_compare_match=>Net_461,
 		tr_overflow=>Net_459,
 		line_compl=>Net_462,
-		line=>Net_192,
+		line=>Net_1599,
 		interrupt=>Net_458);
 Clock_G:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -781,7 +781,7 @@ Clock_G:cy_clock_v1_0
 		tr_compare_match=>Net_438,
 		tr_overflow=>Net_436,
 		line_compl=>Net_439,
-		line=>Net_33679,
+		line=>Net_1586,
 		interrupt=>Net_435);
 \LightTimer:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -821,11 +821,11 @@ Red:cy_mxs40_gpio_v1_0
 		id=>"a6daf096-2dc7-4f03-9401-ec13522e9369",
 		drive_mode=>"6",
 		ibuf_enabled=>"0",
-		init_dr_st=>"0",
+		init_dr_st=>"1",
 		input_sync=>"0",
 		intr_mode=>"0",
 		io_voltage=>"",
-		output_conn=>"0",
+		output_conn=>"1",
 		oe_conn=>"0",
 		output_sync=>"0",
 		oe_sync=>"0",
@@ -840,7 +840,7 @@ Red:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>(zero),
+		y=>Net_1586,
 		fb=>(tmpFB_0__Red_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Red_net_0),
@@ -892,7 +892,7 @@ SDA:cy_mxs40_gpio_v1_0
 		tr_compare_match=>Net_561,
 		tr_overflow=>Net_559,
 		line_compl=>Net_562,
-		line=>Net_1227,
+		line=>Net_1598,
 		interrupt=>Net_558);
 Blue:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -901,11 +901,11 @@ Blue:cy_mxs40_gpio_v1_0
 		id=>"4a8c5acb-8775-4f5c-a5f1-62612792c127",
 		drive_mode=>"6",
 		ibuf_enabled=>"0",
-		init_dr_st=>"0",
+		init_dr_st=>"1",
 		input_sync=>"0",
 		intr_mode=>"0",
 		io_voltage=>"",
-		output_conn=>"0",
+		output_conn=>"1",
 		oe_conn=>"0",
 		output_sync=>"0",
 		oe_sync=>"0",
@@ -920,7 +920,7 @@ Blue:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>(zero),
+		y=>Net_1598,
 		fb=>(tmpFB_0__Blue_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Blue_net_0),

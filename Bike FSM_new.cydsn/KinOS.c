@@ -44,7 +44,7 @@ void KinOS_Boot()
     BusManager_Init();  // Setup data buses and data buffer
     Transmission_Init(); // Setup bluetooth and send buffer
     UserInterface_Init(); // Setup light, chime, motor feedback
-    
+    KinOS_Advertise(60,50);
     CyDelay(1000); // Wait for subsystems to finish initialization
     
     Cy_SysInt_Init(&AppControl_IRQ_cfg, AppControlHandler); // State machine IRQ

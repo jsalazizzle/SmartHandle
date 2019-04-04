@@ -1791,7 +1791,8 @@
     <pin number="107" name="VDDR_HVL">
       <pad name="VDDR_HVL_2" number="69" type="PWR" ioSupplyPin="VDDIO_1" powerPadNames="VDDR_HVL_2" capabilities="0x0000000000000000" />
       <pad name="VDDR_HVL_3" number="70" type="PWR" ioSupplyPin="VDDIO_1" powerPadNames="VDDR_HVL_3" capabilities="0x0000000000000000" />
-      <pad name="PAD_AVIN" number="665" type="DEDICATED" ioSupplyPin="vddd" capabilities="0x0000000000000000" />
+      <pad name="PAD_PVIN" number="665" type="DEDICATED" ioSupplyPin="vddd" capabilities="0x0000000000000000" />
+      <pad name="PAD_AVIN" number="666" type="DEDICATED" ioSupplyPin="vddd" capabilities="0x0000000000000000" />
     </pin>
     <pin number="108" name="P5[5]">
       <pad name="P5[5]" number="63" type="GPIO" portId="5" pinId="5" ioSupplyPin="VDDIO_1" capabilities="0x000000C000000017">

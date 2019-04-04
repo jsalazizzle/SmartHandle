@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c **** 
   29:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c **** /* Configure the AREF to use the SRSS Vref and SRSS IZTAT. Can be used with \ref Cy_SysAnalog_Init.
   30:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c **** const cy_stc_sysanalog_config_t Cy_SysAnalog_Fast_SRSS =
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 2
 
 
   31:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c **** {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
   45              	.LVL2:
   46              	.L2:
   68:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 3
 
 
   69:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c ****     cy_en_sysanalog_status_t result;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
   89              		.loc 1 80 0 is_stmt 0 discriminator 1
   90 004c 8022     		movs	r2, #128
   91 004e 5203     		lsls	r2, r2, #13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 4
 
 
   92 0050 9342     		cmp	r3, r2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
   89:Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog/cy_sysanalog.c ****         PASS_AREF->AREF_CTRL = ctrlReg;
  137              		.loc 1 89 0
  138 008e 044A     		ldr	r2, .L9+4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 5
 
 
  139 0090 1360     		str	r3, [r2]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  186              	Cy_SysAnalog_Fast_Local:
  187 0020 01       		.byte	1
  188 0021 000000   		.space	3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 6
 
 
  189 0024 00000100 		.word	65536
@@ -334,18 +334,18 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  211 000c 9A000000 		.4byte	.LASF59
  212 0010 0C       		.byte	0xc
  213 0011 55020000 		.4byte	.LASF60
- 214 0015 99030000 		.4byte	.LASF61
+ 214 0015 11030000 		.4byte	.LASF61
  215 0019 00000000 		.4byte	.Ldebug_ranges0+0
  216 001d 00000000 		.4byte	0
  217 0021 00000000 		.4byte	.Ldebug_line0
  218 0025 02       		.uleb128 0x2
  219 0026 01       		.byte	0x1
  220 0027 06       		.byte	0x6
- 221 0028 42030000 		.4byte	.LASF0
+ 221 0028 78030000 		.4byte	.LASF0
  222 002c 02       		.uleb128 0x2
  223 002d 01       		.byte	0x1
  224 002e 08       		.byte	0x8
- 225 002f 1D030000 		.4byte	.LASF1
+ 225 002f 53030000 		.4byte	.LASF1
  226 0033 02       		.uleb128 0x2
  227 0034 02       		.byte	0x2
  228 0035 05       		.byte	0x5
@@ -353,12 +353,12 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  230 003a 02       		.uleb128 0x2
  231 003b 02       		.byte	0x2
  232 003c 07       		.byte	0x7
- 233 003d E9030000 		.4byte	.LASF3
+ 233 003d EE030000 		.4byte	.LASF3
  234 0041 02       		.uleb128 0x2
  235 0042 04       		.byte	0x4
  236 0043 05       		.byte	0x5
  237 0044 B9020000 		.4byte	.LASF4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 7
 
 
  238 0048 03       		.uleb128 0x3
@@ -369,7 +369,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  243 0053 02       		.uleb128 0x2
  244 0054 04       		.byte	0x4
  245 0055 07       		.byte	0x7
- 246 0056 4F040000 		.4byte	.LASF5
+ 246 0056 54040000 		.4byte	.LASF5
  247 005a 02       		.uleb128 0x2
  248 005b 08       		.byte	0x8
  249 005c 05       		.byte	0x5
@@ -377,7 +377,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  251 0061 02       		.uleb128 0x2
  252 0062 08       		.byte	0x8
  253 0063 07       		.byte	0x7
- 254 0064 4E030000 		.4byte	.LASF7
+ 254 0064 84030000 		.4byte	.LASF7
  255 0068 04       		.uleb128 0x4
  256 0069 04       		.byte	0x4
  257 006a 05       		.byte	0x5
@@ -385,16 +385,16 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  259 006f 02       		.uleb128 0x2
  260 0070 04       		.byte	0x4
  261 0071 07       		.byte	0x7
- 262 0072 8C030000 		.4byte	.LASF8
+ 262 0072 C2030000 		.4byte	.LASF8
  263 0076 03       		.uleb128 0x3
- 264 0077 65030000 		.4byte	.LASF10
+ 264 0077 9B030000 		.4byte	.LASF10
  265 007b 03       		.byte	0x3
  266 007c 30       		.byte	0x30
  267 007d 48000000 		.4byte	0x48
  268 0081 02       		.uleb128 0x2
  269 0082 08       		.byte	0x8
  270 0083 04       		.byte	0x4
- 271 0084 11030000 		.4byte	.LASF11
+ 271 0084 47030000 		.4byte	.LASF11
  272 0088 02       		.uleb128 0x2
  273 0089 04       		.byte	0x4
  274 008a 07       		.byte	0x7
@@ -418,14 +418,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  292 00b2 0A       		.uleb128 0xa
  293 00b3 76010000 		.4byte	.LASF13
  294 00b7 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 8
 
 
  295 00b8 23       		.byte	0x23
  296 00b9 8F000000 		.4byte	0x8f
  297 00bd 00       		.byte	0
  298 00be 0A       		.uleb128 0xa
- 299 00bf C8040000 		.4byte	.LASF14
+ 299 00bf CD040000 		.4byte	.LASF14
  300 00c3 04       		.byte	0x4
  301 00c4 24       		.byte	0x24
  302 00c5 D0000000 		.4byte	0xd0
@@ -446,25 +446,25 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  317 00e4 2A       		.byte	0x2a
  318 00e5 77010000 		.4byte	0x177
  319 00e9 0A       		.uleb128 0xa
- 320 00ea 2B030000 		.4byte	.LASF16
+ 320 00ea 61030000 		.4byte	.LASF16
  321 00ee 04       		.byte	0x4
  322 00ef 2B       		.byte	0x2b
  323 00f0 94000000 		.4byte	0x94
  324 00f4 00       		.byte	0
  325 00f5 0A       		.uleb128 0xa
- 326 00f6 C8040000 		.4byte	.LASF14
+ 326 00f6 CD040000 		.4byte	.LASF14
  327 00fa 04       		.byte	0x4
  328 00fb 2C       		.byte	0x2c
  329 00fc 8D010000 		.4byte	0x18d
  330 0100 04       		.byte	0x4
  331 0101 0B       		.uleb128 0xb
- 332 0102 4A040000 		.4byte	.LASF17
+ 332 0102 4F040000 		.4byte	.LASF17
  333 0106 04       		.byte	0x4
  334 0107 2D       		.byte	0x2d
  335 0108 D5000000 		.4byte	0xd5
  336 010c 000E     		.2byte	0xe00
  337 010e 0B       		.uleb128 0xb
- 338 010f BD040000 		.4byte	.LASF18
+ 338 010f C2040000 		.4byte	.LASF18
  339 0113 04       		.byte	0x4
  340 0114 2E       		.byte	0x2e
  341 0115 8F000000 		.4byte	0x8f
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  349 0128 0B       		.uleb128 0xb
  350 0129 CC010000 		.4byte	.LASF20
  351 012d 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 9
 
 
  352 012e 30       		.byte	0x30
@@ -503,13 +503,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  371 0156 8F000000 		.4byte	0x8f
  372 015a 140F     		.2byte	0xf14
  373 015c 0B       		.uleb128 0xb
- 374 015d 36030000 		.4byte	.LASF24
+ 374 015d 6C030000 		.4byte	.LASF24
  375 0161 04       		.byte	0x4
  376 0162 34       		.byte	0x34
  377 0163 8F000000 		.4byte	0x8f
  378 0167 180F     		.2byte	0xf18
  379 0169 0B       		.uleb128 0xb
- 380 016a 68040000 		.4byte	.LASF25
+ 380 016a 6D040000 		.4byte	.LASF25
  381 016e 04       		.byte	0x4
  382 016f 35       		.byte	0x35
  383 0170 8F000000 		.4byte	0x8f
@@ -538,11 +538,11 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  406 01a5 A9010000 		.4byte	0x1a9
  407 01a9 02       		.uleb128 0x2
  408 01aa 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 10
 
 
  409 01ab 08       		.byte	0x8
- 410 01ac FC030000 		.4byte	.LASF28
+ 410 01ac 01040000 		.4byte	.LASF28
  411 01b0 02       		.uleb128 0x2
  412 01b1 04       		.byte	0x4
  413 01b2 04       		.byte	0x4
@@ -550,7 +550,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  415 01b7 02       		.uleb128 0x2
  416 01b8 08       		.byte	0x8
  417 01b9 04       		.byte	0x4
- 418 01ba 61040000 		.4byte	.LASF30
+ 418 01ba 66040000 		.4byte	.LASF30
  419 01be 0E       		.uleb128 0xe
  420 01bf 04       		.byte	0x4
  421 01c0 6F000000 		.4byte	0x6f
@@ -558,14 +558,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  423 01c5 CB       		.byte	0xcb
  424 01c6 DA010000 		.4byte	0x1da
  425 01ca 0F       		.uleb128 0xf
- 426 01cb 1B040000 		.4byte	.LASF31
+ 426 01cb 20040000 		.4byte	.LASF31
  427 01cf 00       		.byte	0
  428 01d0 10       		.uleb128 0x10
  429 01d1 A0010000 		.4byte	.LASF32
  430 01d5 01005E00 		.4byte	0x5e0001
  431 01d9 00       		.byte	0
  432 01da 03       		.uleb128 0x3
- 433 01db D9040000 		.4byte	.LASF33
+ 433 01db DE040000 		.4byte	.LASF33
  434 01df 06       		.byte	0x6
  435 01e0 CE       		.byte	0xce
  436 01e1 BE010000 		.4byte	0x1be
@@ -576,14 +576,14 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  441 01ec D8       		.byte	0xd8
  442 01ed FE010000 		.4byte	0x1fe
  443 01f1 0F       		.uleb128 0xf
- 444 01f2 A1040000 		.4byte	.LASF34
+ 444 01f2 A6040000 		.4byte	.LASF34
  445 01f6 00       		.byte	0
  446 01f7 0F       		.uleb128 0xf
- 447 01f8 30040000 		.4byte	.LASF35
+ 447 01f8 35040000 		.4byte	.LASF35
  448 01fc 01       		.byte	0x1
  449 01fd 00       		.byte	0
  450 01fe 03       		.uleb128 0x3
- 451 01ff 25050000 		.4byte	.LASF36
+ 451 01ff 2A050000 		.4byte	.LASF36
  452 0203 06       		.byte	0x6
  453 0204 DB       		.byte	0xdb
  454 0205 E5010000 		.4byte	0x1e5
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  463 021a 00       		.byte	0
  464 021b 10       		.uleb128 0x10
  465 021c C2020000 		.4byte	.LASF38
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 11
 
 
  466 0220 00001000 		.4byte	0x100000
@@ -607,7 +607,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  469 0229 00002000 		.4byte	0x200000
  470 022d 00       		.byte	0
  471 022e 03       		.uleb128 0x3
- 472 022f 6E030000 		.4byte	.LASF40
+ 472 022f A4030000 		.4byte	.LASF40
  473 0233 06       		.byte	0x6
  474 0234 E9       		.byte	0xe9
  475 0235 09020000 		.4byte	0x209
@@ -618,7 +618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  480 0240 F4       		.byte	0xf4
  481 0241 55020000 		.4byte	0x255
  482 0245 0F       		.uleb128 0xf
- 483 0246 CA030000 		.4byte	.LASF41
+ 483 0246 CF030000 		.4byte	.LASF41
  484 024a 00       		.byte	0
  485 024b 10       		.uleb128 0x10
  486 024c 80010000 		.4byte	.LASF42
@@ -658,11 +658,11 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  520 029d 06       		.byte	0x6
  521 029e 3001     		.2byte	0x130
  522 02a0 D9020000 		.4byte	0x2d9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 12
 
 
  523 02a4 13       		.uleb128 0x13
- 524 02a5 D1040000 		.4byte	.LASF49
+ 524 02a5 D6040000 		.4byte	.LASF49
  525 02a9 06       		.byte	0x6
  526 02aa 3201     		.2byte	0x132
  527 02ac FE010000 		.4byte	0x1fe
@@ -674,7 +674,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  533 02b9 55020000 		.4byte	0x255
  534 02bd 04       		.byte	0x4
  535 02be 13       		.uleb128 0x13
- 536 02bf F2040000 		.4byte	.LASF51
+ 536 02bf F7040000 		.4byte	.LASF51
  537 02c3 06       		.byte	0x6
  538 02c4 3401     		.2byte	0x134
  539 02c6 2E020000 		.4byte	0x22e
@@ -687,12 +687,12 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  546 02d7 0C       		.byte	0xc
  547 02d8 00       		.byte	0
  548 02d9 0D       		.uleb128 0xd
- 549 02da 01040000 		.4byte	.LASF53
+ 549 02da 06040000 		.4byte	.LASF53
  550 02de 06       		.byte	0x6
  551 02df 3601     		.2byte	0x136
  552 02e1 9B020000 		.4byte	0x29b
  553 02e5 14       		.uleb128 0x14
- 554 02e6 8F040000 		.4byte	.LASF62
+ 554 02e6 94040000 		.4byte	.LASF62
  555 02ea 01       		.byte	0x1
  556 02eb 41       		.byte	0x41
  557 02ec DA010000 		.4byte	0x1da
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  577 0321 01       		.byte	0x1
  578 0322 46       		.byte	0x46
  579 0323 76000000 		.4byte	0x76
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 13
 
 
  580 0327 4B000000 		.4byte	.LLST2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  634 0387 F7030000 		.4byte	0x3f7
  635 038b 9F030000 		.4byte	0x39f
  636 038f 18       		.uleb128 0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 14
 
 
  637 0390 01       		.uleb128 0x1
@@ -824,7 +824,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  677 03d0 03       		.byte	0x3
  678 03d1 00000000 		.4byte	Cy_SysAnalog_Fast_Local
  679 03d5 1B       		.uleb128 0x1b
- 680 03d6 F7040000 		.4byte	.LASF57
+ 680 03d6 FC040000 		.4byte	.LASF57
  681 03da 01       		.byte	0x1
  682 03db 1E       		.byte	0x1e
  683 03dc BF030000 		.4byte	0x3bf
@@ -832,19 +832,19 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  685 03e1 03       		.byte	0x3
  686 03e2 00000000 		.4byte	Cy_SysAnalog_Fast_SRSS
  687 03e6 1B       		.uleb128 0x1b
- 688 03e7 74040000 		.4byte	.LASF58
+ 688 03e7 79040000 		.4byte	.LASF58
  689 03eb 01       		.byte	0x1
  690 03ec 27       		.byte	0x27
  691 03ed BF030000 		.4byte	0x3bf
  692 03f1 05       		.uleb128 0x5
  693 03f2 03       		.byte	0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 15
 
 
  694 03f3 00000000 		.4byte	Cy_SysAnalog_Fast_External
  695 03f7 1C       		.uleb128 0x1c
- 696 03f8 0E050000 		.4byte	.LASF64
- 697 03fc 0E050000 		.4byte	.LASF64
+ 696 03f8 13050000 		.4byte	.LASF64
+ 697 03fc 13050000 		.4byte	.LASF64
  698 0400 05       		.byte	0x5
  699 0401 2A03     		.2byte	0x32a
  700 0403 00       		.byte	0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  748 002d 00       		.byte	0
  749 002e 0B       		.uleb128 0xb
  750 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 16
 
 
  751 0030 3E       		.uleb128 0x3e
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  805 0066 03       		.uleb128 0x3
  806 0067 0E       		.uleb128 0xe
  807 0068 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 17
 
 
  808 0069 0B       		.uleb128 0xb
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  862 009f 0B       		.uleb128 0xb
  863 00a0 3B       		.uleb128 0x3b
  864 00a1 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 18
 
 
  865 00a2 01       		.uleb128 0x1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  919 00d8 0E       		.uleb128 0xe
  920 00d9 3A       		.uleb128 0x3a
  921 00da 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 19
 
 
  922 00db 3B       		.uleb128 0x3b
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  976 0112 0E       		.uleb128 0xe
  977 0113 3A       		.uleb128 0x3a
  978 0114 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 20
 
 
  979 0115 3B       		.uleb128 0x3b
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  1033 0152 0B       		.uleb128 0xb
  1034 0153 49       		.uleb128 0x49
  1035 0154 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 21
 
 
  1036 0155 3F       		.uleb128 0x3f
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  1090 0043 00000000 		.4byte	0
  1091 0047 00000000 		.4byte	0
  1092              	.LLST2:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 22
 
 
  1093 004b 0E000000 		.4byte	.LVL2
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  1137      5953414E 
  1137      414C4F47 
  1137      5F444545 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 23
 
 
  1137      50534C45 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  1159 0150 636F6E66 		.ascii	"config\000"
  1159      696700
  1160              	.LASF43:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 24
 
 
  1161 0157 63795F65 		.ascii	"cy_en_sysanalog_iztat_source_t\000"
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  1181      50534C45 
  1182              	.LASF29:
  1183 0241 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 25
 
 
  1183      7400
@@ -1486,165 +1486,166 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 1
  1200      414C4F47 
  1200      5F565245 
  1200      465F534F 
- 1201              	.LASF11:
- 1202 0311 6C6F6E67 		.ascii	"long double\000"
- 1202      20646F75 
- 1202      626C6500 
- 1203              	.LASF1:
- 1204 031d 756E7369 		.ascii	"unsigned char\000"
- 1204      676E6564 
- 1204      20636861 
- 1204      7200
- 1205              	.LASF16:
- 1206 032b 494E5452 		.ascii	"INTR_CAUSE\000"
- 1206      5F434155 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 26
+ 1201              	.LASF61:
+ 1202 0311 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\Bike FSM_ne"
+ 1202      73657273 
+ 1202      5C73616C 
+ 1202      617A5C44 
+ 1202      65736B74 
+ 1203 033f 772E6379 		.ascii	"w.cydsn\000"
+ 1203      64736E00 
+ 1204              	.LASF11:
+ 1205 0347 6C6F6E67 		.ascii	"long double\000"
+ 1205      20646F75 
+ 1205      626C6500 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 26
 
 
- 1206      534500
- 1207              	.LASF24:
- 1208 0336 49505441 		.ascii	"IPTAT_TRIM0\000"
- 1208      545F5452 
- 1208      494D3000 
- 1209              	.LASF0:
- 1210 0342 7369676E 		.ascii	"signed char\000"
- 1210      65642063 
- 1210      68617200 
- 1211              	.LASF7:
- 1212 034e 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1212      206C6F6E 
- 1212      6720756E 
- 1212      7369676E 
- 1212      65642069 
- 1213              	.LASF10:
- 1214 0365 75696E74 		.ascii	"uint32_t\000"
- 1214      33325F74 
- 1214      00
- 1215              	.LASF40:
- 1216 036e 63795F65 		.ascii	"cy_en_sysanalog_vref_source_t\000"
- 1216      6E5F7379 
- 1216      73616E61 
- 1216      6C6F675F 
- 1216      76726566 
- 1217              	.LASF8:
- 1218 038c 756E7369 		.ascii	"unsigned int\000"
- 1218      676E6564 
- 1218      20696E74 
- 1218      00
- 1219              	.LASF61:
- 1220 0399 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\Handle\\Bike FSM_new.cyd"
- 1220      73657273 
- 1220      5C73616C 
- 1220      617A5C44 
- 1220      65736B74 
- 1221 03c7 736E00   		.ascii	"sn\000"
+ 1206              	.LASF1:
+ 1207 0353 756E7369 		.ascii	"unsigned char\000"
+ 1207      676E6564 
+ 1207      20636861 
+ 1207      7200
+ 1208              	.LASF16:
+ 1209 0361 494E5452 		.ascii	"INTR_CAUSE\000"
+ 1209      5F434155 
+ 1209      534500
+ 1210              	.LASF24:
+ 1211 036c 49505441 		.ascii	"IPTAT_TRIM0\000"
+ 1211      545F5452 
+ 1211      494D3000 
+ 1212              	.LASF0:
+ 1213 0378 7369676E 		.ascii	"signed char\000"
+ 1213      65642063 
+ 1213      68617200 
+ 1214              	.LASF7:
+ 1215 0384 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1215      206C6F6E 
+ 1215      6720756E 
+ 1215      7369676E 
+ 1215      65642069 
+ 1216              	.LASF10:
+ 1217 039b 75696E74 		.ascii	"uint32_t\000"
+ 1217      33325F74 
+ 1217      00
+ 1218              	.LASF40:
+ 1219 03a4 63795F65 		.ascii	"cy_en_sysanalog_vref_source_t\000"
+ 1219      6E5F7379 
+ 1219      73616E61 
+ 1219      6C6F675F 
+ 1219      76726566 
+ 1220              	.LASF8:
+ 1221 03c2 756E7369 		.ascii	"unsigned int\000"
+ 1221      676E6564 
+ 1221      20696E74 
+ 1221      00
  1222              	.LASF41:
- 1223 03ca 43595F53 		.ascii	"CY_SYSANALOG_IZTAT_SOURCE_SRSS\000"
+ 1223 03cf 43595F53 		.ascii	"CY_SYSANALOG_IZTAT_SOURCE_SRSS\000"
  1223      5953414E 
  1223      414C4F47 
  1223      5F495A54 
  1223      41545F53 
  1224              	.LASF3:
- 1225 03e9 73686F72 		.ascii	"short unsigned int\000"
+ 1225 03ee 73686F72 		.ascii	"short unsigned int\000"
  1225      7420756E 
  1225      7369676E 
  1225      65642069 
  1225      6E7400
  1226              	.LASF28:
- 1227 03fc 63686172 		.ascii	"char\000"
+ 1227 0401 63686172 		.ascii	"char\000"
  1227      00
  1228              	.LASF53:
- 1229 0401 63795F73 		.ascii	"cy_stc_sysanalog_config_t\000"
+ 1229 0406 63795F73 		.ascii	"cy_stc_sysanalog_config_t\000"
  1229      74635F73 
  1229      7973616E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 27
+
+
  1229      616C6F67 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 27
-
-
  1229      5F636F6E 
  1230              	.LASF31:
- 1231 041b 43595F53 		.ascii	"CY_SYSANALOG_SUCCESS\000"
+ 1231 0420 43595F53 		.ascii	"CY_SYSANALOG_SUCCESS\000"
  1231      5953414E 
  1231      414C4F47 
  1231      5F535543 
  1231      43455353 
  1232              	.LASF35:
- 1233 0430 43595F53 		.ascii	"CY_SYSANALOG_STARTUP_FAST\000"
+ 1233 0435 43595F53 		.ascii	"CY_SYSANALOG_STARTUP_FAST\000"
  1233      5953414E 
  1233      414C4F47 
  1233      5F535441 
  1233      52545550 
  1234              	.LASF17:
- 1235 044a 41524546 		.ascii	"AREF\000"
+ 1235 044f 41524546 		.ascii	"AREF\000"
  1235      00
  1236              	.LASF5:
- 1237 044f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1237 0454 6C6F6E67 		.ascii	"long unsigned int\000"
  1237      20756E73 
  1237      69676E65 
  1237      6420696E 
  1237      7400
  1238              	.LASF30:
- 1239 0461 646F7562 		.ascii	"double\000"
+ 1239 0466 646F7562 		.ascii	"double\000"
  1239      6C6500
  1240              	.LASF25:
- 1241 0468 49435441 		.ascii	"ICTAT_TRIM0\000"
+ 1241 046d 49435441 		.ascii	"ICTAT_TRIM0\000"
  1241      545F5452 
  1241      494D3000 
  1242              	.LASF58:
- 1243 0474 43795F53 		.ascii	"Cy_SysAnalog_Fast_External\000"
+ 1243 0479 43795F53 		.ascii	"Cy_SysAnalog_Fast_External\000"
  1243      7973416E 
  1243      616C6F67 
  1243      5F466173 
  1243      745F4578 
  1244              	.LASF62:
- 1245 048f 43795F53 		.ascii	"Cy_SysAnalog_Init\000"
+ 1245 0494 43795F53 		.ascii	"Cy_SysAnalog_Init\000"
  1245      7973416E 
  1245      616C6F67 
  1245      5F496E69 
  1245      7400
  1246              	.LASF34:
- 1247 04a1 43595F53 		.ascii	"CY_SYSANALOG_STARTUP_NORMAL\000"
+ 1247 04a6 43595F53 		.ascii	"CY_SYSANALOG_STARTUP_NORMAL\000"
  1247      5953414E 
  1247      414C4F47 
  1247      5F535441 
  1247      52545550 
  1248              	.LASF18:
- 1249 04bd 56524546 		.ascii	"VREF_TRIM0\000"
+ 1249 04c2 56524546 		.ascii	"VREF_TRIM0\000"
  1249      5F545249 
  1249      4D3000
  1250              	.LASF14:
- 1251 04c8 52455345 		.ascii	"RESERVED\000"
+ 1251 04cd 52455345 		.ascii	"RESERVED\000"
  1251      52564544 
  1251      00
  1252              	.LASF49:
- 1253 04d1 73746172 		.ascii	"startup\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccY8t4BW.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccYsmWd3.s 			page 28
 
 
+ 1253 04d6 73746172 		.ascii	"startup\000"
  1253      74757000 
  1254              	.LASF33:
- 1255 04d9 63795F65 		.ascii	"cy_en_sysanalog_status_t\000"
+ 1255 04de 63795F65 		.ascii	"cy_en_sysanalog_status_t\000"
  1255      6E5F7379 
  1255      73616E61 
  1255      6C6F675F 
  1255      73746174 
  1256              	.LASF51:
- 1257 04f2 76726566 		.ascii	"vref\000"
+ 1257 04f7 76726566 		.ascii	"vref\000"
  1257      00
  1258              	.LASF57:
- 1259 04f7 43795F53 		.ascii	"Cy_SysAnalog_Fast_SRSS\000"
+ 1259 04fc 43795F53 		.ascii	"Cy_SysAnalog_Fast_SRSS\000"
  1259      7973416E 
  1259      616C6F67 
  1259      5F466173 
  1259      745F5352 
  1260              	.LASF64:
- 1261 050e 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
+ 1261 0513 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
  1261      79734C69 
  1261      625F4173 
  1261      73657274 
  1261      4661696C 
  1262              	.LASF36:
- 1263 0525 63795F65 		.ascii	"cy_en_sysanalog_startup_t\000"
+ 1263 052a 63795F65 		.ascii	"cy_en_sysanalog_startup_t\000"
  1263      6E5F7379 
  1263      73616E61 
  1263      6C6F675F 

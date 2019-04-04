@@ -62,31 +62,31 @@
 #define ChimeTimer_IRQ__INTC_CORTEXM0P_ASSIGNED 1
 #define ChimeTimer_IRQ__INTC_CORTEXM0P_MUX 10u
 #define ChimeTimer_IRQ__INTC_CORTEXM0P_PRIORITY 3u
-#define ChimeTimer_IRQ__INTC_NUMBER 95u
+#define ChimeTimer_IRQ__INTC_NUMBER 93u
 #define ChimeTimer_IRQ_INTC_CORTEXM0P_ASSIGNED 1
 #define ChimeTimer_IRQ_INTC_CORTEXM0P_MUX 10u
 #define ChimeTimer_IRQ_INTC_CORTEXM0P_PRIORITY 3u
-#define ChimeTimer_IRQ_INTC_NUMBER 95u
+#define ChimeTimer_IRQ_INTC_NUMBER 93u
 
 /* LightTimer_IRQ */
 #define LightTimer_IRQ__INTC_CORTEXM0P_ASSIGNED 1
 #define LightTimer_IRQ__INTC_CORTEXM0P_MUX 11u
 #define LightTimer_IRQ__INTC_CORTEXM0P_PRIORITY 3u
-#define LightTimer_IRQ__INTC_NUMBER 93u
+#define LightTimer_IRQ__INTC_NUMBER 92u
 #define LightTimer_IRQ_INTC_CORTEXM0P_ASSIGNED 1
 #define LightTimer_IRQ_INTC_CORTEXM0P_MUX 11u
 #define LightTimer_IRQ_INTC_CORTEXM0P_PRIORITY 3u
-#define LightTimer_IRQ_INTC_NUMBER 93u
+#define LightTimer_IRQ_INTC_NUMBER 92u
 
 /* MotorTimer_IRQ */
 #define MotorTimer_IRQ__INTC_CORTEXM0P_ASSIGNED 1
 #define MotorTimer_IRQ__INTC_CORTEXM0P_MUX 12u
 #define MotorTimer_IRQ__INTC_CORTEXM0P_PRIORITY 3u
-#define MotorTimer_IRQ__INTC_NUMBER 96u
+#define MotorTimer_IRQ__INTC_NUMBER 95u
 #define MotorTimer_IRQ_INTC_CORTEXM0P_ASSIGNED 1
 #define MotorTimer_IRQ_INTC_CORTEXM0P_MUX 12u
 #define MotorTimer_IRQ_INTC_CORTEXM0P_PRIORITY 3u
-#define MotorTimer_IRQ_INTC_NUMBER 96u
+#define MotorTimer_IRQ_INTC_NUMBER 95u
 
 /* SensorBus_SCB_IRQ */
 #define SensorBus_SCB_IRQ__INTC_CORTEXM0P_ASSIGNED 1

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * and privilege level of the bus transaction created by the specified master. 
   29:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
   30:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \param busMaster
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 2
 
 
   31:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Indicates which master needs to be configured. Refer to the CPUSS_MS_ID_X
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
   65:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** 
   66:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     CY_ASSERT_L1(CY_PROT_IS_BUS_MASTER_VALID(busMaster));
   48              		.loc 1 66 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 3
 
 
   49 000e 0F28     		cmp	r0, #15
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
   94 002e 7F23     		movs	r3, #127
   95 0030 2A00     		movs	r2, r5
   96 0032 9A43     		bics	r2, r3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 4
 
 
   97 0034 1DD0     		beq	.L13
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
   98:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         case (CPUSS_MS_ID_TC):
   99:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         {
  100:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             status = ((uint32_t)(pcMask & CY_PROT_MS15_PC_LIMIT_MASK) != 0UL) ? CY_PROT_BAD_PARAM :
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 5
 
 
  129              		.loc 1 100 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  109:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     {
  110:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         regVal = _VAL2FLD(PROT_SMPU_MS0_CTL_NS, !secure)
  169              		.loc 1 110 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 6
 
 
  170 008e 0121     		movs	r1, #1
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  119:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** 
  120:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** 
  121:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** /*******************************************************************************
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 7
 
 
  122:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Function Name: Cy_Prot_SetActivePC
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  235              	.LVL12:
  236 000e FFF7FEFF 		bl	Cy_SysLib_AssertFailed
  237              	.LVL13:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 8
 
 
  238              	.L22:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  169:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             status = (pc > CPUSS_PROT_SMPU_MS1_PC_NR_MINUS1) ? CY_PROT_BAD_PARAM : CY_PROT_SUCCESS;
  279              		.loc 1 169 0
  280 002e 072D     		cmp	r5, #7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 9
 
 
  281 0030 15D9     		bls	.L34
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  311 0058 0AE0     		b	.L23
  312              	.L33:
  164:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             break;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 10
 
 
  313              		.loc 1 164 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  355 008c 9D42     		cmp	r5, r3
  356 008e 01D0     		beq	.L39
  357 0090 0548     		ldr	r0, .L40+16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 11
 
 
  358 0092 00E0     		b	.L31
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  387              		.cfi_startproc
  388              		@ args = 0, pretend = 0, frame = 0
  389              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 12
 
 
  390              	.LVL19:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  234:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** 
  235:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** 
  236:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** /*******************************************************************************
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 13
 
 
  237:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Function Name: Cy_Prot_ConfigMpuStruct
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  456 000e 2348     		ldr	r0, .L54
  457              	.LVL26:
  458 0010 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 14
 
 
  459              	.LVL27:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  505              		.loc 1 277 0
  506 0052 A379     		ldrb	r3, [r4, #6]
  507 0054 0721     		movs	r1, #7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 15
 
 
  508 0056 1940     		ands	r1, r3
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  555              	.LVL36:
  556              	.L53:
  557 0098 0020     		movs	r0, #0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 16
 
 
  558              	.LVL37:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  583              		@ args = 0, pretend = 0, frame = 0
  584              		@ frame_needed = 0, uses_anonymous_args = 0
  585              		@ link register save eliminated.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 17
 
 
  586              	.LVL40:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  330:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \param base
  331:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * The base address of the MPU struct being configured. 
  332:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 18
 
 
  333:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \return
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  655              		.size	Cy_Prot_DisableMpuStruct, .-Cy_Prot_DisableMpuStruct
  656              		.section	.text.Cy_Prot_ConfigSmpuMasterStruct,"ax",%progbits
  657              		.align	2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 19
 
 
  658              		.global	Cy_Prot_ConfigSmpuMasterStruct
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  674              		.cfi_offset 14, -4
  675 0002 0500     		movs	r5, r0
  676 0004 0C00     		movs	r4, r1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 20
 
 
  393:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     cy_en_prot_status_t status;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  401:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     {
  402:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         /* PC mask out of range - not supported in device */
  403:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         status = CY_PROT_BAD_PARAM;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 21
 
 
  404:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  416:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             /* Invalid parameter was passed */
  417:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             status = CY_PROT_BAD_PARAM;
  418:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 22
 
 
  419:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         else
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  807              		.global	Cy_Prot_ConfigSmpuSlaveStruct
  808              		.code	16
  809              		.thumb_func
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 23
 
 
  810              		.type	Cy_Prot_ConfigSmpuSlaveStruct, %function
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  464:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     CY_ASSERT_L1(NULL != base);
  828              		.loc 1 464 0
  829 0006 0028     		cmp	r0, #0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 24
 
 
  830 0008 04D1     		bne	.L77
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  879 004e 9A43     		bics	r2, r3
  880 0050 131E     		subs	r3, r2, #0
  881 0052 35D1     		bne	.L82
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 25
 
 
  470:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  922 0092 0240     		ands	r2, r0
  923 0094 1343     		orrs	r3, r2
  924 0096 1900     		movs	r1, r3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 26
 
 
  483:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****                     | _VAL2FLD(PROT_SMPU_SMPU_STRUCT_ATT0_PC_MATCH, config->pcMatch);
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  968              		@ sp needed
  969              	.LVL72:
  970              	.LVL73:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 27
 
 
  971 00ca F8BD     		pop	{r3, r4, r5, r6, r7, pc}
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  520:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     cy_en_prot_status_t status;
  521:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     
  522:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     base->ATT1 |= _VAL2FLD(PROT_SMPU_SMPU_STRUCT_ATT1_ENABLED, CY_PROT_STRUCT_ENABLE);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 28
 
 
  997              		.loc 1 522 0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  541:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
  542:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \return
  543:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Status of the function call.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 29
 
 
  544:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1067              		.align	2
  1068              		.global	Cy_Prot_EnableSmpuSlaveStruct
  1069              		.code	16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 30
 
 
  1070              		.thumb_func
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1092 0012 00E0     		b	.L98
  1093              	.LVL84:
  1094              	.L99:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 31
 
 
  1095 0014 0020     		movs	r0, #0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1117              		.cfi_startproc
  1118              		@ args = 0, pretend = 0, frame = 0
  1119              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 32
 
 
  1120              		@ link register save eliminated.
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  645:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * This function configures the master struct governing the corresponding slave
  646:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * struct pair. It is a mechanism to protect the slave PPU PROG struct. Since
  647:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * the memory location of the slave struct is known, the address, regionSize and
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 33
 
 
  648:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * subregions of the configuration struct are not applicable.
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  678:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     CY_ASSERT_L3(CY_PROT_IS_PROG_MS_PERM_VALID(config->userPermission));
  1181              		.loc 1 678 0 is_stmt 1
  1182 0012 A379     		ldrb	r3, [r4, #6]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 34
 
 
  1183 0014 012B     		cmp	r3, #1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1224 0050 237A     		ldrb	r3, [r4, #8]
  1225 0052 0122     		movs	r2, #1
  1226 0054 5A40     		eors	r2, r3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 35
 
 
  1227 0056 D2B2     		uxtb	r2, r2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1267 0092 0A48     		ldr	r0, .L115+28
  1268 0094 02E0     		b	.L111
  1269              	.LVL98:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 36
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 36
 
 
  1270              	.L113:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  721:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Note that the user/privileged execute accesses are read-only and are always 
  722:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * enabled. 
  723:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 37
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 37
 
 
  724:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \param base
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1333 0012 A379     		ldrb	r3, [r4, #6]
  1334 0014 032B     		cmp	r3, #3
  1335 0016 03D9     		bls	.L119
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 38
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 38
 
 
  1336              		.loc 1 750 0 is_stmt 0 discriminator 1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  761:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****                     | _VAL2FLD(PERI_PPU_PR_ADDR0_ADDR24, (uint32_t)((uint32_t)config->address >> CY
  1378              		.loc 1 761 0
  1379 0056 1643     		orrs	r6, r2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 39
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 39
 
 
  1380              	.LVL109:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1426              		.loc 1 769 0
  1427 00a2 114A     		ldr	r2, .L127+20
  1428 00a4 1A40     		ands	r2, r3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 40
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 40
 
 
  1429 00a6 9342     		cmp	r3, r2
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1466              		.loc 1 784 0
  1467              		@ sp needed
  1468              	.LVL114:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 41
 
 
  1469              	.LVL115:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1495              		@ args = 0, pretend = 0, frame = 0
  1496              		@ frame_needed = 0, uses_anonymous_args = 0
  1497              		@ link register save eliminated.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 42
 
 
  1498              	.LVL116:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  830:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * settings will seize to take effect after successful completion of this 
  831:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * function call.
  832:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 43
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 43
 
 
  833:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \param base
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1564 0018 0300C200 		.word	12713987
  1565              		.cfi_endproc
  1566              	.LFE51:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 44
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 44
 
 
  1567              		.size	Cy_Prot_DisablePpuProgMasterStruct, .-Cy_Prot_DisablePpuProgMasterStruct
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1589 000a 4368     		ldr	r3, [r0, #4]
  1590 000c 002B     		cmp	r3, #0
  1591 000e 01DB     		blt	.L141
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 45
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 45
 
 
  1592 0010 0148     		ldr	r0, .L142
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  918:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \snippet prot/prot_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_Prot_DisablePpuProgSlaveStruct
  919:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
  920:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *******************************************************************************/
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 46
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 46
 
 
  921:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** cy_en_prot_status_t Cy_Prot_DisablePpuProgSlaveStruct(PERI_PPU_PR_Type* base)
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  934:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Function Name: Cy_Prot_ConfigPpuFixedGrMasterStruct
  935:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** ****************************************************************************//**
  936:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 47
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 47
 
 
  937:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \brief Configures a Fixed Peripheral Group Protection Unit (PPU GR) master 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1677              	.LVL133:
  1678 000c 8900     		lsls	r1, r1, #2
  1679 000e 2448     		ldr	r0, .L157
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 48
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 48
 
 
  1680              	.LVL134:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1721 0048 6278     		ldrb	r2, [r4, #1]
  1722 004a D200     		lsls	r2, r2, #3
  1723 004c 3823     		movs	r3, #56
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 49
 
 
  1724 004e 1340     		ands	r3, r2
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1764 008e 05D0     		beq	.L156
  1765 0090 0848     		ldr	r0, .L157+20
  1766 0092 04E0     		b	.L153
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 50
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 50
 
 
  1767              	.LVL139:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1010:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \brief Configures a Fixed Peripheral Group Protection Unit (PPU GR) slave
 1011:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * protection struct with its protection attributes. 
 1012:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 51
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 51
 
 
 1013:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * This function configures the slave struct of a PPU GR pair, which can 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1826              	.LVL145:
  1827 000c C900     		lsls	r1, r1, #3
  1828 000e 2248     		ldr	r0, .L167
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 52
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 52
 
 
  1829              	.LVL146:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1869              		.loc 1 1062 0
  1870 004a A378     		ldrb	r3, [r4, #2]
  1871 004c 0122     		movs	r2, #1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 53
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 53
 
 
  1872 004e 5A40     		eors	r2, r3
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1912              		.loc 1 1055 0
  1913 008c 0848     		ldr	r0, .L167+24
  1914 008e 02E0     		b	.L163
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 54
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 54
 
 
  1915              	.LVL152:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1092:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
 1093:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \return
 1094:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Status of the function call.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 55
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 55
 
 
 1095:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  1985              		.section	.text.Cy_Prot_DisablePpuFixedGrMasterStruct,"ax",%progbits
  1986              		.align	2
  1987              		.global	Cy_Prot_DisablePpuFixedGrMasterStruct
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 56
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 56
 
 
  1988              		.code	16
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2009              	.LVL161:
  2010 0010 00E0     		b	.L175
  2011              	.LVL162:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 57
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 57
 
 
  2012              	.L176:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2034              		.loc 1 1179 0
  2035              		.cfi_startproc
  2036              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 58
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 58
 
 
  2037              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1195:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
 1196:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * This is a PPU GR slave struct disable function. The PPU GR protection 
 1197:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * settings will seize to take effect after successful completion of this 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 59
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 59
 
 
 1198:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * function call.
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2103 0016 C046     		.align	2
  2104              	.L187:
  2105 0018 0300C200 		.word	12713987
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 60
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 60
 
 
  2106              		.cfi_endproc
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2122 0000 70B5     		push	{r4, r5, r6, lr}
  2123              		.cfi_def_cfa_offset 16
  2124              		.cfi_offset 4, -16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 61
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 61
 
 
  2125              		.cfi_offset 5, -12
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2171 003c 9A43     		bics	r2, r3
  2172 003e 28D1     		bne	.L194
 1271:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 62
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 62
 
 
 1272:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         /* PC mask out of range - not supported in device */
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2213 0080 09D1     		bne	.L195
 1285:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         {
 1286:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             /* Invalid parameter was passed */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 63
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 63
 
 
 1287:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             status = CY_PROT_BAD_PARAM;
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2255              		.cfi_endproc
  2256              	.LFE60:
  2257              		.size	Cy_Prot_ConfigPpuFixedSlMasterStruct, .-Cy_Prot_ConfigPpuFixedSlMasterStruct
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 64
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 64
 
 
  2258              		.section	.text.Cy_Prot_ConfigPpuFixedSlSlaveStruct,"ax",%progbits
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2272              		.cfi_def_cfa_offset 16
  2273              		.cfi_offset 4, -16
  2274              		.cfi_offset 5, -12
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 65
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 65
 
 
  2275              		.cfi_offset 6, -8
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1351:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     {
 1352:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         /* ADDR0 is read only. Only configure ATT0 */
 1353:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****         attReg = ((uint32_t)config->userPermission & CY_PROT_ATT_PERMISSION_MASK)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 66
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 66
 
 
  2316              		.loc 1 1353 0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1366:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             base->ATT0 = attReg;
  2357              		.loc 1 1366 0
  2358 007a 6B60     		str	r3, [r5, #4]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 67
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 67
 
 
 1367:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****             status = ((base->ATT0 & CY_PROT_PPU_SL_ATT0_MASK) != attReg) ? CY_PROT_FAILURE : CY_PRO
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2405              		.thumb_func
  2406              		.type	Cy_Prot_EnablePpuFixedSlMasterStruct, %function
  2407              	Cy_Prot_EnablePpuFixedSlMasterStruct:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 68
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 68
 
 
  2408              	.LFB62:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2430 0014 0020     		movs	r0, #0
  2431              	.LVL199:
  2432              	.L210:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 69
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 69
 
 
 1405:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****                 CY_PROT_FAILURE : CY_PROT_SUCCESS;
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2454              		@ frame_needed = 0, uses_anonymous_args = 0
  2455              		@ link register save eliminated.
  2456              	.LVL200:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 70
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 70
 
 
 1438:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     cy_en_prot_status_t status;
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1457:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \param base
 1458:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * The base address for the protection unit structure being configured. 
 1459:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 71
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 71
 
 
 1460:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \return
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2524              	.LFE64:
  2525              		.size	Cy_Prot_EnablePpuFixedSlSlaveStruct, .-Cy_Prot_EnablePpuFixedSlSlaveStruct
  2526              		.section	.text.Cy_Prot_DisablePpuFixedSlSlaveStruct,"ax",%progbits
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 72
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 72
 
 
  2527              		.align	2
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2548 000c 01DA     		bge	.L226
  2549 000e 0248     		ldr	r0, .L227
  2550              	.LVL209:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 73
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 73
 
 
  2551 0010 00E0     		b	.L225
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1545:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   Status               | Description
 1546:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   ------------         | -----------
 1547:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   CY_PROT_SUCCESS      | PPU RG master struct was successfully configured
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 74
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 74
 
 
 1548:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   CY_PROT_FAILURE      | The resource is locked
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2614 0026 6378     		ldrb	r3, [r4, #1]
  2615 0028 012B     		cmp	r3, #1
  2616 002a 05D0     		beq	.L232
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 75
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 75
 
 
  2617              		.loc 1 1562 0 is_stmt 0 discriminator 1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1577:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****                     | _VAL2FLD(PERI_GR_PPU_RG_ATT1_PC_MATCH, config->pcMatch);
  2657              		.loc 1 1577 0
  2658 006c E378     		ldrb	r3, [r4, #3]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 76
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 76
 
 
  2659 006e 9B07     		lsls	r3, r3, #30
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1590:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     return status;
 1591:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** }
  2698              		.loc 1 1591 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 77
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 77
 
 
  2699              		@ sp needed
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1621:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   ------------         | -----------
 1622:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   CY_PROT_SUCCESS      | PPU RG slave struct was successfully configured
 1623:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   CY_PROT_FAILURE      | The resource is locked
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 78
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 78
 
 
 1624:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   CY_PROT_BAD_PARAM    | An incorrect/invalid parameter was passed
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2764 0028 1C48     		ldr	r0, .L247+4
  2765 002a FFF7FEFF 		bl	Cy_SysLib_AssertFailed
  2766              	.LVL229:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 79
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 79
 
 
  2767              	.L242:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1647:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****                     | (uint32_t)(((uint32_t)config->privPermission & CY_PROT_ATT_PERMISSION_MASK) <
  2806              		.loc 1 1647 0
  2807 006e 0B00     		movs	r3, r1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 80
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 80
 
 
  2808 0070 1343     		orrs	r3, r2
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2846 0096 C046     		.align	2
  2847              	.L247:
  2848 0098 63060000 		.word	1635
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 81
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 81
 
 
  2849 009c 00000000 		.word	.LC0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1697:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c ****     base->ATT1 |= _VAL2FLD(PERI_GR_PPU_RG_ATT1_ENABLED, CY_PROT_STRUCT_ENABLE);
  2873              		.loc 1 1697 0
  2874 0000 436A     		ldr	r3, [r0, #36]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 82
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 82
 
 
  2875 0002 8022     		movs	r2, #128
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
 1718:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * \return
 1719:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** * Status of the function call.
 1720:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 83
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 83
 
 
 1721:Generated_Source\PSoC6\pdl\drivers\peripheral\prot/cy_prot.c **** *   Status               | Description
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2944              		.global	Cy_Prot_EnablePpuFixedRgSlaveStruct
  2945              		.code	16
  2946              		.thumb_func
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 84
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 84
 
 
  2947              		.type	Cy_Prot_EnablePpuFixedRgSlaveStruct, %function
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2969              	.LVL246:
  2970              	.L261:
  2971 0014 0020     		movs	r0, #0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 85
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 85
 
 
  2972              	.LVL247:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  2993              		.cfi_startproc
  2994              		@ args = 0, pretend = 0, frame = 0
  2995              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 86
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 86
 
 
  2996              		@ link register save eliminated.
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3035              		.file 5 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/ip/cyip_peri.h"
  3036              		.file 6 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/ip/cyip_prot.h"
  3037              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 87
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 87
 
 
  3038              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\prot\\cy_prot.h"
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3092 006d 02       		.byte	0x2
  3093 006e 07       		.byte	0x7
  3094 006f C4040000 		.4byte	.LASF8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 88
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 88
 
 
  3095 0073 03       		.uleb128 0x3
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3149 00e3 02       		.byte	0x2
  3150 00e4 08       		.uleb128 0x8
  3151 00e5 740A0000 		.4byte	.LASF20
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 89
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 89
 
 
  3152 00e9 03       		.byte	0x3
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3206 0157 C0000000 		.4byte	0xc0
  3207 015b 20       		.byte	0x20
  3208 015c 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 90
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 90
 
 
  3209 015d 840A0000 		.4byte	.LASF28
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3263 01cc 0E       		.uleb128 0xe
  3264 01cd 840A0000 		.4byte	.LASF28
  3265 01d1 05       		.byte	0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 91
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 91
 
 
  3266 01d2 4A       		.byte	0x4a
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3320 0241 05       		.byte	0x5
  3321 0242 56       		.byte	0x56
  3322 0243 BB000000 		.4byte	0xbb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 92
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 92
 
 
  3323 0247 24       		.byte	0x24
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3377 02b3 BB000000 		.4byte	0xbb
  3378 02b7 24       		.byte	0x24
  3379 02b8 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 93
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 93
 
 
  3380 02b9 87070000 		.4byte	.LASF29
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3434 0328 0E       		.uleb128 0xe
  3435 0329 87070000 		.4byte	.LASF29
  3436 032d 06       		.byte	0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 94
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 94
 
 
  3437 032e 2B       		.byte	0x2b
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3491 039e 06       		.byte	0x6
  3492 039f 37       		.byte	0x37
  3493 03a0 BB000000 		.4byte	0xbb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 95
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 95
 
 
  3494 03a4 14       		.byte	0x14
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3548 0410 38       		.byte	0x38
  3549 0411 0E       		.uleb128 0xe
  3550 0412 BD010000 		.4byte	.LASF50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 96
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 96
 
 
  3551 0416 06       		.byte	0x6
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3605 0488 B1040000 		.4byte	0x4b1
  3606 048c 0E       		.uleb128 0xe
  3607 048d 55010000 		.4byte	.LASF53
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 97
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 97
 
 
  3608 0491 06       		.byte	0x6
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3662 04ff B4000000 		.4byte	0xb4
  3663 0503 7E       		.byte	0x7e
  3664 0504 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 98
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 98
 
 
  3665 0505 05       		.uleb128 0x5
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3719 0577 E1090000 		.4byte	.LASF62
  3720 057b 03       		.uleb128 0x3
  3721 057c 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 99
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 99
 
 
  3722 057d 04       		.byte	0x4
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3776 05f2 08       		.uleb128 0x8
  3777 05f3 28010000 		.4byte	.LASF76
  3778 05f7 07       		.byte	0x7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 100
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 100
 
 
  3779 05f8 00       		.byte	0
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3833 0666 08       		.uleb128 0x8
  3834 0667 C7070000 		.4byte	.LASF92
  3835 066b 15       		.byte	0x15
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 101
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 101
 
 
  3836 066c 08       		.uleb128 0x8
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3890 06d9 920B0000 		.4byte	.LASF106
  3891 06dd 08       		.byte	0x8
  3892 06de D202     		.2byte	0x2d2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 102
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 102
 
 
  3893 06e0 93000000 		.4byte	0x93
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  3947 0751 93000000 		.4byte	0x93
  3948 0755 05       		.byte	0x5
  3949 0756 14       		.uleb128 0x14
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 103
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 103
 
 
  3950 0757 23060000 		.4byte	.LASF107
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4004 07cc 08       		.byte	0x8
  4005 07cd EA02     		.2byte	0x2ea
  4006 07cf 93000000 		.4byte	0x93
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 104
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 104
 
 
  4007 07d3 05       		.byte	0x5
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4061 0845 14       		.uleb128 0x14
  4062 0846 A5070000 		.4byte	.LASF109
  4063 084a 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 105
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 105
 
 
  4064 084b F702     		.2byte	0x2f7
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4118 08be 9E000000 		.4byte	0x9e
  4119 08c2 04       		.byte	0x4
  4120 08c3 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 106
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 106
 
 
  4121 08c4 09       		.uleb128 0x9
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4175 093b 9C       		.byte	0x9c
  4176 093c C1090000 		.4byte	0x9c1
  4177 0940 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 107
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 107
 
 
  4178 0941 DA050000 		.4byte	.LASF119
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4232 09bc 02       		.uleb128 0x2
  4233 09bd 08       		.byte	0x8
  4234 09be 42       		.byte	0x42
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 108
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 108
 
 
  4235 09bf 00       		.byte	0
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4289 0a2d 15       		.uleb128 0x15
  4290 0a2e 04       		.byte	0x4
  4291 0a2f 1F050000 		.4byte	0x51f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 109
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 109
 
 
  4292 0a33 16       		.uleb128 0x16
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4346 0aaa 54010000 		.4byte	.LLST11
  4347 0aae 1E       		.uleb128 0x1e
  4348 0aaf E6090000 		.4byte	.LASF130
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 110
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 110
 
 
  4349 0ab3 01       		.byte	0x1
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4403 0b21 03       		.uleb128 0x3
  4404 0b22 0A       		.byte	0xa
  4405 0b23 0F01     		.2byte	0x10f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 111
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 111
 
 
  4406 0b25 00       		.byte	0
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4460 0b8b E4050000 		.4byte	.LASF129
  4461 0b8f 01       		.byte	0x1
  4462 0b90 3701     		.2byte	0x137
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 112
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 112
 
 
  4463 0b92 5F0B0000 		.4byte	0xb5f
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4517 0c14 970C0000 		.4byte	0xc97
  4518 0c18 A6020000 		.4byte	.LLST17
  4519 0c1c 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 113
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 113
 
 
  4520 0c1d E50A0000 		.4byte	.LASF121
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4574 0c84 00000000 		.4byte	.LC0
  4575 0c88 1B       		.uleb128 0x1b
  4576 0c89 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 114
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 114
 
 
  4577 0c8a 51       		.byte	0x51
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4631 0d06 66030000 		.4byte	.LLST22
  4632 0d0a 21       		.uleb128 0x21
  4633 0d0b 14000000 		.4byte	.LVL63
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 115
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 115
 
 
  4634 0d0f DD170000 		.4byte	0x17dd
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4688 0d6f 50       		.byte	0x50
  4689 0d70 05       		.uleb128 0x5
  4690 0d71 03       		.byte	0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 116
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 116
 
 
  4691 0d72 00000000 		.4byte	.LC0
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4745 0dee 01       		.uleb128 0x1
  4746 0def 50       		.byte	0x50
  4747 0df0 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 117
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 117
 
 
  4748 0df1 1D       		.uleb128 0x1d
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4802 0e73 C0000000 		.4byte	.LFE48-.LFB48
  4803 0e77 01       		.uleb128 0x1
  4804 0e78 9C       		.byte	0x9c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 118
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 118
 
 
  4805 0e79 120F0000 		.4byte	0xf12
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4859 0ef0 01       		.uleb128 0x1
  4860 0ef1 51       		.byte	0x51
  4861 0ef2 03       		.uleb128 0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 119
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 119
 
 
  4862 0ef3 0A       		.byte	0xa
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4916 0f65 AF050000 		.4byte	0x5af
  4917 0f69 01       		.uleb128 0x1
  4918 0f6a 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 120
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 120
 
 
  4919 0f6b 20       		.uleb128 0x20
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  4973 0fd8 03       		.byte	0x3
  4974 0fd9 00000000 		.4byte	.LC0
  4975 0fdd 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 121
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 121
 
 
  4976 0fde 01       		.uleb128 0x1
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5030 104d 01       		.uleb128 0x1
  5031 104e 9C       		.byte	0x9c
  5032 104f 72100000 		.4byte	0x1072
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 122
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 122
 
 
  5033 1053 1E       		.uleb128 0x1e
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5087 10d5 1F       		.uleb128 0x1f
  5088 10d6 E50A0000 		.4byte	.LASF121
  5089 10da 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 123
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 123
 
 
  5090 10db 9B03     		.2byte	0x39b
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5144 1156 0A       		.byte	0xa
  5145 1157 CC03     		.2byte	0x3cc
  5146 1159 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 124
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 124
 
 
  5147 115a 21       		.uleb128 0x21
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5201 11c3 01       		.byte	0x1
  5202 11c4 1304     		.2byte	0x413
  5203 11c6 93110000 		.4byte	0x1193
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 125
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 125
 
 
  5204 11ca D4060000 		.4byte	.LLST41
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5258 1238 1A       		.uleb128 0x1a
  5259 1239 30000000 		.4byte	.LVL149
  5260 123d DD170000 		.4byte	0x17dd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 126
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 126
 
 
  5261 1241 1B       		.uleb128 0x1b
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5315 12b6 1F       		.uleb128 0x1f
  5316 12b7 E50A0000 		.4byte	.LASF121
  5317 12bb 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 127
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 127
 
 
  5318 12bc 7804     		.2byte	0x478
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5372 1338 1C0C0000 		.4byte	.LASF153
  5373 133c 01       		.byte	0x1
  5374 133d ED04     		.2byte	0x4ed
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 128
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 128
 
 
  5375 133f AF050000 		.4byte	0x5af
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5429 13bc 50       		.byte	0x50
  5430 13bd 05       		.uleb128 0x5
  5431 13be 03       		.byte	0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 129
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 129
 
 
  5432 13bf 00000000 		.4byte	.LC0
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5486 142d D4080000 		.4byte	.LLST52
  5487 1431 1F       		.uleb128 0x1f
  5488 1432 E50A0000 		.4byte	.LASF121
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 130
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 130
 
 
  5489 1436 01       		.byte	0x1
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5543 149d 1B       		.uleb128 0x1b
  5544 149e 01       		.uleb128 0x1
  5545 149f 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 131
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 131
 
 
  5546 14a0 03       		.uleb128 0x3
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5600 1519 34020000 		.4byte	.LASF157
  5601 151d 01       		.byte	0x1
  5602 151e C005     		.2byte	0x5c0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 132
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 132
 
 
  5603 1520 AF050000 		.4byte	0x5af
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5657 15a4 1E       		.uleb128 0x1e
  5658 15a5 E4050000 		.4byte	.LASF129
  5659 15a9 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 133
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 133
 
 
  5660 15aa 1306     		.2byte	0x613
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5714 161b 1906     		.2byte	0x619
  5715 161d 00       		.byte	0
  5716 161e 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 134
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 134
 
 
  5717 161f 38000000 		.4byte	.LVL217
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5771 1693 110A0000 		.4byte	.LASF132
  5772 1697 01       		.byte	0x1
  5773 1698 6106     		.2byte	0x661
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 135
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 135
 
 
  5774 169a A9000000 		.4byte	0xa9
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5828 16fa 76000000 		.4byte	.LASF161
  5829 16fe 01       		.byte	0x1
  5830 16ff 9D06     		.2byte	0x69d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 136
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 136
 
 
  5831 1701 AF050000 		.4byte	0x5af
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5885 1785 1E       		.uleb128 0x1e
  5886 1786 E4050000 		.4byte	.LASF129
  5887 178a 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 137
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 137
 
 
  5888 178b E606     		.2byte	0x6e6
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5942 000b 55       		.uleb128 0x55
  5943 000c 17       		.uleb128 0x17
  5944 000d 11       		.uleb128 0x11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 138
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 138
 
 
  5945 000e 01       		.uleb128 0x1
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  5999 0044 07       		.uleb128 0x7
  6000 0045 04       		.uleb128 0x4
  6001 0046 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 139
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 139
 
 
  6002 0047 0B       		.uleb128 0xb
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6056 007d 00       		.byte	0
  6057 007e 49       		.uleb128 0x49
  6058 007f 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 140
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 140
 
 
  6059 0080 2F       		.uleb128 0x2f
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6113 00b6 49       		.uleb128 0x49
  6114 00b7 13       		.uleb128 0x13
  6115 00b8 38       		.uleb128 0x38
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 141
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 141
 
 
  6116 00b9 05       		.uleb128 0x5
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6170 00ef 00       		.byte	0
  6171 00f0 15       		.uleb128 0x15
  6172 00f1 0F       		.uleb128 0xf
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 142
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 142
 
 
  6173 00f2 00       		.byte	0
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6227 0129 3A       		.uleb128 0x3a
  6228 012a 0B       		.uleb128 0xb
  6229 012b 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 143
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 143
 
 
  6230 012c 0B       		.uleb128 0xb
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6284 0167 00       		.byte	0
  6285 0168 1D       		.uleb128 0x1d
  6286 0169 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 144
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 144
 
 
  6287 016a 01       		.byte	0x1
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6341 01a1 00       		.byte	0
  6342 01a2 20       		.uleb128 0x20
  6343 01a3 34       		.uleb128 0x34
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 145
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 145
 
 
  6344 01a4 00       		.byte	0
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6398 0017 50       		.byte	0x50
  6399 0018 9F       		.byte	0x9f
  6400 0019 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 146
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 146
 
 
  6401 001d 00000000 		.4byte	0
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6455              	.LLST5:
  6456 00a2 22000000 		.4byte	.LVL4
  6457 00a6 A6000000 		.4byte	.LVL9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 147
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 147
 
 
  6458 00aa 0100     		.2byte	0x1
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6512 0133 0400     		.2byte	0x4
  6513 0135 F3       		.byte	0xf3
  6514 0136 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 148
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 148
 
 
  6515 0137 50       		.byte	0x50
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6569 01bf 0200     		.2byte	0x2
  6570 01c1 75       		.byte	0x75
  6571 01c2 00       		.sleb128 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 149
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 149
 
 
  6572 01c3 94000000 		.4byte	.LVL34
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6626 0248 0100     		.2byte	0x1
  6627 024a 50       		.byte	0x50
  6628 024b 10000000 		.4byte	.LVL45
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 150
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 150
 
 
  6629 024f 12000000 		.4byte	.LVL46
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6683 02ce 00000000 		.4byte	0
  6684              	.LLST18:
  6685 02d2 80000000 		.4byte	.LVL54
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 151
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 151
 
 
  6686 02d6 98000000 		.4byte	.LVL55
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6740 035e 00000000 		.4byte	0
  6741 0362 00000000 		.4byte	0
  6742              	.LLST22:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 152
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 152
 
 
  6743 0366 A8000000 		.4byte	.LVL68
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6797 03ec F3       		.byte	0xf3
  6798 03ed 01       		.uleb128 0x1
  6799 03ee 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 153
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 153
 
 
  6800 03ef 9F       		.byte	0x9f
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6854 046c 00000000 		.4byte	.LVL90
  6855 0470 0E000000 		.4byte	.LVL92
  6856 0474 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 154
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 154
 
 
  6857 0476 50       		.byte	0x50
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6911 0500 0400     		.2byte	0x4
  6912 0502 F3       		.byte	0xf3
  6913 0503 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 155
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 155
 
 
  6914 0504 50       		.byte	0x50
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  6968 058d 50       		.byte	0x50
  6969 058e 9F       		.byte	0x9f
  6970 058f 14000000 		.4byte	.LVL118
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 156
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 156
 
 
  6971 0593 16000000 		.4byte	.LVL119
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7025 0612 1C000000 		.4byte	.LFE52
  7026 0616 0400     		.2byte	0x4
  7027 0618 F3       		.byte	0xf3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 157
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 157
 
 
  7028 0619 01       		.uleb128 0x1
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7082 0699 9E000000 		.4byte	.LVL142
  7083 069d 0100     		.2byte	0x1
  7084 069f 54       		.byte	0x54
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 158
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 158
 
 
  7085 06a0 9E000000 		.4byte	.LVL142
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7139 0724 00000000 		.4byte	0
  7140 0728 00000000 		.4byte	0
  7141              	.LLST43:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 159
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 159
 
 
  7142 072c 74000000 		.4byte	.LVL150
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7196 07b2 F3       		.byte	0xf3
  7197 07b3 01       		.uleb128 0x1
  7198 07b4 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 160
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 160
 
 
  7199 07b5 9F       		.byte	0x9f
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7253 0832 00000000 		.4byte	.LVL172
  7254 0836 0E000000 		.4byte	.LVL174
  7255 083a 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 161
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 161
 
 
  7256 083c 50       		.byte	0x50
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7310 08c6 0400     		.2byte	0x4
  7311 08c8 F3       		.byte	0xf3
  7312 08c9 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 162
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 162
 
 
  7313 08ca 50       		.byte	0x50
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7367 094e 50       		.byte	0x50
  7368 094f 9F       		.byte	0x9f
  7369 0950 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 163
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 163
 
 
  7370 0954 00000000 		.4byte	0
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7424 09d4 0100     		.2byte	0x1
  7425 09d6 50       		.byte	0x50
  7426 09d7 10000000 		.4byte	.LVL209
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 164
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 164
 
 
  7427 09db 12000000 		.4byte	.LVL210
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7481 0a5a 00000000 		.4byte	0
  7482              	.LLST60:
  7483 0a5e 7C000000 		.4byte	.LVL218
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 165
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 165
 
 
  7484 0a62 94000000 		.4byte	.LVL219
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7538 0aea 00000000 		.4byte	0
  7539 0aee 00000000 		.4byte	0
  7540              	.LLST64:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 166
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 166
 
 
  7541 0af2 00000000 		.4byte	.LVL236
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7595 0b71 12000000 		.4byte	.LVL245
  7596 0b75 14000000 		.4byte	.LVL246
  7597 0b79 0400     		.2byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 167
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 167
 
 
  7598 0b7b F3       		.byte	0xf3
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7652 0020 00000000 		.4byte	.LFB38
  7653 0024 28000000 		.4byte	.LFE38-.LFB38
  7654 0028 00000000 		.4byte	.LFB39
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 168
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 168
 
 
  7655 002c A4000000 		.4byte	.LFE39-.LFB39
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7709 0104 BC000000 		.4byte	.LFE66-.LFB66
  7710 0108 00000000 		.4byte	.LFB67
  7711 010c B8000000 		.4byte	.LFE67-.LFB67
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 169
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 169
 
 
  7712 0110 00000000 		.4byte	.LFB68
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7766 00a8 00000000 		.4byte	.LFB57
  7767 00ac 1C000000 		.4byte	.LFE57
  7768 00b0 00000000 		.4byte	.LFB58
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 170
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 170
 
 
  7769 00b4 1C000000 		.4byte	.LFE58
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7808      524F545F 
  7808      4241445F 
  7808      50415241 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 171
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 171
 
 
  7808      4D00
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7828      65642069 
  7829              	.LASF76:
  7830 0128 43595F50 		.ascii	"CY_PROT_PERM_RWX\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 172
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 172
 
 
  7830      524F545F 
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7854 01c6 43505553 		.ascii	"CPUSS_MS_ID_CRYPTO\000"
  7854      535F4D53 
  7854      5F49445F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 173
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 173
 
 
  7854      43525950 
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7876      43544C00 
  7877              	.LASF54:
  7878 02b0 50524F54 		.ascii	"PROT_MPU_MPU_STRUCT_Type\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 174
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 174
 
 
  7878      5F4D5055 
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7899      5F444953 
  7899      41424C45 
  7900              	.LASF164:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 175
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 175
 
 
  7901 03b8 43795F50 		.ascii	"Cy_Prot_DisablePpuFixedRgSlaveStruct\000"
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7921      4200
  7922              	.LASF68:
  7923 0473 63795F65 		.ascii	"cy_en_prot_status_t\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 176
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 176
 
 
  7923      6E5F7072 
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7944 0544 43795F50 		.ascii	"Cy_Prot_SetActivePC\000"
  7944      726F745F 
  7944      53657441 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 177
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 177
 
 
  7944      63746976 
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7966 060b 4D53365F 		.ascii	"MS6_CTL\000"
  7966      43544C00 
  7967              	.LASF75:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 178
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 178
 
 
  7968 0613 43595F50 		.ascii	"CY_PROT_PERM_WX\000"
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  7990      535F4D53 
  7990      5F49445F 
  7990      434D3400 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 179
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 179
 
 
  7991              	.LASF108:
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  8012 07ac 50524F54 		.ascii	"PROT_SMPU_SMPU_STRUCT_Type\000"
  8012      5F534D50 
  8012      555F534D 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 180
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 180
 
 
  8012      50555F53 
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  8033              	.LASF47:
  8034 0884 4D533132 		.ascii	"MS12_CTL\000"
  8034      5F43544C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 181
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 181
 
 
  8034      00
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  8055      20726576 
  8055      6973696F 
  8055      6E203233 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 182
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 182
 
 
  8055      37373135 
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  8080 0a5d 4D53385F 		.ascii	"MS8_CTL\000"
  8080      43544C00 
  8081              	.LASF52:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 183
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 183
 
 
  8082 0a65 50524F54 		.ascii	"PROT_SMPU_Type\000"
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  8104      00
  8105              	.LASF48:
  8106 0b17 4D533133 		.ascii	"MS13_CTL\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 184
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 184
 
 
  8106      5F43544C 
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 1
  8128      726F745F 
  8128      436F6E66 
  8128      69675070 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccktWYMh.s 			page 185
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccOqlXBc.s 			page 185
 
 
  8128      75466978 

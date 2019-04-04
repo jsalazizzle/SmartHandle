@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
   27:Generated_Source\PSoC6/ChimeTimer.c **** *  associated ChimeTimer_Init() function.
   28:Generated_Source\PSoC6/ChimeTimer.c **** */ 
   29:Generated_Source\PSoC6/ChimeTimer.c **** cy_stc_tcpwm_counter_config_t const ChimeTimer_config =
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 2
 
 
   30:Generated_Source\PSoC6/ChimeTimer.c **** {
@@ -115,10 +115,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
   69:Generated_Source\PSoC6/ChimeTimer.c ****         (void)Cy_TCPWM_Counter_Init(ChimeTimer_HW, ChimeTimer_CNT_NUM, &ChimeTimer_config); 
   41              		.loc 1 69 0
   42 0008 074A     		ldr	r2, .L4+4
-  43 000a 0521     		movs	r1, #5
+  43 000a 0321     		movs	r1, #3
   44 000c 0748     		ldr	r0, .L4+8
   45 000e FFF7FEFF 		bl	Cy_TCPWM_Counter_Init
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 3
 
 
   46              	.LVL0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
   43:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   44:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \n
   45:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \b Timer/Counter
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 4
 
 
   46:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  100:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * 
  101:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The Quadrature Decoder has the following features:
  102:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * 16- or 32-bit Counter
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 5
 
 
  103:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Counter Resolution of x1, x2, and x4 the frequency of the phiA (Count) and 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  157:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *     <th>Rule Description</th>
  158:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *     <th>Description of Deviation(s)</th>
  159:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   </tr>
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 6
 
 
  160:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   <tr>
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  214:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** extern "C" {
  215:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #endif
  216:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 7
 
 
  217:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  271:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INPUT_EITHEREDGE       (2U)
  272:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** The event is triggered on each edge of the TCPWM clock if the input is high */
  273:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INPUT_LEVEL            (3U)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 8
 
 
  274:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm_input_modes */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  328:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  329:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** TCPWM status definitions */
  330:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** typedef enum 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 9
 
 
  331:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** {
@@ -532,13 +532,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  379:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     base->CTRL_SET = counters;
   56              		.loc 2 379 0
   57 0018 044B     		ldr	r3, .L4+8
-  58 001a 2022     		movs	r2, #32
+  58 001a 0822     		movs	r2, #8
   59 001c 9A60     		str	r2, [r3, #8]
   60              	.LVL2:
   61              	.LBE7:
   62              	.LBE6:
   63              	.LBB8:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 10
 
 
   64              	.LBB9:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
   73 0028 00000000 		.word	.LANCHOR1
   74 002c 00003840 		.word	1077411840
   75              	.LBE9:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 11
 
 
   76              	.LBE8:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  130 0011 29030000 		.4byte	.LASF73
  131 0015 4A010000 		.4byte	.LASF74
  132 0019 00000000 		.4byte	.Ldebug_ranges0+0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 12
 
 
  133 001d 00000000 		.4byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  187 0086 04       		.byte	0x4
  188 0087 07       		.byte	0x7
  189 0088 D5010000 		.4byte	.LASF11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 13
 
 
  190 008c 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  244 00fa 05       		.byte	0x5
  245 00fb 27       		.byte	0x27
  246 00fc B4000000 		.4byte	0xb4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 14
 
 
  247 0100 10       		.byte	0x10
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  301 016c 34       		.byte	0x34
  302 016d 08       		.uleb128 0x8
  303 016e 86030000 		.4byte	.LASF29
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 15
 
 
  304 0172 05       		.byte	0x5
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  358 01dc 3E       		.byte	0x3e
  359 01dd B4000000 		.4byte	0xb4
  360 01e1 14       		.byte	0x14
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 16
 
 
  361 01e2 08       		.uleb128 0x8
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  415 0252 08       		.byte	0x8
  416 0253 A3030000 		.4byte	.LASF41
  417 0257 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 17
 
 
  418 0258 04       		.byte	0x4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  472 02c4 18       		.byte	0x18
  473 02c5 08       		.uleb128 0x8
  474 02c6 4D030000 		.4byte	.LASF51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 18
 
 
  475 02ca 06       		.byte	0x6
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  529 0336 06       		.byte	0x6
  530 0337 44       		.byte	0x44
  531 0338 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 19
 
 
  532 033c 40       		.byte	0x40
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  586 03ad 10       		.uleb128 0x10
  587 03ae 97040000 		.4byte	.LASF66
  588 03b2 02       		.byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 20
 
 
  589 03b3 7901     		.2byte	0x179
@@ -1165,7 +1165,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  610 03e7 00000000 		.4byte	.LLST0
  611 03eb 14       		.uleb128 0x14
  612 03ec A1030000 		.4byte	0x3a1
- 613 03f0 15000000 		.4byte	.LLST1
+ 613 03f0 14000000 		.4byte	.LLST1
  614 03f4 00       		.byte	0
  615 03f5 13       		.uleb128 0x13
  616 03f6 68030000 		.4byte	0x368
@@ -1176,10 +1176,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  621 0404 1B040000 		.4byte	0x41b
  622 0408 14       		.uleb128 0x14
  623 0409 81030000 		.4byte	0x381
- 624 040d 2D000000 		.4byte	.LLST2
+ 624 040d 2C000000 		.4byte	.LLST2
  625 0411 14       		.uleb128 0x14
  626 0412 75030000 		.4byte	0x375
- 627 0416 42000000 		.4byte	.LLST3
+ 627 0416 40000000 		.4byte	.LLST3
  628 041a 00       		.byte	0
  629 041b 15       		.uleb128 0x15
  630 041c 12000000 		.4byte	.LVL0
@@ -1194,11 +1194,11 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  639 042e 01       		.uleb128 0x1
  640 042f 51       		.byte	0x51
  641 0430 01       		.uleb128 0x1
- 642 0431 35       		.byte	0x35
+ 642 0431 33       		.byte	0x33
  643 0432 16       		.uleb128 0x16
  644 0433 01       		.uleb128 0x1
  645 0434 52       		.byte	0x52
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 21
 
 
  646 0435 05       		.uleb128 0x5
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  700 0010 17       		.uleb128 0x17
  701 0011 00       		.byte	0
  702 0012 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 22
 
 
  703 0013 02       		.uleb128 0x2
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  757 0049 3A       		.uleb128 0x3a
  758 004a 0B       		.uleb128 0xb
  759 004b 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 23
 
 
  760 004c 0B       		.uleb128 0xb
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  814 0082 0B       		.uleb128 0xb
  815 0083 3B       		.uleb128 0x3b
  816 0084 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 24
 
 
  817 0085 49       		.uleb128 0x49
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  871 00bb 00       		.byte	0
  872 00bc 00       		.byte	0
  873 00bd 10       		.uleb128 0x10
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 25
 
 
  874 00be 05       		.uleb128 0x5
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  928 00f5 06       		.uleb128 0x6
  929 00f6 58       		.uleb128 0x58
  930 00f7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 26
 
 
  931 00f8 59       		.uleb128 0x59
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  985 0133 0E       		.uleb128 0xe
  986 0134 3A       		.uleb128 0x3a
  987 0135 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 27
 
 
  988 0136 3B       		.uleb128 0x3b
@@ -1594,445 +1594,443 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 1
  1018              	.LLST0:
  1019 0000 18000000 		.4byte	.LVL1
  1020 0004 1E000000 		.4byte	.LVL2
- 1021 0008 0300     		.2byte	0x3
- 1022 000a 08       		.byte	0x8
- 1023 000b 20       		.byte	0x20
- 1024 000c 9F       		.byte	0x9f
- 1025 000d 00000000 		.4byte	0
- 1026 0011 00000000 		.4byte	0
- 1027              	.LLST1:
- 1028 0015 18000000 		.4byte	.LVL1
- 1029 0019 1E000000 		.4byte	.LVL2
- 1030 001d 0600     		.2byte	0x6
- 1031 001f 0C       		.byte	0xc
- 1032 0020 00003840 		.4byte	0x40380000
- 1033 0024 9F       		.byte	0x9f
- 1034 0025 00000000 		.4byte	0
- 1035 0029 00000000 		.4byte	0
- 1036              	.LLST2:
- 1037 002d 1E000000 		.4byte	.LVL2
- 1038 0031 20000000 		.4byte	.LVL3
- 1039 0035 0300     		.2byte	0x3
- 1040 0037 08       		.byte	0x8
- 1041 0038 20       		.byte	0x20
- 1042 0039 9F       		.byte	0x9f
- 1043 003a 00000000 		.4byte	0
- 1044 003e 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 28
+ 1021 0008 0200     		.2byte	0x2
+ 1022 000a 38       		.byte	0x38
+ 1023 000b 9F       		.byte	0x9f
+ 1024 000c 00000000 		.4byte	0
+ 1025 0010 00000000 		.4byte	0
+ 1026              	.LLST1:
+ 1027 0014 18000000 		.4byte	.LVL1
+ 1028 0018 1E000000 		.4byte	.LVL2
+ 1029 001c 0600     		.2byte	0x6
+ 1030 001e 0C       		.byte	0xc
+ 1031 001f 00003840 		.4byte	0x40380000
+ 1032 0023 9F       		.byte	0x9f
+ 1033 0024 00000000 		.4byte	0
+ 1034 0028 00000000 		.4byte	0
+ 1035              	.LLST2:
+ 1036 002c 1E000000 		.4byte	.LVL2
+ 1037 0030 20000000 		.4byte	.LVL3
+ 1038 0034 0200     		.2byte	0x2
+ 1039 0036 38       		.byte	0x38
+ 1040 0037 9F       		.byte	0x9f
+ 1041 0038 00000000 		.4byte	0
+ 1042 003c 00000000 		.4byte	0
+ 1043              	.LLST3:
+ 1044 0040 1E000000 		.4byte	.LVL2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 28
 
 
- 1045              	.LLST3:
- 1046 0042 1E000000 		.4byte	.LVL2
- 1047 0046 20000000 		.4byte	.LVL3
- 1048 004a 0600     		.2byte	0x6
- 1049 004c 0C       		.byte	0xc
- 1050 004d 00003840 		.4byte	0x40380000
- 1051 0051 9F       		.byte	0x9f
- 1052 0052 00000000 		.4byte	0
- 1053 0056 00000000 		.4byte	0
- 1054              		.section	.debug_aranges,"",%progbits
- 1055 0000 1C000000 		.4byte	0x1c
- 1056 0004 0200     		.2byte	0x2
- 1057 0006 00000000 		.4byte	.Ldebug_info0
- 1058 000a 04       		.byte	0x4
- 1059 000b 00       		.byte	0
- 1060 000c 0000     		.2byte	0
- 1061 000e 0000     		.2byte	0
- 1062 0010 00000000 		.4byte	.LFB172
- 1063 0014 30000000 		.4byte	.LFE172-.LFB172
- 1064 0018 00000000 		.4byte	0
- 1065 001c 00000000 		.4byte	0
- 1066              		.section	.debug_ranges,"",%progbits
- 1067              	.Ldebug_ranges0:
- 1068 0000 00000000 		.4byte	.LFB172
- 1069 0004 30000000 		.4byte	.LFE172
- 1070 0008 00000000 		.4byte	0
- 1071 000c 00000000 		.4byte	0
- 1072              		.section	.debug_line,"",%progbits
- 1073              	.Ldebug_line0:
- 1074 0000 24020000 		.section	.debug_str,"MS",%progbits,1
- 1074      02000202 
- 1074      00000201 
- 1074      FB0E0D00 
- 1074      01010101 
- 1075              	.LASF56:
- 1076 0000 72656C6F 		.ascii	"reloadInput\000"
- 1076      6164496E 
- 1076      70757400 
- 1077              	.LASF45:
- 1078 000c 636C6F63 		.ascii	"clockPrescaler\000"
- 1078      6B507265 
- 1078      7363616C 
- 1078      657200
- 1079              	.LASF61:
- 1080 001b 636F756E 		.ascii	"countInputMode\000"
- 1080      74496E70 
- 1080      75744D6F 
- 1080      646500
- 1081              	.LASF49:
- 1082 002a 636F6D70 		.ascii	"compare0\000"
- 1082      61726530 
+ 1045 0044 20000000 		.4byte	.LVL3
+ 1046 0048 0600     		.2byte	0x6
+ 1047 004a 0C       		.byte	0xc
+ 1048 004b 00003840 		.4byte	0x40380000
+ 1049 004f 9F       		.byte	0x9f
+ 1050 0050 00000000 		.4byte	0
+ 1051 0054 00000000 		.4byte	0
+ 1052              		.section	.debug_aranges,"",%progbits
+ 1053 0000 1C000000 		.4byte	0x1c
+ 1054 0004 0200     		.2byte	0x2
+ 1055 0006 00000000 		.4byte	.Ldebug_info0
+ 1056 000a 04       		.byte	0x4
+ 1057 000b 00       		.byte	0
+ 1058 000c 0000     		.2byte	0
+ 1059 000e 0000     		.2byte	0
+ 1060 0010 00000000 		.4byte	.LFB172
+ 1061 0014 30000000 		.4byte	.LFE172-.LFB172
+ 1062 0018 00000000 		.4byte	0
+ 1063 001c 00000000 		.4byte	0
+ 1064              		.section	.debug_ranges,"",%progbits
+ 1065              	.Ldebug_ranges0:
+ 1066 0000 00000000 		.4byte	.LFB172
+ 1067 0004 30000000 		.4byte	.LFE172
+ 1068 0008 00000000 		.4byte	0
+ 1069 000c 00000000 		.4byte	0
+ 1070              		.section	.debug_line,"",%progbits
+ 1071              	.Ldebug_line0:
+ 1072 0000 24020000 		.section	.debug_str,"MS",%progbits,1
+ 1072      02000202 
+ 1072      00000201 
+ 1072      FB0E0D00 
+ 1072      01010101 
+ 1073              	.LASF56:
+ 1074 0000 72656C6F 		.ascii	"reloadInput\000"
+ 1074      6164496E 
+ 1074      70757400 
+ 1075              	.LASF45:
+ 1076 000c 636C6F63 		.ascii	"clockPrescaler\000"
+ 1076      6B507265 
+ 1076      7363616C 
+ 1076      657200
+ 1077              	.LASF61:
+ 1078 001b 636F756E 		.ascii	"countInputMode\000"
+ 1078      74496E70 
+ 1078      75744D6F 
+ 1078      646500
+ 1079              	.LASF49:
+ 1080 002a 636F6D70 		.ascii	"compare0\000"
+ 1080      61726530 
+ 1080      00
+ 1081              	.LASF50:
+ 1082 0033 636F6D70 		.ascii	"compare1\000"
+ 1082      61726531 
  1082      00
- 1083              	.LASF50:
- 1084 0033 636F6D70 		.ascii	"compare1\000"
- 1084      61726531 
- 1084      00
- 1085              	.LASF31:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 29
+ 1083              	.LASF31:
+ 1084 003c 54435057 		.ascii	"TCPWM_CNT_Type\000"
+ 1084      4D5F434E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 29
 
 
- 1086 003c 54435057 		.ascii	"TCPWM_CNT_Type\000"
- 1086      4D5F434E 
- 1086      545F5479 
- 1086      706500
- 1087              	.LASF0:
- 1088 004b 73686F72 		.ascii	"short int\000"
- 1088      7420696E 
- 1088      7400
- 1089              	.LASF15:
- 1090 0055 73697A65 		.ascii	"sizetype\000"
- 1090      74797065 
- 1090      00
- 1091              	.LASF21:
- 1092 005e 50455249 		.ascii	"PERIOD_BUFF\000"
- 1092      4F445F42 
- 1092      55464600 
- 1093              	.LASF33:
- 1094 006a 4354524C 		.ascii	"CTRL_SET\000"
- 1094      5F534554 
- 1094      00
- 1095              	.LASF20:
- 1096 0073 50455249 		.ascii	"PERIOD\000"
- 1096      4F4400
- 1097              	.LASF35:
- 1098 007a 434D445F 		.ascii	"CMD_RELOAD\000"
- 1098      52454C4F 
- 1098      414400
- 1099              	.LASF24:
- 1100 0085 54525F43 		.ascii	"TR_CTRL1\000"
- 1100      54524C31 
+ 1084      545F5479 
+ 1084      706500
+ 1085              	.LASF0:
+ 1086 004b 73686F72 		.ascii	"short int\000"
+ 1086      7420696E 
+ 1086      7400
+ 1087              	.LASF15:
+ 1088 0055 73697A65 		.ascii	"sizetype\000"
+ 1088      74797065 
+ 1088      00
+ 1089              	.LASF21:
+ 1090 005e 50455249 		.ascii	"PERIOD_BUFF\000"
+ 1090      4F445F42 
+ 1090      55464600 
+ 1091              	.LASF33:
+ 1092 006a 4354524C 		.ascii	"CTRL_SET\000"
+ 1092      5F534554 
+ 1092      00
+ 1093              	.LASF20:
+ 1094 0073 50455249 		.ascii	"PERIOD\000"
+ 1094      4F4400
+ 1095              	.LASF35:
+ 1096 007a 434D445F 		.ascii	"CMD_RELOAD\000"
+ 1096      52454C4F 
+ 1096      414400
+ 1097              	.LASF24:
+ 1098 0085 54525F43 		.ascii	"TR_CTRL1\000"
+ 1098      54524C31 
+ 1098      00
+ 1099              	.LASF25:
+ 1100 008e 54525F43 		.ascii	"TR_CTRL2\000"
+ 1100      54524C32 
  1100      00
- 1101              	.LASF25:
- 1102 008e 54525F43 		.ascii	"TR_CTRL2\000"
- 1102      54524C32 
- 1102      00
- 1103              	.LASF72:
- 1104 0097 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1104      43313120 
- 1104      352E342E 
- 1104      31203230 
- 1104      31363036 
- 1105 00ca 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
- 1105      20726576 
- 1105      6973696F 
- 1105      6E203233 
- 1105      37373135 
- 1106 00fd 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
- 1106      70202D6D 
- 1106      6670753D 
- 1106      66707634 
- 1106      2D73702D 
- 1107 0130 65637469 		.ascii	"ections -ffat-lto-objects\000"
- 1107      6F6E7320 
- 1107      2D666661 
- 1107      742D6C74 
- 1107      6F2D6F62 
- 1108              	.LASF74:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 30
+ 1101              	.LASF72:
+ 1102 0097 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1102      43313120 
+ 1102      352E342E 
+ 1102      31203230 
+ 1102      31363036 
+ 1103 00ca 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1103      20726576 
+ 1103      6973696F 
+ 1103      6E203233 
+ 1103      37373135 
+ 1104 00fd 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 1104      70202D6D 
+ 1104      6670753D 
+ 1104      66707634 
+ 1104      2D73702D 
+ 1105 0130 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1105      6F6E7320 
+ 1105      2D666661 
+ 1105      742D6C74 
+ 1105      6F2D6F62 
+ 1106              	.LASF74:
+ 1107 014a 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\SmartHandle"
+ 1107      73657273 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 30
 
 
- 1109 014a 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\SmartHandle"
- 1109      73657273 
- 1109      5C73616C 
- 1109      617A5C44 
- 1109      65736B74 
- 1110 0178 2E637964 		.ascii	".cydsn\000"
- 1110      736E00
- 1111              	.LASF7:
- 1112 017f 5F5F7569 		.ascii	"__uint32_t\000"
- 1112      6E743332 
- 1112      5F7400
- 1113              	.LASF54:
- 1114 018a 63617074 		.ascii	"captureInput\000"
- 1114      75726549 
- 1114      6E707574 
+ 1107      5C73616C 
+ 1107      617A5C44 
+ 1107      65736B74 
+ 1108 0178 2E637964 		.ascii	".cydsn\000"
+ 1108      736E00
+ 1109              	.LASF7:
+ 1110 017f 5F5F7569 		.ascii	"__uint32_t\000"
+ 1110      6E743332 
+ 1110      5F7400
+ 1111              	.LASF54:
+ 1112 018a 63617074 		.ascii	"captureInput\000"
+ 1112      75726549 
+ 1112      6E707574 
+ 1112      00
+ 1113              	.LASF23:
+ 1114 0197 54525F43 		.ascii	"TR_CTRL0\000"
+ 1114      54524C30 
  1114      00
- 1115              	.LASF23:
- 1116 0197 54525F43 		.ascii	"TR_CTRL0\000"
- 1116      54524C30 
- 1116      00
- 1117              	.LASF12:
- 1118 01a0 75696E74 		.ascii	"uint8_t\000"
- 1118      385F7400 
- 1119              	.LASF34:
- 1120 01a8 434D445F 		.ascii	"CMD_CAPTURE\000"
- 1120      43415054 
- 1120      55524500 
- 1121              	.LASF52:
- 1122 01b4 696E7465 		.ascii	"interruptSources\000"
- 1122      72727570 
- 1122      74536F75 
- 1122      72636573 
- 1122      00
- 1123              	.LASF37:
- 1124 01c5 434D445F 		.ascii	"CMD_START\000"
- 1124      53544152 
- 1124      5400
- 1125              	.LASF42:
- 1126 01cf 666C6F61 		.ascii	"float\000"
- 1126      7400
- 1127              	.LASF11:
- 1128 01d5 756E7369 		.ascii	"unsigned int\000"
- 1128      676E6564 
- 1128      20696E74 
- 1128      00
- 1129              	.LASF55:
- 1130 01e2 72656C6F 		.ascii	"reloadInputMode\000"
- 1130      6164496E 
- 1130      7075744D 
- 1130      6F646500 
- 1131              	.LASF9:
- 1132 01f2 6C6F6E67 		.ascii	"long long int\000"
- 1132      206C6F6E 
- 1132      6720696E 
- 1132      7400
- 1133              	.LASF46:
- 1134 0200 72756E4D 		.ascii	"runMode\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 31
+ 1115              	.LASF12:
+ 1116 01a0 75696E74 		.ascii	"uint8_t\000"
+ 1116      385F7400 
+ 1117              	.LASF34:
+ 1118 01a8 434D445F 		.ascii	"CMD_CAPTURE\000"
+ 1118      43415054 
+ 1118      55524500 
+ 1119              	.LASF52:
+ 1120 01b4 696E7465 		.ascii	"interruptSources\000"
+ 1120      72727570 
+ 1120      74536F75 
+ 1120      72636573 
+ 1120      00
+ 1121              	.LASF37:
+ 1122 01c5 434D445F 		.ascii	"CMD_START\000"
+ 1122      53544152 
+ 1122      5400
+ 1123              	.LASF42:
+ 1124 01cf 666C6F61 		.ascii	"float\000"
+ 1124      7400
+ 1125              	.LASF11:
+ 1126 01d5 756E7369 		.ascii	"unsigned int\000"
+ 1126      676E6564 
+ 1126      20696E74 
+ 1126      00
+ 1127              	.LASF55:
+ 1128 01e2 72656C6F 		.ascii	"reloadInputMode\000"
+ 1128      6164496E 
+ 1128      7075744D 
+ 1128      6F646500 
+ 1129              	.LASF9:
+ 1130 01f2 6C6F6E67 		.ascii	"long long int\000"
+ 1130      206C6F6E 
+ 1130      6720696E 
+ 1130      7400
+ 1131              	.LASF46:
+ 1132 0200 72756E4D 		.ascii	"runMode\000"
+ 1132      6F646500 
+ 1133              	.LASF70:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 31
 
 
- 1134      6F646500 
- 1135              	.LASF70:
- 1136 0208 4368696D 		.ascii	"ChimeTimer_initVar\000"
- 1136      6554696D 
- 1136      65725F69 
- 1136      6E697456 
- 1136      617200
- 1137              	.LASF77:
- 1138 021b 43795F54 		.ascii	"Cy_TCPWM_Counter_Init\000"
- 1138      4350574D 
- 1138      5F436F75 
- 1138      6E746572 
- 1138      5F496E69 
- 1139              	.LASF62:
- 1140 0231 636F756E 		.ascii	"countInput\000"
- 1140      74496E70 
- 1140      757400
- 1141              	.LASF44:
- 1142 023c 70657269 		.ascii	"period\000"
- 1142      6F6400
- 1143              	.LASF13:
- 1144 0243 696E7433 		.ascii	"int32_t\000"
- 1144      325F7400 
- 1145              	.LASF4:
- 1146 024b 5F5F7569 		.ascii	"__uint8_t\000"
- 1146      6E74385F 
+ 1134 0208 4368696D 		.ascii	"ChimeTimer_initVar\000"
+ 1134      6554696D 
+ 1134      65725F69 
+ 1134      6E697456 
+ 1134      617200
+ 1135              	.LASF77:
+ 1136 021b 43795F54 		.ascii	"Cy_TCPWM_Counter_Init\000"
+ 1136      4350574D 
+ 1136      5F436F75 
+ 1136      6E746572 
+ 1136      5F496E69 
+ 1137              	.LASF62:
+ 1138 0231 636F756E 		.ascii	"countInput\000"
+ 1138      74496E70 
+ 1138      757400
+ 1139              	.LASF44:
+ 1140 023c 70657269 		.ascii	"period\000"
+ 1140      6F6400
+ 1141              	.LASF13:
+ 1142 0243 696E7433 		.ascii	"int32_t\000"
+ 1142      325F7400 
+ 1143              	.LASF4:
+ 1144 024b 5F5F7569 		.ascii	"__uint8_t\000"
+ 1144      6E74385F 
+ 1144      7400
+ 1145              	.LASF60:
+ 1146 0255 73746F70 		.ascii	"stopInput\000"
+ 1146      496E7075 
  1146      7400
- 1147              	.LASF60:
- 1148 0255 73746F70 		.ascii	"stopInput\000"
- 1148      496E7075 
- 1148      7400
- 1149              	.LASF67:
- 1150 025f 43795F54 		.ascii	"Cy_TCPWM_TriggerStart\000"
- 1150      4350574D 
- 1150      5F547269 
- 1150      67676572 
- 1150      53746172 
- 1151              	.LASF30:
- 1152 0275 494E5452 		.ascii	"INTR_MASKED\000"
- 1152      5F4D4153 
- 1152      4B454400 
- 1153              	.LASF19:
- 1154 0281 43435F42 		.ascii	"CC_BUFF\000"
- 1154      55464600 
- 1155              	.LASF40:
- 1156 0289 6C6F6E67 		.ascii	"long double\000"
- 1156      20646F75 
- 1156      626C6500 
- 1157              	.LASF57:
- 1158 0295 73746172 		.ascii	"startInputMode\000"
- 1158      74496E70 
- 1158      75744D6F 
- 1158      646500
- 1159              	.LASF2:
- 1160 02a4 756E7369 		.ascii	"unsigned char\000"
- 1160      676E6564 
- 1160      20636861 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 32
+ 1147              	.LASF67:
+ 1148 025f 43795F54 		.ascii	"Cy_TCPWM_TriggerStart\000"
+ 1148      4350574D 
+ 1148      5F547269 
+ 1148      67676572 
+ 1148      53746172 
+ 1149              	.LASF30:
+ 1150 0275 494E5452 		.ascii	"INTR_MASKED\000"
+ 1150      5F4D4153 
+ 1150      4B454400 
+ 1151              	.LASF19:
+ 1152 0281 43435F42 		.ascii	"CC_BUFF\000"
+ 1152      55464600 
+ 1153              	.LASF40:
+ 1154 0289 6C6F6E67 		.ascii	"long double\000"
+ 1154      20646F75 
+ 1154      626C6500 
+ 1155              	.LASF57:
+ 1156 0295 73746172 		.ascii	"startInputMode\000"
+ 1156      74496E70 
+ 1156      75744D6F 
+ 1156      646500
+ 1157              	.LASF2:
+ 1158 02a4 756E7369 		.ascii	"unsigned char\000"
+ 1158      676E6564 
+ 1158      20636861 
+ 1158      7200
+ 1159              	.LASF47:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 32
 
 
- 1160      7200
- 1161              	.LASF47:
- 1162 02b2 636F756E 		.ascii	"countDirection\000"
- 1162      74446972 
- 1162      65637469 
- 1162      6F6E00
- 1163              	.LASF16:
- 1164 02c1 4354524C 		.ascii	"CTRL\000"
- 1164      00
- 1165              	.LASF38:
- 1166 02c6 494E5452 		.ascii	"INTR_CAUSE\000"
- 1166      5F434155 
- 1166      534500
- 1167              	.LASF1:
- 1168 02d1 7369676E 		.ascii	"signed char\000"
- 1168      65642063 
- 1168      68617200 
- 1169              	.LASF28:
- 1170 02dd 494E5452 		.ascii	"INTR_SET\000"
- 1170      5F534554 
- 1170      00
- 1171              	.LASF10:
- 1172 02e6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1172      206C6F6E 
- 1172      6720756E 
- 1172      7369676E 
- 1172      65642069 
- 1173              	.LASF14:
- 1174 02fd 75696E74 		.ascii	"uint32_t\000"
- 1174      33325F74 
+ 1160 02b2 636F756E 		.ascii	"countDirection\000"
+ 1160      74446972 
+ 1160      65637469 
+ 1160      6F6E00
+ 1161              	.LASF16:
+ 1162 02c1 4354524C 		.ascii	"CTRL\000"
+ 1162      00
+ 1163              	.LASF38:
+ 1164 02c6 494E5452 		.ascii	"INTR_CAUSE\000"
+ 1164      5F434155 
+ 1164      534500
+ 1165              	.LASF1:
+ 1166 02d1 7369676E 		.ascii	"signed char\000"
+ 1166      65642063 
+ 1166      68617200 
+ 1167              	.LASF28:
+ 1168 02dd 494E5452 		.ascii	"INTR_SET\000"
+ 1168      5F534554 
+ 1168      00
+ 1169              	.LASF10:
+ 1170 02e6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1170      206C6F6E 
+ 1170      6720756E 
+ 1170      7369676E 
+ 1170      65642069 
+ 1171              	.LASF14:
+ 1172 02fd 75696E74 		.ascii	"uint32_t\000"
+ 1172      33325F74 
+ 1172      00
+ 1173              	.LASF48:
+ 1174 0306 636F6D70 		.ascii	"compareOrCapture\000"
+ 1174      6172654F 
+ 1174      72436170 
+ 1174      74757265 
  1174      00
- 1175              	.LASF48:
- 1176 0306 636F6D70 		.ascii	"compareOrCapture\000"
- 1176      6172654F 
- 1176      72436170 
- 1176      74757265 
- 1176      00
- 1177              	.LASF71:
- 1178 0317 4368696D 		.ascii	"ChimeTimer_config\000"
- 1178      6554696D 
- 1178      65725F63 
- 1178      6F6E6669 
- 1178      6700
- 1179              	.LASF73:
- 1180 0329 47656E65 		.ascii	"Generated_Source\\PSoC6\\ChimeTimer.c\000"
- 1180      72617465 
- 1180      645F536F 
- 1180      75726365 
- 1180      5C50536F 
- 1181              	.LASF51:
- 1182 034d 656E6162 		.ascii	"enableCompareSwap\000"
- 1182      6C65436F 
- 1182      6D706172 
- 1182      65537761 
- 1182      7000
- 1183              	.LASF36:
- 1184 035f 434D445F 		.ascii	"CMD_STOP\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 33
+ 1175              	.LASF71:
+ 1176 0317 4368696D 		.ascii	"ChimeTimer_config\000"
+ 1176      6554696D 
+ 1176      65725F63 
+ 1176      6F6E6669 
+ 1176      6700
+ 1177              	.LASF73:
+ 1178 0329 47656E65 		.ascii	"Generated_Source\\PSoC6\\ChimeTimer.c\000"
+ 1178      72617465 
+ 1178      645F536F 
+ 1178      75726365 
+ 1178      5C50536F 
+ 1179              	.LASF51:
+ 1180 034d 656E6162 		.ascii	"enableCompareSwap\000"
+ 1180      6C65436F 
+ 1180      6D706172 
+ 1180      65537761 
+ 1180      7000
+ 1181              	.LASF36:
+ 1182 035f 434D445F 		.ascii	"CMD_STOP\000"
+ 1182      53544F50 
+ 1182      00
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 33
 
 
- 1184      53544F50 
- 1184      00
- 1185              	.LASF64:
- 1186 0368 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
- 1186      74635F74 
- 1186      6370776D 
- 1186      5F636F75 
- 1186      6E746572 
- 1187              	.LASF29:
- 1188 0386 494E5452 		.ascii	"INTR_MASK\000"
- 1188      5F4D4153 
- 1188      4B00
- 1189              	.LASF3:
- 1190 0390 73686F72 		.ascii	"short unsigned int\000"
- 1190      7420756E 
- 1190      7369676E 
- 1190      65642069 
- 1190      6E7400
- 1191              	.LASF41:
- 1192 03a3 63686172 		.ascii	"char\000"
+ 1183              	.LASF64:
+ 1184 0368 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
+ 1184      74635F74 
+ 1184      6370776D 
+ 1184      5F636F75 
+ 1184      6E746572 
+ 1185              	.LASF29:
+ 1186 0386 494E5452 		.ascii	"INTR_MASK\000"
+ 1186      5F4D4153 
+ 1186      4B00
+ 1187              	.LASF3:
+ 1188 0390 73686F72 		.ascii	"short unsigned int\000"
+ 1188      7420756E 
+ 1188      7369676E 
+ 1188      65642069 
+ 1188      6E7400
+ 1189              	.LASF41:
+ 1190 03a3 63686172 		.ascii	"char\000"
+ 1190      00
+ 1191              	.LASF6:
+ 1192 03a8 6C6F6E67 		.ascii	"long int\000"
+ 1192      20696E74 
  1192      00
- 1193              	.LASF6:
- 1194 03a8 6C6F6E67 		.ascii	"long int\000"
- 1194      20696E74 
- 1194      00
- 1195              	.LASF17:
- 1196 03b1 53544154 		.ascii	"STATUS\000"
- 1196      555300
- 1197              	.LASF63:
- 1198 03b8 5F426F6F 		.ascii	"_Bool\000"
- 1198      6C00
- 1199              	.LASF27:
- 1200 03be 494E5452 		.ascii	"INTR\000"
+ 1193              	.LASF17:
+ 1194 03b1 53544154 		.ascii	"STATUS\000"
+ 1194      555300
+ 1195              	.LASF63:
+ 1196 03b8 5F426F6F 		.ascii	"_Bool\000"
+ 1196      6C00
+ 1197              	.LASF27:
+ 1198 03be 494E5452 		.ascii	"INTR\000"
+ 1198      00
+ 1199              	.LASF53:
+ 1200 03c3 63617074 		.ascii	"captureInputMode\000"
+ 1200      75726549 
+ 1200      6E707574 
+ 1200      4D6F6465 
  1200      00
- 1201              	.LASF53:
- 1202 03c3 63617074 		.ascii	"captureInputMode\000"
- 1202      75726549 
- 1202      6E707574 
- 1202      4D6F6465 
- 1202      00
- 1203              	.LASF26:
- 1204 03d4 52455345 		.ascii	"RESERVED1\000"
- 1204      52564544 
- 1204      3100
- 1205              	.LASF8:
- 1206 03de 6C6F6E67 		.ascii	"long unsigned int\000"
- 1206      20756E73 
- 1206      69676E65 
- 1206      6420696E 
- 1206      7400
- 1207              	.LASF43:
- 1208 03f0 646F7562 		.ascii	"double\000"
- 1208      6C6500
- 1209              	.LASF75:
- 1210 03f7 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
- 1210      74635F74 
- 1210      6370776D 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccatm3lJ.s 			page 34
+ 1201              	.LASF26:
+ 1202 03d4 52455345 		.ascii	"RESERVED1\000"
+ 1202      52564544 
+ 1202      3100
+ 1203              	.LASF8:
+ 1204 03de 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1204      20756E73 
+ 1204      69676E65 
+ 1204      6420696E 
+ 1204      7400
+ 1205              	.LASF43:
+ 1206 03f0 646F7562 		.ascii	"double\000"
+ 1206      6C6500
+ 1207              	.LASF75:
+ 1208 03f7 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
+ 1208      74635F74 
+ 1208      6370776D 
+ 1208      5F636F75 
+ 1208      6E746572 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccRnqE3v.s 			page 34
 
 
- 1210      5F636F75 
- 1210      6E746572 
- 1211              	.LASF58:
- 1212 0413 73746172 		.ascii	"startInput\000"
- 1212      74496E70 
- 1212      757400
- 1213              	.LASF5:
- 1214 041e 5F5F696E 		.ascii	"__int32_t\000"
- 1214      7433325F 
- 1214      7400
- 1215              	.LASF59:
- 1216 0428 73746F70 		.ascii	"stopInputMode\000"
- 1216      496E7075 
- 1216      744D6F64 
- 1216      6500
- 1217              	.LASF32:
- 1218 0436 4354524C 		.ascii	"CTRL_CLR\000"
- 1218      5F434C52 
+ 1209              	.LASF58:
+ 1210 0413 73746172 		.ascii	"startInput\000"
+ 1210      74496E70 
+ 1210      757400
+ 1211              	.LASF5:
+ 1212 041e 5F5F696E 		.ascii	"__int32_t\000"
+ 1212      7433325F 
+ 1212      7400
+ 1213              	.LASF59:
+ 1214 0428 73746F70 		.ascii	"stopInputMode\000"
+ 1214      496E7075 
+ 1214      744D6F64 
+ 1214      6500
+ 1215              	.LASF32:
+ 1216 0436 4354524C 		.ascii	"CTRL_CLR\000"
+ 1216      5F434C52 
+ 1216      00
+ 1217              	.LASF76:
+ 1218 043f 4368696D 		.ascii	"ChimeTimer_Start\000"
+ 1218      6554696D 
+ 1218      65725F53 
+ 1218      74617274 
  1218      00
- 1219              	.LASF76:
- 1220 043f 4368696D 		.ascii	"ChimeTimer_Start\000"
- 1220      6554696D 
- 1220      65725F53 
- 1220      74617274 
- 1220      00
- 1221              	.LASF18:
- 1222 0450 434F554E 		.ascii	"COUNTER\000"
- 1222      54455200 
- 1223              	.LASF22:
- 1224 0458 52455345 		.ascii	"RESERVED\000"
- 1224      52564544 
- 1224      00
- 1225              	.LASF68:
- 1226 0461 43795F54 		.ascii	"Cy_TCPWM_Enable_Multiple\000"
- 1226      4350574D 
- 1226      5F456E61 
- 1226      626C655F 
- 1226      4D756C74 
- 1227              	.LASF69:
- 1228 047a 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1228      52784275 
- 1228      66666572 
- 1228      00
- 1229              	.LASF39:
- 1230 0487 54435057 		.ascii	"TCPWM_Type\000"
- 1230      4D5F5479 
- 1230      706500
- 1231              	.LASF65:
- 1232 0492 62617365 		.ascii	"base\000"
+ 1219              	.LASF18:
+ 1220 0450 434F554E 		.ascii	"COUNTER\000"
+ 1220      54455200 
+ 1221              	.LASF22:
+ 1222 0458 52455345 		.ascii	"RESERVED\000"
+ 1222      52564544 
+ 1222      00
+ 1223              	.LASF68:
+ 1224 0461 43795F54 		.ascii	"Cy_TCPWM_Enable_Multiple\000"
+ 1224      4350574D 
+ 1224      5F456E61 
+ 1224      626C655F 
+ 1224      4D756C74 
+ 1225              	.LASF69:
+ 1226 047a 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1226      52784275 
+ 1226      66666572 
+ 1226      00
+ 1227              	.LASF39:
+ 1228 0487 54435057 		.ascii	"TCPWM_Type\000"
+ 1228      4D5F5479 
+ 1228      706500
+ 1229              	.LASF65:
+ 1230 0492 62617365 		.ascii	"base\000"
+ 1230      00
+ 1231              	.LASF66:
+ 1232 0497 636F756E 		.ascii	"counters\000"
+ 1232      74657273 
  1232      00
- 1233              	.LASF66:
- 1234 0497 636F756E 		.ascii	"counters\000"
- 1234      74657273 
- 1234      00
- 1235              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1233              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

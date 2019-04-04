@@ -39,6 +39,7 @@ void AppControlHandler()
         
         switch(current_state)
         {
+            //initial state on boot, disables all leds
             case FSM_INITIALIZE: 
             {
                 DEBUG_PRINTF("FSM_INITIALIZE\r\n"); 
@@ -173,9 +174,10 @@ void AppControlHandler()
                     case FSM_IDLE:
                     {
                         //turn off leds
-                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
-                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
-                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
+                        //Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        //Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        //Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
+                        KinOS_ConfigureLight(GREEN,ZIGZAG,25,255);
                         break;
                     }
                 }
@@ -204,6 +206,15 @@ void AppControlHandler()
             {
                 switch(next_state)
                 {
+                    case FSM_IDLE:
+                    {
+                        //turn on blue led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
+                        break;
+                    }
+                    
                     case FSM_VERIFY_USER:
                     {
                         //turn on white led
@@ -239,6 +250,15 @@ void AppControlHandler()
                         Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,1);
                         Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,0);
                         KinOS_SetupTimerA(5);
+                        break;
+                    }
+                    
+                    case FSM_IDLE:
+                    {
+                        //turn on blue led
+                        Cy_GPIO_Write(Red_0_PORT   , Red_0_NUM,0);
+                        Cy_GPIO_Write(Green_0_PORT , Green_0_NUM,0);
+                        Cy_GPIO_Write(Blue_0_PORT  , Blue_0_NUM,1);
                         break;
                     }
                 }

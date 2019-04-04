@@ -1,5 +1,5 @@
 -- Project:   C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cyprj
--- Generated: 03/20/2019 17:28:31
+-- Generated: 04/03/2019 15:28:44
 -- PSoC Creator  4.2
 
 ENTITY SmartHandle IS
@@ -79,7 +79,6 @@ ARCHITECTURE __DEFAULT__ OF SmartHandle IS
     SIGNAL Net_121 : bit;
     SIGNAL Net_1225_ff11 : bit;
     ATTRIBUTE global_signal OF Net_1225_ff11 : SIGNAL IS true;
-    SIGNAL Net_1227 : bit;
     SIGNAL Net_1238_ff12 : bit;
     ATTRIBUTE global_signal OF Net_1238_ff12 : SIGNAL IS true;
     SIGNAL Net_128 : bit;
@@ -88,14 +87,15 @@ ARCHITECTURE __DEFAULT__ OF SmartHandle IS
     SIGNAL Net_131_ff17 : bit;
     ATTRIBUTE global_signal OF Net_131_ff17 : SIGNAL IS true;
     SIGNAL Net_1494 : bit;
+    SIGNAL Net_1586 : bit;
+    SIGNAL Net_1598 : bit;
+    SIGNAL Net_1599 : bit;
     SIGNAL Net_16 : bit;
     SIGNAL Net_17 : bit;
     SIGNAL Net_173 : bit;
     SIGNAL Net_18 : bit;
     SIGNAL Net_19 : bit;
-    SIGNAL Net_192 : bit;
     SIGNAL Net_228 : bit;
-    SIGNAL Net_33679 : bit;
     SIGNAL Net_435 : bit;
     SIGNAL Net_436 : bit;
     SIGNAL Net_437 : bit;
@@ -239,15 +239,15 @@ ARCHITECTURE __DEFAULT__ OF SmartHandle IS
     ATTRIBUTE Location OF AppControl_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(122)]";
     ATTRIBUTE Location OF \LightOutputC:TCPWM\ : LABEL IS "F(TCPWM,0)";
     ATTRIBUTE Location OF \LightOutputA:TCPWM\ : LABEL IS "F(TCPWM,1)";
-    ATTRIBUTE Location OF \LightTimer:TCPWM\ : LABEL IS "F(TCPWM,3)";
-    ATTRIBUTE Location OF LightTimer_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(93)]";
-    ATTRIBUTE Location OF \LightOutputB:TCPWM\ : LABEL IS "F(TCPWM,2)";
+    ATTRIBUTE Location OF \LightTimer:TCPWM\ : LABEL IS "F(TCPWM,2)";
+    ATTRIBUTE Location OF LightTimer_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(92)]";
+    ATTRIBUTE Location OF \LightOutputB:TCPWM\ : LABEL IS "F(TCPWM,7)";
     ATTRIBUTE Location OF \MotorOutput:TCPWM\ : LABEL IS "F(TCPWM,4)";
-    ATTRIBUTE Location OF \MotorTimer:TCPWM\ : LABEL IS "F(TCPWM,6)";
-    ATTRIBUTE Location OF MotorTimer_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(96)]";
+    ATTRIBUTE Location OF \MotorTimer:TCPWM\ : LABEL IS "F(TCPWM,5)";
+    ATTRIBUTE Location OF MotorTimer_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(95)]";
     ATTRIBUTE Location OF \ChimeOutput:TCPWM\ : LABEL IS "F(TCPWM,10)";
-    ATTRIBUTE Location OF \ChimeTimer:TCPWM\ : LABEL IS "F(TCPWM,5)";
-    ATTRIBUTE Location OF ChimeTimer_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(95)]";
+    ATTRIBUTE Location OF \ChimeTimer:TCPWM\ : LABEL IS "F(TCPWM,3)";
+    ATTRIBUTE Location OF ChimeTimer_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(93)]";
     ATTRIBUTE Location OF Shake_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(123)]";
     ATTRIBUTE Location OF \RealTimeClock:RTC\ : LABEL IS "F(RTC,0)";
     ATTRIBUTE Location OF IOSS : LABEL IS "F(IOSS,0)";
@@ -676,14 +676,14 @@ BEGIN
             lfclk => ClockBlock_LFClk,
             ff_div_11 => Net_116_ff13,
             ff_div_12 => Net_1225_ff11,
-            ff_div_13 => Net_1238_ff12,
-            ff_div_14 => Net_51_ff18,
+            ff_div_13 => Net_51_ff18,
+            ff_div_14 => Net_131_ff17,
             ff_div_0 => open,
             ff_div_1 => open,
             ff_div_15 => Net_84_ff14,
-            ff_div_16 => Net_131_ff17,
-            ff_div_17 => Net_96_ff16,
-            ff_div_18 => open,
+            ff_div_16 => Net_96_ff16,
+            ff_div_17 => open,
+            ff_div_18 => Net_1238_ff12,
             ff_div_5 => \UART_DEBUG:Net_847_ff1\,
             ff_div_6 => \SensorBus:clock_wire_ff0\,
             ff_div_21 => Net_120_ff15,
@@ -1353,14 +1353,14 @@ BEGIN
             i2c_mode => "0",
             ibuf_enabled => "0",
             id => "7a4de49e-b2b5-48e6-aa9b-9c023b3f7859",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_sync => "0",
             intr_mode => "00",
             io_voltage => "",
             max_frequency => "100",
             oe_conn => "0",
             oe_sync => "0",
-            output_conn => "0",
+            output_conn => "1",
             output_current_cap => "8",
             output_sync => "0",
             pin_aliases => "",
@@ -1390,6 +1390,8 @@ BEGIN
         PORT MAP(
             pa_out => Green(0)__PA,
             oe => open,
+            pin_input => Net_1599,
+            pad_out => Green(0)_PAD,
             pad_in => Green(0)_PAD,
             in_clock => open,
             in_clock_en => open,
@@ -1463,14 +1465,14 @@ BEGIN
             i2c_mode => "0",
             ibuf_enabled => "0",
             id => "a6daf096-2dc7-4f03-9401-ec13522e9369",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_sync => "0",
             intr_mode => "00",
             io_voltage => "",
             max_frequency => "100",
             oe_conn => "0",
             oe_sync => "0",
-            output_conn => "0",
+            output_conn => "1",
             output_current_cap => "8",
             output_sync => "0",
             pin_aliases => "",
@@ -1500,6 +1502,8 @@ BEGIN
         PORT MAP(
             pa_out => Red(0)__PA,
             oe => open,
+            pin_input => Net_1586,
+            pad_out => Red(0)_PAD,
             pad_in => Red(0)_PAD,
             in_clock => open,
             in_clock_en => open,
@@ -1573,14 +1577,14 @@ BEGIN
             i2c_mode => "0",
             ibuf_enabled => "0",
             id => "4a8c5acb-8775-4f5c-a5f1-62612792c127",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_sync => "0",
             intr_mode => "00",
             io_voltage => "",
             max_frequency => "100",
             oe_conn => "0",
             oe_sync => "0",
-            output_conn => "0",
+            output_conn => "1",
             output_current_cap => "8",
             output_sync => "0",
             pin_aliases => "",
@@ -1610,6 +1614,8 @@ BEGIN
         PORT MAP(
             pa_out => Blue(0)__PA,
             oe => open,
+            pin_input => Net_1598,
+            pad_out => Blue(0)_PAD,
             pad_in => Blue(0)_PAD,
             in_clock => open,
             in_clock_en => open,
@@ -2029,7 +2035,7 @@ BEGIN
             tr_compare_match => Net_461,
             tr_overflow => Net_459,
             line_compl => Net_462,
-            line => Net_192,
+            line => Net_1599,
             interrupt => Net_458);
 
     \LightOutputA:TCPWM\:TCPWM
@@ -2048,7 +2054,7 @@ BEGIN
             tr_compare_match => Net_438,
             tr_overflow => Net_436,
             line_compl => Net_439,
-            line => Net_33679,
+            line => Net_1586,
             interrupt => Net_435);
 
     \LightTimer:TCPWM\:TCPWM
@@ -2095,7 +2101,7 @@ BEGIN
             tr_compare_match => Net_561,
             tr_overflow => Net_559,
             line_compl => Net_562,
-            line => Net_1227,
+            line => Net_1598,
             interrupt => Net_558);
 
     \MotorOutput:TCPWM\:TCPWM
