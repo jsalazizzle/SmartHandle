@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** * This parameter is a handle that represents the base address of the registers
   29:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** * of the IPC channel.
   30:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** * The parameter is generally returned from a call to the \ref
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 2
 
 
   31:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** * Cy_IPC_Drv_GetIpcBaseAddress.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
   21:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \{
   22:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * The inter-processor communication (IPC) driver provides a safe and reliable
   23:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * method to transfer data between CPUs. Hardware locking ensures that only one
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 3
 
 
   24:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * device can acquire and transfer data at a time so no data is lost or
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
   78:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
   79:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * This design enables any number of processes on the sending core to put
   80:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * arbitrary data into a single pipe. The first element of that data is the
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 4
 
 
   81:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * client ID of the client that should handle the data.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  135:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * When a message is sent, the receiving endpoint's interrupt handler is called.
  136:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * The ISR can perform any task required by the design. However, as part of its
  137:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * function it calls \ref Cy_IPC_Pipe_ExecCallback. This function retrieves the
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 5
 
 
  138:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * client ID from the data and calls the associated callback function.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  192:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * flags based on the size defined for this symbol. Use increments of 32. You
  193:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * must have at least 32 semaphores. Semaphores 0-15 are reserved for
  194:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * system use. Your application can use semaphores greater than 15.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 6
 
 
  195:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  249:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *     </td>
  250:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *     <td>Interface improvement, documentation update</td>
  251:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *   </tr>
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 7
 
 
  252:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *   <tr>
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  306:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \{
  307:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** */
  308:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 8
 
 
  309:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** /** Driver major version */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  363:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** __STATIC_INLINE void     Cy_IPC_Drv_WriteDataValue (IPC_STRUCT_Type* base, uint32_t dataValue);
  364:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** __STATIC_INLINE uint32_t Cy_IPC_Drv_ReadDataValue (IPC_STRUCT_Type const * base);
  365:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 9
 
 
  366:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** __STATIC_INLINE uint32_t Cy_IPC_Drv_ExtractAcquireMask (uint32_t intMask);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  420:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \snippet IPC_sut_01.cydsn/main_cm4.c snippet_Cy_IPC_Drv_SendMsgWord
  421:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  422:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *******************************************************************************/
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 10
 
 
  423:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** __STATIC_INLINE IPC_STRUCT_Type* Cy_IPC_Drv_GetIpcBaseAddress (uint32_t ipcIndex)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  477:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  478:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *******************************************************************************/
  479:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** __STATIC_INLINE void  Cy_IPC_Drv_SetInterruptMask (IPC_INTR_STRUCT_Type* base,
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 11
 
 
  480:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h ****                                               uint32_t ipcReleaseMask, uint32_t ipcAcquireMask)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  534:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *   </table>
  535:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  536:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \funcusage
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 12
 
 
  537:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \snippet IPC_sut_01.cydsn/main_cm4.c snippet_Cy_IPC_Drv_GetInterruptStatusMasked
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  591:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \param ipcAcquireMask
  592:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * An encoded list of all IPC channels that can trigger the interrupt on a
  593:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * notify event.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 13
 
 
  594:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  648:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  649:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \param base
  650:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * This parameter is a handle that represents the base address of the registers
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 14
 
 
  651:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * of the IPC channel.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  705:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * This parameter is a handle that represents the base address of the registers
  706:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * of the IPC channel.
  707:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * The parameter is generally returned from a call to the \ref
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 15
 
 
  708:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * Cy_IPC_Drv_GetIpcBaseAddress.
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  762:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \snippet IPC_sut_01.cydsn/main_cm4.c snippet_Cy_IPC_Drv_LockAcquire
  763:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  764:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *******************************************************************************/
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 16
 
 
  765:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** __STATIC_INLINE bool Cy_IPC_Drv_IsLockAcquired (IPC_STRUCT_Type const * base)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
   81              	.LVL10:
   82              	.L2:
   61:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c ****     }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 17
 
 
   62:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
   95:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** *
   96:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** *******************************************************************************/
   97:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** cy_en_ipcdrv_status_t  Cy_IPC_Drv_SendMsgWord (IPC_STRUCT_Type* base, uint32_t notifyEventIntr, uin
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 18
 
 
   98:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** {
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  805:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  806:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \return
  807:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * Acquire mask value.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 19
 
 
  808:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  862:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *
  863:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * \return   Status of the operation:
  864:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *   \retval CY_IPC_DRV_SUCCESS: The send operation was successful.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 20
 
 
  865:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** *   \retval CY_IPC_DRV_ERROR:   The IPC channel is unavailable because
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  919:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * This parameter is a handle that represents the base address of the registers
  920:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * of the IPC channel.
  921:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * The parameter is generally returned from a call to the \ref
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 21
 
 
  922:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** * Cy_IPC_Drv_GetIpcBaseAddress
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  667:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** }
  155              		.loc 2 667 0
  156 0024 2404     		lsls	r4, r4, #16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 22
 
 
  157              	.LVL20:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  120:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** * Function Name: Cy_IPC_Drv_ReadMsgWord
  121:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** ****************************************************************************//**
  122:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 23
 
 
  123:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.c **** * This function is used to read a 32-bit word message through an IPC channel.
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  216              	.LBB26:
  217              	.LBB27:
  767:Generated_Source\PSoC6\pdl\drivers\peripheral\ipc/cy_ipc_drv.h **** }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 24
 
 
  218              		.loc 2 767 0 is_stmt 1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  256              		.cfi_endproc
  257              	.LFE57:
  258              		.size	Cy_IPC_Drv_ReadMsgWord, .-Cy_IPC_Drv_ReadMsgWord
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 25
 
 
  259              		.section	.rodata.str1.4,"aMS",%progbits,1
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  297 0034 02       		.byte	0x2
  298 0035 05       		.byte	0x5
  299 0036 75020000 		.4byte	.LASF2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 26
 
 
  300 003a 02       		.uleb128 0x2
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  354 00a3 20       		.byte	0x20
  355 00a4 05       		.byte	0x5
  356 00a5 23       		.byte	0x23
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 27
 
 
  357 00a6 F3000000 		.4byte	0xf3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  411 0116 08       		.byte	0x8
  412 0117 18020000 		.4byte	.LASF20
  413 011b 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 28
 
 
  414 011c 04       		.byte	0x4
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  468 018f B102     		.2byte	0x2b1
  469 0191 03       		.byte	0x3
  470 0192 AF010000 		.4byte	0x1af
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 29
 
 
  471 0196 10       		.uleb128 0x10
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  525 020e AF010000 		.4byte	0x1af
  526 0212 10       		.uleb128 0x10
  527 0213 53010000 		.4byte	.LASF35
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 30
 
 
  528 0217 02       		.byte	0x2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  582 029b A6000000 		.4byte	.LLST3
  583 029f 00       		.byte	0
  584 02a0 18       		.uleb128 0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 31
 
 
  585 02a1 89010000 		.4byte	0x189
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  639 031a 61       		.byte	0x61
  640 031b 76000000 		.4byte	0x76
  641 031f 8A010000 		.4byte	.LLST8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 32
 
 
  642 0323 15       		.uleb128 0x15
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  696 03aa 51       		.byte	0x51
  697 03ab 03       		.uleb128 0x3
  698 03ac 0A       		.byte	0xa
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 33
 
 
  699 03ad 9A02     		.2byte	0x29a
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  753 0432 19       		.uleb128 0x19
  754 0433 10000000 		.4byte	.LVL28
  755 0437 52040000 		.4byte	0x452
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 34
 
 
  756 043b 1A       		.uleb128 0x1a
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  810 001d 00       		.byte	0
  811 001e 03       		.uleb128 0x3
  812 001f 16       		.uleb128 0x16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 35
 
 
  813 0020 00       		.byte	0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  867 0056 09       		.uleb128 0x9
  868 0057 13       		.uleb128 0x13
  869 0058 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 36
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 36
 
 
  870 0059 0B       		.uleb128 0xb
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  924 008f 28       		.uleb128 0x28
  925 0090 00       		.byte	0
  926 0091 03       		.uleb128 0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 37
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 37
 
 
  927 0092 0E       		.uleb128 0xe
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  981 00c8 00       		.byte	0
  982 00c9 12       		.uleb128 0x12
  983 00ca 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 38
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 38
 
 
  984 00cb 01       		.byte	0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1038 0102 17       		.uleb128 0x17
  1039 0103 00       		.byte	0
  1040 0104 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 39
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 39
 
 
  1041 0105 15       		.uleb128 0x15
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1095 013b 00       		.byte	0
  1096 013c 00       		.byte	0
  1097 013d 19       		.uleb128 0x19
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 40
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 40
 
 
  1098 013e 898201   		.uleb128 0x4109
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1152 002c 24000000 		.4byte	.LVL11
  1153 0030 34000000 		.4byte	.LFE55
  1154 0034 0400     		.2byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 41
 
 
  1155 0036 F3       		.byte	0xf3
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1209              	.LLST4:
  1210 00b9 0C000000 		.4byte	.LVL3
  1211 00bd 12000000 		.4byte	.LVL4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 42
 
 
  1212 00c1 0100     		.2byte	0x1
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1266 0149 1E000000 		.4byte	.LVL17
  1267 014d 0100     		.2byte	0x1
  1268 014f 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 43
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 43
 
 
  1269 0150 1E000000 		.4byte	.LVL17
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1323 01cf 9F       		.byte	0x9f
  1324 01d0 30000000 		.4byte	.LVL23
  1325 01d4 40000000 		.4byte	.LFE56
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 44
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 44
 
 
  1326 01d8 0100     		.2byte	0x1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1380              	.LLST15:
  1381 0266 00000000 		.4byte	.LVL25
  1382 026a 0C000000 		.4byte	.LVL27
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 45
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 45
 
 
  1383 026e 0100     		.2byte	0x1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1437 02f4 18000000 		.4byte	.LVL31
  1438 02f8 0100     		.2byte	0x1
  1439 02fa 55       		.byte	0x55
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 46
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 46
 
 
  1440 02fb 00000000 		.4byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1478      72765F41 
  1478      63717569 
  1478      72654E6F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 47
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 47
 
 
  1479              	.LASF12:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1503      6E7400
  1504              	.LASF1:
  1505 0113 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 48
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 48
 
 
  1505      676E6564 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1527      6E747200 
  1528              	.LASF30:
  1529 01be 43795F49 		.ascii	"Cy_IPC_Drv_IsLockAcquired\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 49
 
 
  1529      50435F44 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 1
  1548      7367576F 
  1549              	.LASF10:
  1550 0296 75696E74 		.ascii	"uint32_t\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\cckJtLOA.s 			page 50
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccaJ8mbb.s 			page 50
 
 
  1550      33325F74 

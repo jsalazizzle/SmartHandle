@@ -5,6 +5,7 @@
 
 #include <AccDriver.h>
 #include <GyrDriver.h>
+#include <AlsDriver.h>
 
 #include "debug.h"
 
@@ -119,6 +120,8 @@ void BusManager_Init()
     local_bus_busy = true; SensorBus_Start();
     
     SensorBus_RegisterEventCallback((cy_cb_scb_i2c_handle_events_t) SensorBus_ExitCallback);
+    
+    AlsDriver_Init();
     
     /*DEBUG_PRINTF("Configuring Sensor... ");     
     DEBUG_WAIT_UART_TX_COMPLETE();
