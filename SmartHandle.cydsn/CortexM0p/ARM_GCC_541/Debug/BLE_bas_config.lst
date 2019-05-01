@@ -1,0 +1,999 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"BLE_bas_config.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_ble_basConfig
+  20              		.section	.rodata
+  21              		.align	2
+  22              		.type	cy_ble_bass, %object
+  23              		.size	cy_ble_bass, 8
+  24              	cy_ble_bass:
+  25 0000 1F00     		.short	31
+  26 0002 2100     		.short	33
+  27 0004 2200     		.short	34
+  28 0006 2300     		.short	35
+  29              		.data
+  30              		.align	2
+  31              		.type	cy_ble_basConfig, %object
+  32              		.size	cy_ble_basConfig, 8
+  33              	cy_ble_basConfig:
+  34 0000 00000000 		.word	cy_ble_bass
+  35 0004 00000000 		.word	0
+  36              		.text
+  37              	.Letext0:
+  38              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  39              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  40              		.file 3 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_host_main.h"
+  41              		.file 4 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_gatt.h"
+  42              		.file 5 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_gap.h"
+  43              		.file 6 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble.h"
+  44              		.file 7 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_bas.h"
+  45              		.file 8 "Generated_Source\\PSoC6\\BLE_bas_config.c"
+  46              		.section	.debug_info,"",%progbits
+  47              	.Ldebug_info0:
+  48 0000 A5020000 		.4byte	0x2a5
+  49 0004 0400     		.2byte	0x4
+  50 0006 00000000 		.4byte	.Ldebug_abbrev0
+  51 000a 04       		.byte	0x4
+  52 000b 01       		.uleb128 0x1
+  53 000c EF030000 		.4byte	.LASF53
+  54 0010 0C       		.byte	0xc
+  55 0011 47030000 		.4byte	.LASF54
+  56 0015 B8000000 		.4byte	.LASF55
+  57 0019 00000000 		.4byte	.Ldebug_line0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 2
+
+
+  58 001d 02       		.uleb128 0x2
+  59 001e 04       		.byte	0x4
+  60 001f 05       		.byte	0x5
+  61 0020 696E7400 		.ascii	"int\000"
+  62 0024 03       		.uleb128 0x3
+  63 0025 04       		.byte	0x4
+  64 0026 07       		.byte	0x7
+  65 0027 22020000 		.4byte	.LASF0
+  66 002b 03       		.uleb128 0x3
+  67 002c 08       		.byte	0x8
+  68 002d 05       		.byte	0x5
+  69 002e E9020000 		.4byte	.LASF1
+  70 0032 03       		.uleb128 0x3
+  71 0033 08       		.byte	0x8
+  72 0034 04       		.byte	0x4
+  73 0035 E3030000 		.4byte	.LASF2
+  74 0039 03       		.uleb128 0x3
+  75 003a 01       		.byte	0x1
+  76 003b 06       		.byte	0x6
+  77 003c C4020000 		.4byte	.LASF3
+  78 0040 04       		.uleb128 0x4
+  79 0041 00000000 		.4byte	.LASF6
+  80 0045 01       		.byte	0x1
+  81 0046 1D       		.byte	0x1d
+  82 0047 4B000000 		.4byte	0x4b
+  83 004b 03       		.uleb128 0x3
+  84 004c 01       		.byte	0x1
+  85 004d 08       		.byte	0x8
+  86 004e 53010000 		.4byte	.LASF4
+  87 0052 03       		.uleb128 0x3
+  88 0053 02       		.byte	0x2
+  89 0054 05       		.byte	0x5
+  90 0055 31030000 		.4byte	.LASF5
+  91 0059 04       		.uleb128 0x4
+  92 005a DD010000 		.4byte	.LASF7
+  93 005e 01       		.byte	0x1
+  94 005f 2B       		.byte	0x2b
+  95 0060 64000000 		.4byte	0x64
+  96 0064 03       		.uleb128 0x3
+  97 0065 02       		.byte	0x2
+  98 0066 07       		.byte	0x7
+  99 0067 90010000 		.4byte	.LASF8
+ 100 006b 03       		.uleb128 0x3
+ 101 006c 04       		.byte	0x4
+ 102 006d 05       		.byte	0x5
+ 103 006e DA030000 		.4byte	.LASF9
+ 104 0072 04       		.uleb128 0x4
+ 105 0073 FF010000 		.4byte	.LASF10
+ 106 0077 01       		.byte	0x1
+ 107 0078 41       		.byte	0x41
+ 108 0079 7D000000 		.4byte	0x7d
+ 109 007d 03       		.uleb128 0x3
+ 110 007e 04       		.byte	0x4
+ 111 007f 07       		.byte	0x7
+ 112 0080 7E010000 		.4byte	.LASF11
+ 113 0084 03       		.uleb128 0x3
+ 114 0085 08       		.byte	0x8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 3
+
+
+ 115 0086 07       		.byte	0x7
+ 116 0087 53020000 		.4byte	.LASF12
+ 117 008b 03       		.uleb128 0x3
+ 118 008c 04       		.byte	0x4
+ 119 008d 07       		.byte	0x7
+ 120 008e F7020000 		.4byte	.LASF13
+ 121 0092 05       		.uleb128 0x5
+ 122 0093 04       		.byte	0x4
+ 123 0094 03       		.uleb128 0x3
+ 124 0095 01       		.byte	0x1
+ 125 0096 08       		.byte	0x8
+ 126 0097 00030000 		.4byte	.LASF14
+ 127 009b 04       		.uleb128 0x4
+ 128 009c 9E000000 		.4byte	.LASF15
+ 129 00a0 02       		.byte	0x2
+ 130 00a1 18       		.byte	0x18
+ 131 00a2 40000000 		.4byte	0x40
+ 132 00a6 04       		.uleb128 0x4
+ 133 00a7 6F030000 		.4byte	.LASF16
+ 134 00ab 02       		.byte	0x2
+ 135 00ac 24       		.byte	0x24
+ 136 00ad 59000000 		.4byte	0x59
+ 137 00b1 04       		.uleb128 0x4
+ 138 00b2 D1030000 		.4byte	.LASF17
+ 139 00b6 02       		.byte	0x2
+ 140 00b7 30       		.byte	0x30
+ 141 00b8 72000000 		.4byte	0x72
+ 142 00bc 03       		.uleb128 0x3
+ 143 00bd 04       		.byte	0x4
+ 144 00be 04       		.byte	0x4
+ 145 00bf 2D010000 		.4byte	.LASF18
+ 146 00c3 03       		.uleb128 0x3
+ 147 00c4 08       		.byte	0x8
+ 148 00c5 04       		.byte	0x4
+ 149 00c6 E8010000 		.4byte	.LASF19
+ 150 00ca 06       		.uleb128 0x6
+ 151 00cb 02       		.byte	0x2
+ 152 00cc 03       		.byte	0x3
+ 153 00cd 5B01     		.2byte	0x15b
+ 154 00cf EE000000 		.4byte	0xee
+ 155 00d3 07       		.uleb128 0x7
+ 156 00d4 23000000 		.4byte	.LASF20
+ 157 00d8 03       		.byte	0x3
+ 158 00d9 6501     		.2byte	0x165
+ 159 00db 9B000000 		.4byte	0x9b
+ 160 00df 00       		.byte	0
+ 161 00e0 07       		.uleb128 0x7
+ 162 00e1 D0020000 		.4byte	.LASF21
+ 163 00e5 03       		.byte	0x3
+ 164 00e6 6901     		.2byte	0x169
+ 165 00e8 9B000000 		.4byte	0x9b
+ 166 00ec 01       		.byte	0x1
+ 167 00ed 00       		.byte	0
+ 168 00ee 08       		.uleb128 0x8
+ 169 00ef 57000000 		.4byte	.LASF22
+ 170 00f3 03       		.byte	0x3
+ 171 00f4 6B01     		.2byte	0x16b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 4
+
+
+ 172 00f6 CA000000 		.4byte	0xca
+ 173 00fa 08       		.uleb128 0x8
+ 174 00fb 61010000 		.4byte	.LASF23
+ 175 00ff 04       		.byte	0x4
+ 176 0100 7F01     		.2byte	0x17f
+ 177 0102 A6000000 		.4byte	0xa6
+ 178 0106 09       		.uleb128 0x9
+ 179 0107 01       		.byte	0x1
+ 180 0108 4B000000 		.4byte	0x4b
+ 181 010c 05       		.byte	0x5
+ 182 010d 7E       		.byte	0x7e
+ 183 010e 2B010000 		.4byte	0x12b
+ 184 0112 0A       		.uleb128 0xa
+ 185 0113 0A000000 		.4byte	.LASF24
+ 186 0117 00       		.byte	0
+ 187 0118 0A       		.uleb128 0xa
+ 188 0119 94020000 		.4byte	.LASF25
+ 189 011d 01       		.byte	0x1
+ 190 011e 0A       		.uleb128 0xa
+ 191 011f 83030000 		.4byte	.LASF26
+ 192 0123 02       		.byte	0x2
+ 193 0124 0A       		.uleb128 0xa
+ 194 0125 33010000 		.4byte	.LASF27
+ 195 0129 03       		.byte	0x3
+ 196 012a 00       		.byte	0
+ 197 012b 04       		.uleb128 0x4
+ 198 012c 17010000 		.4byte	.LASF28
+ 199 0130 05       		.byte	0x5
+ 200 0131 83       		.byte	0x83
+ 201 0132 06010000 		.4byte	0x106
+ 202 0136 09       		.uleb128 0x9
+ 203 0137 01       		.byte	0x1
+ 204 0138 4B000000 		.4byte	0x4b
+ 205 013c 05       		.byte	0x5
+ 206 013d 87       		.byte	0x87
+ 207 013e 73010000 		.4byte	0x173
+ 208 0142 0A       		.uleb128 0xa
+ 209 0143 05030000 		.4byte	.LASF29
+ 210 0147 00       		.byte	0
+ 211 0148 0A       		.uleb128 0xa
+ 212 0149 A0030000 		.4byte	.LASF30
+ 213 014d 01       		.byte	0x1
+ 214 014e 0A       		.uleb128 0xa
+ 215 014f 70000000 		.4byte	.LASF31
+ 216 0153 02       		.byte	0x2
+ 217 0154 0A       		.uleb128 0xa
+ 218 0155 ED000000 		.4byte	.LASF32
+ 219 0159 03       		.byte	0x3
+ 220 015a 0A       		.uleb128 0xa
+ 221 015b 6A020000 		.4byte	.LASF33
+ 222 015f 04       		.byte	0x4
+ 223 0160 0A       		.uleb128 0xa
+ 224 0161 A3010000 		.4byte	.LASF34
+ 225 0165 05       		.byte	0x5
+ 226 0166 0A       		.uleb128 0xa
+ 227 0167 2C000000 		.4byte	.LASF35
+ 228 016b 06       		.byte	0x6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 5
+
+
+ 229 016c 0A       		.uleb128 0xa
+ 230 016d 2F020000 		.4byte	.LASF36
+ 231 0171 07       		.byte	0x7
+ 232 0172 00       		.byte	0
+ 233 0173 04       		.uleb128 0x4
+ 234 0174 D1040000 		.4byte	.LASF37
+ 235 0178 05       		.byte	0x5
+ 236 0179 90       		.byte	0x90
+ 237 017a 36010000 		.4byte	0x136
+ 238 017e 04       		.uleb128 0x4
+ 239 017f A6000000 		.4byte	.LASF38
+ 240 0183 06       		.byte	0x6
+ 241 0184 40       		.byte	0x40
+ 242 0185 89010000 		.4byte	0x189
+ 243 0189 0B       		.uleb128 0xb
+ 244 018a 04       		.byte	0x4
+ 245 018b 8F010000 		.4byte	0x18f
+ 246 018f 0C       		.uleb128 0xc
+ 247 0190 9F010000 		.4byte	0x19f
+ 248 0194 0D       		.uleb128 0xd
+ 249 0195 B1000000 		.4byte	0xb1
+ 250 0199 0D       		.uleb128 0xd
+ 251 019a 92000000 		.4byte	0x92
+ 252 019e 00       		.byte	0
+ 253 019f 03       		.uleb128 0x3
+ 254 01a0 01       		.byte	0x1
+ 255 01a1 02       		.byte	0x2
+ 256 01a2 93040000 		.4byte	.LASF39
+ 257 01a6 0E       		.uleb128 0xe
+ 258 01a7 08       		.byte	0x8
+ 259 01a8 07       		.byte	0x7
+ 260 01a9 48       		.byte	0x48
+ 261 01aa DF010000 		.4byte	0x1df
+ 262 01ae 0F       		.uleb128 0xf
+ 263 01af 99040000 		.4byte	.LASF40
+ 264 01b3 07       		.byte	0x7
+ 265 01b4 4A       		.byte	0x4a
+ 266 01b5 FA000000 		.4byte	0xfa
+ 267 01b9 00       		.byte	0
+ 268 01ba 0F       		.uleb128 0xf
+ 269 01bb D6020000 		.4byte	.LASF41
+ 270 01bf 07       		.byte	0x7
+ 271 01c0 4B       		.byte	0x4b
+ 272 01c1 FA000000 		.4byte	0xfa
+ 273 01c5 02       		.byte	0x2
+ 274 01c6 0F       		.uleb128 0xf
+ 275 01c7 78030000 		.4byte	.LASF42
+ 276 01cb 07       		.byte	0x7
+ 277 01cc 4C       		.byte	0x4c
+ 278 01cd FA000000 		.4byte	0xfa
+ 279 01d1 04       		.byte	0x4
+ 280 01d2 0F       		.uleb128 0xf
+ 281 01d3 F4010000 		.4byte	.LASF43
+ 282 01d7 07       		.byte	0x7
+ 283 01d8 4D       		.byte	0x4d
+ 284 01d9 FA000000 		.4byte	0xfa
+ 285 01dd 06       		.byte	0x6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 6
+
+
+ 286 01de 00       		.byte	0
+ 287 01df 04       		.uleb128 0x4
+ 288 01e0 81040000 		.4byte	.LASF44
+ 289 01e4 07       		.byte	0x7
+ 290 01e5 4E       		.byte	0x4e
+ 291 01e6 A6010000 		.4byte	0x1a6
+ 292 01ea 0E       		.uleb128 0xe
+ 293 01eb 08       		.byte	0x8
+ 294 01ec 07       		.byte	0x7
+ 295 01ed 6E       		.byte	0x6e
+ 296 01ee 0B020000 		.4byte	0x20b
+ 297 01f2 0F       		.uleb128 0xf
+ 298 01f3 EF010000 		.4byte	.LASF45
+ 299 01f7 07       		.byte	0x7
+ 300 01f8 71       		.byte	0x71
+ 301 01f9 0B020000 		.4byte	0x20b
+ 302 01fd 00       		.byte	0
+ 303 01fe 0F       		.uleb128 0xf
+ 304 01ff 24030000 		.4byte	.LASF46
+ 305 0203 07       		.byte	0x7
+ 306 0204 74       		.byte	0x74
+ 307 0205 7E010000 		.4byte	0x17e
+ 308 0209 04       		.byte	0x4
+ 309 020a 00       		.byte	0
+ 310 020b 0B       		.uleb128 0xb
+ 311 020c 04       		.byte	0x4
+ 312 020d 11020000 		.4byte	0x211
+ 313 0211 10       		.uleb128 0x10
+ 314 0212 DF010000 		.4byte	0x1df
+ 315 0216 04       		.uleb128 0x4
+ 316 0217 0A020000 		.4byte	.LASF47
+ 317 021b 07       		.byte	0x7
+ 318 021c 75       		.byte	0x75
+ 319 021d EA010000 		.4byte	0x1ea
+ 320 0221 11       		.uleb128 0x11
+ 321 0222 11020000 		.4byte	0x211
+ 322 0226 31020000 		.4byte	0x231
+ 323 022a 12       		.uleb128 0x12
+ 324 022b 8B000000 		.4byte	0x8b
+ 325 022f 00       		.byte	0
+ 326 0230 00       		.byte	0
+ 327 0231 13       		.uleb128 0x13
+ 328 0232 3B030000 		.4byte	.LASF56
+ 329 0236 08       		.byte	0x8
+ 330 0237 18       		.byte	0x18
+ 331 0238 42020000 		.4byte	0x242
+ 332 023c 05       		.uleb128 0x5
+ 333 023d 03       		.byte	0x3
+ 334 023e 00000000 		.4byte	cy_ble_bass
+ 335 0242 10       		.uleb128 0x10
+ 336 0243 21020000 		.4byte	0x221
+ 337 0247 14       		.uleb128 0x14
+ 338 0248 CD010000 		.4byte	.LASF48
+ 339 024c 05       		.byte	0x5
+ 340 024d 2202     		.2byte	0x222
+ 341 024f 2B010000 		.4byte	0x12b
+ 342 0253 11       		.uleb128 0x11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 7
+
+
+ 343 0254 EE000000 		.4byte	0xee
+ 344 0258 63020000 		.4byte	0x263
+ 345 025c 12       		.uleb128 0x12
+ 346 025d 8B000000 		.4byte	0x8b
+ 347 0261 00       		.byte	0
+ 348 0262 00       		.byte	0
+ 349 0263 14       		.uleb128 0x14
+ 350 0264 8C000000 		.4byte	.LASF49
+ 351 0268 05       		.byte	0x5
+ 352 0269 2C02     		.2byte	0x22c
+ 353 026b 53020000 		.4byte	0x253
+ 354 026f 11       		.uleb128 0x11
+ 355 0270 73010000 		.4byte	0x173
+ 356 0274 7F020000 		.4byte	0x27f
+ 357 0278 12       		.uleb128 0x12
+ 358 0279 8B000000 		.4byte	0x8b
+ 359 027d 00       		.byte	0
+ 360 027e 00       		.byte	0
+ 361 027f 14       		.uleb128 0x14
+ 362 0280 A7040000 		.4byte	.LASF50
+ 363 0284 05       		.byte	0x5
+ 364 0285 2D02     		.2byte	0x22d
+ 365 0287 6F020000 		.4byte	0x26f
+ 366 028b 14       		.uleb128 0x14
+ 367 028c B8040000 		.4byte	.LASF51
+ 368 0290 05       		.byte	0x5
+ 369 0291 5202     		.2byte	0x252
+ 370 0293 9B000000 		.4byte	0x9b
+ 371 0297 15       		.uleb128 0x15
+ 372 0298 B3020000 		.4byte	.LASF52
+ 373 029c 08       		.byte	0x8
+ 374 029d 29       		.byte	0x29
+ 375 029e 16020000 		.4byte	0x216
+ 376 02a2 05       		.uleb128 0x5
+ 377 02a3 03       		.byte	0x3
+ 378 02a4 00000000 		.4byte	cy_ble_basConfig
+ 379 02a8 00       		.byte	0
+ 380              		.section	.debug_abbrev,"",%progbits
+ 381              	.Ldebug_abbrev0:
+ 382 0000 01       		.uleb128 0x1
+ 383 0001 11       		.uleb128 0x11
+ 384 0002 01       		.byte	0x1
+ 385 0003 25       		.uleb128 0x25
+ 386 0004 0E       		.uleb128 0xe
+ 387 0005 13       		.uleb128 0x13
+ 388 0006 0B       		.uleb128 0xb
+ 389 0007 03       		.uleb128 0x3
+ 390 0008 0E       		.uleb128 0xe
+ 391 0009 1B       		.uleb128 0x1b
+ 392 000a 0E       		.uleb128 0xe
+ 393 000b 10       		.uleb128 0x10
+ 394 000c 17       		.uleb128 0x17
+ 395 000d 00       		.byte	0
+ 396 000e 00       		.byte	0
+ 397 000f 02       		.uleb128 0x2
+ 398 0010 24       		.uleb128 0x24
+ 399 0011 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 8
+
+
+ 400 0012 0B       		.uleb128 0xb
+ 401 0013 0B       		.uleb128 0xb
+ 402 0014 3E       		.uleb128 0x3e
+ 403 0015 0B       		.uleb128 0xb
+ 404 0016 03       		.uleb128 0x3
+ 405 0017 08       		.uleb128 0x8
+ 406 0018 00       		.byte	0
+ 407 0019 00       		.byte	0
+ 408 001a 03       		.uleb128 0x3
+ 409 001b 24       		.uleb128 0x24
+ 410 001c 00       		.byte	0
+ 411 001d 0B       		.uleb128 0xb
+ 412 001e 0B       		.uleb128 0xb
+ 413 001f 3E       		.uleb128 0x3e
+ 414 0020 0B       		.uleb128 0xb
+ 415 0021 03       		.uleb128 0x3
+ 416 0022 0E       		.uleb128 0xe
+ 417 0023 00       		.byte	0
+ 418 0024 00       		.byte	0
+ 419 0025 04       		.uleb128 0x4
+ 420 0026 16       		.uleb128 0x16
+ 421 0027 00       		.byte	0
+ 422 0028 03       		.uleb128 0x3
+ 423 0029 0E       		.uleb128 0xe
+ 424 002a 3A       		.uleb128 0x3a
+ 425 002b 0B       		.uleb128 0xb
+ 426 002c 3B       		.uleb128 0x3b
+ 427 002d 0B       		.uleb128 0xb
+ 428 002e 49       		.uleb128 0x49
+ 429 002f 13       		.uleb128 0x13
+ 430 0030 00       		.byte	0
+ 431 0031 00       		.byte	0
+ 432 0032 05       		.uleb128 0x5
+ 433 0033 0F       		.uleb128 0xf
+ 434 0034 00       		.byte	0
+ 435 0035 0B       		.uleb128 0xb
+ 436 0036 0B       		.uleb128 0xb
+ 437 0037 00       		.byte	0
+ 438 0038 00       		.byte	0
+ 439 0039 06       		.uleb128 0x6
+ 440 003a 13       		.uleb128 0x13
+ 441 003b 01       		.byte	0x1
+ 442 003c 0B       		.uleb128 0xb
+ 443 003d 0B       		.uleb128 0xb
+ 444 003e 3A       		.uleb128 0x3a
+ 445 003f 0B       		.uleb128 0xb
+ 446 0040 3B       		.uleb128 0x3b
+ 447 0041 05       		.uleb128 0x5
+ 448 0042 01       		.uleb128 0x1
+ 449 0043 13       		.uleb128 0x13
+ 450 0044 00       		.byte	0
+ 451 0045 00       		.byte	0
+ 452 0046 07       		.uleb128 0x7
+ 453 0047 0D       		.uleb128 0xd
+ 454 0048 00       		.byte	0
+ 455 0049 03       		.uleb128 0x3
+ 456 004a 0E       		.uleb128 0xe
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 9
+
+
+ 457 004b 3A       		.uleb128 0x3a
+ 458 004c 0B       		.uleb128 0xb
+ 459 004d 3B       		.uleb128 0x3b
+ 460 004e 05       		.uleb128 0x5
+ 461 004f 49       		.uleb128 0x49
+ 462 0050 13       		.uleb128 0x13
+ 463 0051 38       		.uleb128 0x38
+ 464 0052 0B       		.uleb128 0xb
+ 465 0053 00       		.byte	0
+ 466 0054 00       		.byte	0
+ 467 0055 08       		.uleb128 0x8
+ 468 0056 16       		.uleb128 0x16
+ 469 0057 00       		.byte	0
+ 470 0058 03       		.uleb128 0x3
+ 471 0059 0E       		.uleb128 0xe
+ 472 005a 3A       		.uleb128 0x3a
+ 473 005b 0B       		.uleb128 0xb
+ 474 005c 3B       		.uleb128 0x3b
+ 475 005d 05       		.uleb128 0x5
+ 476 005e 49       		.uleb128 0x49
+ 477 005f 13       		.uleb128 0x13
+ 478 0060 00       		.byte	0
+ 479 0061 00       		.byte	0
+ 480 0062 09       		.uleb128 0x9
+ 481 0063 04       		.uleb128 0x4
+ 482 0064 01       		.byte	0x1
+ 483 0065 0B       		.uleb128 0xb
+ 484 0066 0B       		.uleb128 0xb
+ 485 0067 49       		.uleb128 0x49
+ 486 0068 13       		.uleb128 0x13
+ 487 0069 3A       		.uleb128 0x3a
+ 488 006a 0B       		.uleb128 0xb
+ 489 006b 3B       		.uleb128 0x3b
+ 490 006c 0B       		.uleb128 0xb
+ 491 006d 01       		.uleb128 0x1
+ 492 006e 13       		.uleb128 0x13
+ 493 006f 00       		.byte	0
+ 494 0070 00       		.byte	0
+ 495 0071 0A       		.uleb128 0xa
+ 496 0072 28       		.uleb128 0x28
+ 497 0073 00       		.byte	0
+ 498 0074 03       		.uleb128 0x3
+ 499 0075 0E       		.uleb128 0xe
+ 500 0076 1C       		.uleb128 0x1c
+ 501 0077 0B       		.uleb128 0xb
+ 502 0078 00       		.byte	0
+ 503 0079 00       		.byte	0
+ 504 007a 0B       		.uleb128 0xb
+ 505 007b 0F       		.uleb128 0xf
+ 506 007c 00       		.byte	0
+ 507 007d 0B       		.uleb128 0xb
+ 508 007e 0B       		.uleb128 0xb
+ 509 007f 49       		.uleb128 0x49
+ 510 0080 13       		.uleb128 0x13
+ 511 0081 00       		.byte	0
+ 512 0082 00       		.byte	0
+ 513 0083 0C       		.uleb128 0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 10
+
+
+ 514 0084 15       		.uleb128 0x15
+ 515 0085 01       		.byte	0x1
+ 516 0086 27       		.uleb128 0x27
+ 517 0087 19       		.uleb128 0x19
+ 518 0088 01       		.uleb128 0x1
+ 519 0089 13       		.uleb128 0x13
+ 520 008a 00       		.byte	0
+ 521 008b 00       		.byte	0
+ 522 008c 0D       		.uleb128 0xd
+ 523 008d 05       		.uleb128 0x5
+ 524 008e 00       		.byte	0
+ 525 008f 49       		.uleb128 0x49
+ 526 0090 13       		.uleb128 0x13
+ 527 0091 00       		.byte	0
+ 528 0092 00       		.byte	0
+ 529 0093 0E       		.uleb128 0xe
+ 530 0094 13       		.uleb128 0x13
+ 531 0095 01       		.byte	0x1
+ 532 0096 0B       		.uleb128 0xb
+ 533 0097 0B       		.uleb128 0xb
+ 534 0098 3A       		.uleb128 0x3a
+ 535 0099 0B       		.uleb128 0xb
+ 536 009a 3B       		.uleb128 0x3b
+ 537 009b 0B       		.uleb128 0xb
+ 538 009c 01       		.uleb128 0x1
+ 539 009d 13       		.uleb128 0x13
+ 540 009e 00       		.byte	0
+ 541 009f 00       		.byte	0
+ 542 00a0 0F       		.uleb128 0xf
+ 543 00a1 0D       		.uleb128 0xd
+ 544 00a2 00       		.byte	0
+ 545 00a3 03       		.uleb128 0x3
+ 546 00a4 0E       		.uleb128 0xe
+ 547 00a5 3A       		.uleb128 0x3a
+ 548 00a6 0B       		.uleb128 0xb
+ 549 00a7 3B       		.uleb128 0x3b
+ 550 00a8 0B       		.uleb128 0xb
+ 551 00a9 49       		.uleb128 0x49
+ 552 00aa 13       		.uleb128 0x13
+ 553 00ab 38       		.uleb128 0x38
+ 554 00ac 0B       		.uleb128 0xb
+ 555 00ad 00       		.byte	0
+ 556 00ae 00       		.byte	0
+ 557 00af 10       		.uleb128 0x10
+ 558 00b0 26       		.uleb128 0x26
+ 559 00b1 00       		.byte	0
+ 560 00b2 49       		.uleb128 0x49
+ 561 00b3 13       		.uleb128 0x13
+ 562 00b4 00       		.byte	0
+ 563 00b5 00       		.byte	0
+ 564 00b6 11       		.uleb128 0x11
+ 565 00b7 01       		.uleb128 0x1
+ 566 00b8 01       		.byte	0x1
+ 567 00b9 49       		.uleb128 0x49
+ 568 00ba 13       		.uleb128 0x13
+ 569 00bb 01       		.uleb128 0x1
+ 570 00bc 13       		.uleb128 0x13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 11
+
+
+ 571 00bd 00       		.byte	0
+ 572 00be 00       		.byte	0
+ 573 00bf 12       		.uleb128 0x12
+ 574 00c0 21       		.uleb128 0x21
+ 575 00c1 00       		.byte	0
+ 576 00c2 49       		.uleb128 0x49
+ 577 00c3 13       		.uleb128 0x13
+ 578 00c4 2F       		.uleb128 0x2f
+ 579 00c5 0B       		.uleb128 0xb
+ 580 00c6 00       		.byte	0
+ 581 00c7 00       		.byte	0
+ 582 00c8 13       		.uleb128 0x13
+ 583 00c9 34       		.uleb128 0x34
+ 584 00ca 00       		.byte	0
+ 585 00cb 03       		.uleb128 0x3
+ 586 00cc 0E       		.uleb128 0xe
+ 587 00cd 3A       		.uleb128 0x3a
+ 588 00ce 0B       		.uleb128 0xb
+ 589 00cf 3B       		.uleb128 0x3b
+ 590 00d0 0B       		.uleb128 0xb
+ 591 00d1 49       		.uleb128 0x49
+ 592 00d2 13       		.uleb128 0x13
+ 593 00d3 02       		.uleb128 0x2
+ 594 00d4 18       		.uleb128 0x18
+ 595 00d5 00       		.byte	0
+ 596 00d6 00       		.byte	0
+ 597 00d7 14       		.uleb128 0x14
+ 598 00d8 34       		.uleb128 0x34
+ 599 00d9 00       		.byte	0
+ 600 00da 03       		.uleb128 0x3
+ 601 00db 0E       		.uleb128 0xe
+ 602 00dc 3A       		.uleb128 0x3a
+ 603 00dd 0B       		.uleb128 0xb
+ 604 00de 3B       		.uleb128 0x3b
+ 605 00df 05       		.uleb128 0x5
+ 606 00e0 49       		.uleb128 0x49
+ 607 00e1 13       		.uleb128 0x13
+ 608 00e2 3F       		.uleb128 0x3f
+ 609 00e3 19       		.uleb128 0x19
+ 610 00e4 3C       		.uleb128 0x3c
+ 611 00e5 19       		.uleb128 0x19
+ 612 00e6 00       		.byte	0
+ 613 00e7 00       		.byte	0
+ 614 00e8 15       		.uleb128 0x15
+ 615 00e9 34       		.uleb128 0x34
+ 616 00ea 00       		.byte	0
+ 617 00eb 03       		.uleb128 0x3
+ 618 00ec 0E       		.uleb128 0xe
+ 619 00ed 3A       		.uleb128 0x3a
+ 620 00ee 0B       		.uleb128 0xb
+ 621 00ef 3B       		.uleb128 0x3b
+ 622 00f0 0B       		.uleb128 0xb
+ 623 00f1 49       		.uleb128 0x49
+ 624 00f2 13       		.uleb128 0x13
+ 625 00f3 3F       		.uleb128 0x3f
+ 626 00f4 19       		.uleb128 0x19
+ 627 00f5 02       		.uleb128 0x2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 12
+
+
+ 628 00f6 18       		.uleb128 0x18
+ 629 00f7 00       		.byte	0
+ 630 00f8 00       		.byte	0
+ 631 00f9 00       		.byte	0
+ 632              		.section	.debug_aranges,"",%progbits
+ 633 0000 14000000 		.4byte	0x14
+ 634 0004 0200     		.2byte	0x2
+ 635 0006 00000000 		.4byte	.Ldebug_info0
+ 636 000a 04       		.byte	0x4
+ 637 000b 00       		.byte	0
+ 638 000c 0000     		.2byte	0
+ 639 000e 0000     		.2byte	0
+ 640 0010 00000000 		.4byte	0
+ 641 0014 00000000 		.4byte	0
+ 642              		.section	.debug_line,"",%progbits
+ 643              	.Ldebug_line0:
+ 644 0000 CA010000 		.section	.debug_str,"MS",%progbits,1
+ 644      0200C401 
+ 644      00000201 
+ 644      FB0E0D00 
+ 644      01010101 
+ 645              	.LASF6:
+ 646 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 646      6E74385F 
+ 646      7400
+ 647              	.LASF24:
+ 648 000a 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
+ 648      4C455F41 
+ 648      44565F53 
+ 648      54415445 
+ 648      5F53544F 
+ 649              	.LASF20:
+ 650 0023 62644861 		.ascii	"bdHandle\000"
+ 650      6E646C65 
+ 650      00
+ 651              	.LASF35:
+ 652 002c 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 652      4C455F43 
+ 652      4F4E4E5F 
+ 652      53544154 
+ 652      455F434C 
+ 653              	.LASF22:
+ 654 0057 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 654      74635F62 
+ 654      6C655F63 
+ 654      6F6E6E5F 
+ 654      68616E64 
+ 655              	.LASF31:
+ 656 0070 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 656      4C455F43 
+ 656      4F4E4E5F 
+ 656      53544154 
+ 656      455F434F 
+ 657              	.LASF49:
+ 658 008c 63795F62 		.ascii	"cy_ble_connHandle\000"
+ 658      6C655F63 
+ 658      6F6E6E48 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 13
+
+
+ 658      616E646C 
+ 658      6500
+ 659              	.LASF15:
+ 660 009e 75696E74 		.ascii	"uint8_t\000"
+ 660      385F7400 
+ 661              	.LASF38:
+ 662 00a6 63795F62 		.ascii	"cy_ble_callback_t\000"
+ 662      6C655F63 
+ 662      616C6C62 
+ 662      61636B5F 
+ 662      7400
+ 663              	.LASF55:
+ 664 00b8 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\SmartHandle"
+ 664      73657273 
+ 664      5C73616C 
+ 664      617A5C44 
+ 664      65736B74 
+ 665 00e6 2E637964 		.ascii	".cydsn\000"
+ 665      736E00
+ 666              	.LASF32:
+ 667 00ed 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
+ 667      4C455F43 
+ 667      4F4E4E5F 
+ 667      53544154 
+ 667      455F434C 
+ 668              	.LASF28:
+ 669 0117 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 669      6E5F626C 
+ 669      655F6164 
+ 669      765F7374 
+ 669      6174655F 
+ 670              	.LASF18:
+ 671 012d 666C6F61 		.ascii	"float\000"
+ 671      7400
+ 672              	.LASF27:
+ 673 0133 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 673      4C455F41 
+ 673      44565F53 
+ 673      54415445 
+ 673      5F53544F 
+ 674              	.LASF4:
+ 675 0153 756E7369 		.ascii	"unsigned char\000"
+ 675      676E6564 
+ 675      20636861 
+ 675      7200
+ 676              	.LASF23:
+ 677 0161 63795F62 		.ascii	"cy_ble_gatt_db_attr_handle_t\000"
+ 677      6C655F67 
+ 677      6174745F 
+ 677      64625F61 
+ 677      7474725F 
+ 678              	.LASF11:
+ 679 017e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 679      20756E73 
+ 679      69676E65 
+ 679      6420696E 
+ 679      7400
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 14
+
+
+ 680              	.LASF8:
+ 681 0190 73686F72 		.ascii	"short unsigned int\000"
+ 681      7420756E 
+ 681      7369676E 
+ 681      65642069 
+ 681      6E7400
+ 682              	.LASF34:
+ 683 01a3 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 683      4C455F43 
+ 683      4F4E4E5F 
+ 683      53544154 
+ 683      455F434C 
+ 684              	.LASF48:
+ 685 01cd 63795F62 		.ascii	"cy_ble_advState\000"
+ 685      6C655F61 
+ 685      64765374 
+ 685      61746500 
+ 686              	.LASF7:
+ 687 01dd 5F5F7569 		.ascii	"__uint16_t\000"
+ 687      6E743136 
+ 687      5F7400
+ 688              	.LASF19:
+ 689 01e8 646F7562 		.ascii	"double\000"
+ 689      6C6500
+ 690              	.LASF45:
+ 691 01ef 62617373 		.ascii	"bass\000"
+ 691      00
+ 692              	.LASF43:
+ 693 01f4 63636364 		.ascii	"cccdHandle\000"
+ 693      48616E64 
+ 693      6C6500
+ 694              	.LASF10:
+ 695 01ff 5F5F7569 		.ascii	"__uint32_t\000"
+ 695      6E743332 
+ 695      5F7400
+ 696              	.LASF47:
+ 697 020a 63795F73 		.ascii	"cy_stc_ble_bas_config_t\000"
+ 697      74635F62 
+ 697      6C655F62 
+ 697      61735F63 
+ 697      6F6E6669 
+ 698              	.LASF0:
+ 699 0222 756E7369 		.ascii	"unsigned int\000"
+ 699      676E6564 
+ 699      20696E74 
+ 699      00
+ 700              	.LASF36:
+ 701 022f 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
+ 701      4C455F43 
+ 701      4F4E4E5F 
+ 701      53544154 
+ 701      455F434C 
+ 702              	.LASF12:
+ 703 0253 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 703      206C6F6E 
+ 703      6720756E 
+ 703      7369676E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 15
+
+
+ 703      65642069 
+ 704              	.LASF33:
+ 705 026a 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 705      4C455F43 
+ 705      4F4E4E5F 
+ 705      53544154 
+ 705      455F434C 
+ 706              	.LASF25:
+ 707 0294 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 707      4C455F41 
+ 707      44565F53 
+ 707      54415445 
+ 707      5F414456 
+ 708              	.LASF52:
+ 709 02b3 63795F62 		.ascii	"cy_ble_basConfig\000"
+ 709      6C655F62 
+ 709      6173436F 
+ 709      6E666967 
+ 709      00
+ 710              	.LASF3:
+ 711 02c4 7369676E 		.ascii	"signed char\000"
+ 711      65642063 
+ 711      68617200 
+ 712              	.LASF21:
+ 713 02d0 61747449 		.ascii	"attId\000"
+ 713      6400
+ 714              	.LASF41:
+ 715 02d6 62617474 		.ascii	"batteryLevelHandle\000"
+ 715      6572794C 
+ 715      6576656C 
+ 715      48616E64 
+ 715      6C6500
+ 716              	.LASF1:
+ 717 02e9 6C6F6E67 		.ascii	"long long int\000"
+ 717      206C6F6E 
+ 717      6720696E 
+ 717      7400
+ 718              	.LASF13:
+ 719 02f7 73697A65 		.ascii	"sizetype\000"
+ 719      74797065 
+ 719      00
+ 720              	.LASF14:
+ 721 0300 63686172 		.ascii	"char\000"
+ 721      00
+ 722              	.LASF29:
+ 723 0305 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 723      4C455F43 
+ 723      4F4E4E5F 
+ 723      53544154 
+ 723      455F4449 
+ 724              	.LASF46:
+ 725 0324 63616C6C 		.ascii	"callbackFunc\000"
+ 725      6261636B 
+ 725      46756E63 
+ 725      00
+ 726              	.LASF5:
+ 727 0331 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 16
+
+
+ 727      7420696E 
+ 727      7400
+ 728              	.LASF56:
+ 729 033b 63795F62 		.ascii	"cy_ble_bass\000"
+ 729      6C655F62 
+ 729      61737300 
+ 730              	.LASF54:
+ 731 0347 47656E65 		.ascii	"Generated_Source\\PSoC6\\BLE_bas_config.c\000"
+ 731      72617465 
+ 731      645F536F 
+ 731      75726365 
+ 731      5C50536F 
+ 732              	.LASF16:
+ 733 036f 75696E74 		.ascii	"uint16_t\000"
+ 733      31365F74 
+ 733      00
+ 734              	.LASF42:
+ 735 0378 63706664 		.ascii	"cpfdHandle\000"
+ 735      48616E64 
+ 735      6C6500
+ 736              	.LASF26:
+ 737 0383 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 737      4C455F41 
+ 737      44565F53 
+ 737      54415445 
+ 737      5F414456 
+ 738              	.LASF30:
+ 739 03a0 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
+ 739      4C455F43 
+ 739      4F4E4E5F 
+ 739      53544154 
+ 739      455F434C 
+ 740              	.LASF17:
+ 741 03d1 75696E74 		.ascii	"uint32_t\000"
+ 741      33325F74 
+ 741      00
+ 742              	.LASF9:
+ 743 03da 6C6F6E67 		.ascii	"long int\000"
+ 743      20696E74 
+ 743      00
+ 744              	.LASF2:
+ 745 03e3 6C6F6E67 		.ascii	"long double\000"
+ 745      20646F75 
+ 745      626C6500 
+ 746              	.LASF53:
+ 747 03ef 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 747      43313120 
+ 747      352E342E 
+ 747      31203230 
+ 747      31363036 
+ 748 0422 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 748      20726576 
+ 748      6973696F 
+ 748      6E203233 
+ 748      37373135 
+ 749 0455 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 749      67202D66 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccsCKOIv.s 			page 17
+
+
+ 749      66756E63 
+ 749      74696F6E 
+ 749      2D736563 
+ 750              	.LASF44:
+ 751 0481 63795F73 		.ascii	"cy_stc_ble_bass_t\000"
+ 751      74635F62 
+ 751      6C655F62 
+ 751      6173735F 
+ 751      7400
+ 752              	.LASF39:
+ 753 0493 5F426F6F 		.ascii	"_Bool\000"
+ 753      6C00
+ 754              	.LASF40:
+ 755 0499 73657276 		.ascii	"serviceHandle\000"
+ 755      69636548 
+ 755      616E646C 
+ 755      6500
+ 756              	.LASF50:
+ 757 04a7 63795F62 		.ascii	"cy_ble_connState\000"
+ 757      6C655F63 
+ 757      6F6E6E53 
+ 757      74617465 
+ 757      00
+ 758              	.LASF51:
+ 759 04b8 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
+ 759      6C655F70 
+ 759      656E6469 
+ 759      6E67466C 
+ 759      61736857 
+ 760              	.LASF37:
+ 761 04d1 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 761      6E5F626C 
+ 761      655F636F 
+ 761      6E6E5F73 
+ 761      74617465 
+ 762              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -111,9 +111,9 @@ static void Interpolate(void)
         is_first_sample = false; return;
     }
     
-    if(interpolated.timestamp <= sample_new.timestamp)
+    if(interpolated.timestamp.second <= sample_new.timestamp.second)
     {        
-        a0 = sample_old.x_raw; a1 = sample_new.x_raw; t = interpolated.timestamp; t1 = sample_new.timestamp;
+        a0 = sample_old.x_raw; a1 = sample_new.x_raw; t = interpolated.timestamp.second; t1 = sample_new.timestamp.second;
         interpolated.x_raw = a0 + (t * (a1 - a0)/t1);
         
         a0 = sample_old.y_raw; a1 = sample_new.y_raw;
@@ -132,42 +132,52 @@ static void Interpolate(void)
             DataBuffer_CloseWriteSlot((uint8**)&wsample_ptr, ACC1ESLOT);
         }
         
-        interpolated.timestamp = interpolated.timestamp + interpolated_period;
-        if(interpolated.timestamp < sample_new.timestamp)
+        interpolated.timestamp.second = interpolated.timestamp.second + interpolated_period;
+        if(interpolated.timestamp.second < sample_new.timestamp.second)
         {
             Interpolate();
         }
         else
         {
-            interpolated.timestamp = interpolated.timestamp - sample_period;
+            interpolated.timestamp.second = interpolated.timestamp.second - sample_period;
         }
     }
     else
     {
-        interpolated.timestamp = interpolated.timestamp - sample_period;
+        interpolated.timestamp.second = interpolated.timestamp.second - sample_period;
     }
 }
 void AccDriver_Init()
 {
     register_setting.slaveAddress = 0x1E;
-    WriteRegister(0x21,0b01000000); CyDelay(10);  // Reset          W[0x3C 0x21 0x40]
-    if(ReadRegister(0x0F) != 0b01000011) // Verify Chip ID          W[0x3C 0x0F] R[0x3D 0x43]
+    WriteRegister(ACC_CTRL2,0x40); CyDelay(10);             // Reset          W[0x3C 0x21 0x40]
+    if(ReadRegister(ACC_WHO_AM_I_ADDR) != ACC_WHO_AM_I_VAL) // Verify Chip ID          W[0x3C 0x0F] R[0x3D 0x43]
     {
         CyDelay(10);
         // ** Throw error
     }
     wsample = (struct dAcc1ESlot*) malloc(sizeof(struct dAcc1ESlot));
-    // Orignal Code
-    //WriteRegister(0x20,0b10010001);    // Low Power + 12.5 Hz               W[0x3C 0x20 0x91]
-    //WriteRegister(0x25,0b11000000);    // FIFO Circular Buffer Mode         W[0x3C 0x25 0xC0]
-    
-    // New code to initialize Wakeup Interrupt
-    WriteRegister(ACC_CTRL1,0x60); // Turn on accelerometer at 400 Hz
-    //WriteRegister(ACC_CTRL3,0x04); // Turn on latched mode
-    WriteRegister(ACC_WAKE_UP_DUR,0b01100000); // Set WU_DUR to 3
+
+    WriteRegister(ACC_CTRL1,0x40);       // Turn on accelerometer at 100 Hz
+    WriteRegister(ACC_CTRL2,0x04);       // Turn high pass filter, auto inc addr
+    WriteRegister(ACC_WAKE_UP_DUR,0x60); // Set WU_DUR to 3
     WriteRegister(ACC_WAKE_UP_THS,0x02); // Set wake-up threshold
-    WriteRegister(ACC_CTRL4,0x20); // Wake-up interrupt driven to INT1 pin
+    WriteRegister(ACC_CTRL4,0x20);       // Wake-up interrupt driven to INT1 pin
+    WriteRegister(ACC_CTRL5,0x81);       // Data-ready interrupt driven to INT2 pin
     return;
+}
+
+void readAccData(acc_sample data)
+{
+    int16 x_val, y_val, z_val;
+    //acc_sample data;
+
+    data.sensor_type = ACC;
+    data.x_raw = ReadRegister(ACC_OUT_X_H) << 8 | ReadRegister(ACC_OUT_X_L);
+    data.y_raw = ReadRegister(ACC_OUT_Y_H) << 8 | ReadRegister(ACC_OUT_Y_L);
+    data.z_raw = ReadRegister(ACC_OUT_Z_H) << 8 | ReadRegister(ACC_OUT_Z_L);
+    
+    return data;
 }
 bool AccDriver_OperationDone()
 {
@@ -381,9 +391,9 @@ int32 AccDriver_UpdateSetting(uint8 setting_type, int32 setting_value)
       
     denominators[ACC1ESLOT] = 163840;
     numerators[ACC1ESLOT] = 98;
-    interpolated.timestamp = interpolated_period;
-    sample_old.timestamp = 0;    
-    sample_new.timestamp = sample_period;
+    interpolated.timestamp.second = interpolated_period;
+    sample_old.timestamp.second = 0;    
+    sample_new.timestamp.second = sample_period;
     
     return interrupt_period;
 }

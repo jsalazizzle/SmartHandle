@@ -1594,6 +1594,18 @@ Discarded input sections
  .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
  .ARM.attributes
                 0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_info    0x00000000       0xb5 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_abbrev  0x00000000       0x4b .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_aranges
+                0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_line    0x00000000      0x151 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_str     0x00000000      0x1e0 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .ARM.attributes
+                0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\SensorBus.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\SensorBus.o
  .bss           0x00000000        0x1 .\CortexM4\ARM_GCC_541\Debug\SensorBus.o
@@ -2068,6 +2080,7 @@ LOAD .\CortexM4\ARM_GCC_541\Debug\UART_DEBUG.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\BLE.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\SensorBus.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\LightOutputC.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\LightOutputA.o

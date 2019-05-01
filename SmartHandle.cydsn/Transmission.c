@@ -6,18 +6,21 @@
 #include <UseProfileService.h>
 #include <SystemCore.h>
 
+#include "project.h"
+
 #include "debug.h"
 
 //-------------------------------------------------------------//
 
 bool is_advertising = false; // Global to KinOS.c
-bool is_connected = false;  // Global to KinOS.c
+bool is_connected = false;  // Global to KinOS.cBL
 
 #define NUM_BYTES_PER_PACKET 1
 
 //-------------------------------------------------------------//
 //-------------------BLUETOOTH-EVENT-HANDLING------------------//
 //-------------------------------------------------------------//
+
 
 void Transmission_EventHandler(uint32 eventCode, void *eventParam)
 {
@@ -318,6 +321,61 @@ bool Transmission_Disconnect()
     };
     return (Cy_BLE_GAP_Disconnect(&disconnectInfo) == CY_BLE_SUCCESS);
 }
+
+void Transmission_SendAcc(acc_sample acc_data)
+{
+    // Check for pending bluetooth events, triggers Transmission_EventHandler()
+    Cy_BLE_ProcessEvents();
+    
+    // Send data to remote device if data available in buffer
+    static uint8 data[NUM_BYTES_PER_PACKET];
+    if(is_connected)
+    {
+        if(Cy_BLE_GATT_GetBusyStatus(cy_ble_connHandle[0].attId) == CY_BLE_STACK_STATE_FREE)
+        {   
+            uint8 x_val[2] = { (uint8) (acc_data.x_raw >> 8), (uint8) (acc_data.x_raw & 0xFF)};
+            uint8 y_val[2] = { (uint8) (acc_data.y_raw >> 8), (uint8) (acc_data.y_raw & 0xFF)};
+            uint8 z_val[2] = { (uint8) (acc_data.z_raw >> 8), (uint8) (acc_data.z_raw & 0xFF)};
+            
+            cy_stc_ble_gatt_value_t x_data = { .val = x_val, .len = 2};
+            cy_stc_ble_gatt_value_t y_data = { .val = y_val, .len = 2};
+            cy_stc_ble_gatt_value_t z_data = { .val = z_val, .len = 2};
+            
+            cy_stc_ble_gatt_handle_value_pair_t x_handleVal =
+            {
+                .value = x_data,
+                .attrHandle = CY_BLE_DEVICE_INTERFACE_ACCEL_X_CHAR_HANDLE
+            };
+            
+            cy_stc_ble_gatt_handle_value_pair_t y_handleVal =
+            {
+                .value = y_data,
+                .attrHandle = CY_BLE_DEVICE_INTERFACE_ACCEL_Y_CHAR_HANDLE
+            };
+            
+            cy_stc_ble_gatt_handle_value_pair_t z_handleVal =
+            {
+                .value = z_data,
+                .attrHandle = CY_BLE_DEVICE_INTERFACE_ACCEL_Z_CHAR_HANDLE
+            };
+            
+            Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&x_handleVal);
+            Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&y_handleVal);
+            Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&z_handleVal);
+        }
+    }
+    
+    // Bond remote device's information into flash (initiated in CY_BLE_EVT_GAP_AUTH_REQ)
+    if(cy_ble_pendingFlashWrite != 0u)
+    {   
+        cy_en_ble_api_result_t apiResult = Cy_BLE_StoreBondingData();
+    }
+}
+
+
+
+
+
 //-------------------------------------------------------------//
 //------------------------INITIALIZATION-----------------------//
 //-------------------------------------------------------------//
@@ -330,6 +388,7 @@ void Transmission_Init()
     cy_en_ble_api_result_t apiResult = Cy_BLE_Start(Transmission_EventHandler);
     if (apiResult == CY_BLE_SUCCESS)
     {
+        Cy_BLE_BAS_Init(cy_ble_basConfigPtr);
         Cy_BLE_ProcessEvents();
         Cy_BLE_RegisterAppHostCallback(Transmission_BleSsHandler); // Callback function for bless interrupt
     }

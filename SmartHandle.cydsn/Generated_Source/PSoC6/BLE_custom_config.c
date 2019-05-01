@@ -51,6 +51,81 @@ static const cy_stc_ble_customs_t cy_ble_customs[0x03u] = {
                     0x0015u, /* Handle of the Client Characteristic Configuration descriptor */ 
                 }, 
             },
+
+            /* Accel_X characteristic */
+            {
+                0x0017u, /* Handle of the Accel_X characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x0018u, /* Handle of the Client Characteristic Configuration descriptor */ 
+                }, 
+            },
+
+            /* Accel_Y characteristic */
+            {
+                0x001Au, /* Handle of the Accel_Y characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Bu, /* Handle of the Client Characteristic Configuration descriptor */ 
+                }, 
+            },
+
+            /* Accel_Z characteristic */
+            {
+                0x001Du, /* Handle of the Accel_Z characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Eu, /* Handle of the Client Characteristic Configuration descriptor */ 
+                }, 
+            },
+        }, 
+    },
+
+    /* Device Error Log service */
+    {
+        0x0024u, /* Handle of the Device Error Log service */ 
+        {
+
+            /* Clear Log characteristic */
+            {
+                0x0026u, /* Handle of the Clear Log characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
+
+            /* Application Log characteristic */
+            {
+                0x0028u, /* Handle of the Application Log characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x0029u, /* Handle of the Client Characteristic Configuration descriptor */ 
+                }, 
+            },
+
+            /* Kinos Log characteristic */
+            {
+                0x002Bu, /* Handle of the Kinos Log characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x002Cu, /* Handle of the Client Characteristic Configuration descriptor */ 
+                }, 
+            },
+            {
+                CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                
+                /* Array of Descriptors handles */
+                {
+                    CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
             {
                 CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                 
@@ -62,51 +137,14 @@ static const cy_stc_ble_customs_t cy_ble_customs[0x03u] = {
         }, 
     },
 
-    /* Device Error Log service */
-    {
-        0x0016u, /* Handle of the Device Error Log service */ 
-        {
-
-            /* Clear Log characteristic */
-            {
-                0x0018u, /* Handle of the Clear Log characteristic */ 
-                
-                /* Array of Descriptors handles */
-                {
-                    CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
-                }, 
-            },
-
-            /* Application Log characteristic */
-            {
-                0x001Au, /* Handle of the Application Log characteristic */ 
-                
-                /* Array of Descriptors handles */
-                {
-                    0x001Bu, /* Handle of the Client Characteristic Configuration descriptor */ 
-                }, 
-            },
-
-            /* Kinos Log characteristic */
-            {
-                0x001Du, /* Handle of the Kinos Log characteristic */ 
-                
-                /* Array of Descriptors handles */
-                {
-                    0x001Eu, /* Handle of the Client Characteristic Configuration descriptor */ 
-                }, 
-            },
-        }, 
-    },
-
     /* Device Use Profile service */
     {
-        0x001Fu, /* Handle of the Device Use Profile service */ 
+        0x002Du, /* Handle of the Device Use Profile service */ 
         {
 
             /* Clear Log characteristic */
             {
-                0x0021u, /* Handle of the Clear Log characteristic */ 
+                0x002Fu, /* Handle of the Clear Log characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
@@ -116,7 +154,23 @@ static const cy_stc_ble_customs_t cy_ble_customs[0x03u] = {
 
             /* Use Log characteristic */
             {
-                0x0023u, /* Handle of the Use Log characteristic */ 
+                0x0031u, /* Handle of the Use Log characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
+            {
+                CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                
+                /* Array of Descriptors handles */
+                {
+                    CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
+            {
+                CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                 
                 /* Array of Descriptors handles */
                 {

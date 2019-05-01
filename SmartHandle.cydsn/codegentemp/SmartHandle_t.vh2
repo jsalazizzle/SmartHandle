@@ -1,5 +1,5 @@
 -- Project:   C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cyprj
--- Generated: 04/26/2019 02:54:46
+-- Generated: 05/01/2019 01:34:32
 -- PSoC Creator  4.2
 
 ENTITY SmartHandle IS
@@ -24,16 +24,16 @@ ENTITY SmartHandle IS
         ShakePin(0)_PAD : IN std_ulogic;
         Press3(0)_PAD : IN std_ulogic;
         Press2(0)_PAD : IN std_ulogic);
-    ATTRIBUTE voltage_VBACKUP OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDA_CSD OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDIO_A OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDQ OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDIO_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDIO_0_RCV OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VBACKUP OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDA_CSD OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDIO_A OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDQ OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDIO_0 OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDIO_0_RCV OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 1.8e0;
+    ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 1.8e0;
 END SmartHandle;
 
 ARCHITECTURE __DEFAULT__ OF SmartHandle IS
@@ -1403,7 +1403,7 @@ BEGIN
     SCL:logicalport
         GENERIC MAP(
             cy_registers => "",
-            drive_mode => "010",
+            drive_mode => "100",
             drive_strength => "0",
             hotswap_needed => "0",
             i2c_mode => "0",
@@ -1515,7 +1515,7 @@ BEGIN
     SDA:logicalport
         GENERIC MAP(
             cy_registers => "",
-            drive_mode => "010",
+            drive_mode => "100",
             drive_strength => "0",
             hotswap_needed => "0",
             i2c_mode => "0",

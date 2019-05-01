@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   29:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
   30:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** static void Cy_BLE_TimeOutEventHandler(const cy_stc_ble_timeout_param_t *eventParam);
   31:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 2
 
 
   32:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** #if (CY_BLE_GATT_ROLE_SERVER)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   86:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** {
   87:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
   88:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     uint8_t existFlag = 0u;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 3
 
 
   89:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  143:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     {
  144:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         gattErr = cy_ble_eventHandler.serviceEventHandler[idx](eventCode, eventParam);
  145:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 4
 
 
  146:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   53 0018 2389     		ldrh	r3, [r4, #8]
  170:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     cy_stc_ble_gatt_err_param_t err_param =
   54              		.loc 1 170 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 5
 
 
   55 001a 5380     		strh	r3, [r2, #2]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   90              		.size	Cy_BLE_SendWriteResponse, .-Cy_BLE_SendWriteResponse
   91              		.section	.text.Cy_BLE_RegisterServiceEventHandler,"ax",%progbits
   92              		.align	2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 6
 
 
   93              		.global	Cy_BLE_RegisterServiceEventHandler
@@ -348,7 +348,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   98:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         {
  132              		.loc 1 98 0 is_stmt 0 discriminator 1
  133 001a 0E4A     		ldr	r2, .L16
- 134 001c 1279     		ldrb	r2, [r2, #4]
+ 134 001c 127A     		ldrb	r2, [r2, #8]
  135 001e 9342     		cmp	r3, r2
  136 0020 06D2     		bcs	.L14
   98:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  140              	.LBE39:
   87:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     uint8_t existFlag = 0u;
  141              		.loc 1 87 0 is_stmt 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 7
 
 
  142 0026 0023     		movs	r3, #0
@@ -393,9 +393,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  109:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         {
  166              		.loc 1 109 0 is_stmt 1
  167 003a 064A     		ldr	r2, .L16
- 168 003c 1279     		ldrb	r2, [r2, #4]
- 169 003e 002A     		cmp	r2, #0
- 170 0040 05D1     		bne	.L15
+ 168 003c 127A     		ldrb	r2, [r2, #8]
+ 169 003e 012A     		cmp	r2, #1
+ 170 0040 05D8     		bhi	.L15
  111:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             cy_ble_eventHandler.count += 1u;
  171              		.loc 1 111 0
  172 0042 0449     		ldr	r1, .L16
@@ -405,7 +405,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  112:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         }
  176              		.loc 1 112 0
  177 0048 0132     		adds	r2, r2, #1
- 178 004a 0A71     		strb	r2, [r1, #4]
+ 178 004a 0A72     		strb	r2, [r1, #8]
  179 004c 00E0     		b	.L11
  180              	.LVL17:
  181              	.L15:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  186              		.loc 1 121 0
  187 0050 1800     		movs	r0, r3
  188              	.LVL19:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 8
 
 
  189              		@ sp needed
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  142:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     {
  239              		.loc 1 142 0 discriminator 4
  240 0018 0134     		adds	r4, r4, #1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 9
 
 
  241              	.LVL26:
@@ -486,7 +486,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  142:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     {
  243              		.loc 1 142 0 is_stmt 0 discriminator 1
  244 001a 044B     		ldr	r3, .L22
- 245 001c 1B79     		ldrb	r3, [r3, #4]
+ 245 001c 1B7A     		ldrb	r3, [r3, #8]
  246 001e 9C42     		cmp	r4, r3
  247 0020 03D2     		bcs	.L20
  142:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  209:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** {
  210:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     if(eventParam->reasonCode == CY_BLE_GATT_RSP_TO)
  211:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 10
 
 
  212:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     #if (CY_BLE_GATT_ROLE_CLIENT)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  266:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** * Function Name: Cy_BLE_IsDeviceAddressValid
  267:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** ***************************************************************************//**
  268:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 11
 
 
  269:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** *  This function verifies that the device address is valid (not equal zero)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  280:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     uint8_t addressValid = 0u;
  308              		.loc 1 280 0 is_stmt 1
  309 001a 0020     		movs	r0, #0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 12
 
 
  310              	.LVL36:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  336              	.LVL39:
  337 0000 F0B5     		push	{r4, r5, r6, r7, lr}
  338              		.cfi_def_cfa_offset 20
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 13
 
 
  339              		.cfi_offset 4, -20
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  389 0046 B34B     		ldr	r3, .L106+20
  390 0048 9842     		cmp	r0, r3
  391 004a 00D1     		bne	.LCB383
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 14
 
 
  392 004c 1CE1     		b	.L40	@long jump
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  446 00a0 D6E1     		b	.L46	@long jump
  447              	.LCB428:
  448 00a2 A64B     		ldr	r3, .L106+60
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 15
 
 
  449 00a4 9842     		cmp	r0, r3
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  326:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         #if (CY_BLE_GATT_ROLE_SERVER || CY_BLE_GATT_ROLE_CLIENT)
  327:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             {
  328:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 /* Set a device address  */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 16
 
 
  329:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 if(Cy_BLE_IsDeviceAddressValid(cy_ble_sflashDeviceAddress) != 0u)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  537 012a 1340     		ands	r3, r2
  343:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                                     ((uint32_t)(((uint32_t)SFLASH->DIE_Y) & ((uint32_t)CY_BLE_SFLAS
  538              		.loc 1 343 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 17
 
 
  539 012c 8E4E     		ldr	r6, .L106+104
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  354:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                     (void)Cy_BLE_GAP_SetBdAddress(cy_ble_configPtr->deviceAddress);
  580              		.loc 1 354 0
  581 0166 7E4E     		ldr	r6, .L106+96
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 18
 
 
  582 0168 3368     		ldr	r3, [r6]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  619 01a0 0222     		movs	r2, #2
  620 01a2 744B     		ldr	r3, .L106+116
  621 01a4 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 19
 
 
  372:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             break;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   39:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****  * The BLE operation mode.
   40:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****  */
   41:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #define CY_BLE_MODE                          (CY_BLE_CONFIG_MODE)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 20
 
 
   42:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
   96:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** ***************************************/
   97:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
   98:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** /**
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 21
 
 
   99:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****  * \addtogroup group_ble_common_api_gap_definitions
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  153:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     cy_ble_gatt_db_attr_handle_t deviceNameCharHandle;
  154:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
  155:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     /** Handle of the GAPS Appearance Characteristic */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 22
 
 
  156:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     cy_ble_gatt_db_attr_handle_t appearanceCharHandle;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  210:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     /** Complete List of 32-bit Service Class UUIDs */
  211:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     CY_BLE_GAP_ADV_COMPL_32_UUID,
  212:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 23
 
 
  213:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     /** Incomplete List of 128-bit Service Class UUIDs */
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  267:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     /** Advertising Interval */
  268:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     CY_BLE_GAP_ADV_ADVERT_INTERVAL,
  269:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 24
 
 
  270:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     /** LE Bluetooth Device Address */
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  324:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** typedef struct
  325:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** {
  326:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     /** The scan interval when operating in Fast connection */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 25
 
 
  327:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     uint16_t fastScanInterval;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  381:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** * API Constants
  382:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** ***************************************/
  383:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #define CY_BLE_AD_TYPE_MORE16UUID                  (0x02u)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 26
 
 
  384:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #define CY_BLE_AD_TYPE_CMPL16UUID                  (0x03u)
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  438:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** /**
  439:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****  * \addtogroup group_ble_common_api_macros
  440:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****  * @{
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 27
 
 
  441:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****  */
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  495:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** cy_en_ble_api_result_t Cy_BLE_GetRssiPeer(uint8_t  bdHandle);
  496:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #endif /* (CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_CENTRAL) */
  497:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** /** @} group_ble_common_api_functions */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 28
 
 
  498:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  552:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** extern uint8_t cy_ble_scanIndex;
  553:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #endif /* (CY_BLE_GAP_ROLE_CENTRAL || CY_BLE_GAP_ROLE_OBSERVER) */
  554:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 29
 
 
  555:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #if ((CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_CENTRAL))
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  609:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** #if ((CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_CENTRAL))
  610:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****    
  611:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** /******************************************************************************
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 30
 
 
  612:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** * Function Name: Cy_BLE_GetConnHandleIdx
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  666:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  received. After successful initialization the state is changed to 
  667:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  #CY_BLE_STATE_ON.
  668:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 31
 
 
  669:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  The BLE Middleware is in the state #CY_BLE_STATE_STOPPED 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  723:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  When Cy_BLE_GAPP_StartAdvertisement() is called, the state is set to
  724:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  #CY_BLE_ADV_STATE_ADV_INITIATED. It automatically changes to
  725:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  #CY_BLE_ADV_STATE_ADVERTISING when #CY_BLE_EVT_GAPP_ADVERTISEMENT_START_STOP
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 32
 
 
  726:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  event is received. When Cy_BLE_GAPP_StopAdvertisement() is called, the
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  386:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****              * Adding a delay of 10ms to ensure that the controller is completely 
  387:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****              * shut-down before generating the event to the application.
  388:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****              * Controller generates CY_BLE_EVT_STACK_SHUTDOWN_COMPLETE event immediately 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 33
 
 
  389:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****              * after accepting the shut-down command (before resetting the controller), 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  672 01dc FFF7FEFF 		bl	Cy_BLE_SetTxPowerLevel
  673              	.LVL61:
  411:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 34
 
 
  412:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                     bleSsPowerLevel.blePwrLevel = cy_ble_configPtr->params->txPowerLevelConn;
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  433:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             cy_ble_busyStatus[Cy_BLE_GetConnHandleByBdHandle(((cy_stc_ble_l2cap_state_info_t*)evPar
  707              		.loc 1 433 0
  708 020a 6B78     		ldrb	r3, [r5, #1]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 35
 
 
  709 020c 9846     		mov	r8, r3
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  814:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  \return
  815:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *  None
  816:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 36
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 36
 
 
  817:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** ******************************************************************************/
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  871:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *
  872:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** *
  873:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** ******************************************************************************/
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 37
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 37
 
 
  874:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** __STATIC_INLINE cy_en_ble_conn_state_t Cy_BLE_GetConnectionState(cy_stc_ble_conn_handle_t connHandl
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  928:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     return(connNum);
  929:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** }
  930:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 38
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 38
 
 
  931:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  740 0234 534A     		ldr	r2, .L106+132
  741 0236 D35C     		ldrb	r3, [r2, r3]
  742 0238 00E0     		b	.L65
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 39
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 39
 
 
  743              	.L102:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  783 026c 4648     		ldr	r0, .L106+136
  784 026e FFF7FEFF 		bl	Cy_SysLib_AssertFailed
  785              	.LVL73:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 40
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 40
 
 
  786              	.L69:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  450:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                         /* Configure and return a statically allocated buffer at the end of the cy_
  451:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                         gPrepWriteReqMem.prepareWriteQueueSize = CY_BLE_GATT_MAX_PREPARE_BUFF_COUNT
  820              		.loc 1 451 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 41
 
 
  821 0296 3E4B     		ldr	r3, .L106+144
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  950:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     {
  851              		.loc 2 950 0
  852 02b6 0222     		movs	r2, #2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 42
 
 
  853 02b8 2D49     		ldr	r1, .L106+112
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  901 02fa FFF7FEFF 		bl	memcpy
  902              	.LVL82:
  903 02fe 4EE0     		b	.L74
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 43
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 43
 
 
  904              	.L107:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  956 03a2 FF2B     		cmp	r3, #255
  957 03a4 05D1     		bne	.L76
  968:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 44
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 44
 
 
  958              		.loc 2 968 0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1001              		.loc 2 956 0
  1002 03dc 0026     		movs	r6, #0
  1003 03de 1DE0     		b	.L77
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 45
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 45
 
 
  1004              	.LVL88:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1052              	.L77:
  1053 041c 002E     		cmp	r6, #0
  1054 041e DFD0     		beq	.L81
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 46
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 46
 
 
  1055              	.LVL94:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  495:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     
  496:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         case CY_BLE_EVT_GAP_ENHANCE_CONN_COMPLETE:
  497:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 47
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 47
 
 
  498:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             {           
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1120              	.LVL102:
  1121              	.LBB113:
  1122              	.LBB114:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 48
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 48
 
 
  950:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_gap.h ****     {
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1170              	.LVL107:
  1171 04a4 9119     		adds	r1, r2, r6
  1172 04a6 0222     		movs	r2, #2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 49
 
 
  1173 04a8 04A8     		add	r0, sp, #16
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  533:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                     #endif /*((CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_CENTRAL))*/
  534:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 }
  535:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 Cy_BLE_SetState(CY_BLE_STATE_ON);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 50
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 50
 
 
  1219              		.loc 1 535 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1255 0506 03D1     		bne	.L92
  1256              	.LVL116:
  1257              	.LBB119:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 51
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 51
 
 
  1258              	.LBB120:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  564:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                     {
  565:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                         Cy_BLE_SetAdvertisementState(CY_BLE_ADV_STATE_STOPPED);
  566:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                         if((cy_ble_configPtr->gappAdvParams[cy_ble_advIndex].slowAdvEnable != 0u) &
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 52
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 52
 
 
  1298              		.loc 1 566 0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1344              	.L60:
  1345              	.LBE126:
  1346              	.LBE125:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 53
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 53
 
 
  573:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                                    CY_BLE_SUCCESS)
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  627:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****          * L2AP events
  628:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****          ************************************************************/
  629:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         case CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 54
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 54
 
 
  630:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         #if (CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_CENTRAL)
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  643:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED) &&
  644:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                (((cy_stc_ble_conn_handle_t*)evParam)->bdHandle ==
  645:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 cy_ble_connHandle[((cy_stc_ble_conn_handle_t*)evParam)->attId].bdHandle))
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 55
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 55
 
 
  646:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             {   /* Set a discovered state */
@@ -3277,7 +3277,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  665:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             /* Initialize the CCCD values in the RAM when bonding is enabled */
  666:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             (void)memcpy((uint8_t*)cy_ble_attValuesCccdMultiple[((cy_stc_ble_conn_handle_t*)evParam
  1399              		.loc 1 666 0
- 1400 05b0 D800     		lsls	r0, r3, #3
+ 1400 05b0 1801     		lsls	r0, r3, #4
  1401 05b2 C018     		adds	r0, r0, r3
  1402 05b4 554E     		ldr	r6, .L108+56
  1403 05b6 8019     		adds	r0, r0, r6
@@ -3287,7 +3287,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1406 05ba 1B68     		ldr	r3, [r3]
  1407 05bc 1969     		ldr	r1, [r3, #16]
  1408 05be 2B78     		ldrb	r3, [r5]
- 1409 05c0 DA00     		lsls	r2, r3, #3
+ 1409 05c0 1A01     		lsls	r2, r3, #4
  1410 05c2 D318     		adds	r3, r2, r3
  1411 05c4 524A     		ldr	r2, .L108+60
  1412 05c6 9446     		mov	ip, r2
@@ -3296,9 +3296,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1415 05cc 0631     		adds	r1, r1, #6
  666:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                          cy_ble_configPtr->flashStorage->attValuesCCCDFlashMemory[((cy_stc_ble_conn
  1416              		.loc 1 666 0
- 1417 05ce 0922     		movs	r2, #9
+ 1417 05ce 1122     		movs	r2, #17
  1418 05d0 FFF7FEFF 		bl	memcpy
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 56
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 56
 
 
  1419              	.LVL131:
@@ -3311,10 +3311,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  673:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 uint8_t cccdCrc = Cy_BLE_HAL_CalcCRC8(cy_ble_attValuesCccdMultiple[((cy_stc_ble_con
  1421              		.loc 1 673 0
  1422 05d4 6B78     		ldrb	r3, [r5, #1]
- 1423 05d6 D800     		lsls	r0, r3, #3
+ 1423 05d6 1801     		lsls	r0, r3, #4
  1424 05d8 C018     		adds	r0, r0, r3
  1425 05da 8019     		adds	r0, r0, r6
- 1426 05dc 0821     		movs	r1, #8
+ 1426 05dc 1021     		movs	r1, #16
  1427 05de FFF7FEFF 		bl	Cy_BLE_HAL_CalcCRC8
  1428              	.LVL132:
  674:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                                                       CY_BLE_GATT_DB_CCCD_COUNT);
@@ -3322,10 +3322,10 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  676:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 if(cy_ble_attValuesCccdMultiple[((cy_stc_ble_conn_handle_t*)evParam)->attId][CY_BLE
  1429              		.loc 1 676 0
  1430 05e2 6B78     		ldrb	r3, [r5, #1]
- 1431 05e4 DA00     		lsls	r2, r3, #3
+ 1431 05e4 1A01     		lsls	r2, r3, #4
  1432 05e6 D318     		adds	r3, r2, r3
  1433 05e8 F618     		adds	r6, r6, r3
- 1434 05ea 337A     		ldrb	r3, [r6, #8]
+ 1434 05ea 337C     		ldrb	r3, [r6, #16]
  1435 05ec 9842     		cmp	r0, r3
  1436 05ee 0DD0     		beq	.L96
  677:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 {
@@ -3344,11 +3344,11 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  682:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                     (void)memset((uint8_t*)cy_ble_attValuesCccdMultiple[((cy_stc_ble_conn_handle_t*
  1445              		.loc 1 682 0
  1446 05fa 6B78     		ldrb	r3, [r5, #1]
- 1447 05fc D800     		lsls	r0, r3, #3
+ 1447 05fc 1801     		lsls	r0, r3, #4
  1448 05fe C318     		adds	r3, r0, r3
  1449 0600 4248     		ldr	r0, .L108+56
  1450 0602 1818     		adds	r0, r3, r0
- 1451 0604 0922     		movs	r2, #9
+ 1451 0604 1122     		movs	r2, #17
  1452 0606 0021     		movs	r1, #0
  1453 0608 FFF7FEFF 		bl	memset
  1454              	.LVL135:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  684:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 }            
  685:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             }        
  686:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         #endif /* CY_BLE_GATT_ROLE_SERVER && (CY_BLE_BONDING_REQUIREMENT == CY_BLE_BONDING_YES) */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 57
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 57
 
 
  687:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  699:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             else
  700:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         #endif /* CY_BLE_GATT_ROLE_CLIENT */
  701:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 58
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 58
 
 
  702:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 Cy_BLE_SetConnectionState(*(cy_stc_ble_conn_handle_t*)evParam, CY_BLE_CONN_STATE_DI
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  724:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     #endif /* CY_BLE_GATT_ROLE_SERVER || CY_BLE_GATT_ROLE_CLIENT */
  725:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
  726:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     #if (CY_BLE_GATT_ROLE_CLIENT)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 59
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 59
 
 
  727:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         case CY_BLE_EVT_GAPC_SCAN_PROGRESS_RESULT:
@@ -3495,7 +3495,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1529 0660 2A89     		ldrh	r2, [r5, #8]
  1530 0662 531E     		subs	r3, r2, #1
  1531 0664 9BB2     		uxth	r3, r3
- 1532 0666 222B     		cmp	r3, #34
+ 1532 0666 302B     		cmp	r3, #48
  1533 0668 0ED9     		bls	.L99
  1534              	.LBB134:
  737:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                (((cy_stc_ble_gatts_write_cmd_req_param_t*)evParam)->handleValPair.attrHandle == 0u)
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  752:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             {
  753:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****                 gattErr = Cy_BLE_GATTS_WriteEventHandler((cy_stc_ble_gatts_write_cmd_req_param_t*)e
  1557              		.loc 1 753 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 60
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 60
 
 
  1558 0688 2800     		movs	r0, r5
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1596 06b2 38E0     		b	.L31
  1597              	.LVL160:
  1598              	.L58:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 61
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 61
 
 
  770:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1638 06f4 00000000 		.word	cy_ble_state
  1639 06f8 00000000 		.word	cy_ble_eventHandlerFlag
  1640 06fc 00000000 		.word	cy_ble_configPtr
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 62
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 62
 
 
  1641 0700 00000000 		.word	cy_ble_advIndex
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  830:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
  831:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****         case CY_BLE_EVT_GATTC_READ_RSP:
  832:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             (void)Cy_BLE_InvokeServiceEventHandler((uint32_t)event, (void*)evParam);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 63
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 63
 
 
  833:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             break;
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1657              	.L31:
  880:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****             break;
  881:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c ****     #endif  /* (CY_BLE_BONDING_REQUIREMENT == CY_BLE_BONDING_YES) */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 64
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 64
 
 
  882:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_event_handler.c **** 
@@ -3828,7 +3828,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1691              		.cfi_endproc
  1692              	.LFE163:
  1693              		.size	Cy_BLE_EventHandler, .-Cy_BLE_EventHandler
- 1694              		.comm	cy_ble_eventHandler,8,4
+ 1694              		.comm	cy_ble_eventHandler,12,4
  1695              		.comm	cy_ble_advertisingIntervalType,1,1
  1696              		.comm	cy_ble_cmdStatus,4,4
  1697              		.comm	cy_ble_eventHandlerFlag,1,1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1701              		.set	.LANCHOR0,. + 0
  1702              	.LC0:
  1703 0000 3F       		.byte	63
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 65
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 65
 
 
  1704 0001 06       		.byte	6
@@ -3865,9 +3865,9 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1719              		.bss
  1720              		.align	2
  1721              		.set	.LANCHOR1,. + 0
- 1722              		.type	gPrepWriteReqMem.12374, %object
- 1723              		.size	gPrepWriteReqMem.12374, 12
- 1724              	gPrepWriteReqMem.12374:
+ 1722              		.type	gPrepWriteReqMem.12445, %object
+ 1723              		.size	gPrepWriteReqMem.12445, 12
+ 1724              	gPrepWriteReqMem.12445:
  1725 0000 00000000 		.space	12
  1725      00000000 
  1725      00000000 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1750 0004 0400     		.2byte	0x4
  1751 0006 00000000 		.4byte	.Ldebug_abbrev0
  1752 000a 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 66
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 66
 
 
  1753 000b 01       		.uleb128 0x1
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1807 007a 04       		.uleb128 0x4
  1808 007b E5480000 		.4byte	.LASF10
  1809 007f 03       		.byte	0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 67
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 67
 
 
  1810 0080 41       		.byte	0x41
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1864 00e9 CF760000 		.4byte	.LASF22
  1865 00ed 7E       		.sleb128 -2
  1866 00ee 07       		.uleb128 0x7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 68
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 68
 
 
  1867 00ef 44170000 		.4byte	.LASF23
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1921 015b 531F0000 		.4byte	.LASF41
  1922 015f 11       		.byte	0x11
  1923 0160 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 69
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 69
 
 
  1924 0161 56460000 		.4byte	.LASF42
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  1978 01cd FD       		.byte	0xfd
  1979 01ce 4B050000 		.4byte	0x54b
  1980 01d2 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 70
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 70
 
 
  1981 01d3 82440000 		.4byte	.LASF58
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2035 023f AC030000 		.4byte	.LASF76
  2036 0243 12       		.byte	0x12
  2037 0244 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 71
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 71
 
 
  2038 0245 63080000 		.4byte	.LASF77
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2092 02b1 8C5B0000 		.4byte	.LASF95
  2093 02b5 25       		.byte	0x25
  2094 02b6 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 72
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 72
 
 
  2095 02b7 BA040000 		.4byte	.LASF96
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2149 0323 621F0000 		.4byte	.LASF114
  2150 0327 38       		.byte	0x38
  2151 0328 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 73
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 73
 
 
  2152 0329 B7470000 		.4byte	.LASF115
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2206 0395 56390000 		.4byte	.LASF133
  2207 0399 4B       		.byte	0x4b
  2208 039a 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 74
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 74
 
 
  2209 039b 561C0000 		.4byte	.LASF134
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2263 0407 97370000 		.4byte	.LASF152
  2264 040b 5E       		.byte	0x5e
  2265 040c 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 75
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 75
 
 
  2266 040d A65D0000 		.4byte	.LASF153
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2320 0479 87240000 		.4byte	.LASF171
  2321 047d 71       		.byte	0x71
  2322 047e 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 76
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 76
 
 
  2323 047f 5D4C0000 		.4byte	.LASF172
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2377 04eb 17590000 		.4byte	.LASF190
  2378 04ef 84       		.byte	0x84
  2379 04f0 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 77
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 77
 
 
  2380 04f1 0F010000 		.4byte	.LASF191
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2434 0561 0C       		.uleb128 0xc
  2435 0562 0080     		.2byte	0x8000
  2436 0564 06       		.byte	0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 78
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 78
 
 
  2437 0565 21       		.byte	0x21
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2491 05d3 150B0000 		.4byte	0xb15
  2492 05d7 0406     		.2byte	0x604
  2493 05d9 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 79
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 79
 
 
  2494 05da 07090000 		.4byte	.LASF216
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2548 064f 7A3A0000 		.4byte	.LASF225
  2549 0653 06       		.byte	0x6
  2550 0654 34       		.byte	0x34
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 80
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 80
 
 
  2551 0655 A20B0000 		.4byte	0xba2
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2605 06ca FA0B0000 		.4byte	0xbfa
  2606 06ce 000E     		.2byte	0xe00
  2607 06d0 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 81
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 81
 
 
  2608 06d1 983A0000 		.4byte	.LASF235
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2662 0746 684A0000 		.4byte	.LASF244
  2663 074a 06       		.byte	0x6
  2664 074b 47       		.byte	0x47
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 82
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 82
 
 
  2665 074c 1F0B0000 		.4byte	0xb1f
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2719 07c1 57050000 		.4byte	0x557
  2720 07c5 1C18     		.2byte	0x181c
  2721 07c7 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 83
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 83
 
 
  2722 07c8 A52B0000 		.4byte	.LASF254
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2776 083d 21080000 		.4byte	.LASF263
  2777 0841 06       		.byte	0x6
  2778 0842 5A       		.byte	0x5a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 84
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 84
 
 
  2779 0843 57050000 		.4byte	0x557
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2833 08b8 1E0D0000 		.4byte	0xd1e
  2834 08bc 0066     		.2byte	0x6600
  2835 08be 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 85
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 85
 
 
  2836 08bf B9020000 		.4byte	.LASF273
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2890 0934 C4020000 		.4byte	.LASF282
  2891 0938 06       		.byte	0x6
  2892 0939 6F       		.byte	0x6f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 86
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 86
 
 
  2893 093a 530D0000 		.4byte	0xd53
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  2947 09af 6D0D0000 		.4byte	0xd6d
  2948 09b3 1C7A     		.2byte	0x7a1c
  2949 09b5 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 87
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 87
 
 
  2950 09b6 1E630000 		.4byte	.LASF292
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3004 0a2b 205B0000 		.4byte	.LASF301
  3005 0a2f 06       		.byte	0x6
  3006 0a30 8A       		.byte	0x8a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 88
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 88
 
 
  3007 0a31 57050000 		.4byte	0x557
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3061 0aa6 57050000 		.4byte	0x557
  3062 0aaa 107E     		.2byte	0x7e10
  3063 0aac 0E       		.uleb128 0xe
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 89
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 89
 
 
  3064 0aad 68610000 		.4byte	.LASF311
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3118 0b24 0F       		.uleb128 0xf
  3119 0b25 5C050000 		.4byte	0x55c
  3120 0b29 340B0000 		.4byte	0xb34
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 90
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 90
 
 
  3121 0b2d 10       		.uleb128 0x10
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3175 0bac B70B0000 		.4byte	0xbb7
  3176 0bb0 10       		.uleb128 0x10
  3177 0bb1 93000000 		.4byte	0x93
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 91
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 91
 
 
  3178 0bb5 33       		.byte	0x33
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3232 0c34 0F       		.uleb128 0xf
  3233 0c35 57050000 		.4byte	0x557
  3234 0c39 440C0000 		.4byte	0xc44
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 92
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 92
 
 
  3235 0c3d 10       		.uleb128 0x10
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3289 0cbc 0A       		.uleb128 0xa
  3290 0cbd AC0C0000 		.4byte	0xcac
  3291 0cc1 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 93
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 93
 
 
  3292 0cc2 BC0C0000 		.4byte	0xcbc
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3346 0d48 93000000 		.4byte	0x93
  3347 0d4c 76       		.byte	0x76
  3348 0d4d 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 94
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 94
 
 
  3349 0d4e 0A       		.uleb128 0xa
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3403 0dc7 35210000 		.4byte	.LASF322
  3404 0dcb 12       		.uleb128 0x12
  3405 0dcc 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 95
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 95
 
 
  3406 0dcd 08       		.byte	0x8
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3460 0e40 14       		.uleb128 0x14
  3461 0e41 B40D0000 		.4byte	.LASF334
  3462 0e45 0020     		.2byte	0x2000
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 96
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 96
 
 
  3463 0e47 14       		.uleb128 0x14
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3517 0ec5 14       		.uleb128 0x14
  3518 0ec6 9F390000 		.4byte	.LASF353
  3519 0eca 1320     		.2byte	0x2013
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 97
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 97
 
 
  3520 0ecc 14       		.uleb128 0x14
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3574 0f4a 14       		.uleb128 0x14
  3575 0f4b 055F0000 		.4byte	.LASF372
  3576 0f4f 1230     		.2byte	0x3012
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 98
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 98
 
 
  3577 0f51 14       		.uleb128 0x14
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3631 0fcf 14       		.uleb128 0x14
  3632 0fd0 BE5F0000 		.4byte	.LASF391
  3633 0fd4 0C40     		.2byte	0x400c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 99
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 99
 
 
  3634 0fd6 14       		.uleb128 0x14
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3688 1054 14       		.uleb128 0x14
  3689 1055 235D0000 		.4byte	.LASF410
  3690 1059 0450     		.2byte	0x5004
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 100
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 100
 
 
  3691 105b 14       		.uleb128 0x14
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3745 10d9 14       		.uleb128 0x14
  3746 10da BF410000 		.4byte	.LASF429
  3747 10de 1750     		.2byte	0x5017
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 101
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 101
 
 
  3748 10e0 14       		.uleb128 0x14
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3802 115b 15       		.uleb128 0x15
  3803 115c 393B0000 		.4byte	.LASF445
  3804 1160 01001400 		.4byte	0x140001
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 102
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 102
 
 
  3805 1164 15       		.uleb128 0x15
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3859 1206 15       		.uleb128 0x15
  3860 1207 B3210000 		.4byte	.LASF464
  3861 120b 13001600 		.4byte	0x160013
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 103
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 103
 
 
  3862 120f 15       		.uleb128 0x15
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3916 129a 10       		.uleb128 0x10
  3917 129b 93000000 		.4byte	0x93
  3918 129f 05       		.byte	0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 104
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 104
 
 
  3919 12a0 00       		.byte	0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  3973 1310 00       		.byte	0
  3974 1311 09       		.uleb128 0x9
  3975 1312 A0450000 		.4byte	.LASF488
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 105
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 105
 
 
  3976 1316 09       		.byte	0x9
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4030 1386 A3000000 		.4byte	0xa3
  4031 138a 00       		.byte	0
  4032 138b 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 106
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 106
 
 
  4033 138c 49020000 		.4byte	.LASF498
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4087 13fe 0A       		.byte	0xa
  4088 13ff A501     		.2byte	0x1a5
  4089 1401 D5130000 		.4byte	0x13d5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 107
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 107
 
 
  4090 1405 16       		.uleb128 0x16
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4144 1474 1B03     		.2byte	0x31b
  4145 1476 A2140000 		.4byte	0x14a2
  4146 147a 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 108
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 108
 
 
  4147 147b 93520000 		.4byte	.LASF510
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4201 14eb 53560000 		.4byte	.LASF522
  4202 14ef 09       		.byte	0x9
  4203 14f0 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 109
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 109
 
 
  4204 14f1 34020000 		.4byte	.LASF523
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4258 155d E4620000 		.4byte	.LASF541
  4259 1561 D2       		.byte	0xd2
  4260 1562 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 110
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 110
 
 
  4261 1563 EB240000 		.4byte	.LASF542
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4315 15cf D7070000 		.4byte	.LASF557
  4316 15d3 0D       		.byte	0xd
  4317 15d4 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 111
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 111
 
 
  4318 15d5 A8130000 		.4byte	.LASF558
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4372 1641 D8110000 		.4byte	.LASF576
  4373 1645 A1       		.byte	0xa1
  4374 1646 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 112
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 112
 
 
  4375 1647 EC380000 		.4byte	.LASF577
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4429 16ba 16       		.uleb128 0x16
  4430 16bb 0C       		.byte	0xc
  4431 16bc 0B       		.byte	0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 113
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 113
 
 
  4432 16bd A601     		.2byte	0x1a6
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4486 1730 17       		.uleb128 0x17
  4487 1731 AE000000 		.4byte	.LASF508
  4488 1735 0B       		.byte	0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 114
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 114
 
 
  4489 1736 D801     		.2byte	0x1d8
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4543 17a9 02       		.byte	0x2
  4544 17aa 00       		.byte	0
  4545 17ab 09       		.uleb128 0x9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 115
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 115
 
 
  4546 17ac 5C190000 		.4byte	.LASF596
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4600 181f 08       		.uleb128 0x8
  4601 1820 4F500000 		.4byte	.LASF604
  4602 1824 03       		.byte	0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 116
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 116
 
 
  4603 1825 08       		.uleb128 0x8
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4657 1891 08       		.uleb128 0x8
  4658 1892 BF430000 		.4byte	.LASF620
  4659 1896 0D       		.byte	0xd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 117
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 117
 
 
  4660 1897 08       		.uleb128 0x8
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4714 1909 00       		.byte	0
  4715 190a 17       		.uleb128 0x17
  4716 190b 93380000 		.4byte	.LASF632
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 118
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 118
 
 
  4717 190f 0C       		.byte	0xc
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4771 1981 2103     		.2byte	0x321
  4772 1983 AE000000 		.4byte	0xae
  4773 1987 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 119
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 119
 
 
  4774 1988 17       		.uleb128 0x17
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4828 19fd 12       		.uleb128 0x12
  4829 19fe 0C       		.byte	0xc
  4830 19ff 0D       		.byte	0xd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 120
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 120
 
 
  4831 1a00 6D       		.byte	0x6d
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4885 1a6c A8       		.byte	0xa8
  4886 1a6d FD190000 		.4byte	0x19fd
  4887 1a71 06       		.uleb128 0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 121
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 121
 
 
  4888 1a72 01       		.byte	0x1
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4942 1ade 05       		.byte	0x5
  4943 1adf 0D       		.uleb128 0xd
  4944 1ae0 2E0C0000 		.4byte	.LASF666
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 122
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 122
 
 
  4945 1ae4 0E       		.byte	0xe
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  4999 1b4d 67530000 		.4byte	.LASF673
  5000 1b51 0E       		.byte	0xe
  5001 1b52 A0       		.byte	0xa0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 123
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 123
 
 
  5002 1b53 1B1B0000 		.4byte	0x1b1b
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5056 1bbc 485A0000 		.4byte	.LASF679
  5057 1bc0 0E       		.byte	0xe
  5058 1bc1 CA       		.byte	0xca
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 124
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 124
 
 
  5059 1bc2 AE000000 		.4byte	0xae
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5113 1c2e 8B690000 		.4byte	.LASF688
  5114 1c32 03       		.byte	0x3
  5115 1c33 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 125
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 125
 
 
  5116 1c34 04       		.uleb128 0x4
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5170 1ca0 02       		.byte	0x2
  5171 1ca1 99       		.byte	0x99
  5172 1ca2 71160000 		.4byte	0x1671
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 126
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 126
 
 
  5173 1ca6 02       		.byte	0x2
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5227 1d13 17       		.uleb128 0x17
  5228 1d14 3B640000 		.4byte	.LASF709
  5229 1d18 02       		.byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 127
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 127
 
 
  5230 1d19 3701     		.2byte	0x137
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5284 1d8c A3000000 		.4byte	0xa3
  5285 1d90 06       		.byte	0x6
  5286 1d91 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 128
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 128
 
 
  5287 1d92 30330000 		.4byte	.LASF718
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5341 1e06 0F       		.byte	0xf
  5342 1e07 7E       		.byte	0x7e
  5343 1e08 311E0000 		.4byte	0x1e31
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 129
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 129
 
 
  5344 1e0c 0D       		.uleb128 0xd
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5398 1e75 10       		.byte	0x10
  5399 1e76 E6       		.byte	0xe6
  5400 1e77 AE000000 		.4byte	0xae
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 130
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 130
 
 
  5401 1e7b 00       		.byte	0
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5455 1ee6 17       		.uleb128 0x17
  5456 1ee7 00270000 		.4byte	.LASF740
  5457 1eeb 10       		.byte	0x10
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 131
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 131
 
 
  5458 1eec 1501     		.2byte	0x115
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5512 1f59 251F0000 		.4byte	0x1f25
  5513 1f5d 12       		.uleb128 0x12
  5514 1f5e 02       		.byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 132
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 132
 
 
  5515 1f5f 12       		.byte	0x12
@@ -7902,7 +7902,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5553 1fac 02       		.byte	0x2
  5554 1fad 402D0000 		.4byte	.LASF750
  5555 1fb1 20       		.uleb128 0x20
- 5556 1fb2 3111     		.2byte	0x1131
+ 5556 1fb2 B911     		.2byte	0x11b9
  5557 1fb4 13       		.byte	0x13
  5558 1fb5 D901     		.2byte	0x1d9
  5559 1fb7 F31F0000 		.4byte	0x1ff3
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5569 1fce DF01     		.2byte	0x1df
  5570 1fd0 04200000 		.4byte	0x2004
  5571 1fd4 9610     		.2byte	0x1096
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 133
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 133
 
 
  5572 1fd6 21       		.uleb128 0x21
@@ -7926,13 +7926,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5574 1fdb 13       		.byte	0x13
  5575 1fdc E201     		.2byte	0x1e2
  5576 1fde A3000000 		.4byte	0xa3
- 5577 1fe2 2F11     		.2byte	0x112f
+ 5577 1fe2 B711     		.2byte	0x11b7
  5578 1fe4 21       		.uleb128 0x21
  5579 1fe5 83520000 		.4byte	.LASF754
  5580 1fe9 13       		.byte	0x13
  5581 1fea E501     		.2byte	0x1e5
  5582 1fec A3000000 		.4byte	0xa3
- 5583 1ff0 3011     		.2byte	0x1130
+ 5583 1ff0 B811     		.2byte	0x11b8
  5584 1ff2 00       		.byte	0
  5585 1ff3 0F       		.uleb128 0xf
  5586 1ff4 A3000000 		.4byte	0xa3
@@ -7949,7 +7949,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5597 2012 10       		.byte	0x10
  5598 2013 10       		.uleb128 0x10
  5599 2014 93000000 		.4byte	0x93
- 5600 2018 08       		.byte	0x8
+ 5600 2018 10       		.byte	0x10
  5601 2019 00       		.byte	0
  5602 201a 09       		.uleb128 0x9
  5603 201b 311D0000 		.4byte	.LASF755
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5626 204e 13       		.byte	0x13
  5627 204f F201     		.2byte	0x1f2
  5628 2051 2C180000 		.4byte	0x182c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 134
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 134
 
 
  5629 2055 02       		.byte	0x2
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5683 20c7 17       		.uleb128 0x17
  5684 20c8 2E400000 		.4byte	.LASF767
  5685 20cc 13       		.byte	0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 135
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 135
 
 
  5686 20cd 1002     		.2byte	0x210
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5740 2142 2D02     		.2byte	0x22d
  5741 2144 9A210000 		.4byte	0x219a
  5742 2148 34       		.byte	0x34
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 136
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 136
 
 
  5743 2149 00       		.byte	0
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5797 21b9 922C0000 		.4byte	0x2c92
  5798 21bd 15       		.uleb128 0x15
  5799 21be C7610000 		.4byte	.LASF778
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 137
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 137
 
 
  5800 21c2 00000100 		.4byte	0x10000
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5854 2264 12000100 		.4byte	0x10012
  5855 2268 15       		.uleb128 0x15
  5856 2269 E8690000 		.4byte	.LASF797
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 138
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 138
 
 
  5857 226d 13000100 		.4byte	0x10013
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5911 230f 25000100 		.4byte	0x10025
  5912 2313 15       		.uleb128 0x15
  5913 2314 2E1F0000 		.4byte	.LASF816
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 139
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 139
 
 
  5914 2318 26000100 		.4byte	0x10026
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  5968 23ba 38000100 		.4byte	0x10038
  5969 23be 15       		.uleb128 0x15
  5970 23bf BD260000 		.4byte	.LASF835
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 140
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 140
 
 
  5971 23c3 39000100 		.4byte	0x10039
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6025 2465 4B000100 		.4byte	0x1004b
  6026 2469 15       		.uleb128 0x15
  6027 246a 86010000 		.4byte	.LASF854
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 141
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 141
 
 
  6028 246e 4C000100 		.4byte	0x1004c
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6082 2510 5E000100 		.4byte	0x1005e
  6083 2514 15       		.uleb128 0x15
  6084 2515 774A0000 		.4byte	.LASF873
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 142
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 142
 
 
  6085 2519 5F000100 		.4byte	0x1005f
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6139 25bb 71000100 		.4byte	0x10071
  6140 25bf 15       		.uleb128 0x15
  6141 25c0 C0450000 		.4byte	.LASF892
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 143
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 143
 
 
  6142 25c4 72000100 		.4byte	0x10072
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6196 2666 84000100 		.4byte	0x10084
  6197 266a 15       		.uleb128 0x15
  6198 266b FF340000 		.4byte	.LASF911
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 144
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 144
 
 
  6199 266f 85000100 		.4byte	0x10085
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6253 2711 97000100 		.4byte	0x10097
  6254 2715 15       		.uleb128 0x15
  6255 2716 740A0000 		.4byte	.LASF930
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 145
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 145
 
 
  6256 271a 98000100 		.4byte	0x10098
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6310 27bc AA000100 		.4byte	0x100aa
  6311 27c0 15       		.uleb128 0x15
  6312 27c1 722E0000 		.4byte	.LASF949
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 146
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 146
 
 
  6313 27c5 AB000100 		.4byte	0x100ab
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6367 2867 BD000100 		.4byte	0x100bd
  6368 286b 15       		.uleb128 0x15
  6369 286c D2490000 		.4byte	.LASF968
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 147
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 147
 
 
  6370 2870 BE000100 		.4byte	0x100be
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6424 2912 D0000100 		.4byte	0x100d0
  6425 2916 15       		.uleb128 0x15
  6426 2917 4E260000 		.4byte	.LASF987
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 148
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 148
 
 
  6427 291b D1000100 		.4byte	0x100d1
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6481 29bd E3000100 		.4byte	0x100e3
  6482 29c1 15       		.uleb128 0x15
  6483 29c2 D15B0000 		.4byte	.LASF1006
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 149
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 149
 
 
  6484 29c6 E4000100 		.4byte	0x100e4
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6538 2a68 F6000100 		.4byte	0x100f6
  6539 2a6c 15       		.uleb128 0x15
  6540 2a6d 4C090000 		.4byte	.LASF1025
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 150
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 150
 
 
  6541 2a71 F7000100 		.4byte	0x100f7
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6595 2b13 09010100 		.4byte	0x10109
  6596 2b17 15       		.uleb128 0x15
  6597 2b18 58350000 		.4byte	.LASF1044
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 151
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 151
 
 
  6598 2b1c 0A010100 		.4byte	0x1010a
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6652 2bbe 1C010100 		.4byte	0x1011c
  6653 2bc2 15       		.uleb128 0x15
  6654 2bc3 26010000 		.4byte	.LASF1063
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 152
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 152
 
 
  6655 2bc7 1D010100 		.4byte	0x1011d
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6709 2c69 2F010100 		.4byte	0x1012f
  6710 2c6d 15       		.uleb128 0x15
  6711 2c6e B4540000 		.4byte	.LASF1082
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 153
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 153
 
 
  6712 2c72 30010100 		.4byte	0x10130
@@ -9149,7 +9149,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6737 2cb3 9A000000 		.4byte	0x9a
  6738 2cb7 00       		.byte	0
  6739 2cb8 16       		.uleb128 0x16
- 6740 2cb9 08       		.byte	0x8
+ 6740 2cb9 0C       		.byte	0xc
  6741 2cba 14       		.byte	0x14
  6742 2cbb 4A09     		.2byte	0x94a
  6743 2cbd DC2C0000 		.4byte	0x2cdc
@@ -9164,21 +9164,21 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6752 2cd3 14       		.byte	0x14
  6753 2cd4 5009     		.2byte	0x950
  6754 2cd6 A3000000 		.4byte	0xa3
- 6755 2cda 04       		.byte	0x4
+ 6755 2cda 08       		.byte	0x8
  6756 2cdb 00       		.byte	0
  6757 2cdc 0F       		.uleb128 0xf
  6758 2cdd 922C0000 		.4byte	0x2c92
  6759 2ce1 EC2C0000 		.4byte	0x2cec
  6760 2ce5 10       		.uleb128 0x10
  6761 2ce6 93000000 		.4byte	0x93
- 6762 2cea 00       		.byte	0
+ 6762 2cea 01       		.byte	0x1
  6763 2ceb 00       		.byte	0
  6764 2cec 09       		.uleb128 0x9
  6765 2ced 84610000 		.4byte	.LASF1089
  6766 2cf1 14       		.byte	0x14
  6767 2cf2 5109     		.2byte	0x951
  6768 2cf4 B82C0000 		.4byte	0x2cb8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 154
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 154
 
 
  6769 2cf8 23       		.uleb128 0x23
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6823 2d72 01       		.uleb128 0x1
  6824 2d73 9C       		.byte	0x9c
  6825 2d74 E02D0000 		.4byte	0x2de0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 155
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 155
 
 
  6826 2d78 28       		.uleb128 0x28
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6880 2ddb 113A0000 		.4byte	0x3a11
  6881 2ddf 00       		.byte	0
  6882 2de0 18       		.uleb128 0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 156
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 156
 
 
  6883 2de1 04       		.byte	0x4
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6937 2e65 01       		.byte	0x1
  6938 2e66 88       		.byte	0x88
  6939 2e67 B9000000 		.4byte	0xb9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 157
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 157
 
 
  6940 2e6b EC000000 		.4byte	.LLST6
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  6994 2edf 1801     		.2byte	0x118
  6995 2ee1 A3000000 		.4byte	0xa3
  6996 2ee5 E0010000 		.4byte	.LLST11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 158
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 158
 
 
  6997 2ee9 35       		.uleb128 0x35
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7051 2f65 9A000000 		.4byte	0x9a
  7052 2f69 32040000 		.4byte	.LLST14
  7053 2f6d 39       		.uleb128 0x39
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 159
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 159
 
 
  7054 2f6e 20010000 		.4byte	.LBB88
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7108 2fd9 00       		.byte	0
  7109 2fda 3C       		.uleb128 0x3c
  7110 2fdb 162D0000 		.4byte	0x2d16
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 160
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 160
 
 
  7111 2fdf AE010000 		.4byte	.LBB90
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7165 3047 F8010000 		.4byte	.LVL62
  7166 304b 323A0000 		.4byte	0x3a32
  7167 304f 2B       		.uleb128 0x2b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 161
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 161
 
 
  7168 3050 01       		.uleb128 0x1
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7222 30c1 05       		.uleb128 0x5
  7223 30c2 03       		.byte	0x3
  7224 30c3 08000000 		.4byte	.LANCHOR0+8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 162
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 162
 
 
  7225 30c7 2B       		.uleb128 0x2b
@@ -9718,13 +9718,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7279 3129 1A380000 		.4byte	.LASF1113
  7280 312d 01       		.byte	0x1
  7281 312e C001     		.2byte	0x1c0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 163
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 163
 
 
  7282 3130 F5170000 		.4byte	0x17f5
  7283 3134 05       		.uleb128 0x5
  7284 3135 03       		.byte	0x3
- 7285 3136 00000000 		.4byte	gPrepWriteReqMem.12374
+ 7285 3136 00000000 		.4byte	gPrepWriteReqMem.12445
  7286 313a 00       		.byte	0
  7287 313b 00       		.byte	0
  7288 313c 39       		.uleb128 0x39
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7336 31b1 CA310000 		.4byte	0x31ca
  7337 31b5 2B       		.uleb128 0x2b
  7338 31b6 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 164
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 164
 
 
  7339 31b7 50       		.byte	0x50
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7393 3209 C4320000 		.4byte	0x32c4
  7394 320d 3A       		.uleb128 0x3a
  7395 320e D7740000 		.4byte	.LASF1114
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 165
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 165
 
 
  7396 3212 01       		.byte	0x1
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7450 3284 08000000 		.4byte	.LANCHOR0+8
  7451 3288 2B       		.uleb128 0x2b
  7452 3289 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 166
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 166
 
 
  7453 328a 52       		.byte	0x52
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7507 32ef 0002     		.2byte	0x200
  7508 32f1 FF320000 		.4byte	0x32ff
  7509 32f5 3D       		.uleb128 0x3d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 167
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 167
 
 
  7510 32f6 232D0000 		.4byte	0x2d23
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7564 3377 02       		.uleb128 0x2
  7565 3378 91       		.byte	0x91
  7566 3379 48       		.sleb128 -56
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 168
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 168
 
 
  7567 337a 2B       		.uleb128 0x2b
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7621 33d0 3C       		.uleb128 0x3c
  7622 33d1 162D0000 		.4byte	0x2d16
  7623 33d5 08050000 		.4byte	.LBB119
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 169
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 169
 
 
  7624 33d9 08000000 		.4byte	.LBE119-.LBB119
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7678 346b 91       		.byte	0x91
  7679 346c B87F     		.sleb128 -72
  7680 346e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 170
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 170
 
 
  7681 346f 98050000 		.4byte	.LVL129
@@ -10175,7 +10175,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7712 34b4 01       		.uleb128 0x1
  7713 34b5 51       		.byte	0x51
  7714 34b6 01       		.uleb128 0x1
- 7715 34b7 38       		.byte	0x38
+ 7715 34b7 40       		.byte	0x40
  7716 34b8 00       		.byte	0
  7717 34b9 44       		.uleb128 0x44
  7718 34ba FA050000 		.4byte	.LVL134
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7735 34da 2B       		.uleb128 0x2b
  7736 34db 01       		.uleb128 0x1
  7737 34dc 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 171
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 171
 
 
  7738 34dd 01       		.uleb128 0x1
@@ -10207,7 +10207,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7741 34e0 01       		.uleb128 0x1
  7742 34e1 52       		.byte	0x52
  7743 34e2 01       		.uleb128 0x1
- 7744 34e3 39       		.byte	0x39
+ 7744 34e3 41       		.byte	0x41
  7745 34e4 00       		.byte	0
  7746 34e5 00       		.byte	0
  7747 34e6 3C       		.uleb128 0x3c
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7792 3544 5E060000 		.4byte	.LVL144
  7793 3548 553A0000 		.4byte	0x3a55
  7794 354c 2B       		.uleb128 0x2b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 172
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 172
 
 
  7795 354d 01       		.uleb128 0x1
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7849 35bb CC350000 		.4byte	0x35cc
  7850 35bf 2B       		.uleb128 0x2b
  7851 35c0 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 173
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 173
 
 
  7852 35c1 50       		.byte	0x50
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7906 3618 2A       		.uleb128 0x2a
  7907 3619 12010000 		.4byte	.LVL45
  7908 361d 783A0000 		.4byte	0x3a78
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 174
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 174
 
 
  7909 3621 2B360000 		.4byte	0x362b
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  7963 3690 02       		.uleb128 0x2
  7964 3691 77       		.byte	0x77
  7965 3692 00       		.sleb128 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 175
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 175
 
 
  7966 3693 2B       		.uleb128 0x2b
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8020 36ed 01       		.uleb128 0x1
  8021 36ee 50       		.byte	0x50
  8022 36ef 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 176
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 176
 
 
  8023 36f0 77       		.byte	0x77
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8077 374a 75       		.byte	0x75
  8078 374b 00       		.sleb128 0
  8079 374c 2B       		.uleb128 0x2b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 177
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 177
 
 
  8080 374d 01       		.uleb128 0x1
@@ -10590,7 +10590,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8106 3779 01       		.uleb128 0x1
  8107 377a 52       		.byte	0x52
  8108 377b 01       		.uleb128 0x1
- 8109 377c 39       		.byte	0x39
+ 8109 377c 41       		.byte	0x41
  8110 377d 00       		.byte	0
  8111 377e 2A       		.uleb128 0x2a
  8112 377f 14060000 		.4byte	.LVL136
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8134 37a7 50       		.byte	0x50
  8135 37a8 02       		.uleb128 0x2
  8136 37a9 76       		.byte	0x76
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 178
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 178
 
 
  8137 37aa 00       		.sleb128 0
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8191 37fe 472E0000 		.4byte	0x2e47
  8192 3802 0D380000 		.4byte	0x380d
  8193 3806 2B       		.uleb128 0x2b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 179
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 179
 
 
  8194 3807 01       		.uleb128 0x1
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8248 385b 01       		.uleb128 0x1
  8249 385c 51       		.byte	0x51
  8250 385d 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 180
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 180
 
 
  8251 385e 75       		.byte	0x75
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8305 38d5 93000000 		.4byte	0x93
  8306 38d9 00       		.byte	0
  8307 38da 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 181
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 181
 
 
  8308 38db 46       		.uleb128 0x46
@@ -10858,13 +10858,13 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8362 395b 6C390000 		.4byte	0x396c
  8363 395f 10       		.uleb128 0x10
  8364 3960 93000000 		.4byte	0x93
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 182
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 182
 
 
  8365 3964 00       		.byte	0
  8366 3965 10       		.uleb128 0x10
  8367 3966 93000000 		.4byte	0x93
- 8368 396a 08       		.byte	0x8
+ 8368 396a 10       		.byte	0x10
  8369 396b 00       		.byte	0
  8370 396c 46       		.uleb128 0x46
  8371 396d 4A730000 		.4byte	.LASF1130
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8419 39db 9C620000 		.4byte	.LASF1136
  8420 39df 01       		.byte	0x1
  8421 39e0 2F       		.byte	0x2f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 183
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 183
 
 
  8422 39e1 57050000 		.4byte	0x557
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8476 3a62 D8090000 		.4byte	.LASF1147
  8477 3a66 D8090000 		.4byte	.LASF1147
  8478 3a6a 11       		.byte	0x11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 184
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 184
 
 
  8479 3a6b EC       		.byte	0xec
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8533 0014 24       		.uleb128 0x24
  8534 0015 00       		.byte	0
  8535 0016 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 185
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 185
 
 
  8536 0017 0B       		.uleb128 0xb
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8590 004d 28       		.uleb128 0x28
  8591 004e 00       		.byte	0
  8592 004f 03       		.uleb128 0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 186
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 186
 
 
  8593 0050 0E       		.uleb128 0xe
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8647 0086 0D       		.uleb128 0xd
  8648 0087 0D       		.uleb128 0xd
  8649 0088 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 187
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 187
 
 
  8650 0089 03       		.uleb128 0x3
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8704 00bf 12       		.uleb128 0x12
  8705 00c0 13       		.uleb128 0x13
  8706 00c1 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 188
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 188
 
 
  8707 00c2 0B       		.uleb128 0xb
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8761 00f8 00       		.byte	0
  8762 00f9 00       		.byte	0
  8763 00fa 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 189
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 189
 
 
  8764 00fb 0D       		.uleb128 0xd
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8818 0131 3A       		.uleb128 0x3a
  8819 0132 0B       		.uleb128 0xb
  8820 0133 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 190
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 190
 
 
  8821 0134 05       		.uleb128 0x5
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8875 016a 3A       		.uleb128 0x3a
  8876 016b 0B       		.uleb128 0xb
  8877 016c 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 191
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 191
 
 
  8878 016d 05       		.uleb128 0x5
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8932 01a3 0E       		.uleb128 0xe
  8933 01a4 3A       		.uleb128 0x3a
  8934 01a5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 192
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 192
 
 
  8935 01a6 3B       		.uleb128 0x3b
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  8989 01dc 06       		.uleb128 0x6
  8990 01dd 40       		.uleb128 0x40
  8991 01de 18       		.uleb128 0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 193
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 193
 
 
  8992 01df 9742     		.uleb128 0x2117
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9046 021b 00       		.byte	0
  9047 021c 00       		.byte	0
  9048 021d 2C       		.uleb128 0x2c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 194
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 194
 
 
  9049 021e 898201   		.uleb128 0x4109
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9103 0257 17       		.uleb128 0x17
  9104 0258 00       		.byte	0
  9105 0259 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 195
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 195
 
 
  9106 025a 30       		.uleb128 0x30
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9160 0293 3A       		.uleb128 0x3a
  9161 0294 0B       		.uleb128 0xb
  9162 0295 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 196
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 196
 
 
  9163 0296 05       		.uleb128 0x5
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9217 02cc 0E       		.uleb128 0xe
  9218 02cd 3A       		.uleb128 0x3a
  9219 02ce 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 197
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 197
 
 
  9220 02cf 3B       		.uleb128 0x3b
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9274 0306 18       		.uleb128 0x18
  9275 0307 00       		.byte	0
  9276 0308 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 198
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 198
 
 
  9277 0309 3B       		.uleb128 0x3b
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9331 0341 34       		.uleb128 0x34
  9332 0342 00       		.byte	0
  9333 0343 31       		.uleb128 0x31
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 199
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 199
 
 
  9334 0344 13       		.uleb128 0x13
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9388 037c 34       		.uleb128 0x34
  9389 037d 00       		.byte	0
  9390 037e 03       		.uleb128 0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 200
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 200
 
 
  9391 037f 0E       		.uleb128 0xe
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9445 03b5 3A       		.uleb128 0x3a
  9446 03b6 0B       		.uleb128 0xb
  9447 03b7 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 201
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 201
 
 
  9448 03b8 05       		.uleb128 0x5
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9502 0049 00000000 		.4byte	0
  9503              	.LLST2:
  9504 004d 00000000 		.4byte	.LVL7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 202
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 202
 
 
  9505 0051 52000000 		.4byte	.LVL19
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9559 00d9 30000000 		.4byte	.LVL14
  9560 00dd 32000000 		.4byte	.LVL15
  9561 00e1 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 203
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 203
 
 
  9562 00e3 53       		.byte	0x53
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9616 016b 0200     		.2byte	0x2
  9617 016d 30       		.byte	0x30
  9618 016e 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 204
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 204
 
 
  9619 016f 0C000000 		.4byte	.LVL23
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9673 01f4 0100     		.2byte	0x1
  9674 01f6 50       		.byte	0x50
  9675 01f7 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 205
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 205
 
 
  9676 01fb 00000000 		.4byte	0
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9730 027e 01       		.uleb128 0x1
  9731 027f 50       		.byte	0x50
  9732 0280 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 206
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 206
 
 
  9733 0281 0A020000 		.4byte	.LVL65
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9787 02fd 9F       		.byte	0x9f
  9788 02fe 68050000 		.4byte	.LVL124
  9789 0302 6D050000 		.4byte	.LVL125-1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 207
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 207
 
 
  9790 0306 0100     		.2byte	0x1
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9844 037f 8A060000 		.4byte	.LVL149
  9845 0383 0100     		.2byte	0x1
  9846 0385 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 208
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 208
 
 
  9847 0386 8A060000 		.4byte	.LVL149
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9901 0402 50       		.byte	0x50
  9902 0403 C6060000 		.4byte	.LVL165
  9903 0407 1C070000 		.4byte	.LVL168
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 209
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 209
 
 
  9904 040b 0400     		.2byte	0x4
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  9958 048d 0100     		.2byte	0x1
  9959 048f 58       		.byte	0x58
  9960 0490 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 210
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 210
 
 
  9961 0494 00000000 		.4byte	0
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10015 0523 0100     		.2byte	0x1
  10016 0525 56       		.byte	0x56
  10017 0526 1A040000 		.4byte	.LVL92
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 211
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 211
 
 
  10018 052a 20040000 		.4byte	.LVL94
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10072 05b9 0200     		.2byte	0x2
  10073 05bb 30       		.byte	0x30
  10074 05bc 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 212
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 212
 
 
  10075 05bd 00000000 		.4byte	0
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10129 0004 0200     		.2byte	0x2
  10130 0006 00000000 		.4byte	.Ldebug_info0
  10131 000a 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 213
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 213
 
 
  10132 000b 00       		.byte	0
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10174              	.LASF1:
  10175 002e 6C6F6E67 		.ascii	"long long int\000"
  10175      206C6F6E 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 214
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 214
 
 
  10175      6720696E 
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10194              	.LASF1063:
  10195 0126 43595F42 		.ascii	"CY_BLE_EVT_WPTSC_INDICATION\000"
  10195      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 215
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 215
 
 
  10195      56545F57 
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10215 0234 43595F42 		.ascii	"CY_BLE_GATT_READ_REQ\000"
  10215      4C455F47 
  10215      4154545F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 216
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 216
 
 
  10215      52454144 
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10241 02e5 52455345 		.ascii	"RESERVED19\000"
  10241      52564544 
  10241      313900
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 217
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 217
 
 
  10242              	.LASF1148:
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10261      4154545F 
  10261      58434E48 
  10261      475F4D54 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 218
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 218
 
 
  10262              	.LASF317:
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10281      4552524F 
  10282              	.LASF1098:
  10283 0503 65786973 		.ascii	"existFlag\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 219
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 219
 
 
  10283      74466C61 
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10303      00
  10304              	.LASF1045:
  10305 0626 43595F42 		.ascii	"CY_BLE_EVT_UDSS_NOTIFICATION_ENABLED\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 220
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 220
 
 
  10305      4C455F45 
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10323      4E545259 
  10324              	.LASF505:
  10325 0738 72657175 		.ascii	"request\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 221
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 221
 
 
  10325      65737400 
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10343      52454144 
  10344              	.LASF506:
  10345 0856 636F6E66 		.ascii	"configMemory\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 222
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 222
 
 
  10345      69674D65 
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10365      494E4449 
  10366              	.LASF1025:
  10367 094c 43595F42 		.ascii	"CY_BLE_EVT_RSCSC_WRITE_CHAR_RESPONSE\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 223
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 223
 
 
  10367      4C455F45 
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10387 0a40 63795F62 		.ascii	"cy_ble_connState\000"
  10387      6C655F63 
  10387      6F6E6E53 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 224
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 224
 
 
  10387      74617465 
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10406              	.LASF668:
  10407 0b53 61647643 		.ascii	"advChannelMap\000"
  10407      68616E6E 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 225
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 225
 
 
  10407      656C4D61 
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10427 0c3d 43795F42 		.ascii	"Cy_BLE_GetConnHandleByBdHandle\000"
  10427      4C455F47 
  10427      6574436F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 226
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 226
 
 
  10427      6E6E4861 
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10447      5F524541 
  10448              	.LASF651:
  10449 0d69 7363616E 		.ascii	"scanWindow\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 227
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 227
 
 
  10449      57696E64 
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10469      4C455F45 
  10469      56545F41 
  10469      494F5353 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 228
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 228
 
 
  10469      5F494E44 
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10489 0fa3 43595F42 		.ascii	"CY_BLE_EVT_GATTC_DESCR_DUPLICATION\000"
  10489      4C455F45 
  10489      56545F47 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 229
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 229
 
 
  10489      41545443 
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10508              	.LASF242:
  10509 10b7 5354414E 		.ascii	"STANDARD_PPU_STRUCT\000"
  10509      44415244 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 230
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 230
 
 
  10509      5F505055 
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10527      73756C74 
  10528              	.LASF576:
  10529 11d8 43595F42 		.ascii	"CY_BLE_GATT_ERR_ANCS_INVALID_COMMAND\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 231
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 231
 
 
  10529      4C455F47 
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10547      6973656D 
  10548              	.LASF844:
  10549 12f6 43595F42 		.ascii	"CY_BLE_EVT_BLSS_NOTIFICATION_ENABLED\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 232
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 232
 
 
  10549      4C455F45 
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10567      56545F47 
  10567      41545443 
  10567      5F494E43 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 233
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 233
 
 
  10568              	.LASF594:
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10587      7074735F 
  10587      6770696F 
  10588              	.LASF320:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 234
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 234
 
 
  10589 155b 63686172 		.ascii	"char_t\000"
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10609      4C455F45 
  10609      52524F52 
  10609      5F4C3243 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 235
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 235
 
 
  10609      41505F50 
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10629      6E5F626C 
  10629      655F6164 
  10629      765F7374 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 236
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 236
 
 
  10629      6174655F 
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10649 188e 43595F42 		.ascii	"CY_BLE_EVT_LNSS_INDICATION_ENABLED\000"
  10649      4C455F45 
  10649      56545F4C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 237
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 237
 
 
  10649      4E53535F 
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10669 199b 43595F42 		.ascii	"CY_BLE_GATT_ERR_PROCEDURE_ALREADY_IN_PROGRESS\000"
  10669      4C455F47 
  10669      4154545F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 238
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 238
 
 
  10669      4552525F 
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10688              	.LASF183:
  10689 1af9 7564625F 		.ascii	"udb_interrupts_3_IRQn\000"
  10689      696E7465 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 239
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 239
 
 
  10689      72727570 
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10707      74735F31 
  10708              	.LASF475:
  10709 1c1e 62644164 		.ascii	"bdAddr\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 240
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 240
 
 
  10709      647200
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10729      4C455F45 
  10729      56545F57 
  10729      50545353 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 241
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 241
 
 
  10729      5F4E4F54 
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10749      4C455F47 
  10749      4154545F 
  10749      52454144 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 242
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 242
 
 
  10749      5F4D554C 
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10767      41444452 
  10768              	.LASF816:
  10769 1f2e 43595F42 		.ascii	"CY_BLE_EVT_ANCSC_WRITE_CHAR_RESPONSE\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 243
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 243
 
 
  10769      4C455F45 
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10788              	.LASF442:
  10789 202e 43595F42 		.ascii	"CY_BLE_EVT_MAX\000"
  10789      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 244
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 244
 
 
  10789      56545F4D 
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10809 2124 756E636F 		.ascii	"unconnected_IRQn\000"
  10809      6E6E6563 
  10809      7465645F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 245
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 245
 
 
  10809      4952516E 
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10829 222e 43595F42 		.ascii	"CY_BLE_EVT_CSCSS_WRITE_CHAR\000"
  10829      4C455F45 
  10829      56545F43 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 246
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 246
 
 
  10829      53435353 
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10847      5353535F 
  10847      44455343 
  10848              	.LASF87:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 247
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 247
 
 
  10849 2353 63707573 		.ascii	"cpuss_interrupts_ipc_4_IRQn\000"
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10868              	.LASF810:
  10869 2461 43595F42 		.ascii	"CY_BLE_EVT_AIOSC_WRITE_DESCR_RESPONSE\000"
  10869      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 248
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 248
 
 
  10869      56545F41 
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10887      4453535F 
  10887      494E4449 
  10888              	.LASF934:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 249
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 249
 
 
  10889 259a 43595F42 		.ascii	"CY_BLE_EVT_HIDSS_EXIT_SUSPEND\000"
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10907 26a7 43795F42 		.ascii	"Cy_BLE_GATTS_WriteRsp\000"
  10907      4C455F47 
  10907      41545453 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 250
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 250
 
 
  10907      5F577269 
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10926              	.LASF38:
  10927 27da 4E766963 		.ascii	"NvicMux14_IRQn\000"
  10927      4D757831 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 251
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 251
 
 
  10927      345F4952 
@@ -15058,7 +15058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10947      50545343 
  10947      5F524541 
  10948              	.LASF597:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 252
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 252
 
 
  10949 28ce 71756575 		.ascii	"queueBuffer\000"
@@ -15118,7 +15118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10969 29bc 64697363 		.ascii	"discoveryModeInfo\000"
  10969      6F766572 
  10969      794D6F64 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 253
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 253
 
 
  10969      65496E66 
@@ -15178,7 +15178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  10988              	.LASF955:
  10989 2aeb 43595F42 		.ascii	"CY_BLE_EVT_HRSC_READ_DESCR_RESPONSE\000"
  10989      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 254
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 254
 
 
  10989      56545F48 
@@ -15238,7 +15238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11007      434F4E4E 
  11008              	.LASF743:
  11009 2c07 63795F73 		.ascii	"cy_stc_ble_gatts_db_t\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 255
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 255
 
 
  11009      74635F62 
@@ -15298,7 +15298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11027      5F4B4559 
  11027      5F424C4F 
  11027      434B5F41 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 256
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 256
 
 
  11027      44445200 
@@ -15358,7 +15358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11047      5353535F 
  11047      494E4449 
  11048              	.LASF302:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 257
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 257
 
 
  11049 2e13 544F4332 		.ascii	"TOC2_SIGNATURE_VERIF_KEY\000"
@@ -15418,7 +15418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11067      516E00
  11068              	.LASF257:
  11069 2f22 43505553 		.ascii	"CPUSS_TRIM_ROM_CTL_HALF_ULP\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 258
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 258
 
 
  11069      535F5452 
@@ -15478,7 +15478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11089 3020 73727373 		.ascii	"srss_interrupt_mcwdt_1_IRQn\000"
  11089      5F696E74 
  11089      65727275 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 259
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 259
 
 
  11089      70745F6D 
@@ -15538,7 +15538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11109      4462496E 
  11109      64657843 
  11109      6F756E74 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 260
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 260
 
 
  11109      00
@@ -15598,7 +15598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11128              	.LASF457:
  11129 3240 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_PSM_WRONG_ENCODING\000"
  11129      4C455F45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 261
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 261
 
 
  11129      52524F52 
@@ -15658,7 +15658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11147      00
  11148              	.LASF33:
  11149 3341 4E766963 		.ascii	"NvicMux9_IRQn\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 262
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 262
 
 
  11149      4D757839 
@@ -15718,7 +15718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11168              	.LASF705:
  11169 3443 63795F73 		.ascii	"cy_stc_ble_gaps_t\000"
  11169      74635F62 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 263
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 263
 
 
  11169      6C655F67 
@@ -15778,7 +15778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11187      56545F49 
  11187      4153535F 
  11187      57524954 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 264
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 264
 
 
  11188              	.LASF1044:
@@ -15838,7 +15838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11208              	.LASF289:
  11209 3668 52544F43 		.ascii	"RTOC1_FB_OBJECT_ADDR\000"
  11209      315F4642 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 265
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 265
 
 
  11209      5F4F424A 
@@ -15898,7 +15898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11227      4154545F 
  11227      46494E44 
  11227      5F42595F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 266
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 266
 
 
  11228              	.LASF152:
@@ -15958,7 +15958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11247      6D705F69 
  11247      6E746572 
  11247      72757074 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 267
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 267
 
 
  11247      5F495251 
@@ -16018,7 +16018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11267      7369676E 
  11267      65642069 
  11267      6E7400
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 268
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 268
 
 
  11268              	.LASF353:
@@ -16078,7 +16078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11289      3400
  11290              	.LASF227:
  11291 3a84 52455345 		.ascii	"RESERVED5\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 269
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 269
 
 
  11291      52564544 
@@ -16138,7 +16138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11313 3b5d 63707573 		.ascii	"cpuss_interrupts_dw1_14_IRQn\000"
  11313      735F696E 
  11313      74657272 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 270
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 270
 
 
  11313      75707473 
@@ -16198,7 +16198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11333 3c76 43595F42 		.ascii	"CY_BLE_ERROR_INVALID_STATE\000"
  11333      4C455F45 
  11333      52524F52 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 271
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 271
 
 
  11333      5F494E56 
@@ -16258,7 +16258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11353 3da6 43595F42 		.ascii	"CY_BLE_EVT_GATTC_CHAR_DISCOVERY_FAILED\000"
  11353      4C455F45 
  11353      56545F47 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 272
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 272
 
 
  11353      41545443 
@@ -16318,7 +16318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11371      745F6932 
  11372              	.LASF1068:
  11373 3ed1 43595F42 		.ascii	"CY_BLE_EVT_WSSS_INDICATION_ENABLED\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 273
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 273
 
 
  11373      4C455F45 
@@ -16378,7 +16378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11392              	.LASF623:
  11393 3fcb 43595F42 		.ascii	"CY_BLE_GAP_AUTH_ERROR_LINK_DISCONNECTED\000"
  11393      4C455F47 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 274
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 274
 
 
  11393      41505F41 
@@ -16438,7 +16438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11414 40df 43595F42 		.ascii	"CY_BLE_EVT_RSCSS_INDICATION_CONFIRMATION\000"
  11414      4C455F45 
  11414      56545F52 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 275
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 275
 
 
  11414      53435353 
@@ -16498,7 +16498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11434      735F696E 
  11434      74657272 
  11434      75707473 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 276
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 276
 
 
  11434      5F647731 
@@ -16558,7 +16558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11452      5F4D554C 
  11453              	.LASF947:
  11454 4306 43595F42 		.ascii	"CY_BLE_EVT_HPSC_WRITE_DESCR_RESPONSE\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 277
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 277
 
 
  11454      4C455F45 
@@ -16618,7 +16618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11472      56545F43 
  11472      5053435F 
  11472      57524954 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 278
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 278
 
 
  11473              	.LASF106:
@@ -16678,7 +16678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11492      6574436F 
  11492      6E6E6563 
  11492      74696F6E 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 279
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 279
 
 
  11493              	.LASF27:
@@ -16738,7 +16738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11512      696E7465 
  11512      72727570 
  11512      74735F32 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 280
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 280
 
 
  11513              	.LASF716:
@@ -16798,7 +16798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11532      56545F42 
  11532      4353435F 
  11532      52454144 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 281
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 281
 
 
  11533              	.LASF520:
@@ -16858,7 +16858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11552      41647654 
  11552      696D654F 
  11552      757400
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 282
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 282
 
 
  11553              	.LASF284:
@@ -16918,7 +16918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11574 4960 63795F62 		.ascii	"cy_ble_stackMemoryRam\000"
  11574      6C655F73 
  11574      7461636B 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 283
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 283
 
 
  11574      4D656D6F 
@@ -16978,7 +16978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11594 4a68 50494C4F 		.ascii	"PILO_FREQ_STEP\000"
  11594      5F465245 
  11594      515F5354 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 284
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 284
 
 
  11594      455000
@@ -17038,7 +17038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11614      4C455F45 
  11614      56545F48 
  11614      5253435F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 285
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 285
 
 
  11614      57524954 
@@ -17098,7 +17098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11634      455300
  11635              	.LASF926:
  11636 4c8b 43595F42 		.ascii	"CY_BLE_EVT_GLSC_WRITE_CHAR_RESPONSE\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 286
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 286
 
 
  11636      4C455F45 
@@ -17158,7 +17158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11655 4d92 495A4500 		.ascii	"IZE\000"
  11656              	.LASF723:
  11657 4d96 67617063 		.ascii	"gapcConnectionSlaveLatency\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 287
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 287
 
 
  11657      436F6E6E 
@@ -17218,7 +17218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11675      41545453 
  11675      5F575249 
  11676              	.LASF847:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 288
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 288
 
 
  11677 4ebb 43595F42 		.ascii	"CY_BLE_EVT_BLSC_NOTIFICATION\000"
@@ -17278,7 +17278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11695      31203230 
  11695      31363036 
  11696 4ff0 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 289
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 289
 
 
  11696      20726576 
@@ -17338,7 +17338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11713      56545F43 
  11713      474D5353 
  11713      5F4E4F54 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 290
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 290
 
 
  11714              	.LASF871:
@@ -17398,7 +17398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11733 5248 63795F73 		.ascii	"cy_stc_ble_gapp_disc_mode_info_t\000"
  11733      74635F62 
  11733      6C655F67 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 291
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 291
 
 
  11733      6170705F 
@@ -17458,7 +17458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11753      32434150 
  11753      5F434246 
  11754              	.LASF673:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 292
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 292
 
 
  11755 5367 63795F73 		.ascii	"cy_stc_ble_gapp_disc_data_t\000"
@@ -17518,7 +17518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11773      56545F4C 
  11773      4E53435F 
  11773      57524954 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 293
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 293
 
 
  11774              	.LASF319:
@@ -17578,7 +17578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11795      4E435343 
  11795      5F4E4F54 
  11796              	.LASF1126:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 294
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 294
 
 
  11797 5593 63795F62 		.ascii	"cy_ble_devConnRole\000"
@@ -17638,7 +17638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11815      52454144 
  11816              	.LASF446:
  11817 568a 43595F42 		.ascii	"CY_BLE_ERROR_INVALID_PARAMETER\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 295
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 295
 
 
  11817      4C455F45 
@@ -17698,7 +17698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11835      52524F52 
  11835      5F474154 
  11835      545F4442 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 296
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 296
 
 
  11836              	.LASF240:
@@ -17758,7 +17758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11855      735F696E 
  11855      74657272 
  11855      7570745F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 297
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 297
 
 
  11855      666D5F49 
@@ -17818,7 +17818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11875 59d1 736C6F77 		.ascii	"slowAdvIntervalMin\000"
  11875      41647649 
  11875      6E746572 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 298
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 298
 
 
  11875      76616C4D 
@@ -17878,7 +17878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11895      56545F50 
  11895      4C585353 
  11895      5F4E4F54 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 299
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 299
 
 
  11896              	.LASF700:
@@ -17938,7 +17938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11915      72727570 
  11915      74735F39 
  11916              	.LASF1006:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 300
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 300
 
 
  11917 5bd1 43595F42 		.ascii	"CY_BLE_EVT_PLXSS_NOTIFICATION_ENABLED\000"
@@ -17998,7 +17998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11935      7400
  11936              	.LASF582:
  11937 5ccb 63795F65 		.ascii	"cy_en_ble_gatt_err_code_t\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 301
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 301
 
 
  11937      6E5F626C 
@@ -18058,7 +18058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11955      74735F35 
  11956              	.LASF285:
  11957 5dc0 52544F43 		.ascii	"RTOC1_MAGIC_NUMBER\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 302
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 302
 
 
  11957      315F4D41 
@@ -18118,7 +18118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11975      5F494E44 
  11976              	.LASF479:
  11977 5ee8 43595F42 		.ascii	"CY_BLE_LL_PWR_LVL_NEG_16_DBM\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 303
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 303
 
 
  11977      4C455F4C 
@@ -18178,7 +18178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  11995      516E00
  11996              	.LASF587:
  11997 6016 61747472 		.ascii	"attrHandle\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 304
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 304
 
 
  11997      48616E64 
@@ -18238,7 +18238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12017 6117 43595F42 		.ascii	"CY_BLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
  12017      4C455F45 
  12017      56545F47 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 305
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 305
 
 
  12017      41545453 
@@ -18298,7 +18298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12037      56545F53 
  12037      43505353 
  12037      5F534341 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 306
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 306
 
 
  12038              	.LASF3:
@@ -18358,7 +18358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12057      6770696F 
  12058              	.LASF292:
  12059 631e 52544F43 		.ascii	"RTOC1_CRC_ADDR\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 307
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 307
 
 
  12059      315F4352 
@@ -18418,7 +18418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12077      6E61626C 
  12077      6500
  12078              	.LASF1026:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 308
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 308
 
 
  12079 6449 43595F42 		.ascii	"CY_BLE_EVT_RSCSC_READ_DESCR_RESPONSE\000"
@@ -18478,7 +18478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12097 655a 43595F42 		.ascii	"CY_BLE_EVT_AES_CCM_DECRYPT_COMPLETE\000"
  12097      4C455F45 
  12097      56545F41 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 309
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 309
 
 
  12097      45535F43 
@@ -18538,7 +18538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12116 668a 63707573 		.ascii	"cpuss_interrupts_dw1_7_IRQn\000"
  12116      735F696E 
  12116      74657272 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 310
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 310
 
 
  12116      75707473 
@@ -18598,7 +18598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12136      6720756E 
  12136      7369676E 
  12136      65642069 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 311
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 311
 
 
  12137              	.LASF50:
@@ -18658,7 +18658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12156      5F696E74 
  12156      65727275 
  12156      7074735F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 312
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 312
 
 
  12156      6770696F 
@@ -18718,7 +18718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12176      65745478 
  12176      506F7765 
  12176      724C6576 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 313
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 313
 
 
  12177              	.LASF797:
@@ -18778,7 +18778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12196      735F696E 
  12196      74657272 
  12196      75707473 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 314
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 314
 
 
  12196      5F647730 
@@ -18838,7 +18838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12215 6bff 54455253 		.ascii	"TERS\000"
  12215      00
  12216              	.LASF872:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 315
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 315
 
 
  12217 6c04 43595F42 		.ascii	"CY_BLE_EVT_CPSS_BROADCAST_ENABLED\000"
@@ -18898,7 +18898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12235      57524954 
  12236              	.LASF182:
  12237 6d19 7564625F 		.ascii	"udb_interrupts_2_IRQn\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 316
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 316
 
 
  12237      696E7465 
@@ -18958,7 +18958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12255      56545F41 
  12255      494F5343 
  12255      5F4E4F54 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 317
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 317
 
 
  12256              	.LASF305:
@@ -19018,7 +19018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12275      6576656C 
  12275      436F6E6E 
  12275      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 318
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 318
 
 
  12276              	.LASF308:
@@ -19078,7 +19078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12295      4C585343 
  12295      5F575249 
  12296              	.LASF315:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 319
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 319
 
 
  12297 7003 52544F43 		.ascii	"RTOC2_SIGNATURE_VERIF_KEY\000"
@@ -19138,7 +19138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12316              	.LASF650:
  12317 7106 7363616E 		.ascii	"scanIntv\000"
  12317      496E7476 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 320
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 320
 
 
  12317      00
@@ -19198,7 +19198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12337 7223 43595F42 		.ascii	"CY_BLE_GATT_ERR_INSUFFICIENT_ENC_KEY_SIZE\000"
  12337      4C455F47 
  12337      4154545F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 321
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 321
 
 
  12337      4552525F 
@@ -19258,7 +19258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12355      6C756573 
  12355      43636364 
  12356              	.LASF337:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 322
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 322
 
 
  12357 7367 43595F42 		.ascii	"CY_BLE_EVT_GET_CHANNEL_MAP_COMPLETE\000"
@@ -19318,7 +19318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12376 746d 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
  12376      6E5F626C 
  12376      655F636F 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 323
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 323
 
 
  12376      6E6E5F73 
@@ -19378,7 +19378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12396              	.LASF21:
  12397 7598 53564361 		.ascii	"SVCall_IRQn\000"
  12397      6C6C5F49 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 324
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 324
 
 
  12397      52516E00 
@@ -19438,7 +19438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12417      494E4449 
  12418              	.LASF1134:
  12419 7696 63795F62 		.ascii	"cy_ble_eventHandler\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 325
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 325
 
 
  12419      6C655F65 
@@ -19498,7 +19498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12437      5453535F 
  12437      57524954 
  12438              	.LASF890:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 326
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 326
 
 
  12439 77b3 43595F42 		.ascii	"CY_BLE_EVT_CSCSC_INDICATION\000"
@@ -19558,7 +19558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12457 78a1 666C6F77 		.ascii	"flowState\000"
  12457      53746174 
  12457      6500
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 327
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 327
 
 
  12458              	.LASF37:
@@ -19618,7 +19618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12476      5F434246 
  12477              	.LASF269:
  12478 79c8 464C4153 		.ascii	"FLASH_BOOT_CODE\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 328
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 328
 
 
  12478      485F424F 
@@ -19678,7 +19678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 1
  12496      4952516E 
  12497              	.LASF570:
  12498 7acf 43595F42 		.ascii	"CY_BLE_GATTS_ERR_OPERATION_FAILED\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccdLw0up.s 			page 329
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccierqRc.s 			page 329
 
 
  12498      4C455F47 

@@ -2,7 +2,7 @@
 --	Conversion of SmartHandle.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Apr 26 02:54:32 2019
+--	Wed May 01 01:34:18 2019
 --
 
 USE cypress.cypress.all;
@@ -714,7 +714,7 @@ SCL:cy_mxs40_gpio_v1_0
 		width=>1,
 		sio_grp_cnt=>0,
 		id=>"3bebfee8-790b-4297-b73a-27818bdce71c",
-		drive_mode=>"2",
+		drive_mode=>"4",
 		ibuf_enabled=>"1",
 		init_dr_st=>"1",
 		input_sync=>"0",
@@ -851,7 +851,7 @@ SDA:cy_mxs40_gpio_v1_0
 		width=>1,
 		sio_grp_cnt=>0,
 		id=>"e9f4cd1b-6143-4d30-993c-20ffc73f0592",
-		drive_mode=>"2",
+		drive_mode=>"4",
 		ibuf_enabled=>"1",
 		init_dr_st=>"1",
 		input_sync=>"0",

@@ -100,6 +100,8 @@
     }                                                       //  |
     acc_sample; // Acceleration in meters/second^2          //  |
                                                             //  |
+    void KinOS_ReadAcc(acc_sample);                             //  |
+                                                            //  |
     typedef struct                                          //  |
     {                                                       //  |
         uint8  sensor_type;     // Is set to ALT            //  |
@@ -294,6 +296,8 @@
     bool KinOS_SendResult(uint32 num_bytes,                 //  |
                           uint8 *data);                     //  |
 //                                                              |
+    
+    void KinOS_SendAcc(acc_sample);
 //--------------------------------------------------------------+
     
 //             +--------------------------------+              //

@@ -121,18 +121,18 @@ void BusManager_Init()
     
     SensorBus_RegisterEventCallback((cy_cb_scb_i2c_handle_events_t) SensorBus_ExitCallback);
     
-    AlsDriver_Init();
+    //AlsDriver_Init();
     
-    /*DEBUG_PRINTF("Configuring Sensor... ");     
+    DEBUG_PRINTF("Configuring Sensor... ");     
     DEBUG_WAIT_UART_TX_COMPLETE();
 
     AccDriver_Init();
     
     DEBUG_PRINTF("Finished \r\n");     
-    DEBUG_WAIT_UART_TX_COMPLETE();*/
+    DEBUG_WAIT_UART_TX_COMPLETE();
     //GyrDriver_Init();
     
-    SensorBus_Disable(); local_bus_busy = false;
+    //SensorBus_Disable(); local_bus_busy = false;
     
     CyDelay(10); // Sensor boot delay
     

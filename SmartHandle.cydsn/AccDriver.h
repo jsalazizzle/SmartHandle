@@ -5,6 +5,7 @@
     
 #include <project.h>
 #include <stdbool.h>
+#include "KinOS.h"
     
 //---------------ACC Macros----------------//
     
@@ -42,7 +43,7 @@
 typedef struct                                          
 {                                                       
     uint8  sensor_type;     // Is set to ACC      
-    uint64 timestamp;       // Timestamp in us    
+    epoch timestamp;        // Timestamp in us    
     int16  x_raw;           // Raw x-axis         
     int16  y_raw;           // Raw y-axis         
     int16  z_raw;           // Raw z-axis         
@@ -66,7 +67,7 @@ enum Settings
     
 void AccDriver_Init();
 bool AccDriver_OperationDone();
-
+void readAccData(acc_sample);
 int32 AccDriver_UpdateSetting(uint8 setting_type, int32 setting_value);
 
 //-----------------------------------------//

@@ -35,6 +35,8 @@ extern "C" {
 ***************************************/
 #define CY_BLE_CUSTOM
 #define CY_BLE_CUSTOM_SERVER
+#define CY_BLE_BAS
+#define CY_BLE_BAS_SERVER
 
 /***************************************
 * API Constants
@@ -276,7 +278,7 @@ extern "C" {
 
 /** The GATT Maximum attribute length. */
 #define CY_BLE_CONFIG_GATT_DB_MAX_VALUE_LEN         (0x0100u)
-#define CY_BLE_GATT_DB_INDEX_COUNT                  (0x0023u)
+#define CY_BLE_GATT_DB_INDEX_COUNT                  (0x0031u)
 
 /** The number of characteristics supporting the Reliable Write property. */
 #define CY_BLE_CONFIG_GATT_RELIABLE_CHAR_COUNT      (0x0000u)
@@ -307,7 +309,7 @@ extern "C" {
     #define CY_BLE_CONFIG_L2CAP_PSM_COUNT               (1u)
 #endif  /* CY_BLE_L2CAP_ENABLE != 0u */
 
-#define CY_BLE_CONFIG_GATT_DB_ATT_VAL_COUNT         (0x11u)
+#define CY_BLE_CONFIG_GATT_DB_ATT_VAL_COUNT         (0x1Au)
 
 /** Max Tx payload size. */
 #define CY_BLE_CONFIG_LL_MAX_TX_PAYLOAD_SIZE        (0x1Bu)
@@ -317,10 +319,10 @@ extern "C" {
 
 /** GATT Role. */
 #define CY_BLE_CONFIG_GATT_ROLE                     (0x01u)
-#define CY_BLE_CONFIG_GATT_DB_CCCD_COUNT            (0x08u)
+#define CY_BLE_CONFIG_GATT_DB_CCCD_COUNT            (0x10u)
 
 /** Max unique services in the project. */
-#define CY_BLE_MAX_SRVI                             (0x01u)
+#define CY_BLE_MAX_SRVI                             (0x02u)
 
 /***************************************
 * API Constants for BLE services
@@ -346,12 +348,15 @@ extern "C" {
 
 /* BAS */
 /** The maximum supported count of BAS services for the GATT Server role. */
-#define CY_BLE_CONFIG_BASS_SERVICE_COUNT            (0x00u)
+#define CY_BLE_CONFIG_BASS_SERVICE_COUNT            (0x01u)
 
 /** The maximum supported count of BAS reports for the GATT Client role. */
 #define CY_BLE_CONFIG_BASC_SERVICE_COUNT            (0x00u)
 
-
+typedef enum
+{
+    CY_BLE_BATTERY_SERVICE_INDEX
+}cy_en_ble_bass_indexes_t;
 
 /* ESS */
 /** The maximum supported count of ESS characteristics for the GATT Client role. */
@@ -369,7 +374,7 @@ extern "C" {
 #define CY_BLE_CONFIG_CUSTOMC_SERVICE_COUNT         (0x00u)
 
 /** The maximum supported count of the Custom Service characteristics. */
-#define CY_BLE_CONFIG_CUSTOM_SERVICE_CHAR_COUNT     (0x03u)
+#define CY_BLE_CONFIG_CUSTOM_SERVICE_CHAR_COUNT     (0x05u)
 
 /** The maximum supported count of the Custom Service descriptors in one characteristic. */
 #define CY_BLE_CONFIG_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x01u)
@@ -382,6 +387,12 @@ extern "C" {
 #define CY_BLE_DEVICE_INTERFACE_INBOUND_CHAR_INDEX   (0x00u) /* Index of Inbound characteristic */
 #define CY_BLE_DEVICE_INTERFACE_OUTBOUND_CHAR_INDEX   (0x01u) /* Index of Outbound characteristic */
 #define CY_BLE_DEVICE_INTERFACE_OUTBOUND_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x00u) /* Index of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_X_CHAR_INDEX   (0x02u) /* Index of Accel_X characteristic */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_X_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x00u) /* Index of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Y_CHAR_INDEX   (0x03u) /* Index of Accel_Y characteristic */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Y_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x00u) /* Index of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Z_CHAR_INDEX   (0x04u) /* Index of Accel_Z characteristic */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Z_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x00u) /* Index of Client Characteristic Configuration descriptor */
 
 #define CY_BLE_DEVICE_ERROR_LOG_SERVICE_INDEX   (0x01u) /* Index of Device Error Log service in the cy_ble_customs array */
 #define CY_BLE_DEVICE_ERROR_LOG_CLEAR_LOG_CHAR_INDEX   (0x00u) /* Index of Clear Log characteristic */
@@ -401,22 +412,31 @@ extern "C" {
 #define CY_BLE_DEVICE_INTERFACE_OUTBOUND_DECL_HANDLE   (0x0013u) /* Handle of Outbound characteristic declaration */
 #define CY_BLE_DEVICE_INTERFACE_OUTBOUND_CHAR_HANDLE   (0x0014u) /* Handle of Outbound characteristic */
 #define CY_BLE_DEVICE_INTERFACE_OUTBOUND_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x0015u) /* Handle of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_X_DECL_HANDLE   (0x0016u) /* Handle of Accel_X characteristic declaration */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_X_CHAR_HANDLE   (0x0017u) /* Handle of Accel_X characteristic */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_X_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x0018u) /* Handle of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Y_DECL_HANDLE   (0x0019u) /* Handle of Accel_Y characteristic declaration */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Y_CHAR_HANDLE   (0x001Au) /* Handle of Accel_Y characteristic */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Y_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x001Bu) /* Handle of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Z_DECL_HANDLE   (0x001Cu) /* Handle of Accel_Z characteristic declaration */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Z_CHAR_HANDLE   (0x001Du) /* Handle of Accel_Z characteristic */
+#define CY_BLE_DEVICE_INTERFACE_ACCEL_Z_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x001Eu) /* Handle of Client Characteristic Configuration descriptor */
 
-#define CY_BLE_DEVICE_ERROR_LOG_SERVICE_HANDLE   (0x0016u) /* Handle of Device Error Log service */
-#define CY_BLE_DEVICE_ERROR_LOG_CLEAR_LOG_DECL_HANDLE   (0x0017u) /* Handle of Clear Log characteristic declaration */
-#define CY_BLE_DEVICE_ERROR_LOG_CLEAR_LOG_CHAR_HANDLE   (0x0018u) /* Handle of Clear Log characteristic */
-#define CY_BLE_DEVICE_ERROR_LOG_APPLICATION_LOG_DECL_HANDLE   (0x0019u) /* Handle of Application Log characteristic declaration */
-#define CY_BLE_DEVICE_ERROR_LOG_APPLICATION_LOG_CHAR_HANDLE   (0x001Au) /* Handle of Application Log characteristic */
-#define CY_BLE_DEVICE_ERROR_LOG_APPLICATION_LOG_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x001Bu) /* Handle of Client Characteristic Configuration descriptor */
-#define CY_BLE_DEVICE_ERROR_LOG_KINOS_LOG_DECL_HANDLE   (0x001Cu) /* Handle of Kinos Log characteristic declaration */
-#define CY_BLE_DEVICE_ERROR_LOG_KINOS_LOG_CHAR_HANDLE   (0x001Du) /* Handle of Kinos Log characteristic */
-#define CY_BLE_DEVICE_ERROR_LOG_KINOS_LOG_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x001Eu) /* Handle of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_ERROR_LOG_SERVICE_HANDLE   (0x0024u) /* Handle of Device Error Log service */
+#define CY_BLE_DEVICE_ERROR_LOG_CLEAR_LOG_DECL_HANDLE   (0x0025u) /* Handle of Clear Log characteristic declaration */
+#define CY_BLE_DEVICE_ERROR_LOG_CLEAR_LOG_CHAR_HANDLE   (0x0026u) /* Handle of Clear Log characteristic */
+#define CY_BLE_DEVICE_ERROR_LOG_APPLICATION_LOG_DECL_HANDLE   (0x0027u) /* Handle of Application Log characteristic declaration */
+#define CY_BLE_DEVICE_ERROR_LOG_APPLICATION_LOG_CHAR_HANDLE   (0x0028u) /* Handle of Application Log characteristic */
+#define CY_BLE_DEVICE_ERROR_LOG_APPLICATION_LOG_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x0029u) /* Handle of Client Characteristic Configuration descriptor */
+#define CY_BLE_DEVICE_ERROR_LOG_KINOS_LOG_DECL_HANDLE   (0x002Au) /* Handle of Kinos Log characteristic declaration */
+#define CY_BLE_DEVICE_ERROR_LOG_KINOS_LOG_CHAR_HANDLE   (0x002Bu) /* Handle of Kinos Log characteristic */
+#define CY_BLE_DEVICE_ERROR_LOG_KINOS_LOG_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x002Cu) /* Handle of Client Characteristic Configuration descriptor */
 
-#define CY_BLE_DEVICE_USE_PROFILE_SERVICE_HANDLE   (0x001Fu) /* Handle of Device Use Profile service */
-#define CY_BLE_DEVICE_USE_PROFILE_CLEAR_LOG_DECL_HANDLE   (0x0020u) /* Handle of Clear Log characteristic declaration */
-#define CY_BLE_DEVICE_USE_PROFILE_CLEAR_LOG_CHAR_HANDLE   (0x0021u) /* Handle of Clear Log characteristic */
-#define CY_BLE_DEVICE_USE_PROFILE_USE_LOG_DECL_HANDLE   (0x0022u) /* Handle of Use Log characteristic declaration */
-#define CY_BLE_DEVICE_USE_PROFILE_USE_LOG_CHAR_HANDLE   (0x0023u) /* Handle of Use Log characteristic */
+#define CY_BLE_DEVICE_USE_PROFILE_SERVICE_HANDLE   (0x002Du) /* Handle of Device Use Profile service */
+#define CY_BLE_DEVICE_USE_PROFILE_CLEAR_LOG_DECL_HANDLE   (0x002Eu) /* Handle of Clear Log characteristic declaration */
+#define CY_BLE_DEVICE_USE_PROFILE_CLEAR_LOG_CHAR_HANDLE   (0x002Fu) /* Handle of Clear Log characteristic */
+#define CY_BLE_DEVICE_USE_PROFILE_USE_LOG_DECL_HANDLE   (0x0030u) /* Handle of Use Log characteristic declaration */
+#define CY_BLE_DEVICE_USE_PROFILE_USE_LOG_CHAR_HANDLE   (0x0031u) /* Handle of Use Log characteristic */
 
 
 

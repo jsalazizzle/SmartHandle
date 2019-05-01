@@ -1,0 +1,1112 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"BLE_lns_config.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_ble_lnsConfig
+  20              		.section	.rodata
+  21              		.align	2
+  22              		.type	cy_ble_lnss, %object
+  23              		.size	cy_ble_lnss, 22
+  24              	cy_ble_lnss:
+  25 0000 2900     		.short	41
+  26 0002 2B00     		.short	43
+  27 0004 0000     		.short	0
+  28 0006 2D00     		.short	45
+  29 0008 2E00     		.short	46
+  30 000a 3000     		.short	48
+  31 000c 0000     		.short	0
+  32 000e 3200     		.short	50
+  33 0010 3300     		.short	51
+  34 0012 3500     		.short	53
+  35 0014 3600     		.short	54
+  36              		.data
+  37              		.align	2
+  38              		.type	cy_ble_lnsConfig, %object
+  39              		.size	cy_ble_lnsConfig, 8
+  40              	cy_ble_lnsConfig:
+  41 0000 00000000 		.word	cy_ble_lnss
+  42 0004 00000000 		.word	0
+  43              		.text
+  44              	.Letext0:
+  45              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  46              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  47              		.file 3 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_host_main.h"
+  48              		.file 4 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_gatt.h"
+  49              		.file 5 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_gap.h"
+  50              		.file 6 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble.h"
+  51              		.file 7 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_lns.h"
+  52              		.file 8 "Generated_Source\\PSoC6\\BLE_lns_config.c"
+  53              		.section	.debug_info,"",%progbits
+  54              	.Ldebug_info0:
+  55 0000 0E030000 		.4byte	0x30e
+  56 0004 0400     		.2byte	0x4
+  57 0006 00000000 		.4byte	.Ldebug_abbrev0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 2
+
+
+  58 000a 04       		.byte	0x4
+  59 000b 01       		.uleb128 0x1
+  60 000c AA000000 		.4byte	.LASF62
+  61 0010 0C       		.byte	0xc
+  62 0011 CA040000 		.4byte	.LASF63
+  63 0015 4A030000 		.4byte	.LASF64
+  64 0019 00000000 		.4byte	.Ldebug_line0
+  65 001d 02       		.uleb128 0x2
+  66 001e 04       		.byte	0x4
+  67 001f 05       		.byte	0x5
+  68 0020 696E7400 		.ascii	"int\000"
+  69 0024 03       		.uleb128 0x3
+  70 0025 04       		.byte	0x4
+  71 0026 07       		.byte	0x7
+  72 0027 7F030000 		.4byte	.LASF0
+  73 002b 03       		.uleb128 0x3
+  74 002c 08       		.byte	0x8
+  75 002d 05       		.byte	0x5
+  76 002e FD010000 		.4byte	.LASF1
+  77 0032 03       		.uleb128 0x3
+  78 0033 08       		.byte	0x8
+  79 0034 04       		.byte	0x4
+  80 0035 B9020000 		.4byte	.LASF2
+  81 0039 03       		.uleb128 0x3
+  82 003a 01       		.byte	0x1
+  83 003b 06       		.byte	0x6
+  84 003c 1E030000 		.4byte	.LASF3
+  85 0040 04       		.uleb128 0x4
+  86 0041 5E020000 		.4byte	.LASF6
+  87 0045 01       		.byte	0x1
+  88 0046 1D       		.byte	0x1d
+  89 0047 4B000000 		.4byte	0x4b
+  90 004b 03       		.uleb128 0x3
+  91 004c 01       		.byte	0x1
+  92 004d 08       		.byte	0x8
+  93 004e F0020000 		.4byte	.LASF4
+  94 0052 03       		.uleb128 0x3
+  95 0053 02       		.byte	0x2
+  96 0054 05       		.byte	0x5
+  97 0055 6D000000 		.4byte	.LASF5
+  98 0059 04       		.uleb128 0x4
+  99 005a 72010000 		.4byte	.LASF7
+ 100 005e 01       		.byte	0x1
+ 101 005f 2B       		.byte	0x2b
+ 102 0060 64000000 		.4byte	0x64
+ 103 0064 03       		.uleb128 0x3
+ 104 0065 02       		.byte	0x2
+ 105 0066 07       		.byte	0x7
+ 106 0067 A6030000 		.4byte	.LASF8
+ 107 006b 03       		.uleb128 0x3
+ 108 006c 04       		.byte	0x4
+ 109 006d 05       		.byte	0x5
+ 110 006e 55020000 		.4byte	.LASF9
+ 111 0072 04       		.uleb128 0x4
+ 112 0073 55010000 		.4byte	.LASF10
+ 113 0077 01       		.byte	0x1
+ 114 0078 41       		.byte	0x41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 3
+
+
+ 115 0079 7D000000 		.4byte	0x7d
+ 116 007d 03       		.uleb128 0x3
+ 117 007e 04       		.byte	0x4
+ 118 007f 07       		.byte	0x7
+ 119 0080 41040000 		.4byte	.LASF11
+ 120 0084 03       		.uleb128 0x3
+ 121 0085 08       		.byte	0x8
+ 122 0086 07       		.byte	0x7
+ 123 0087 2A030000 		.4byte	.LASF12
+ 124 008b 03       		.uleb128 0x3
+ 125 008c 04       		.byte	0x4
+ 126 008d 07       		.byte	0x7
+ 127 008e 77000000 		.4byte	.LASF13
+ 128 0092 05       		.uleb128 0x5
+ 129 0093 04       		.byte	0x4
+ 130 0094 03       		.uleb128 0x3
+ 131 0095 01       		.byte	0x1
+ 132 0096 08       		.byte	0x8
+ 133 0097 D6030000 		.4byte	.LASF14
+ 134 009b 04       		.uleb128 0x4
+ 135 009c A7010000 		.4byte	.LASF15
+ 136 00a0 02       		.byte	0x2
+ 137 00a1 18       		.byte	0x18
+ 138 00a2 40000000 		.4byte	0x40
+ 139 00a6 04       		.uleb128 0x4
+ 140 00a7 8C030000 		.4byte	.LASF16
+ 141 00ab 02       		.byte	0x2
+ 142 00ac 24       		.byte	0x24
+ 143 00ad 59000000 		.4byte	0x59
+ 144 00b1 04       		.uleb128 0x4
+ 145 00b2 41030000 		.4byte	.LASF17
+ 146 00b6 02       		.byte	0x2
+ 147 00b7 30       		.byte	0x30
+ 148 00b8 72000000 		.4byte	0x72
+ 149 00bc 03       		.uleb128 0x3
+ 150 00bd 04       		.byte	0x4
+ 151 00be 04       		.byte	0x4
+ 152 00bf F7010000 		.4byte	.LASF18
+ 153 00c3 03       		.uleb128 0x3
+ 154 00c4 08       		.byte	0x8
+ 155 00c5 04       		.byte	0x4
+ 156 00c6 53040000 		.4byte	.LASF19
+ 157 00ca 06       		.uleb128 0x6
+ 158 00cb 02       		.byte	0x2
+ 159 00cc 03       		.byte	0x3
+ 160 00cd 5B01     		.2byte	0x15b
+ 161 00cf EE000000 		.4byte	0xee
+ 162 00d3 07       		.uleb128 0x7
+ 163 00d4 EE010000 		.4byte	.LASF20
+ 164 00d8 03       		.byte	0x3
+ 165 00d9 6501     		.2byte	0x165
+ 166 00db 9B000000 		.4byte	0x9b
+ 167 00df 00       		.byte	0
+ 168 00e0 07       		.uleb128 0x7
+ 169 00e1 95030000 		.4byte	.LASF21
+ 170 00e5 03       		.byte	0x3
+ 171 00e6 6901     		.2byte	0x169
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 4
+
+
+ 172 00e8 9B000000 		.4byte	0x9b
+ 173 00ec 01       		.byte	0x1
+ 174 00ed 00       		.byte	0
+ 175 00ee 08       		.uleb128 0x8
+ 176 00ef 1E050000 		.4byte	.LASF22
+ 177 00f3 03       		.byte	0x3
+ 178 00f4 6B01     		.2byte	0x16b
+ 179 00f6 CA000000 		.4byte	0xca
+ 180 00fa 08       		.uleb128 0x8
+ 181 00fb B9030000 		.4byte	.LASF23
+ 182 00ff 04       		.byte	0x4
+ 183 0100 7F01     		.2byte	0x17f
+ 184 0102 A6000000 		.4byte	0xa6
+ 185 0106 09       		.uleb128 0x9
+ 186 0107 01       		.byte	0x1
+ 187 0108 4B000000 		.4byte	0x4b
+ 188 010c 05       		.byte	0x5
+ 189 010d 7E       		.byte	0x7e
+ 190 010e 2B010000 		.4byte	0x12b
+ 191 0112 0A       		.uleb128 0xa
+ 192 0113 99040000 		.4byte	.LASF24
+ 193 0117 00       		.byte	0
+ 194 0118 0A       		.uleb128 0xa
+ 195 0119 16040000 		.4byte	.LASF25
+ 196 011d 01       		.byte	0x1
+ 197 011e 0A       		.uleb128 0xa
+ 198 011f 5C050000 		.4byte	.LASF26
+ 199 0123 02       		.byte	0x2
+ 200 0124 0A       		.uleb128 0xa
+ 201 0125 FE020000 		.4byte	.LASF27
+ 202 0129 03       		.byte	0x3
+ 203 012a 00       		.byte	0
+ 204 012b 04       		.uleb128 0x4
+ 205 012c 40000000 		.4byte	.LASF28
+ 206 0130 05       		.byte	0x5
+ 207 0131 83       		.byte	0x83
+ 208 0132 06010000 		.4byte	0x106
+ 209 0136 09       		.uleb128 0x9
+ 210 0137 01       		.byte	0x1
+ 211 0138 4B000000 		.4byte	0x4b
+ 212 013c 05       		.byte	0x5
+ 213 013d 87       		.byte	0x87
+ 214 013e 73010000 		.4byte	0x173
+ 215 0142 0A       		.uleb128 0xa
+ 216 0143 CF010000 		.4byte	.LASF29
+ 217 0147 00       		.byte	0
+ 218 0148 0A       		.uleb128 0xa
+ 219 0149 5F040000 		.4byte	.LASF30
+ 220 014d 01       		.byte	0x1
+ 221 014e 0A       		.uleb128 0xa
+ 222 014f 17000000 		.4byte	.LASF31
+ 223 0153 02       		.byte	0x2
+ 224 0154 0A       		.uleb128 0xa
+ 225 0155 80000000 		.4byte	.LASF32
+ 226 0159 03       		.byte	0x3
+ 227 015a 0A       		.uleb128 0xa
+ 228 015b 1D020000 		.4byte	.LASF33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 5
+
+
+ 229 015f 04       		.byte	0x4
+ 230 0160 0A       		.uleb128 0xa
+ 231 0161 7D010000 		.4byte	.LASF34
+ 232 0165 05       		.byte	0x5
+ 233 0166 0A       		.uleb128 0xa
+ 234 0167 C5020000 		.4byte	.LASF35
+ 235 016b 06       		.byte	0x6
+ 236 016c 0A       		.uleb128 0xa
+ 237 016d 68020000 		.4byte	.LASF36
+ 238 0171 07       		.byte	0x7
+ 239 0172 00       		.byte	0
+ 240 0173 04       		.uleb128 0x4
+ 241 0174 37050000 		.4byte	.LASF37
+ 242 0178 05       		.byte	0x5
+ 243 0179 90       		.byte	0x90
+ 244 017a 36010000 		.4byte	0x136
+ 245 017e 04       		.uleb128 0x4
+ 246 017f F2040000 		.4byte	.LASF38
+ 247 0183 06       		.byte	0x6
+ 248 0184 40       		.byte	0x40
+ 249 0185 89010000 		.4byte	0x189
+ 250 0189 0B       		.uleb128 0xb
+ 251 018a 04       		.byte	0x4
+ 252 018b 8F010000 		.4byte	0x18f
+ 253 018f 0C       		.uleb128 0xc
+ 254 0190 9F010000 		.4byte	0x19f
+ 255 0194 0D       		.uleb128 0xd
+ 256 0195 B1000000 		.4byte	0xb1
+ 257 0199 0D       		.uleb128 0xd
+ 258 019a 92000000 		.4byte	0x92
+ 259 019e 00       		.byte	0
+ 260 019f 03       		.uleb128 0x3
+ 261 01a0 01       		.byte	0x1
+ 262 01a1 02       		.byte	0x2
+ 263 01a2 FF030000 		.4byte	.LASF39
+ 264 01a6 09       		.uleb128 0x9
+ 265 01a7 01       		.byte	0x1
+ 266 01a8 4B000000 		.4byte	0x4b
+ 267 01ac 07       		.byte	0x7
+ 268 01ad 2B       		.byte	0x2b
+ 269 01ae D7010000 		.4byte	0x1d7
+ 270 01b2 0A       		.uleb128 0xa
+ 271 01b3 9A020000 		.4byte	.LASF40
+ 272 01b7 00       		.byte	0
+ 273 01b8 0A       		.uleb128 0xa
+ 274 01b9 47020000 		.4byte	.LASF41
+ 275 01bd 01       		.byte	0x1
+ 276 01be 0A       		.uleb128 0xa
+ 277 01bf 8C020000 		.4byte	.LASF42
+ 278 01c3 02       		.byte	0x2
+ 279 01c4 0A       		.uleb128 0xa
+ 280 01c5 4E050000 		.4byte	.LASF43
+ 281 01c9 03       		.byte	0x3
+ 282 01ca 0A       		.uleb128 0xa
+ 283 01cb 04050000 		.4byte	.LASF44
+ 284 01cf 04       		.byte	0x4
+ 285 01d0 0A       		.uleb128 0xa
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 6
+
+
+ 286 01d1 E9030000 		.4byte	.LASF45
+ 287 01d5 05       		.byte	0x5
+ 288 01d6 00       		.byte	0
+ 289 01d7 09       		.uleb128 0x9
+ 290 01d8 01       		.byte	0x1
+ 291 01d9 4B000000 		.4byte	0x4b
+ 292 01dd 07       		.byte	0x7
+ 293 01de 36       		.byte	0x36
+ 294 01df F0010000 		.4byte	0x1f0
+ 295 01e3 0A       		.uleb128 0xa
+ 296 01e4 BF010000 		.4byte	.LASF46
+ 297 01e8 00       		.byte	0
+ 298 01e9 0A       		.uleb128 0xa
+ 299 01ea 56000000 		.4byte	.LASF47
+ 300 01ee 01       		.byte	0x1
+ 301 01ef 00       		.byte	0
+ 302 01f0 0E       		.uleb128 0xe
+ 303 01f1 04       		.byte	0x4
+ 304 01f2 07       		.byte	0x7
+ 305 01f3 3C       		.byte	0x3c
+ 306 01f4 11020000 		.4byte	0x211
+ 307 01f8 0F       		.uleb128 0xf
+ 308 01f9 9B030000 		.4byte	.LASF48
+ 309 01fd 07       		.byte	0x7
+ 310 01fe 3E       		.byte	0x3e
+ 311 01ff FA000000 		.4byte	0xfa
+ 312 0203 00       		.byte	0
+ 313 0204 0F       		.uleb128 0xf
+ 314 0205 35040000 		.4byte	.LASF49
+ 315 0209 07       		.byte	0x7
+ 316 020a 3F       		.byte	0x3f
+ 317 020b 11020000 		.4byte	0x211
+ 318 020f 02       		.byte	0x2
+ 319 0210 00       		.byte	0
+ 320 0211 10       		.uleb128 0x10
+ 321 0212 FA000000 		.4byte	0xfa
+ 322 0216 21020000 		.4byte	0x221
+ 323 021a 11       		.uleb128 0x11
+ 324 021b 8B000000 		.4byte	0x8b
+ 325 021f 00       		.byte	0
+ 326 0220 00       		.byte	0
+ 327 0221 04       		.uleb128 0x4
+ 328 0222 00000000 		.4byte	.LASF50
+ 329 0226 07       		.byte	0x7
+ 330 0227 40       		.byte	0x40
+ 331 0228 F0010000 		.4byte	0x1f0
+ 332 022c 0E       		.uleb128 0xe
+ 333 022d 16       		.byte	0x16
+ 334 022e 07       		.byte	0x7
+ 335 022f 43       		.byte	0x43
+ 336 0230 4D020000 		.4byte	0x24d
+ 337 0234 0F       		.uleb128 0xf
+ 338 0235 DB030000 		.4byte	.LASF51
+ 339 0239 07       		.byte	0x7
+ 340 023a 46       		.byte	0x46
+ 341 023b FA000000 		.4byte	0xfa
+ 342 023f 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 7
+
+
+ 343 0240 0F       		.uleb128 0xf
+ 344 0241 90040000 		.4byte	.LASF52
+ 345 0245 07       		.byte	0x7
+ 346 0246 49       		.byte	0x49
+ 347 0247 4D020000 		.4byte	0x24d
+ 348 024b 02       		.byte	0x2
+ 349 024c 00       		.byte	0
+ 350 024d 10       		.uleb128 0x10
+ 351 024e 21020000 		.4byte	0x221
+ 352 0252 5D020000 		.4byte	0x25d
+ 353 0256 11       		.uleb128 0x11
+ 354 0257 8B000000 		.4byte	0x8b
+ 355 025b 04       		.byte	0x4
+ 356 025c 00       		.byte	0
+ 357 025d 04       		.uleb128 0x4
+ 358 025e 60010000 		.4byte	.LASF53
+ 359 0262 07       		.byte	0x7
+ 360 0263 4A       		.byte	0x4a
+ 361 0264 2C020000 		.4byte	0x22c
+ 362 0268 0E       		.uleb128 0xe
+ 363 0269 08       		.byte	0x8
+ 364 026a 07       		.byte	0x7
+ 365 026b 74       		.byte	0x74
+ 366 026c 89020000 		.4byte	0x289
+ 367 0270 0F       		.uleb128 0xf
+ 368 0271 5A040000 		.4byte	.LASF54
+ 369 0275 07       		.byte	0x7
+ 370 0276 77       		.byte	0x77
+ 371 0277 89020000 		.4byte	0x289
+ 372 027b 00       		.byte	0
+ 373 027c 0F       		.uleb128 0xf
+ 374 027d 33000000 		.4byte	.LASF55
+ 375 0281 07       		.byte	0x7
+ 376 0282 7A       		.byte	0x7a
+ 377 0283 7E010000 		.4byte	0x17e
+ 378 0287 04       		.byte	0x4
+ 379 0288 00       		.byte	0
+ 380 0289 0B       		.uleb128 0xb
+ 381 028a 04       		.byte	0x4
+ 382 028b 8F020000 		.4byte	0x28f
+ 383 028f 12       		.uleb128 0x12
+ 384 0290 5D020000 		.4byte	0x25d
+ 385 0294 04       		.uleb128 0x4
+ 386 0295 B2040000 		.4byte	.LASF56
+ 387 0299 07       		.byte	0x7
+ 388 029a 7B       		.byte	0x7b
+ 389 029b 68020000 		.4byte	0x268
+ 390 029f 13       		.uleb128 0x13
+ 391 02a0 12050000 		.4byte	.LASF65
+ 392 02a4 08       		.byte	0x8
+ 393 02a5 16       		.byte	0x16
+ 394 02a6 8F020000 		.4byte	0x28f
+ 395 02aa 05       		.uleb128 0x5
+ 396 02ab 03       		.byte	0x3
+ 397 02ac 00000000 		.4byte	cy_ble_lnss
+ 398 02b0 14       		.uleb128 0x14
+ 399 02b1 AF010000 		.4byte	.LASF57
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 8
+
+
+ 400 02b5 05       		.byte	0x5
+ 401 02b6 2202     		.2byte	0x222
+ 402 02b8 2B010000 		.4byte	0x12b
+ 403 02bc 10       		.uleb128 0x10
+ 404 02bd EE000000 		.4byte	0xee
+ 405 02c1 CC020000 		.4byte	0x2cc
+ 406 02c5 11       		.uleb128 0x11
+ 407 02c6 8B000000 		.4byte	0x8b
+ 408 02ca 00       		.byte	0
+ 409 02cb 00       		.byte	0
+ 410 02cc 14       		.uleb128 0x14
+ 411 02cd 0B020000 		.4byte	.LASF58
+ 412 02d1 05       		.byte	0x5
+ 413 02d2 2C02     		.2byte	0x22c
+ 414 02d4 BC020000 		.4byte	0x2bc
+ 415 02d8 10       		.uleb128 0x10
+ 416 02d9 73010000 		.4byte	0x173
+ 417 02dd E8020000 		.4byte	0x2e8
+ 418 02e1 11       		.uleb128 0x11
+ 419 02e2 8B000000 		.4byte	0x8b
+ 420 02e6 00       		.byte	0
+ 421 02e7 00       		.byte	0
+ 422 02e8 14       		.uleb128 0x14
+ 423 02e9 05040000 		.4byte	.LASF59
+ 424 02ed 05       		.byte	0x5
+ 425 02ee 2D02     		.2byte	0x22d
+ 426 02f0 D8020000 		.4byte	0x2d8
+ 427 02f4 14       		.uleb128 0x14
+ 428 02f5 3C010000 		.4byte	.LASF60
+ 429 02f9 05       		.byte	0x5
+ 430 02fa 5202     		.2byte	0x252
+ 431 02fc 9B000000 		.4byte	0x9b
+ 432 0300 15       		.uleb128 0x15
+ 433 0301 A8020000 		.4byte	.LASF61
+ 434 0305 08       		.byte	0x8
+ 435 0306 56       		.byte	0x56
+ 436 0307 94020000 		.4byte	0x294
+ 437 030b 05       		.uleb128 0x5
+ 438 030c 03       		.byte	0x3
+ 439 030d 00000000 		.4byte	cy_ble_lnsConfig
+ 440 0311 00       		.byte	0
+ 441              		.section	.debug_abbrev,"",%progbits
+ 442              	.Ldebug_abbrev0:
+ 443 0000 01       		.uleb128 0x1
+ 444 0001 11       		.uleb128 0x11
+ 445 0002 01       		.byte	0x1
+ 446 0003 25       		.uleb128 0x25
+ 447 0004 0E       		.uleb128 0xe
+ 448 0005 13       		.uleb128 0x13
+ 449 0006 0B       		.uleb128 0xb
+ 450 0007 03       		.uleb128 0x3
+ 451 0008 0E       		.uleb128 0xe
+ 452 0009 1B       		.uleb128 0x1b
+ 453 000a 0E       		.uleb128 0xe
+ 454 000b 10       		.uleb128 0x10
+ 455 000c 17       		.uleb128 0x17
+ 456 000d 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 9
+
+
+ 457 000e 00       		.byte	0
+ 458 000f 02       		.uleb128 0x2
+ 459 0010 24       		.uleb128 0x24
+ 460 0011 00       		.byte	0
+ 461 0012 0B       		.uleb128 0xb
+ 462 0013 0B       		.uleb128 0xb
+ 463 0014 3E       		.uleb128 0x3e
+ 464 0015 0B       		.uleb128 0xb
+ 465 0016 03       		.uleb128 0x3
+ 466 0017 08       		.uleb128 0x8
+ 467 0018 00       		.byte	0
+ 468 0019 00       		.byte	0
+ 469 001a 03       		.uleb128 0x3
+ 470 001b 24       		.uleb128 0x24
+ 471 001c 00       		.byte	0
+ 472 001d 0B       		.uleb128 0xb
+ 473 001e 0B       		.uleb128 0xb
+ 474 001f 3E       		.uleb128 0x3e
+ 475 0020 0B       		.uleb128 0xb
+ 476 0021 03       		.uleb128 0x3
+ 477 0022 0E       		.uleb128 0xe
+ 478 0023 00       		.byte	0
+ 479 0024 00       		.byte	0
+ 480 0025 04       		.uleb128 0x4
+ 481 0026 16       		.uleb128 0x16
+ 482 0027 00       		.byte	0
+ 483 0028 03       		.uleb128 0x3
+ 484 0029 0E       		.uleb128 0xe
+ 485 002a 3A       		.uleb128 0x3a
+ 486 002b 0B       		.uleb128 0xb
+ 487 002c 3B       		.uleb128 0x3b
+ 488 002d 0B       		.uleb128 0xb
+ 489 002e 49       		.uleb128 0x49
+ 490 002f 13       		.uleb128 0x13
+ 491 0030 00       		.byte	0
+ 492 0031 00       		.byte	0
+ 493 0032 05       		.uleb128 0x5
+ 494 0033 0F       		.uleb128 0xf
+ 495 0034 00       		.byte	0
+ 496 0035 0B       		.uleb128 0xb
+ 497 0036 0B       		.uleb128 0xb
+ 498 0037 00       		.byte	0
+ 499 0038 00       		.byte	0
+ 500 0039 06       		.uleb128 0x6
+ 501 003a 13       		.uleb128 0x13
+ 502 003b 01       		.byte	0x1
+ 503 003c 0B       		.uleb128 0xb
+ 504 003d 0B       		.uleb128 0xb
+ 505 003e 3A       		.uleb128 0x3a
+ 506 003f 0B       		.uleb128 0xb
+ 507 0040 3B       		.uleb128 0x3b
+ 508 0041 05       		.uleb128 0x5
+ 509 0042 01       		.uleb128 0x1
+ 510 0043 13       		.uleb128 0x13
+ 511 0044 00       		.byte	0
+ 512 0045 00       		.byte	0
+ 513 0046 07       		.uleb128 0x7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 10
+
+
+ 514 0047 0D       		.uleb128 0xd
+ 515 0048 00       		.byte	0
+ 516 0049 03       		.uleb128 0x3
+ 517 004a 0E       		.uleb128 0xe
+ 518 004b 3A       		.uleb128 0x3a
+ 519 004c 0B       		.uleb128 0xb
+ 520 004d 3B       		.uleb128 0x3b
+ 521 004e 05       		.uleb128 0x5
+ 522 004f 49       		.uleb128 0x49
+ 523 0050 13       		.uleb128 0x13
+ 524 0051 38       		.uleb128 0x38
+ 525 0052 0B       		.uleb128 0xb
+ 526 0053 00       		.byte	0
+ 527 0054 00       		.byte	0
+ 528 0055 08       		.uleb128 0x8
+ 529 0056 16       		.uleb128 0x16
+ 530 0057 00       		.byte	0
+ 531 0058 03       		.uleb128 0x3
+ 532 0059 0E       		.uleb128 0xe
+ 533 005a 3A       		.uleb128 0x3a
+ 534 005b 0B       		.uleb128 0xb
+ 535 005c 3B       		.uleb128 0x3b
+ 536 005d 05       		.uleb128 0x5
+ 537 005e 49       		.uleb128 0x49
+ 538 005f 13       		.uleb128 0x13
+ 539 0060 00       		.byte	0
+ 540 0061 00       		.byte	0
+ 541 0062 09       		.uleb128 0x9
+ 542 0063 04       		.uleb128 0x4
+ 543 0064 01       		.byte	0x1
+ 544 0065 0B       		.uleb128 0xb
+ 545 0066 0B       		.uleb128 0xb
+ 546 0067 49       		.uleb128 0x49
+ 547 0068 13       		.uleb128 0x13
+ 548 0069 3A       		.uleb128 0x3a
+ 549 006a 0B       		.uleb128 0xb
+ 550 006b 3B       		.uleb128 0x3b
+ 551 006c 0B       		.uleb128 0xb
+ 552 006d 01       		.uleb128 0x1
+ 553 006e 13       		.uleb128 0x13
+ 554 006f 00       		.byte	0
+ 555 0070 00       		.byte	0
+ 556 0071 0A       		.uleb128 0xa
+ 557 0072 28       		.uleb128 0x28
+ 558 0073 00       		.byte	0
+ 559 0074 03       		.uleb128 0x3
+ 560 0075 0E       		.uleb128 0xe
+ 561 0076 1C       		.uleb128 0x1c
+ 562 0077 0B       		.uleb128 0xb
+ 563 0078 00       		.byte	0
+ 564 0079 00       		.byte	0
+ 565 007a 0B       		.uleb128 0xb
+ 566 007b 0F       		.uleb128 0xf
+ 567 007c 00       		.byte	0
+ 568 007d 0B       		.uleb128 0xb
+ 569 007e 0B       		.uleb128 0xb
+ 570 007f 49       		.uleb128 0x49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 11
+
+
+ 571 0080 13       		.uleb128 0x13
+ 572 0081 00       		.byte	0
+ 573 0082 00       		.byte	0
+ 574 0083 0C       		.uleb128 0xc
+ 575 0084 15       		.uleb128 0x15
+ 576 0085 01       		.byte	0x1
+ 577 0086 27       		.uleb128 0x27
+ 578 0087 19       		.uleb128 0x19
+ 579 0088 01       		.uleb128 0x1
+ 580 0089 13       		.uleb128 0x13
+ 581 008a 00       		.byte	0
+ 582 008b 00       		.byte	0
+ 583 008c 0D       		.uleb128 0xd
+ 584 008d 05       		.uleb128 0x5
+ 585 008e 00       		.byte	0
+ 586 008f 49       		.uleb128 0x49
+ 587 0090 13       		.uleb128 0x13
+ 588 0091 00       		.byte	0
+ 589 0092 00       		.byte	0
+ 590 0093 0E       		.uleb128 0xe
+ 591 0094 13       		.uleb128 0x13
+ 592 0095 01       		.byte	0x1
+ 593 0096 0B       		.uleb128 0xb
+ 594 0097 0B       		.uleb128 0xb
+ 595 0098 3A       		.uleb128 0x3a
+ 596 0099 0B       		.uleb128 0xb
+ 597 009a 3B       		.uleb128 0x3b
+ 598 009b 0B       		.uleb128 0xb
+ 599 009c 01       		.uleb128 0x1
+ 600 009d 13       		.uleb128 0x13
+ 601 009e 00       		.byte	0
+ 602 009f 00       		.byte	0
+ 603 00a0 0F       		.uleb128 0xf
+ 604 00a1 0D       		.uleb128 0xd
+ 605 00a2 00       		.byte	0
+ 606 00a3 03       		.uleb128 0x3
+ 607 00a4 0E       		.uleb128 0xe
+ 608 00a5 3A       		.uleb128 0x3a
+ 609 00a6 0B       		.uleb128 0xb
+ 610 00a7 3B       		.uleb128 0x3b
+ 611 00a8 0B       		.uleb128 0xb
+ 612 00a9 49       		.uleb128 0x49
+ 613 00aa 13       		.uleb128 0x13
+ 614 00ab 38       		.uleb128 0x38
+ 615 00ac 0B       		.uleb128 0xb
+ 616 00ad 00       		.byte	0
+ 617 00ae 00       		.byte	0
+ 618 00af 10       		.uleb128 0x10
+ 619 00b0 01       		.uleb128 0x1
+ 620 00b1 01       		.byte	0x1
+ 621 00b2 49       		.uleb128 0x49
+ 622 00b3 13       		.uleb128 0x13
+ 623 00b4 01       		.uleb128 0x1
+ 624 00b5 13       		.uleb128 0x13
+ 625 00b6 00       		.byte	0
+ 626 00b7 00       		.byte	0
+ 627 00b8 11       		.uleb128 0x11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 12
+
+
+ 628 00b9 21       		.uleb128 0x21
+ 629 00ba 00       		.byte	0
+ 630 00bb 49       		.uleb128 0x49
+ 631 00bc 13       		.uleb128 0x13
+ 632 00bd 2F       		.uleb128 0x2f
+ 633 00be 0B       		.uleb128 0xb
+ 634 00bf 00       		.byte	0
+ 635 00c0 00       		.byte	0
+ 636 00c1 12       		.uleb128 0x12
+ 637 00c2 26       		.uleb128 0x26
+ 638 00c3 00       		.byte	0
+ 639 00c4 49       		.uleb128 0x49
+ 640 00c5 13       		.uleb128 0x13
+ 641 00c6 00       		.byte	0
+ 642 00c7 00       		.byte	0
+ 643 00c8 13       		.uleb128 0x13
+ 644 00c9 34       		.uleb128 0x34
+ 645 00ca 00       		.byte	0
+ 646 00cb 03       		.uleb128 0x3
+ 647 00cc 0E       		.uleb128 0xe
+ 648 00cd 3A       		.uleb128 0x3a
+ 649 00ce 0B       		.uleb128 0xb
+ 650 00cf 3B       		.uleb128 0x3b
+ 651 00d0 0B       		.uleb128 0xb
+ 652 00d1 49       		.uleb128 0x49
+ 653 00d2 13       		.uleb128 0x13
+ 654 00d3 02       		.uleb128 0x2
+ 655 00d4 18       		.uleb128 0x18
+ 656 00d5 00       		.byte	0
+ 657 00d6 00       		.byte	0
+ 658 00d7 14       		.uleb128 0x14
+ 659 00d8 34       		.uleb128 0x34
+ 660 00d9 00       		.byte	0
+ 661 00da 03       		.uleb128 0x3
+ 662 00db 0E       		.uleb128 0xe
+ 663 00dc 3A       		.uleb128 0x3a
+ 664 00dd 0B       		.uleb128 0xb
+ 665 00de 3B       		.uleb128 0x3b
+ 666 00df 05       		.uleb128 0x5
+ 667 00e0 49       		.uleb128 0x49
+ 668 00e1 13       		.uleb128 0x13
+ 669 00e2 3F       		.uleb128 0x3f
+ 670 00e3 19       		.uleb128 0x19
+ 671 00e4 3C       		.uleb128 0x3c
+ 672 00e5 19       		.uleb128 0x19
+ 673 00e6 00       		.byte	0
+ 674 00e7 00       		.byte	0
+ 675 00e8 15       		.uleb128 0x15
+ 676 00e9 34       		.uleb128 0x34
+ 677 00ea 00       		.byte	0
+ 678 00eb 03       		.uleb128 0x3
+ 679 00ec 0E       		.uleb128 0xe
+ 680 00ed 3A       		.uleb128 0x3a
+ 681 00ee 0B       		.uleb128 0xb
+ 682 00ef 3B       		.uleb128 0x3b
+ 683 00f0 0B       		.uleb128 0xb
+ 684 00f1 49       		.uleb128 0x49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 13
+
+
+ 685 00f2 13       		.uleb128 0x13
+ 686 00f3 3F       		.uleb128 0x3f
+ 687 00f4 19       		.uleb128 0x19
+ 688 00f5 02       		.uleb128 0x2
+ 689 00f6 18       		.uleb128 0x18
+ 690 00f7 00       		.byte	0
+ 691 00f8 00       		.byte	0
+ 692 00f9 00       		.byte	0
+ 693              		.section	.debug_aranges,"",%progbits
+ 694 0000 14000000 		.4byte	0x14
+ 695 0004 0200     		.2byte	0x2
+ 696 0006 00000000 		.4byte	.Ldebug_info0
+ 697 000a 04       		.byte	0x4
+ 698 000b 00       		.byte	0
+ 699 000c 0000     		.2byte	0
+ 700 000e 0000     		.2byte	0
+ 701 0010 00000000 		.4byte	0
+ 702 0014 00000000 		.4byte	0
+ 703              		.section	.debug_line,"",%progbits
+ 704              	.Ldebug_line0:
+ 705 0000 CA010000 		.section	.debug_str,"MS",%progbits,1
+ 705      0200C401 
+ 705      00000201 
+ 705      FB0E0D00 
+ 705      01010101 
+ 706              	.LASF50:
+ 707 0000 63795F73 		.ascii	"cy_stc_ble_lnss_char_t\000"
+ 707      74635F62 
+ 707      6C655F6C 
+ 707      6E73735F 
+ 707      63686172 
+ 708              	.LASF31:
+ 709 0017 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 709      4C455F43 
+ 709      4F4E4E5F 
+ 709      53544154 
+ 709      455F434F 
+ 710              	.LASF55:
+ 711 0033 63616C6C 		.ascii	"callbackFunc\000"
+ 711      6261636B 
+ 711      46756E63 
+ 711      00
+ 712              	.LASF28:
+ 713 0040 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 713      6E5F626C 
+ 713      655F6164 
+ 713      765F7374 
+ 713      6174655F 
+ 714              	.LASF47:
+ 715 0056 43595F42 		.ascii	"CY_BLE_LNS_DESCR_COUNT\000"
+ 715      4C455F4C 
+ 715      4E535F44 
+ 715      45534352 
+ 715      5F434F55 
+ 716              	.LASF5:
+ 717 006d 73686F72 		.ascii	"short int\000"
+ 717      7420696E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 14
+
+
+ 717      7400
+ 718              	.LASF13:
+ 719 0077 73697A65 		.ascii	"sizetype\000"
+ 719      74797065 
+ 719      00
+ 720              	.LASF32:
+ 721 0080 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
+ 721      4C455F43 
+ 721      4F4E4E5F 
+ 721      53544154 
+ 721      455F434C 
+ 722              	.LASF62:
+ 723 00aa 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 723      43313120 
+ 723      352E342E 
+ 723      31203230 
+ 723      31363036 
+ 724 00dd 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 724      20726576 
+ 724      6973696F 
+ 724      6E203233 
+ 724      37373135 
+ 725 0110 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 725      67202D66 
+ 725      66756E63 
+ 725      74696F6E 
+ 725      2D736563 
+ 726              	.LASF60:
+ 727 013c 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
+ 727      6C655F70 
+ 727      656E6469 
+ 727      6E67466C 
+ 727      61736857 
+ 728              	.LASF10:
+ 729 0155 5F5F7569 		.ascii	"__uint32_t\000"
+ 729      6E743332 
+ 729      5F7400
+ 730              	.LASF53:
+ 731 0160 63795F73 		.ascii	"cy_stc_ble_lnss_t\000"
+ 731      74635F62 
+ 731      6C655F6C 
+ 731      6E73735F 
+ 731      7400
+ 732              	.LASF7:
+ 733 0172 5F5F7569 		.ascii	"__uint16_t\000"
+ 733      6E743136 
+ 733      5F7400
+ 734              	.LASF34:
+ 735 017d 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 735      4C455F43 
+ 735      4F4E4E5F 
+ 735      53544154 
+ 735      455F434C 
+ 736              	.LASF15:
+ 737 01a7 75696E74 		.ascii	"uint8_t\000"
+ 737      385F7400 
+ 738              	.LASF57:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 15
+
+
+ 739 01af 63795F62 		.ascii	"cy_ble_advState\000"
+ 739      6C655F61 
+ 739      64765374 
+ 739      61746500 
+ 740              	.LASF46:
+ 741 01bf 43595F42 		.ascii	"CY_BLE_LNS_CCCD\000"
+ 741      4C455F4C 
+ 741      4E535F43 
+ 741      43434400 
+ 742              	.LASF29:
+ 743 01cf 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 743      4C455F43 
+ 743      4F4E4E5F 
+ 743      53544154 
+ 743      455F4449 
+ 744              	.LASF20:
+ 745 01ee 62644861 		.ascii	"bdHandle\000"
+ 745      6E646C65 
+ 745      00
+ 746              	.LASF18:
+ 747 01f7 666C6F61 		.ascii	"float\000"
+ 747      7400
+ 748              	.LASF1:
+ 749 01fd 6C6F6E67 		.ascii	"long long int\000"
+ 749      206C6F6E 
+ 749      6720696E 
+ 749      7400
+ 750              	.LASF58:
+ 751 020b 63795F62 		.ascii	"cy_ble_connHandle\000"
+ 751      6C655F63 
+ 751      6F6E6E48 
+ 751      616E646C 
+ 751      6500
+ 752              	.LASF33:
+ 753 021d 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 753      4C455F43 
+ 753      4F4E4E5F 
+ 753      53544154 
+ 753      455F434C 
+ 754              	.LASF41:
+ 755 0247 43595F42 		.ascii	"CY_BLE_LNS_LS\000"
+ 755      4C455F4C 
+ 755      4E535F4C 
+ 755      5300
+ 756              	.LASF9:
+ 757 0255 6C6F6E67 		.ascii	"long int\000"
+ 757      20696E74 
+ 757      00
+ 758              	.LASF6:
+ 759 025e 5F5F7569 		.ascii	"__uint8_t\000"
+ 759      6E74385F 
+ 759      7400
+ 760              	.LASF36:
+ 761 0268 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
+ 761      4C455F43 
+ 761      4F4E4E5F 
+ 761      53544154 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 16
+
+
+ 761      455F434C 
+ 762              	.LASF42:
+ 763 028c 43595F42 		.ascii	"CY_BLE_LNS_PQ\000"
+ 763      4C455F4C 
+ 763      4E535F50 
+ 763      5100
+ 764              	.LASF40:
+ 765 029a 43595F42 		.ascii	"CY_BLE_LNS_FT\000"
+ 765      4C455F4C 
+ 765      4E535F46 
+ 765      5400
+ 766              	.LASF61:
+ 767 02a8 63795F62 		.ascii	"cy_ble_lnsConfig\000"
+ 767      6C655F6C 
+ 767      6E73436F 
+ 767      6E666967 
+ 767      00
+ 768              	.LASF2:
+ 769 02b9 6C6F6E67 		.ascii	"long double\000"
+ 769      20646F75 
+ 769      626C6500 
+ 770              	.LASF35:
+ 771 02c5 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 771      4C455F43 
+ 771      4F4E4E5F 
+ 771      53544154 
+ 771      455F434C 
+ 772              	.LASF4:
+ 773 02f0 756E7369 		.ascii	"unsigned char\000"
+ 773      676E6564 
+ 773      20636861 
+ 773      7200
+ 774              	.LASF27:
+ 775 02fe 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 775      4C455F41 
+ 775      44565F53 
+ 775      54415445 
+ 775      5F53544F 
+ 776              	.LASF3:
+ 777 031e 7369676E 		.ascii	"signed char\000"
+ 777      65642063 
+ 777      68617200 
+ 778              	.LASF12:
+ 779 032a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 779      206C6F6E 
+ 779      6720756E 
+ 779      7369676E 
+ 779      65642069 
+ 780              	.LASF17:
+ 781 0341 75696E74 		.ascii	"uint32_t\000"
+ 781      33325F74 
+ 781      00
+ 782              	.LASF64:
+ 783 034a 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\SmartHandle"
+ 783      73657273 
+ 783      5C73616C 
+ 783      617A5C44 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 17
+
+
+ 783      65736B74 
+ 784 0378 2E637964 		.ascii	".cydsn\000"
+ 784      736E00
+ 785              	.LASF0:
+ 786 037f 756E7369 		.ascii	"unsigned int\000"
+ 786      676E6564 
+ 786      20696E74 
+ 786      00
+ 787              	.LASF16:
+ 788 038c 75696E74 		.ascii	"uint16_t\000"
+ 788      31365F74 
+ 788      00
+ 789              	.LASF21:
+ 790 0395 61747449 		.ascii	"attId\000"
+ 790      6400
+ 791              	.LASF48:
+ 792 039b 63686172 		.ascii	"charHandle\000"
+ 792      48616E64 
+ 792      6C6500
+ 793              	.LASF8:
+ 794 03a6 73686F72 		.ascii	"short unsigned int\000"
+ 794      7420756E 
+ 794      7369676E 
+ 794      65642069 
+ 794      6E7400
+ 795              	.LASF23:
+ 796 03b9 63795F62 		.ascii	"cy_ble_gatt_db_attr_handle_t\000"
+ 796      6C655F67 
+ 796      6174745F 
+ 796      64625F61 
+ 796      7474725F 
+ 797              	.LASF14:
+ 798 03d6 63686172 		.ascii	"char\000"
+ 798      00
+ 799              	.LASF51:
+ 800 03db 73657276 		.ascii	"serviceHandle\000"
+ 800      69636548 
+ 800      616E646C 
+ 800      6500
+ 801              	.LASF45:
+ 802 03e9 43595F42 		.ascii	"CY_BLE_LNS_CHAR_COUNT\000"
+ 802      4C455F4C 
+ 802      4E535F43 
+ 802      4841525F 
+ 802      434F554E 
+ 803              	.LASF39:
+ 804 03ff 5F426F6F 		.ascii	"_Bool\000"
+ 804      6C00
+ 805              	.LASF59:
+ 806 0405 63795F62 		.ascii	"cy_ble_connState\000"
+ 806      6C655F63 
+ 806      6F6E6E53 
+ 806      74617465 
+ 806      00
+ 807              	.LASF25:
+ 808 0416 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 808      4C455F41 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 18
+
+
+ 808      44565F53 
+ 808      54415445 
+ 808      5F414456 
+ 809              	.LASF49:
+ 810 0435 64657363 		.ascii	"descrHandle\000"
+ 810      7248616E 
+ 810      646C6500 
+ 811              	.LASF11:
+ 812 0441 6C6F6E67 		.ascii	"long unsigned int\000"
+ 812      20756E73 
+ 812      69676E65 
+ 812      6420696E 
+ 812      7400
+ 813              	.LASF19:
+ 814 0453 646F7562 		.ascii	"double\000"
+ 814      6C6500
+ 815              	.LASF54:
+ 816 045a 6C6E7373 		.ascii	"lnss\000"
+ 816      00
+ 817              	.LASF30:
+ 818 045f 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
+ 818      4C455F43 
+ 818      4F4E4E5F 
+ 818      53544154 
+ 818      455F434C 
+ 819              	.LASF52:
+ 820 0490 63686172 		.ascii	"charInfo\000"
+ 820      496E666F 
+ 820      00
+ 821              	.LASF24:
+ 822 0499 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
+ 822      4C455F41 
+ 822      44565F53 
+ 822      54415445 
+ 822      5F53544F 
+ 823              	.LASF56:
+ 824 04b2 63795F73 		.ascii	"cy_stc_ble_lns_config_t\000"
+ 824      74635F62 
+ 824      6C655F6C 
+ 824      6E735F63 
+ 824      6F6E6669 
+ 825              	.LASF63:
+ 826 04ca 47656E65 		.ascii	"Generated_Source\\PSoC6\\BLE_lns_config.c\000"
+ 826      72617465 
+ 826      645F536F 
+ 826      75726365 
+ 826      5C50536F 
+ 827              	.LASF38:
+ 828 04f2 63795F62 		.ascii	"cy_ble_callback_t\000"
+ 828      6C655F63 
+ 828      616C6C62 
+ 828      61636B5F 
+ 828      7400
+ 829              	.LASF44:
+ 830 0504 43595F42 		.ascii	"CY_BLE_LNS_NV\000"
+ 830      4C455F4C 
+ 830      4E535F4E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc9ZXD3N.s 			page 19
+
+
+ 830      5600
+ 831              	.LASF65:
+ 832 0512 63795F62 		.ascii	"cy_ble_lnss\000"
+ 832      6C655F6C 
+ 832      6E737300 
+ 833              	.LASF22:
+ 834 051e 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 834      74635F62 
+ 834      6C655F63 
+ 834      6F6E6E5F 
+ 834      68616E64 
+ 835              	.LASF37:
+ 836 0537 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 836      6E5F626C 
+ 836      655F636F 
+ 836      6E6E5F73 
+ 836      74617465 
+ 837              	.LASF43:
+ 838 054e 43595F42 		.ascii	"CY_BLE_LNS_CP\000"
+ 838      4C455F4C 
+ 838      4E535F43 
+ 838      5000
+ 839              	.LASF26:
+ 840 055c 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 840      4C455F41 
+ 840      44565F53 
+ 840      54415445 
+ 840      5F414456 
+ 841              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
