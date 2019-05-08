@@ -25,11 +25,11 @@ void AppProcess_Start()
         current_time = KinOS_GetDateAndTime();
         if((abs(current_time.second - prev_time.second)) >= 1){
             //KinOS_SendResult(1, &battery_percentage);
-            KinOS_ReadAcc(data);
+            //KinOS_ReadAcc(data);
             prev_time = current_time;
-            DEBUG_PRINTF("x: %#6x\ty: %#6x\tz: %#6x\r\n\n",(uint16) data.x_raw, (uint16) data.y_raw, (uint16) data.z_raw);
+            //DEBUG_PRINTF("x: %#6x\ty: %#6x\tz: %#6x\r\n\n",(uint16) data.x_raw, (uint16) data.y_raw, (uint16) data.z_raw);
             Cy_BLE_BASS_SetCharacteristicValue(CY_BLE_BATTERY_SERVICE_INDEX, CY_BLE_BAS_BATTERY_LEVEL, 1, &battery_percentage);
-            KinOS_SendAcc(data);
+            //KinOS_SendAcc(data);
             battery_percentage = (battery_percentage) ? battery_percentage - 1 : 100;
         }
         

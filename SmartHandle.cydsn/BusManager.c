@@ -123,13 +123,13 @@ void BusManager_Init()
     
     //AlsDriver_Init();
     
-    DEBUG_PRINTF("Configuring Sensor... ");     
-    DEBUG_WAIT_UART_TX_COMPLETE();
+    //DEBUG_PRINTF("Configuring Sensor... ");     
+    //DEBUG_WAIT_UART_TX_COMPLETE();
 
-    AccDriver_Init();
+    //AccDriver_Init();
     
-    DEBUG_PRINTF("Finished \r\n");     
-    DEBUG_WAIT_UART_TX_COMPLETE();
+    //DEBUG_PRINTF("Finished \r\n");     
+    //DEBUG_WAIT_UART_TX_COMPLETE();
     //GyrDriver_Init();
     
     //SensorBus_Disable(); local_bus_busy = false;

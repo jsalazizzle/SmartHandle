@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\2_Transmission\Transmission.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\1_BusManager\BusManager.c">
 <ExpandedNodeIds>
 <v>SmartHandle-000</v>
 <v>SmartHandle-000\SmartHandle</v>
@@ -161,6 +161,15 @@
 <v>SmartHandle-000\SmartHandle\Generated_Source\PSoC6\SensorBus</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\CalendarTime\CalendarTime.h</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\ErrorLogging</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\ErrorLogging\ErrorCodes.h</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\ErrorLogging\ErrorLogging.h</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\PowerMonitor</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\PowerMonitor\PowerMonitor.h</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\TimingMaster</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\TimingMaster\TimingMaster.c</v>
+<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\TimingMaster\TimingMaster.h</v>
 <v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\UseProfiling</v>
 <v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\UseProfiling\UseProfiling.h</v>
 <v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\0_SystemCore\SystemCore.c</v>
@@ -202,15 +211,6 @@
 <v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Press\PressSense.c</v>
 <v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Press\PressSense.h</v>
 <v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Shake</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Shake\ShakeSense.c</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Shake\ShakeSense.h</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Tap2x</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Input\Tap2x\Tap2xSense.h</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Output</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Output\Chime</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Output\Chime\ChimeControl.c</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Output\Chime\ChimeControl.h</v>
-<v>SmartHandle-000\SmartHandle\CM0p (Core 0)\Source Files\KinOS\3_UserInterface\Output\Light</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -456,54 +456,6 @@
 <VisibleNodeIds>
 <v>SmartHandle-000</v>
 <v>SmartHandle-000\SmartHandle</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\AccDriver.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\AlsDriver.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\AppControl.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\AppProcess.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_bas_config.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_config.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_custom_config.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\BusManager.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\CalendarTime.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\ChimeControl.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\ChimeOutput.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\ChimeTimer.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_aios.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ancs.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ans.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bas.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bcs.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bls.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bms.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bts.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cgms.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cps.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cscs.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cts.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_custom.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_dis.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ess.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_event_handler.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gap.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gatt.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gls.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hal_int.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hal_pvt.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hids.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hps.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hrs.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hts.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ias.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ips.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lls.lst</v>
-<v>SmartHandle-000\SmartHandle\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lns.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -597,11 +549,11 @@
 <name v=".\main_cm0p.c" />
 <name v=".\TopDesign\TopDesign.cysch" />
 <name v=".\AppProcess.c" />
-<name v=".\Transmission.c" />
 <name v=".\AccDriver.c" />
-<name v=".\KinOS.h" />
 <name v=".\AccDriver.h" />
-<name v=".\Generated_Source\PSoC6\BLE_config.h" />
+<name v=".\Transmission.c" />
+<name v=".\KinOS.h" />
+<name v=".\Transmission.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -609,7 +561,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1575, 744" SelectedTabbedMdiWindow="b102efd4-396b-42ad-9750-5da35a09b42b"><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.c" Guid="c1074981-d5f8-49f3-a1eb-fbd78802ff6f" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cydwr" Guid="a77e0d33-7ece-4cc3-b8c0-50d2ba06a00d" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\main_cm0p.c" Guid="e2d66ae4-f56b-421c-987b-b9bd7934783c" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\TopDesign\TopDesign.cysch" Guid="23a114c1-fdb9-4432-afc8-04e6266aa9b8" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AppProcess.c" Guid="af698d9e-dfd2-4f00-bbb0-cd6e57ce548a" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Transmission.c" Guid="b102efd4-396b-42ad-9750-5da35a09b42b" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AccDriver.c" Guid="2fbba446-535d-433b-b2fb-a8c2cf928b4a" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a6ceda8d-b727-44ce-8319-807daefcda24" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.h" Guid="08c55173-09d3-42ab-a8cc-01a2f18753d5" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AccDriver.h" Guid="b3ba7a02-3568-442c-9eca-7d2a1d1849dc" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Generated_Source\PSoC6\BLE_config.h" Guid="c365e35f-7b99-401c-9b28-3dc9e9082b5a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1575, 744" SelectedTabbedMdiWindow="af698d9e-dfd2-4f00-bbb0-cd6e57ce548a"><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.c" Guid="c1074981-d5f8-49f3-a1eb-fbd78802ff6f" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\SmartHandle.cydwr" Guid="a77e0d33-7ece-4cc3-b8c0-50d2ba06a00d" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\main_cm0p.c" Guid="e2d66ae4-f56b-421c-987b-b9bd7934783c" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\TopDesign\TopDesign.cysch" Guid="23a114c1-fdb9-4432-afc8-04e6266aa9b8" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AppProcess.c" Guid="af698d9e-dfd2-4f00-bbb0-cd6e57ce548a" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AccDriver.c" Guid="2fbba446-535d-433b-b2fb-a8c2cf928b4a" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\AccDriver.h" Guid="b3ba7a02-3568-442c-9eca-7d2a1d1849dc" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Transmission.c" Guid="b102efd4-396b-42ad-9750-5da35a09b42b" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\KinOS.h" Guid="08c55173-09d3-42ab-a8cc-01a2f18753d5" /><DocumentWindow Key="C:\Users\salaz\Desktop\SmartHandle\SmartHandle.cydsn\Transmission.h" Guid="5b030992-1f62-413f-91b0-7c563d47267e" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a6ceda8d-b727-44ce-8319-807daefcda24" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
