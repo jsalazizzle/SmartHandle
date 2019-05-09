@@ -9,7 +9,7 @@
 #define BT_REGISTER_DEV     0x0003
 #define BT_SET_LIGHT_COLOR  0x0004
 #define BT_TIME_SYNC        0x0005
-
+ 
 
 void AppProcess_Start()
 {
@@ -35,22 +35,29 @@ void AppProcess_Start()
         
         if(KinOS_CheckInbox(7 * sizeof(uint8),(uint8*)&dt_buffer))
         {
+            int i = 0;
+
             switch(dt_buffer[0])
             {
                 case BT_CONFIG_LIGHT:
-                    DEBUG_PRINTF("0x00 Received \r\n");
+                    DEBUG_PRINTF("0x00 Received -- Color Configuration \r\n");
+                    for(i = 0; i < 7; i++) {
+                        DEBUG_PRINTF("%d ", dt_buffer[i]);
+                    }
+                    DEBUG_PRINTF("\r\n");
                     KinOS_ConfigureLight(dt_buffer[1], dt_buffer[2], 255, dt_buffer[4]);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
                 case BT_CONFIG_ALARM:
-                    DEBUG_PRINTF("0x02 Received \r\n");
+                    DEBUG_PRINTF("0x02 Received -- Alarm Configuration \r\n");
+                    DEBUG_PRINTF("Alarm Intensity: %d", dt_buffer[2]);
                     KinOS_ConfigureChime(dt_buffer[1], dt_buffer[2]);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
                 case BT_REGISTER_DEV:
-                    DEBUG_PRINTF("0x03 Received \r\n");
+                    DEBUG_PRINTF("0x03 Received -- Registration Configuration \r\n");
                     uint8 token = 0xFF;
                     KinOS_SendResult(1,&token);
                     DEBUG_WAIT_UART_TX_COMPLETE();
