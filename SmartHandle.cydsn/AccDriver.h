@@ -67,7 +67,7 @@ enum Settings
     
 void AccDriver_Init();
 bool AccDriver_OperationDone();
-void readAccData(acc_sample);
+void readAccData(acc_sample*);
 int32 AccDriver_UpdateSetting(uint8 setting_type, int32 setting_value);
 
 //-----------------------------------------//

@@ -167,17 +167,17 @@ void AccDriver_Init()
     return;
 }
 
-void readAccData(acc_sample data)
+void readAccData(acc_sample* data)
 {
     int16 x_val, y_val, z_val;
     //acc_sample data;
 
-    data.sensor_type = ACC;
-    data.x_raw = ReadRegister(ACC_OUT_X_H) << 8 | ReadRegister(ACC_OUT_X_L);
-    data.y_raw = ReadRegister(ACC_OUT_Y_H) << 8 | ReadRegister(ACC_OUT_Y_L);
-    data.z_raw = ReadRegister(ACC_OUT_Z_H) << 8 | ReadRegister(ACC_OUT_Z_L);
+    data->sensor_type = ACC;
+    data->x_raw = ReadRegister(ACC_OUT_X_H) << 8 | ReadRegister(ACC_OUT_X_L);
+    data->y_raw = ReadRegister(ACC_OUT_Y_H) << 8 | ReadRegister(ACC_OUT_Y_L);
+    data->z_raw = ReadRegister(ACC_OUT_Z_H) << 8 | ReadRegister(ACC_OUT_Z_L);
     
-    return data;
+    //return data;
 }
 bool AccDriver_OperationDone()
 {

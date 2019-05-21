@@ -18,7 +18,7 @@ void AppProcess_Start()
     
     epoch current_time, prev_time;
     uint8 dt_buffer[7],battery_percentage = 100;
-    acc_sample data;
+    acc_sample* data;
     
     while(true) {
         
