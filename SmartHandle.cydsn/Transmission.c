@@ -322,22 +322,22 @@ bool Transmission_Disconnect()
     return (Cy_BLE_GAP_Disconnect(&disconnectInfo) == CY_BLE_SUCCESS);
 }
 
-void Transmission_SendAcc(acc_sample acc_data)
+void Transmission_SendAcc(acc_sample* acc_data)
 {
     // Check for pending bluetooth events, triggers Transmission_EventHandler()
-    Cy_BLE_ProcessEvents();
+    //Cy_BLE_ProcessEvents();
     
     // Send data to remote device if data available in buffer
-    static uint8 data[NUM_BYTES_PER_PACKET];
+    //static uint8 data[NUM_BYTES_PER_PACKET];
     if(is_connected)
     {
         if(Cy_BLE_GATT_GetBusyStatus(cy_ble_connHandle[0].attId) == CY_BLE_STACK_STATE_FREE)
         {   
-            uint8 x_val[2] = { (uint8) (acc_data.x_raw >> 8), (uint8) (acc_data.x_raw & 0xFF)};
-            uint8 y_val[2] = { (uint8) (acc_data.y_raw >> 8), (uint8) (acc_data.y_raw & 0xFF)};
-            uint8 z_val[2] = { (uint8) (acc_data.z_raw >> 8), (uint8) (acc_data.z_raw & 0xFF)};
+            uint8 x_val[2] = { (uint8) (acc_data->x_raw >> 8), (uint8) (acc_data->x_raw & 0xFF)};
+            uint8 y_val[2] = { (uint8) (acc_data->y_raw >> 8), (uint8) (acc_data->y_raw & 0xFF)};
+            uint8 z_val[2] = { (uint8) (acc_data->z_raw >> 8), (uint8) (acc_data->z_raw & 0xFF)};
             
-            cy_stc_ble_gatt_value_t x_data = { .val = x_val, .len = 2};
+            /*cy_stc_ble_gatt_value_t x_data = { .val = x_val, .len = 2};
             cy_stc_ble_gatt_value_t y_data = { .val = y_val, .len = 2};
             cy_stc_ble_gatt_value_t z_data = { .val = z_val, .len = 2};
             
@@ -361,7 +361,17 @@ void Transmission_SendAcc(acc_sample acc_data)
             
             Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&x_handleVal);
             Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&y_handleVal);
-            Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&z_handleVal);
+            Cy_BLE_GATTS_SendNotification(&cy_ble_connHandle[0],&z_handleVal);*/
+            
+            cy_stc_ble_gatts_handle_value_ntf_t ntfHandle =
+            {
+                .connHandle = cy_ble_connHandle[0],
+                .handleValPair.attrHandle = CY_BLE_DEVICE_INTERFACE_ACCEL_X_CHAR_HANDLE,
+                .handleValPair.value.val = x_val,
+                .handleValPair.value.len = (2)*sizeof(uint8)
+            };
+            
+            Cy_BLE_GATTS_Notification(&ntfHandle);
         }
     }
     

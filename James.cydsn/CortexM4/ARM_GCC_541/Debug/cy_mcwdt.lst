@@ -1,0 +1,2859 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"cy_mcwdt.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.Cy_MCWDT_Init,"ax",%progbits
+  21              		.align	2
+  22              		.global	Cy_MCWDT_Init
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	Cy_MCWDT_Init, %function
+  26              	Cy_MCWDT_Init:
+  27              	.LFB149:
+  28              		.file 1 "Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\mcwdt\\cy_mcwdt.c"
+   1:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * \file cy_mcwdt.c
+   3:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * \version 1.10.1
+   4:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+   5:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  Description:
+   6:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *   Provides a system API for the MCWDT driver.
+   7:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+   8:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** ********************************************************************************
+   9:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+  10:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *******************************************************************************/
+  14:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  15:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** #include "cy_mcwdt.h"
+  16:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  17:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** #if defined(__cplusplus)
+  18:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** extern "C" {
+  19:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** #endif
+  20:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  21:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** /*******************************************************************************
+  22:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * Function Name: Cy_MCWDT_Init
+  23:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** ****************************************************************************//**
+  24:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  25:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * Initializes the MCWDT block.
+  26:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  27:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \param base
+  28:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The base pointer to a structure that describes the registers.
+  29:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 2
+
+
+  30:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \param config
+  31:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The pointer to a structure that contains component configuration data.
+  32:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  33:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * \return cy_en_mcwdt_status_t
+  34:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *     *base checking result. If the pointer is NULL, returns error.
+  35:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  36:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \note
+  37:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  This API should not be called when the counters are running. Prior to calling
+  38:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  this API the counter should be disabled.
+  39:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  40:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *******************************************************************************/
+  41:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** cy_en_mcwdt_status_t Cy_MCWDT_Init(MCWDT_STRUCT_Type *base, cy_stc_mcwdt_config_t const *config)
+  42:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** {
+  29              		.loc 1 42 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              	.LVL0:
+  43:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     cy_en_mcwdt_status_t ret = CY_MCWDT_BAD_PARAM;
+  44:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  45:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     if ((base != NULL) && (config != NULL))
+  34              		.loc 1 45 0
+  35 0000 0028     		cmp	r0, #0
+  36 0002 67D0     		beq	.L13
+  42:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     cy_en_mcwdt_status_t ret = CY_MCWDT_BAD_PARAM;
+  37              		.loc 1 42 0 discriminator 1
+  38 0004 38B5     		push	{r3, r4, r5, lr}
+  39              		.cfi_def_cfa_offset 16
+  40              		.cfi_offset 3, -16
+  41              		.cfi_offset 4, -12
+  42              		.cfi_offset 5, -8
+  43              		.cfi_offset 14, -4
+  44 0006 0546     		mov	r5, r0
+  45              		.loc 1 45 0 discriminator 1
+  46 0008 0029     		cmp	r1, #0
+  47 000a 65D0     		beq	.L14
+  46:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     {
+  47:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L2(CY_MCWDT_IS_MATCH_VALID(config->c0ClearOnMatch, config->c0Match));
+  48              		.loc 1 47 0
+  49 000c 0B7A     		ldrb	r3, [r1, #8]	@ zero_extendqisi2
+  50 000e 1BB1     		cbz	r3, .L3
+  51              		.loc 1 47 0 is_stmt 0 discriminator 1
+  52 0010 0B88     		ldrh	r3, [r1]
+  53 0012 B3FA83F3 		clz	r3, r3
+  54 0016 5B09     		lsrs	r3, r3, #5
+  55              	.L3:
+  56 0018 0C46     		mov	r4, r1
+  57              		.loc 1 47 0 discriminator 4
+  58 001a 1BB1     		cbz	r3, .L4
+  59              		.loc 1 47 0 discriminator 5
+  60 001c 2F21     		movs	r1, #47
+  61              	.LVL1:
+  62 001e 2F48     		ldr	r0, .L18
+  63              	.LVL2:
+  64 0020 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+  65              	.LVL3:
+  66              	.L4:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 3
+
+
+  48:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L2(CY_MCWDT_IS_MATCH_VALID(config->c1ClearOnMatch, config->c1Match));
+  67              		.loc 1 48 0 is_stmt 1
+  68 0024 637A     		ldrb	r3, [r4, #9]	@ zero_extendqisi2
+  69 0026 1BB1     		cbz	r3, .L5
+  70              		.loc 1 48 0 is_stmt 0 discriminator 1
+  71 0028 6388     		ldrh	r3, [r4, #2]
+  72 002a B3FA83F3 		clz	r3, r3
+  73 002e 5B09     		lsrs	r3, r3, #5
+  74              	.L5:
+  75              		.loc 1 48 0 discriminator 4
+  76 0030 1BB1     		cbz	r3, .L6
+  77              		.loc 1 48 0 discriminator 5
+  78 0032 3021     		movs	r1, #48
+  79 0034 2948     		ldr	r0, .L18
+  80 0036 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+  81              	.LVL4:
+  82              	.L6:
+  49:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L2(CY_MCWDT_IS_BIT_VALID(config->c2ToggleBit));
+  83              		.loc 1 49 0 is_stmt 1
+  84 003a A379     		ldrb	r3, [r4, #6]	@ zero_extendqisi2
+  85 003c 1F2B     		cmp	r3, #31
+  86 003e 03D9     		bls	.L7
+  87              		.loc 1 49 0 is_stmt 0 discriminator 1
+  88 0040 3121     		movs	r1, #49
+  89 0042 2648     		ldr	r0, .L18
+  90 0044 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+  91              	.LVL5:
+  92              	.L7:
+  50:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L3(CY_MCWDT_IS_MODE_VALID((cy_en_mcwdtmode_t)config->c0Mode));
+  93              		.loc 1 50 0 is_stmt 1
+  94 0048 2379     		ldrb	r3, [r4, #4]	@ zero_extendqisi2
+  95 004a 032B     		cmp	r3, #3
+  96 004c 03D9     		bls	.L8
+  97              		.loc 1 50 0 is_stmt 0 discriminator 1
+  98 004e 3221     		movs	r1, #50
+  99 0050 2248     		ldr	r0, .L18
+ 100 0052 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+ 101              	.LVL6:
+ 102              	.L8:
+  51:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L3(CY_MCWDT_IS_MODE_VALID((cy_en_mcwdtmode_t)config->c1Mode));
+ 103              		.loc 1 51 0 is_stmt 1
+ 104 0056 6379     		ldrb	r3, [r4, #5]	@ zero_extendqisi2
+ 105 0058 032B     		cmp	r3, #3
+ 106 005a 03D9     		bls	.L9
+ 107              		.loc 1 51 0 is_stmt 0 discriminator 1
+ 108 005c 3321     		movs	r1, #51
+ 109 005e 1F48     		ldr	r0, .L18
+ 110 0060 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+ 111              	.LVL7:
+ 112              	.L9:
+  52:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         CY_ASSERT_L3(CY_MCWDT_IS_MODE_VALID((cy_en_mcwdtmode_t)config->c2Mode));
+ 113              		.loc 1 52 0 is_stmt 1
+ 114 0064 E379     		ldrb	r3, [r4, #7]	@ zero_extendqisi2
+ 115 0066 032B     		cmp	r3, #3
+ 116 0068 03D9     		bls	.L10
+ 117              		.loc 1 52 0 is_stmt 0 discriminator 1
+ 118 006a 3421     		movs	r1, #52
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 4
+
+
+ 119 006c 1B48     		ldr	r0, .L18
+ 120 006e FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+ 121              	.LVL8:
+ 122              	.L10:
+  53:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  54:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         base->MCWDT_MATCH = _VAL2FLD(MCWDT_STRUCT_MCWDT_MATCH_WDT_MATCH1, config->c1Match) |
+ 123              		.loc 1 54 0 is_stmt 1
+ 124 0072 6288     		ldrh	r2, [r4, #2]
+  55:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                  _VAL2FLD(MCWDT_STRUCT_MCWDT_MATCH_WDT_MATCH0, config->c0Match);
+ 125              		.loc 1 55 0
+ 126 0074 2388     		ldrh	r3, [r4]
+  54:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                  _VAL2FLD(MCWDT_STRUCT_MCWDT_MATCH_WDT_MATCH0, config->c0Match);
+ 127              		.loc 1 54 0
+ 128 0076 43EA0243 		orr	r3, r3, r2, lsl #16
+ 129 007a EB60     		str	r3, [r5, #12]
+  56:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  57:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         base->MCWDT_CONFIG = _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_BITS2, config->c2ToggleBit)    
+ 130              		.loc 1 57 0
+ 131 007c A379     		ldrb	r3, [r4, #6]	@ zero_extendqisi2
+ 132 007e 1B06     		lsls	r3, r3, #24
+ 133 0080 03F0F851 		and	r1, r3, #520093696
+  58:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE2, config->c2Mode)       
+ 134              		.loc 1 58 0
+ 135 0084 E279     		ldrb	r2, [r4, #7]	@ zero_extendqisi2
+ 136 0086 1304     		lsls	r3, r2, #16
+ 137 0088 03F48033 		and	r3, r3, #65536
+  57:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE2, config->c2Mode)       
+ 138              		.loc 1 57 0
+ 139 008c 0B43     		orrs	r3, r3, r1
+  59:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR0, config->c0ClearOnMatc
+ 140              		.loc 1 59 0
+ 141 008e 227A     		ldrb	r2, [r4, #8]	@ zero_extendqisi2
+ 142 0090 9200     		lsls	r2, r2, #2
+ 143 0092 02F00402 		and	r2, r2, #4
+  58:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE2, config->c2Mode)       
+ 144              		.loc 1 58 0
+ 145 0096 1343     		orrs	r3, r3, r2
+  60:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR1, config->c1ClearOnMatc
+ 146              		.loc 1 60 0
+ 147 0098 627A     		ldrb	r2, [r4, #9]	@ zero_extendqisi2
+ 148 009a 9202     		lsls	r2, r2, #10
+ 149 009c 02F48062 		and	r2, r2, #1024
+  59:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR0, config->c0ClearOnMatc
+ 150              		.loc 1 59 0
+ 151 00a0 1343     		orrs	r3, r3, r2
+  61:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                (config->c1c2Cascade ? MCWDT_STRUCT_MCWDT_CONFIG_WDT_CASCADE1_2_Msk 
+ 152              		.loc 1 61 0
+ 153 00a2 E27A     		ldrb	r2, [r4, #11]	@ zero_extendqisi2
+ 154 00a4 12B1     		cbz	r2, .L15
+ 155 00a6 4FF40062 		mov	r2, #2048
+ 156 00aa 00E0     		b	.L11
+ 157              	.L15:
+ 158 00ac 0022     		movs	r2, #0
+ 159              	.L11:
+  60:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR1, config->c1ClearOnMatc
+ 160              		.loc 1 60 0
+ 161 00ae 1343     		orrs	r3, r3, r2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 5
+
+
+  62:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE1, config->c1Mode)       
+ 162              		.loc 1 62 0
+ 163 00b0 6279     		ldrb	r2, [r4, #5]	@ zero_extendqisi2
+ 164 00b2 1202     		lsls	r2, r2, #8
+ 165 00b4 02F44072 		and	r2, r2, #768
+  61:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                (config->c1c2Cascade ? MCWDT_STRUCT_MCWDT_CONFIG_WDT_CASCADE1_2_Msk 
+ 166              		.loc 1 61 0
+ 167 00b8 1343     		orrs	r3, r3, r2
+  63:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                (config->c0c1Cascade ? MCWDT_STRUCT_MCWDT_CONFIG_WDT_CASCADE0_1_Msk 
+ 168              		.loc 1 63 0
+ 169 00ba A27A     		ldrb	r2, [r4, #10]	@ zero_extendqisi2
+ 170 00bc 0AB1     		cbz	r2, .L16
+ 171 00be 0822     		movs	r2, #8
+ 172 00c0 00E0     		b	.L12
+ 173              	.L16:
+ 174 00c2 0022     		movs	r2, #0
+ 175              	.L12:
+  62:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE1, config->c1Mode)       
+ 176              		.loc 1 62 0
+ 177 00c4 1343     		orrs	r3, r3, r2
+  64:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE0, config->c0Mode);
+ 178              		.loc 1 64 0
+ 179 00c6 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
+ 180 00c8 02F00302 		and	r2, r2, #3
+  63:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                (config->c0c1Cascade ? MCWDT_STRUCT_MCWDT_CONFIG_WDT_CASCADE0_1_Msk 
+ 181              		.loc 1 63 0
+ 182 00cc 1343     		orrs	r3, r3, r2
+  57:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                                _VAL2FLD(MCWDT_STRUCT_MCWDT_CONFIG_WDT_MODE2, config->c2Mode)       
+ 183              		.loc 1 57 0
+ 184 00ce 2B61     		str	r3, [r5, #16]
+ 185              	.LVL9:
+  65:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                            
+  66:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         ret = CY_MCWDT_SUCCESS;
+ 186              		.loc 1 66 0
+ 187 00d0 0020     		movs	r0, #0
+ 188 00d2 38BD     		pop	{r3, r4, r5, pc}
+ 189              	.LVL10:
+ 190              	.L13:
+ 191              		.cfi_def_cfa_offset 0
+ 192              		.cfi_restore 3
+ 193              		.cfi_restore 4
+ 194              		.cfi_restore 5
+ 195              		.cfi_restore 14
+  43:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 196              		.loc 1 43 0
+ 197 00d4 0248     		ldr	r0, .L18+4
+ 198              	.LVL11:
+  67:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     }
+  68:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****                            
+  69:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     return (ret);
+  70:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** }
+ 199              		.loc 1 70 0
+ 200 00d6 7047     		bx	lr
+ 201              	.LVL12:
+ 202              	.L14:
+ 203              		.cfi_def_cfa_offset 16
+ 204              		.cfi_offset 3, -16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 6
+
+
+ 205              		.cfi_offset 4, -12
+ 206              		.cfi_offset 5, -8
+ 207              		.cfi_offset 14, -4
+  43:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 208              		.loc 1 43 0
+ 209 00d8 0148     		ldr	r0, .L18+4
+ 210              	.LVL13:
+ 211              		.loc 1 70 0
+ 212 00da 38BD     		pop	{r3, r4, r5, pc}
+ 213              	.LVL14:
+ 214              	.L19:
+ 215              		.align	2
+ 216              	.L18:
+ 217 00dc 00000000 		.word	.LC0
+ 218 00e0 0100D600 		.word	14024705
+ 219              		.cfi_endproc
+ 220              	.LFE149:
+ 221              		.size	Cy_MCWDT_Init, .-Cy_MCWDT_Init
+ 222              		.section	.text.Cy_MCWDT_DeInit,"ax",%progbits
+ 223              		.align	2
+ 224              		.global	Cy_MCWDT_DeInit
+ 225              		.thumb
+ 226              		.thumb_func
+ 227              		.type	Cy_MCWDT_DeInit, %function
+ 228              	Cy_MCWDT_DeInit:
+ 229              	.LFB150:
+  71:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  72:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  73:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** /*******************************************************************************
+  74:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * Function Name: Cy_MCWDT_DeInit
+  75:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** ****************************************************************************//**
+  76:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  77:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  De-initializes the MCWDT block, returns register values to their default state.
+  78:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  79:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \param base
+  80:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The base pointer to a structure that describes the registers.
+  81:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  82:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \note
+  83:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  This API should not be called when the counters are running. Prior to calling
+  84:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  this API the counter should be disabled.
+  85:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+  86:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *******************************************************************************/
+  87:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** void Cy_MCWDT_DeInit(MCWDT_STRUCT_Type *base)
+  88:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** {
+ 230              		.loc 1 88 0
+ 231              		.cfi_startproc
+ 232              		@ args = 0, pretend = 0, frame = 0
+ 233              		@ frame_needed = 0, uses_anonymous_args = 0
+ 234              	.LVL15:
+ 235 0000 10B5     		push	{r4, lr}
+ 236              		.cfi_def_cfa_offset 8
+ 237              		.cfi_offset 4, -8
+ 238              		.cfi_offset 14, -4
+ 239 0002 0446     		mov	r4, r0
+ 240              	.LVL16:
+ 241              	.LBB4:
+ 242              	.LBB5:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 7
+
+
+ 243              		.file 2 "Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\mcwdt\\cy_mcwdt.h"
+   1:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \file cy_mcwdt.h
+   3:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \version 1.10.1
+   4:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+   5:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Provides an API declaration of the Cypress PDL 3.0 MCWDT driver
+   6:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+   7:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ********************************************************************************
+   8:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \copyright
+   9:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Copyright 2016-2018, Cypress Semiconductor Corporation.  All rights reserved.
+  10:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+  14:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+  15:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /**
+  16:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \defgroup group_mcwdt Multi-Counter Watchdog (MCWDT)
+  17:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \{
+  18:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * A MCWDT has two 16-bit counters and one 32-bit counter. 
+  19:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * You can use this driver to create a free-running
+  20:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * timer or generate periodic interrupts. The driver also
+  21:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * includes support for the watchdog function to recover from CPU or
+  22:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * firmware failures.
+  23:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  24:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * There are two primary use cases for MCWDT: generating periodic CPU interrupts;
+  25:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * and implementing a free-running timer. Both have many applications in
+  26:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * embedded systems:
+  27:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * * Measuring time between events
+  28:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * * Generating periodic events
+  29:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * * Synchronizing actions
+  30:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * * Real-time clocking
+  31:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * * Polling
+  32:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  33:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * An additional use case is to implement a watchdog used for recovering from a CPU or
+  34:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * firmware failure.
+  35:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * 
+  36:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \section group_mcwdt_configuration Configuration Considerations
+  37:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  38:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Each MCWDT may be configured for a particular product. 
+  39:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * One MCWDT block can be associated with only one CPU during runtime. 
+  40:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * A single MCWDT is not intended to be used by multiple CPUs simultaneously. 
+  41:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Each block contains three sub-counters, each of which can be configured for 
+  42:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * various system utility functions - free running counter, periodic interrupts, 
+  43:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * watchdog reset, or three interrupts followed by a watchdog reset.
+  44:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * All counters are clocked by either LFCLK (nominal 32 kHz) or by a cascaded 
+  45:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * counter.
+  46:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * A simplified diagram of the MCWDT hardware is shown below:
+  47:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \image html mcwdt.png
+  48:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * The frequency of the periodic interrupts can be configured using the Match 
+  49:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * value with combining Clear on match option, which can be set individually 
+  50:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * for each counter using Cy_MCWDT_SetClearOnMatch(). When the Clear on match option 
+  51:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * is not set, the periodic interrupts of the C0 and C1 16-bit sub-counters occur 
+  52:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * after 65535 counts and the match value defines the shift between interrupts 
+  53:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * (see the figure below). The enabled Clear on match option 
+  54:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * resets the counter when the interrupt occurs.
+  55:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \image html mcwdt_counters.png
+  56:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * 32-bit sub-counter C2 does not have Clear on match option. 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 8
+
+
+  57:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * The interrupt of counter C2 occurs when the counts equal 
+  58:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * 2<sup>Toggle bit</sup> value.
+  59:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \image html mcwdt_subcounters.png
+  60:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * To set up an MCWDT, provide the configuration parameters in the 
+  61:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * cy_stc_mcwdt_config_t structure. Then call  
+  62:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Cy_MCWDT_Init() to initialize the driver. 
+  63:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Call Cy_MCWDT_Enable() to enable all specified counters.
+  64:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  65:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * You can also set the mode of operation for any counter. If you choose
+  66:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * interrupt mode, use Cy_MCWDT_SetInterruptMask() with the 
+  67:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * parameter for the masks described in Macro Section. All counter interrupts 
+  68:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * are OR'd together to from a single combined MCWDT interrupt.
+  69:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Additionally, enable the Global interrupts and initialize the referenced 
+  70:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * interrupt by setting the priority and the interrupt vector using  
+  71:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \ref Cy_SysInt_Init() of the sysint driver.
+  72:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * 
+  73:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * The values of the MCWDT counters can be monitored using 
+  74:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Cy_MCWDT_GetCount().
+  75:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  76:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \note In addition to the MCWDTs, each device has a separate watchdog timer
+  77:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * (WDT) that can also be used to generate a watchdog reset or periodic
+  78:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * interrupts. For more information on the WDT, see the appropriate section
+  79:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * of the PDL.
+  80:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  81:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \section group_mcwdt_more_information More Information
+  82:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  83:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * For more information on the MCWDT peripheral, refer to 
+  84:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * the technical reference manual (TRM).
+  85:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  86:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \section group_mcwdt_MISRA MISRA-C Compliance]
+  87:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * The mcwdt driver does not have any specific deviations.
+  88:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+  89:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \section group_mcwdt_changelog Changelog
+  90:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * <table class="doxtable">
+  91:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   <tr><th>Version</th><th>Changes</th><th>Reason for Change</th></tr>
+  92:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   <tr>
+  93:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>1.10.1</td>
+  94:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>Updated description of the \ref cy_stc_mcwdt_config_t structure type</td>
+  95:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>Documentation update and clarification</td>
+  96:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   </tr>
+  97:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   <tr>
+  98:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>1.10</td>
+  99:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>Added input parameter validation to the API functions.<br>
+ 100:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     Added API function GetCountCascaded()</td>
+ 101:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td></td>
+ 102:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   </tr>
+ 103:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   <tr>
+ 104:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>1.0</td>
+ 105:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td>Initial version</td>
+ 106:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *     <td></td>
+ 107:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *   </tr>
+ 108:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * </table>
+ 109:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 110:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \defgroup group_mcwdt_macros Macros
+ 111:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \defgroup group_mcwdt_functions Functions
+ 112:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \defgroup group_mcwdt_data_structures Data Structures
+ 113:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \defgroup group_mcwdt_enums Enumerated Types
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 9
+
+
+ 114:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** */
+ 115:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 116:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #ifndef CY_MCWDT_H
+ 117:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_H
+ 118:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 119:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #if defined(__cplusplus)
+ 120:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** extern "C" {
+ 121:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #endif
+ 122:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 123:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #include <stdbool.h>
+ 124:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #include <stddef.h>
+ 125:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #include "cy_device_headers.h"
+ 126:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #include "syslib/cy_syslib.h"
+ 127:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 128:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #ifndef CY_IP_MXS40SRSS_MCWDT
+ 129:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     #error "The MCWDT driver is not supported on this device"
+ 130:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #endif
+ 131:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 132:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /**
+ 133:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \addtogroup group_mcwdt_data_structures
+ 134:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \{
+ 135:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** */
+ 136:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 137:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** The MCWDT component configuration structure. */
+ 138:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** typedef struct
+ 139:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 140:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint16_t c0Match;        /**< The sub-counter#0 match comparison value, for interrupt or watchd
+ 141:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   Range: 0 - 65535 for c0ClearOnMatch = 0 and 1 - 65535 for 
+ 142:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   c0ClearOnMatch = 1. */
+ 143:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint16_t c1Match;        /**< The sub-counter#1 match comparison value, for interrupt or watchd
+ 144:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   Range: 0 - 65535 for c1ClearOnMatch = 0 and 1 - 65535 for 
+ 145:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   c1ClearOnMatch = 1. */
+ 146:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint8_t  c0Mode;         /**< The sub-counter#0 mode. It can have the following values: \ref CY
+ 147:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   \ref CY_MCWDT_MODE_INT, \ref CY_MCWDT_MODE_RESET and \ref CY_MCWD
+ 148:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint8_t  c1Mode;         /**< The sub-counter#1 mode.  It can have the following values: \ref C
+ 149:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   \ref CY_MCWDT_MODE_INT, \ref CY_MCWDT_MODE_RESET and \ref CY_MCWD
+ 150:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint8_t  c2ToggleBit;    /**< The sub-counter#2 Period / Toggle Bit value. 
+ 151:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   Range: 0 - 31. */
+ 152:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint8_t  c2Mode;         /**< The sub-counter#2 mode. It can have the following values: \ref CY
+ 153:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   and \ref CY_MCWDT_MODE_INT. */
+ 154:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c0ClearOnMatch; /**< The sub-counter#0 Clear On Match parameter enabled/disabled. */
+ 155:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c1ClearOnMatch; /**< The sub-counter#1 Clear On Match parameter enabled/disabled. */
+ 156:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c0c1Cascade;    /**< The sub-counter#1 is clocked by LFCLK or from sub-counter#0 casca
+ 157:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     bool     c1c2Cascade;    /**< The sub-counter#2 is clocked by LFCLK or from sub-counter#1 casca
+ 158:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** } cy_stc_mcwdt_config_t;
+ 159:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 160:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \} group_mcwdt_data_structures */
+ 161:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 162:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /**
+ 163:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \addtogroup group_mcwdt_macros
+ 164:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \{
+ 165:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** */
+ 166:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 167:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** Driver major version */
+ 168:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_DRV_VERSION_MAJOR       1
+ 169:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 170:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** Driver minor version */
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 10
+
+
+ 171:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_DRV_VERSION_MINOR       10
+ 172:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 173:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \cond INTERNAL_MACROS */
+ 174:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 175:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /***************************************
+ 176:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *        Registers Constants
+ 177:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ***************************************/
+ 178:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 179:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_LOCK_CLR0      (1u)
+ 180:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_LOCK_CLR1      (2u)
+ 181:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_LOCK_SET01     (3u)
+ 182:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 183:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_BYTE_SHIFT     (8u)
+ 184:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_C0C1_MODE_MASK (3u)
+ 185:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_C2_MODE_MASK   (1u)
+ 186:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 187:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 188:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /***************************************
+ 189:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *            API Constants
+ 190:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ***************************************/
+ 191:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 192:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_ALL_WDT_ENABLE_Msk (MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE0_Msk | MCWDT_STRUCT_MCWDT_CT
+ 193:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE2_Msk)
+ 194:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   
+ 195:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR0_Pos (0u)
+ 196:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR1_Pos (1u)
+ 197:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR2_Pos (2u)
+ 198:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR_Pos  (0UL)
+ 199:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 200:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_C2_MODE_MASK   (1u) 
+ 201:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                   
+ 202:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \endcond */
+ 203:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 204:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_ID       CY_PDL_DRV_ID(0x35u)                      /**< MCWDT PDL ID */
+ 205:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 206:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR0     (1UL << CY_MCWDT_CTR0_Pos)                /**< The sub-counter#0 mask. Th
+ 207:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    that handle multiple counters, i
+ 208:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    Cy_MCWDT_Disable(), Cy_MCWDT_Cle
+ 209:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR1     (1UL << CY_MCWDT_CTR1_Pos)                /**< The sub-counter#1 mask. Th
+ 210:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    that handle multiple counters, i
+ 211:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    Cy_MCWDT_Disable(), Cy_MCWDT_Cle
+ 212:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR2     (1UL << CY_MCWDT_CTR2_Pos)                /**< The sub-counter#2 mask. Th
+ 213:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    that handle multiple counters, i
+ 214:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    Cy_MCWDT_Disable(), Cy_MCWDT_Cle
+ 215:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_CTR_Msk  (CY_MCWDT_CTR0 | CY_MCWDT_CTR1 | CY_MCWDT_CTR2) /**< The mask for all sub
+ 216:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    that handle multiple counters, i
+ 217:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                                    Cy_MCWDT_Disable(), Cy_MCWDT_Cle
+ 218:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 219:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \} group_mcwdt_macros */
+ 220:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 221:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 222:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /**
+ 223:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \addtogroup group_mcwdt_enums
+ 224:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \{
+ 225:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** */
+ 226:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 227:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** The mcwdt sub-counter identifiers. */
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 11
+
+
+ 228:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** typedef enum
+ 229:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 230:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_COUNTER0,  /**< Sub-counter#0 identifier. */
+ 231:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_COUNTER1,  /**< Sub-counter#1 identifier. */
+ 232:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_COUNTER2   /**< Sub-counter#2 identifier. */
+ 233:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** } cy_en_mcwdtctr_t;
+ 234:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 235:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** The mcwdt modes. */
+ 236:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** typedef enum
+ 237:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 238:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_MODE_NONE,      /**< The No action mode. It is used for Set/GetMode functions. */
+ 239:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_MODE_INT,       /**< The Interrupt mode. It is used for Set/GetMode functions. */
+ 240:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_MODE_RESET,     /**< The Reset mode. It is used for Set/GetMode functions. */
+ 241:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_MODE_INT_RESET  /**< The Three interrupts then watchdog reset mode. It is used for 
+ 242:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                Set/GetMode functions. */
+ 243:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** } cy_en_mcwdtmode_t;
+ 244:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 245:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** The mcwdt cascading. */
+ 246:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** typedef enum
+ 247:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 248:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_CASCADE_NONE,  /**< The cascading is disabled. It is used for Set/GetCascade functions
+ 249:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_CASCADE_C0C1,  /**< The sub-counter#1 is clocked by LFCLK or from sub-counter#0 cascad
+ 250:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                               It is used for Set/GetCascade functions. */
+ 251:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_CASCADE_C1C2,  /**< The sub-counter#2 is clocked by LFCLK or from sub-counter#1 cascad
+ 252:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                               It is used for Set/GetCascade functions. */
+ 253:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_CASCADE_BOTH   /**< The sub-counter#1 is clocked by LFCLK or from sub-counter#0 cascad
+ 254:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                               and the sub-counter#2 is clocked by LFCLK or from sub-counter#1 casca
+ 255:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                               It is used for Set/GetCascade functions. */
+ 256:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** } cy_en_mcwdtcascade_t;
+ 257:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 258:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** The MCWDT error codes. */
+ 259:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** typedef enum 
+ 260:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 261:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_SUCCESS = 0x00u,                                            /**< Successful */
+ 262:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_MCWDT_BAD_PARAM = CY_MCWDT_ID | CY_PDL_STATUS_ERROR | 0x01u,     /**< One or more invalid pa
+ 263:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** } cy_en_mcwdt_status_t;
+ 264:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 265:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \} group_mcwdt_enums */
+ 266:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 267:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 268:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \cond PARAM_CHECK_MACROS */
+ 269:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 270:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** Parameter check macros */ 
+ 271:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_CNTS_MASK_VALID(counters)  (0U == ((counters) & (uint32_t)~CY_MCWDT_CTR_Msk)) 
+ 272:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                
+ 273:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_CNT_NUM_VALID(counter)    ((CY_MCWDT_COUNTER0 == (counter)) || \
+ 274:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_COUNTER1 == (counter)) || \
+ 275:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_COUNTER2 == (counter)))
+ 276:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 277:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_MODE_VALID(mode)          ((CY_MCWDT_MODE_NONE == (mode)) || \
+ 278:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_MODE_INT == (mode)) || \
+ 279:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_MODE_RESET == (mode)) || \
+ 280:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_MODE_INT_RESET == (mode)))
+ 281:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 282:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_ENABLE_VALID(enable)      (1UL >= (enable))
+ 283:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 284:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 12
+
+
+ 285:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_CASCADE_VALID(cascade)    ((CY_MCWDT_CASCADE_NONE == (cascade)) || \
+ 286:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_CASCADE_C0C1 == (cascade)) || \
+ 287:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_CASCADE_C1C2 == (cascade)) || \
+ 288:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                (CY_MCWDT_CASCADE_BOTH == (cascade)))
+ 289:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                                
+ 290:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_MATCH_VALID(clearOnMatch, match)  ((clearOnMatch) ? (1UL <= (match)) : true)
+ 291:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 292:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** #define CY_MCWDT_IS_BIT_VALID(bit)            (31UL >= (bit))                                      
+ 293:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 294:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                                           
+ 295:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /** \endcond */
+ 296:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 297:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 298:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /*******************************************************************************
+ 299:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *        Function Prototypes
+ 300:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+ 301:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 302:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /**
+ 303:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \addtogroup group_mcwdt_functions
+ 304:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * \{
+ 305:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** */
+ 306:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** cy_en_mcwdt_status_t     Cy_MCWDT_Init(MCWDT_STRUCT_Type *base, cy_stc_mcwdt_config_t const *config
+ 307:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                 void     Cy_MCWDT_DeInit(MCWDT_STRUCT_Type *base);
+ 308:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_Enable(MCWDT_STRUCT_Type *base, uint32_t counters, uint16_t waitU
+ 309:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_Disable(MCWDT_STRUCT_Type *base, uint32_t counters, uint16_t wait
+ 310:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetEnabledStatus(MCWDT_STRUCT_Type const *base, cy_en_mcwdtctr_t 
+ 311:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_Lock(MCWDT_STRUCT_Type *base);
+ 312:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_Unlock(MCWDT_STRUCT_Type *base);
+ 313:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetLockedStatus(MCWDT_STRUCT_Type const *base);
+ 314:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetMode(MCWDT_STRUCT_Type *base, cy_en_mcwdtctr_t counter, cy_en_
+ 315:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE cy_en_mcwdtmode_t Cy_MCWDT_GetMode(MCWDT_STRUCT_Type const *base, cy_en_mcwdtctr_t 
+ 316:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetClearOnMatch(MCWDT_STRUCT_Type *base, cy_en_mcwdtctr_t counter
+ 317:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetClearOnMatch(MCWDT_STRUCT_Type const *base, cy_en_mcwdtctr_t c
+ 318:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetCascade(MCWDT_STRUCT_Type *base, cy_en_mcwdtcascade_t cascade)
+ 319:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE cy_en_mcwdtcascade_t Cy_MCWDT_GetCascade(MCWDT_STRUCT_Type const *base);
+ 320:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetMatch(MCWDT_STRUCT_Type *base, cy_en_mcwdtctr_t counter, uint3
+ 321:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetMatch(MCWDT_STRUCT_Type const *base, cy_en_mcwdtctr_t counter)
+ 322:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetToggleBit(MCWDT_STRUCT_Type *base, uint32_t bit);
+ 323:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetToggleBit(MCWDT_STRUCT_Type const *base);
+ 324:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetCount(MCWDT_STRUCT_Type const *base, cy_en_mcwdtctr_t counter)
+ 325:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_ResetCounters(MCWDT_STRUCT_Type *base, uint32_t counters, uint16_
+ 326:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetInterruptStatus(MCWDT_STRUCT_Type const *base);
+ 327:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_ClearInterrupt(MCWDT_STRUCT_Type *base, uint32_t counters);
+ 328:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetInterrupt(MCWDT_STRUCT_Type *base, uint32_t counters);
+ 329:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetInterruptMask(MCWDT_STRUCT_Type const *base);
+ 330:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void     Cy_MCWDT_SetInterruptMask(MCWDT_STRUCT_Type *base, uint32_t counters);
+ 331:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetInterruptStatusMasked(MCWDT_STRUCT_Type const *base);
+ 332:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** uint32_t Cy_MCWDT_GetCountCascaded(MCWDT_STRUCT_Type const *base);
+ 333:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 334:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 335:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /*******************************************************************************
+ 336:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Function Name: Cy_MCWDT_Enable
+ 337:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ****************************************************************************//**
+ 338:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 339:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Enables all specified counters.
+ 340:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 341:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param base
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 13
+
+
+ 342:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The base pointer to a structure that describes registers.
+ 343:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 344:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param counters
+ 345:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  OR of all counters to enable. See the \ref CY_MCWDT_CTR0, CY_MCWDT_CTR1, and
+ 346:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  CY_MCWDT_CTR2  macros.
+ 347:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 348:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param waitUs
+ 349:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The function waits for some delay in microseconds before returning, 
+ 350:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  because the counter begins counting after two lf_clk cycles pass. 
+ 351:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The recommended value is 93 us.
+ 352:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \note
+ 353:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Setting this parameter to a zero means No wait. In this case, it is
+ 354:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  the user's responsibility to check whether the selected counters were enabled 
+ 355:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  immediately after the function call. This can be done by the 
+ 356:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Cy_MCWDT_GetEnabledStatus() API.
+ 357:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 358:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+ 359:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void Cy_MCWDT_Enable(MCWDT_STRUCT_Type *base, uint32_t counters, uint16_t waitUs)
+ 360:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 361:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint32_t enableCounters;
+ 362:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 363:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_ASSERT_L2(CY_MCWDT_IS_CNTS_MASK_VALID(counters));
+ 364:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     
+ 365:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     /* Extract particular counters for enable */
+ 366:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     enableCounters = ((0UL != (counters & CY_MCWDT_CTR0)) ? MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE0_Msk 
+ 367:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                      ((0UL != (counters & CY_MCWDT_CTR1)) ? MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE1_Msk 
+ 368:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                      ((0UL != (counters & CY_MCWDT_CTR2)) ? MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE2_Msk 
+ 369:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 370:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     base->MCWDT_CTL |= enableCounters;
+ 371:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 372:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     Cy_SysLib_DelayUs(waitUs);
+ 373:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** }
+ 374:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 375:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 376:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /*******************************************************************************
+ 377:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Function Name: Cy_MCWDT_Disable
+ 378:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ****************************************************************************//**
+ 379:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 380:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Disables all specified counters.
+ 381:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 382:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param base
+ 383:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The base pointer to a structure describing registers.
+ 384:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 385:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param counters
+ 386:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  OR of all counters to disable. See the \ref CY_MCWDT_CTR0, CY_MCWDT_CTR1, and
+ 387:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  CY_MCWDT_CTR2 macros.
+ 388:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 389:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param waitUs
+ 390:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The function waits for some delay in microseconds before returning, 
+ 391:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  because the counter stops counting after two lf_clk cycles pass. 
+ 392:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The recommended value is 93 us.
+ 393:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \note
+ 394:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Setting this parameter to a zero means No wait. In this case, it is 
+ 395:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  the user's responsibility to check whether the selected counters were disabled 
+ 396:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  immediately after the function call. This can be done by the 
+ 397:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Cy_MCWDT_GetEnabledStatus() API.
+ 398:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 14
+
+
+ 399:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+ 400:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void Cy_MCWDT_Disable(MCWDT_STRUCT_Type *base, uint32_t counters, uint16_t waitUs)
+ 401:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 402:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint32_t disableCounters;
+ 403:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 404:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_ASSERT_L2(CY_MCWDT_IS_CNTS_MASK_VALID(counters));
+ 405:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     
+ 406:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     /* Extract particular counters for disable */
+ 407:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     disableCounters = ((0UL != (counters & CY_MCWDT_CTR0)) ? MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE0_Msk
+ 408:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                       ((0UL != (counters & CY_MCWDT_CTR1)) ? MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE1_Msk
+ 409:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****                       ((0UL != (counters & CY_MCWDT_CTR2)) ? MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLE2_Msk
+ 410:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 411:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     base->MCWDT_CTL &= ~disableCounters;
+ 412:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 413:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     Cy_SysLib_DelayUs(waitUs);
+ 414:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** }
+ 415:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 416:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 417:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /*******************************************************************************
+ 418:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Function Name: Cy_MCWDT_GetEnabledStatus
+ 419:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ****************************************************************************//**
+ 420:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 421:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Reports the enabled status of the specified counter.
+ 422:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 423:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param base
+ 424:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The base pointer to a structure that describes registers.
+ 425:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 426:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param counter
+ 427:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The number of the MCWDT counter. The valid range is [0-2].
+ 428:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 429:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \return
+ 430:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The status of the MCWDT counter: 0 = disabled, 1 = enabled.
+ 431:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 432:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+ 433:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE uint32_t Cy_MCWDT_GetEnabledStatus(MCWDT_STRUCT_Type const *base, cy_en_mcwdtctr_t 
+ 434:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 435:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint32_t status = 0u;
+ 436:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 437:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     CY_ASSERT_L3(CY_MCWDT_IS_CNT_NUM_VALID(counter));
+ 438:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     
+ 439:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     switch (counter)
+ 440:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     {
+ 441:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****         case CY_MCWDT_COUNTER0:
+ 442:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             status = _FLD2VAL(MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLED0, base->MCWDT_CTL);
+ 443:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             break;
+ 444:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****         case CY_MCWDT_COUNTER1:
+ 445:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             status = _FLD2VAL(MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLED1, base->MCWDT_CTL);
+ 446:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             break;
+ 447:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****         case CY_MCWDT_COUNTER2:
+ 448:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             status = _FLD2VAL(MCWDT_STRUCT_MCWDT_CTL_WDT_ENABLED2, base->MCWDT_CTL);
+ 449:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             break;
+ 450:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 451:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****         default:
+ 452:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****             CY_ASSERT(0u != 0u);
+ 453:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****         break;
+ 454:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     }
+ 455:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 15
+
+
+ 456:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     return (status);
+ 457:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** }
+ 458:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 459:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 460:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /*******************************************************************************
+ 461:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Function Name: Cy_MCWDT_Lock
+ 462:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ****************************************************************************//**
+ 463:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 464:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Locks out configuration changes to all MCWDT registers.
+ 465:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 466:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param base
+ 467:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The base pointer to a structure that describes registers.
+ 468:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 469:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+ 470:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void Cy_MCWDT_Lock(MCWDT_STRUCT_Type *base)
+ 471:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 472:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint32_t interruptState;
+ 473:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 474:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     interruptState = Cy_SysLib_EnterCriticalSection();
+ 475:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 476:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     base->MCWDT_LOCK = _CLR_SET_FLD32U(base->MCWDT_LOCK, MCWDT_STRUCT_MCWDT_LOCK_MCWDT_LOCK, (uint3
+ 477:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 478:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     Cy_SysLib_ExitCriticalSection(interruptState);
+ 479:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** }
+ 480:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 481:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 482:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** /*******************************************************************************
+ 483:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** * Function Name: Cy_MCWDT_Unlock
+ 484:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** ****************************************************************************//**
+ 485:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 486:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  Unlocks the MCWDT configuration registers.
+ 487:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 488:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  \param base
+ 489:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *  The base pointer to a structure that describes registers.
+ 490:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *
+ 491:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** *******************************************************************************/
+ 492:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** __STATIC_INLINE void Cy_MCWDT_Unlock(MCWDT_STRUCT_Type *base)
+ 493:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** {
+ 494:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     uint32_t interruptState;
+ 495:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 496:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     interruptState = Cy_SysLib_EnterCriticalSection();
+ 244              		.loc 2 496 0
+ 245 0004 FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
+ 246              	.LVL17:
+ 497:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 498:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     base->MCWDT_LOCK = _CLR_SET_FLD32U(base->MCWDT_LOCK, MCWDT_STRUCT_MCWDT_LOCK_MCWDT_LOCK, (uint3
+ 247              		.loc 2 498 0
+ 248 0008 A36A     		ldr	r3, [r4, #40]
+ 249 000a 23F04043 		bic	r3, r3, #-1073741824
+ 250 000e 43F08043 		orr	r3, r3, #1073741824
+ 251 0012 A362     		str	r3, [r4, #40]
+ 499:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     base->MCWDT_LOCK = _CLR_SET_FLD32U(base->MCWDT_LOCK, MCWDT_STRUCT_MCWDT_LOCK_MCWDT_LOCK, (uint3
+ 252              		.loc 2 499 0
+ 253 0014 A36A     		ldr	r3, [r4, #40]
+ 254 0016 23F04043 		bic	r3, r3, #-1073741824
+ 255 001a 43F00043 		orr	r3, r3, #-2147483648
+ 256 001e A362     		str	r3, [r4, #40]
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 16
+
+
+ 500:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h **** 
+ 501:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.h ****     Cy_SysLib_ExitCriticalSection(interruptState);
+ 257              		.loc 2 501 0
+ 258 0020 FFF7FEFF 		bl	Cy_SysLib_ExitCriticalSection
+ 259              	.LVL18:
+ 260              	.LBE5:
+ 261              	.LBE4:
+  89:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     Cy_MCWDT_Unlock(base);
+  90:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+  91:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_CNTLOW    = 0UL;
+ 262              		.loc 1 91 0
+ 263 0024 0023     		movs	r3, #0
+ 264 0026 6360     		str	r3, [r4, #4]
+  92:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_CNTHIGH   = 0UL;
+ 265              		.loc 1 92 0
+ 266 0028 A360     		str	r3, [r4, #8]
+  93:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_MATCH     = 0UL;
+ 267              		.loc 1 93 0
+ 268 002a E360     		str	r3, [r4, #12]
+  94:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_CONFIG    = 0UL;
+ 269              		.loc 1 94 0
+ 270 002c 2361     		str	r3, [r4, #16]
+  95:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_CTL       = 0UL;
+ 271              		.loc 1 95 0
+ 272 002e 6361     		str	r3, [r4, #20]
+  96:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_INTR      = 0UL;
+ 273              		.loc 1 96 0
+ 274 0030 A361     		str	r3, [r4, #24]
+  97:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_INTR_SET  = 0UL;
+ 275              		.loc 1 97 0
+ 276 0032 E361     		str	r3, [r4, #28]
+  98:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     base->MCWDT_INTR_MASK = 0UL;
+ 277              		.loc 1 98 0
+ 278 0034 2362     		str	r3, [r4, #32]
+ 279 0036 10BD     		pop	{r4, pc}
+ 280              		.cfi_endproc
+ 281              	.LFE150:
+ 282              		.size	Cy_MCWDT_DeInit, .-Cy_MCWDT_DeInit
+ 283              		.section	.text.Cy_MCWDT_GetCountCascaded,"ax",%progbits
+ 284              		.align	2
+ 285              		.global	Cy_MCWDT_GetCountCascaded
+ 286              		.thumb
+ 287              		.thumb_func
+ 288              		.type	Cy_MCWDT_GetCountCascaded, %function
+ 289              	Cy_MCWDT_GetCountCascaded:
+ 290              	.LFB151:
+  99:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** }
+ 100:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 101:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 102:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** /*******************************************************************************
+ 103:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** * Function Name: Cy_MCWDT_GetCountCascaded
+ 104:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** ****************************************************************************//**
+ 105:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+ 106:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  Reports the current value of combined C1-C0 cascaded counters.
+ 107:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+ 108:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \param base
+ 109:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The base pointer to a structure that describes the registers.
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 17
+
+
+ 110:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+ 111:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \note
+ 112:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  The user must enable both counters, and cascade C0 to C1, 
+ 113:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  before calling this function. C2 is not reported. 
+ 114:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  Instead, to get a 64-bit C2-C1-C0 cascaded value, the
+ 115:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  user must call this function followed by
+ 116:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  Cy_MCWDT_GetCount(base, CY_MCWDT_COUNTER2), and then combine the results.
+ 117:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  \note This function does not return the correct result when it is called 
+ 118:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  after the Cy_MCWDT_Enable() or Cy_MCWDT_ResetCounters() function with 
+ 119:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  a delay less than two lf_clk cycles. The recommended waitUs parameter 
+ 120:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *  value is 100 us.
+ 121:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *
+ 122:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** *******************************************************************************/
+ 123:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** uint32_t Cy_MCWDT_GetCountCascaded(MCWDT_STRUCT_Type const *base)
+ 124:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** {
+ 291              		.loc 1 124 0
+ 292              		.cfi_startproc
+ 293              		@ args = 0, pretend = 0, frame = 0
+ 294              		@ frame_needed = 0, uses_anonymous_args = 0
+ 295              		@ link register save eliminated.
+ 296              	.LVL19:
+ 297 0000 30B4     		push	{r4, r5}
+ 298              		.cfi_def_cfa_offset 8
+ 299              		.cfi_offset 4, -8
+ 300              		.cfi_offset 5, -4
+ 125:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     uint32_t countVal = base->MCWDT_CNTLOW;
+ 301              		.loc 1 125 0
+ 302 0002 4368     		ldr	r3, [r0, #4]
+ 303              	.LVL20:
+ 126:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     uint32_t counter1 = countVal >> MCWDT_STRUCT_MCWDT_CNTLOW_WDT_CTR1_Pos;
+ 304              		.loc 1 126 0
+ 305 0004 1A0C     		lsrs	r2, r3, #16
+ 306              	.LVL21:
+ 127:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     uint32_t counter0 = countVal & MCWDT_STRUCT_MCWDT_CNTLOW_WDT_CTR0_Msk;
+ 307              		.loc 1 127 0
+ 308 0006 9BB2     		uxth	r3, r3
+ 309              	.LVL22:
+ 128:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     uint32_t match0 = _FLD2VAL(MCWDT_STRUCT_MCWDT_MATCH_WDT_MATCH0, base->MCWDT_MATCH);
+ 310              		.loc 1 128 0
+ 311 0008 C168     		ldr	r1, [r0, #12]
+ 312 000a 89B2     		uxth	r1, r1
+ 313              	.LVL23:
+ 129:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     uint32_t match1 = _FLD2VAL(MCWDT_STRUCT_MCWDT_MATCH_WDT_MATCH1, base->MCWDT_MATCH);
+ 314              		.loc 1 129 0
+ 315 000c C468     		ldr	r4, [r0, #12]
+ 316 000e 240C     		lsrs	r4, r4, #16
+ 317              	.LVL24:
+ 130:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     
+ 131:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* 
+ 132:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * The counter  counter0 goes to zero when it reaches the match0 
+ 133:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * value (c0ClearOnMatch = 1) or reaches the maximum 
+ 134:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * value (c0ClearOnMatch = 0). The counter counter1 increments on 
+ 135:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * the next rising edge of the MCWDT clock after 
+ 136:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * the Clear On Match event takes place. 
+ 137:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * The software increments counter1 to eliminate the case 
+ 138:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****      * when the both counter0 and counter1 counters have zeros.      
+ 139:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     */
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 18
+
+
+ 140:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     if (0u == counter0)
+ 318              		.loc 1 140 0
+ 319 0010 03B9     		cbnz	r3, .L23
+ 141:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     {
+ 142:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         counter1++;
+ 320              		.loc 1 142 0
+ 321 0012 0132     		adds	r2, r2, #1
+ 322              	.LVL25:
+ 323              	.L23:
+ 143:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     }
+ 144:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 145:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* Check if the counter0 is Free running */
+ 146:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     if (0u == _FLD2VAL(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR0, base->MCWDT_CONFIG))
+ 324              		.loc 1 146 0
+ 325 0014 0569     		ldr	r5, [r0, #16]
+ 326 0016 15F0040F 		tst	r5, #4
+ 327 001a 06D1     		bne	.L24
+ 147:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     {       
+ 148:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         /* Save match0 value with the correction when counter0
+ 149:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****          *  goes to zero when it reaches the match0 value. 
+ 150:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         */
+ 151:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         countVal = match0 + 1u;
+ 328              		.loc 1 151 0
+ 329 001c 4D1C     		adds	r5, r1, #1
+ 330              	.LVL26:
+ 152:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         
+ 153:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         if (0u < counter1) 
+ 331              		.loc 1 153 0
+ 332 001e 0AB1     		cbz	r2, .L25
+ 154:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         {
+ 155:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****             /* Set match to the maximum value */
+ 156:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****             match0 = MCWDT_STRUCT_MCWDT_CNTLOW_WDT_CTR0_Msk; 
+ 333              		.loc 1 156 0
+ 334 0020 4FF6FF71 		movw	r1, #65535
+ 335              	.LVL27:
+ 336              	.L25:
+ 157:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         }
+ 158:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         
+ 159:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         if (countVal < counter0) 
+ 337              		.loc 1 159 0
+ 338 0024 AB42     		cmp	r3, r5
+ 339 0026 00D9     		bls	.L24
+ 160:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         {
+ 161:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****             /* Decrement counter1 when the counter0 is great than match0 value */
+ 162:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****             counter1--;
+ 340              		.loc 1 162 0
+ 341 0028 013A     		subs	r2, r2, #1
+ 342              	.LVL28:
+ 343              	.L24:
+ 163:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         }
+ 164:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     }
+ 165:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 166:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* Add the correction to counter0 */
+ 167:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     counter0 += counter1;
+ 344              		.loc 1 167 0
+ 345 002a 1344     		add	r3, r3, r2
+ 346              	.LVL29:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 19
+
+
+ 168:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     
+ 169:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* Set counter1 match value to 65535 when the counter1 is free running */
+ 170:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     if (0u == _FLD2VAL(MCWDT_STRUCT_MCWDT_CONFIG_WDT_CLEAR1, base->MCWDT_CONFIG))
+ 347              		.loc 1 170 0
+ 348 002c 0069     		ldr	r0, [r0, #16]
+ 349              	.LVL30:
+ 350 002e 10F4806F 		tst	r0, #1024
+ 351 0032 01D1     		bne	.L26
+ 171:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     {
+ 172:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         match1 = MCWDT_STRUCT_MCWDT_CNTLOW_WDT_CTR1_Msk >> MCWDT_STRUCT_MCWDT_CNTLOW_WDT_CTR1_Pos;
+ 352              		.loc 1 172 0
+ 353 0034 4FF6FF74 		movw	r4, #65535
+ 354              	.LVL31:
+ 355              	.L26:
+ 173:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     }
+ 174:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 175:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* Check for overflow */
+ 176:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     if (match1 < counter1)
+ 356              		.loc 1 176 0
+ 357 0038 A242     		cmp	r2, r4
+ 358 003a 00D9     		bls	.L27
+ 177:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     {
+ 178:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****         counter1 = 0u;
+ 359              		.loc 1 178 0
+ 360 003c 0022     		movs	r2, #0
+ 361              	.LVL32:
+ 362              	.L27:
+ 179:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     }
+ 180:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 181:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     /* Calculate the combined value for C1-C0 cascaded counters */
+ 182:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     countVal = counter0 + (counter1 * match0);
+ 183:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** 
+ 184:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c ****     return (countVal);
+ 185:Generated_Source\PSoC6\pdl\drivers\peripheral\mcwdt/cy_mcwdt.c **** }
+ 363              		.loc 1 185 0
+ 364 003e 01FB0230 		mla	r0, r1, r2, r3
+ 365              	.LVL33:
+ 366 0042 30BC     		pop	{r4, r5}
+ 367              		.cfi_restore 5
+ 368              		.cfi_restore 4
+ 369              		.cfi_def_cfa_offset 0
+ 370              	.LVL34:
+ 371 0044 7047     		bx	lr
+ 372              		.cfi_endproc
+ 373              	.LFE151:
+ 374              		.size	Cy_MCWDT_GetCountCascaded, .-Cy_MCWDT_GetCountCascaded
+ 375 0046 00BF     		.section	.rodata.str1.4,"aMS",%progbits,1
+ 376              		.align	2
+ 377              	.LC0:
+ 378 0000 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\"
+ 378      72617465 
+ 378      645F536F 
+ 378      75726365 
+ 378      5C50536F 
+ 379 002e 6D637764 		.ascii	"mcwdt\\cy_mcwdt.c\000"
+ 379      745C6379 
+ 379      5F6D6377 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 20
+
+
+ 379      64742E63 
+ 379      00
+ 380              		.text
+ 381              	.Letext0:
+ 382              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 383              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 384              		.file 5 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/ip/cyip_srss.h"
+ 385              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+ 386              		.file 7 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+ 387              		.section	.debug_info,"",%progbits
+ 388              	.Ldebug_info0:
+ 389 0000 DC040000 		.4byte	0x4dc
+ 390 0004 0400     		.2byte	0x4
+ 391 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 392 000a 04       		.byte	0x4
+ 393 000b 01       		.uleb128 0x1
+ 394 000c AC030000 		.4byte	.LASF68
+ 395 0010 0C       		.byte	0xc
+ 396 0011 EB010000 		.4byte	.LASF69
+ 397 0015 31000000 		.4byte	.LASF70
+ 398 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 399 001d 00000000 		.4byte	0
+ 400 0021 00000000 		.4byte	.Ldebug_line0
+ 401 0025 02       		.uleb128 0x2
+ 402 0026 04       		.byte	0x4
+ 403 0027 05       		.byte	0x5
+ 404 0028 696E7400 		.ascii	"int\000"
+ 405 002c 03       		.uleb128 0x3
+ 406 002d 04       		.byte	0x4
+ 407 002e 07       		.byte	0x7
+ 408 002f 70020000 		.4byte	.LASF0
+ 409 0033 03       		.uleb128 0x3
+ 410 0034 08       		.byte	0x8
+ 411 0035 05       		.byte	0x5
+ 412 0036 4A010000 		.4byte	.LASF1
+ 413 003a 03       		.uleb128 0x3
+ 414 003b 08       		.byte	0x8
+ 415 003c 04       		.byte	0x4
+ 416 003d D1010000 		.4byte	.LASF2
+ 417 0041 03       		.uleb128 0x3
+ 418 0042 02       		.byte	0x2
+ 419 0043 05       		.byte	0x5
+ 420 0044 60000000 		.4byte	.LASF3
+ 421 0048 03       		.uleb128 0x3
+ 422 0049 01       		.byte	0x1
+ 423 004a 06       		.byte	0x6
+ 424 004b 2A020000 		.4byte	.LASF4
+ 425 004f 04       		.uleb128 0x4
+ 426 0050 96010000 		.4byte	.LASF6
+ 427 0054 03       		.byte	0x3
+ 428 0055 1D       		.byte	0x1d
+ 429 0056 5A000000 		.4byte	0x5a
+ 430 005a 03       		.uleb128 0x3
+ 431 005b 01       		.byte	0x1
+ 432 005c 08       		.byte	0x8
+ 433 005d DD010000 		.4byte	.LASF5
+ 434 0061 04       		.uleb128 0x4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 21
+
+
+ 435 0062 B1000000 		.4byte	.LASF7
+ 436 0066 03       		.byte	0x3
+ 437 0067 2B       		.byte	0x2b
+ 438 0068 6C000000 		.4byte	0x6c
+ 439 006c 03       		.uleb128 0x3
+ 440 006d 02       		.byte	0x2
+ 441 006e 07       		.byte	0x7
+ 442 006f C4020000 		.4byte	.LASF8
+ 443 0073 04       		.uleb128 0x4
+ 444 0074 6F030000 		.4byte	.LASF9
+ 445 0078 03       		.byte	0x3
+ 446 0079 3F       		.byte	0x3f
+ 447 007a 7E000000 		.4byte	0x7e
+ 448 007e 03       		.uleb128 0x3
+ 449 007f 04       		.byte	0x4
+ 450 0080 05       		.byte	0x5
+ 451 0081 76010000 		.4byte	.LASF10
+ 452 0085 04       		.uleb128 0x4
+ 453 0086 9F000000 		.4byte	.LASF11
+ 454 008a 03       		.byte	0x3
+ 455 008b 41       		.byte	0x41
+ 456 008c 90000000 		.4byte	0x90
+ 457 0090 03       		.uleb128 0x3
+ 458 0091 04       		.byte	0x4
+ 459 0092 07       		.byte	0x7
+ 460 0093 2F030000 		.4byte	.LASF12
+ 461 0097 03       		.uleb128 0x3
+ 462 0098 08       		.byte	0x8
+ 463 0099 07       		.byte	0x7
+ 464 009a 36020000 		.4byte	.LASF13
+ 465 009e 04       		.uleb128 0x4
+ 466 009f D4000000 		.4byte	.LASF14
+ 467 00a3 04       		.byte	0x4
+ 468 00a4 18       		.byte	0x18
+ 469 00a5 4F000000 		.4byte	0x4f
+ 470 00a9 04       		.uleb128 0x4
+ 471 00aa 8D020000 		.4byte	.LASF15
+ 472 00ae 04       		.byte	0x4
+ 473 00af 24       		.byte	0x24
+ 474 00b0 61000000 		.4byte	0x61
+ 475 00b4 04       		.uleb128 0x4
+ 476 00b5 DC020000 		.4byte	.LASF16
+ 477 00b9 04       		.byte	0x4
+ 478 00ba 2C       		.byte	0x2c
+ 479 00bb 73000000 		.4byte	0x73
+ 480 00bf 04       		.uleb128 0x4
+ 481 00c0 4D020000 		.4byte	.LASF17
+ 482 00c4 04       		.byte	0x4
+ 483 00c5 30       		.byte	0x30
+ 484 00c6 85000000 		.4byte	0x85
+ 485 00ca 03       		.uleb128 0x3
+ 486 00cb 04       		.byte	0x4
+ 487 00cc 07       		.byte	0x7
+ 488 00cd 6A000000 		.4byte	.LASF18
+ 489 00d1 05       		.uleb128 0x5
+ 490 00d2 BF000000 		.4byte	0xbf
+ 491 00d6 06       		.uleb128 0x6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 22
+
+
+ 492 00d7 D1000000 		.4byte	0xd1
+ 493 00db 07       		.uleb128 0x7
+ 494 00dc D6000000 		.4byte	0xd6
+ 495 00e0 EB000000 		.4byte	0xeb
+ 496 00e4 08       		.uleb128 0x8
+ 497 00e5 CA000000 		.4byte	0xca
+ 498 00e9 04       		.byte	0x4
+ 499 00ea 00       		.byte	0
+ 500 00eb 09       		.uleb128 0x9
+ 501 00ec 40       		.byte	0x40
+ 502 00ed 05       		.byte	0x5
+ 503 00ee 22       		.byte	0x22
+ 504 00ef 84010000 		.4byte	0x184
+ 505 00f3 0A       		.uleb128 0xa
+ 506 00f4 5F040000 		.4byte	.LASF19
+ 507 00f8 05       		.byte	0x5
+ 508 00f9 23       		.byte	0x23
+ 509 00fa D6000000 		.4byte	0xd6
+ 510 00fe 00       		.byte	0
+ 511 00ff 0A       		.uleb128 0xa
+ 512 0100 24000000 		.4byte	.LASF20
+ 513 0104 05       		.byte	0x5
+ 514 0105 24       		.byte	0x24
+ 515 0106 D1000000 		.4byte	0xd1
+ 516 010a 04       		.byte	0x4
+ 517 010b 0A       		.uleb128 0xa
+ 518 010c 36010000 		.4byte	.LASF21
+ 519 0110 05       		.byte	0x5
+ 520 0111 25       		.byte	0x25
+ 521 0112 D1000000 		.4byte	0xd1
+ 522 0116 08       		.byte	0x8
+ 523 0117 0A       		.uleb128 0xa
+ 524 0118 58010000 		.4byte	.LASF22
+ 525 011c 05       		.byte	0x5
+ 526 011d 26       		.byte	0x26
+ 527 011e D1000000 		.4byte	0xd1
+ 528 0122 0C       		.byte	0xc
+ 529 0123 0A       		.uleb128 0xa
+ 530 0124 98030000 		.4byte	.LASF23
+ 531 0128 05       		.byte	0x5
+ 532 0129 27       		.byte	0x27
+ 533 012a D1000000 		.4byte	0xd1
+ 534 012e 10       		.byte	0x10
+ 535 012f 0A       		.uleb128 0xa
+ 536 0130 BC000000 		.4byte	.LASF24
+ 537 0134 05       		.byte	0x5
+ 538 0135 28       		.byte	0x28
+ 539 0136 D1000000 		.4byte	0xd1
+ 540 013a 14       		.byte	0x14
+ 541 013b 0A       		.uleb128 0xa
+ 542 013c CA040000 		.4byte	.LASF25
+ 543 0140 05       		.byte	0x5
+ 544 0141 29       		.byte	0x29
+ 545 0142 D1000000 		.4byte	0xd1
+ 546 0146 18       		.byte	0x18
+ 547 0147 0A       		.uleb128 0xa
+ 548 0148 54030000 		.4byte	.LASF26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 23
+
+
+ 549 014c 05       		.byte	0x5
+ 550 014d 2A       		.byte	0x2a
+ 551 014e D1000000 		.4byte	0xd1
+ 552 0152 1C       		.byte	0x1c
+ 553 0153 0A       		.uleb128 0xa
+ 554 0154 86010000 		.4byte	.LASF27
+ 555 0158 05       		.byte	0x5
+ 556 0159 2B       		.byte	0x2b
+ 557 015a D1000000 		.4byte	0xd1
+ 558 015e 20       		.byte	0x20
+ 559 015f 0A       		.uleb128 0xa
+ 560 0160 24010000 		.4byte	.LASF28
+ 561 0164 05       		.byte	0x5
+ 562 0165 2C       		.byte	0x2c
+ 563 0166 D6000000 		.4byte	0xd6
+ 564 016a 24       		.byte	0x24
+ 565 016b 0A       		.uleb128 0xa
+ 566 016c 8D030000 		.4byte	.LASF29
+ 567 0170 05       		.byte	0x5
+ 568 0171 2D       		.byte	0x2d
+ 569 0172 D1000000 		.4byte	0xd1
+ 570 0176 28       		.byte	0x28
+ 571 0177 0A       		.uleb128 0xa
+ 572 0178 25030000 		.4byte	.LASF30
+ 573 017c 05       		.byte	0x5
+ 574 017d 2E       		.byte	0x2e
+ 575 017e 89010000 		.4byte	0x189
+ 576 0182 2C       		.byte	0x2c
+ 577 0183 00       		.byte	0
+ 578 0184 05       		.uleb128 0x5
+ 579 0185 DB000000 		.4byte	0xdb
+ 580 0189 06       		.uleb128 0x6
+ 581 018a 84010000 		.4byte	0x184
+ 582 018e 04       		.uleb128 0x4
+ 583 018f 12000000 		.4byte	.LASF31
+ 584 0193 05       		.byte	0x5
+ 585 0194 2F       		.byte	0x2f
+ 586 0195 EB000000 		.4byte	0xeb
+ 587 0199 0B       		.uleb128 0xb
+ 588 019a 7F010000 		.4byte	.LASF32
+ 589 019e 06       		.byte	0x6
+ 590 019f C401     		.2byte	0x1c4
+ 591 01a1 A5010000 		.4byte	0x1a5
+ 592 01a5 03       		.uleb128 0x3
+ 593 01a6 01       		.byte	0x1
+ 594 01a7 08       		.byte	0x8
+ 595 01a8 D7020000 		.4byte	.LASF33
+ 596 01ac 03       		.uleb128 0x3
+ 597 01ad 04       		.byte	0x4
+ 598 01ae 04       		.byte	0x4
+ 599 01af 44010000 		.4byte	.LASF34
+ 600 01b3 03       		.uleb128 0x3
+ 601 01b4 08       		.byte	0x8
+ 602 01b5 04       		.byte	0x4
+ 603 01b6 41030000 		.4byte	.LASF35
+ 604 01ba 09       		.uleb128 0x9
+ 605 01bb 0C       		.byte	0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 24
+
+
+ 606 01bc 02       		.byte	0x2
+ 607 01bd 8A       		.byte	0x8a
+ 608 01be 3B020000 		.4byte	0x23b
+ 609 01c2 0A       		.uleb128 0xa
+ 610 01c3 C9010000 		.4byte	.LASF36
+ 611 01c7 02       		.byte	0x2
+ 612 01c8 8C       		.byte	0x8c
+ 613 01c9 A9000000 		.4byte	0xa9
+ 614 01cd 00       		.byte	0
+ 615 01ce 0A       		.uleb128 0xa
+ 616 01cf 8D040000 		.4byte	.LASF37
+ 617 01d3 02       		.byte	0x2
+ 618 01d4 8F       		.byte	0x8f
+ 619 01d5 A9000000 		.4byte	0xa9
+ 620 01d9 02       		.byte	0x2
+ 621 01da 0A       		.uleb128 0xa
+ 622 01db C6000000 		.4byte	.LASF38
+ 623 01df 02       		.byte	0x2
+ 624 01e0 92       		.byte	0x92
+ 625 01e1 9E000000 		.4byte	0x9e
+ 626 01e5 04       		.byte	0x4
+ 627 01e6 0A       		.uleb128 0xa
+ 628 01e7 AA000000 		.4byte	.LASF39
+ 629 01eb 02       		.byte	0x2
+ 630 01ec 94       		.byte	0x94
+ 631 01ed 9E000000 		.4byte	0x9e
+ 632 01f1 05       		.byte	0x5
+ 633 01f2 0A       		.uleb128 0xa
+ 634 01f3 63030000 		.4byte	.LASF40
+ 635 01f7 02       		.byte	0x2
+ 636 01f8 96       		.byte	0x96
+ 637 01f9 9E000000 		.4byte	0x9e
+ 638 01fd 06       		.byte	0x6
+ 639 01fe 0A       		.uleb128 0xa
+ 640 01ff A5030000 		.4byte	.LASF41
+ 641 0203 02       		.byte	0x2
+ 642 0204 98       		.byte	0x98
+ 643 0205 9E000000 		.4byte	0x9e
+ 644 0209 07       		.byte	0x7
+ 645 020a 0A       		.uleb128 0xa
+ 646 020b 15010000 		.4byte	.LASF42
+ 647 020f 02       		.byte	0x2
+ 648 0210 9A       		.byte	0x9a
+ 649 0211 3B020000 		.4byte	0x23b
+ 650 0215 08       		.byte	0x8
+ 651 0216 0A       		.uleb128 0xa
+ 652 0217 A0010000 		.4byte	.LASF43
+ 653 021b 02       		.byte	0x2
+ 654 021c 9B       		.byte	0x9b
+ 655 021d 3B020000 		.4byte	0x23b
+ 656 0221 09       		.byte	0x9
+ 657 0222 0A       		.uleb128 0xa
+ 658 0223 48030000 		.4byte	.LASF44
+ 659 0227 02       		.byte	0x2
+ 660 0228 9C       		.byte	0x9c
+ 661 0229 3B020000 		.4byte	0x23b
+ 662 022d 0A       		.byte	0xa
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 25
+
+
+ 663 022e 0A       		.uleb128 0xa
+ 664 022f 64020000 		.4byte	.LASF45
+ 665 0233 02       		.byte	0x2
+ 666 0234 9D       		.byte	0x9d
+ 667 0235 3B020000 		.4byte	0x23b
+ 668 0239 0B       		.byte	0xb
+ 669 023a 00       		.byte	0
+ 670 023b 03       		.uleb128 0x3
+ 671 023c 01       		.byte	0x1
+ 672 023d 02       		.byte	0x2
+ 673 023e E4020000 		.4byte	.LASF46
+ 674 0242 04       		.uleb128 0x4
+ 675 0243 AE020000 		.4byte	.LASF47
+ 676 0247 02       		.byte	0x2
+ 677 0248 9E       		.byte	0x9e
+ 678 0249 BA010000 		.4byte	0x1ba
+ 679 024d 0C       		.uleb128 0xc
+ 680 024e 01       		.byte	0x1
+ 681 024f 5A000000 		.4byte	0x5a
+ 682 0253 02       		.byte	0x2
+ 683 0254 ED       		.byte	0xed
+ 684 0255 72020000 		.4byte	0x272
+ 685 0259 0D       		.uleb128 0xd
+ 686 025a 03030000 		.4byte	.LASF48
+ 687 025e 00       		.byte	0
+ 688 025f 0D       		.uleb128 0xd
+ 689 0260 64010000 		.4byte	.LASF49
+ 690 0264 01       		.byte	0x1
+ 691 0265 0D       		.uleb128 0xd
+ 692 0266 79030000 		.4byte	.LASF50
+ 693 026a 02       		.byte	0x2
+ 694 026b 0D       		.uleb128 0xd
+ 695 026c 96020000 		.4byte	.LASF51
+ 696 0270 03       		.byte	0x3
+ 697 0271 00       		.byte	0
+ 698 0272 04       		.uleb128 0x4
+ 699 0273 00000000 		.4byte	.LASF52
+ 700 0277 02       		.byte	0x2
+ 701 0278 F3       		.byte	0xf3
+ 702 0279 4D020000 		.4byte	0x24d
+ 703 027d 0E       		.uleb128 0xe
+ 704 027e 04       		.byte	0x4
+ 705 027f 2C000000 		.4byte	0x2c
+ 706 0283 02       		.byte	0x2
+ 707 0284 0401     		.2byte	0x104
+ 708 0286 9A020000 		.4byte	0x29a
+ 709 028a 0D       		.uleb128 0xd
+ 710 028b DC000000 		.4byte	.LASF53
+ 711 028f 00       		.byte	0
+ 712 0290 0F       		.uleb128 0xf
+ 713 0291 68040000 		.4byte	.LASF54
+ 714 0295 0100D600 		.4byte	0xd60001
+ 715 0299 00       		.byte	0
+ 716 029a 0B       		.uleb128 0xb
+ 717 029b 8A000000 		.4byte	.LASF55
+ 718 029f 02       		.byte	0x2
+ 719 02a0 0701     		.2byte	0x107
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 26
+
+
+ 720 02a2 7D020000 		.4byte	0x27d
+ 721 02a6 10       		.uleb128 0x10
+ 722 02a7 56020000 		.4byte	.LASF58
+ 723 02ab 01       		.byte	0x1
+ 724 02ac 29       		.byte	0x29
+ 725 02ad 9A020000 		.4byte	0x29a
+ 726 02b1 00000000 		.4byte	.LFB149
+ 727 02b5 E4000000 		.4byte	.LFE149-.LFB149
+ 728 02b9 01       		.uleb128 0x1
+ 729 02ba 9C       		.byte	0x9c
+ 730 02bb 97030000 		.4byte	0x397
+ 731 02bf 11       		.uleb128 0x11
+ 732 02c0 88040000 		.4byte	.LASF56
+ 733 02c4 01       		.byte	0x1
+ 734 02c5 29       		.byte	0x29
+ 735 02c6 97030000 		.4byte	0x397
+ 736 02ca 00000000 		.4byte	.LLST0
+ 737 02ce 11       		.uleb128 0x11
+ 738 02cf CD000000 		.4byte	.LASF57
+ 739 02d3 01       		.byte	0x1
+ 740 02d4 29       		.byte	0x29
+ 741 02d5 9D030000 		.4byte	0x39d
+ 742 02d9 5B000000 		.4byte	.LLST1
+ 743 02dd 12       		.uleb128 0x12
+ 744 02de 72657400 		.ascii	"ret\000"
+ 745 02e2 01       		.byte	0x1
+ 746 02e3 2B       		.byte	0x2b
+ 747 02e4 9A020000 		.4byte	0x29a
+ 748 02e8 84000000 		.4byte	.LLST2
+ 749 02ec 13       		.uleb128 0x13
+ 750 02ed 24000000 		.4byte	.LVL3
+ 751 02f1 BB040000 		.4byte	0x4bb
+ 752 02f5 09030000 		.4byte	0x309
+ 753 02f9 14       		.uleb128 0x14
+ 754 02fa 01       		.uleb128 0x1
+ 755 02fb 50       		.byte	0x50
+ 756 02fc 05       		.uleb128 0x5
+ 757 02fd 03       		.byte	0x3
+ 758 02fe 00000000 		.4byte	.LC0
+ 759 0302 14       		.uleb128 0x14
+ 760 0303 01       		.uleb128 0x1
+ 761 0304 51       		.byte	0x51
+ 762 0305 02       		.uleb128 0x2
+ 763 0306 08       		.byte	0x8
+ 764 0307 2F       		.byte	0x2f
+ 765 0308 00       		.byte	0
+ 766 0309 13       		.uleb128 0x13
+ 767 030a 3A000000 		.4byte	.LVL4
+ 768 030e BB040000 		.4byte	0x4bb
+ 769 0312 26030000 		.4byte	0x326
+ 770 0316 14       		.uleb128 0x14
+ 771 0317 01       		.uleb128 0x1
+ 772 0318 50       		.byte	0x50
+ 773 0319 05       		.uleb128 0x5
+ 774 031a 03       		.byte	0x3
+ 775 031b 00000000 		.4byte	.LC0
+ 776 031f 14       		.uleb128 0x14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 27
+
+
+ 777 0320 01       		.uleb128 0x1
+ 778 0321 51       		.byte	0x51
+ 779 0322 02       		.uleb128 0x2
+ 780 0323 08       		.byte	0x8
+ 781 0324 30       		.byte	0x30
+ 782 0325 00       		.byte	0
+ 783 0326 13       		.uleb128 0x13
+ 784 0327 48000000 		.4byte	.LVL5
+ 785 032b BB040000 		.4byte	0x4bb
+ 786 032f 43030000 		.4byte	0x343
+ 787 0333 14       		.uleb128 0x14
+ 788 0334 01       		.uleb128 0x1
+ 789 0335 50       		.byte	0x50
+ 790 0336 05       		.uleb128 0x5
+ 791 0337 03       		.byte	0x3
+ 792 0338 00000000 		.4byte	.LC0
+ 793 033c 14       		.uleb128 0x14
+ 794 033d 01       		.uleb128 0x1
+ 795 033e 51       		.byte	0x51
+ 796 033f 02       		.uleb128 0x2
+ 797 0340 08       		.byte	0x8
+ 798 0341 31       		.byte	0x31
+ 799 0342 00       		.byte	0
+ 800 0343 13       		.uleb128 0x13
+ 801 0344 56000000 		.4byte	.LVL6
+ 802 0348 BB040000 		.4byte	0x4bb
+ 803 034c 60030000 		.4byte	0x360
+ 804 0350 14       		.uleb128 0x14
+ 805 0351 01       		.uleb128 0x1
+ 806 0352 50       		.byte	0x50
+ 807 0353 05       		.uleb128 0x5
+ 808 0354 03       		.byte	0x3
+ 809 0355 00000000 		.4byte	.LC0
+ 810 0359 14       		.uleb128 0x14
+ 811 035a 01       		.uleb128 0x1
+ 812 035b 51       		.byte	0x51
+ 813 035c 02       		.uleb128 0x2
+ 814 035d 08       		.byte	0x8
+ 815 035e 32       		.byte	0x32
+ 816 035f 00       		.byte	0
+ 817 0360 13       		.uleb128 0x13
+ 818 0361 64000000 		.4byte	.LVL7
+ 819 0365 BB040000 		.4byte	0x4bb
+ 820 0369 7D030000 		.4byte	0x37d
+ 821 036d 14       		.uleb128 0x14
+ 822 036e 01       		.uleb128 0x1
+ 823 036f 50       		.byte	0x50
+ 824 0370 05       		.uleb128 0x5
+ 825 0371 03       		.byte	0x3
+ 826 0372 00000000 		.4byte	.LC0
+ 827 0376 14       		.uleb128 0x14
+ 828 0377 01       		.uleb128 0x1
+ 829 0378 51       		.byte	0x51
+ 830 0379 02       		.uleb128 0x2
+ 831 037a 08       		.byte	0x8
+ 832 037b 33       		.byte	0x33
+ 833 037c 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 28
+
+
+ 834 037d 15       		.uleb128 0x15
+ 835 037e 72000000 		.4byte	.LVL8
+ 836 0382 BB040000 		.4byte	0x4bb
+ 837 0386 14       		.uleb128 0x14
+ 838 0387 01       		.uleb128 0x1
+ 839 0388 50       		.byte	0x50
+ 840 0389 05       		.uleb128 0x5
+ 841 038a 03       		.byte	0x3
+ 842 038b 00000000 		.4byte	.LC0
+ 843 038f 14       		.uleb128 0x14
+ 844 0390 01       		.uleb128 0x1
+ 845 0391 51       		.byte	0x51
+ 846 0392 02       		.uleb128 0x2
+ 847 0393 08       		.byte	0x8
+ 848 0394 34       		.byte	0x34
+ 849 0395 00       		.byte	0
+ 850 0396 00       		.byte	0
+ 851 0397 16       		.uleb128 0x16
+ 852 0398 04       		.byte	0x4
+ 853 0399 8E010000 		.4byte	0x18e
+ 854 039d 16       		.uleb128 0x16
+ 855 039e 04       		.byte	0x4
+ 856 039f A3030000 		.4byte	0x3a3
+ 857 03a3 06       		.uleb128 0x6
+ 858 03a4 42020000 		.4byte	0x242
+ 859 03a8 17       		.uleb128 0x17
+ 860 03a9 7D020000 		.4byte	.LASF71
+ 861 03ad 02       		.byte	0x2
+ 862 03ae EC01     		.2byte	0x1ec
+ 863 03b0 03       		.byte	0x3
+ 864 03b1 CE030000 		.4byte	0x3ce
+ 865 03b5 18       		.uleb128 0x18
+ 866 03b6 88040000 		.4byte	.LASF56
+ 867 03ba 02       		.byte	0x2
+ 868 03bb EC01     		.2byte	0x1ec
+ 869 03bd 97030000 		.4byte	0x397
+ 870 03c1 19       		.uleb128 0x19
+ 871 03c2 16030000 		.4byte	.LASF72
+ 872 03c6 02       		.byte	0x2
+ 873 03c7 EE01     		.2byte	0x1ee
+ 874 03c9 BF000000 		.4byte	0xbf
+ 875 03cd 00       		.byte	0
+ 876 03ce 1A       		.uleb128 0x1a
+ 877 03cf F3020000 		.4byte	.LASF73
+ 878 03d3 01       		.byte	0x1
+ 879 03d4 57       		.byte	0x57
+ 880 03d5 00000000 		.4byte	.LFB150
+ 881 03d9 38000000 		.4byte	.LFE150-.LFB150
+ 882 03dd 01       		.uleb128 0x1
+ 883 03de 9C       		.byte	0x9c
+ 884 03df 31040000 		.4byte	0x431
+ 885 03e3 11       		.uleb128 0x11
+ 886 03e4 88040000 		.4byte	.LASF56
+ 887 03e8 01       		.byte	0x1
+ 888 03e9 57       		.byte	0x57
+ 889 03ea 97030000 		.4byte	0x397
+ 890 03ee DE000000 		.4byte	.LLST3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 29
+
+
+ 891 03f2 1B       		.uleb128 0x1b
+ 892 03f3 A8030000 		.4byte	0x3a8
+ 893 03f7 04000000 		.4byte	.LBB4
+ 894 03fb 20000000 		.4byte	.LBE4-.LBB4
+ 895 03ff 01       		.byte	0x1
+ 896 0400 59       		.byte	0x59
+ 897 0401 1C       		.uleb128 0x1c
+ 898 0402 B5030000 		.4byte	0x3b5
+ 899 0406 FC000000 		.4byte	.LLST4
+ 900 040a 1D       		.uleb128 0x1d
+ 901 040b 04000000 		.4byte	.LBB5
+ 902 040f 20000000 		.4byte	.LBE5-.LBB5
+ 903 0413 1E       		.uleb128 0x1e
+ 904 0414 C1030000 		.4byte	0x3c1
+ 905 0418 1A010000 		.4byte	.LLST5
+ 906 041c 1F       		.uleb128 0x1f
+ 907 041d 08000000 		.4byte	.LVL17
+ 908 0421 C7040000 		.4byte	0x4c7
+ 909 0425 1F       		.uleb128 0x1f
+ 910 0426 24000000 		.4byte	.LVL18
+ 911 042a D3040000 		.4byte	0x4d3
+ 912 042e 00       		.byte	0
+ 913 042f 00       		.byte	0
+ 914 0430 00       		.byte	0
+ 915 0431 10       		.uleb128 0x10
+ 916 0432 AF010000 		.4byte	.LASF59
+ 917 0436 01       		.byte	0x1
+ 918 0437 7B       		.byte	0x7b
+ 919 0438 BF000000 		.4byte	0xbf
+ 920 043c 00000000 		.4byte	.LFB151
+ 921 0440 46000000 		.4byte	.LFE151-.LFB151
+ 922 0444 01       		.uleb128 0x1
+ 923 0445 9C       		.byte	0x9c
+ 924 0446 9F040000 		.4byte	0x49f
+ 925 044a 11       		.uleb128 0x11
+ 926 044b 88040000 		.4byte	.LASF56
+ 927 044f 01       		.byte	0x1
+ 928 0450 7B       		.byte	0x7b
+ 929 0451 9F040000 		.4byte	0x49f
+ 930 0455 2D010000 		.4byte	.LLST6
+ 931 0459 20       		.uleb128 0x20
+ 932 045a 73000000 		.4byte	.LASF60
+ 933 045e 01       		.byte	0x1
+ 934 045f 7D       		.byte	0x7d
+ 935 0460 BF000000 		.4byte	0xbf
+ 936 0464 4E010000 		.4byte	.LLST7
+ 937 0468 21       		.uleb128 0x21
+ 938 0469 0C010000 		.4byte	.LASF61
+ 939 046d 01       		.byte	0x1
+ 940 046e 7E       		.byte	0x7e
+ 941 046f BF000000 		.4byte	0xbf
+ 942 0473 01       		.uleb128 0x1
+ 943 0474 52       		.byte	0x52
+ 944 0475 21       		.uleb128 0x21
+ 945 0476 EA020000 		.4byte	.LASF62
+ 946 047a 01       		.byte	0x1
+ 947 047b 7F       		.byte	0x7f
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 30
+
+
+ 948 047c BF000000 		.4byte	0xbf
+ 949 0480 01       		.uleb128 0x1
+ 950 0481 53       		.byte	0x53
+ 951 0482 21       		.uleb128 0x21
+ 952 0483 7C000000 		.4byte	.LASF63
+ 953 0487 01       		.byte	0x1
+ 954 0488 80       		.byte	0x80
+ 955 0489 BF000000 		.4byte	0xbf
+ 956 048d 01       		.uleb128 0x1
+ 957 048e 51       		.byte	0x51
+ 958 048f 20       		.uleb128 0x20
+ 959 0490 83000000 		.4byte	.LASF64
+ 960 0494 01       		.byte	0x1
+ 961 0495 81       		.byte	0x81
+ 962 0496 BF000000 		.4byte	0xbf
+ 963 049a 8A010000 		.4byte	.LLST8
+ 964 049e 00       		.byte	0
+ 965 049f 16       		.uleb128 0x16
+ 966 04a0 04       		.byte	0x4
+ 967 04a1 A5040000 		.4byte	0x4a5
+ 968 04a5 06       		.uleb128 0x6
+ 969 04a6 8E010000 		.4byte	0x18e
+ 970 04aa 22       		.uleb128 0x22
+ 971 04ab 7B040000 		.4byte	.LASF74
+ 972 04af 07       		.byte	0x7
+ 973 04b0 EA07     		.2byte	0x7ea
+ 974 04b2 B6040000 		.4byte	0x4b6
+ 975 04b6 05       		.uleb128 0x5
+ 976 04b7 B4000000 		.4byte	0xb4
+ 977 04bb 23       		.uleb128 0x23
+ 978 04bc 95040000 		.4byte	.LASF65
+ 979 04c0 95040000 		.4byte	.LASF65
+ 980 04c4 06       		.byte	0x6
+ 981 04c5 2A03     		.2byte	0x32a
+ 982 04c7 23       		.uleb128 0x23
+ 983 04c8 ED000000 		.4byte	.LASF66
+ 984 04cc ED000000 		.4byte	.LASF66
+ 985 04d0 06       		.byte	0x6
+ 986 04d1 4D03     		.2byte	0x34d
+ 987 04d3 23       		.uleb128 0x23
+ 988 04d4 AC040000 		.4byte	.LASF67
+ 989 04d8 AC040000 		.4byte	.LASF67
+ 990 04dc 06       		.byte	0x6
+ 991 04dd 5C03     		.2byte	0x35c
+ 992 04df 00       		.byte	0
+ 993              		.section	.debug_abbrev,"",%progbits
+ 994              	.Ldebug_abbrev0:
+ 995 0000 01       		.uleb128 0x1
+ 996 0001 11       		.uleb128 0x11
+ 997 0002 01       		.byte	0x1
+ 998 0003 25       		.uleb128 0x25
+ 999 0004 0E       		.uleb128 0xe
+ 1000 0005 13       		.uleb128 0x13
+ 1001 0006 0B       		.uleb128 0xb
+ 1002 0007 03       		.uleb128 0x3
+ 1003 0008 0E       		.uleb128 0xe
+ 1004 0009 1B       		.uleb128 0x1b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 31
+
+
+ 1005 000a 0E       		.uleb128 0xe
+ 1006 000b 55       		.uleb128 0x55
+ 1007 000c 17       		.uleb128 0x17
+ 1008 000d 11       		.uleb128 0x11
+ 1009 000e 01       		.uleb128 0x1
+ 1010 000f 10       		.uleb128 0x10
+ 1011 0010 17       		.uleb128 0x17
+ 1012 0011 00       		.byte	0
+ 1013 0012 00       		.byte	0
+ 1014 0013 02       		.uleb128 0x2
+ 1015 0014 24       		.uleb128 0x24
+ 1016 0015 00       		.byte	0
+ 1017 0016 0B       		.uleb128 0xb
+ 1018 0017 0B       		.uleb128 0xb
+ 1019 0018 3E       		.uleb128 0x3e
+ 1020 0019 0B       		.uleb128 0xb
+ 1021 001a 03       		.uleb128 0x3
+ 1022 001b 08       		.uleb128 0x8
+ 1023 001c 00       		.byte	0
+ 1024 001d 00       		.byte	0
+ 1025 001e 03       		.uleb128 0x3
+ 1026 001f 24       		.uleb128 0x24
+ 1027 0020 00       		.byte	0
+ 1028 0021 0B       		.uleb128 0xb
+ 1029 0022 0B       		.uleb128 0xb
+ 1030 0023 3E       		.uleb128 0x3e
+ 1031 0024 0B       		.uleb128 0xb
+ 1032 0025 03       		.uleb128 0x3
+ 1033 0026 0E       		.uleb128 0xe
+ 1034 0027 00       		.byte	0
+ 1035 0028 00       		.byte	0
+ 1036 0029 04       		.uleb128 0x4
+ 1037 002a 16       		.uleb128 0x16
+ 1038 002b 00       		.byte	0
+ 1039 002c 03       		.uleb128 0x3
+ 1040 002d 0E       		.uleb128 0xe
+ 1041 002e 3A       		.uleb128 0x3a
+ 1042 002f 0B       		.uleb128 0xb
+ 1043 0030 3B       		.uleb128 0x3b
+ 1044 0031 0B       		.uleb128 0xb
+ 1045 0032 49       		.uleb128 0x49
+ 1046 0033 13       		.uleb128 0x13
+ 1047 0034 00       		.byte	0
+ 1048 0035 00       		.byte	0
+ 1049 0036 05       		.uleb128 0x5
+ 1050 0037 35       		.uleb128 0x35
+ 1051 0038 00       		.byte	0
+ 1052 0039 49       		.uleb128 0x49
+ 1053 003a 13       		.uleb128 0x13
+ 1054 003b 00       		.byte	0
+ 1055 003c 00       		.byte	0
+ 1056 003d 06       		.uleb128 0x6
+ 1057 003e 26       		.uleb128 0x26
+ 1058 003f 00       		.byte	0
+ 1059 0040 49       		.uleb128 0x49
+ 1060 0041 13       		.uleb128 0x13
+ 1061 0042 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 32
+
+
+ 1062 0043 00       		.byte	0
+ 1063 0044 07       		.uleb128 0x7
+ 1064 0045 01       		.uleb128 0x1
+ 1065 0046 01       		.byte	0x1
+ 1066 0047 49       		.uleb128 0x49
+ 1067 0048 13       		.uleb128 0x13
+ 1068 0049 01       		.uleb128 0x1
+ 1069 004a 13       		.uleb128 0x13
+ 1070 004b 00       		.byte	0
+ 1071 004c 00       		.byte	0
+ 1072 004d 08       		.uleb128 0x8
+ 1073 004e 21       		.uleb128 0x21
+ 1074 004f 00       		.byte	0
+ 1075 0050 49       		.uleb128 0x49
+ 1076 0051 13       		.uleb128 0x13
+ 1077 0052 2F       		.uleb128 0x2f
+ 1078 0053 0B       		.uleb128 0xb
+ 1079 0054 00       		.byte	0
+ 1080 0055 00       		.byte	0
+ 1081 0056 09       		.uleb128 0x9
+ 1082 0057 13       		.uleb128 0x13
+ 1083 0058 01       		.byte	0x1
+ 1084 0059 0B       		.uleb128 0xb
+ 1085 005a 0B       		.uleb128 0xb
+ 1086 005b 3A       		.uleb128 0x3a
+ 1087 005c 0B       		.uleb128 0xb
+ 1088 005d 3B       		.uleb128 0x3b
+ 1089 005e 0B       		.uleb128 0xb
+ 1090 005f 01       		.uleb128 0x1
+ 1091 0060 13       		.uleb128 0x13
+ 1092 0061 00       		.byte	0
+ 1093 0062 00       		.byte	0
+ 1094 0063 0A       		.uleb128 0xa
+ 1095 0064 0D       		.uleb128 0xd
+ 1096 0065 00       		.byte	0
+ 1097 0066 03       		.uleb128 0x3
+ 1098 0067 0E       		.uleb128 0xe
+ 1099 0068 3A       		.uleb128 0x3a
+ 1100 0069 0B       		.uleb128 0xb
+ 1101 006a 3B       		.uleb128 0x3b
+ 1102 006b 0B       		.uleb128 0xb
+ 1103 006c 49       		.uleb128 0x49
+ 1104 006d 13       		.uleb128 0x13
+ 1105 006e 38       		.uleb128 0x38
+ 1106 006f 0B       		.uleb128 0xb
+ 1107 0070 00       		.byte	0
+ 1108 0071 00       		.byte	0
+ 1109 0072 0B       		.uleb128 0xb
+ 1110 0073 16       		.uleb128 0x16
+ 1111 0074 00       		.byte	0
+ 1112 0075 03       		.uleb128 0x3
+ 1113 0076 0E       		.uleb128 0xe
+ 1114 0077 3A       		.uleb128 0x3a
+ 1115 0078 0B       		.uleb128 0xb
+ 1116 0079 3B       		.uleb128 0x3b
+ 1117 007a 05       		.uleb128 0x5
+ 1118 007b 49       		.uleb128 0x49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 33
+
+
+ 1119 007c 13       		.uleb128 0x13
+ 1120 007d 00       		.byte	0
+ 1121 007e 00       		.byte	0
+ 1122 007f 0C       		.uleb128 0xc
+ 1123 0080 04       		.uleb128 0x4
+ 1124 0081 01       		.byte	0x1
+ 1125 0082 0B       		.uleb128 0xb
+ 1126 0083 0B       		.uleb128 0xb
+ 1127 0084 49       		.uleb128 0x49
+ 1128 0085 13       		.uleb128 0x13
+ 1129 0086 3A       		.uleb128 0x3a
+ 1130 0087 0B       		.uleb128 0xb
+ 1131 0088 3B       		.uleb128 0x3b
+ 1132 0089 0B       		.uleb128 0xb
+ 1133 008a 01       		.uleb128 0x1
+ 1134 008b 13       		.uleb128 0x13
+ 1135 008c 00       		.byte	0
+ 1136 008d 00       		.byte	0
+ 1137 008e 0D       		.uleb128 0xd
+ 1138 008f 28       		.uleb128 0x28
+ 1139 0090 00       		.byte	0
+ 1140 0091 03       		.uleb128 0x3
+ 1141 0092 0E       		.uleb128 0xe
+ 1142 0093 1C       		.uleb128 0x1c
+ 1143 0094 0B       		.uleb128 0xb
+ 1144 0095 00       		.byte	0
+ 1145 0096 00       		.byte	0
+ 1146 0097 0E       		.uleb128 0xe
+ 1147 0098 04       		.uleb128 0x4
+ 1148 0099 01       		.byte	0x1
+ 1149 009a 0B       		.uleb128 0xb
+ 1150 009b 0B       		.uleb128 0xb
+ 1151 009c 49       		.uleb128 0x49
+ 1152 009d 13       		.uleb128 0x13
+ 1153 009e 3A       		.uleb128 0x3a
+ 1154 009f 0B       		.uleb128 0xb
+ 1155 00a0 3B       		.uleb128 0x3b
+ 1156 00a1 05       		.uleb128 0x5
+ 1157 00a2 01       		.uleb128 0x1
+ 1158 00a3 13       		.uleb128 0x13
+ 1159 00a4 00       		.byte	0
+ 1160 00a5 00       		.byte	0
+ 1161 00a6 0F       		.uleb128 0xf
+ 1162 00a7 28       		.uleb128 0x28
+ 1163 00a8 00       		.byte	0
+ 1164 00a9 03       		.uleb128 0x3
+ 1165 00aa 0E       		.uleb128 0xe
+ 1166 00ab 1C       		.uleb128 0x1c
+ 1167 00ac 06       		.uleb128 0x6
+ 1168 00ad 00       		.byte	0
+ 1169 00ae 00       		.byte	0
+ 1170 00af 10       		.uleb128 0x10
+ 1171 00b0 2E       		.uleb128 0x2e
+ 1172 00b1 01       		.byte	0x1
+ 1173 00b2 3F       		.uleb128 0x3f
+ 1174 00b3 19       		.uleb128 0x19
+ 1175 00b4 03       		.uleb128 0x3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 34
+
+
+ 1176 00b5 0E       		.uleb128 0xe
+ 1177 00b6 3A       		.uleb128 0x3a
+ 1178 00b7 0B       		.uleb128 0xb
+ 1179 00b8 3B       		.uleb128 0x3b
+ 1180 00b9 0B       		.uleb128 0xb
+ 1181 00ba 27       		.uleb128 0x27
+ 1182 00bb 19       		.uleb128 0x19
+ 1183 00bc 49       		.uleb128 0x49
+ 1184 00bd 13       		.uleb128 0x13
+ 1185 00be 11       		.uleb128 0x11
+ 1186 00bf 01       		.uleb128 0x1
+ 1187 00c0 12       		.uleb128 0x12
+ 1188 00c1 06       		.uleb128 0x6
+ 1189 00c2 40       		.uleb128 0x40
+ 1190 00c3 18       		.uleb128 0x18
+ 1191 00c4 9742     		.uleb128 0x2117
+ 1192 00c6 19       		.uleb128 0x19
+ 1193 00c7 01       		.uleb128 0x1
+ 1194 00c8 13       		.uleb128 0x13
+ 1195 00c9 00       		.byte	0
+ 1196 00ca 00       		.byte	0
+ 1197 00cb 11       		.uleb128 0x11
+ 1198 00cc 05       		.uleb128 0x5
+ 1199 00cd 00       		.byte	0
+ 1200 00ce 03       		.uleb128 0x3
+ 1201 00cf 0E       		.uleb128 0xe
+ 1202 00d0 3A       		.uleb128 0x3a
+ 1203 00d1 0B       		.uleb128 0xb
+ 1204 00d2 3B       		.uleb128 0x3b
+ 1205 00d3 0B       		.uleb128 0xb
+ 1206 00d4 49       		.uleb128 0x49
+ 1207 00d5 13       		.uleb128 0x13
+ 1208 00d6 02       		.uleb128 0x2
+ 1209 00d7 17       		.uleb128 0x17
+ 1210 00d8 00       		.byte	0
+ 1211 00d9 00       		.byte	0
+ 1212 00da 12       		.uleb128 0x12
+ 1213 00db 34       		.uleb128 0x34
+ 1214 00dc 00       		.byte	0
+ 1215 00dd 03       		.uleb128 0x3
+ 1216 00de 08       		.uleb128 0x8
+ 1217 00df 3A       		.uleb128 0x3a
+ 1218 00e0 0B       		.uleb128 0xb
+ 1219 00e1 3B       		.uleb128 0x3b
+ 1220 00e2 0B       		.uleb128 0xb
+ 1221 00e3 49       		.uleb128 0x49
+ 1222 00e4 13       		.uleb128 0x13
+ 1223 00e5 02       		.uleb128 0x2
+ 1224 00e6 17       		.uleb128 0x17
+ 1225 00e7 00       		.byte	0
+ 1226 00e8 00       		.byte	0
+ 1227 00e9 13       		.uleb128 0x13
+ 1228 00ea 898201   		.uleb128 0x4109
+ 1229 00ed 01       		.byte	0x1
+ 1230 00ee 11       		.uleb128 0x11
+ 1231 00ef 01       		.uleb128 0x1
+ 1232 00f0 31       		.uleb128 0x31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 35
+
+
+ 1233 00f1 13       		.uleb128 0x13
+ 1234 00f2 01       		.uleb128 0x1
+ 1235 00f3 13       		.uleb128 0x13
+ 1236 00f4 00       		.byte	0
+ 1237 00f5 00       		.byte	0
+ 1238 00f6 14       		.uleb128 0x14
+ 1239 00f7 8A8201   		.uleb128 0x410a
+ 1240 00fa 00       		.byte	0
+ 1241 00fb 02       		.uleb128 0x2
+ 1242 00fc 18       		.uleb128 0x18
+ 1243 00fd 9142     		.uleb128 0x2111
+ 1244 00ff 18       		.uleb128 0x18
+ 1245 0100 00       		.byte	0
+ 1246 0101 00       		.byte	0
+ 1247 0102 15       		.uleb128 0x15
+ 1248 0103 898201   		.uleb128 0x4109
+ 1249 0106 01       		.byte	0x1
+ 1250 0107 11       		.uleb128 0x11
+ 1251 0108 01       		.uleb128 0x1
+ 1252 0109 31       		.uleb128 0x31
+ 1253 010a 13       		.uleb128 0x13
+ 1254 010b 00       		.byte	0
+ 1255 010c 00       		.byte	0
+ 1256 010d 16       		.uleb128 0x16
+ 1257 010e 0F       		.uleb128 0xf
+ 1258 010f 00       		.byte	0
+ 1259 0110 0B       		.uleb128 0xb
+ 1260 0111 0B       		.uleb128 0xb
+ 1261 0112 49       		.uleb128 0x49
+ 1262 0113 13       		.uleb128 0x13
+ 1263 0114 00       		.byte	0
+ 1264 0115 00       		.byte	0
+ 1265 0116 17       		.uleb128 0x17
+ 1266 0117 2E       		.uleb128 0x2e
+ 1267 0118 01       		.byte	0x1
+ 1268 0119 03       		.uleb128 0x3
+ 1269 011a 0E       		.uleb128 0xe
+ 1270 011b 3A       		.uleb128 0x3a
+ 1271 011c 0B       		.uleb128 0xb
+ 1272 011d 3B       		.uleb128 0x3b
+ 1273 011e 05       		.uleb128 0x5
+ 1274 011f 27       		.uleb128 0x27
+ 1275 0120 19       		.uleb128 0x19
+ 1276 0121 20       		.uleb128 0x20
+ 1277 0122 0B       		.uleb128 0xb
+ 1278 0123 01       		.uleb128 0x1
+ 1279 0124 13       		.uleb128 0x13
+ 1280 0125 00       		.byte	0
+ 1281 0126 00       		.byte	0
+ 1282 0127 18       		.uleb128 0x18
+ 1283 0128 05       		.uleb128 0x5
+ 1284 0129 00       		.byte	0
+ 1285 012a 03       		.uleb128 0x3
+ 1286 012b 0E       		.uleb128 0xe
+ 1287 012c 3A       		.uleb128 0x3a
+ 1288 012d 0B       		.uleb128 0xb
+ 1289 012e 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 36
+
+
+ 1290 012f 05       		.uleb128 0x5
+ 1291 0130 49       		.uleb128 0x49
+ 1292 0131 13       		.uleb128 0x13
+ 1293 0132 00       		.byte	0
+ 1294 0133 00       		.byte	0
+ 1295 0134 19       		.uleb128 0x19
+ 1296 0135 34       		.uleb128 0x34
+ 1297 0136 00       		.byte	0
+ 1298 0137 03       		.uleb128 0x3
+ 1299 0138 0E       		.uleb128 0xe
+ 1300 0139 3A       		.uleb128 0x3a
+ 1301 013a 0B       		.uleb128 0xb
+ 1302 013b 3B       		.uleb128 0x3b
+ 1303 013c 05       		.uleb128 0x5
+ 1304 013d 49       		.uleb128 0x49
+ 1305 013e 13       		.uleb128 0x13
+ 1306 013f 00       		.byte	0
+ 1307 0140 00       		.byte	0
+ 1308 0141 1A       		.uleb128 0x1a
+ 1309 0142 2E       		.uleb128 0x2e
+ 1310 0143 01       		.byte	0x1
+ 1311 0144 3F       		.uleb128 0x3f
+ 1312 0145 19       		.uleb128 0x19
+ 1313 0146 03       		.uleb128 0x3
+ 1314 0147 0E       		.uleb128 0xe
+ 1315 0148 3A       		.uleb128 0x3a
+ 1316 0149 0B       		.uleb128 0xb
+ 1317 014a 3B       		.uleb128 0x3b
+ 1318 014b 0B       		.uleb128 0xb
+ 1319 014c 27       		.uleb128 0x27
+ 1320 014d 19       		.uleb128 0x19
+ 1321 014e 11       		.uleb128 0x11
+ 1322 014f 01       		.uleb128 0x1
+ 1323 0150 12       		.uleb128 0x12
+ 1324 0151 06       		.uleb128 0x6
+ 1325 0152 40       		.uleb128 0x40
+ 1326 0153 18       		.uleb128 0x18
+ 1327 0154 9742     		.uleb128 0x2117
+ 1328 0156 19       		.uleb128 0x19
+ 1329 0157 01       		.uleb128 0x1
+ 1330 0158 13       		.uleb128 0x13
+ 1331 0159 00       		.byte	0
+ 1332 015a 00       		.byte	0
+ 1333 015b 1B       		.uleb128 0x1b
+ 1334 015c 1D       		.uleb128 0x1d
+ 1335 015d 01       		.byte	0x1
+ 1336 015e 31       		.uleb128 0x31
+ 1337 015f 13       		.uleb128 0x13
+ 1338 0160 11       		.uleb128 0x11
+ 1339 0161 01       		.uleb128 0x1
+ 1340 0162 12       		.uleb128 0x12
+ 1341 0163 06       		.uleb128 0x6
+ 1342 0164 58       		.uleb128 0x58
+ 1343 0165 0B       		.uleb128 0xb
+ 1344 0166 59       		.uleb128 0x59
+ 1345 0167 0B       		.uleb128 0xb
+ 1346 0168 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 37
+
+
+ 1347 0169 00       		.byte	0
+ 1348 016a 1C       		.uleb128 0x1c
+ 1349 016b 05       		.uleb128 0x5
+ 1350 016c 00       		.byte	0
+ 1351 016d 31       		.uleb128 0x31
+ 1352 016e 13       		.uleb128 0x13
+ 1353 016f 02       		.uleb128 0x2
+ 1354 0170 17       		.uleb128 0x17
+ 1355 0171 00       		.byte	0
+ 1356 0172 00       		.byte	0
+ 1357 0173 1D       		.uleb128 0x1d
+ 1358 0174 0B       		.uleb128 0xb
+ 1359 0175 01       		.byte	0x1
+ 1360 0176 11       		.uleb128 0x11
+ 1361 0177 01       		.uleb128 0x1
+ 1362 0178 12       		.uleb128 0x12
+ 1363 0179 06       		.uleb128 0x6
+ 1364 017a 00       		.byte	0
+ 1365 017b 00       		.byte	0
+ 1366 017c 1E       		.uleb128 0x1e
+ 1367 017d 34       		.uleb128 0x34
+ 1368 017e 00       		.byte	0
+ 1369 017f 31       		.uleb128 0x31
+ 1370 0180 13       		.uleb128 0x13
+ 1371 0181 02       		.uleb128 0x2
+ 1372 0182 17       		.uleb128 0x17
+ 1373 0183 00       		.byte	0
+ 1374 0184 00       		.byte	0
+ 1375 0185 1F       		.uleb128 0x1f
+ 1376 0186 898201   		.uleb128 0x4109
+ 1377 0189 00       		.byte	0
+ 1378 018a 11       		.uleb128 0x11
+ 1379 018b 01       		.uleb128 0x1
+ 1380 018c 31       		.uleb128 0x31
+ 1381 018d 13       		.uleb128 0x13
+ 1382 018e 00       		.byte	0
+ 1383 018f 00       		.byte	0
+ 1384 0190 20       		.uleb128 0x20
+ 1385 0191 34       		.uleb128 0x34
+ 1386 0192 00       		.byte	0
+ 1387 0193 03       		.uleb128 0x3
+ 1388 0194 0E       		.uleb128 0xe
+ 1389 0195 3A       		.uleb128 0x3a
+ 1390 0196 0B       		.uleb128 0xb
+ 1391 0197 3B       		.uleb128 0x3b
+ 1392 0198 0B       		.uleb128 0xb
+ 1393 0199 49       		.uleb128 0x49
+ 1394 019a 13       		.uleb128 0x13
+ 1395 019b 02       		.uleb128 0x2
+ 1396 019c 17       		.uleb128 0x17
+ 1397 019d 00       		.byte	0
+ 1398 019e 00       		.byte	0
+ 1399 019f 21       		.uleb128 0x21
+ 1400 01a0 34       		.uleb128 0x34
+ 1401 01a1 00       		.byte	0
+ 1402 01a2 03       		.uleb128 0x3
+ 1403 01a3 0E       		.uleb128 0xe
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 38
+
+
+ 1404 01a4 3A       		.uleb128 0x3a
+ 1405 01a5 0B       		.uleb128 0xb
+ 1406 01a6 3B       		.uleb128 0x3b
+ 1407 01a7 0B       		.uleb128 0xb
+ 1408 01a8 49       		.uleb128 0x49
+ 1409 01a9 13       		.uleb128 0x13
+ 1410 01aa 02       		.uleb128 0x2
+ 1411 01ab 18       		.uleb128 0x18
+ 1412 01ac 00       		.byte	0
+ 1413 01ad 00       		.byte	0
+ 1414 01ae 22       		.uleb128 0x22
+ 1415 01af 34       		.uleb128 0x34
+ 1416 01b0 00       		.byte	0
+ 1417 01b1 03       		.uleb128 0x3
+ 1418 01b2 0E       		.uleb128 0xe
+ 1419 01b3 3A       		.uleb128 0x3a
+ 1420 01b4 0B       		.uleb128 0xb
+ 1421 01b5 3B       		.uleb128 0x3b
+ 1422 01b6 05       		.uleb128 0x5
+ 1423 01b7 49       		.uleb128 0x49
+ 1424 01b8 13       		.uleb128 0x13
+ 1425 01b9 3F       		.uleb128 0x3f
+ 1426 01ba 19       		.uleb128 0x19
+ 1427 01bb 3C       		.uleb128 0x3c
+ 1428 01bc 19       		.uleb128 0x19
+ 1429 01bd 00       		.byte	0
+ 1430 01be 00       		.byte	0
+ 1431 01bf 23       		.uleb128 0x23
+ 1432 01c0 2E       		.uleb128 0x2e
+ 1433 01c1 00       		.byte	0
+ 1434 01c2 3F       		.uleb128 0x3f
+ 1435 01c3 19       		.uleb128 0x19
+ 1436 01c4 3C       		.uleb128 0x3c
+ 1437 01c5 19       		.uleb128 0x19
+ 1438 01c6 6E       		.uleb128 0x6e
+ 1439 01c7 0E       		.uleb128 0xe
+ 1440 01c8 03       		.uleb128 0x3
+ 1441 01c9 0E       		.uleb128 0xe
+ 1442 01ca 3A       		.uleb128 0x3a
+ 1443 01cb 0B       		.uleb128 0xb
+ 1444 01cc 3B       		.uleb128 0x3b
+ 1445 01cd 05       		.uleb128 0x5
+ 1446 01ce 00       		.byte	0
+ 1447 01cf 00       		.byte	0
+ 1448 01d0 00       		.byte	0
+ 1449              		.section	.debug_loc,"",%progbits
+ 1450              	.Ldebug_loc0:
+ 1451              	.LLST0:
+ 1452 0000 00000000 		.4byte	.LVL0
+ 1453 0004 20000000 		.4byte	.LVL2
+ 1454 0008 0100     		.2byte	0x1
+ 1455 000a 50       		.byte	0x50
+ 1456 000b 20000000 		.4byte	.LVL2
+ 1457 000f D4000000 		.4byte	.LVL10
+ 1458 0013 0100     		.2byte	0x1
+ 1459 0015 55       		.byte	0x55
+ 1460 0016 D4000000 		.4byte	.LVL10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 39
+
+
+ 1461 001a D6000000 		.4byte	.LVL11
+ 1462 001e 0100     		.2byte	0x1
+ 1463 0020 50       		.byte	0x50
+ 1464 0021 D6000000 		.4byte	.LVL11
+ 1465 0025 D8000000 		.4byte	.LVL12
+ 1466 0029 0400     		.2byte	0x4
+ 1467 002b F3       		.byte	0xf3
+ 1468 002c 01       		.uleb128 0x1
+ 1469 002d 50       		.byte	0x50
+ 1470 002e 9F       		.byte	0x9f
+ 1471 002f D8000000 		.4byte	.LVL12
+ 1472 0033 DA000000 		.4byte	.LVL13
+ 1473 0037 0100     		.2byte	0x1
+ 1474 0039 50       		.byte	0x50
+ 1475 003a DA000000 		.4byte	.LVL13
+ 1476 003e DC000000 		.4byte	.LVL14
+ 1477 0042 0100     		.2byte	0x1
+ 1478 0044 55       		.byte	0x55
+ 1479 0045 DC000000 		.4byte	.LVL14
+ 1480 0049 E4000000 		.4byte	.LFE149
+ 1481 004d 0400     		.2byte	0x4
+ 1482 004f F3       		.byte	0xf3
+ 1483 0050 01       		.uleb128 0x1
+ 1484 0051 50       		.byte	0x50
+ 1485 0052 9F       		.byte	0x9f
+ 1486 0053 00000000 		.4byte	0
+ 1487 0057 00000000 		.4byte	0
+ 1488              	.LLST1:
+ 1489 005b 00000000 		.4byte	.LVL0
+ 1490 005f 1E000000 		.4byte	.LVL1
+ 1491 0063 0100     		.2byte	0x1
+ 1492 0065 51       		.byte	0x51
+ 1493 0066 1E000000 		.4byte	.LVL1
+ 1494 006a D4000000 		.4byte	.LVL10
+ 1495 006e 0100     		.2byte	0x1
+ 1496 0070 54       		.byte	0x54
+ 1497 0071 D4000000 		.4byte	.LVL10
+ 1498 0075 E4000000 		.4byte	.LFE149
+ 1499 0079 0100     		.2byte	0x1
+ 1500 007b 51       		.byte	0x51
+ 1501 007c 00000000 		.4byte	0
+ 1502 0080 00000000 		.4byte	0
+ 1503              	.LLST2:
+ 1504 0084 00000000 		.4byte	.LVL0
+ 1505 0088 D0000000 		.4byte	.LVL9
+ 1506 008c 0600     		.2byte	0x6
+ 1507 008e 0C       		.byte	0xc
+ 1508 008f 0100D600 		.4byte	0xd60001
+ 1509 0093 9F       		.byte	0x9f
+ 1510 0094 D0000000 		.4byte	.LVL9
+ 1511 0098 D4000000 		.4byte	.LVL10
+ 1512 009c 0200     		.2byte	0x2
+ 1513 009e 30       		.byte	0x30
+ 1514 009f 9F       		.byte	0x9f
+ 1515 00a0 D4000000 		.4byte	.LVL10
+ 1516 00a4 D6000000 		.4byte	.LVL11
+ 1517 00a8 0600     		.2byte	0x6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 40
+
+
+ 1518 00aa 0C       		.byte	0xc
+ 1519 00ab 0100D600 		.4byte	0xd60001
+ 1520 00af 9F       		.byte	0x9f
+ 1521 00b0 D6000000 		.4byte	.LVL11
+ 1522 00b4 D8000000 		.4byte	.LVL12
+ 1523 00b8 0100     		.2byte	0x1
+ 1524 00ba 50       		.byte	0x50
+ 1525 00bb D8000000 		.4byte	.LVL12
+ 1526 00bf DA000000 		.4byte	.LVL13
+ 1527 00c3 0600     		.2byte	0x6
+ 1528 00c5 0C       		.byte	0xc
+ 1529 00c6 0100D600 		.4byte	0xd60001
+ 1530 00ca 9F       		.byte	0x9f
+ 1531 00cb DA000000 		.4byte	.LVL13
+ 1532 00cf E4000000 		.4byte	.LFE149
+ 1533 00d3 0100     		.2byte	0x1
+ 1534 00d5 50       		.byte	0x50
+ 1535 00d6 00000000 		.4byte	0
+ 1536 00da 00000000 		.4byte	0
+ 1537              	.LLST3:
+ 1538 00de 00000000 		.4byte	.LVL15
+ 1539 00e2 07000000 		.4byte	.LVL17-1
+ 1540 00e6 0100     		.2byte	0x1
+ 1541 00e8 50       		.byte	0x50
+ 1542 00e9 07000000 		.4byte	.LVL17-1
+ 1543 00ed 38000000 		.4byte	.LFE150
+ 1544 00f1 0100     		.2byte	0x1
+ 1545 00f3 54       		.byte	0x54
+ 1546 00f4 00000000 		.4byte	0
+ 1547 00f8 00000000 		.4byte	0
+ 1548              	.LLST4:
+ 1549 00fc 04000000 		.4byte	.LVL16
+ 1550 0100 07000000 		.4byte	.LVL17-1
+ 1551 0104 0100     		.2byte	0x1
+ 1552 0106 50       		.byte	0x50
+ 1553 0107 07000000 		.4byte	.LVL17-1
+ 1554 010b 24000000 		.4byte	.LVL18
+ 1555 010f 0100     		.2byte	0x1
+ 1556 0111 54       		.byte	0x54
+ 1557 0112 00000000 		.4byte	0
+ 1558 0116 00000000 		.4byte	0
+ 1559              	.LLST5:
+ 1560 011a 08000000 		.4byte	.LVL17
+ 1561 011e 23000000 		.4byte	.LVL18-1
+ 1562 0122 0100     		.2byte	0x1
+ 1563 0124 50       		.byte	0x50
+ 1564 0125 00000000 		.4byte	0
+ 1565 0129 00000000 		.4byte	0
+ 1566              	.LLST6:
+ 1567 012d 00000000 		.4byte	.LVL19
+ 1568 0131 2E000000 		.4byte	.LVL30
+ 1569 0135 0100     		.2byte	0x1
+ 1570 0137 50       		.byte	0x50
+ 1571 0138 2E000000 		.4byte	.LVL30
+ 1572 013c 46000000 		.4byte	.LFE151
+ 1573 0140 0400     		.2byte	0x4
+ 1574 0142 F3       		.byte	0xf3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 41
+
+
+ 1575 0143 01       		.uleb128 0x1
+ 1576 0144 50       		.byte	0x50
+ 1577 0145 9F       		.byte	0x9f
+ 1578 0146 00000000 		.4byte	0
+ 1579 014a 00000000 		.4byte	0
+ 1580              	.LLST7:
+ 1581 014e 04000000 		.4byte	.LVL20
+ 1582 0152 08000000 		.4byte	.LVL22
+ 1583 0156 0100     		.2byte	0x1
+ 1584 0158 53       		.byte	0x53
+ 1585 0159 1E000000 		.4byte	.LVL26
+ 1586 015d 2A000000 		.4byte	.LVL28
+ 1587 0161 0100     		.2byte	0x1
+ 1588 0163 55       		.byte	0x55
+ 1589 0164 3E000000 		.4byte	.LVL32
+ 1590 0168 42000000 		.4byte	.LVL33
+ 1591 016c 0900     		.2byte	0x9
+ 1592 016e 71       		.byte	0x71
+ 1593 016f 00       		.sleb128 0
+ 1594 0170 72       		.byte	0x72
+ 1595 0171 00       		.sleb128 0
+ 1596 0172 1E       		.byte	0x1e
+ 1597 0173 73       		.byte	0x73
+ 1598 0174 00       		.sleb128 0
+ 1599 0175 22       		.byte	0x22
+ 1600 0176 9F       		.byte	0x9f
+ 1601 0177 42000000 		.4byte	.LVL33
+ 1602 017b 46000000 		.4byte	.LFE151
+ 1603 017f 0100     		.2byte	0x1
+ 1604 0181 50       		.byte	0x50
+ 1605 0182 00000000 		.4byte	0
+ 1606 0186 00000000 		.4byte	0
+ 1607              	.LLST8:
+ 1608 018a 10000000 		.4byte	.LVL24
+ 1609 018e 44000000 		.4byte	.LVL34
+ 1610 0192 0100     		.2byte	0x1
+ 1611 0194 54       		.byte	0x54
+ 1612 0195 00000000 		.4byte	0
+ 1613 0199 00000000 		.4byte	0
+ 1614              		.section	.debug_aranges,"",%progbits
+ 1615 0000 2C000000 		.4byte	0x2c
+ 1616 0004 0200     		.2byte	0x2
+ 1617 0006 00000000 		.4byte	.Ldebug_info0
+ 1618 000a 04       		.byte	0x4
+ 1619 000b 00       		.byte	0
+ 1620 000c 0000     		.2byte	0
+ 1621 000e 0000     		.2byte	0
+ 1622 0010 00000000 		.4byte	.LFB149
+ 1623 0014 E4000000 		.4byte	.LFE149-.LFB149
+ 1624 0018 00000000 		.4byte	.LFB150
+ 1625 001c 38000000 		.4byte	.LFE150-.LFB150
+ 1626 0020 00000000 		.4byte	.LFB151
+ 1627 0024 46000000 		.4byte	.LFE151-.LFB151
+ 1628 0028 00000000 		.4byte	0
+ 1629 002c 00000000 		.4byte	0
+ 1630              		.section	.debug_ranges,"",%progbits
+ 1631              	.Ldebug_ranges0:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 42
+
+
+ 1632 0000 00000000 		.4byte	.LFB149
+ 1633 0004 E4000000 		.4byte	.LFE149
+ 1634 0008 00000000 		.4byte	.LFB150
+ 1635 000c 38000000 		.4byte	.LFE150
+ 1636 0010 00000000 		.4byte	.LFB151
+ 1637 0014 46000000 		.4byte	.LFE151
+ 1638 0018 00000000 		.4byte	0
+ 1639 001c 00000000 		.4byte	0
+ 1640              		.section	.debug_line,"",%progbits
+ 1641              	.Ldebug_line0:
+ 1642 0000 E9020000 		.section	.debug_str,"MS",%progbits,1
+ 1642      02001602 
+ 1642      00000201 
+ 1642      FB0E0D00 
+ 1642      01010101 
+ 1643              	.LASF52:
+ 1644 0000 63795F65 		.ascii	"cy_en_mcwdtmode_t\000"
+ 1644      6E5F6D63 
+ 1644      7764746D 
+ 1644      6F64655F 
+ 1644      7400
+ 1645              	.LASF31:
+ 1646 0012 4D435744 		.ascii	"MCWDT_STRUCT_Type\000"
+ 1646      545F5354 
+ 1646      52554354 
+ 1646      5F547970 
+ 1646      6500
+ 1647              	.LASF20:
+ 1648 0024 4D435744 		.ascii	"MCWDT_CNTLOW\000"
+ 1648      545F434E 
+ 1648      544C4F57 
+ 1648      00
+ 1649              	.LASF70:
+ 1650 0031 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\James.cydsn"
+ 1650      73657273 
+ 1650      5C73616C 
+ 1650      617A5C44 
+ 1650      65736B74 
+ 1651 005f 00       		.ascii	"\000"
+ 1652              	.LASF3:
+ 1653 0060 73686F72 		.ascii	"short int\000"
+ 1653      7420696E 
+ 1653      7400
+ 1654              	.LASF18:
+ 1655 006a 73697A65 		.ascii	"sizetype\000"
+ 1655      74797065 
+ 1655      00
+ 1656              	.LASF60:
+ 1657 0073 636F756E 		.ascii	"countVal\000"
+ 1657      7456616C 
+ 1657      00
+ 1658              	.LASF63:
+ 1659 007c 6D617463 		.ascii	"match0\000"
+ 1659      683000
+ 1660              	.LASF64:
+ 1661 0083 6D617463 		.ascii	"match1\000"
+ 1661      683100
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 43
+
+
+ 1662              	.LASF55:
+ 1663 008a 63795F65 		.ascii	"cy_en_mcwdt_status_t\000"
+ 1663      6E5F6D63 
+ 1663      7764745F 
+ 1663      73746174 
+ 1663      75735F74 
+ 1664              	.LASF11:
+ 1665 009f 5F5F7569 		.ascii	"__uint32_t\000"
+ 1665      6E743332 
+ 1665      5F7400
+ 1666              	.LASF39:
+ 1667 00aa 63314D6F 		.ascii	"c1Mode\000"
+ 1667      646500
+ 1668              	.LASF7:
+ 1669 00b1 5F5F7569 		.ascii	"__uint16_t\000"
+ 1669      6E743136 
+ 1669      5F7400
+ 1670              	.LASF24:
+ 1671 00bc 4D435744 		.ascii	"MCWDT_CTL\000"
+ 1671      545F4354 
+ 1671      4C00
+ 1672              	.LASF38:
+ 1673 00c6 63304D6F 		.ascii	"c0Mode\000"
+ 1673      646500
+ 1674              	.LASF57:
+ 1675 00cd 636F6E66 		.ascii	"config\000"
+ 1675      696700
+ 1676              	.LASF14:
+ 1677 00d4 75696E74 		.ascii	"uint8_t\000"
+ 1677      385F7400 
+ 1678              	.LASF53:
+ 1679 00dc 43595F4D 		.ascii	"CY_MCWDT_SUCCESS\000"
+ 1679      43574454 
+ 1679      5F535543 
+ 1679      43455353 
+ 1679      00
+ 1680              	.LASF66:
+ 1681 00ed 43795F53 		.ascii	"Cy_SysLib_EnterCriticalSection\000"
+ 1681      79734C69 
+ 1681      625F456E 
+ 1681      74657243 
+ 1681      72697469 
+ 1682              	.LASF61:
+ 1683 010c 636F756E 		.ascii	"counter1\000"
+ 1683      74657231 
+ 1683      00
+ 1684              	.LASF42:
+ 1685 0115 6330436C 		.ascii	"c0ClearOnMatch\000"
+ 1685      6561724F 
+ 1685      6E4D6174 
+ 1685      636800
+ 1686              	.LASF28:
+ 1687 0124 4D435744 		.ascii	"MCWDT_INTR_MASKED\000"
+ 1687      545F494E 
+ 1687      54525F4D 
+ 1687      41534B45 
+ 1687      4400
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 44
+
+
+ 1688              	.LASF21:
+ 1689 0136 4D435744 		.ascii	"MCWDT_CNTHIGH\000"
+ 1689      545F434E 
+ 1689      54484947 
+ 1689      4800
+ 1690              	.LASF34:
+ 1691 0144 666C6F61 		.ascii	"float\000"
+ 1691      7400
+ 1692              	.LASF1:
+ 1693 014a 6C6F6E67 		.ascii	"long long int\000"
+ 1693      206C6F6E 
+ 1693      6720696E 
+ 1693      7400
+ 1694              	.LASF22:
+ 1695 0158 4D435744 		.ascii	"MCWDT_MATCH\000"
+ 1695      545F4D41 
+ 1695      54434800 
+ 1696              	.LASF49:
+ 1697 0164 43595F4D 		.ascii	"CY_MCWDT_MODE_INT\000"
+ 1697      43574454 
+ 1697      5F4D4F44 
+ 1697      455F494E 
+ 1697      5400
+ 1698              	.LASF10:
+ 1699 0176 6C6F6E67 		.ascii	"long int\000"
+ 1699      20696E74 
+ 1699      00
+ 1700              	.LASF32:
+ 1701 017f 63686172 		.ascii	"char_t\000"
+ 1701      5F7400
+ 1702              	.LASF27:
+ 1703 0186 4D435744 		.ascii	"MCWDT_INTR_MASK\000"
+ 1703      545F494E 
+ 1703      54525F4D 
+ 1703      41534B00 
+ 1704              	.LASF6:
+ 1705 0196 5F5F7569 		.ascii	"__uint8_t\000"
+ 1705      6E74385F 
+ 1705      7400
+ 1706              	.LASF43:
+ 1707 01a0 6331436C 		.ascii	"c1ClearOnMatch\000"
+ 1707      6561724F 
+ 1707      6E4D6174 
+ 1707      636800
+ 1708              	.LASF59:
+ 1709 01af 43795F4D 		.ascii	"Cy_MCWDT_GetCountCascaded\000"
+ 1709      43574454 
+ 1709      5F476574 
+ 1709      436F756E 
+ 1709      74436173 
+ 1710              	.LASF36:
+ 1711 01c9 63304D61 		.ascii	"c0Match\000"
+ 1711      74636800 
+ 1712              	.LASF2:
+ 1713 01d1 6C6F6E67 		.ascii	"long double\000"
+ 1713      20646F75 
+ 1713      626C6500 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 45
+
+
+ 1714              	.LASF5:
+ 1715 01dd 756E7369 		.ascii	"unsigned char\000"
+ 1715      676E6564 
+ 1715      20636861 
+ 1715      7200
+ 1716              	.LASF69:
+ 1717 01eb 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\drivers\\peripheral\\"
+ 1717      72617465 
+ 1717      645F536F 
+ 1717      75726365 
+ 1717      5C50536F 
+ 1718 0219 6D637764 		.ascii	"mcwdt\\cy_mcwdt.c\000"
+ 1718      745C6379 
+ 1718      5F6D6377 
+ 1718      64742E63 
+ 1718      00
+ 1719              	.LASF4:
+ 1720 022a 7369676E 		.ascii	"signed char\000"
+ 1720      65642063 
+ 1720      68617200 
+ 1721              	.LASF13:
+ 1722 0236 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1722      206C6F6E 
+ 1722      6720756E 
+ 1722      7369676E 
+ 1722      65642069 
+ 1723              	.LASF17:
+ 1724 024d 75696E74 		.ascii	"uint32_t\000"
+ 1724      33325F74 
+ 1724      00
+ 1725              	.LASF58:
+ 1726 0256 43795F4D 		.ascii	"Cy_MCWDT_Init\000"
+ 1726      43574454 
+ 1726      5F496E69 
+ 1726      7400
+ 1727              	.LASF45:
+ 1728 0264 63316332 		.ascii	"c1c2Cascade\000"
+ 1728      43617363 
+ 1728      61646500 
+ 1729              	.LASF0:
+ 1730 0270 756E7369 		.ascii	"unsigned int\000"
+ 1730      676E6564 
+ 1730      20696E74 
+ 1730      00
+ 1731              	.LASF71:
+ 1732 027d 43795F4D 		.ascii	"Cy_MCWDT_Unlock\000"
+ 1732      43574454 
+ 1732      5F556E6C 
+ 1732      6F636B00 
+ 1733              	.LASF15:
+ 1734 028d 75696E74 		.ascii	"uint16_t\000"
+ 1734      31365F74 
+ 1734      00
+ 1735              	.LASF51:
+ 1736 0296 43595F4D 		.ascii	"CY_MCWDT_MODE_INT_RESET\000"
+ 1736      43574454 
+ 1736      5F4D4F44 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 46
+
+
+ 1736      455F494E 
+ 1736      545F5245 
+ 1737              	.LASF47:
+ 1738 02ae 63795F73 		.ascii	"cy_stc_mcwdt_config_t\000"
+ 1738      74635F6D 
+ 1738      63776474 
+ 1738      5F636F6E 
+ 1738      6669675F 
+ 1739              	.LASF8:
+ 1740 02c4 73686F72 		.ascii	"short unsigned int\000"
+ 1740      7420756E 
+ 1740      7369676E 
+ 1740      65642069 
+ 1740      6E7400
+ 1741              	.LASF33:
+ 1742 02d7 63686172 		.ascii	"char\000"
+ 1742      00
+ 1743              	.LASF16:
+ 1744 02dc 696E7433 		.ascii	"int32_t\000"
+ 1744      325F7400 
+ 1745              	.LASF46:
+ 1746 02e4 5F426F6F 		.ascii	"_Bool\000"
+ 1746      6C00
+ 1747              	.LASF62:
+ 1748 02ea 636F756E 		.ascii	"counter0\000"
+ 1748      74657230 
+ 1748      00
+ 1749              	.LASF73:
+ 1750 02f3 43795F4D 		.ascii	"Cy_MCWDT_DeInit\000"
+ 1750      43574454 
+ 1750      5F446549 
+ 1750      6E697400 
+ 1751              	.LASF48:
+ 1752 0303 43595F4D 		.ascii	"CY_MCWDT_MODE_NONE\000"
+ 1752      43574454 
+ 1752      5F4D4F44 
+ 1752      455F4E4F 
+ 1752      4E4500
+ 1753              	.LASF72:
+ 1754 0316 696E7465 		.ascii	"interruptState\000"
+ 1754      72727570 
+ 1754      74537461 
+ 1754      746500
+ 1755              	.LASF30:
+ 1756 0325 52455345 		.ascii	"RESERVED1\000"
+ 1756      52564544 
+ 1756      3100
+ 1757              	.LASF12:
+ 1758 032f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1758      20756E73 
+ 1758      69676E65 
+ 1758      6420696E 
+ 1758      7400
+ 1759              	.LASF35:
+ 1760 0341 646F7562 		.ascii	"double\000"
+ 1760      6C6500
+ 1761              	.LASF44:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 47
+
+
+ 1762 0348 63306331 		.ascii	"c0c1Cascade\000"
+ 1762      43617363 
+ 1762      61646500 
+ 1763              	.LASF26:
+ 1764 0354 4D435744 		.ascii	"MCWDT_INTR_SET\000"
+ 1764      545F494E 
+ 1764      54525F53 
+ 1764      455400
+ 1765              	.LASF40:
+ 1766 0363 6332546F 		.ascii	"c2ToggleBit\000"
+ 1766      67676C65 
+ 1766      42697400 
+ 1767              	.LASF9:
+ 1768 036f 5F5F696E 		.ascii	"__int32_t\000"
+ 1768      7433325F 
+ 1768      7400
+ 1769              	.LASF50:
+ 1770 0379 43595F4D 		.ascii	"CY_MCWDT_MODE_RESET\000"
+ 1770      43574454 
+ 1770      5F4D4F44 
+ 1770      455F5245 
+ 1770      53455400 
+ 1771              	.LASF29:
+ 1772 038d 4D435744 		.ascii	"MCWDT_LOCK\000"
+ 1772      545F4C4F 
+ 1772      434B00
+ 1773              	.LASF23:
+ 1774 0398 4D435744 		.ascii	"MCWDT_CONFIG\000"
+ 1774      545F434F 
+ 1774      4E464947 
+ 1774      00
+ 1775              	.LASF41:
+ 1776 03a5 63324D6F 		.ascii	"c2Mode\000"
+ 1776      646500
+ 1777              	.LASF68:
+ 1778 03ac 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1778      43313120 
+ 1778      352E342E 
+ 1778      31203230 
+ 1778      31363036 
+ 1779 03df 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1779      20726576 
+ 1779      6973696F 
+ 1779      6E203233 
+ 1779      37373135 
+ 1780 0412 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 1780      70202D6D 
+ 1780      6670753D 
+ 1780      66707634 
+ 1780      2D73702D 
+ 1781 0445 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1781      6F6E7320 
+ 1781      2D666661 
+ 1781      742D6C74 
+ 1781      6F2D6F62 
+ 1782              	.LASF19:
+ 1783 045f 52455345 		.ascii	"RESERVED\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\cc99oMwP.s 			page 48
+
+
+ 1783      52564544 
+ 1783      00
+ 1784              	.LASF54:
+ 1785 0468 43595F4D 		.ascii	"CY_MCWDT_BAD_PARAM\000"
+ 1785      43574454 
+ 1785      5F424144 
+ 1785      5F504152 
+ 1785      414D00
+ 1786              	.LASF74:
+ 1787 047b 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1787      52784275 
+ 1787      66666572 
+ 1787      00
+ 1788              	.LASF56:
+ 1789 0488 62617365 		.ascii	"base\000"
+ 1789      00
+ 1790              	.LASF37:
+ 1791 048d 63314D61 		.ascii	"c1Match\000"
+ 1791      74636800 
+ 1792              	.LASF65:
+ 1793 0495 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
+ 1793      79734C69 
+ 1793      625F4173 
+ 1793      73657274 
+ 1793      4661696C 
+ 1794              	.LASF67:
+ 1795 04ac 43795F53 		.ascii	"Cy_SysLib_ExitCriticalSection\000"
+ 1795      79734C69 
+ 1795      625F4578 
+ 1795      69744372 
+ 1795      69746963 
+ 1796              	.LASF25:
+ 1797 04ca 4D435744 		.ascii	"MCWDT_INTR\000"
+ 1797      545F494E 
+ 1797      545200
+ 1798              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

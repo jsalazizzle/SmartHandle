@@ -48,7 +48,7 @@
 /* Initial Time and Date definitions */
 #define RealTimeClock_INITIAL_DATE_SEC          (0u)
 #define RealTimeClock_INITIAL_DATE_MIN          (0u)
-#define RealTimeClock_INITIAL_DATE_HOUR         (17u)
+#define RealTimeClock_INITIAL_DATE_HOUR         (18u)
 #define RealTimeClock_INITIAL_DATE_HOUR_FORMAT  (CY_RTC_24_HOURS)
 #define RealTimeClock_INITIAL_DATE_DOW          (3u)
 #define RealTimeClock_INITIAL_DATE_DOM          (7u)

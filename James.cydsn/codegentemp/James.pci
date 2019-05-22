@@ -1,0 +1,24 @@
+# James
+# 2019-05-22 22:35:02Z
+
+dont_use_location p4usbcell -1 -1 0
+dont_use_location USB -1 -1 0
+dont_use_location usbcell -1 -1 0
+set_location "ClockGenBlock" CLK_GEN -1 -1 0
+set_io "CY_CPUSS_SWJ_SWCLK_TCLK(0)" iocell 6 7
+set_io "CY_CPUSS_SWJ_SWDIO_TMS(0)" iocell 6 6
+set_io "\UART_DEBUG:tx(0)\" iocell 9 1
+set_io "\UART_DEBUG:rx(0)\" iocell 9 0
+set_io "Press1(0)" iocell 7 2
+set_io "Green(0)" iocell 5 0
+set_io "SCL(0)" iocell 10 0
+set_io "Red(0)" iocell 5 2
+set_io "SDA(0)" iocell 10 1
+set_io "Blue(0)" iocell 6 2
+set_io "Chime(0)" iocell 9 6
+set_io "ShakePin(0)" iocell 12 7
+set_io "Press3(0)" iocell 0 4
+set_io "Press2(0)" iocell 7 1
+set_io "V_BAT(0)" iocell 9 4
+set_io "ALS_INT(0)" iocell 10 2
+set_location "\ADC:SAR\" SARADC -1 -1 0

@@ -1,0 +1,1170 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cy_ble_hal_int.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Cy_BLE_BlessInterrupt,"ax",%progbits
+  20              		.align	2
+  21              		.global	Cy_BLE_BlessInterrupt
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	Cy_BLE_BlessInterrupt, %function
+  25              	Cy_BLE_BlessInterrupt:
+  26              	.LFB155:
+  27              		.file 1 "Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_ble_hal_int.c"
+   1:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * \file cy_ble_hal_int.c
+   3:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * \version 2.20
+   4:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+   5:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * \brief
+   6:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  This file contains the source code for the Interrupt Service Routine for the
+   7:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  HAL section of the BLE Middleware.
+   8:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+   9:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** ********************************************************************************
+  10:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * \copyright
+  11:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * Copyright 2017-2018, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * You may use this file only in accordance with the license, terms, conditions,
+  13:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  14:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *******************************************************************************/
+  16:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #include "cy_ble.h"
+  17:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #include "cy_ble_hal_pvt.h"
+  18:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #include "ipc/cy_ipc_sema.h"
+  19:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  20:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /* C binding of definitions if building with C++ compiler */
+  21:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #ifdef __cplusplus
+  22:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** extern "C" {
+  23:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* __cplusplus */
+  24:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  25:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  26:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_INTR_NOTIFY_FEATURE_ENABLED) && (CY_BLE_STACK_MODE_IPC) && (CY_BLE_MODE_PROFILE)
+  27:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  28:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /*******************************************************************************
+  29:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * Function Name: Cy_BLE_HAL_IntrNotifyIpcHandler
+  30:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** ****************************************************************************//**
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 2
+
+
+  31:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+  32:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  Handles the IPC notification for Interrupt Notification Feature.
+  33:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+  34:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * \return
+  35:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  None
+  36:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+  37:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *******************************************************************************/    
+  38:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** void Cy_BLE_HAL_IntrNotifyIpcHandler(void)
+  39:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** {    
+  40:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     uint32_t interruptMasked;
+  41:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     IPC_INTR_STRUCT_Type *intrTypePtr = Cy_IPC_Drv_GetIntrBaseAddr(CY_BLE_INTR_NOTIFY_IPC_INTR);
+  42:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****    /**
+  43:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     * Check that there is really the IPC Notify interrupt,
+  44:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     * because the same line can be used for the IPC Release interrupt.
+  45:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     */
+  46:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     
+  47:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     interruptMasked = Cy_IPC_Drv_ExtractAcquireMask(Cy_IPC_Drv_GetInterruptStatusMasked(intrTypePtr
+  48:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  49:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     if ((1uL << (CY_BLE_INTR_NOTIFY_IPC_CHAN)) == interruptMasked )
+  50:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     {
+  51:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         Cy_IPC_Drv_ClearInterrupt(intrTypePtr, CY_IPC_NO_NOTIFICATION, interruptMasked);
+  52:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         
+  53:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         if(Cy_BLE_InterruptCallback != NULL)
+  54:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         {
+  55:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             /* Call the BLE interrupt feature handler */
+  56:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             Cy_BLE_InterruptCallback(intrNotify.data);
+  57:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         }
+  58:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      
+  59:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         /* Release the IPC channel with the Release interrupt */
+  60:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         (void)Cy_IPC_Drv_LockRelease(Cy_IPC_Drv_GetIpcBaseAddress(CY_BLE_INTR_NOTIFY_IPC_CHAN),
+  61:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                                     (1uL << CY_BLE_INTR_NOTIFY_IPC_INTR));
+  62:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     }
+  63:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** }
+  64:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* (CY_BLE_INTR_NOTIFY_FEATURE_ENABLED) && (CY_BLE_STACK_MODE_IPC) && (CY_BLE_MODE_PROFILE) 
+  65:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  66:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_HOST_CONTR_CORE)
+  67:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_STACK_CONTR_CORE)
+  68:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  69:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_INTR_NOTIFY_FEATURE_ENABLED)    
+  70:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /* Globals */    
+  71:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** cy_stc_ble_intr_notify_t *intrNotifyPtr = NULL;
+  72:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     
+  73:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /* Private Function Prototypes  */
+  74:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** static void Cy_BLE_HAL_SendInterruptNotification(void);
+  75:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+  76:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /*******************************************************************************
+  77:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * Function Name: Cy_BLE_HAL_SendInterruptNotification
+  78:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** ****************************************************************************//**
+  79:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+  80:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  This function sends notification (with interrupt type information) to user 
+  81:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  callback for the BLE interrupts subscribed by user. The list of supported 
+  82:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  interrupts described in the enumeration cy_en_ble_interrupt_callback_feature_t.
+  83:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  Cy_BLE_RegisterInterruptCallback() API used to register callback for receiving
+  84:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  the BLE interrupts.
+  85:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+  86:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *******************************************************************************/
+  87:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** static void Cy_BLE_HAL_SendInterruptNotification(void)
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 3
+
+
+  88:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** {
+  89:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     if((intrNotifyPtr != NULL) && (intrNotifyPtr->mask != 0u))
+  90:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     {
+  91:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         uint32_t interruptType = (uint32_t)CY_BLE_INTR_CALLBACK_NONE;
+  92:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         
+  93:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         /* Read BLE_BLELL->EVENT_INTR */      
+  94:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         if((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLESS_STACK_ISR) != 0u) 
+  95:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         {
+  96:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             interruptType |= CY_BLE_INTR_CALLBACK_BLESS_STACK_ISR;    
+  97:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         }
+  98:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         else
+  99:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         {
+ 100:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             if(((BLE_BLESS->INTR_STAT & BLE_BLESS_INTR_STAT_DSM_ENTERED_INTR_Msk) != 0u) &&
+ 101:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLESS_INTR_STAT_DSM_ENTERED)!= 0u))
+ 102:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             {
+ 103:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 interruptType |= CY_BLE_INTR_CALLBACK_BLESS_INTR_STAT_DSM_ENTERED;
+ 104:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             }
+ 105:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             
+ 106:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             if(((BLE_BLESS->INTR_STAT & BLE_BLESS_INTR_STAT_DSM_EXITED_INTR_Msk) != 0u) &&
+ 107:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLESS_INTR_STAT_DSM_EXITED) != 0u))
+ 108:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             {
+ 109:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 interruptType |= CY_BLE_INTR_CALLBACK_BLESS_INTR_STAT_DSM_EXITED;
+ 110:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             }
+ 111:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****        
+ 112:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             if(((BLE_BLESS->INTR_STAT & BLE_BLESS_INTR_STAT_LL_INTR_Msk) != 0u))
+ 113:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             { 
+ 114:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 /**
+ 115:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                  *  Updates the firmware and hardware to exit sleep mode, when
+ 116:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                  *  called from the interrupt mode, after checking the state machine.
+ 117:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                  */
+ 118:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 Cy_BLE_LlIsrExitLowPowerMode();
+ 119:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****            
+ 120:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 if(BLE_BLELL->EVENT_INTR != 0x0u)
+ 121:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 {            
+ 122:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     if((BLE_BLELL->EVENT_INTR & BLE_BLELL_EVENT_INTR_CONN_INTR_Msk) != 0u)
+ 123:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     {
+ 124:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->CONN_INTR & BLE_BLELL_CONN_INTR_CLOSE_CE_Msk) != 0u) &&
+ 125:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CLOSE_CE) 
+ 126:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 127:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CLOSE_CE 
+ 128:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CLOSE_CE;
+ 129:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }
+ 130:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         
+ 131:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->CONN_INTR & BLE_BLELL_CONN_INTR_CE_TX_ACK_Msk) != 0u) &&
+ 132:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                            ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CE_TX_ACK) 
+ 133:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 134:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CE_TX_ACK
+ 135:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CE_TX_ACK;
+ 136:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }
+ 137:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         
+ 138:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->CONN_EXT_INTR & BLE_BLELL_CONN_EXT_INTR_EARLY_INTR_Msk) != 
+ 139:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                            ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_CONN_EXT_INTR_EARLY) 
+ 140:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 141:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type CY_BLE_INTR_CALLBACK_BLELL_CONN_EXT_INTR_EARLY
+ 142:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_CONN_EXT_INTR_EARLY;       
+ 143:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }
+ 144:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 4
+
+
+ 145:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->CONN_INTR & BLE_BLELL_CONN_INTR_CE_RX_Msk) != 0u) &&
+ 146:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CE_RX) != 
+ 147:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 148:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CE_RX */ 
+ 149:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_CONN_INTR_CE_RX;
+ 150:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }
+ 151:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     }    
+ 152:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     
+ 153:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     if((BLE_BLELL->EVENT_INTR & BLE_BLELL_EVENT_INTR_SCAN_INTR_Msk) != 0u)
+ 154:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     {
+ 155:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->SCAN_INTR & BLE_BLELL_SCAN_INTR_ADV_RX_INTR_Msk) != 0u) &&
+ 156:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                            ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_SCAN_INTR_ADV_RX) != 
+ 157:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 158:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type Return interrupt type CY_BLE_INTR_CALLBACK_BLE
+ 159:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_SCAN_INTR_ADV_RX;
+ 160:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }
+ 161:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         
+ 162:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->SCAN_INTR & BLE_BLELL_SCAN_INTR_SCAN_RSP_RX_INTR_Msk) != 0u
+ 163:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                            ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_SCAN_INTR_SCAN_RSP_RX
+ 164:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 165:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type CY_BLE_INTR_CALLBACK_BLELL_SCAN_INTR_SCAN_RSP_
+ 166:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_SCAN_INTR_SCAN_RSP_RX;
+ 167:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }  
+ 168:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     }
+ 169:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     
+ 170:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     if((BLE_BLELL->EVENT_INTR & BLE_BLELL_EVENT_INTR_ADV_INTR_Msk) != 0u)
+ 171:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     {
+ 172:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         if(((BLE_BLELL->ADV_INTR & BLE_BLELL_ADV_INTR_CONN_REQ_RX_INTR_Msk) != 0u) 
+ 173:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                            ((intrNotifyPtr->mask & CY_BLE_INTR_CALLBACK_BLELL_ADV_INTR_CONN_REQ_RX)
+ 174:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         {
+ 175:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             /* Return interrupt type CY_BLE_INTR_CALLBACK_BLELL_ADV_INTR_CONN_REQ_R
+ 176:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                             interruptType |= CY_BLE_INTR_CALLBACK_BLELL_ADV_INTR_CONN_REQ_RX;
+ 177:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         }   
+ 178:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     }
+ 179:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 }
+ 180:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             }
+ 181:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         }
+ 182:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         
+ 183:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         /* Send interrupt type information to registered callback */
+ 184:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         if(interruptType != (uint32_t)CY_BLE_INTR_CALLBACK_NONE)
+ 185:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         {       
+ 186:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             #if (CY_BLE_MODE_PROFILE) 
+ 187:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 if(Cy_BLE_InterruptCallback != NULL)
+ 188:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 {
+ 189:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     Cy_BLE_InterruptCallback((uint32_t)interruptType);
+ 190:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 }
+ 191:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             #else
+ 192:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 {
+ 193:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     uint32_t rTimeout = 100u; /* us */                 
+ 194:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     intrNotifyPtr->data = (uint32_t)interruptType; 
+ 195:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****   
+ 196:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     /* Check if IPC is released */
+ 197:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     while((Cy_IPC_Drv_IsLockAcquired(Cy_IPC_Drv_GetIpcBaseAddress(CY_BLE_INTR_NOTIF
+ 198:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                           (rTimeout !=0u))
+ 199:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     {
+ 200:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         Cy_SysLib_DelayUs(1u);
+ 201:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         rTimeout--;
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 5
+
+
+ 202:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     }
+ 203:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     
+ 204:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     /* Generates a notify event by IPC interrupt structures */
+ 205:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     if(rTimeout != 0u)
+ 206:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     {
+ 207:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                         (void)Cy_IPC_Drv_AcquireNotify(Cy_IPC_Drv_GetIpcBaseAddress(CY_BLE_INTR_NOT
+ 208:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                                        (1uL << (uint32_t)CY_BLE_INTR_NOTIFY_IPC_INTR));            
+ 209:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     }                   
+ 210:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                     
+ 211:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****                 }
+ 212:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****             #endif /* (CY_BLE_MODE_PROFILE) */
+ 213:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         }
+ 214:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     }
+ 215:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** }
+ 216:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* (CY_BLE_INTR_NOTIFY_FEATURE_ENABLED) */
+ 217:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     
+ 218:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+ 219:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** /*******************************************************************************
+ 220:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * Function Name: Cy_BLE_BlessInterrupt
+ 221:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** ****************************************************************************//**
+ 222:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+ 223:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  Handles the Interrupt Service Routine for the BLE sub-system.
+ 224:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+ 225:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** * \return
+ 226:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *  None
+ 227:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *
+ 228:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** *******************************************************************************/
+ 229:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** void Cy_BLE_BlessInterrupt(void)
+ 230:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** {  
+  28              		.loc 1 230 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  36              	.LVL0:
+ 231:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_MODE_PROFILE)    
+ 232:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     bool sendNotification = false;
+ 233:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* (CY_BLE_MODE_PROFILE) */
+ 234:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      
+ 235:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_INTR_NOTIFY_FEATURE_ENABLED)    
+ 236:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     /** 
+ 237:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      * Send notification (with interrupt type) to user callback for the 
+ 238:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      * BLE interrupts subscribed by user. Cy_BLE_RegisterInterruptCallback API 
+ 239:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      * used to register callback for receiving BLE interrupts.
+ 240:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      */
+ 241:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     Cy_BLE_HAL_SendInterruptNotification();
+ 242:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* (CY_BLE_INTR_NOTIFY_FEATURE_ENABLED) */ 
+ 243:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+ 244:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     /* Call BLE Stack manager bless function handler */
+ 245:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_MODE_PROFILE)    
+ 246:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     sendNotification = Cy_BLE_HAL_BlessInterruptHandler();
+  37              		.loc 1 246 0
+  38 0002 FFF7FEFF 		bl	Cy_BLE_HAL_BlessInterruptHandler
+  39              	.LVL1:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 6
+
+
+ 247:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #else
+ 248:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     (void)Cy_BLE_HAL_BlessInterruptHandler();
+ 249:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* (CY_BLE_MODE_PROFILE) */
+ 250:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     /* Host stack takes care of clearing interrupts */   
+ 251:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** 
+ 252:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #if (CY_BLE_MODE_PROFILE)
+ 253:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     /**
+ 254:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      * Call the application application Host callback. This notification indicates
+ 255:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      * that user should call Cy_BLE_ProcessEvents() to process
+ 256:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      * pending Stack events. 
+ 257:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****      */
+ 258:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     if((Cy_BLE_HostRegisteredCallback != NULL) && sendNotification)
+  40              		.loc 1 258 0
+  41 0006 044B     		ldr	r3, .L3
+  42 0008 1B68     		ldr	r3, [r3]
+  43 000a 002B     		cmp	r3, #0
+  44 000c 02D0     		beq	.L1
+  45              		.loc 1 258 0 is_stmt 0 discriminator 1
+  46 000e 0028     		cmp	r0, #0
+  47 0010 00D0     		beq	.L1
+ 259:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     {
+ 260:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****         Cy_BLE_HostRegisteredCallback();
+  48              		.loc 1 260 0 is_stmt 1
+  49 0012 9847     		blx	r3
+  50              	.LVL2:
+  51              	.L1:
+ 261:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c ****     }
+ 262:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** #endif /* (CY_BLE_MODE_PROFILE) */
+ 263:Generated_Source\PSoC6\pdl\middleware\ble/cy_ble_hal_int.c **** }
+  52              		.loc 1 263 0
+  53              		@ sp needed
+  54 0014 10BD     		pop	{r4, pc}
+  55              	.L4:
+  56 0016 C046     		.align	2
+  57              	.L3:
+  58 0018 00000000 		.word	Cy_BLE_HostRegisteredCallback
+  59              		.cfi_endproc
+  60              	.LFE155:
+  61              		.size	Cy_BLE_BlessInterrupt, .-Cy_BLE_BlessInterrupt
+  62              		.text
+  63              	.Letext0:
+  64              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  65              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  66              		.file 4 "Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_ble_stack_host_main.h"
+  67              		.file 5 "Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_ble_gap.h"
+  68              		.file 6 "Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_ble.h"
+  69              		.file 7 "Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_ble_stack_pvt.h"
+  70              		.section	.debug_info,"",%progbits
+  71              	.Ldebug_info0:
+  72 0000 F8010000 		.4byte	0x1f8
+  73 0004 0400     		.2byte	0x4
+  74 0006 00000000 		.4byte	.Ldebug_abbrev0
+  75 000a 04       		.byte	0x4
+  76 000b 01       		.uleb128 0x1
+  77 000c AC030000 		.4byte	.LASF40
+  78 0010 0C       		.byte	0xc
+  79 0011 CA020000 		.4byte	.LASF41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 7
+
+
+  80 0015 7E020000 		.4byte	.LASF42
+  81 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  82 001d 00000000 		.4byte	0
+  83 0021 00000000 		.4byte	.Ldebug_line0
+  84 0025 02       		.uleb128 0x2
+  85 0026 04       		.byte	0x4
+  86 0027 05       		.byte	0x5
+  87 0028 696E7400 		.ascii	"int\000"
+  88 002c 03       		.uleb128 0x3
+  89 002d 04       		.byte	0x4
+  90 002e 07       		.byte	0x7
+  91 002f 8A000000 		.4byte	.LASF0
+  92 0033 03       		.uleb128 0x3
+  93 0034 08       		.byte	0x8
+  94 0035 05       		.byte	0x5
+  95 0036 BC020000 		.4byte	.LASF1
+  96 003a 03       		.uleb128 0x3
+  97 003b 08       		.byte	0x8
+  98 003c 04       		.byte	0x4
+  99 003d A0030000 		.4byte	.LASF2
+ 100 0041 03       		.uleb128 0x3
+ 101 0042 01       		.byte	0x1
+ 102 0043 06       		.byte	0x6
+ 103 0044 3E040000 		.4byte	.LASF3
+ 104 0048 04       		.uleb128 0x4
+ 105 0049 00000000 		.4byte	.LASF12
+ 106 004d 02       		.byte	0x2
+ 107 004e 1D       		.byte	0x1d
+ 108 004f 53000000 		.4byte	0x53
+ 109 0053 03       		.uleb128 0x3
+ 110 0054 01       		.byte	0x1
+ 111 0055 08       		.byte	0x8
+ 112 0056 1B010000 		.4byte	.LASF4
+ 113 005a 03       		.uleb128 0x3
+ 114 005b 02       		.byte	0x2
+ 115 005c 05       		.byte	0x5
+ 116 005d 29030000 		.4byte	.LASF5
+ 117 0061 03       		.uleb128 0x3
+ 118 0062 02       		.byte	0x2
+ 119 0063 07       		.byte	0x7
+ 120 0064 58010000 		.4byte	.LASF6
+ 121 0068 03       		.uleb128 0x3
+ 122 0069 04       		.byte	0x4
+ 123 006a 05       		.byte	0x5
+ 124 006b 97030000 		.4byte	.LASF7
+ 125 006f 03       		.uleb128 0x3
+ 126 0070 04       		.byte	0x4
+ 127 0071 07       		.byte	0x7
+ 128 0072 46010000 		.4byte	.LASF8
+ 129 0076 03       		.uleb128 0x3
+ 130 0077 08       		.byte	0x8
+ 131 0078 07       		.byte	0x7
+ 132 0079 FD010000 		.4byte	.LASF9
+ 133 007d 03       		.uleb128 0x3
+ 134 007e 04       		.byte	0x4
+ 135 007f 07       		.byte	0x7
+ 136 0080 B3020000 		.4byte	.LASF10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 8
+
+
+ 137 0084 03       		.uleb128 0x3
+ 138 0085 01       		.byte	0x1
+ 139 0086 08       		.byte	0x8
+ 140 0087 05030000 		.4byte	.LASF11
+ 141 008b 05       		.uleb128 0x5
+ 142 008c 04       		.byte	0x4
+ 143 008d 91000000 		.4byte	0x91
+ 144 0091 06       		.uleb128 0x6
+ 145 0092 04       		.uleb128 0x4
+ 146 0093 82000000 		.4byte	.LASF13
+ 147 0097 03       		.byte	0x3
+ 148 0098 18       		.byte	0x18
+ 149 0099 48000000 		.4byte	0x48
+ 150 009d 03       		.uleb128 0x3
+ 151 009e 04       		.byte	0x4
+ 152 009f 04       		.byte	0x4
+ 153 00a0 D7000000 		.4byte	.LASF14
+ 154 00a4 03       		.uleb128 0x3
+ 155 00a5 08       		.byte	0x8
+ 156 00a6 04       		.byte	0x4
+ 157 00a7 C1010000 		.4byte	.LASF15
+ 158 00ab 07       		.uleb128 0x7
+ 159 00ac 02       		.byte	0x2
+ 160 00ad 04       		.byte	0x4
+ 161 00ae 5B01     		.2byte	0x15b
+ 162 00b0 CF000000 		.4byte	0xcf
+ 163 00b4 08       		.uleb128 0x8
+ 164 00b5 23000000 		.4byte	.LASF16
+ 165 00b9 04       		.byte	0x4
+ 166 00ba 6501     		.2byte	0x165
+ 167 00bc 92000000 		.4byte	0x92
+ 168 00c0 00       		.byte	0
+ 169 00c1 08       		.uleb128 0x8
+ 170 00c2 AD020000 		.4byte	.LASF17
+ 171 00c6 04       		.byte	0x4
+ 172 00c7 6901     		.2byte	0x169
+ 173 00c9 92000000 		.4byte	0x92
+ 174 00cd 01       		.byte	0x1
+ 175 00ce 00       		.byte	0
+ 176 00cf 09       		.uleb128 0x9
+ 177 00d0 57000000 		.4byte	.LASF18
+ 178 00d4 04       		.byte	0x4
+ 179 00d5 6B01     		.2byte	0x16b
+ 180 00d7 AB000000 		.4byte	0xab
+ 181 00db 0A       		.uleb128 0xa
+ 182 00dc 01       		.byte	0x1
+ 183 00dd 53000000 		.4byte	0x53
+ 184 00e1 05       		.byte	0x5
+ 185 00e2 7E       		.byte	0x7e
+ 186 00e3 00010000 		.4byte	0x100
+ 187 00e7 0B       		.uleb128 0xb
+ 188 00e8 0A000000 		.4byte	.LASF19
+ 189 00ec 00       		.byte	0
+ 190 00ed 0B       		.uleb128 0xb
+ 191 00ee 5F020000 		.4byte	.LASF20
+ 192 00f2 01       		.byte	0x1
+ 193 00f3 0B       		.uleb128 0xb
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 9
+
+
+ 194 00f4 29010000 		.4byte	.LASF21
+ 195 00f8 02       		.byte	0x2
+ 196 00f9 0B       		.uleb128 0xb
+ 197 00fa FB000000 		.4byte	.LASF22
+ 198 00fe 03       		.byte	0x3
+ 199 00ff 00       		.byte	0
+ 200 0100 04       		.uleb128 0x4
+ 201 0101 C1000000 		.4byte	.LASF23
+ 202 0105 05       		.byte	0x5
+ 203 0106 83       		.byte	0x83
+ 204 0107 DB000000 		.4byte	0xdb
+ 205 010b 0A       		.uleb128 0xa
+ 206 010c 01       		.byte	0x1
+ 207 010d 53000000 		.4byte	0x53
+ 208 0111 05       		.byte	0x5
+ 209 0112 87       		.byte	0x87
+ 210 0113 48010000 		.4byte	0x148
+ 211 0117 0B       		.uleb128 0xb
+ 212 0118 0A030000 		.4byte	.LASF24
+ 213 011c 00       		.byte	0
+ 214 011d 0B       		.uleb128 0xb
+ 215 011e 50030000 		.4byte	.LASF25
+ 216 0122 01       		.byte	0x1
+ 217 0123 0B       		.uleb128 0xb
+ 218 0124 A5010000 		.4byte	.LASF26
+ 219 0128 02       		.byte	0x2
+ 220 0129 0B       		.uleb128 0xb
+ 221 012a 97000000 		.4byte	.LASF27
+ 222 012e 03       		.byte	0x3
+ 223 012f 0B       		.uleb128 0xb
+ 224 0130 14020000 		.4byte	.LASF28
+ 225 0134 04       		.byte	0x4
+ 226 0135 0B       		.uleb128 0xb
+ 227 0136 6B010000 		.4byte	.LASF29
+ 228 013a 05       		.byte	0x5
+ 229 013b 0B       		.uleb128 0xb
+ 230 013c 2C000000 		.4byte	.LASF30
+ 231 0140 06       		.byte	0x6
+ 232 0141 0B       		.uleb128 0xb
+ 233 0142 D9010000 		.4byte	.LASF31
+ 234 0146 07       		.byte	0x7
+ 235 0147 00       		.byte	0
+ 236 0148 04       		.uleb128 0x4
+ 237 0149 7A040000 		.4byte	.LASF32
+ 238 014d 05       		.byte	0x5
+ 239 014e 90       		.byte	0x90
+ 240 014f 0B010000 		.4byte	0x10b
+ 241 0153 03       		.uleb128 0x3
+ 242 0154 01       		.byte	0x1
+ 243 0155 02       		.byte	0x2
+ 244 0156 4A040000 		.4byte	.LASF33
+ 245 015a 09       		.uleb128 0x9
+ 246 015b 33030000 		.4byte	.LASF34
+ 247 015f 06       		.byte	0x6
+ 248 0160 4702     		.2byte	0x247
+ 249 0162 8B000000 		.4byte	0x8b
+ 250 0166 0C       		.uleb128 0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 10
+
+
+ 251 0167 81030000 		.4byte	.LASF43
+ 252 016b 01       		.byte	0x1
+ 253 016c E5       		.byte	0xe5
+ 254 016d 00000000 		.4byte	.LFB155
+ 255 0171 1C000000 		.4byte	.LFE155-.LFB155
+ 256 0175 01       		.uleb128 0x1
+ 257 0176 9C       		.byte	0x9c
+ 258 0177 94010000 		.4byte	0x194
+ 259 017b 0D       		.uleb128 0xd
+ 260 017c C8010000 		.4byte	.LASF44
+ 261 0180 01       		.byte	0x1
+ 262 0181 E8       		.byte	0xe8
+ 263 0182 53010000 		.4byte	0x153
+ 264 0186 00000000 		.4byte	.LLST0
+ 265 018a 0E       		.uleb128 0xe
+ 266 018b 06000000 		.4byte	.LVL1
+ 267 018f F0010000 		.4byte	0x1f0
+ 268 0193 00       		.byte	0
+ 269 0194 0F       		.uleb128 0xf
+ 270 0195 95010000 		.4byte	.LASF35
+ 271 0199 05       		.byte	0x5
+ 272 019a 2202     		.2byte	0x222
+ 273 019c 00010000 		.4byte	0x100
+ 274 01a0 10       		.uleb128 0x10
+ 275 01a1 CF000000 		.4byte	0xcf
+ 276 01a5 B0010000 		.4byte	0x1b0
+ 277 01a9 11       		.uleb128 0x11
+ 278 01aa 7D000000 		.4byte	0x7d
+ 279 01ae 00       		.byte	0
+ 280 01af 00       		.byte	0
+ 281 01b0 0F       		.uleb128 0xf
+ 282 01b1 70000000 		.4byte	.LASF36
+ 283 01b5 05       		.byte	0x5
+ 284 01b6 2C02     		.2byte	0x22c
+ 285 01b8 A0010000 		.4byte	0x1a0
+ 286 01bc 10       		.uleb128 0x10
+ 287 01bd 48010000 		.4byte	0x148
+ 288 01c1 CC010000 		.4byte	0x1cc
+ 289 01c5 11       		.uleb128 0x11
+ 290 01c6 7D000000 		.4byte	0x7d
+ 291 01ca 00       		.byte	0
+ 292 01cb 00       		.byte	0
+ 293 01cc 0F       		.uleb128 0xf
+ 294 01cd 50040000 		.4byte	.LASF37
+ 295 01d1 05       		.byte	0x5
+ 296 01d2 2D02     		.2byte	0x22d
+ 297 01d4 BC010000 		.4byte	0x1bc
+ 298 01d8 0F       		.uleb128 0xf
+ 299 01d9 61040000 		.4byte	.LASF38
+ 300 01dd 05       		.byte	0x5
+ 301 01de 5202     		.2byte	0x252
+ 302 01e0 92000000 		.4byte	0x92
+ 303 01e4 0F       		.uleb128 0xf
+ 304 01e5 DD000000 		.4byte	.LASF39
+ 305 01e9 06       		.byte	0x6
+ 306 01ea 5202     		.2byte	0x252
+ 307 01ec 5A010000 		.4byte	0x15a
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 11
+
+
+ 308 01f0 12       		.uleb128 0x12
+ 309 01f1 3E020000 		.4byte	.LASF45
+ 310 01f5 3E020000 		.4byte	.LASF45
+ 311 01f9 07       		.byte	0x7
+ 312 01fa 87       		.byte	0x87
+ 313 01fb 00       		.byte	0
+ 314              		.section	.debug_abbrev,"",%progbits
+ 315              	.Ldebug_abbrev0:
+ 316 0000 01       		.uleb128 0x1
+ 317 0001 11       		.uleb128 0x11
+ 318 0002 01       		.byte	0x1
+ 319 0003 25       		.uleb128 0x25
+ 320 0004 0E       		.uleb128 0xe
+ 321 0005 13       		.uleb128 0x13
+ 322 0006 0B       		.uleb128 0xb
+ 323 0007 03       		.uleb128 0x3
+ 324 0008 0E       		.uleb128 0xe
+ 325 0009 1B       		.uleb128 0x1b
+ 326 000a 0E       		.uleb128 0xe
+ 327 000b 55       		.uleb128 0x55
+ 328 000c 17       		.uleb128 0x17
+ 329 000d 11       		.uleb128 0x11
+ 330 000e 01       		.uleb128 0x1
+ 331 000f 10       		.uleb128 0x10
+ 332 0010 17       		.uleb128 0x17
+ 333 0011 00       		.byte	0
+ 334 0012 00       		.byte	0
+ 335 0013 02       		.uleb128 0x2
+ 336 0014 24       		.uleb128 0x24
+ 337 0015 00       		.byte	0
+ 338 0016 0B       		.uleb128 0xb
+ 339 0017 0B       		.uleb128 0xb
+ 340 0018 3E       		.uleb128 0x3e
+ 341 0019 0B       		.uleb128 0xb
+ 342 001a 03       		.uleb128 0x3
+ 343 001b 08       		.uleb128 0x8
+ 344 001c 00       		.byte	0
+ 345 001d 00       		.byte	0
+ 346 001e 03       		.uleb128 0x3
+ 347 001f 24       		.uleb128 0x24
+ 348 0020 00       		.byte	0
+ 349 0021 0B       		.uleb128 0xb
+ 350 0022 0B       		.uleb128 0xb
+ 351 0023 3E       		.uleb128 0x3e
+ 352 0024 0B       		.uleb128 0xb
+ 353 0025 03       		.uleb128 0x3
+ 354 0026 0E       		.uleb128 0xe
+ 355 0027 00       		.byte	0
+ 356 0028 00       		.byte	0
+ 357 0029 04       		.uleb128 0x4
+ 358 002a 16       		.uleb128 0x16
+ 359 002b 00       		.byte	0
+ 360 002c 03       		.uleb128 0x3
+ 361 002d 0E       		.uleb128 0xe
+ 362 002e 3A       		.uleb128 0x3a
+ 363 002f 0B       		.uleb128 0xb
+ 364 0030 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 12
+
+
+ 365 0031 0B       		.uleb128 0xb
+ 366 0032 49       		.uleb128 0x49
+ 367 0033 13       		.uleb128 0x13
+ 368 0034 00       		.byte	0
+ 369 0035 00       		.byte	0
+ 370 0036 05       		.uleb128 0x5
+ 371 0037 0F       		.uleb128 0xf
+ 372 0038 00       		.byte	0
+ 373 0039 0B       		.uleb128 0xb
+ 374 003a 0B       		.uleb128 0xb
+ 375 003b 49       		.uleb128 0x49
+ 376 003c 13       		.uleb128 0x13
+ 377 003d 00       		.byte	0
+ 378 003e 00       		.byte	0
+ 379 003f 06       		.uleb128 0x6
+ 380 0040 15       		.uleb128 0x15
+ 381 0041 00       		.byte	0
+ 382 0042 27       		.uleb128 0x27
+ 383 0043 19       		.uleb128 0x19
+ 384 0044 00       		.byte	0
+ 385 0045 00       		.byte	0
+ 386 0046 07       		.uleb128 0x7
+ 387 0047 13       		.uleb128 0x13
+ 388 0048 01       		.byte	0x1
+ 389 0049 0B       		.uleb128 0xb
+ 390 004a 0B       		.uleb128 0xb
+ 391 004b 3A       		.uleb128 0x3a
+ 392 004c 0B       		.uleb128 0xb
+ 393 004d 3B       		.uleb128 0x3b
+ 394 004e 05       		.uleb128 0x5
+ 395 004f 01       		.uleb128 0x1
+ 396 0050 13       		.uleb128 0x13
+ 397 0051 00       		.byte	0
+ 398 0052 00       		.byte	0
+ 399 0053 08       		.uleb128 0x8
+ 400 0054 0D       		.uleb128 0xd
+ 401 0055 00       		.byte	0
+ 402 0056 03       		.uleb128 0x3
+ 403 0057 0E       		.uleb128 0xe
+ 404 0058 3A       		.uleb128 0x3a
+ 405 0059 0B       		.uleb128 0xb
+ 406 005a 3B       		.uleb128 0x3b
+ 407 005b 05       		.uleb128 0x5
+ 408 005c 49       		.uleb128 0x49
+ 409 005d 13       		.uleb128 0x13
+ 410 005e 38       		.uleb128 0x38
+ 411 005f 0B       		.uleb128 0xb
+ 412 0060 00       		.byte	0
+ 413 0061 00       		.byte	0
+ 414 0062 09       		.uleb128 0x9
+ 415 0063 16       		.uleb128 0x16
+ 416 0064 00       		.byte	0
+ 417 0065 03       		.uleb128 0x3
+ 418 0066 0E       		.uleb128 0xe
+ 419 0067 3A       		.uleb128 0x3a
+ 420 0068 0B       		.uleb128 0xb
+ 421 0069 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 13
+
+
+ 422 006a 05       		.uleb128 0x5
+ 423 006b 49       		.uleb128 0x49
+ 424 006c 13       		.uleb128 0x13
+ 425 006d 00       		.byte	0
+ 426 006e 00       		.byte	0
+ 427 006f 0A       		.uleb128 0xa
+ 428 0070 04       		.uleb128 0x4
+ 429 0071 01       		.byte	0x1
+ 430 0072 0B       		.uleb128 0xb
+ 431 0073 0B       		.uleb128 0xb
+ 432 0074 49       		.uleb128 0x49
+ 433 0075 13       		.uleb128 0x13
+ 434 0076 3A       		.uleb128 0x3a
+ 435 0077 0B       		.uleb128 0xb
+ 436 0078 3B       		.uleb128 0x3b
+ 437 0079 0B       		.uleb128 0xb
+ 438 007a 01       		.uleb128 0x1
+ 439 007b 13       		.uleb128 0x13
+ 440 007c 00       		.byte	0
+ 441 007d 00       		.byte	0
+ 442 007e 0B       		.uleb128 0xb
+ 443 007f 28       		.uleb128 0x28
+ 444 0080 00       		.byte	0
+ 445 0081 03       		.uleb128 0x3
+ 446 0082 0E       		.uleb128 0xe
+ 447 0083 1C       		.uleb128 0x1c
+ 448 0084 0B       		.uleb128 0xb
+ 449 0085 00       		.byte	0
+ 450 0086 00       		.byte	0
+ 451 0087 0C       		.uleb128 0xc
+ 452 0088 2E       		.uleb128 0x2e
+ 453 0089 01       		.byte	0x1
+ 454 008a 3F       		.uleb128 0x3f
+ 455 008b 19       		.uleb128 0x19
+ 456 008c 03       		.uleb128 0x3
+ 457 008d 0E       		.uleb128 0xe
+ 458 008e 3A       		.uleb128 0x3a
+ 459 008f 0B       		.uleb128 0xb
+ 460 0090 3B       		.uleb128 0x3b
+ 461 0091 0B       		.uleb128 0xb
+ 462 0092 27       		.uleb128 0x27
+ 463 0093 19       		.uleb128 0x19
+ 464 0094 11       		.uleb128 0x11
+ 465 0095 01       		.uleb128 0x1
+ 466 0096 12       		.uleb128 0x12
+ 467 0097 06       		.uleb128 0x6
+ 468 0098 40       		.uleb128 0x40
+ 469 0099 18       		.uleb128 0x18
+ 470 009a 9642     		.uleb128 0x2116
+ 471 009c 19       		.uleb128 0x19
+ 472 009d 01       		.uleb128 0x1
+ 473 009e 13       		.uleb128 0x13
+ 474 009f 00       		.byte	0
+ 475 00a0 00       		.byte	0
+ 476 00a1 0D       		.uleb128 0xd
+ 477 00a2 34       		.uleb128 0x34
+ 478 00a3 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 14
+
+
+ 479 00a4 03       		.uleb128 0x3
+ 480 00a5 0E       		.uleb128 0xe
+ 481 00a6 3A       		.uleb128 0x3a
+ 482 00a7 0B       		.uleb128 0xb
+ 483 00a8 3B       		.uleb128 0x3b
+ 484 00a9 0B       		.uleb128 0xb
+ 485 00aa 49       		.uleb128 0x49
+ 486 00ab 13       		.uleb128 0x13
+ 487 00ac 02       		.uleb128 0x2
+ 488 00ad 17       		.uleb128 0x17
+ 489 00ae 00       		.byte	0
+ 490 00af 00       		.byte	0
+ 491 00b0 0E       		.uleb128 0xe
+ 492 00b1 898201   		.uleb128 0x4109
+ 493 00b4 00       		.byte	0
+ 494 00b5 11       		.uleb128 0x11
+ 495 00b6 01       		.uleb128 0x1
+ 496 00b7 31       		.uleb128 0x31
+ 497 00b8 13       		.uleb128 0x13
+ 498 00b9 00       		.byte	0
+ 499 00ba 00       		.byte	0
+ 500 00bb 0F       		.uleb128 0xf
+ 501 00bc 34       		.uleb128 0x34
+ 502 00bd 00       		.byte	0
+ 503 00be 03       		.uleb128 0x3
+ 504 00bf 0E       		.uleb128 0xe
+ 505 00c0 3A       		.uleb128 0x3a
+ 506 00c1 0B       		.uleb128 0xb
+ 507 00c2 3B       		.uleb128 0x3b
+ 508 00c3 05       		.uleb128 0x5
+ 509 00c4 49       		.uleb128 0x49
+ 510 00c5 13       		.uleb128 0x13
+ 511 00c6 3F       		.uleb128 0x3f
+ 512 00c7 19       		.uleb128 0x19
+ 513 00c8 3C       		.uleb128 0x3c
+ 514 00c9 19       		.uleb128 0x19
+ 515 00ca 00       		.byte	0
+ 516 00cb 00       		.byte	0
+ 517 00cc 10       		.uleb128 0x10
+ 518 00cd 01       		.uleb128 0x1
+ 519 00ce 01       		.byte	0x1
+ 520 00cf 49       		.uleb128 0x49
+ 521 00d0 13       		.uleb128 0x13
+ 522 00d1 01       		.uleb128 0x1
+ 523 00d2 13       		.uleb128 0x13
+ 524 00d3 00       		.byte	0
+ 525 00d4 00       		.byte	0
+ 526 00d5 11       		.uleb128 0x11
+ 527 00d6 21       		.uleb128 0x21
+ 528 00d7 00       		.byte	0
+ 529 00d8 49       		.uleb128 0x49
+ 530 00d9 13       		.uleb128 0x13
+ 531 00da 2F       		.uleb128 0x2f
+ 532 00db 0B       		.uleb128 0xb
+ 533 00dc 00       		.byte	0
+ 534 00dd 00       		.byte	0
+ 535 00de 12       		.uleb128 0x12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 15
+
+
+ 536 00df 2E       		.uleb128 0x2e
+ 537 00e0 00       		.byte	0
+ 538 00e1 3F       		.uleb128 0x3f
+ 539 00e2 19       		.uleb128 0x19
+ 540 00e3 3C       		.uleb128 0x3c
+ 541 00e4 19       		.uleb128 0x19
+ 542 00e5 6E       		.uleb128 0x6e
+ 543 00e6 0E       		.uleb128 0xe
+ 544 00e7 03       		.uleb128 0x3
+ 545 00e8 0E       		.uleb128 0xe
+ 546 00e9 3A       		.uleb128 0x3a
+ 547 00ea 0B       		.uleb128 0xb
+ 548 00eb 3B       		.uleb128 0x3b
+ 549 00ec 0B       		.uleb128 0xb
+ 550 00ed 00       		.byte	0
+ 551 00ee 00       		.byte	0
+ 552 00ef 00       		.byte	0
+ 553              		.section	.debug_loc,"",%progbits
+ 554              	.Ldebug_loc0:
+ 555              	.LLST0:
+ 556 0000 02000000 		.4byte	.LVL0
+ 557 0004 06000000 		.4byte	.LVL1
+ 558 0008 0200     		.2byte	0x2
+ 559 000a 30       		.byte	0x30
+ 560 000b 9F       		.byte	0x9f
+ 561 000c 06000000 		.4byte	.LVL1
+ 562 0010 13000000 		.4byte	.LVL2-1
+ 563 0014 0100     		.2byte	0x1
+ 564 0016 50       		.byte	0x50
+ 565 0017 00000000 		.4byte	0
+ 566 001b 00000000 		.4byte	0
+ 567              		.section	.debug_aranges,"",%progbits
+ 568 0000 1C000000 		.4byte	0x1c
+ 569 0004 0200     		.2byte	0x2
+ 570 0006 00000000 		.4byte	.Ldebug_info0
+ 571 000a 04       		.byte	0x4
+ 572 000b 00       		.byte	0
+ 573 000c 0000     		.2byte	0
+ 574 000e 0000     		.2byte	0
+ 575 0010 00000000 		.4byte	.LFB155
+ 576 0014 1C000000 		.4byte	.LFE155-.LFB155
+ 577 0018 00000000 		.4byte	0
+ 578 001c 00000000 		.4byte	0
+ 579              		.section	.debug_ranges,"",%progbits
+ 580              	.Ldebug_ranges0:
+ 581 0000 00000000 		.4byte	.LFB155
+ 582 0004 1C000000 		.4byte	.LFE155
+ 583 0008 00000000 		.4byte	0
+ 584 000c 00000000 		.4byte	0
+ 585              		.section	.debug_line,"",%progbits
+ 586              	.Ldebug_line0:
+ 587 0000 C1010000 		.section	.debug_str,"MS",%progbits,1
+ 587      02009C01 
+ 587      00000201 
+ 587      FB0E0D00 
+ 587      01010101 
+ 588              	.LASF12:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 16
+
+
+ 589 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 589      6E74385F 
+ 589      7400
+ 590              	.LASF19:
+ 591 000a 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
+ 591      4C455F41 
+ 591      44565F53 
+ 591      54415445 
+ 591      5F53544F 
+ 592              	.LASF16:
+ 593 0023 62644861 		.ascii	"bdHandle\000"
+ 593      6E646C65 
+ 593      00
+ 594              	.LASF30:
+ 595 002c 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 595      4C455F43 
+ 595      4F4E4E5F 
+ 595      53544154 
+ 595      455F434C 
+ 596              	.LASF18:
+ 597 0057 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 597      74635F62 
+ 597      6C655F63 
+ 597      6F6E6E5F 
+ 597      68616E64 
+ 598              	.LASF36:
+ 599 0070 63795F62 		.ascii	"cy_ble_connHandle\000"
+ 599      6C655F63 
+ 599      6F6E6E48 
+ 599      616E646C 
+ 599      6500
+ 600              	.LASF13:
+ 601 0082 75696E74 		.ascii	"uint8_t\000"
+ 601      385F7400 
+ 602              	.LASF0:
+ 603 008a 756E7369 		.ascii	"unsigned int\000"
+ 603      676E6564 
+ 603      20696E74 
+ 603      00
+ 604              	.LASF27:
+ 605 0097 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
+ 605      4C455F43 
+ 605      4F4E4E5F 
+ 605      53544154 
+ 605      455F434C 
+ 606              	.LASF23:
+ 607 00c1 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 607      6E5F626C 
+ 607      655F6164 
+ 607      765F7374 
+ 607      6174655F 
+ 608              	.LASF14:
+ 609 00d7 666C6F61 		.ascii	"float\000"
+ 609      7400
+ 610              	.LASF39:
+ 611 00dd 43795F42 		.ascii	"Cy_BLE_HostRegisteredCallback\000"
+ 611      4C455F48 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 17
+
+
+ 611      6F737452 
+ 611      65676973 
+ 611      74657265 
+ 612              	.LASF22:
+ 613 00fb 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 613      4C455F41 
+ 613      44565F53 
+ 613      54415445 
+ 613      5F53544F 
+ 614              	.LASF4:
+ 615 011b 756E7369 		.ascii	"unsigned char\000"
+ 615      676E6564 
+ 615      20636861 
+ 615      7200
+ 616              	.LASF21:
+ 617 0129 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 617      4C455F41 
+ 617      44565F53 
+ 617      54415445 
+ 617      5F414456 
+ 618              	.LASF8:
+ 619 0146 6C6F6E67 		.ascii	"long unsigned int\000"
+ 619      20756E73 
+ 619      69676E65 
+ 619      6420696E 
+ 619      7400
+ 620              	.LASF6:
+ 621 0158 73686F72 		.ascii	"short unsigned int\000"
+ 621      7420756E 
+ 621      7369676E 
+ 621      65642069 
+ 621      6E7400
+ 622              	.LASF29:
+ 623 016b 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 623      4C455F43 
+ 623      4F4E4E5F 
+ 623      53544154 
+ 623      455F434C 
+ 624              	.LASF35:
+ 625 0195 63795F62 		.ascii	"cy_ble_advState\000"
+ 625      6C655F61 
+ 625      64765374 
+ 625      61746500 
+ 626              	.LASF26:
+ 627 01a5 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 627      4C455F43 
+ 627      4F4E4E5F 
+ 627      53544154 
+ 627      455F434F 
+ 628              	.LASF15:
+ 629 01c1 646F7562 		.ascii	"double\000"
+ 629      6C6500
+ 630              	.LASF44:
+ 631 01c8 73656E64 		.ascii	"sendNotification\000"
+ 631      4E6F7469 
+ 631      66696361 
+ 631      74696F6E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 18
+
+
+ 631      00
+ 632              	.LASF31:
+ 633 01d9 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
+ 633      4C455F43 
+ 633      4F4E4E5F 
+ 633      53544154 
+ 633      455F434C 
+ 634              	.LASF9:
+ 635 01fd 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 635      206C6F6E 
+ 635      6720756E 
+ 635      7369676E 
+ 635      65642069 
+ 636              	.LASF28:
+ 637 0214 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 637      4C455F43 
+ 637      4F4E4E5F 
+ 637      53544154 
+ 637      455F434C 
+ 638              	.LASF45:
+ 639 023e 43795F42 		.ascii	"Cy_BLE_HAL_BlessInterruptHandler\000"
+ 639      4C455F48 
+ 639      414C5F42 
+ 639      6C657373 
+ 639      496E7465 
+ 640              	.LASF20:
+ 641 025f 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 641      4C455F41 
+ 641      44565F53 
+ 641      54415445 
+ 641      5F414456 
+ 642              	.LASF42:
+ 643 027e 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\James.cydsn"
+ 643      73657273 
+ 643      5C73616C 
+ 643      617A5C44 
+ 643      65736B74 
+ 644 02ac 00       		.ascii	"\000"
+ 645              	.LASF17:
+ 646 02ad 61747449 		.ascii	"attId\000"
+ 646      6400
+ 647              	.LASF10:
+ 648 02b3 73697A65 		.ascii	"sizetype\000"
+ 648      74797065 
+ 648      00
+ 649              	.LASF1:
+ 650 02bc 6C6F6E67 		.ascii	"long long int\000"
+ 650      206C6F6E 
+ 650      6720696E 
+ 650      7400
+ 651              	.LASF41:
+ 652 02ca 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_b"
+ 652      72617465 
+ 652      645F536F 
+ 652      75726365 
+ 652      5C50536F 
+ 653 02f8 6C655F68 		.ascii	"le_hal_int.c\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 19
+
+
+ 653      616C5F69 
+ 653      6E742E63 
+ 653      00
+ 654              	.LASF11:
+ 655 0305 63686172 		.ascii	"char\000"
+ 655      00
+ 656              	.LASF24:
+ 657 030a 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 657      4C455F43 
+ 657      4F4E4E5F 
+ 657      53544154 
+ 657      455F4449 
+ 658              	.LASF5:
+ 659 0329 73686F72 		.ascii	"short int\000"
+ 659      7420696E 
+ 659      7400
+ 660              	.LASF34:
+ 661 0333 63795F62 		.ascii	"cy_ble_app_notify_callback_t\000"
+ 661      6C655F61 
+ 661      70705F6E 
+ 661      6F746966 
+ 661      795F6361 
+ 662              	.LASF25:
+ 663 0350 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
+ 663      4C455F43 
+ 663      4F4E4E5F 
+ 663      53544154 
+ 663      455F434C 
+ 664              	.LASF43:
+ 665 0381 43795F42 		.ascii	"Cy_BLE_BlessInterrupt\000"
+ 665      4C455F42 
+ 665      6C657373 
+ 665      496E7465 
+ 665      72727570 
+ 666              	.LASF7:
+ 667 0397 6C6F6E67 		.ascii	"long int\000"
+ 667      20696E74 
+ 667      00
+ 668              	.LASF2:
+ 669 03a0 6C6F6E67 		.ascii	"long double\000"
+ 669      20646F75 
+ 669      626C6500 
+ 670              	.LASF40:
+ 671 03ac 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 671      43313120 
+ 671      352E342E 
+ 671      31203230 
+ 671      31363036 
+ 672 03df 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 672      20726576 
+ 672      6973696F 
+ 672      6E203233 
+ 672      37373135 
+ 673 0412 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 673      67202D66 
+ 673      66756E63 
+ 673      74696F6E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccewOczs.s 			page 20
+
+
+ 673      2D736563 
+ 674              	.LASF3:
+ 675 043e 7369676E 		.ascii	"signed char\000"
+ 675      65642063 
+ 675      68617200 
+ 676              	.LASF33:
+ 677 044a 5F426F6F 		.ascii	"_Bool\000"
+ 677      6C00
+ 678              	.LASF37:
+ 679 0450 63795F62 		.ascii	"cy_ble_connState\000"
+ 679      6C655F63 
+ 679      6F6E6E53 
+ 679      74617465 
+ 679      00
+ 680              	.LASF38:
+ 681 0461 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
+ 681      6C655F70 
+ 681      656E6469 
+ 681      6E67466C 
+ 681      61736857 
+ 682              	.LASF32:
+ 683 047a 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 683      6E5F626C 
+ 683      655F636F 
+ 683      6E6E5F73 
+ 683      74617465 
+ 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

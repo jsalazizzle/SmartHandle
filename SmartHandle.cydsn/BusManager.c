@@ -126,7 +126,7 @@ void BusManager_Init()
     //DEBUG_PRINTF("Configuring Sensor... ");     
     //DEBUG_WAIT_UART_TX_COMPLETE();
 
-    //AccDriver_Init();
+    AccDriver_Init();
     
     //DEBUG_PRINTF("Finished \r\n");     
     //DEBUG_WAIT_UART_TX_COMPLETE();

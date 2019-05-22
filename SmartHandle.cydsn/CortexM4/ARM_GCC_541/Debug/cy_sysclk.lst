@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
   25:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** extern "C" {
   26:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** #endif /* __cplusplus */
   27:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 2
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 2
 
 
   28:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* # of elements in an array */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
   82:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *                     max amplitude < 1.2: INT(5 * max amplitude) - 2
   83:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *                     max amplitude >= 1.2: 3
   84:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *   gtrim = if (number of amplifier sections > 3) then error
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 3
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 3
 
 
   85:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *           else the following:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
   59              		.loc 1 110 0
   60 0024 F8EE666A 		vcvt.f32.u32	s13, s13
   61 0028 9FED6E6A 		vldr.32	s12, .L33+4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 4
 
 
   62 002c C6EE868A 		vdiv.f32	s17, s13, s12
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  103              		.loc 1 121 0
  104 0098 B6EE007A 		vmov.f32	s14, #5.0e-1
  105 009c B4EEC76A 		vcmpe.f32	s12, s14
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 5
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 5
 
 
  106 00a0 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  156 0116 0625     		movs	r5, #6
  157 0118 02E0     		b	.L4
  158              	.L18:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 6
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 6
 
 
  159 011a 0A25     		movs	r5, #10
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  201 0162 F4EEC78A 		vcmpe.f32	s17, s14
  202 0166 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
  203 016a 0FDC     		bgt	.L21
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 7
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 7
 
 
  138:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                      ((freqMHz > 23.33f) ? 1ul :
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  241 01b0 1343     		orrs	r3, r3, r2
  242              	.LVL20:
  153:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             reg |= (rtrim  & 3ul)    << 10;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 8
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 8
 
 
  243              		.loc 1 153 0 discriminator 2
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  284              		.loc 1 164 0
  285 01d8 BDEC048B 		vldm	sp!, {d8-d9}
  286              		.cfi_restore 82
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 9
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 9
 
 
  287              		.cfi_restore 83
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  182:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \funcusage
  183:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \snippet sysclk/sysclk_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_SysClk_EcoEnable
  184:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 10
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 10
 
 
  185:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *******************************************************************************/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  358 0026 074B     		ldr	r3, .L43
  359 0028 D3F83035 		ldr	r3, [r3, #1328]
  197:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****              ((_FLD2VAL(SRSS_CLK_ECO_STATUS_ECO_READY, SRSS->CLK_ECO_STATUS) == 0ul)) &&(timeoutus 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 11
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 11
 
 
  360              		.loc 1 197 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  406              		.type	Cy_SysClk_ClkPathSetSource, %function
  407              	Cy_SysClk_ClkPathSetSource:
  408              	.LFB239:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 12
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 12
 
 
  207:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /** \} group_sysclk_eco_funcs */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  424              		.loc 1 243 0
  425 000e 132B     		cmp	r3, #19
  426 0010 18D8     		bhi	.L50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 13
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 13
 
 
  427              	.L47:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  468              	.LVL51:
  256:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     }
  257:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     return (retval);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 14
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 14
 
 
  258:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  503              	.LVL53:
  504 000e FFF7FEFF 		bl	Cy_SysLib_AssertFailed
  505              	.LVL54:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 15
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 15
 
 
  506              	.L54:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  291:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* ===========================    FLL SECTION    ============================ */
  292:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* ========================================================================== */
  293:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* min and max FLL output frequencies, in Hz */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 16
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 16
 
 
  294:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** #define  CY_SYSCLK_MIN_FLL_CCO_OUTPUT_FREQ  48000000ul
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  348:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     {
  349:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         returnStatus = CY_SYSCLK_BAD_PARAM;
  350:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 17
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 17
 
 
  351:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     else
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  405:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
  406:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     /* find the largest IGAIN value that is less than or equal to ki_p */
  407:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     for(config.igain = CY_SYSCLK_N_ELMTS(gains) - 1ul;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 18
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 18
 
 
  408:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                         (gains[config.igain] > ki_p) && (config.igain != 0ul); config.igain--){}
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  462:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \return  Error / status code:<br>
  463:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_SUCCESS - FLL successfully configured<br>
  464:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_INVALID_STATE - FLL not configured because it is enabled
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 19
 
 
  465:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  577 001e 494D     		ldr	r5, .L73+8
  578              	.L61:
  579              	.LVL63:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 20
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 20
 
 
  486:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  616              	.L64:
  504:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         CY_ASSERT_L1(config->lockTolerance <= (SRSS_CLK_FLL_CONFIG2_LOCK_TOL_Msk >> SRSS_CLK_FLL_CO
  617              		.loc 1 504 0 is_stmt 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 21
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 21
 
 
  618 0060 2389     		ldrh	r3, [r4, #8]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  664 00b0 4FF40071 		mov	r1, #512
  665 00b4 2148     		ldr	r0, .L73
  666 00b6 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 22
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 22
 
 
  667              	.LVL74:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  712              	.LVL81:
  713              	.L70:
  522:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         CY_SYSCLK_CLR_SET(SRSS->CLK_FLL_CONFIG4, SRSS_CLK_FLL_CONFIG4_CCO_RANGE, (uint32_t)(config-
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 23
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 23
 
 
  714              		.loc 1 522 0 is_stmt 1
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  762              		@ frame_needed = 0, uses_anonymous_args = 0
  763              	.LVL83:
  764 0000 F0B5     		push	{r4, r5, r6, r7, lr}
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 24
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 24
 
 
  765              		.cfi_def_cfa_offset 20
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  814              	.L97:
  345:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     }
  815              		.loc 1 345 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 25
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 25
 
 
  816 004c BE48     		ldr	r0, .L111+16
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  859              		.loc 1 376 0 is_stmt 1 discriminator 5
  860 0090 B14F     		ldr	r7, .L111+32
  861 0092 BC42     		cmp	r4, r7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 26
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 26
 
 
  862 0094 94BF     		ite	ls
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  909 00fc FCEEE77A 		vcvt.u32.f32	s15, s15
  910 0100 CDED017A 		vstr.32	s15, [sp, #4]	@ int
  911              	.LVL93:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 27
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 27
 
 
  912 0104 BDF80460 		ldrh	r6, [sp, #4]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  960 0180 C7EE275A 		vdiv.f32	s11, s14, s15
  961 0184 85EEA67A 		vdiv.f32	s14, s11, s13
  962              	.LVL99:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 28
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 28
 
 
  403:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                                                0.5f, 1.0f, 2.0f, 4.0f, 8.0f};
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1008              	.L89:
  417:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     /* decrement pgain if the WCO is the FLL source */
  1009              		.loc 1 417 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 29
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 29
 
 
  1010 01de 013B     		subs	r3, r3, #1
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1056 0242 1EAA     		add	r2, sp, #120
  1057 0244 02EB8303 		add	r3, r2, r3, lsl #2
  1058 0248 53ED167A 		vldr.32	s15, [r3, #-88]
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 30
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 30
 
 
  1059 024c B7EE009A 		vmov.f32	s18, #1.0e+0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1107              	.LVL114:
  1108 02bc FFF7FEFF 		bl	ceilf
  1109              	.LVL115:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 31
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 31
 
 
  1110 02c0 07EE900A 		vmov	s15, r0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1155              	.LVL119:
  1156              	.L78:
  447:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 32
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 32
 
 
  1157              		.loc 1 447 0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1210              		.type	Cy_SysClk_FllGetConfiguration, %function
  1211              	Cy_SysClk_FllGetConfiguration:
  1212              	.LFB243:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 33
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 33
 
 
  528:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1245              	.LVL128:
  550:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     config->refDiv          = _FLD2VAL(SRSS_CLK_FLL_CONFIG2_FLL_REF_DIV, tempReg);
  1246              		.loc 1 550 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 34
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 34
 
 
  1247 0026 C3F30C01 		ubfx	r1, r3, #0, #13
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  561:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
  562:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /*******************************************************************************
  563:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Function Name: Cy_SysClk_FllEnable
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 35
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 35
 
 
  564:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** ****************************************************************************//**
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  595:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****          timeoutus--)
  596:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     {
  597:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         Cy_SysLib_DelayUs(1u);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 36
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 36
 
 
  1314              		.loc 1 597 0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  612:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****          timeoutus--)
  613:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     {
  614:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         Cy_SysLib_DelayUs(1u);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 37
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 37
 
 
  1351              		.loc 1 614 0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
   24:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * - External clock sources such as crystal oscillators or a signal on an I/O pin
   25:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * - Generated clocks such as an FLL, a PLL, and peripheral clocks
   26:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 38
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 38
 
 
   27:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * Consult the Technical Reference Manual for your device for details of the 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
   81:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *         if the expression is complex.</td>
   82:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *     <td>Use of a Cypress defined macro to access memory mapped objects.
   83:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *         Use of a Cypress defined macro to divide with rounding.</td>
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 39
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 39
 
 
   84:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   </tr>
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  138:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   </tr>
  139:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   <tr>
  140:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *     <td>16.7</td>
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 40
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 40
 
 
  141:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *     <td>R</td>
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  195:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *     <td>Feature is not supported in SRSS v1</td>
  196:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   </tr>
  197:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   <tr>
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 41
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 41
 
 
  198:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *     <td>Updated Cy_SysClk_DeepSleepCallback() to save/restore both FLL and PLL settings</td>
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  252:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   path 0 source clock can be used as the reference clock for the FLL and 
  253:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   path 1 source clock can be used as the reference clock for the PLL.
  254:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 42
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 42
 
 
  255:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   ![](sysclk_path_source.png)
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  309:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
  310:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   The SysClk driver supports two models for configuring the PLL. The first
  311:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   model is to call the Cy_SysClk_PllConfigure() function, which calculates the 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 43
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 43
 
 
  312:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   necessary parameters for the PLL at run-time. This may be necessary for dynamic
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  366:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   reference clock. They are typically called in the following order:
  367:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
  368:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   1. Specify the measured clock, the count, and the reference clock
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 44
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 44
 
 
  369:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   2. Start the counters
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  423:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   an external 32.768 kHz square wave is brought in directly through the 
  424:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   SRSS_WCO_OUT_PIN pin.
  425:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 45
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 45
 
 
  426:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   Some devices support a built-in clock supervisor (CSV) in the WCO. The clock
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  480:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_clk_fast_funcs  Functions
  481:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \}
  482:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \defgroup group_sysclk_clk_peri        Peripheral Clock
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 46
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 46
 
 
  483:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \{
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  537:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   The low-frequency clock is the source clock for the \ref group_mcwdt
  538:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   and can be the source clock for \ref group_sysclk_clk_bak, which drives the
  539:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   \ref group_rtc.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 47
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 47
 
 
  540:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *   
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  594:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** #include <stdbool.h>
  595:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** 
  596:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** #if defined(__cplusplus)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 48
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 48
 
 
  597:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** extern "C" {
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  651:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** #define CY_SYSCLK_ECOSTAT_AMPLITUDE  0UL /**< \brief ECO does not have sufficient amplitude */
  652:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** #define CY_SYSCLK_ECOSTAT_INACCURATE 1UL /**< \brief ECO may not be meeting accuracy and duty cycle
  653:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** #define CY_SYSCLK_ECOSTAT_STABLE     2UL /**< \brief ECO has fully stabilized */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 49
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 49
 
 
  654:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /** \} */
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  708:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /* ====================    INPUT MULTIPLEXER SECTION    ===================== */
  709:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /* ========================================================================== */
  710:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /**
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 50
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 50
 
 
  711:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \addtogroup group_sysclk_path_src_enums
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  765:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_FLL_CCO_RANGE1, /**< Target frequency is in range  64 -  85 MHz. */
  766:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_FLL_CCO_RANGE2, /**< Target frequency is in range  85 - 113 MHz. */
  767:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_FLL_CCO_RANGE3, /**< Target frequency is in range 113 - 150 MHz. */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 51
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 51
 
 
  768:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_FLL_CCO_RANGE4  /**< Target frequency is in range 150 - 200 MHz. */
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  822:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** {
  823:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     return (bool)(_FLD2VAL(SRSS_CLK_FLL_STATUS_LOCKED, SRSS->CLK_FLL_STATUS));
  824:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 52
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 52
 
 
  825:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1387              	.LBE37:
  619:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     {
  620:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         (void)Cy_SysClk_FllDisable();
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 53
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 53
 
 
  621:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     }
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  639:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* ========================================================================== */
  640:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /** \cond INTERNAL */
  641:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* PLL OUTPUT_DIV bitfield allowable range */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 54
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 54
 
 
  642:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** #define MIN_OUTPUT_DIV     2UL
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  696:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_SUCCESS - PLL successfully configured<br>
  697:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_INVALID_STATE - PLL not configured because it is enabled<br>
  698:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_BAD_PARAM - invalid clock path number, or input or desired output frequency is out of v
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 55
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 55
 
 
  699:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  753:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                as close as possible to the desired output frequency. */
  754:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             uint32_t p, q, out;
  755:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             uint32_t foutBest = 0ul; /* to ensure at least one pass through the for loops below */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 56
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 56
 
 
  756:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  810:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_INVALID_STATE - PLL not configured because it is enabled<br>
  811:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_BAD_PARAM - invalid clock path number
  812:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 57
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 57
 
 
  813:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \note
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1451 001e 4B78     		ldrb	r3, [r1, #1]	@ zero_extendqisi2
  838:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****              (config->referenceDiv <    MIN_REF_DIV) || (MAX_REF_DIV    < config->referenceDiv) ||
  1452              		.loc 1 838 0 discriminator 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 58
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 58
 
 
  1453 0020 BBB1     		cbz	r3, .L143
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1498 0056 1A4D     		ldr	r5, .L150+4
  1499 0058 02E0     		b	.L135
  1500              	.L146:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 59
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 59
 
 
  1501 005a 194D     		ldr	r5, .L150+4
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  860:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 _VAL2FLD(SRSS_CLK_PLL_CONFIG_OUTPUT_DIV,    (uint32_t)(config->outputDiv))    |
  1535              		.loc 1 860 0
  1536 008c 2243     		orrs	r2, r2, r4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 60
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 60
 
 
  857:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 _VAL2FLD(SRSS_CLK_PLL_CONFIG_FEEDBACK_DIV,  (uint32_t)(config->feedbackDiv))  |
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1582              		.cfi_startproc
  1583              		@ args = 0, pretend = 0, frame = 8
  1584              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 61
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 61
 
 
  1585              	.LVL150:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  713:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
  1633              		.loc 1 713 0 is_stmt 1
  1634 0040 0020     		movs	r0, #0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 62
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 62
 
 
  1635              	.LVL152:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1680 006e BBF1020F 		cmp	fp, #2
  1681 0072 4FD1     		bne	.L176
  1682              	.LBB40:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 63
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 63
 
 
  1683 0074 56E0     		b	.L157
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1730              	.L165:
  1731              	.LBB42:
  772:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                             if ((uint32_t)abs((int32_t)fout - (int32_t)(config->outputFreq)) <
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 64
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 64
 
 
  1732              		.loc 1 772 0 is_stmt 1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1776 00f6 A642     		cmp	r6, r4
  1777 00f8 DFD1     		bne	.L165
  1778              	.LVL173:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 65
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 65
 
 
  1779              	.L161:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1824 0124 98F80830 		ldrb	r3, [r8, #8]	@ zero_extendqisi2
  1825 0128 8DF80330 		strb	r3, [sp, #3]
  790:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         returnStatus = Cy_SysClk_PllManualConfigure(clkPath, &manualConfig);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 66
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 66
 
 
  1826              		.loc 1 790 0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  882:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * CY_SYSCLK_BAD_PARAM - invalid clock path number
  883:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
  884:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \funcusage
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 67
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 67
 
 
  885:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \snippet sysclk/sysclk_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_SysClk_PllGetConfiguration
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1904 0034 7047     		bx	lr
  1905              	.LVL187:
  1906              	.L187:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 68
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 68
 
 
  1907              	.LBE44:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1933              	.LVL189:
  927:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     cy_en_sysclk_status_t rtnval = CY_SYSCLK_BAD_PARAM;
  928:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     if ((clkPath != 0ul) && (clkPath <= SRSS_NUM_PLL))
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 69
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 69
 
 
  1934              		.loc 1 928 0
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  1973 0036 002C     		cmp	r4, #0
  1974 0038 F1D1     		bne	.L194
  1975              	.L193:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 70
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 70
 
 
  940:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         }
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  946:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
  947:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
  948:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* ========================================================================== */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 71
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 71
 
 
  949:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** /* ====================    Clock Measurement section    ===================== */
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1003:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * to determine when counting is done, that is, counter1 has counted down to zero.
 1004:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Then call \ref Cy_SysClk_ClkMeasurementCountersGetFreq() to calculate the frequency
 1005:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * of the measured clock.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 72
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 72
 
 
 1006:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1047:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****          select it in SRSS_CLK_OUTPUT_SLOW.SLOW_SEL0, and SRSS_CLK_OUTPUT_FAST.FAST_SEL0 = SLOW_SEL
 1048:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****        else if clock1 is a fast clock,
 1049:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****          select it in SRSS_CLK_OUTPUT_FAST.FAST_SEL0,
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 73
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 73
 
 
 1050:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****        else error, do nothing and return.
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1074:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             if (clock1 < CY_SYSCLK_MEAS_CLK_PATH_CLKS)
  2063              		.loc 1 1074 0
  2064 002a B0F5A06F 		cmp	r0, #1280
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 74
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 74
 
 
  2065 002e 06D2     		bcs	.L204
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1091:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     clkOutputFastVal |= _VAL2FLD(SRSS_CLK_OUTPUT_FAST_HFCLK_SEL0, ((uint32_t)clock1
  2099              		.loc 1 1091 0
  2100 005a 0302     		lsls	r3, r0, #8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 75
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 75
 
 
  2101 005c 03F47063 		and	r3, r3, #3840
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1115:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 clkOutputFastMask |= SRSS_CLK_OUTPUT_FAST_FAST_SEL1_Msk;
 1116:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
 1117:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 if (clock2 < CY_SYSCLK_MEAS_CLK_CLKHFS)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 76
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 76
 
 
 1118:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 { /* PATH select */
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2165              	.LVL222:
 1120:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 }
  2166              		.loc 1 1120 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 77
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 77
 
 
  2167 00b6 45F47F02 		orr	r2, r5, #16711680
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1036:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     uint32_t clkOutputFastVal = 0U;
  2211              		.loc 1 1036 0
  2212 00e4 1446     		mov	r4, r2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 78
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 78
 
 
 1034:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1143:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             (_FLD2VAL(SRSS_CLK_CAL_CNT1_CAL_COUNTER_DONE, SRSS->CLK_CAL_CNT1) != 0ul/*1 = done*/))
  2247              		.loc 1 1143 0 discriminator 1
  2248 010a 002B     		cmp	r3, #0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 79
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 79
 
 
  2249 010c 1BDA     		bge	.L216
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1162:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
 1163:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         /* Release the IPC */
 1164:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         IPC_STRUCT7->RELEASE = 0U;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 80
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 80
 
 
  2285              		.loc 1 1164 0
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1191:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * current measurement is not valid and you should call 
 1192:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Cy_SysClk_StartClkMeasurementCounters() function once again.
 1193:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 81
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 81
 
 
 1194:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \funcusage
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2345 0024 07D1     		bne	.L226
 1216:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                           (TST_DDFT_FAST_CTL_REG == TST_DDFT_FAST_CTL_DEFAULT_VAL));
  2346              		.loc 1 1216 0 discriminator 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 82
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 82
 
 
  2347 0026 294B     		ldr	r3, .L229+12
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2388 0068 4FEA3404 		mov	r4, r4, rrx
  2389 006c DDE90023 		ldrd	r2, [sp]
  2390 0070 E1FB0045 		umlal	r4, r5, r1, r0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 83
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 83
 
 
  2391 0074 2046     		mov	r0, r4
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2432              		@ sp needed
  2433 00ba BDE83088 		pop	{r4, r5, fp, pc}
  2434              	.L230:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 84
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 84
 
 
  2435 00be 00BF     		.align	2
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2454              		.cfi_startproc
  2455              		@ args = 0, pretend = 0, frame = 0
  2456              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 85
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 85
 
 
  2457              		@ link register save eliminated.
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1291:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         else
 1292:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         { /* iloFreq too low. Increase the trim value. */
 1293:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             newTrim = curTrim + CY_SYSCLK_DIV_ROUND(CY_SYSCLK_ILO_TARGET_FREQ - iloFreq, trimStep);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 86
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 86
 
 
  2495              		.loc 1 1293 0
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2541 006c 00002640 		.word	1076232192
  2542 0070 15024D21 		.word	558694933
  2543              		.cfi_endproc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 87
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 87
 
 
  2544              	.LFE251:
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2567 000a 042B     		cmp	r3, #4
  2568 000c 30D9     		bls	.L244
 1325:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     uint32_t newTrim = 0ul;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 88
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 88
 
 
  2569              		.loc 1 1325 0
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  915:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** ****************************************************************************//**
  916:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
  917:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * Reports whether or not the selected PLL is locked.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 89
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 89
 
 
  918:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  972:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \return Error / status code:<br>
  973:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * CY_SYSCLK_SUCCESS - PLL successfully disabled<br>
  974:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * CY_SYSCLK_BAD_PARAM - invalid clock path number
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 90
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 90
 
 
  975:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1029:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * CY_SYSCLK_INVALID_STATE - Cannot disable the ILO if the WDT is enabled.
 1030:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
 1031:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \note The watchdog timer (WDT) must be unlocked before calling this function.
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 91
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 91
 
 
 1032:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * Do not call this function if the WDT is enabled, because the WDT is clocked by
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1086:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /*******************************************************************************
 1087:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * Function Name: Cy_SysClk_PiloEnable
 1088:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** ****************************************************************************//**
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 92
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 92
 
 
 1089:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1143:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /*******************************************************************************
 1144:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * Function Name: Cy_SysClk_PiloGetTrim
 1145:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** ****************************************************************************//**
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 93
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 93
 
 
 1146:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2606 0040 02EB9300 		add	r0, r2, r3, lsr #2
  2607              	.LVL280:
 1345:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****             if (newTrim >= SRSS_CLK_PILO_CONFIG_PILO_FFREQ_Msk) /* limit overflow */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 94
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 94
 
 
  2608              		.loc 1 1345 0
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2650              		.cfi_def_cfa_offset 4
  2651              		.cfi_offset 4, -4
  2652 0076 101A     		subs	r0, r2, r0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 95
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 95
 
 
  2653              	.LVL288:
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1388:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * type and call \ref Cy_SysPm_RegisterCallback.
 1389:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
 1390:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \note This function must be the last callback function that is registered. 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 96
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 96
 
 
 1391:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Doing so minimizes the time spent on low power mode entry and exit. In the case
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1419:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         /* Don't allow entry into DeepSleep mode if currently measuring a frequency. */
 1420:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****         if (clkCounting)
  2700              		.loc 1 1420 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 97
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 97
 
 
  2701 0016 5D4B     		ldr	r3, .L289+4
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2734 0042 2046     		mov	r0, r4
  2735 0044 FFF7FEFF 		bl	Cy_SysClk_ClkPathGetSource
  2736              	.LVL296:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 98
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 98
 
 
  2737 0048 0228     		cmp	r0, #2
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2774              		.loc 1 1432 0 is_stmt 0 discriminator 1
  2775 0090 012C     		cmp	r4, #1
  2776 0092 C9D9     		bls	.L261
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 99
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 99
 
 
 1455:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     }
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2810              	.LBB53:
  2811              		.loc 1 1473 0 is_stmt 0 discriminator 1
  2812 00b2 52B1     		cbz	r2, .L264
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 100
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 100
 
 
  2813              	.LBB51:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1486:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 /* If FLL or PLL is enabled, */
 1487:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 if (0ul != ((fllpll == 0ul) ? (_FLD2VAL(SRSS_CLK_FLL_CONFIG_FLL_ENABLE, SRSS->CLK_F
  2852              		.loc 1 1487 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 101
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 101
 
 
  2853 00d8 24B9     		cbnz	r4, .L269
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1497:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     /* Timeout wait for FLL or PLL to regain lock. */
 1498:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     uint32_t timout;
 1499:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     for (timout = TIMEOUTK; timout != 0ul; timout--)
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 102
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 102
 
 
 1500:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     {
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1505:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     }
 1506:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     if (timout == 0ul)
  2939              		.loc 1 1506 0 is_stmt 1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 103
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 103
 
 
  2940 0142 95B1     		cbz	r5, .L287
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  2978              	.L268:
  2979              	.LBE64:
 1520:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                         }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 104
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 104
 
 
 1521:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     }
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3016              		.thumb_func
  3017              		.type	Cy_SysClk_PeriphGetFrequency, %function
  3018              	Cy_SysClk_PeriphGetFrequency:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 105
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 105
 
 
  3019              	.LFB254:
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1590:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Function Name: Cy_SysClk_ClkHfConfigureCsv
 1591:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** ****************************************************************************//**
 1592:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 106
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 106
 
 
 1593:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Configures the clkHf clock supervisor (CSV).
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1647:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * Reports the frequency of the output of a given peripheral divider.
 1648:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
 1649:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** * \param dividerType specifies which type of divider to use; \ref cy_en_divider_types_t
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 107
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 107
 
 
 1650:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** *
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3056 001e 07D9     		bls	.L293
  3057              	.L295:
  3058              		.loc 1 1667 0 discriminator 9
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 108
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 108
 
 
  3059 0020 032E     		cmp	r6, #3
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3081 003c 0393     		str	r3, [sp, #12]
  3082 003e 0493     		str	r3, [sp, #16]
  3083              	.LVL328:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 109
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 109
 
 
  3084              	.LBB80:
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1208:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF9 =        0x609u,
 1209:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF10 =       0x60Au,
 1210:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF11 =       0x60Bu,
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 110
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 110
 
 
 1211:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF12 =       0x60Cu,
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1265:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \addtogroup group_sysclk_pm_funcs
 1266:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \{
 1267:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 111
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 111
 
 
 1268:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** cy_en_syspm_status_t Cy_SysClk_DeepSleepCallback(cy_stc_syspm_callback_params_t *callbackParams);
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1322:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** 
 1323:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /**
 1324:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \addtogroup group_sysclk_wco_structs
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 112
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 112
 
 
 1325:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \{
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1379:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     {
 1380:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****         Cy_SysLib_DelayUs(1u);
 1381:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 113
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 113
 
 
 1382:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     if (timeoutus != 0ul)
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1436:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *******************************************************************************/
 1437:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** __STATIC_INLINE void Cy_SysClk_WcoBypass(cy_en_wco_bypass_modes_t bypass)
 1438:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** {
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 114
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 114
 
 
 1439:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_CLR_SET(BACKUP->CTL, BACKUP_CTL_WCO_BYPASS, bypass);
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1493:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** {
 1494:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_CLKHF_CSV_SUPERVISOR_IMO   = 0u,  /**< Supervising clock is the IMO. */
 1495:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_CLKHF_CSV_SUPERVISOR_EXT   = 1u,  /**< Supervising clock is the external clock */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 115
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 115
 
 
 1496:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     CY_SYSCLK_CLKHF_CSV_SUPERVISOR_ALTHF = 2u   /**< Supervising clock is clk_althf */
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1550:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** __STATIC_INLINE cy_en_sysclk_status_t Cy_SysClk_ClkHfEnable(uint32_t clkHf)
 1551:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** {
 1552:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     cy_en_sysclk_status_t retval = CY_SYSCLK_BAD_PARAM;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 116
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 116
 
 
 1553:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     if (clkHf < SRSS_NUM_HFROOT)
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1607:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     if ((clkHf < SRSS_NUM_HFROOT) && (source <= CY_SYSCLK_CLKHF_IN_CLKPATH15))
 1608:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     {
 1609:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****         CY_SYSCLK_CLR_SET(SRSS->CLK_ROOT_SELECT[clkHf], SRSS_CLK_ROOT_SELECT_ROOT_MUX, source);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 117
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 117
 
 
 1610:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****         retval = CY_SYSCLK_SUCCESS;
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3108              	.LBB82:
  3109              	.LBB83:
  823:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 118
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 118
 
 
  3110              		.loc 2 823 0
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3152 009e 04D0     		beq	.L300
  3153 00a0 40F2A331 		movw	r1, #931
  3154 00a4 6D48     		ldr	r0, .L331+8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 119
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 119
 
 
  3155 00a6 FFF7FEFF 		bl	Cy_SysLib_AssertFailed
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3194              	.LVL348:
  3195 00d6 03E0     		b	.L303
  3196              	.L301:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 120
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 120
 
 
  3197              	.LVL349:
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1756:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 {
 1757:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                     path_freq = (uint32_t)(((uint64_t)path_freq * (uint64_t)fllpll.fll.fllMult) /
  3226              		.loc 1 1757 0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 121
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 121
 
 
  3227 00fc 92B2     		uxth	r2, r2
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3260              		.loc 1 1777 0 is_stmt 0 discriminator 1
  3261 012e 9DF81650 		ldrb	r5, [sp, #22]	@ zero_extendqisi2
  3262 0132 75B1     		cbz	r5, .L327
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 122
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 122
 
 
 1778:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****                 {
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1648:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
 1649:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \funcusage
 1650:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \snippet sysclk/sysclk_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_SysClk_ClkHfSetDivider
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 123
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 123
 
 
 1651:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1682:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** }
 1683:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** /** \} group_sysclk_clk_hf_funcs */
 1684:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 124
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 124
 
 
 1685:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** 
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1739:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \addtogroup group_sysclk_clk_peri_funcs
 1740:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \{
 1741:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** */
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 125
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 125
 
 
 1742:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** __STATIC_INLINE void Cy_SysClk_ClkPeriSetDivider(uint8_t divider);
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3315              		.loc 1 1801 0
  3316 016c 032E     		cmp	r6, #3
  3317 016e 5CD8     		bhi	.L309
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 126
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 126
 
 
  3318 0170 DFE806F0 		tbb	[pc, r6]
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1824:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
 1825:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \param dividerType specifies which type of divider to use; \ref cy_en_divider_types_t
 1826:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 127
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 127
 
 
 1827:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \param dividerNum the divider number.
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1881:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * The integer division done is by (divider value + 1), or division by 1 to 256
 1882:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * (8-bit divider) or 1 to 65536 (16-bit divider).
 1883:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 128
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 128
 
 
 1884:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** * \funcusage
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1902:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****         retval = _FLD2VAL(PERI_DIV_16_CTL_INT16_DIV, PERI->DIV_16_CTL[dividerNum]);
  3365              		.loc 2 1902 0
  3366 01b4 07F51077 		add	r7, r7, #576
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 129
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 129
 
 
  3367              	.LVL378:
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1935:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****                                                uint32_t dividerIntValue, uint32_t dividerFracValue)
 1936:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h **** {
 1937:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     cy_en_sysclk_status_t retval = CY_SYSCLK_BAD_PARAM;
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 130
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 130
 
 
 1938:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****     if (dividerType == CY_SYSCLK_DIV_16_5_BIT)
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3385 01c8 DBB2     		uxtb	r3, r3
  3386 01ca 012B     		cmp	r3, #1
  3387 01cc 04D9     		bls	.L318
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 131
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 131
 
 
  3388 01ce 40F2C671 		movw	r1, #1990
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3430 021c 1B0A     		lsrs	r3, r3, #8
  3431 021e 0393     		str	r3, [sp, #12]
 2002:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.h ****         *dividerFracValue = _FLD2VAL(PERI_DIV_24_5_CTL_FRAC5_DIV, PERI->DIV_24_5_CTL[dividerNum]);
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 132
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 132
 
 
  3432              		.loc 2 2002 0
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
 1825:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** 
 1826:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c ****     return rtnval;
 1827:Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk/cy_sysclk.c **** }
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 133
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 133
 
 
  3468              		.loc 1 1827 0
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3517      6C6B5C63 
  3517      795F7379 
  3517      73636C6B 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 134
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 134
 
 
  3517      2E6300
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3563 0010 0C       		.byte	0xc
  3564 0011 3C0B0000 		.4byte	.LASF439
  3565 0015 3F0F0000 		.4byte	.LASF440
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 135
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 135
 
 
  3566 0019 90000000 		.4byte	.Ldebug_ranges0+0x90
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3620 0085 25150000 		.4byte	.LASF11
  3621 0089 02       		.uleb128 0x2
  3622 008a 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 136
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 136
 
 
  3623 008b 05       		.byte	0x5
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3677 0100 00       		.byte	0
  3678 0101 07       		.uleb128 0x7
  3679 0102 EC000000 		.4byte	0xec
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 137
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 137
 
 
  3680 0106 11010000 		.4byte	0x111
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3734 017e 05       		.byte	0x5
  3735 017f 28       		.byte	0x28
  3736 0180 E7000000 		.4byte	0xe7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 138
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 138
 
 
  3737 0184 00       		.byte	0
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3791 01f4 33       		.byte	0x33
  3792 01f5 FB010000 		.4byte	0x1fb
  3793 01f9 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 139
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 139
 
 
  3794 01fa 00       		.byte	0
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3848 0266 05       		.uleb128 0x5
  3849 0267 C0010000 		.4byte	0x1c0
  3850 026b 06       		.uleb128 0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 140
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 140
 
 
  3851 026c 66020000 		.4byte	0x266
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3905 02db 06       		.uleb128 0x6
  3906 02dc D6020000 		.4byte	0x2d6
  3907 02e0 03       		.uleb128 0x3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 141
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 141
 
 
  3908 02e1 010A0000 		.4byte	.LASF34
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  3962 0353 71       		.byte	0x71
  3963 0354 EC000000 		.4byte	0xec
  3964 0358 FC0B     		.2byte	0xbfc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 142
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 142
 
 
  3965 035a 0D       		.uleb128 0xd
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4019 03d1 0F       		.byte	0xf
  4020 03d2 00       		.byte	0
  4021 03d3 07       		.uleb128 0x7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 143
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 143
 
 
  4022 03d4 EC000000 		.4byte	0xec
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4076 0456 06       		.uleb128 0x6
  4077 0457 51040000 		.4byte	0x451
  4078 045b 07       		.uleb128 0x7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 144
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 144
 
 
  4079 045c 00020000 		.4byte	0x200
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4133 04d3 5A030000 		.4byte	.LASF49
  4134 04d7 06       		.byte	0x6
  4135 04d8 24       		.byte	0x24
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 145
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 145
 
 
  4136 04d9 EC000000 		.4byte	0xec
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4190 0545 E7000000 		.4byte	0xe7
  4191 0549 34       		.byte	0x34
  4192 054a 0A       		.uleb128 0xa
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 146
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 146
 
 
  4193 054b 55120000 		.4byte	.LASF57
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4247 05b7 EB0E0000 		.4byte	.LASF64
  4248 05bb 06       		.byte	0x6
  4249 05bc 37       		.byte	0x37
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 147
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 147
 
 
  4250 05bd E7000000 		.4byte	0xe7
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4304 0630 E7000000 		.4byte	0xe7
  4305 0634 A001     		.2byte	0x1a0
  4306 0636 0D       		.uleb128 0xd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 148
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 148
 
 
  4307 0637 EB160000 		.4byte	.LASF74
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4361 06ac 17170000 		.4byte	.LASF83
  4362 06b0 06       		.byte	0x6
  4363 06b1 4A       		.byte	0x4a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 149
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 149
 
 
  4364 06b2 A9080000 		.4byte	0x8a9
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4418 0727 E7000000 		.4byte	0xe7
  4419 072b B002     		.2byte	0x2b0
  4420 072d 0D       		.uleb128 0xd
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 150
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 150
 
 
  4421 072e 4E170000 		.4byte	.LASF93
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4475 07a3 A60A0000 		.4byte	.LASF102
  4476 07a7 06       		.byte	0x6
  4477 07a8 5D       		.byte	0x5d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 151
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 151
 
 
  4478 07a9 E7000000 		.4byte	0xe7
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4532 0821 1B080000 		.4byte	0x81b
  4533 0825 05       		.uleb128 0x5
  4534 0826 F1070000 		.4byte	0x7f1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 152
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 152
 
 
  4535 082a 06       		.uleb128 0x6
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4589 08ae 05       		.uleb128 0x5
  4590 08af 11010000 		.4byte	0x111
  4591 08b3 06       		.uleb128 0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 153
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 153
 
 
  4592 08b4 AE080000 		.4byte	0x8ae
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4646 0938 07       		.uleb128 0x7
  4647 0939 EC000000 		.4byte	0xec
  4648 093d 48090000 		.4byte	0x948
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 154
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 154
 
 
  4649 0941 08       		.uleb128 0x8
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4703 09b1 A5030000 		.4byte	.LASF113
  4704 09b5 07       		.byte	0x7
  4705 09b6 28       		.byte	0x28
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 155
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 155
 
 
  4706 09b7 EC000000 		.4byte	0xec
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4760 0a23 05       		.uleb128 0x5
  4761 0a24 01010000 		.4byte	0x101
  4762 0a28 06       		.uleb128 0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 156
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 156
 
 
  4763 0a29 230A0000 		.4byte	0xa23
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4817 0aa2 00       		.byte	0
  4818 0aa3 03       		.uleb128 0x3
  4819 0aa4 8A1B0000 		.4byte	.LASF122
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 157
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 157
 
 
  4820 0aa8 07       		.byte	0x7
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4874 0b14 29       		.byte	0x29
  4875 0b15 E7000000 		.4byte	0xe7
  4876 0b19 18       		.byte	0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 158
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 158
 
 
  4877 0b1a 0A       		.uleb128 0xa
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4931 0b87 36       		.byte	0x36
  4932 0b88 E7000000 		.4byte	0xe7
  4933 0b8c 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 159
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 159
 
 
  4934 0b8d 0A       		.uleb128 0xa
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  4988 0bfa 0D       		.uleb128 0xd
  4989 0bfb 310C0000 		.4byte	.LASF142
  4990 0bff 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 160
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 160
 
 
  4991 0c00 40       		.byte	0x40
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5045 0c75 49       		.byte	0x49
  5046 0c76 E7000000 		.4byte	0xe7
  5047 0c7a 0405     		.2byte	0x504
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 161
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 161
 
 
  5048 0c7c 0D       		.uleb128 0xd
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5102 0cf1 0D       		.uleb128 0xd
  5103 0cf2 80070000 		.4byte	.LASF157
  5104 0cf6 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 162
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 162
 
 
  5105 0cf7 53       		.byte	0x53
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5159 0d6c 5C       		.byte	0x5c
  5160 0d6d 790F0000 		.4byte	0xf79
  5161 0d71 9405     		.2byte	0x594
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 163
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 163
 
 
  5162 0d73 0D       		.uleb128 0xd
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5216 0de8 0D       		.uleb128 0xd
  5217 0de9 01170000 		.4byte	.LASF78
  5218 0ded 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 164
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 164
 
 
  5219 0dee 66       		.byte	0x66
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5273 0e63 6F       		.byte	0x6f
  5274 0e64 E7000000 		.4byte	0xe7
  5275 0e68 307F     		.2byte	0x7f30
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 165
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 165
 
 
  5276 0e6a 0D       		.uleb128 0xd
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5330 0edf 00       		.byte	0
  5331 0ee0 05       		.uleb128 0x5
  5332 0ee1 F1000000 		.4byte	0xf1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 166
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 166
 
 
  5333 0ee5 06       		.uleb128 0x6
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5387 0f66 600F0000 		.4byte	0xf60
  5388 0f6a 05       		.uleb128 0x5
  5389 0f6b 0B080000 		.4byte	0x80b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 167
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 167
 
 
  5390 0f6f 06       		.uleb128 0x6
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5444 0ff1 07       		.uleb128 0x7
  5445 0ff2 EC000000 		.4byte	0xec
  5446 0ff6 02100000 		.4byte	0x1002
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 168
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 168
 
 
  5447 0ffa 0E       		.uleb128 0xe
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5501 106f 12       		.uleb128 0x12
  5502 1070 D6180000 		.4byte	.LASF194
  5503 1074 01004200 		.4byte	0x420001
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 169
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 169
 
 
  5504 1078 12       		.uleb128 0x12
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5558 10f2 E3040000 		.4byte	.LASF206
  5559 10f6 0A       		.byte	0xa
  5560 10f7 8F04     		.2byte	0x48f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 170
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 170
 
 
  5561 10f9 0C110000 		.4byte	0x110c
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5615 1173 01       		.byte	0x1
  5616 1174 11       		.uleb128 0x11
  5617 1175 B20C0000 		.4byte	.LASF216
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 171
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 171
 
 
  5618 1179 02       		.byte	0x2
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5672 11ea 4C000000 		.4byte	0x4c
  5673 11ee 02       		.byte	0x2
  5674 11ef FB02     		.2byte	0x2fb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 172
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 172
 
 
  5675 11f1 14120000 		.4byte	0x1214
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5729 1263 1003     		.2byte	0x310
  5730 1265 B4000000 		.4byte	0xb4
  5731 1269 08       		.byte	0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 173
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 173
 
 
  5732 126a 14       		.uleb128 0x14
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5786 12db 7403     		.2byte	0x374
  5787 12dd CA000000 		.4byte	0xca
  5788 12e1 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 174
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 174
 
 
  5789 12e2 14       		.uleb128 0x14
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5843 1354 0F       		.uleb128 0xf
  5844 1355 30090000 		.4byte	.LASF255
  5845 1359 02       		.byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 175
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 175
 
 
  5846 135a 8203     		.2byte	0x382
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5900 13d0 34190000 		.4byte	.LASF271
  5901 13d4 0305     		.2byte	0x503
  5902 13d6 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 176
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 176
 
 
  5903 13d7 4D190000 		.4byte	.LASF272
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  5957 1455 F6100000 		.4byte	.LASF290
  5958 1459 0506     		.2byte	0x605
  5959 145b 17       		.uleb128 0x17
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 177
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 177
 
 
  5960 145c E21A0000 		.4byte	.LASF291
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6014 14d5 09060000 		.4byte	.LASF306
  6015 14d9 03       		.byte	0x3
  6016 14da 11       		.uleb128 0x11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 178
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 178
 
 
  6017 14db 25060000 		.4byte	.LASF307
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6071 1549 E9070000 		.4byte	.LASF322
  6072 154d 02       		.byte	0x2
  6073 154e 11       		.uleb128 0x11
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 179
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 179
 
 
  6074 154f 0C080000 		.4byte	.LASF323
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6128 15c1 30010000 		.4byte	.LASF335
  6129 15c5 02       		.byte	0x2
  6130 15c6 7204     		.2byte	0x472
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 180
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 180
 
 
  6131 15c8 CA000000 		.4byte	0xca
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6185 1642 A8100000 		.4byte	.LASF340
  6186 1646 02       		.byte	0x2
  6187 1647 8E06     		.2byte	0x68e
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 181
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 181
 
 
  6188 1649 55150000 		.4byte	0x1555
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6242 16ce 6E       		.byte	0x6e
  6243 16cf 2A100000 		.4byte	0x102a
  6244 16d3 51010000 		.4byte	.LLST5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 182
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 182
 
 
  6245 16d7 20       		.uleb128 0x20
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6299 1761 01       		.byte	0x1
  6300 1762 7B       		.byte	0x7b
  6301 1763 CA000000 		.4byte	0xca
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 183
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 183
 
 
  6302 1767 E8020000 		.4byte	.LLST14
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6356 17e2 86030000 		.4byte	.LLST17
  6357 17e6 1E       		.uleb128 0x1e
  6358 17e7 F4130000 		.4byte	.LASF358
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 184
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 184
 
 
  6359 17eb 01       		.byte	0x1
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6413 1862 4F110000 		.4byte	0x114f
  6414 1866 00000000 		.4byte	.LFB242
  6415 186a 50010000 		.4byte	.LFE242-.LFB242
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 185
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 185
 
 
  6416 186e 01       		.uleb128 0x1
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6470 18e7 51       		.byte	0x51
  6471 18e8 03       		.uleb128 0x3
  6472 18e9 0A       		.byte	0xa
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 186
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 186
 
 
  6473 18ea F701     		.2byte	0x1f7
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6527 1948 BA000000 		.4byte	.LVL74
  6528 194c E0260000 		.4byte	0x26e0
  6529 1950 65190000 		.4byte	0x1965
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 187
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 187
 
 
  6530 1954 27       		.uleb128 0x27
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6584 19ab 03       		.byte	0x3
  6585 19ac 00000000 		.4byte	.LC3
  6586 19b0 27       		.uleb128 0x27
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 188
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 188
 
 
  6587 19b1 01       		.uleb128 0x1
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6641 1a33 03       		.uleb128 0x3
  6642 1a34 91       		.byte	0x91
  6643 1a35 E47E     		.sleb128 -156
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 189
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 189
 
 
  6644 1a37 2A       		.uleb128 0x2a
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6698 1abe 91       		.byte	0x91
  6699 1abf A07F     		.sleb128 -96
  6700 1ac1 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 190
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 190
 
 
  6701 1ac2 2C       		.uleb128 0x2c
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6755 1b0d 2C       		.uleb128 0x2c
  6756 1b0e 1B       		.byte	0x1b
  6757 1b0f F7       		.byte	0xf7
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 191
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 191
 
 
  6758 1b10 00       		.uleb128 0
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6812 1b86 2A100000 		.4byte	0x102a
  6813 1b8a 7E070000 		.4byte	.LLST36
  6814 1b8e 2C       		.uleb128 0x2c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 192
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 192
 
 
  6815 1b8f AC020000 		.4byte	.LVL112
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6869 1bea 08       		.uleb128 0x8
  6870 1beb E0000000 		.4byte	0xe0
  6871 1bef 04       		.byte	0x4
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 193
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 193
 
 
  6872 1bf0 00       		.byte	0
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6926 1c66 16       		.uleb128 0x16
  6927 1c67 04       		.byte	0x4
  6928 1c68 B3120000 		.4byte	0x12b3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 194
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 194
 
 
  6929 1c6c 28       		.uleb128 0x28
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  6983 1ce6 00       		.byte	0
  6984 1ce7 28       		.uleb128 0x28
  6985 1ce8 5F0C0000 		.4byte	.LASF379
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 195
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 195
 
 
  6986 1cec 01       		.byte	0x1
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7040 1d71 2A090000 		.4byte	.LLST44
  7041 1d75 2A       		.uleb128 0x2a
  7042 1d76 B6000000 		.4byte	.LASF363
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 196
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 196
 
 
  7043 1d7a 01       		.byte	0x1
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7097 1e04 2A       		.uleb128 0x2a
  7098 1e05 25050000 		.4byte	.LASF384
  7099 1e09 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 197
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 197
 
 
  7100 1e0a 0403     		.2byte	0x304
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7154 1e77 01       		.byte	0x1
  7155 1e78 7A03     		.2byte	0x37a
  7156 1e7a 4F110000 		.4byte	0x114f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 198
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 198
 
 
  7157 1e7e 9D0A0000 		.4byte	.LLST53
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7211 1efe 0D040000 		.4byte	.LASF387
  7212 1f02 01       		.byte	0x1
  7213 1f03 0804     		.2byte	0x408
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 199
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 199
 
 
  7214 1f05 4F110000 		.4byte	0x114f
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7268 1f91 8C0E0000 		.4byte	.LLST64
  7269 1f95 00       		.byte	0
  7270 1f96 2D       		.uleb128 0x2d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 200
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 200
 
 
  7271 1f97 58140000 		.4byte	.LASF395
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7325 201f 34       		.uleb128 0x34
  7326 2020 F8090000 		.4byte	.LASF401
  7327 2024 01       		.byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 201
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 201
 
 
  7328 2025 FD04     		.2byte	0x4fd
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7382 20b2 01       		.byte	0x1
  7383 20b3 3205     		.2byte	0x532
  7384 20b5 CA000000 		.4byte	0xca
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 202
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 202
 
 
  7385 20b9 37130000 		.4byte	.LLST75
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7439 2146 01       		.byte	0x1
  7440 2147 9205     		.2byte	0x592
  7441 2149 CA000000 		.4byte	0xca
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 203
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 203
 
 
  7442 214d FA140000 		.4byte	.LLST79
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7496 21be 46220000 		.4byte	0x2246
  7497 21c2 2A       		.uleb128 0x2a
  7498 21c3 83100000 		.4byte	.LASF410
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 204
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 204
 
 
  7499 21c7 01       		.byte	0x1
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7553 223e 27       		.uleb128 0x27
  7554 223f 01       		.uleb128 0x1
  7555 2240 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 205
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 205
 
 
  7556 2241 01       		.uleb128 0x1
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7610 22aa C207     		.2byte	0x7c2
  7611 22ac 87150000 		.4byte	0x1587
  7612 22b0 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 206
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 206
 
 
  7613 22b1 BC010000 		.4byte	.LASF415
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7667 2335 706C6C00 		.ascii	"pll\000"
  7668 2339 01       		.byte	0x1
  7669 233a 9106     		.2byte	0x691
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 207
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 207
 
 
  7670 233c 41230000 		.4byte	0x2341
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7724 23b6 01       		.byte	0x1
  7725 23b7 9806     		.2byte	0x698
  7726 23b9 CA000000 		.4byte	0xca
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 208
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 208
 
 
  7727 23bd 8B170000 		.4byte	.LLST91
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7781 243d 01       		.byte	0x1
  7782 243e A606     		.2byte	0x6a6
  7783 2440 4E240000 		.4byte	0x244e
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 209
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 209
 
 
  7784 2444 36       		.uleb128 0x36
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7838 24c0 01       		.uleb128 0x1
  7839 24c1 50       		.byte	0x50
  7840 24c2 02       		.uleb128 0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 210
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 210
 
 
  7841 24c3 75       		.byte	0x75
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7895 253b 8A220000 		.4byte	0x228a
  7896 253f F2180000 		.4byte	.LLST100
  7897 2543 2C       		.uleb128 0x2c
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 211
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 211
 
 
  7898 2544 86010000 		.4byte	.LVL372
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  7952 25a4 64000000 		.4byte	.LBE93-.LBB93
  7953 25a8 01       		.byte	0x1
  7954 25a9 1207     		.2byte	0x712
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 212
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 212
 
 
  7955 25ab 2A260000 		.4byte	0x262a
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8009 261c 03       		.byte	0x3
  8010 261d 44000000 		.4byte	.LC4
  8011 2621 27       		.uleb128 0x27
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 213
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 213
 
 
  8012 2622 01       		.uleb128 0x1
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8066 267e 75       		.byte	0x75
  8067 267f 00       		.sleb128 0
  8068 2680 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 214
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 214
 
 
  8069 2681 00       		.byte	0
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8123 26fd 6C6F6700 		.ascii	"log\000"
  8124 2701 0B       		.byte	0xb
  8125 2702 84       		.byte	0x84
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 215
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 215
 
 
  8126 2703 3C       		.uleb128 0x3c
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8180 0028 13       		.uleb128 0x13
  8181 0029 00       		.byte	0
  8182 002a 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 216
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 216
 
 
  8183 002b 04       		.uleb128 0x4
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8237 0061 00       		.byte	0
  8238 0062 00       		.byte	0
  8239 0063 0A       		.uleb128 0xa
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 217
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 217
 
 
  8240 0064 0D       		.uleb128 0xd
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8294 009a 05       		.uleb128 0x5
  8295 009b 00       		.byte	0
  8296 009c 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 218
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 218
 
 
  8297 009d 0E       		.uleb128 0xe
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8351 00d3 00       		.byte	0
  8352 00d4 13       		.uleb128 0x13
  8353 00d5 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 219
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 219
 
 
  8354 00d6 01       		.byte	0x1
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8408 010c 03       		.uleb128 0x3
  8409 010d 0E       		.uleb128 0xe
  8410 010e 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 220
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 220
 
 
  8411 010f 0B       		.uleb128 0xb
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8465 0145 20       		.uleb128 0x20
  8466 0146 0B       		.uleb128 0xb
  8467 0147 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 221
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 221
 
 
  8468 0148 13       		.uleb128 0x13
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8522 017f 02       		.uleb128 0x2
  8523 0180 17       		.uleb128 0x17
  8524 0181 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 222
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 222
 
 
  8525 0182 00       		.byte	0
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8579 01b8 3A       		.uleb128 0x3a
  8580 01b9 0B       		.uleb128 0xb
  8581 01ba 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 223
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 223
 
 
  8582 01bb 0B       		.uleb128 0xb
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8636 01f8 00       		.byte	0
  8637 01f9 02       		.uleb128 0x2
  8638 01fa 18       		.uleb128 0x18
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 224
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 224
 
 
  8639 01fb 9142     		.uleb128 0x2111
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8693 0233 05       		.uleb128 0x5
  8694 0234 49       		.uleb128 0x49
  8695 0235 13       		.uleb128 0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 225
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 225
 
 
  8696 0236 02       		.uleb128 0x2
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8750 026f 13       		.uleb128 0x13
  8751 0270 00       		.byte	0
  8752 0271 00       		.byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 226
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 226
 
 
  8753 0272 2E       		.uleb128 0x2e
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8807 02a9 11       		.uleb128 0x11
  8808 02aa 01       		.uleb128 0x1
  8809 02ab 12       		.uleb128 0x12
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 227
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 227
 
 
  8810 02ac 06       		.uleb128 0x6
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8864 02e2 06       		.uleb128 0x6
  8865 02e3 58       		.uleb128 0x58
  8866 02e4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 228
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 228
 
 
  8867 02e5 59       		.uleb128 0x59
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8921 031b 00       		.byte	0
  8922 031c 03       		.uleb128 0x3
  8923 031d 08       		.uleb128 0x8
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 229
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 229
 
 
  8924 031e 3A       		.uleb128 0x3a
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  8978 0354 0B       		.uleb128 0xb
  8979 0355 3B       		.uleb128 0x3b
  8980 0356 05       		.uleb128 0x5
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 230
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 230
 
 
  8981 0357 00       		.byte	0
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9035 001d D0010000 		.4byte	.LVL27
  9036 0021 0100     		.2byte	0x1
  9037 0023 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 231
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 231
 
 
  9038 0024 D0010000 		.4byte	.LVL27
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9092 00a6 28020000 		.4byte	.LFE237
  9093 00aa 0400     		.2byte	0x4
  9094 00ac F3       		.byte	0xf3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 232
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 232
 
 
  9095 00ad 01       		.uleb128 0x1
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9149 012e D2010000 		.4byte	.LVL28
  9150 0132 D8010000 		.4byte	.LVL30
  9151 0136 0600     		.2byte	0x6
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 233
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 233
 
 
  9152 0138 0C       		.byte	0xc
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9206 01a4 1E       		.byte	0x1e
  9207 01a5 1B       		.byte	0x1b
  9208 01a6 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 234
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 234
 
 
  9209 01a7 48010000 		.4byte	.LVL12
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9263              	.LLST8:
  9264 0211 98000000 		.4byte	.LVL9
  9265 0215 48010000 		.4byte	.LVL12
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 235
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 235
 
 
  9266 0219 0200     		.2byte	0x2
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9320 0293 00000000 		.4byte	0
  9321              	.LLST10:
  9322 0297 4A010000 		.4byte	.LVL13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 236
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 236
 
 
  9323 029b CE010000 		.4byte	.LVL26
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9377 0326 50       		.byte	0x50
  9378 0327 3E000000 		.4byte	.LVL36
  9379 032b 40000000 		.4byte	.LVL37
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 237
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 237
 
 
  9380 032f 0400     		.2byte	0x4
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9434 03b5 0100     		.2byte	0x1
  9435 03b7 50       		.byte	0x50
  9436 03b8 36000000 		.4byte	.LVL46
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 238
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 238
 
 
  9437 03bc 3E000000 		.4byte	.LVL47
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9491 043a 0400     		.2byte	0x4
  9492 043c F3       		.byte	0xf3
  9493 043d 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 239
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 239
 
 
  9494 043e 51       		.byte	0x51
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9548 04ca 00000000 		.4byte	0
  9549              	.LLST22:
  9550 04ce 00000000 		.4byte	.LVL59
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 240
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 240
 
 
  9551 04d2 0C000000 		.4byte	.LVL61
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9605 054e C0000000 		.4byte	.LVL75
  9606 0552 DE000000 		.4byte	.LVL78
  9607 0556 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 241
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 241
 
 
  9608 0558 52       		.byte	0x52
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9662 05be 0A010000 		.4byte	.LVL94
  9663 05c2 0400     		.2byte	0x4
  9664 05c4 F3       		.byte	0xf3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 242
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 242
 
 
  9665 05c5 01       		.uleb128 0x1
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9719 0641 01       		.uleb128 0x1
  9720 0642 51       		.byte	0x51
  9721 0643 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 243
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 243
 
 
  9722 0644 00000000 		.4byte	0
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9776 06cd 75       		.byte	0x75
  9777 06ce 00       		.sleb128 0
  9778 06cf 0A       		.byte	0xa
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 244
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 244
 
 
  9779 06d0 FFFF     		.2byte	0xffff
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9833 0737 90020000 		.4byte	.LVL109
  9834 073b 18030000 		.4byte	.LVL119
  9835 073f 0200     		.2byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 245
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 245
 
 
  9836 0741 90       		.byte	0x90
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9890 07c8 26000000 		.4byte	.LVL128
  9891 07cc 30000000 		.4byte	.LVL129
  9892 07d0 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 246
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 246
 
 
  9893 07d2 53       		.byte	0x53
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  9947 084f 53       		.byte	0x53
  9948 0850 9E000000 		.4byte	.LVL147
  9949 0854 B4000000 		.4byte	.LVL148
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 247
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 247
 
 
  9950 0858 0400     		.2byte	0x4
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10004 08e7 5A       		.byte	0x5a
  10005 08e8 50000000 		.4byte	.LVL159
  10006 08ec 52000000 		.4byte	.LVL160
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 248
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 248
 
 
  10007 08f0 0100     		.2byte	0x1
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10061 0977 9F       		.byte	0x9f
  10062 0978 56000000 		.4byte	.LVL162
  10063 097c 76000000 		.4byte	.LVL163
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 249
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 249
 
 
  10064 0980 0100     		.2byte	0x1
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10118 0a11 18010000 		.4byte	.LVL177
  10119 0a15 24010000 		.4byte	.LVL178
  10120 0a19 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 250
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 250
 
 
  10121 0a1b 56       		.byte	0x56
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10175 0aa1 32000000 		.4byte	.LVL186
  10176 0aa5 0600     		.2byte	0x6
  10177 0aa7 0C       		.byte	0xc
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 251
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 251
 
 
  10178 0aa8 01004A00 		.4byte	0x4a0001
@@ -15058,7 +15058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10232 0b34 01       		.uleb128 0x1
  10233 0b35 50       		.byte	0x50
  10234 0b36 31       		.byte	0x31
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 252
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 252
 
 
  10235 0b37 1C       		.byte	0x1c
@@ -15118,7 +15118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10289 0bc8 F3       		.byte	0xf3
  10290 0bc9 01       		.uleb128 0x1
  10291 0bca 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 253
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 253
 
 
  10292 0bcb 9F       		.byte	0x9f
@@ -15178,7 +15178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10346 0c4b 0400     		.2byte	0x4
  10347 0c4d F3       		.byte	0xf3
  10348 0c4e 01       		.uleb128 0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 254
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 254
 
 
  10349 0c4f 52       		.byte	0x52
@@ -15238,7 +15238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10403 0ccb 01       		.uleb128 0x1
  10404 0ccc 52       		.byte	0x52
  10405 0ccd 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 255
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 255
 
 
  10406 0cce EA000000 		.4byte	.LVL234
@@ -15298,7 +15298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10460 0d57 D2000000 		.4byte	.LVL228
  10461 0d5b F4000000 		.4byte	.LVL236
  10462 0d5f 0200     		.2byte	0x2
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 256
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 256
 
 
  10463 0d61 30       		.byte	0x30
@@ -15358,7 +15358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10517 0dec 86000000 		.4byte	.LVL216
  10518 0df0 0100     		.2byte	0x1
  10519 0df2 57       		.byte	0x57
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 257
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 257
 
 
  10520 0df3 86000000 		.4byte	.LVL216
@@ -15418,7 +15418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10574 0e81 0100     		.2byte	0x1
  10575 0e83 5E       		.byte	0x5e
  10576 0e84 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 258
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 258
 
 
  10577 0e88 00000000 		.4byte	0
@@ -15478,7 +15478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10631 0f0a 86000000 		.4byte	.LVL216
  10632 0f0e 0100     		.2byte	0x1
  10633 0f10 52       		.byte	0x52
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 259
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 259
 
 
  10634 0f11 86000000 		.4byte	.LVL216
@@ -15538,7 +15538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10688 0f90 00000000 		.4byte	0
  10689              	.LLST65:
  10690 0f94 00000000 		.4byte	.LVL243
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 260
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 260
 
 
  10691 0f98 62000000 		.4byte	.LVL246
@@ -15598,7 +15598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10745 1016 01       		.uleb128 0x1
  10746 1017 51       		.byte	0x51
  10747 1018 9F       		.byte	0x9f
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 261
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 261
 
 
  10748 1019 AC000000 		.4byte	.LVL255
@@ -15658,7 +15658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10802 109f 50       		.byte	0x50
  10803 10a0 9F       		.byte	0x9f
  10804 10a1 60000000 		.4byte	.LVL266
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 262
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 262
 
 
  10805 10a5 64000000 		.4byte	.LVL268
@@ -15718,7 +15718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10859 112e 0100     		.2byte	0x1
  10860 1130 52       		.byte	0x52
  10861 1131 60000000 		.4byte	.LVL266
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 263
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 263
 
 
  10862 1135 62000000 		.4byte	.LVL267
@@ -15778,7 +15778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10916 1199 1C       		.byte	0x1c
  10917 119a 30       		.byte	0x30
  10918 119b 2D       		.byte	0x2d
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 264
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 264
 
 
  10919 119c 28       		.byte	0x28
@@ -15838,7 +15838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  10973 11f1 0100     		.2byte	0x1
  10974 11f3 53       		.byte	0x53
  10975 11f4 66000000 		.4byte	.LVL269
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 265
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 265
 
 
  10976 11f8 74000000 		.4byte	.LFE251
@@ -15898,7 +15898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11030 1260 F3       		.byte	0xf3
  11031 1261 01       		.uleb128 0x1
  11032 1262 50       		.byte	0x50
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 266
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 266
 
 
  11033 1263 9F       		.byte	0x9f
@@ -15958,7 +15958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11087 12d6 9F       		.byte	0x9f
  11088 12d7 52000000 		.4byte	.LVL282
  11089 12db 70000000 		.4byte	.LVL284
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 267
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 267
 
 
  11090 12df 0100     		.2byte	0x1
@@ -16018,7 +16018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11144 135d 0100     		.2byte	0x1
  11145 135f 16       		.byte	0x16
  11146 1360 13       		.byte	0x13
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 268
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 268
 
 
  11147 1361 9F       		.byte	0x9f
@@ -16078,7 +16078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11201 13b2 1C       		.byte	0x1c
  11202 13b3 70       		.byte	0x70
  11203 13b4 80807E   		.sleb128 -32768
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 269
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 269
 
 
  11204 13b7 70       		.byte	0x70
@@ -16138,7 +16138,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11258 140a 0080     		.2byte	0x8000
  11259 140c 1C       		.byte	0x1c
  11260 140d F3       		.byte	0xf3
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 270
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 270
 
 
  11261 140e 01       		.uleb128 0x1
@@ -16198,7 +16198,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11315 1487 0100     		.2byte	0x1
  11316 1489 54       		.byte	0x54
  11317 148a 72010000 		.4byte	.LVL317
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 271
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 271
 
 
  11318 148e 7E010000 		.4byte	.LVL319
@@ -16258,7 +16258,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11372 1511 00000000 		.4byte	0
  11373 1515 00000000 		.4byte	0
  11374              	.LLST80:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 272
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 272
 
 
  11375 1519 AC000000 		.4byte	.LVL300
@@ -16318,7 +16318,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11429 15a7 00000000 		.4byte	0
  11430 15ab 00000000 		.4byte	0
  11431              	.LLST86:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 273
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 273
 
 
  11432 15af 00000000 		.4byte	.LVL322
@@ -16378,7 +16378,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11486 1636 F3       		.byte	0xf3
  11487 1637 01       		.uleb128 0x1
  11488 1638 51       		.byte	0x51
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 274
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 274
 
 
  11489 1639 9F       		.byte	0x9f
@@ -16438,7 +16438,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11543 16c2 94000000 		.4byte	.LVL337
  11544 16c6 0200     		.2byte	0x2
  11545 16c8 30       		.byte	0x30
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 275
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 275
 
 
  11546 16c9 9F       		.byte	0x9f
@@ -16498,7 +16498,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11600              	.LLST90:
  11601 1757 5A000000 		.4byte	.LVL332
  11602 175b 6C000000 		.4byte	.LVL335
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 276
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 276
 
 
  11603 175f 0100     		.2byte	0x1
@@ -16558,7 +16558,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11657 17ed E8000000 		.4byte	.LVL352
  11658 17f1 0E010000 		.4byte	.LVL355
  11659 17f5 0100     		.2byte	0x1
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 277
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 277
 
 
  11660 17f7 54       		.byte	0x54
@@ -16618,7 +16618,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11714 1886 0100     		.2byte	0x1
  11715 1888 55       		.byte	0x55
  11716 1889 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 278
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 278
 
 
  11717 188d 00000000 		.4byte	0
@@ -16678,7 +16678,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11771 1916 00000000 		.4byte	0
  11772              	.LLST102:
  11773 191a C6010000 		.4byte	.LVL380
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 279
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 279
 
 
  11774 191e 2A020000 		.4byte	.LVL387
@@ -16738,7 +16738,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11828 0034 50010000 		.4byte	.LFE242-.LFB242
  11829 0038 00000000 		.4byte	.LFB241
  11830 003c 7C030000 		.4byte	.LFE241-.LFB241
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 280
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 280
 
 
  11831 0040 00000000 		.4byte	.LFB243
@@ -16798,7 +16798,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11885 0068 72010000 		.4byte	.LBB64
  11886 006c 76010000 		.4byte	.LBE64
  11887 0070 00000000 		.4byte	0
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 281
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 281
 
 
  11888 0074 00000000 		.4byte	0
@@ -16858,7 +16858,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11937      61737572 
  11937      656D656E 
  11937      7456616C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 282
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 282
 
 
  11937      696400
@@ -16918,7 +16918,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11960              	.LASF121:
  11961 00c3 494E5452 		.ascii	"INTR_STRUCT\000"
  11961      5F535452 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 283
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 283
 
 
  11961      55435400 
@@ -16978,7 +16978,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  11985 0170 5057525F 		.ascii	"PWR_LVD_STATUS\000"
  11985      4C56445F 
  11985      53544154 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 284
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 284
 
 
  11985      555300
@@ -17038,7 +17038,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12009 0218 434C4B5F 		.ascii	"CLK_ILO_CONFIG\000"
  12009      494C4F5F 
  12009      434F4E46 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 285
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 285
 
 
  12009      494700
@@ -17098,7 +17098,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12035      53454C45 
  12035      435400
  12036              	.LASF106:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 286
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 286
 
 
  12037 02d8 5452494D 		.ascii	"TRIM_ROM_CTL\000"
@@ -17158,7 +17158,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12061      64657273 
  12062              	.LASF416:
  12063 037c 43795F53 		.ascii	"Cy_SysClk_PiloSetTrim\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 287
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 287
 
 
  12063      7973436C 
@@ -17218,7 +17218,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12087      7973436C 
  12087      6B5F4465 
  12087      6570536C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 288
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 288
 
 
  12087      65657043 
@@ -17278,7 +17278,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12112              	.LASF433:
  12113 04de 73717274 		.ascii	"sqrt\000"
  12113      00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 289
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 289
 
 
  12114              	.LASF206:
@@ -17338,7 +17338,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12135      7369676E 
  12135      65642069 
  12136              	.LASF352:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 290
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 290
 
 
  12137 05a9 72747269 		.ascii	"rtrim\000"
@@ -17398,7 +17398,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12157 0695 43595F53 		.ascii	"CY_SYSCLK_CLKHF_IN_CLKPATH8\000"
  12157      5953434C 
  12157      4B5F434C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 291
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 291
 
 
  12157      4B48465F 
@@ -17458,7 +17458,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12180              	.LASF337:
  12181 0754 43795F53 		.ascii	"Cy_SysClk_ClkHfGetSource\000"
  12181      7973436C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 292
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 292
 
 
  12181      6B5F436C 
@@ -17518,7 +17518,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12203 0828 63795F65 		.ascii	"cy_en_sysclk_status_t\000"
  12203      6E5F7379 
  12203      73636C6B 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 293
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 293
 
 
  12203      5F737461 
@@ -17578,7 +17578,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12225      6F757263 
  12226              	.LASF246:
  12227 08de 5F426F6F 		.ascii	"_Bool\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 294
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 294
 
 
  12227      6C00
@@ -17638,7 +17638,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12251      5953434C 
  12251      4B5F4D45 
  12251      41535F43 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 295
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 295
 
 
  12251      4C4B5F50 
@@ -17698,7 +17698,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12271      454F5554 
  12271      00
  12272              	.LASF260:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 296
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 296
 
 
  12273 0a50 43595F53 		.ascii	"CY_SYSCLK_MEAS_CLK_LFCLK\000"
@@ -17758,7 +17758,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12293 0b0c 54525F47 		.ascii	"TR_GR\000"
  12293      5200
  12294              	.LASF423:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 297
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 297
 
 
  12295 0b12 70617468 		.ascii	"path\000"
@@ -17818,7 +17818,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12316 0beb 5057525F 		.ascii	"PWR_LVD_CTL\000"
  12316      4C56445F 
  12316      43544C00 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 298
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 298
 
 
  12317              	.LASF374:
@@ -17878,7 +17878,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12342      657100
  12343              	.LASF216:
  12344 0cb2 43595F53 		.ascii	"CY_SYSCLK_CLKPATH_IN_ECO\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 299
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 299
 
 
  12344      5953434C 
@@ -17938,7 +17938,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12364      00
  12365              	.LASF244:
  12366 0d85 6F757470 		.ascii	"outputMode\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 300
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 300
 
 
  12366      75744D6F 
@@ -17998,7 +17998,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12390      00
  12391              	.LASF408:
  12392 0e2b 63616C6C 		.ascii	"callbackParams\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 301
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 301
 
 
  12392      6261636B 
@@ -18058,7 +18058,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12415              	.LASF436:
  12416 0ef7 6365696C 		.ascii	"ceilf\000"
  12416      6600
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 302
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 302
 
 
  12417              	.LASF117:
@@ -18118,7 +18118,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12439 0fc7 5057525F 		.ascii	"PWR_TRIM_REF_CTL\000"
  12439      5452494D 
  12439      5F524546 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 303
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 303
 
 
  12439      5F43544C 
@@ -18178,7 +18178,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12460              	.LASF410:
  12461 1083 666C6C70 		.ascii	"fllpll\000"
  12461      6C6C00
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 304
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 304
 
 
  12462              	.LASF192:
@@ -18238,7 +18238,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12481      20636861 
  12481      7200
  12482              	.LASF181:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 305
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 305
 
 
  12483 115d 434C4B5F 		.ascii	"CLK_TRIM_ECO_CTL\000"
@@ -18298,7 +18298,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12506              	.LASF67:
  12507 1202 52455345 		.ascii	"RESERVED7\000"
  12507      52564544 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 306
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 306
 
 
  12507      3700
@@ -18358,7 +18358,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12529      4B5F464C 
  12529      4C504C4C 
  12529      5F4F5554 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 307
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 307
 
 
  12530              	.LASF92:
@@ -18418,7 +18418,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12553 1368 70617468 		.ascii	"path_freq\000"
  12553      5F667265 
  12553      7100
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 308
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 308
 
 
  12554              	.LASF129:
@@ -18478,7 +18478,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12578              	.LASF218:
  12579 1416 43595F53 		.ascii	"CY_SYSCLK_CLKPATH_IN_DSIMUX\000"
  12579      5953434C 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 309
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 309
 
 
  12579      4B5F434C 
@@ -18538,7 +18538,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12599      5F4F5554 
  12600              	.LASF20:
  12601 14f6 73697A65 		.ascii	"sizetype\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 310
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 310
 
 
  12601      74797065 
@@ -18598,7 +18598,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12625      43544C32 
  12625      00
  12626              	.LASF54:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 311
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 311
 
 
  12627 15a2 434D305F 		.ascii	"CM0_INT_CTL3\000"
@@ -18658,7 +18658,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12651 1630 43795F53 		.ascii	"Cy_SysClk_EcoConfigure\000"
  12651      7973436C 
  12651      6B5F4563 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 312
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 312
 
 
  12651      6F436F6E 
@@ -18718,7 +18718,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12673 16eb 52455345 		.ascii	"RESERVED10\000"
  12673      52564544 
  12673      313000
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 313
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 313
 
 
  12674              	.LASF76:
@@ -18778,7 +18778,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12699      352E342E 
  12699      31203230 
  12699      31363036 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 314
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 314
 
 
  12700 17c4 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
@@ -18838,7 +18838,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12720      5F43544C 
  12720      00
  12721              	.LASF364:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 315
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 315
 
 
  12722 18bf 43795F53 		.ascii	"Cy_SysClk_FllConfigure\000"
@@ -18898,7 +18898,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12740 1998 43595F53 		.ascii	"CY_SYSCLK_MEAS_CLK_PATH7\000"
  12740      5953434C 
  12740      4B5F4D45 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 316
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 316
 
 
  12740      41535F43 
@@ -18958,7 +18958,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12766      3100
  12767              	.LASF81:
  12768 1a4e 5544425F 		.ascii	"UDB_PWR_CTL\000"
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 317
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 317
 
 
  12768      5057525F 
@@ -19018,7 +19018,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12790      6B5F5065 
  12790      72697068 
  12790      47657446 
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 318
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 318
 
 
  12791              	.LASF294:
@@ -19078,7 +19078,7 @@ ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 1
  12812      4C5F4343 
  12812      4F5F5241 
  12813              	.LASF232:
-ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccacmXfB.s 			page 319
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccKchYi5.s 			page 319
 
 
  12814 1bf6 43595F53 		.ascii	"CY_SYSCLK_FLL_CCO_RANGE2\000"

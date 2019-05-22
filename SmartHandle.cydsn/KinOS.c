@@ -112,7 +112,7 @@ bool KinOS_CheckTimerC()
 //--------------------BUS-MANAGER-FUNCTIONS--------------------//
 //-------------------------------------------------------------//
 
-void KinOS_ReadAcc(acc_sample sample)
+void KinOS_ReadAcc(acc_sample* sample)
 {
     return readAccData(sample);
 }
@@ -202,7 +202,7 @@ bool KinOS_SendResult(uint32 num_bytes, uint8 *data)
 {
    return Transmission_SendResult(num_bytes,data);
 }
-void KinOS_SendAcc(acc_sample acc_data)
+void KinOS_SendAcc(acc_sample* acc_data)
 {
     return Transmission_SendAcc(acc_data);
 }

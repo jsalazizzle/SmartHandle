@@ -1,0 +1,1155 @@
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"RealTimeClock.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.RealTimeClock_Start,"ax",%progbits
+  20              		.align	2
+  21              		.global	RealTimeClock_Start
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	RealTimeClock_Start, %function
+  25              	RealTimeClock_Start:
+  26              	.LFB97:
+  27              		.file 1 "Generated_Source\\PSoC6\\RealTimeClock.c"
+   1:Generated_Source\PSoC6/RealTimeClock.c **** /*******************************************************************************
+   2:Generated_Source\PSoC6/RealTimeClock.c **** * \file RealTimeClock.c
+   3:Generated_Source\PSoC6/RealTimeClock.c **** * \version 2.0
+   4:Generated_Source\PSoC6/RealTimeClock.c **** *
+   5:Generated_Source\PSoC6/RealTimeClock.c **** * This file provides the source code to the API for the RTC Component.
+   6:Generated_Source\PSoC6/RealTimeClock.c **** *
+   7:Generated_Source\PSoC6/RealTimeClock.c **** ********************************************************************************
+   8:Generated_Source\PSoC6/RealTimeClock.c **** * Copyright 2016-2017, Cypress Semiconductor Corporation. All rights reserved.
+   9:Generated_Source\PSoC6/RealTimeClock.c **** * You may use this file only in accordance with the license, terms, conditions,
+  10:Generated_Source\PSoC6/RealTimeClock.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  11:Generated_Source\PSoC6/RealTimeClock.c **** * the software package with which this file was provided.
+  12:Generated_Source\PSoC6/RealTimeClock.c **** *******************************************************************************/
+  13:Generated_Source\PSoC6/RealTimeClock.c **** 
+  14:Generated_Source\PSoC6/RealTimeClock.c **** #include "RealTimeClock.h"
+  15:Generated_Source\PSoC6/RealTimeClock.c **** 
+  16:Generated_Source\PSoC6/RealTimeClock.c **** /** Indicates whether or not the RealTimeClock has been initialized. 
+  17:Generated_Source\PSoC6/RealTimeClock.c **** *  The variable is initialized to 0 and set to 1 the first time 
+  18:Generated_Source\PSoC6/RealTimeClock.c **** *  RealTimeClock_Start() is called. This allows the Component to 
+  19:Generated_Source\PSoC6/RealTimeClock.c **** *  restart without reinitialization after the first call to 
+  20:Generated_Source\PSoC6/RealTimeClock.c **** *  the RealTimeClock_Start() routine.
+  21:Generated_Source\PSoC6/RealTimeClock.c **** */
+  22:Generated_Source\PSoC6/RealTimeClock.c **** uint8_t RealTimeClock_initVar = 0u;
+  23:Generated_Source\PSoC6/RealTimeClock.c **** 
+  24:Generated_Source\PSoC6/RealTimeClock.c **** /** The instance-specific configuration structure. This should be used in the 
+  25:Generated_Source\PSoC6/RealTimeClock.c **** *  associated RealTimeClock_Init() function.
+  26:Generated_Source\PSoC6/RealTimeClock.c **** */
+  27:Generated_Source\PSoC6/RealTimeClock.c **** cy_stc_rtc_config_t const RealTimeClock_config =
+  28:Generated_Source\PSoC6/RealTimeClock.c **** {
+  29:Generated_Source\PSoC6/RealTimeClock.c ****     /* Initiate time and date */
+  30:Generated_Source\PSoC6/RealTimeClock.c ****     .sec       = RealTimeClock_INITIAL_DATE_SEC,
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 2
+
+
+  31:Generated_Source\PSoC6/RealTimeClock.c ****     .min       = RealTimeClock_INITIAL_DATE_MIN,
+  32:Generated_Source\PSoC6/RealTimeClock.c ****     .hour      = RealTimeClock_INITIAL_DATE_HOUR,
+  33:Generated_Source\PSoC6/RealTimeClock.c ****     .hrFormat  = RealTimeClock_INITIAL_DATE_HOUR_FORMAT,
+  34:Generated_Source\PSoC6/RealTimeClock.c ****     .dayOfWeek = RealTimeClock_INITIAL_DATE_DOW,
+  35:Generated_Source\PSoC6/RealTimeClock.c ****     .date      = RealTimeClock_INITIAL_DATE_DOM,
+  36:Generated_Source\PSoC6/RealTimeClock.c ****     .month     = RealTimeClock_INITIAL_DATE_MONTH,
+  37:Generated_Source\PSoC6/RealTimeClock.c ****     .year      = RealTimeClock_INITIAL_DATE_YEAR,
+  38:Generated_Source\PSoC6/RealTimeClock.c **** };
+  39:Generated_Source\PSoC6/RealTimeClock.c **** 
+  40:Generated_Source\PSoC6/RealTimeClock.c ****     /** RealTimeClock_rtcDstStatus variable which is for DST feature and is 
+  41:Generated_Source\PSoC6/RealTimeClock.c ****     *  called in Cy_RTC_Interrupt() PDL driver function. This variable is 
+  42:Generated_Source\PSoC6/RealTimeClock.c ****     *  defined as true if DST is enabled and as false if DST is disabled
+  43:Generated_Source\PSoC6/RealTimeClock.c ****     */
+  44:Generated_Source\PSoC6/RealTimeClock.c ****     bool RealTimeClock_rtcDstStatus = false;
+  45:Generated_Source\PSoC6/RealTimeClock.c **** 
+  46:Generated_Source\PSoC6/RealTimeClock.c **** #if(0u != RealTimeClock_INITIAL_DST_STATUS)
+  47:Generated_Source\PSoC6/RealTimeClock.c **** 
+  48:Generated_Source\PSoC6/RealTimeClock.c ****     /** The instance-specific daylight saving time structure. This should be 
+  49:Generated_Source\PSoC6/RealTimeClock.c ****     * used in the associated DTS functions.
+  50:Generated_Source\PSoC6/RealTimeClock.c ****     */
+  51:Generated_Source\PSoC6/RealTimeClock.c ****     cy_stc_rtc_dst_t const RealTimeClock_dstConfig =
+  52:Generated_Source\PSoC6/RealTimeClock.c ****     {
+  53:Generated_Source\PSoC6/RealTimeClock.c ****         /* DST Start time */
+  54:Generated_Source\PSoC6/RealTimeClock.c ****         .startDst.format      = (cy_en_rtc_dst_format_t) RealTimeClock_INITIAL_DST_DATE_TYPE,
+  55:Generated_Source\PSoC6/RealTimeClock.c ****         .startDst.hour        = RealTimeClock_INITIAL_DST_START_HRS,
+  56:Generated_Source\PSoC6/RealTimeClock.c ****         .startDst.dayOfMonth  = RealTimeClock_INITIAL_DST_START_DOM,
+  57:Generated_Source\PSoC6/RealTimeClock.c ****         .startDst.weekOfMonth = RealTimeClock_INITIAL_DST_START_WOM,
+  58:Generated_Source\PSoC6/RealTimeClock.c ****         .startDst.dayOfWeek   = RealTimeClock_INITIAL_DST_START_DOW,
+  59:Generated_Source\PSoC6/RealTimeClock.c ****         .startDst.month       = RealTimeClock_INITIAL_DST_START_MONTH,
+  60:Generated_Source\PSoC6/RealTimeClock.c **** 
+  61:Generated_Source\PSoC6/RealTimeClock.c ****         /* DST Stop time */
+  62:Generated_Source\PSoC6/RealTimeClock.c ****         .stopDst.format      = (cy_en_rtc_dst_format_t) RealTimeClock_INITIAL_DST_DATE_TYPE,
+  63:Generated_Source\PSoC6/RealTimeClock.c ****         .stopDst.hour        = RealTimeClock_INITIAL_DST_STOP_HRS,
+  64:Generated_Source\PSoC6/RealTimeClock.c ****         .stopDst.dayOfMonth  = RealTimeClock_INITIAL_DST_STOP_DOM,
+  65:Generated_Source\PSoC6/RealTimeClock.c ****         .stopDst.weekOfMonth = RealTimeClock_INITIAL_DST_STOP_WOM,
+  66:Generated_Source\PSoC6/RealTimeClock.c ****         .stopDst.dayOfWeek   = RealTimeClock_INITIAL_DST_STOP_DOW,
+  67:Generated_Source\PSoC6/RealTimeClock.c ****         .stopDst.month       = RealTimeClock_INITIAL_DST_STOP_MONTH,
+  68:Generated_Source\PSoC6/RealTimeClock.c ****     };
+  69:Generated_Source\PSoC6/RealTimeClock.c **** #else
+  70:Generated_Source\PSoC6/RealTimeClock.c **** 
+  71:Generated_Source\PSoC6/RealTimeClock.c ****     /* Default DST structure in condition that DST is disabled */
+  72:Generated_Source\PSoC6/RealTimeClock.c ****     cy_stc_rtc_dst_t const RealTimeClock_dstConfig;
+  73:Generated_Source\PSoC6/RealTimeClock.c **** #endif /* (0u != RealTimeClock_INITIAL_DST_STATUS) */
+  74:Generated_Source\PSoC6/RealTimeClock.c **** 
+  75:Generated_Source\PSoC6/RealTimeClock.c **** 
+  76:Generated_Source\PSoC6/RealTimeClock.c **** /*******************************************************************************
+  77:Generated_Source\PSoC6/RealTimeClock.c **** * Function Name: RealTimeClock_Start
+  78:Generated_Source\PSoC6/RealTimeClock.c **** ****************************************************************************//**
+  79:Generated_Source\PSoC6/RealTimeClock.c **** *
+  80:Generated_Source\PSoC6/RealTimeClock.c **** * Optionally calls the RealTimeClock_Init() when called the first time and 
+  81:Generated_Source\PSoC6/RealTimeClock.c **** * configure the RealTimeClock as it is set in the customizer. For subsequent 
+  82:Generated_Source\PSoC6/RealTimeClock.c **** * calls the configuration is left unchanged and the component is just 
+  83:Generated_Source\PSoC6/RealTimeClock.c **** * configured. Invokes RealTimeClock_EnableDstTime() if the DST is enabled.
+  84:Generated_Source\PSoC6/RealTimeClock.c **** *
+  85:Generated_Source\PSoC6/RealTimeClock.c **** * \globalvars
+  86:Generated_Source\PSoC6/RealTimeClock.c **** * \ref RealTimeClock_initVar
+  87:Generated_Source\PSoC6/RealTimeClock.c **** *
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 3
+
+
+  88:Generated_Source\PSoC6/RealTimeClock.c **** *******************************************************************************/
+  89:Generated_Source\PSoC6/RealTimeClock.c **** void RealTimeClock_Start(void)
+  90:Generated_Source\PSoC6/RealTimeClock.c **** {
+  28              		.loc 1 90 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  91:Generated_Source\PSoC6/RealTimeClock.c ****     #if(0u != RealTimeClock_INITIAL_DST_STATUS)
+  92:Generated_Source\PSoC6/RealTimeClock.c ****         cy_stc_rtc_config_t curTimeAndDate;
+  93:Generated_Source\PSoC6/RealTimeClock.c ****     #endif /* (0u != RealTimeClock_INITIAL_DST_STATUS) */
+  94:Generated_Source\PSoC6/RealTimeClock.c ****     
+  95:Generated_Source\PSoC6/RealTimeClock.c ****     if(0u == RealTimeClock_initVar)
+  33              		.loc 1 95 0
+  34 0000 034B     		ldr	r3, .L3
+  35 0002 1B78     		ldrb	r3, [r3]
+  36 0004 002B     		cmp	r3, #0
+  37 0006 02D1     		bne	.L1
+  96:Generated_Source\PSoC6/RealTimeClock.c ****     {
+  97:Generated_Source\PSoC6/RealTimeClock.c ****         #if(0u != RealTimeClock_TIME_RESET_ON_START)
+  98:Generated_Source\PSoC6/RealTimeClock.c **** 
+  99:Generated_Source\PSoC6/RealTimeClock.c ****             /* Configure the component if power cycle and the external 
+ 100:Generated_Source\PSoC6/RealTimeClock.c ****             *  reset occurred
+ 101:Generated_Source\PSoC6/RealTimeClock.c ****             */
+ 102:Generated_Source\PSoC6/RealTimeClock.c ****             if(Cy_RTC_IsExternalResetOccurred())
+ 103:Generated_Source\PSoC6/RealTimeClock.c ****             {
+ 104:Generated_Source\PSoC6/RealTimeClock.c ****                 (void) Cy_RTC_Init(&RealTimeClock_config);
+ 105:Generated_Source\PSoC6/RealTimeClock.c ****             }
+ 106:Generated_Source\PSoC6/RealTimeClock.c ****         #endif /* (0u != RealTimeClock_TIME_RESET_ON_START) */
+ 107:Generated_Source\PSoC6/RealTimeClock.c **** 
+ 108:Generated_Source\PSoC6/RealTimeClock.c ****         #if(0u != RealTimeClock_INITIAL_IRQ_STATUS)
+ 109:Generated_Source\PSoC6/RealTimeClock.c **** 
+ 110:Generated_Source\PSoC6/RealTimeClock.c ****             /* Hook the interrupt service routine */
+ 111:Generated_Source\PSoC6/RealTimeClock.c ****             #if defined(RealTimeClock_RTC_IRQ__INTC_ASSIGNED)
+ 112:Generated_Source\PSoC6/RealTimeClock.c ****                 (void) Cy_SysInt_Init(&RealTimeClock_RTC_IRQ_cfg, &RealTimeClock_Interrupt);
+ 113:Generated_Source\PSoC6/RealTimeClock.c ****             #endif /* defined(RealTimeClock_RTC_IRQ__INTC_ASSIGNED) */
+ 114:Generated_Source\PSoC6/RealTimeClock.c ****         #endif /* (0u != RealTimeClock_INITIAL_IRQ_STATUS) */
+ 115:Generated_Source\PSoC6/RealTimeClock.c **** 
+ 116:Generated_Source\PSoC6/RealTimeClock.c ****         /* The component is configured */
+ 117:Generated_Source\PSoC6/RealTimeClock.c ****         RealTimeClock_initVar = 1u;
+  38              		.loc 1 117 0
+  39 0008 0122     		movs	r2, #1
+  40 000a 014B     		ldr	r3, .L3
+  41 000c 1A70     		strb	r2, [r3]
+  42              	.L1:
+ 118:Generated_Source\PSoC6/RealTimeClock.c ****     }
+ 119:Generated_Source\PSoC6/RealTimeClock.c **** 
+ 120:Generated_Source\PSoC6/RealTimeClock.c ****     #if(0u != RealTimeClock_INITIAL_IRQ_STATUS)
+ 121:Generated_Source\PSoC6/RealTimeClock.c ****         #if defined(RealTimeClock_RTC_IRQ__INTC_ASSIGNED)
+ 122:Generated_Source\PSoC6/RealTimeClock.c ****             NVIC_EnableIRQ(RealTimeClock_RTC_IRQ_cfg.intrSrc);
+ 123:Generated_Source\PSoC6/RealTimeClock.c ****         #endif /* defined(RealTimeClock_RTC_IRQ__INTC_ASSIGNED) */
+ 124:Generated_Source\PSoC6/RealTimeClock.c **** 
+ 125:Generated_Source\PSoC6/RealTimeClock.c ****         #if(0u != RealTimeClock_INITIAL_DST_STATUS)
+ 126:Generated_Source\PSoC6/RealTimeClock.c ****             #if(0u != RealTimeClock_TIME_RESET_ON_START)
+ 127:Generated_Source\PSoC6/RealTimeClock.c ****                 
+ 128:Generated_Source\PSoC6/RealTimeClock.c ****                 /* Wait for previous RTC update */
+ 129:Generated_Source\PSoC6/RealTimeClock.c ****                 Cy_SysLib_Delay(RealTimeClock_DELAY_BEFORE_DST);
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 4
+
+
+ 130:Generated_Source\PSoC6/RealTimeClock.c ****             #endif /* (0u != RealTimeClock_TIME_RESET_ON_START) */
+ 131:Generated_Source\PSoC6/RealTimeClock.c ****                 
+ 132:Generated_Source\PSoC6/RealTimeClock.c ****             Cy_RTC_GetDateAndTime(&curTimeAndDate);
+ 133:Generated_Source\PSoC6/RealTimeClock.c ****             
+ 134:Generated_Source\PSoC6/RealTimeClock.c ****             /* Set the DST configuration */
+ 135:Generated_Source\PSoC6/RealTimeClock.c ****             if(Cy_RTC_EnableDstTime(&RealTimeClock_dstConfig, &curTimeAndDate) != CY_RTC_SUCCESS)
+ 136:Generated_Source\PSoC6/RealTimeClock.c ****             {
+ 137:Generated_Source\PSoC6/RealTimeClock.c ****                 /* DST Setting failed */
+ 138:Generated_Source\PSoC6/RealTimeClock.c ****                 CY_ASSERT(0u != 0u);
+ 139:Generated_Source\PSoC6/RealTimeClock.c ****             }
+ 140:Generated_Source\PSoC6/RealTimeClock.c ****         #endif /* (0u != RealTimeClock_INITIAL_DST_STATUS) */
+ 141:Generated_Source\PSoC6/RealTimeClock.c ****     #endif /* (0u != RealTimeClock_INITIAL_IRQ_STATUS) */
+ 142:Generated_Source\PSoC6/RealTimeClock.c **** }
+  43              		.loc 1 142 0
+  44              		@ sp needed
+  45 000e 7047     		bx	lr
+  46              	.L4:
+  47              		.align	2
+  48              	.L3:
+  49 0010 00000000 		.word	.LANCHOR0
+  50              		.cfi_endproc
+  51              	.LFE97:
+  52              		.size	RealTimeClock_Start, .-RealTimeClock_Start
+  53              		.comm	RealTimeClock_dstConfig,48,4
+  54              		.global	RealTimeClock_rtcDstStatus
+  55              		.global	RealTimeClock_config
+  56              		.global	RealTimeClock_initVar
+  57              		.section	.rodata
+  58              		.align	2
+  59              		.type	RealTimeClock_config, %object
+  60              		.size	RealTimeClock_config, 32
+  61              	RealTimeClock_config:
+  62 0000 00000000 		.word	0
+  63 0004 00000000 		.word	0
+  64 0008 0F000000 		.word	15
+  65 000c 00       		.space	1
+  66 000d 00       		.byte	0
+  67 000e 0000     		.space	2
+  68 0010 04000000 		.word	4
+  69 0014 16000000 		.word	22
+  70 0018 05000000 		.word	5
+  71 001c 13000000 		.word	19
+  72              		.bss
+  73              		.set	.LANCHOR0,. + 0
+  74              		.type	RealTimeClock_initVar, %object
+  75              		.size	RealTimeClock_initVar, 1
+  76              	RealTimeClock_initVar:
+  77 0000 00       		.space	1
+  78              		.type	RealTimeClock_rtcDstStatus, %object
+  79              		.size	RealTimeClock_rtcDstStatus, 1
+  80              	RealTimeClock_rtcDstStatus:
+  81 0001 00       		.space	1
+  82              		.text
+  83              	.Letext0:
+  84              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  85              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  86              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/rtc/cy_rtc.h"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 5
+
+
+  87              		.section	.debug_info,"",%progbits
+  88              	.Ldebug_info0:
+  89 0000 D8020000 		.4byte	0x2d8
+  90 0004 0400     		.2byte	0x4
+  91 0006 00000000 		.4byte	.Ldebug_abbrev0
+  92 000a 04       		.byte	0x4
+  93 000b 01       		.uleb128 0x1
+  94 000c B0010000 		.4byte	.LASF48
+  95 0010 0C       		.byte	0xc
+  96 0011 5B000000 		.4byte	.LASF49
+  97 0015 93020000 		.4byte	.LASF50
+  98 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  99 001d 00000000 		.4byte	0
+ 100 0021 00000000 		.4byte	.Ldebug_line0
+ 101 0025 02       		.uleb128 0x2
+ 102 0026 02       		.byte	0x2
+ 103 0027 05       		.byte	0x5
+ 104 0028 33030000 		.4byte	.LASF0
+ 105 002c 02       		.uleb128 0x2
+ 106 002d 01       		.byte	0x1
+ 107 002e 08       		.byte	0x8
+ 108 002f 06010000 		.4byte	.LASF1
+ 109 0033 02       		.uleb128 0x2
+ 110 0034 01       		.byte	0x1
+ 111 0035 06       		.byte	0x6
+ 112 0036 87020000 		.4byte	.LASF2
+ 113 003a 03       		.uleb128 0x3
+ 114 003b 17000000 		.4byte	.LASF5
+ 115 003f 02       		.byte	0x2
+ 116 0040 1D       		.byte	0x1d
+ 117 0041 2C000000 		.4byte	0x2c
+ 118 0045 02       		.uleb128 0x2
+ 119 0046 02       		.byte	0x2
+ 120 0047 07       		.byte	0x7
+ 121 0048 3C010000 		.4byte	.LASF3
+ 122 004c 02       		.uleb128 0x2
+ 123 004d 04       		.byte	0x4
+ 124 004e 05       		.byte	0x5
+ 125 004f 56030000 		.4byte	.LASF4
+ 126 0053 03       		.uleb128 0x3
+ 127 0054 9E010000 		.4byte	.LASF6
+ 128 0058 02       		.byte	0x2
+ 129 0059 41       		.byte	0x41
+ 130 005a 5E000000 		.4byte	0x5e
+ 131 005e 02       		.uleb128 0x2
+ 132 005f 04       		.byte	0x4
+ 133 0060 07       		.byte	0x7
+ 134 0061 2A010000 		.4byte	.LASF7
+ 135 0065 02       		.uleb128 0x2
+ 136 0066 08       		.byte	0x8
+ 137 0067 05       		.byte	0x5
+ 138 0068 E1020000 		.4byte	.LASF8
+ 139 006c 02       		.uleb128 0x2
+ 140 006d 08       		.byte	0x8
+ 141 006e 07       		.byte	0x7
+ 142 006f 4F020000 		.4byte	.LASF9
+ 143 0073 04       		.uleb128 0x4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 6
+
+
+ 144 0074 04       		.byte	0x4
+ 145 0075 05       		.byte	0x5
+ 146 0076 696E7400 		.ascii	"int\000"
+ 147 007a 02       		.uleb128 0x2
+ 148 007b 04       		.byte	0x4
+ 149 007c 07       		.byte	0x7
+ 150 007d 42020000 		.4byte	.LASF10
+ 151 0081 03       		.uleb128 0x3
+ 152 0082 66020000 		.4byte	.LASF11
+ 153 0086 03       		.byte	0x3
+ 154 0087 18       		.byte	0x18
+ 155 0088 3A000000 		.4byte	0x3a
+ 156 008c 03       		.uleb128 0x3
+ 157 008d 4D030000 		.4byte	.LASF12
+ 158 0091 03       		.byte	0x3
+ 159 0092 30       		.byte	0x30
+ 160 0093 53000000 		.4byte	0x53
+ 161 0097 02       		.uleb128 0x2
+ 162 0098 04       		.byte	0x4
+ 163 0099 07       		.byte	0x7
+ 164 009a CE020000 		.4byte	.LASF13
+ 165 009e 02       		.uleb128 0x2
+ 166 009f 08       		.byte	0x8
+ 167 00a0 04       		.byte	0x4
+ 168 00a1 C2020000 		.4byte	.LASF14
+ 169 00a5 02       		.uleb128 0x2
+ 170 00a6 01       		.byte	0x1
+ 171 00a7 08       		.byte	0x8
+ 172 00a8 EF020000 		.4byte	.LASF15
+ 173 00ac 02       		.uleb128 0x2
+ 174 00ad 04       		.byte	0x4
+ 175 00ae 04       		.byte	0x4
+ 176 00af 64030000 		.4byte	.LASF16
+ 177 00b3 02       		.uleb128 0x2
+ 178 00b4 08       		.byte	0x8
+ 179 00b5 04       		.byte	0x4
+ 180 00b6 93000000 		.4byte	.LASF17
+ 181 00ba 05       		.uleb128 0x5
+ 182 00bb 01       		.byte	0x1
+ 183 00bc 2C000000 		.4byte	0x2c
+ 184 00c0 04       		.byte	0x4
+ 185 00c1 5C01     		.2byte	0x15c
+ 186 00c3 D4000000 		.4byte	0xd4
+ 187 00c7 06       		.uleb128 0x6
+ 188 00c8 3D030000 		.4byte	.LASF18
+ 189 00cc 00       		.byte	0
+ 190 00cd 06       		.uleb128 0x6
+ 191 00ce 23030000 		.4byte	.LASF19
+ 192 00d2 01       		.byte	0x1
+ 193 00d3 00       		.byte	0
+ 194 00d4 07       		.uleb128 0x7
+ 195 00d5 A0000000 		.4byte	.LASF20
+ 196 00d9 04       		.byte	0x4
+ 197 00da 5F01     		.2byte	0x15f
+ 198 00dc BA000000 		.4byte	0xba
+ 199 00e0 05       		.uleb128 0x5
+ 200 00e1 01       		.byte	0x1
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 7
+
+
+ 201 00e2 2C000000 		.4byte	0x2c
+ 202 00e6 04       		.byte	0x4
+ 203 00e7 6A01     		.2byte	0x16a
+ 204 00e9 FA000000 		.4byte	0xfa
+ 205 00ed 06       		.uleb128 0x6
+ 206 00ee 6E020000 		.4byte	.LASF21
+ 207 00f2 00       		.byte	0
+ 208 00f3 06       		.uleb128 0x6
+ 209 00f4 82000000 		.4byte	.LASF22
+ 210 00f8 01       		.byte	0x1
+ 211 00f9 00       		.byte	0
+ 212 00fa 07       		.uleb128 0x7
+ 213 00fb 00000000 		.4byte	.LASF23
+ 214 00ff 04       		.byte	0x4
+ 215 0100 6D01     		.2byte	0x16d
+ 216 0102 E0000000 		.4byte	0xe0
+ 217 0106 05       		.uleb128 0x5
+ 218 0107 01       		.byte	0x1
+ 219 0108 2C000000 		.4byte	0x2c
+ 220 010c 04       		.byte	0x4
+ 221 010d 7101     		.2byte	0x171
+ 222 010f 20010000 		.4byte	0x120
+ 223 0113 06       		.uleb128 0x6
+ 224 0114 19030000 		.4byte	.LASF24
+ 225 0118 00       		.byte	0
+ 226 0119 06       		.uleb128 0x6
+ 227 011a D7020000 		.4byte	.LASF25
+ 228 011e 01       		.byte	0x1
+ 229 011f 00       		.byte	0
+ 230 0120 07       		.uleb128 0x7
+ 231 0121 D3000000 		.4byte	.LASF26
+ 232 0125 04       		.byte	0x4
+ 233 0126 7401     		.2byte	0x174
+ 234 0128 06010000 		.4byte	0x106
+ 235 012c 08       		.uleb128 0x8
+ 236 012d 8C010000 		.4byte	.LASF51
+ 237 0131 20       		.byte	0x20
+ 238 0132 04       		.byte	0x4
+ 239 0133 8C01     		.2byte	0x18c
+ 240 0135 AF010000 		.4byte	0x1af
+ 241 0139 09       		.uleb128 0x9
+ 242 013a 73656300 		.ascii	"sec\000"
+ 243 013e 04       		.byte	0x4
+ 244 013f 8F01     		.2byte	0x18f
+ 245 0141 8C000000 		.4byte	0x8c
+ 246 0145 00       		.byte	0
+ 247 0146 09       		.uleb128 0x9
+ 248 0147 6D696E00 		.ascii	"min\000"
+ 249 014b 04       		.byte	0x4
+ 250 014c 9001     		.2byte	0x190
+ 251 014e 8C000000 		.4byte	0x8c
+ 252 0152 04       		.byte	0x4
+ 253 0153 0A       		.uleb128 0xa
+ 254 0154 82020000 		.4byte	.LASF27
+ 255 0158 04       		.byte	0x4
+ 256 0159 9101     		.2byte	0x191
+ 257 015b 8C000000 		.4byte	0x8c
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 8
+
+
+ 258 015f 08       		.byte	0x8
+ 259 0160 0A       		.uleb128 0xa
+ 260 0161 5F030000 		.4byte	.LASF28
+ 261 0165 04       		.byte	0x4
+ 262 0166 9401     		.2byte	0x194
+ 263 0168 20010000 		.4byte	0x120
+ 264 016c 0C       		.byte	0xc
+ 265 016d 0A       		.uleb128 0xa
+ 266 016e B9000000 		.4byte	.LASF29
+ 267 0172 04       		.byte	0x4
+ 268 0173 9701     		.2byte	0x197
+ 269 0175 D4000000 		.4byte	0xd4
+ 270 0179 0D       		.byte	0xd
+ 271 017a 0A       		.uleb128 0xa
+ 272 017b 0F030000 		.4byte	.LASF30
+ 273 017f 04       		.byte	0x4
+ 274 0180 9801     		.2byte	0x198
+ 275 0182 8C000000 		.4byte	0x8c
+ 276 0186 10       		.byte	0x10
+ 277 0187 0A       		.uleb128 0xa
+ 278 0188 C2000000 		.4byte	.LASF31
+ 279 018c 04       		.byte	0x4
+ 280 018d 9B01     		.2byte	0x19b
+ 281 018f 8C000000 		.4byte	0x8c
+ 282 0193 14       		.byte	0x14
+ 283 0194 0A       		.uleb128 0xa
+ 284 0195 9A000000 		.4byte	.LASF32
+ 285 0199 04       		.byte	0x4
+ 286 019a 9C01     		.2byte	0x19c
+ 287 019c 8C000000 		.4byte	0x8c
+ 288 01a0 18       		.byte	0x18
+ 289 01a1 0A       		.uleb128 0xa
+ 290 01a2 56000000 		.4byte	.LASF33
+ 291 01a6 04       		.byte	0x4
+ 292 01a7 9D01     		.2byte	0x19d
+ 293 01a9 8C000000 		.4byte	0x8c
+ 294 01ad 1C       		.byte	0x1c
+ 295 01ae 00       		.byte	0
+ 296 01af 07       		.uleb128 0x7
+ 297 01b0 4F010000 		.4byte	.LASF34
+ 298 01b4 04       		.byte	0x4
+ 299 01b5 9E01     		.2byte	0x19e
+ 300 01b7 2C010000 		.4byte	0x12c
+ 301 01bb 0B       		.uleb128 0xb
+ 302 01bc 18       		.byte	0x18
+ 303 01bd 04       		.byte	0x4
+ 304 01be CE01     		.2byte	0x1ce
+ 305 01c0 13020000 		.4byte	0x213
+ 306 01c4 0A       		.uleb128 0xa
+ 307 01c5 A9010000 		.4byte	.LASF35
+ 308 01c9 04       		.byte	0x4
+ 309 01ca D001     		.2byte	0x1d0
+ 310 01cc FA000000 		.4byte	0xfa
+ 311 01d0 00       		.byte	0
+ 312 01d1 0A       		.uleb128 0xa
+ 313 01d2 82020000 		.4byte	.LASF27
+ 314 01d6 04       		.byte	0x4
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 9
+
+
+ 315 01d7 D301     		.2byte	0x1d3
+ 316 01d9 8C000000 		.4byte	0x8c
+ 317 01dd 04       		.byte	0x4
+ 318 01de 0A       		.uleb128 0xa
+ 319 01df 21000000 		.4byte	.LASF36
+ 320 01e3 04       		.byte	0x4
+ 321 01e4 D501     		.2byte	0x1d5
+ 322 01e6 8C000000 		.4byte	0x8c
+ 323 01ea 08       		.byte	0x8
+ 324 01eb 0A       		.uleb128 0xa
+ 325 01ec C7000000 		.4byte	.LASF37
+ 326 01f0 04       		.byte	0x4
+ 327 01f1 D801     		.2byte	0x1d8
+ 328 01f3 8C000000 		.4byte	0x8c
+ 329 01f7 0C       		.byte	0xc
+ 330 01f8 0A       		.uleb128 0xa
+ 331 01f9 0F030000 		.4byte	.LASF30
+ 332 01fd 04       		.byte	0x4
+ 333 01fe DC01     		.2byte	0x1dc
+ 334 0200 8C000000 		.4byte	0x8c
+ 335 0204 10       		.byte	0x10
+ 336 0205 0A       		.uleb128 0xa
+ 337 0206 9A000000 		.4byte	.LASF32
+ 338 020a 04       		.byte	0x4
+ 339 020b E001     		.2byte	0x1e0
+ 340 020d 8C000000 		.4byte	0x8c
+ 341 0211 14       		.byte	0x14
+ 342 0212 00       		.byte	0
+ 343 0213 07       		.uleb128 0x7
+ 344 0214 63010000 		.4byte	.LASF38
+ 345 0218 04       		.byte	0x4
+ 346 0219 E201     		.2byte	0x1e2
+ 347 021b BB010000 		.4byte	0x1bb
+ 348 021f 0B       		.uleb128 0xb
+ 349 0220 30       		.byte	0x30
+ 350 0221 04       		.byte	0x4
+ 351 0222 E501     		.2byte	0x1e5
+ 352 0224 43020000 		.4byte	0x243
+ 353 0228 0A       		.uleb128 0xa
+ 354 0229 FD000000 		.4byte	.LASF39
+ 355 022d 04       		.byte	0x4
+ 356 022e E701     		.2byte	0x1e7
+ 357 0230 13020000 		.4byte	0x213
+ 358 0234 00       		.byte	0
+ 359 0235 0A       		.uleb128 0xa
+ 360 0236 6A030000 		.4byte	.LASF40
+ 361 023a 04       		.byte	0x4
+ 362 023b E801     		.2byte	0x1e8
+ 363 023d 13020000 		.4byte	0x213
+ 364 0241 18       		.byte	0x18
+ 365 0242 00       		.byte	0
+ 366 0243 07       		.uleb128 0x7
+ 367 0244 7B010000 		.4byte	.LASF41
+ 368 0248 04       		.byte	0x4
+ 369 0249 E901     		.2byte	0x1e9
+ 370 024b 1F020000 		.4byte	0x21f
+ 371 024f 0C       		.uleb128 0xc
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 10
+
+
+ 372 0250 2C000000 		.4byte	.LASF52
+ 373 0254 01       		.byte	0x1
+ 374 0255 59       		.byte	0x59
+ 375 0256 00000000 		.4byte	.LFB97
+ 376 025a 14000000 		.4byte	.LFE97-.LFB97
+ 377 025e 01       		.uleb128 0x1
+ 378 025f 9C       		.byte	0x9c
+ 379 0260 0D       		.uleb128 0xd
+ 380 0261 70020000 		.4byte	0x270
+ 381 0265 70020000 		.4byte	0x270
+ 382 0269 0E       		.uleb128 0xe
+ 383 026a 97000000 		.4byte	0x97
+ 384 026e 0B       		.byte	0xb
+ 385 026f 00       		.byte	0
+ 386 0270 0F       		.uleb128 0xf
+ 387 0271 81000000 		.4byte	0x81
+ 388 0275 10       		.uleb128 0x10
+ 389 0276 40000000 		.4byte	.LASF42
+ 390 027a 04       		.byte	0x4
+ 391 027b FC02     		.2byte	0x2fc
+ 392 027d 81020000 		.4byte	0x281
+ 393 0281 0F       		.uleb128 0xf
+ 394 0282 60020000 		.4byte	0x260
+ 395 0286 11       		.uleb128 0x11
+ 396 0287 14010000 		.4byte	.LASF43
+ 397 028b 01       		.byte	0x1
+ 398 028c 16       		.byte	0x16
+ 399 028d 81000000 		.4byte	0x81
+ 400 0291 05       		.uleb128 0x5
+ 401 0292 03       		.byte	0x3
+ 402 0293 00000000 		.4byte	RealTimeClock_initVar
+ 403 0297 11       		.uleb128 0x11
+ 404 0298 F4020000 		.4byte	.LASF44
+ 405 029c 01       		.byte	0x1
+ 406 029d 2C       		.byte	0x2c
+ 407 029e A8020000 		.4byte	0x2a8
+ 408 02a2 05       		.uleb128 0x5
+ 409 02a3 03       		.byte	0x3
+ 410 02a4 00000000 		.4byte	RealTimeClock_rtcDstStatus
+ 411 02a8 02       		.uleb128 0x2
+ 412 02a9 01       		.byte	0x1
+ 413 02aa 02       		.byte	0x2
+ 414 02ab 87030000 		.4byte	.LASF45
+ 415 02af 11       		.uleb128 0x11
+ 416 02b0 E5000000 		.4byte	.LASF46
+ 417 02b4 01       		.byte	0x1
+ 418 02b5 48       		.byte	0x48
+ 419 02b6 C0020000 		.4byte	0x2c0
+ 420 02ba 05       		.uleb128 0x5
+ 421 02bb 03       		.byte	0x3
+ 422 02bc 00000000 		.4byte	RealTimeClock_dstConfig
+ 423 02c0 0F       		.uleb128 0xf
+ 424 02c1 43020000 		.4byte	0x243
+ 425 02c5 11       		.uleb128 0x11
+ 426 02c6 72030000 		.4byte	.LASF47
+ 427 02ca 01       		.byte	0x1
+ 428 02cb 1B       		.byte	0x1b
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 11
+
+
+ 429 02cc D6020000 		.4byte	0x2d6
+ 430 02d0 05       		.uleb128 0x5
+ 431 02d1 03       		.byte	0x3
+ 432 02d2 00000000 		.4byte	RealTimeClock_config
+ 433 02d6 0F       		.uleb128 0xf
+ 434 02d7 AF010000 		.4byte	0x1af
+ 435 02db 00       		.byte	0
+ 436              		.section	.debug_abbrev,"",%progbits
+ 437              	.Ldebug_abbrev0:
+ 438 0000 01       		.uleb128 0x1
+ 439 0001 11       		.uleb128 0x11
+ 440 0002 01       		.byte	0x1
+ 441 0003 25       		.uleb128 0x25
+ 442 0004 0E       		.uleb128 0xe
+ 443 0005 13       		.uleb128 0x13
+ 444 0006 0B       		.uleb128 0xb
+ 445 0007 03       		.uleb128 0x3
+ 446 0008 0E       		.uleb128 0xe
+ 447 0009 1B       		.uleb128 0x1b
+ 448 000a 0E       		.uleb128 0xe
+ 449 000b 55       		.uleb128 0x55
+ 450 000c 17       		.uleb128 0x17
+ 451 000d 11       		.uleb128 0x11
+ 452 000e 01       		.uleb128 0x1
+ 453 000f 10       		.uleb128 0x10
+ 454 0010 17       		.uleb128 0x17
+ 455 0011 00       		.byte	0
+ 456 0012 00       		.byte	0
+ 457 0013 02       		.uleb128 0x2
+ 458 0014 24       		.uleb128 0x24
+ 459 0015 00       		.byte	0
+ 460 0016 0B       		.uleb128 0xb
+ 461 0017 0B       		.uleb128 0xb
+ 462 0018 3E       		.uleb128 0x3e
+ 463 0019 0B       		.uleb128 0xb
+ 464 001a 03       		.uleb128 0x3
+ 465 001b 0E       		.uleb128 0xe
+ 466 001c 00       		.byte	0
+ 467 001d 00       		.byte	0
+ 468 001e 03       		.uleb128 0x3
+ 469 001f 16       		.uleb128 0x16
+ 470 0020 00       		.byte	0
+ 471 0021 03       		.uleb128 0x3
+ 472 0022 0E       		.uleb128 0xe
+ 473 0023 3A       		.uleb128 0x3a
+ 474 0024 0B       		.uleb128 0xb
+ 475 0025 3B       		.uleb128 0x3b
+ 476 0026 0B       		.uleb128 0xb
+ 477 0027 49       		.uleb128 0x49
+ 478 0028 13       		.uleb128 0x13
+ 479 0029 00       		.byte	0
+ 480 002a 00       		.byte	0
+ 481 002b 04       		.uleb128 0x4
+ 482 002c 24       		.uleb128 0x24
+ 483 002d 00       		.byte	0
+ 484 002e 0B       		.uleb128 0xb
+ 485 002f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 12
+
+
+ 486 0030 3E       		.uleb128 0x3e
+ 487 0031 0B       		.uleb128 0xb
+ 488 0032 03       		.uleb128 0x3
+ 489 0033 08       		.uleb128 0x8
+ 490 0034 00       		.byte	0
+ 491 0035 00       		.byte	0
+ 492 0036 05       		.uleb128 0x5
+ 493 0037 04       		.uleb128 0x4
+ 494 0038 01       		.byte	0x1
+ 495 0039 0B       		.uleb128 0xb
+ 496 003a 0B       		.uleb128 0xb
+ 497 003b 49       		.uleb128 0x49
+ 498 003c 13       		.uleb128 0x13
+ 499 003d 3A       		.uleb128 0x3a
+ 500 003e 0B       		.uleb128 0xb
+ 501 003f 3B       		.uleb128 0x3b
+ 502 0040 05       		.uleb128 0x5
+ 503 0041 01       		.uleb128 0x1
+ 504 0042 13       		.uleb128 0x13
+ 505 0043 00       		.byte	0
+ 506 0044 00       		.byte	0
+ 507 0045 06       		.uleb128 0x6
+ 508 0046 28       		.uleb128 0x28
+ 509 0047 00       		.byte	0
+ 510 0048 03       		.uleb128 0x3
+ 511 0049 0E       		.uleb128 0xe
+ 512 004a 1C       		.uleb128 0x1c
+ 513 004b 0B       		.uleb128 0xb
+ 514 004c 00       		.byte	0
+ 515 004d 00       		.byte	0
+ 516 004e 07       		.uleb128 0x7
+ 517 004f 16       		.uleb128 0x16
+ 518 0050 00       		.byte	0
+ 519 0051 03       		.uleb128 0x3
+ 520 0052 0E       		.uleb128 0xe
+ 521 0053 3A       		.uleb128 0x3a
+ 522 0054 0B       		.uleb128 0xb
+ 523 0055 3B       		.uleb128 0x3b
+ 524 0056 05       		.uleb128 0x5
+ 525 0057 49       		.uleb128 0x49
+ 526 0058 13       		.uleb128 0x13
+ 527 0059 00       		.byte	0
+ 528 005a 00       		.byte	0
+ 529 005b 08       		.uleb128 0x8
+ 530 005c 13       		.uleb128 0x13
+ 531 005d 01       		.byte	0x1
+ 532 005e 03       		.uleb128 0x3
+ 533 005f 0E       		.uleb128 0xe
+ 534 0060 0B       		.uleb128 0xb
+ 535 0061 0B       		.uleb128 0xb
+ 536 0062 3A       		.uleb128 0x3a
+ 537 0063 0B       		.uleb128 0xb
+ 538 0064 3B       		.uleb128 0x3b
+ 539 0065 05       		.uleb128 0x5
+ 540 0066 01       		.uleb128 0x1
+ 541 0067 13       		.uleb128 0x13
+ 542 0068 00       		.byte	0
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 13
+
+
+ 543 0069 00       		.byte	0
+ 544 006a 09       		.uleb128 0x9
+ 545 006b 0D       		.uleb128 0xd
+ 546 006c 00       		.byte	0
+ 547 006d 03       		.uleb128 0x3
+ 548 006e 08       		.uleb128 0x8
+ 549 006f 3A       		.uleb128 0x3a
+ 550 0070 0B       		.uleb128 0xb
+ 551 0071 3B       		.uleb128 0x3b
+ 552 0072 05       		.uleb128 0x5
+ 553 0073 49       		.uleb128 0x49
+ 554 0074 13       		.uleb128 0x13
+ 555 0075 38       		.uleb128 0x38
+ 556 0076 0B       		.uleb128 0xb
+ 557 0077 00       		.byte	0
+ 558 0078 00       		.byte	0
+ 559 0079 0A       		.uleb128 0xa
+ 560 007a 0D       		.uleb128 0xd
+ 561 007b 00       		.byte	0
+ 562 007c 03       		.uleb128 0x3
+ 563 007d 0E       		.uleb128 0xe
+ 564 007e 3A       		.uleb128 0x3a
+ 565 007f 0B       		.uleb128 0xb
+ 566 0080 3B       		.uleb128 0x3b
+ 567 0081 05       		.uleb128 0x5
+ 568 0082 49       		.uleb128 0x49
+ 569 0083 13       		.uleb128 0x13
+ 570 0084 38       		.uleb128 0x38
+ 571 0085 0B       		.uleb128 0xb
+ 572 0086 00       		.byte	0
+ 573 0087 00       		.byte	0
+ 574 0088 0B       		.uleb128 0xb
+ 575 0089 13       		.uleb128 0x13
+ 576 008a 01       		.byte	0x1
+ 577 008b 0B       		.uleb128 0xb
+ 578 008c 0B       		.uleb128 0xb
+ 579 008d 3A       		.uleb128 0x3a
+ 580 008e 0B       		.uleb128 0xb
+ 581 008f 3B       		.uleb128 0x3b
+ 582 0090 05       		.uleb128 0x5
+ 583 0091 01       		.uleb128 0x1
+ 584 0092 13       		.uleb128 0x13
+ 585 0093 00       		.byte	0
+ 586 0094 00       		.byte	0
+ 587 0095 0C       		.uleb128 0xc
+ 588 0096 2E       		.uleb128 0x2e
+ 589 0097 00       		.byte	0
+ 590 0098 3F       		.uleb128 0x3f
+ 591 0099 19       		.uleb128 0x19
+ 592 009a 03       		.uleb128 0x3
+ 593 009b 0E       		.uleb128 0xe
+ 594 009c 3A       		.uleb128 0x3a
+ 595 009d 0B       		.uleb128 0xb
+ 596 009e 3B       		.uleb128 0x3b
+ 597 009f 0B       		.uleb128 0xb
+ 598 00a0 27       		.uleb128 0x27
+ 599 00a1 19       		.uleb128 0x19
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 14
+
+
+ 600 00a2 11       		.uleb128 0x11
+ 601 00a3 01       		.uleb128 0x1
+ 602 00a4 12       		.uleb128 0x12
+ 603 00a5 06       		.uleb128 0x6
+ 604 00a6 40       		.uleb128 0x40
+ 605 00a7 18       		.uleb128 0x18
+ 606 00a8 9742     		.uleb128 0x2117
+ 607 00aa 19       		.uleb128 0x19
+ 608 00ab 00       		.byte	0
+ 609 00ac 00       		.byte	0
+ 610 00ad 0D       		.uleb128 0xd
+ 611 00ae 01       		.uleb128 0x1
+ 612 00af 01       		.byte	0x1
+ 613 00b0 49       		.uleb128 0x49
+ 614 00b1 13       		.uleb128 0x13
+ 615 00b2 01       		.uleb128 0x1
+ 616 00b3 13       		.uleb128 0x13
+ 617 00b4 00       		.byte	0
+ 618 00b5 00       		.byte	0
+ 619 00b6 0E       		.uleb128 0xe
+ 620 00b7 21       		.uleb128 0x21
+ 621 00b8 00       		.byte	0
+ 622 00b9 49       		.uleb128 0x49
+ 623 00ba 13       		.uleb128 0x13
+ 624 00bb 2F       		.uleb128 0x2f
+ 625 00bc 0B       		.uleb128 0xb
+ 626 00bd 00       		.byte	0
+ 627 00be 00       		.byte	0
+ 628 00bf 0F       		.uleb128 0xf
+ 629 00c0 26       		.uleb128 0x26
+ 630 00c1 00       		.byte	0
+ 631 00c2 49       		.uleb128 0x49
+ 632 00c3 13       		.uleb128 0x13
+ 633 00c4 00       		.byte	0
+ 634 00c5 00       		.byte	0
+ 635 00c6 10       		.uleb128 0x10
+ 636 00c7 34       		.uleb128 0x34
+ 637 00c8 00       		.byte	0
+ 638 00c9 03       		.uleb128 0x3
+ 639 00ca 0E       		.uleb128 0xe
+ 640 00cb 3A       		.uleb128 0x3a
+ 641 00cc 0B       		.uleb128 0xb
+ 642 00cd 3B       		.uleb128 0x3b
+ 643 00ce 05       		.uleb128 0x5
+ 644 00cf 49       		.uleb128 0x49
+ 645 00d0 13       		.uleb128 0x13
+ 646 00d1 3F       		.uleb128 0x3f
+ 647 00d2 19       		.uleb128 0x19
+ 648 00d3 3C       		.uleb128 0x3c
+ 649 00d4 19       		.uleb128 0x19
+ 650 00d5 00       		.byte	0
+ 651 00d6 00       		.byte	0
+ 652 00d7 11       		.uleb128 0x11
+ 653 00d8 34       		.uleb128 0x34
+ 654 00d9 00       		.byte	0
+ 655 00da 03       		.uleb128 0x3
+ 656 00db 0E       		.uleb128 0xe
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 15
+
+
+ 657 00dc 3A       		.uleb128 0x3a
+ 658 00dd 0B       		.uleb128 0xb
+ 659 00de 3B       		.uleb128 0x3b
+ 660 00df 0B       		.uleb128 0xb
+ 661 00e0 49       		.uleb128 0x49
+ 662 00e1 13       		.uleb128 0x13
+ 663 00e2 3F       		.uleb128 0x3f
+ 664 00e3 19       		.uleb128 0x19
+ 665 00e4 02       		.uleb128 0x2
+ 666 00e5 18       		.uleb128 0x18
+ 667 00e6 00       		.byte	0
+ 668 00e7 00       		.byte	0
+ 669 00e8 00       		.byte	0
+ 670              		.section	.debug_aranges,"",%progbits
+ 671 0000 1C000000 		.4byte	0x1c
+ 672 0004 0200     		.2byte	0x2
+ 673 0006 00000000 		.4byte	.Ldebug_info0
+ 674 000a 04       		.byte	0x4
+ 675 000b 00       		.byte	0
+ 676 000c 0000     		.2byte	0
+ 677 000e 0000     		.2byte	0
+ 678 0010 00000000 		.4byte	.LFB97
+ 679 0014 14000000 		.4byte	.LFE97-.LFB97
+ 680 0018 00000000 		.4byte	0
+ 681 001c 00000000 		.4byte	0
+ 682              		.section	.debug_ranges,"",%progbits
+ 683              	.Ldebug_ranges0:
+ 684 0000 00000000 		.4byte	.LFB97
+ 685 0004 14000000 		.4byte	.LFE97
+ 686 0008 00000000 		.4byte	0
+ 687 000c 00000000 		.4byte	0
+ 688              		.section	.debug_line,"",%progbits
+ 689              	.Ldebug_line0:
+ 690 0000 95010000 		.section	.debug_str,"MS",%progbits,1
+ 690      02007801 
+ 690      00000201 
+ 690      FB0E0D00 
+ 690      01010101 
+ 691              	.LASF23:
+ 692 0000 63795F65 		.ascii	"cy_en_rtc_dst_format_t\000"
+ 692      6E5F7274 
+ 692      635F6473 
+ 692      745F666F 
+ 692      726D6174 
+ 693              	.LASF5:
+ 694 0017 5F5F7569 		.ascii	"__uint8_t\000"
+ 694      6E74385F 
+ 694      7400
+ 695              	.LASF36:
+ 696 0021 6461794F 		.ascii	"dayOfMonth\000"
+ 696      664D6F6E 
+ 696      746800
+ 697              	.LASF52:
+ 698 002c 5265616C 		.ascii	"RealTimeClock_Start\000"
+ 698      54696D65 
+ 698      436C6F63 
+ 698      6B5F5374 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 16
+
+
+ 698      61727400 
+ 699              	.LASF42:
+ 700 0040 63795F52 		.ascii	"cy_RTC_daysInMonthTbl\000"
+ 700      54435F64 
+ 700      61797349 
+ 700      6E4D6F6E 
+ 700      74685462 
+ 701              	.LASF33:
+ 702 0056 79656172 		.ascii	"year\000"
+ 702      00
+ 703              	.LASF49:
+ 704 005b 47656E65 		.ascii	"Generated_Source\\PSoC6\\RealTimeClock.c\000"
+ 704      72617465 
+ 704      645F536F 
+ 704      75726365 
+ 704      5C50536F 
+ 705              	.LASF22:
+ 706 0082 43595F52 		.ascii	"CY_RTC_DST_FIXED\000"
+ 706      54435F44 
+ 706      53545F46 
+ 706      49584544 
+ 706      00
+ 707              	.LASF17:
+ 708 0093 646F7562 		.ascii	"double\000"
+ 708      6C6500
+ 709              	.LASF32:
+ 710 009a 6D6F6E74 		.ascii	"month\000"
+ 710      6800
+ 711              	.LASF20:
+ 712 00a0 63795F65 		.ascii	"cy_en_rtc_hours_format_t\000"
+ 712      6E5F7274 
+ 712      635F686F 
+ 712      7572735F 
+ 712      666F726D 
+ 713              	.LASF29:
+ 714 00b9 6872466F 		.ascii	"hrFormat\000"
+ 714      726D6174 
+ 714      00
+ 715              	.LASF31:
+ 716 00c2 64617465 		.ascii	"date\000"
+ 716      00
+ 717              	.LASF37:
+ 718 00c7 7765656B 		.ascii	"weekOfMonth\000"
+ 718      4F664D6F 
+ 718      6E746800 
+ 719              	.LASF26:
+ 720 00d3 63795F65 		.ascii	"cy_en_rtc_am_pm_t\000"
+ 720      6E5F7274 
+ 720      635F616D 
+ 720      5F706D5F 
+ 720      7400
+ 721              	.LASF46:
+ 722 00e5 5265616C 		.ascii	"RealTimeClock_dstConfig\000"
+ 722      54696D65 
+ 722      436C6F63 
+ 722      6B5F6473 
+ 722      74436F6E 
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 17
+
+
+ 723              	.LASF39:
+ 724 00fd 73746172 		.ascii	"startDst\000"
+ 724      74447374 
+ 724      00
+ 725              	.LASF1:
+ 726 0106 756E7369 		.ascii	"unsigned char\000"
+ 726      676E6564 
+ 726      20636861 
+ 726      7200
+ 727              	.LASF43:
+ 728 0114 5265616C 		.ascii	"RealTimeClock_initVar\000"
+ 728      54696D65 
+ 728      436C6F63 
+ 728      6B5F696E 
+ 728      69745661 
+ 729              	.LASF7:
+ 730 012a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 730      20756E73 
+ 730      69676E65 
+ 730      6420696E 
+ 730      7400
+ 731              	.LASF3:
+ 732 013c 73686F72 		.ascii	"short unsigned int\000"
+ 732      7420756E 
+ 732      7369676E 
+ 732      65642069 
+ 732      6E7400
+ 733              	.LASF34:
+ 734 014f 63795F73 		.ascii	"cy_stc_rtc_config_t\000"
+ 734      74635F72 
+ 734      74635F63 
+ 734      6F6E6669 
+ 734      675F7400 
+ 735              	.LASF38:
+ 736 0163 63795F73 		.ascii	"cy_stc_rtc_dst_format_t\000"
+ 736      74635F72 
+ 736      74635F64 
+ 736      73745F66 
+ 736      6F726D61 
+ 737              	.LASF41:
+ 738 017b 63795F73 		.ascii	"cy_stc_rtc_dst_t\000"
+ 738      74635F72 
+ 738      74635F64 
+ 738      73745F74 
+ 738      00
+ 739              	.LASF51:
+ 740 018c 63795F73 		.ascii	"cy_stc_rtc_config\000"
+ 740      74635F72 
+ 740      74635F63 
+ 740      6F6E6669 
+ 740      6700
+ 741              	.LASF6:
+ 742 019e 5F5F7569 		.ascii	"__uint32_t\000"
+ 742      6E743332 
+ 742      5F7400
+ 743              	.LASF35:
+ 744 01a9 666F726D 		.ascii	"format\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 18
+
+
+ 744      617400
+ 745              	.LASF48:
+ 746 01b0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 746      43313120 
+ 746      352E342E 
+ 746      31203230 
+ 746      31363036 
+ 747 01e3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 747      20726576 
+ 747      6973696F 
+ 747      6E203233 
+ 747      37373135 
+ 748 0216 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 748      67202D66 
+ 748      66756E63 
+ 748      74696F6E 
+ 748      2D736563 
+ 749              	.LASF10:
+ 750 0242 756E7369 		.ascii	"unsigned int\000"
+ 750      676E6564 
+ 750      20696E74 
+ 750      00
+ 751              	.LASF9:
+ 752 024f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 752      206C6F6E 
+ 752      6720756E 
+ 752      7369676E 
+ 752      65642069 
+ 753              	.LASF11:
+ 754 0266 75696E74 		.ascii	"uint8_t\000"
+ 754      385F7400 
+ 755              	.LASF21:
+ 756 026e 43595F52 		.ascii	"CY_RTC_DST_RELATIVE\000"
+ 756      54435F44 
+ 756      53545F52 
+ 756      454C4154 
+ 756      49564500 
+ 757              	.LASF27:
+ 758 0282 686F7572 		.ascii	"hour\000"
+ 758      00
+ 759              	.LASF2:
+ 760 0287 7369676E 		.ascii	"signed char\000"
+ 760      65642063 
+ 760      68617200 
+ 761              	.LASF50:
+ 762 0293 433A5C55 		.ascii	"C:\\Users\\salaz\\Desktop\\SmartHandle\\James.cydsn"
+ 762      73657273 
+ 762      5C73616C 
+ 762      617A5C44 
+ 762      65736B74 
+ 763 02c1 00       		.ascii	"\000"
+ 764              	.LASF14:
+ 765 02c2 6C6F6E67 		.ascii	"long double\000"
+ 765      20646F75 
+ 765      626C6500 
+ 766              	.LASF13:
+ 767 02ce 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 19
+
+
+ 767      74797065 
+ 767      00
+ 768              	.LASF25:
+ 769 02d7 43595F52 		.ascii	"CY_RTC_PM\000"
+ 769      54435F50 
+ 769      4D00
+ 770              	.LASF8:
+ 771 02e1 6C6F6E67 		.ascii	"long long int\000"
+ 771      206C6F6E 
+ 771      6720696E 
+ 771      7400
+ 772              	.LASF15:
+ 773 02ef 63686172 		.ascii	"char\000"
+ 773      00
+ 774              	.LASF44:
+ 775 02f4 5265616C 		.ascii	"RealTimeClock_rtcDstStatus\000"
+ 775      54696D65 
+ 775      436C6F63 
+ 775      6B5F7274 
+ 775      63447374 
+ 776              	.LASF30:
+ 777 030f 6461794F 		.ascii	"dayOfWeek\000"
+ 777      66576565 
+ 777      6B00
+ 778              	.LASF24:
+ 779 0319 43595F52 		.ascii	"CY_RTC_AM\000"
+ 779      54435F41 
+ 779      4D00
+ 780              	.LASF19:
+ 781 0323 43595F52 		.ascii	"CY_RTC_12_HOURS\000"
+ 781      54435F31 
+ 781      325F484F 
+ 781      55525300 
+ 782              	.LASF0:
+ 783 0333 73686F72 		.ascii	"short int\000"
+ 783      7420696E 
+ 783      7400
+ 784              	.LASF18:
+ 785 033d 43595F52 		.ascii	"CY_RTC_24_HOURS\000"
+ 785      54435F32 
+ 785      345F484F 
+ 785      55525300 
+ 786              	.LASF12:
+ 787 034d 75696E74 		.ascii	"uint32_t\000"
+ 787      33325F74 
+ 787      00
+ 788              	.LASF4:
+ 789 0356 6C6F6E67 		.ascii	"long int\000"
+ 789      20696E74 
+ 789      00
+ 790              	.LASF28:
+ 791 035f 616D506D 		.ascii	"amPm\000"
+ 791      00
+ 792              	.LASF16:
+ 793 0364 666C6F61 		.ascii	"float\000"
+ 793      7400
+ 794              	.LASF40:
+ARM GAS  C:\Users\salaz\AppData\Local\Temp\ccUHD04l.s 			page 20
+
+
+ 795 036a 73746F70 		.ascii	"stopDst\000"
+ 795      44737400 
+ 796              	.LASF47:
+ 797 0372 5265616C 		.ascii	"RealTimeClock_config\000"
+ 797      54696D65 
+ 797      436C6F63 
+ 797      6B5F636F 
+ 797      6E666967 
+ 798              	.LASF45:
+ 799 0387 5F426F6F 		.ascii	"_Bool\000"
+ 799      6C00
+ 800              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
