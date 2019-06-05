@@ -10,6 +10,9 @@
 #define BT_SET_LIGHT_COLOR  0x0004
 #define BT_TIME_SYNC        0x0005
 
+uint8_t reg_number[6] = {6, 5, 4, 3, 2, 1};
+int RegSent = 0;
+
 
 void AppProcess_Start()
 {
@@ -22,11 +25,12 @@ void AppProcess_Start()
     int16 counts;
     float32 battery_voltage;
     uint32 z;
+    uint8 reg_check;
     
     while(true) {
         
         current_time = KinOS_GetDateAndTime();
-        if((abs(current_time.second - prev_time.second)) >= 4 && KinOS_IsConnected()){
+        if((abs(current_time.second - prev_time.second)) >= 5 && KinOS_IsConnected() && RegSent){
             //KinOS_SendResult(1, &battery_percentage);
             //KinOS_ReadAcc(&data);
             
@@ -42,7 +46,7 @@ void AppProcess_Start()
             //DEBUG_PRINTF("x: %#6x\ty: %#6x\tz: %#6x\r\n\n",(uint16) data.x_raw, (uint16) data.y_raw, (uint16) data.z_raw);
             Cy_BLE_BASS_SetCharacteristicValue(CY_BLE_BATTERY_SERVICE_INDEX, CY_BLE_BAS_BATTERY_LEVEL, 1, &battery_percentage);
             //KinOS_SendAcc(&data);
-            battery_percentage = (battery_percentage) ? battery_percentage - 1 : 100;
+            battery_percentage = (battery_percentage) ? battery_percentage - 3 : 100;
         }
         
         if(KinOS_CheckInbox(7 * sizeof(uint8),(uint8*)&dt_buffer))
@@ -51,7 +55,7 @@ void AppProcess_Start()
             {
                 case BT_CONFIG_LIGHT:
                     DEBUG_PRINTF("0x00 Received \r\n");
-                    KinOS_ConfigureLight(dt_buffer[1], BYPASS , 10, dt_buffer[4]);
+                    KinOS_ConfigureLight(dt_buffer[1], BYPASS , 10, dt_buffer[3]);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
                     
@@ -64,6 +68,22 @@ void AppProcess_Start()
                 case BT_REGISTER_DEV:
                     DEBUG_PRINTF("0x03 Received \r\n");
                     uint8 token = 0xFF;
+                    
+                    if(RegSent == 0) {
+                        for(int i = 0; i < 6; i++) {
+                            if(dt_buffer[i + 1] != reg_number[i]) {
+                                reg_check = 1;
+                                break;
+                            }
+                            reg_check = 2;
+                        }
+                    
+                        Cy_BLE_BASS_SetCharacteristicValue(CY_BLE_BATTERY_SERVICE_INDEX, CY_BLE_BAS_BATTERY_LEVEL, 1, &reg_check);
+                    } else if(dt_buffer[2] == 9){
+                        RegSent = 1;
+                    }
+                    
+                    
                     KinOS_SendResult(1,&token);
                     DEBUG_WAIT_UART_TX_COMPLETE();
                 break;
